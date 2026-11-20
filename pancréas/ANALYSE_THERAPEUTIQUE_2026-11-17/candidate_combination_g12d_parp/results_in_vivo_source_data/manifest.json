@@ -1,0 +1,26 @@
+{
+  "analysis_id": "PMC13043926_individual_animal_in_vivo_reanalysis_v1",
+  "created_utc": "2026-11-17T22:30:57.383532+00:00",
+  "script": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\reanalyze_published_in_vivo_source_data.py",
+  "script_sha256": "3d2d7fd8d3ce06586c910a8f89129036040769153f2b4b26065d4a5e5dbaa0ab",
+  "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\source\\41467_2026_69695_MOESM7_source_data.xlsx",
+  "source_sha256": "9f88ce9bbc4de2ba26871671c9232595be6d78c4d3762ed9c72f35940d19463e",
+  "method": {
+    "primary_outcome": "baseline-adjusted log1p endpoint volume model; BH across 15 pairwise comparisons",
+    "secondary_outcome": "absolute tumor volume change (mm^3); exact two-arm permutations and raw-scale interaction sensitivity",
+    "experimental_unit": "animal position within a treatment block, as implied by source workbook layout",
+    "pairwise": "enumerated two-sided label permutation for combination vs vehicle and each monotherapy; all assignments for each 6-vs-6 comparison",
+    "multiplicity": "BH across 15 primary pairwise comparisons (3 per 5 models)",
+    "factorial_interaction": "Welch-Satterthwaite contrast with t-based 95% CI on raw change scale; approximate under small n",
+    "important": "animal identifiers are not supplied; within-animal identity across repeated time points assumed from column position; this is a reanalysis of the same publication, not independent replication"
+  },
+  "outputs": [
+    "primary_cohort_summary.json",
+    "primary_pairwise_tests.csv",
+    "factorial_interactions.csv",
+    "individual_animal_tumor_volume_long.csv",
+    "published_in_vivo_trajectories.png",
+    "flow_cytometry_mouse_values.csv",
+    "flow_cytometry_tests.csv"
+  ]
+}

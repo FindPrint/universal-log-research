@@ -1,0 +1,10 @@
+test_full_check_runner_passes_seed_into_summary (__main__.SeedTraceabilityTests.test_full_check_runner_passes_seed_into_summary) ... ok
+test_known_seed_is_preserved (__main__.SeedTraceabilityTests.test_known_seed_is_preserved) ... ok
+test_omitted_seed_remains_optional (__main__.SeedTraceabilityTests.test_omitted_seed_remains_optional) ... ok
+test_seed_check_exports_the_alternate_seed (__main__.SeedTraceabilityTests.test_seed_check_exports_the_alternate_seed) ... ok
+test_zero_seed_is_not_dropped (__main__.SeedTraceabilityTests.test_zero_seed_is_not_dropped) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.136s
+
+OK

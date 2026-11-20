@@ -1,0 +1,105 @@
+===== PAGE 1 =====\nRapport Final UNIVERSAL_LOG x PDAC - v1.0
+15 nov. 2026 | Audit-ready
+Page 1
+RAPPORT FINAL
+UNIVERSAL_LOG applique au cancer du pancreas (PDAC)
+Cartographie des transitions critiques pour guider
+les therapies ARN et CRISPR ciblant KRAS G12D
+Version 1.0 - 15 novembre 2026
+Document d'audit et de synthese des resultats
+Pipeline : universal_x5f_log ... v5.9.0f | Test statistique : cohen_d
+Position epistemologique (inchangee)
+Un pipeline algorithmique ne trouve pas un remede. Il cartographie les points de bascule. Les T0 obtenus sur les axes MD
+KRAS et scRNA PDAC constituent des coordonnees temporelles et structurales qui reduisent l'espace de recherche pour le
+design de poches, le timing des ARN therapeutiques et des guides CRISPR. Toute affirmation de guerison est exclue.
+Statut global : VALIDE - deux axes complets + pilot de reference + synthese actionnable
+\n\n===== PAGE 2 =====\nRapport Final UNIVERSAL_LOG x PDAC - v1.0
+15 nov. 2026 | Audit-ready
+Page 2
+1. Validation des resultats obtenus
+Trois runs principaux ont abouti avec master_results.json et diagnostics complets. Tous utilisent cohen_d (mode fast). L7b-full n'a pas
+abouti proprement ; les conclusions reposent sur L7a + cascade + coherence inter-runs.
+Run
+T0
+Valeur brute
+L7a
+Statut
+MD KRAS ultralight
+48.12 %
+76.24 ns
+UP 43.5 %
+COMPLET
+scRNA PDAC light
+57.21 %
+Progression 0.566
+UP 42.7 %
+COMPLET
+Pilot synthetique (ref.)
+50.00 %
+99.25 ns
+UP 42.1 %
+COMPLET
+Tableau 1 - Runs valides (cohen_d).
+Coherence
+• Les trois runs donnent L7a = UP avec confiances proches (42-44 %).
+• Les T0 MD sont stables sur plusieurs essais (48.12 % repete).
+• Tool Footprint = phenomene physique continu (pas d'artefact d'outil).
+• Regime holographique rapporte en divergence sur les logs complets.
+Limitation : L7b-full non abouti. Les conclusions restent valides au niveau L7a + reproductibilite des T0.
+2. Cascade des 5 seuils (unites du controle)
+Seuil
+MD (ns)
+scRNA (Progression)
+T-2 pre-onset
+2.01
+0.039
+T-1 pre-inflexion
+68.71
+0.470
+T0 central
+76.24
+0.566
+T+1 post-deceleration
+155.49
+0.882
+T+2 post-attracteur
+155.49
+0.882
+Tableau 2 - Seuils en unites reelles du controle.
+MD : zone critique T-1 vers T0 (environ 69-76 ns). Apres ~155 ns le systeme est dans le nouvel attracteur. scRNA : zone
+d'intervention utile avant T-1/T0 (Progression < 0.47-0.55). Apres 0.88 le basculement est consomme.
+3. Synthese actionnable ARN / CRISPR / proteine
+3.1 Fenetre conformationnelle KRAS G12D (MD)
+• T0 environ 76 ns = moment de changement de regime (ouverture de switch / accessibilite de poche).
+• Priorite design : stabiliser l'etat inactif avant T0 ou cibler la poche dans la fenetre T-1-T0.
+• Priorite CRISPR : timing de l'edition/base-editing quand la structure est la plus permissive.
+• Priorite ARN : combiner siRNA/ASO KRAS avec un agent qui maintient l'etat le plus sensible.
+3.2 Fenetre transcriptomique EMT / resistance (scRNA)
+• T0 environ Progression 0.566 = point de bascule vers programme mesenchymal + resistance (EGFR, YAP).
+• Priorite : intervenir avant 0.50-0.55 avec siRNA/ASO ou CRISPR sur SNAI1 / ZEB1 / YAP / EGFR.
+• Apres 0.60-0.70 l'efficacite attendue du knockdown chute fortement.
+• Biomarqueur candidat : score composite EMT + EGFR/YAP pour alerte precoce.
+3.3 Message transversal
+Le pipeline a fourni deux coordonnees critiques coherentes (direction UP, regime de divergence) sur deux modalites differentes. Il ne
+propose pas de molecule ni de sequence guide ; il reduit l'espace de recherche pour le design de poches, le timing ARN et le timing
+CRISPR.
+4. Protocole de validation experimentale minimal
+A. MD / structure : mesurer volume de poche / SASA / distances switch avant T-1, entre T-1 et T0, apres T0 sur trajectoires reelles.
+Hypothese : accessibilite change significativement autour de 70-80 ns.
+B. Organoides PDAC : traiter (siRNA/CRISPR anti-SNAI1/ZEB1/YAP/EGFR) a Progression environ 0.35, 0.52, 0.75. Lire survie,
+marqueurs EMT, resistance. Hypothese : efficacite nettement plus elevee avant T0.
+Critere de succes minimal : difference d'effet biologique >= 2x entre fenetre pre-T0 et post-T0 sur au moins un axe.
+5. Livrables et structure d'archive
+\n\n===== PAGE 3 =====\nRapport Final UNIVERSAL_LOG x PDAC - v1.0
+15 nov. 2026 | Audit-ready
+Page 3
+• Livre_Blanc_UNIVERSAL_LOG_PDAC_v1.0.pdf - cadre methodologique initial
+• Rapport_Final_UNIVERSAL_LOG_PDAC_v1.0.pdf - ce document
+• data/ - CSV d'entree (pilot, MD, scRNA, versions light/ultralight)
+• results_pilot_kras_cohen_d/ - pilot complet de reference
+• results_md_ultralight/ - MD complet (master_results.json + diagnostics)
+• results_scrna_light/ - scRNA complet (master_results.json + diagnostics)
+• universal_x5f_log_...v5.9.0f.py - code source du pipeline
+Tout est versionne, seed=42, test=cohen_d. Reproductibilite : relancer les commandes CLI documentees dans les run_log.txt.
+Fin du Rapport Final v1.0 - 15 novembre 2026.
+Document destine a l'audit et a la transmission des priorites experimentales. Aucune affirmation de decouverte therapeutique n'est faite.

@@ -1,0 +1,119 @@
+{
+  "protocol": "synthetic_pilot_v1",
+  "status": "frozen_pre_execution_pilot",
+  "frozen_utc": "2026-11-15T23:44:19.557381+00:00",
+  "pipeline_path": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py",
+  "pipeline_sha256": "bb8bbdba4eb1f8c55b49748274ae8fbfef8a43f6c1b890964f18ba77960c0773",
+  "pipeline_version_expected": "v6.0.0-L7aL7b-CohenD",
+  "runner_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\run_synthetic_pilot.py",
+  "runner_sha256": "3268c04ec0a8f08dd2b35faa783170b69b9055d2545950390b0e28a56d5f6906",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "cases": [
+    {
+      "case_id": "case_01",
+      "input_file": "input/case_01.csv",
+      "input_sha256": "3dee06a489fb4dc6390de05ee6ed11db850ceed7601a085277dc6c0a2e7d84be",
+      "n_rows": 76,
+      "pipeline_seed": 730101,
+      "target_column": "target",
+      "control_column": "control_index",
+      "mode": "fast",
+      "l7b_mode": "light",
+      "domain": "generic",
+      "control_mode": "single"
+    },
+    {
+      "case_id": "case_02",
+      "input_file": "input/case_02.csv",
+      "input_sha256": "93974aa6f27f1ec904e6697b16f80d362c6bf29985d1998f8c8cac9eeec1b59f",
+      "n_rows": 76,
+      "pipeline_seed": 730101,
+      "target_column": "target",
+      "control_column": "control_index",
+      "mode": "fast",
+      "l7b_mode": "light",
+      "domain": "generic",
+      "control_mode": "single"
+    },
+    {
+      "case_id": "case_03",
+      "input_file": "input/case_03.csv",
+      "input_sha256": "535b656d2eb721a8ad108cd84ddca1025a7decfb2090f5854904c4d04fccc725",
+      "n_rows": 76,
+      "pipeline_seed": 730103,
+      "target_column": "target",
+      "control_column": "control_index",
+      "mode": "fast",
+      "l7b_mode": "light",
+      "domain": "generic",
+      "control_mode": "single"
+    },
+    {
+      "case_id": "case_04",
+      "input_file": "input/case_04.csv",
+      "input_sha256": "9f1c131f5340f169e3696146cb444417db8adb6a72617c2b1c82e7290978a73e",
+      "n_rows": 76,
+      "pipeline_seed": 730104,
+      "target_column": "target",
+      "control_column": "control_index",
+      "mode": "fast",
+      "l7b_mode": "light",
+      "domain": "generic",
+      "control_mode": "single"
+    },
+    {
+      "case_id": "case_05",
+      "input_file": "input/case_05.csv",
+      "input_sha256": "d0153a30b3a21d839431fd62ffbb3a0814197a181a73be97ebad168bb840ef1e",
+      "n_rows": 7,
+      "pipeline_seed": 730105,
+      "target_column": "target",
+      "control_column": "control_index",
+      "mode": "fast",
+      "l7b_mode": "light",
+      "domain": "generic",
+      "control_mode": "single"
+    },
+    {
+      "case_id": "case_06",
+      "input_file": "input/case_06.csv",
+      "input_sha256": "1e1d2cbadef4c02e52696d9c8d6e6f9a2fdfc1d04e1d2b172f6823ed93faf885",
+      "n_rows": 15,
+      "pipeline_seed": 730106,
+      "target_column": "target",
+      "control_column": "control_index",
+      "mode": "fast",
+      "l7b_mode": "light",
+      "domain": "generic",
+      "control_mode": "single"
+    },
+    {
+      "case_id": "case_07",
+      "input_file": "input/case_07.csv",
+      "input_sha256": "d63d7dd75eaf430ff104826cdbe7c3c2194fe471013d8e6776e8e7342c9bfb6a",
+      "n_rows": 30,
+      "pipeline_seed": 730107,
+      "target_column": "target",
+      "control_column": "control_index",
+      "mode": "fast",
+      "l7b_mode": "light",
+      "domain": "generic",
+      "control_mode": "single"
+    }
+  ],
+  "predeclared_readouts": [
+    "run completion or recorded error and elapsed time",
+    "T0 rank-percent; for abrupt cases, absolute normalized distance to the known boundary midpoint",
+    "exact location error = abs(T0_rank_pct / 100 - boundary_rank_fraction); no pass/fail cutoff is imposed in this pilot",
+    "for no-event cases, report T0 availability only; do not label a selected T0 a false positive",
+    "per-estimator Tous status for the 29 configured estimators",
+    "Q1-Q6 finite-value counts; F1/F2 cascade outputs; Voie 1/2 fields; TLog components; L7a/L7b statuses",
+    "paired case_01 versus case_02 output differences are descriptive and isolate added-flow configuration only"
+  ],
+  "limitations_predeclared": [
+    "one deterministic draw per case; no inferential confidence intervals",
+    "this is a development pilot, not a confirmatory benchmark",
+    "no-event cases cannot yield false-positive rates without a separately frozen alert/abstention rule",
+    "no result from synthetic inputs validates a biological, clinical, or universal claim"
+  ]
+}

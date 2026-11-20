@@ -1,0 +1,40 @@
+{
+  "configurations_error": 0,
+  "configurations_ok": 20,
+  "configurations_planned": 20,
+  "hypotheses_remain_hypotheses": true,
+  "interpretation": "Software replay only. Numerical agreement/disagreement and restored typed outputs do not prove universal validity or physical criticality detection.",
+  "matched_estimator_rows": 580,
+  "paired_estimator_merge_counts": {
+    "both": 580,
+    "left_only": 0,
+    "right_only": 0
+  },
+  "raw_median_exact_equal_rows": 580,
+  "raw_median_max_abs_difference": 0.0,
+  "raw_median_median_abs_difference": 0.0,
+  "raw_median_within_1e_6_rows": 580,
+  "started_wall_seconds": 392.47,
+  "status": "completed",
+  "v590_estimator_rows": 580,
+  "v591_estimator_rows": 580,
+  "v591_native_d_kind_populated_rows": 580,
+  "v591_quantity_type_populated_rows": 580,
+  "v591_tlog_by_kind_rows": 260,
+  "v591_tlog_d_kinds": [
+    "correlation_attractor_dimension",
+    "covariance_participation_dimension",
+    "graph_cluster_scaling_proxy",
+    "graph_dimension_proxy",
+    "information_attractor_dimension",
+    "inverse_covariance_participation_dimension",
+    "local_pca_dimension_proxy",
+    "mixture_local_pca_proxy",
+    "neighbor_intrinsic_dimension",
+    "persistent_h0_scaling_proxy",
+    "process_model_graph_dimension_proxy",
+    "spectral_dimension_proxy",
+    "visibility_graph_dimension_proxy"
+  ],
+  "v591_tlog_membership_populated_rows": 580
+}

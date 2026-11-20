@@ -1,0 +1,43 @@
+
+[CIBLE-FIXE-GLOBALE] politique=fixed mode=single cible_demandee='target' -> cible_globale='target' methode=user_requested_target controles=['control_index'] | Cette cible unique sera reutilisee pour TOUS les controles. Le run ou controle == cible sera signale explicitement comme diagonal, avec cible_demandee ET cible_utilisee.
+
+================================================================================
+UNIVERSAL_LOG v6.0.0-L7aL7b-CohenD — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\synthetic_pilot_v1\input\case_01.csv | Domain: generic | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=control_index cible_demandee='target' -> cible_utilisee='target' | Cible fixee conservee pour ce run.
+Target Observable: target | Control Parameter: control_index
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.520
+  règle: uniform
+  n_candidates: 35, resolution: 2.941%
+  w_size: 23, min_grp: 7
+[T0-VALEUR-BRUTE] controle=control_index T0=48.80% -> valeur brute controle=37 (median_near=37.0, min_near=35.0, max_near=39.0, spread=4.0, ambiguous=False)
+✓ Paysage des 29 estimateurs sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\synthetic_pilot_v1\runs\case_01\landscape_complexity.png
+Paysage ameliore v4.4.3 sauvegarde: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\synthetic_pilot_v1\runs\case_01\landscape_complexity_improved.png
+Clustermap separation v4.4.3: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\synthetic_pilot_v1\runs\case_01\separation_clustermap.png
+Tension holographique sauvegardee: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\synthetic_pilot_v1\runs\case_01\holographic_tension.png
+✓ Courbe de scan sauvegardée: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\synthetic_pilot_v1\runs\case_01\threshold_scan.png
+✓ Graphique diagnostic bruit sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\synthetic_pilot_v1\runs\case_01\noise_diagnostic.png
+<PROJECT_ROOT>\pancréas\Archive complète PDAC v6 — ZIP\universal_v6.0.0_cohen.py:4929: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap.set_bad(color='#d9d9d9')
+✓ Graphique des flux sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\synthetic_pilot_v1\runs\case_01\raw_fluxes.png
+✓ Heatmaps de séparation par classe sauvegardées: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\synthetic_pilot_v1\runs\case_01\separation_heatmap.png
+✓ Graphique post-seuil sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\synthetic_pilot_v1\runs\case_01\post_threshold.png
+✓ Graphique de corrélation CSD vs f' sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\synthetic_pilot_v1\runs\case_01\csd_correlation.png
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=up regime=up disagreement=False | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: FRAGILE (mode=light) | Au moins un check light FAIL. Ne pas utiliser L7a seul pour decider. Passer en --l7b-full pour confirmer.
+    L7b check stabilite_horizon: PASS | Stabilite horizon >= 0.80 sur L1/L3/L5.
+    L7b check stabilite_walkforward: FAIL | T0 tres variable en walk-forward (t0_std > 20).
+    L7b check coherence_interne: PASS | Cible et regime alignes ou non-informes, pas de desaccord directionnel.
+✓ 5-Threshold T_0: 48.80%
+✓ T_0 en valeur brute du controle 'control_index': 37.0 (median_near=37.0, min_near=35.0, max_near=39.0, spread=4.0, ambiguous=False)
+✓ Cible: demandee=target | utilisee=target | politique=fixed | repli_diagonal=False
+✓ Tool Footprint: Pure Continuous Physical Phenomenon (No tool artifact)
+✓ Holographic Tension: criticality|control=control_index (Delta=1.30, D_vec=[1.35693, 2.372461, 2.656157, 2.415947])
+✓ Results exported to: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\synthetic_pilot_v1\runs\case_01

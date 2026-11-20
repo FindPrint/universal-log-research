@@ -1,0 +1,16 @@
+{
+  "core_runs_planned": 85,
+  "core_runs_completed": 85,
+  "core_runs_ok": 85,
+  "matched_runs_planned": 20,
+  "matched_runs_completed": 20,
+  "matched_runs_ok": 20,
+  "matched_estimator_rows": 580,
+  "matched_rows_with_both_versions": 580,
+  "matched_rows_within_1e-6": 580,
+  "matched_max_abs_difference": 0.0,
+  "generated_trajectory_count": 180,
+  "generated_measurement_rows": 1440000,
+  "source_v59_sha256": "4f80f6a7d0809e802cbc9ec30c0bed552c1c8a95eb58687fd78e4ffd8e808260",
+  "derived_runtime_sha256": "a9ed57bb35bac39b9a0be3fd2fc2db027e1257690fe2ba64acd169d044eb2e97"
+}

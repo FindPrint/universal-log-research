@@ -1,0 +1,83 @@
+{
+  "status": "completed",
+  "created_utc": "2026-11-15T12:58:37.688090+00:00",
+  "purpose": "Bounded end-to-end CLI smoke run of current v5.9.2 CohenDOnly candidate on archived Ising CSV; software integration only.",
+  "source": "UNIVERSAL_LOG_v5.9.2.py",
+  "source_sha256": "90a44bf5b52a08e74f0bfa7a3461c43a0fbbb63164afb29303e2fb989db8ee24",
+  "executed_source_copy": "runner_executed_exact.py",
+  "executed_source_copy_sha256": "90a44bf5b52a08e74f0bfa7a3461c43a0fbbb63164afb29303e2fb989db8ee24",
+  "input": "audit_release\\2026-11-14_l7b_full_reduced\\data\\L16_T2.269185_chain0_first80.csv",
+  "input_sha256": "b76a2ef1ddc50855baa8959714744e0764304bbe9408c6842c5596530ad9c216",
+  "rows": 80,
+  "target": "Abs_magnetization",
+  "control": "MC_Update",
+  "mode": "fast",
+  "l7b": "off",
+  "seed": 20261108,
+  "command": [
+    ".venv/Scripts/python.exe",
+    "UNIVERSAL_LOG_v5.9.2.py",
+    "--input",
+    "audit_release\\2026-11-14_l7b_full_reduced\\data\\L16_T2.269185_chain0_first80.csv",
+    "--target",
+    "Abs_magnetization",
+    "--control",
+    "MC_Update",
+    "--control-mode",
+    "single",
+    "--target-mode",
+    "fixed",
+    "--mode",
+    "fast",
+    "--no-l7b",
+    "--no-telemetry",
+    "--no-dashboard",
+    "--max-workers",
+    "1",
+    "--seed",
+    "20261108",
+    "--output",
+    "audit_release\\2026-11-15_l7b_seedtrace_fix\\v5_9_2_cohen_fast_smoke"
+  ],
+  "cli_exit_code": 0,
+  "console_completion_marker": "Pipeline Master completed successfully!",
+  "version_reported": "v5.9.2-L7aL7b-DKind-AuditFix-SeedTrace-CohenDOnly",
+  "T0_percent_internal": 89.2907951105244,
+  "L7a_summary": {
+    "status": "ok",
+    "consensus_direction": "up",
+    "global_confidence": 0.5,
+    "l1_horizon_stability": 0.4166666666666667
+  },
+  "L7b_summary": {
+    "status": "disabled",
+    "mode": "off",
+    "verdict": "INDETERMINE"
+  },
+  "holographic_dominant_regime": "criticality",
+  "tlog": {
+    "present": true,
+    "formula": "(d-4)*log(n) ; n=n_samples ; jamais un z-score",
+    "scope": "indicateur de coupe sur dimensions geometriques, pas l'hologramme entier",
+    "n_samples": 80.0,
+    "eligible_estimator_count": 20,
+    "d_kind_group_count": 13,
+    "class_median_count": 4,
+    "class_medians": {
+      "saturation": -11.045252,
+      "criticality": -7.163377,
+      "divergence": -5.175493,
+      "null_reference": -6.619337
+    }
+  },
+  "cohen_class_diagnostic_present": true,
+  "cliff_class_diagnostic_present": false,
+  "master_results_sha256": "1fb1a8a143c93ce609266b564d61dc5a6cfc1ca69018b548426a8f7e9a69a4da",
+  "console_log_sha256": "a0db836c7464c9cc3d65e9c77cb829860e9b8b63424a46d039f65c5fe6138bc5",
+  "notices": [
+    "RuntimeWarning: precision loss in a nearly constant moment calculation.",
+    "noise_step4_spectral reported zero/insufficient spectrum.",
+    "PendingDeprecationWarning for matplotlib set_bad."
+  ],
+  "interpretation_limit": "80-row smoke run only. T0 is pipeline-internal, L7b was disabled, and no claim about physical Tc or universality is made."
+}

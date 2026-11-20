@@ -1,0 +1,394 @@
+{
+  "schema_version": "1.0",
+  "d_kind_registry": {
+    "graph_dimension_proxy": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension du graphe",
+      "definition_fr": "Approximation de la rugosité de la courbe (temps, signal); biais et échelles dépendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil générique de ce type."
+    },
+    "process_model_graph_dimension_proxy": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension de graphe issue d'un modèle de processus",
+      "definition_fr": "Transformation d'un exposant en 2-H ou 2-alpha; valable seulement pour la classe de processus et les hypothèses qui justifient cette relation.",
+      "reference_4_guidance_fr": "Le seuil 4 ne convient pas à une dimension de graphe scalaire usuelle; ne pas appliquer la transformation à une série arbitraire."
+    },
+    "visibility_graph_dimension_proxy": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension par graphe de visibilité",
+      "definition_fr": "Dimension déduite de la distribution des degrés avec la relation spécifique codée pour une famille de signaux.",
+      "reference_4_guidance_fr": "Relation et seuil à valider pour le domaine; ne pas assimiler à une dimension intrinsèque d'attracteur."
+    },
+    "correlation_attractor_dimension": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension de corrélation d'attracteur (D2)",
+      "definition_fr": "Pente d'échelle de corrélation dans un nuage reconstruit; dépend de l'embedding, du bruit et de la plage d'échelle.",
+      "reference_4_guidance_fr": "4 est une hypothèse testable seulement avec une reconstruction suffisamment dimensionnée, une plage d'échelle stable et une référence connue."
+    },
+    "information_attractor_dimension": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension d'information d'attracteur (D1)",
+      "definition_fr": "Pente de l'entropie de Shannon selon la résolution du nuage reconstruit; peut différer de D2 pour une mesure non uniforme.",
+      "reference_4_guidance_fr": "4 est une hypothèse testable sur D1 seulement si la définition de D1 et le protocole de reconstruction sont fixés."
+    },
+    "neighbor_intrinsic_dimension": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension intrinsèque par voisinage",
+      "definition_fr": "Dimension locale déduite des distances ou des angles de voisins proches dans le nuage reconstruit.",
+      "reference_4_guidance_fr": "4 est une hypothèse testable si le voisinage, l'échantillonnage et l'embedding sont adéquats et calibrés."
+    },
+    "covariance_participation_dimension": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension effective par participation de covariance",
+      "definition_fr": "Nombre effectif de directions selon les valeurs propres de covariance; ce n'est ni le rang exact ni nécessairement la dimension de variété.",
+      "reference_4_guidance_fr": "Comparer à 4 teste une dimension effective de variance; cette lecture n'est pas interchangeable avec la dimension d'attracteur."
+    },
+    "inverse_covariance_participation_dimension": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension effective par participation de covariance inverse",
+      "definition_fr": "Nombre effectif de directions après pondération par les valeurs propres inverses, avec le seuil numérique défini dans le code.",
+      "reference_4_guidance_fr": "Comparer à 4 teste une dimension effective propre à cette métrique; elle n'est pas interchangeable avec une dimension d'attracteur."
+    },
+    "local_pca_dimension_proxy": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension locale par PCA",
+      "definition_fr": "Nombre de composantes expliquant 95 % de la variance dans des voisinages locaux.",
+      "reference_4_guidance_fr": "Le seuil dépend du voisinage et de la coupure à 95 %; calibration spécifique requise."
+    },
+    "graph_cluster_scaling_proxy": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy d'échelle par grappes de graphe",
+      "definition_fr": "Pente de croissance de grappes sur le graphe de voisins proches construit par le code.",
+      "reference_4_guidance_fr": "4 n'a de sens qu'après calibration sur des géométries connues et une plage d'échelle stable."
+    },
+    "persistent_h0_scaling_proxy": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy d'échelle par fusion H0",
+      "definition_fr": "Pente du nombre de composantes connexes fusionnées; cette implémentation H0 est un proxy de dimension.",
+      "reference_4_guidance_fr": "4 n'a de sens qu'après calibration de cette pente sur des formes et tailles connues."
+    },
+    "mixture_local_pca_proxy": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Maximum de dimensions PCA locales par groupes",
+      "definition_fr": "Le code partitionne le nuage puis garde le nombre maximal de composantes PCA à 95 %.",
+      "reference_4_guidance_fr": "Cette valeur dépend du nombre de groupes et du seuil PCA; elle n'est pas une dimension intrinsèque générique."
+    },
+    "spectral_dimension_proxy": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension spectrale transformée",
+      "definition_fr": "Valeur (5-beta)/2 calculée à partir de la pente spectrale dans cette version.",
+      "reference_4_guidance_fr": "Le seuil 4 doit être justifié par le modèle spectral du domaine."
+    },
+    "ordinal_entropy": {
+      "quantity_type": "signature",
+      "label_fr": "Entropie ordinale",
+      "definition_fr": "Diversité normalisée des motifs d'ordre; ce n'est pas une dimension.",
+      "reference_4_guidance_fr": "Non applicable : signature hors de la couche géométrique T_log."
+    },
+    "sample_entropy": {
+      "quantity_type": "signature",
+      "label_fr": "Entropie échantillonnale",
+      "definition_fr": "Fréquence relative de motifs proches qui restent proches quand leur longueur augmente.",
+      "reference_4_guidance_fr": "Non applicable : signature hors de la couche géométrique T_log."
+    },
+    "algorithmic_complexity": {
+      "quantity_type": "signature",
+      "label_fr": "Complexité algorithmique proxy",
+      "definition_fr": "Nombre de productions LZ76 sur une suite discrétisée; dépend de la longueur et de la discrétisation.",
+      "reference_4_guidance_fr": "Non applicable : le compte LZ n'est pas une dimension à comparer à 4."
+    },
+    "spectral_exponent": {
+      "quantity_type": "signature",
+      "label_fr": "Exposant spectral",
+      "definition_fr": "Pente beta du spectre de puissance; la dimension spectrale transformée est une autre sortie.",
+      "reference_4_guidance_fr": "Non applicable directement : beta n'est pas d."
+    },
+    "hurst_exponent": {
+      "quantity_type": "signature",
+      "label_fr": "Exposant de Hurst",
+      "definition_fr": "Exposant de persistance estimé par R/S; 2-H est une transformation sous hypothèses de processus.",
+      "reference_4_guidance_fr": "Non applicable directement : H n'est pas d."
+    },
+    "lyapunov_exponent": {
+      "quantity_type": "signature",
+      "label_fr": "Exposant de Lyapunov",
+      "definition_fr": "Taux de séparation de trajectoires voisines; dépend de l'unité de temps et de la reconstruction.",
+      "reference_4_guidance_fr": "Non applicable : taux dynamique, pas dimension."
+    },
+    "multifractal_width": {
+      "quantity_type": "signature",
+      "label_fr": "Largeur multifractale",
+      "definition_fr": "Largeur estimée du spectre des singularités.",
+      "reference_4_guidance_fr": "Non applicable directement : largeur de spectre, pas dimension unique d."
+    },
+    "multifractal_peak": {
+      "quantity_type": "signature",
+      "label_fr": "Maximum multifractal",
+      "definition_fr": "Maximum de f(alpha) estimé par le calcul multifractal du code.",
+      "reference_4_guidance_fr": "Non applicable directement : résumé de spectre, pas dimension T_log définie."
+    }
+  },
+  "estimators": {
+    "Higuchi": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension du graphe",
+      "definition_fr": "Approximation de la rugosité de la courbe (temps, signal); biais et échelles dépendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil générique de ce type.",
+      "d_kind": "graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "DFA": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension de graphe issue d'un modèle de processus",
+      "definition_fr": "Transformation d'un exposant en 2-H ou 2-alpha; valable seulement pour la classe de processus et les hypothèses qui justifient cette relation.",
+      "reference_4_guidance_fr": "Le seuil 4 ne convient pas à une dimension de graphe scalaire usuelle; ne pas appliquer la transformation à une série arbitraire.",
+      "d_kind": "process_model_graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "Katz": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension du graphe",
+      "definition_fr": "Approximation de la rugosité de la courbe (temps, signal); biais et échelles dépendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil générique de ce type.",
+      "d_kind": "graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "Hurst": {
+      "quantity_type": "signature",
+      "label_fr": "Exposant de Hurst",
+      "definition_fr": "Exposant de persistance estimé par R/S; 2-H est une transformation sous hypothèses de processus.",
+      "reference_4_guidance_fr": "Non applicable directement : H n'est pas d.",
+      "d_kind": "hurst_exponent",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "SampleEn": {
+      "quantity_type": "signature",
+      "label_fr": "Entropie échantillonnale",
+      "definition_fr": "Fréquence relative de motifs proches qui restent proches quand leur longueur augmente.",
+      "reference_4_guidance_fr": "Non applicable : signature hors de la couche géométrique T_log.",
+      "d_kind": "sample_entropy",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "Petrosian": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension du graphe",
+      "definition_fr": "Approximation de la rugosité de la courbe (temps, signal); biais et échelles dépendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil générique de ce type.",
+      "d_kind": "graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "Sevcik": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension du graphe",
+      "definition_fr": "Approximation de la rugosité de la courbe (temps, signal); biais et échelles dépendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil générique de ce type.",
+      "d_kind": "graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "BoxCounting": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension du graphe",
+      "definition_fr": "Approximation de la rugosité de la courbe (temps, signal); biais et échelles dépendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil générique de ce type.",
+      "d_kind": "graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "PermutationEntropy": {
+      "quantity_type": "signature",
+      "label_fr": "Entropie ordinale",
+      "definition_fr": "Diversité normalisée des motifs d'ordre; ce n'est pas une dimension.",
+      "reference_4_guidance_fr": "Non applicable : signature hors de la couche géométrique T_log.",
+      "d_kind": "ordinal_entropy",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "CorrelationD2": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension de corrélation d'attracteur (D2)",
+      "definition_fr": "Pente d'échelle de corrélation dans un nuage reconstruit; dépend de l'embedding, du bruit et de la plage d'échelle.",
+      "reference_4_guidance_fr": "4 est une hypothèse testable seulement avec une reconstruction suffisamment dimensionnée, une plage d'échelle stable et une référence connue.",
+      "d_kind": "correlation_attractor_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "GrassbergerProcaccia": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension de corrélation d'attracteur (D2)",
+      "definition_fr": "Pente d'échelle de corrélation dans un nuage reconstruit; dépend de l'embedding, du bruit et de la plage d'échelle.",
+      "reference_4_guidance_fr": "4 est une hypothèse testable seulement avec une reconstruction suffisamment dimensionnée, une plage d'échelle stable et une référence connue.",
+      "d_kind": "correlation_attractor_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "InformationD1": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension d'information d'attracteur (D1)",
+      "definition_fr": "Pente de l'entropie de Shannon selon la résolution du nuage reconstruit; peut différer de D2 pour une mesure non uniforme.",
+      "reference_4_guidance_fr": "4 est une hypothèse testable sur D1 seulement si la définition de D1 et le protocole de reconstruction sont fixés.",
+      "d_kind": "information_attractor_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "VisibilityGraph": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension par graphe de visibilité",
+      "definition_fr": "Dimension déduite de la distribution des degrés avec la relation spécifique codée pour une famille de signaux.",
+      "reference_4_guidance_fr": "Relation et seuil à valider pour le domaine; ne pas assimiler à une dimension intrinsèque d'attracteur.",
+      "d_kind": "visibility_graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "TwoNN": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension intrinsèque par voisinage",
+      "definition_fr": "Dimension locale déduite des distances ou des angles de voisins proches dans le nuage reconstruit.",
+      "reference_4_guidance_fr": "4 est une hypothèse testable si le voisinage, l'échantillonnage et l'embedding sont adéquats et calibrés.",
+      "d_kind": "neighbor_intrinsic_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "DANCo": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension intrinsèque par voisinage",
+      "definition_fr": "Dimension locale déduite des distances ou des angles de voisins proches dans le nuage reconstruit.",
+      "reference_4_guidance_fr": "4 est une hypothèse testable si le voisinage, l'échantillonnage et l'embedding sont adéquats et calibrés.",
+      "d_kind": "neighbor_intrinsic_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "Fisher": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension effective par participation de covariance inverse",
+      "definition_fr": "Nombre effectif de directions après pondération par les valeurs propres inverses, avec le seuil numérique défini dans le code.",
+      "reference_4_guidance_fr": "Comparer à 4 teste une dimension effective propre à cette métrique; elle n'est pas interchangeable avec une dimension d'attracteur.",
+      "d_kind": "inverse_covariance_participation_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "LevinaBickel": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension intrinsèque par voisinage",
+      "definition_fr": "Dimension locale déduite des distances ou des angles de voisins proches dans le nuage reconstruit.",
+      "reference_4_guidance_fr": "4 est une hypothèse testable si le voisinage, l'échantillonnage et l'embedding sont adéquats et calibrés.",
+      "d_kind": "neighbor_intrinsic_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "PCAIntrinsic": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension effective par participation de covariance",
+      "definition_fr": "Nombre effectif de directions selon les valeurs propres de covariance; ce n'est ni le rang exact ni nécessairement la dimension de variété.",
+      "reference_4_guidance_fr": "Comparer à 4 teste une dimension effective de variance; cette lecture n'est pas interchangeable avec la dimension d'attracteur.",
+      "d_kind": "covariance_participation_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "LocalPCA": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension locale par PCA",
+      "definition_fr": "Nombre de composantes expliquant 95 % de la variance dans des voisinages locaux.",
+      "reference_4_guidance_fr": "Le seuil dépend du voisinage et de la coupure à 95 %; calibration spécifique requise.",
+      "d_kind": "local_pca_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "GraphDimension": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy d'échelle par grappes de graphe",
+      "definition_fr": "Pente de croissance de grappes sur le graphe de voisins proches construit par le code.",
+      "reference_4_guidance_fr": "4 n'a de sens qu'après calibration sur des géométries connues et une plage d'échelle stable.",
+      "d_kind": "graph_cluster_scaling_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "PersistentHomology": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy d'échelle par fusion H0",
+      "definition_fr": "Pente du nombre de composantes connexes fusionnées; cette implémentation H0 est un proxy de dimension.",
+      "reference_4_guidance_fr": "4 n'a de sens qu'après calibration de cette pente sur des formes et tailles connues.",
+      "d_kind": "persistent_h0_scaling_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "MFA": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Maximum de dimensions PCA locales par groupes",
+      "definition_fr": "Le code partitionne le nuage puis garde le nombre maximal de composantes PCA à 95 %.",
+      "reference_4_guidance_fr": "Cette valeur dépend du nombre de groupes et du seuil PCA; elle n'est pas une dimension intrinsèque générique.",
+      "d_kind": "mixture_local_pca_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "KolmogorovLZ": {
+      "quantity_type": "signature",
+      "label_fr": "Complexité algorithmique proxy",
+      "definition_fr": "Nombre de productions LZ76 sur une suite discrétisée; dépend de la longueur et de la discrétisation.",
+      "reference_4_guidance_fr": "Non applicable : le compte LZ n'est pas une dimension à comparer à 4.",
+      "d_kind": "algorithmic_complexity",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "SpectralBeta": {
+      "quantity_type": "signature",
+      "label_fr": "Exposant spectral",
+      "definition_fr": "Pente beta du spectre de puissance; la dimension spectrale transformée est une autre sortie.",
+      "reference_4_guidance_fr": "Non applicable directement : beta n'est pas d.",
+      "d_kind": "spectral_exponent",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "SpectralDimension": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension spectrale transformée",
+      "definition_fr": "Valeur (5-beta)/2 calculée à partir de la pente spectrale dans cette version.",
+      "reference_4_guidance_fr": "Le seuil 4 doit être justifié par le modèle spectral du domaine.",
+      "d_kind": "spectral_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "Hurst2mH": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension de graphe issue d'un modèle de processus",
+      "definition_fr": "Transformation d'un exposant en 2-H ou 2-alpha; valable seulement pour la classe de processus et les hypothèses qui justifient cette relation.",
+      "reference_4_guidance_fr": "Le seuil 4 ne convient pas à une dimension de graphe scalaire usuelle; ne pas appliquer la transformation à une série arbitraire.",
+      "d_kind": "process_model_graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "Lyapunov": {
+      "quantity_type": "signature",
+      "label_fr": "Exposant de Lyapunov",
+      "definition_fr": "Taux de séparation de trajectoires voisines; dépend de l'unité de temps et de la reconstruction.",
+      "reference_4_guidance_fr": "Non applicable : taux dynamique, pas dimension.",
+      "d_kind": "lyapunov_exponent",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "MultifractalDeltaAlpha": {
+      "quantity_type": "signature",
+      "label_fr": "Largeur multifractale",
+      "definition_fr": "Largeur estimée du spectre des singularités.",
+      "reference_4_guidance_fr": "Non applicable directement : largeur de spectre, pas dimension unique d.",
+      "d_kind": "multifractal_width",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "SingularityFmax": {
+      "quantity_type": "signature",
+      "label_fr": "Maximum multifractal",
+      "definition_fr": "Maximum de f(alpha) estimé par le calcul multifractal du code.",
+      "reference_4_guidance_fr": "Non applicable directement : résumé de spectre, pas dimension T_log définie.",
+      "d_kind": "multifractal_peak",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    }
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "comparison": "same input, same target, same seed/options; control-mode all subrun vs independent control-mode single run",
+  "all_dir": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_balanced15\\PC69_target_basal\\Treatment_code",
+  "single_dir": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_single15\\PC69_target_basal\\Treatment_code",
+  "files": [
+    {
+      "file": "csd_consensus.csv",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 3114,
+      "bytes_single": 3114,
+      "sha256_all": "151e3d584782eee5eba88f261642ed5dbab02aa947632ced49d1dc3ed609f35a",
+      "sha256_single": "151e3d584782eee5eba88f261642ed5dbab02aa947632ced49d1dc3ed609f35a",
+      "byte_identical": true
+    },
+    {
+      "file": "csd_consensus.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 86753,
+      "bytes_single": 86753,
+      "sha256_all": "3e24953954759cfb9b0a50114b89ae34d2013548509ef20479a6a0252af9b863",
+      "sha256_single": "3e24953954759cfb9b0a50114b89ae34d2013548509ef20479a6a0252af9b863",
+      "byte_identical": true
+    },
+    {
+      "file": "csd_correlation.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 40244,
+      "bytes_single": 40244,
+      "sha256_all": "566982a6afc0e86bebf1b3ad5cd730711461d3a0f165b0495bff9ff21e64bdf2",
+      "sha256_single": "566982a6afc0e86bebf1b3ad5cd730711461d3a0f165b0495bff9ff21e64bdf2",
+      "byte_identical": true
+    },
+    {
+      "file": "csd_fractal_estimators.csv",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 70039,
+      "bytes_single": 70039,
+      "sha256_all": "7226d6cf337151fa8753b8e5149afb20bb0c564fc8d0974631dc0e60f8518223",
+      "sha256_single": "7226d6cf337151fa8753b8e5149afb20bb0c564fc8d0974631dc0e60f8518223",
+      "byte_identical": true
+    },
+    {
+      "file": "csd_fractal_estimators.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 1279131,
+      "bytes_single": 1279131,
+      "sha256_all": "4512c7c975f033675ac0fecc4c9453f274146b72fad5672efa640bd0f85aa703",
+      "sha256_single": "4512c7c975f033675ac0fecc4c9453f274146b72fad5672efa640bd0f85aa703",
+      "byte_identical": true
+    },
+    {
+      "file": "df_feat.csv",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 943602,
+      "bytes_single": 943602,
+      "sha256_all": "4a5acde4b6604dcd9afa7fd5f31b497e89834452e6c18fc5997036b68863d3bf",
+      "sha256_single": "4a5acde4b6604dcd9afa7fd5f31b497e89834452e6c18fc5997036b68863d3bf",
+      "byte_identical": true
+    },
+    {
+      "file": "estimator_four_tests.csv",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 606692,
+      "bytes_single": 606692,
+      "sha256_all": "55a656f4900aa2f9b6f9ad2a543ad572f896e85358f8ad4a510983fc5034c5bf",
+      "sha256_single": "55a656f4900aa2f9b6f9ad2a543ad572f896e85358f8ad4a510983fc5034c5bf",
+      "byte_identical": true
+    },
+    {
+      "file": "estimator_four_tests.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 4229669,
+      "bytes_single": 4229669,
+      "sha256_all": "023bf195c44722abacb084059824d372017c134874609a0c5fb850cb787361cf",
+      "sha256_single": "023bf195c44722abacb084059824d372017c134874609a0c5fb850cb787361cf",
+      "byte_identical": true
+    },
+    {
+      "file": "estimator_measurement_types.csv",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 9751,
+      "bytes_single": 9751,
+      "sha256_all": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4",
+      "sha256_single": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4",
+      "byte_identical": true
+    },
+    {
+      "file": "estimator_measurement_types.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 23504,
+      "bytes_single": 23504,
+      "sha256_all": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6",
+      "sha256_single": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6",
+      "byte_identical": true
+    },
+    {
+      "file": "estimator_redundancy.csv",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 13189,
+      "bytes_single": 13189,
+      "sha256_all": "0bbd95ac33c750e1133f9449c1ae0c113d0246384e9feb99500c4e3919037614",
+      "sha256_single": "0bbd95ac33c750e1133f9449c1ae0c113d0246384e9feb99500c4e3919037614",
+      "byte_identical": true
+    },
+    {
+      "file": "estimator_redundancy.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 179454,
+      "bytes_single": 179454,
+      "sha256_all": "2e598517d5cacccaa091a548a9a529d47598faf8f0c4026b02fcde529065be2c",
+      "sha256_single": "2e598517d5cacccaa091a548a9a529d47598faf8f0c4026b02fcde529065be2c",
+      "byte_identical": true
+    },
+    {
+      "file": "fluxes_raw.csv",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 23495,
+      "bytes_single": 23495,
+      "sha256_all": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e",
+      "sha256_single": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e",
+      "byte_identical": true
+    },
+    {
+      "file": "logs.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 87,
+      "bytes_single": 87,
+      "sha256_all": "f5cf035566fe9b43168677ea0b1d426ae460c89c53cf98c8885eaf754d41298c",
+      "sha256_single": "f5cf035566fe9b43168677ea0b1d426ae460c89c53cf98c8885eaf754d41298c",
+      "byte_identical": true
+    },
+    {
+      "file": "master_results.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 12545564,
+      "bytes_single": 12545581,
+      "sha256_all": "0c14a4174502900564ad62750fc6c9ec6e2511d5acda70ef3bc23114096aaeef",
+      "sha256_single": "39e629b65ad7e1d52a7582d8a8e77094957777bde7f608536a3891b0a3f0d76a",
+      "byte_identical": false,
+      "json_structurally_equal": false,
+      "first_differences": [
+        {
+          "path": "$.holographic_tension_state.tension_gap_diagnostics.triangulation.is_default",
+          "all_value": true,
+          "single_value": false
+        },
+        {
+          "path": "$.metadata.control_selection.mode",
+          "all_value": "all",
+          "single_value": "single"
+        },
+        {
+          "path": "$.metadata.control_selection.requested_single",
+          "all_type": "NoneType",
+          "single_type": "str"
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.horizons.1.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.horizons.10.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.horizons.11.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.horizons.12.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.horizons.2.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.horizons.3.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.horizons.4.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.horizons.5.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.horizons.6.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.horizons.7.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.horizons.8.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.horizons.9.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.multi_horizon.per_horizon.1.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.multi_horizon.per_horizon.10.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.multi_horizon.per_horizon.11.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.multi_horizon.per_horizon.12.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.multi_horizon.per_horizon.2.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.multi_horizon.per_horizon.3.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.multi_horizon.per_horizon.4.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.multi_horizon.per_horizon.5.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.multi_horizon.per_horizon.6.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        },
+        {
+          "path": "$.prediction_levels.L1_L2_target.multi_horizon.per_horizon.7.validation.mape",
+          "all_value": NaN,
+          "single_value": NaN
+        }
+      ]
+    },
+    {
+      "file": "noise_diagnostic.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 6081475,
+      "bytes_single": 6081475,
+      "sha256_all": "a51142c6852f7ae1738679381ddb7747f42993a7a2dd45bf7f52cd788b3f7d20",
+      "sha256_single": "a51142c6852f7ae1738679381ddb7747f42993a7a2dd45bf7f52cd788b3f7d20",
+      "byte_identical": true
+    },
+    {
+      "file": "predictive_mc_complexity.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 66132,
+      "bytes_single": 66132,
+      "sha256_all": "d2eea768c5cf46a015175e7b84d9b58b0aafc8366308ae910da053e3f41e3288",
+      "sha256_single": "d2eea768c5cf46a015175e7b84d9b58b0aafc8366308ae910da053e3f41e3288",
+      "byte_identical": true
+    },
+    {
+      "file": "reading_synthesis.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 70934,
+      "bytes_single": 70935,
+      "sha256_all": "a9fe0c8b0f50cdf649698ee3baaeda7750f9d799f8fc1197ffebd1255fbefe01",
+      "sha256_single": "658a2fd45f3d4894ac43f3695f4ff8fa45470eed0f50673ecd4253e2146cae9c",
+      "byte_identical": false,
+      "json_structurally_equal": false,
+      "first_differences": [
+        {
+          "path": "$.tension_gap_diagnostics.triangulation.is_default",
+          "all_value": true,
+          "single_value": false
+        }
+      ]
+    },
+    {
+      "file": "scan_curve.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 3436,
+      "bytes_single": 3436,
+      "sha256_all": "214805d48fc893fc1f848228b4c621c2b6710f58f572fb22669bf1516dab3cc1",
+      "sha256_single": "214805d48fc893fc1f848228b4c621c2b6710f58f572fb22669bf1516dab3cc1",
+      "byte_identical": true
+    },
+    {
+      "file": "scores.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 191146,
+      "bytes_single": 191146,
+      "sha256_all": "9b01cb33cafa7a7be3d23a1887dcca0d0795bc6d02df23980bb40e4496fb18c9",
+      "sha256_single": "9b01cb33cafa7a7be3d23a1887dcca0d0795bc6d02df23980bb40e4496fb18c9",
+      "byte_identical": true
+    },
+    {
+      "file": "transition_analysis.json",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 414712,
+      "bytes_single": 414712,
+      "sha256_all": "363d7e9dcf83968d741de951bf9f3190abec0cf426fd0cb483813bdcf0650daa",
+      "sha256_single": "363d7e9dcf83968d741de951bf9f3190abec0cf426fd0cb483813bdcf0650daa",
+      "byte_identical": true
+    },
+    {
+      "file": "universal_master_report.txt",
+      "present_in_all": true,
+      "present_in_single": true,
+      "bytes_all": 10967,
+      "bytes_single": 10971,
+      "sha256_all": "fdf89d309cbce76f5e48ecbe7258efaae0d7145313ac91aabae7470427b39b17",
+      "sha256_single": "25c00b8970547cea6e3c04402c7348e8d99c6596468938c0608bd1d5406341a1",
+      "byte_identical": false
+    }
+  ],
+  "identical_payload_count": 19,
+  "payload_count": 22
+}

@@ -1,0 +1,31 @@
+PILOT_STATUS: below N>=50 confirmatory floor; exploratory only
+TARGET: Gemcitabine
+CONTROL: APR-246
+STARTED_UTC: 2026-11-20T21:40:29.327554+00:00
+COMMAND: ["<PROJECT_ROOT>\\.venv\\Scripts\\python.exe", "<PROJECT_ROOT>\\UNIVERSAL_LOG_v5.9.4.py", "--input", "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-20\\candidate_NatureComm2025_PAAD\\NatureComm2025_46PDO_63Drug_AUC.csv", "--target", "Gemcitabine", "--control", "APR-246", "--control-mode", "single", "--target-mode", "fixed", "--domain", "pdac", "--mode", "fast", "--l7b-light", "--no-plots", "--seed", "42", "--max-workers", "1", "--output", "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-20\\candidate_NatureComm2025_PAAD\\NatureComm2025_Gemcitabine_all_controls_PDACPilot\\by_control\\APR-246\\pipeline_output"]
+
+
+[CIBLE-FIXE-GLOBALE] politique=fixed mode=single cible_demandee='Gemcitabine' -> cible_globale='Gemcitabine' methode=user_requested_target controles=['APR-246'] | Cette cible unique sera reutilisee pour TOUS les controles. Le run ou controle == cible sera signale explicitement comme diagonal, avec cible_demandee ET cible_utilisee.
+
+================================================================================
+UNIVERSAL_LOG v5.9.4-L7aL7b-DKind-AuditFix-SeedTrace-CohenDOnly-NoPlots — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\pancréas\ANALYSE_THERAPEUTIQUE_2026-11-20\candidate_NatureComm2025_PAAD\NatureComm2025_46PDO_63Drug_AUC.csv | Domain: pdac | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=APR-246 cible_demandee='Gemcitabine' -> cible_utilisee='Gemcitabine' | Cible fixee conservee pour ce run.
+Target Observable: Gemcitabine | Control Parameter: APR-246
+Execution Route: MODE 'FAST'
+Traceback (most recent call last):
+  File "<PROJECT_ROOT>\UNIVERSAL_LOG_v5.9.4.py", line 13413, in <module>
+    main()
+  File "<PROJECT_ROOT>\UNIVERSAL_LOG_v5.9.4.py", line 13218, in main
+    run_full_unified_pipeline(
+  File "<PROJECT_ROOT>\UNIVERSAL_LOG_v5.9.4.py", line 12816, in run_full_unified_pipeline
+    return _run_full_unified_pipeline_single(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_ROOT>\UNIVERSAL_LOG_v5.9.4.py", line 12065, in _run_full_unified_pipeline_single
+    results, df_feat, fluxes, fluxes_ui = run_pipeline(
+                                          ^^^^^^^^^^^^^
+  File "<PROJECT_ROOT>\UNIVERSAL_LOG_v5.9.4.py", line 7003, in run_pipeline
+    raise ValueError(
+ValueError: Série trop courte : 46 points valides. Au moins 50 sont requis avec la configuration actuelle.

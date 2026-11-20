@@ -1,0 +1,22 @@
+test_full_check_runner_passes_seed_into_summary (__main__.SeedTraceabilityTests.test_full_check_runner_passes_seed_into_summary) ... ok
+test_known_seed_is_preserved (__main__.SeedTraceabilityTests.test_known_seed_is_preserved) ... ok
+test_omitted_seed_remains_optional (__main__.SeedTraceabilityTests.test_omitted_seed_remains_optional) ... ok
+test_seed_check_exports_the_alternate_seed (__main__.SeedTraceabilityTests.test_seed_check_exports_the_alternate_seed) ... ok
+test_zero_seed_is_not_dropped (__main__.SeedTraceabilityTests.test_zero_seed_is_not_dropped) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.028s
+
+OK
+test_all_derived_versions_import_and_configure_only_cohen_d (__main__.CohenOnlyTests.test_all_derived_versions_import_and_configure_only_cohen_d) ... ok
+test_archived_comparison_records_non_equivalent_threshold_case (__main__.CohenOnlyTests.test_archived_comparison_records_non_equivalent_threshold_case) ... ok
+test_cohen_d_uses_degrees_of_freedom_weighted_pooled_sd (__main__.CohenOnlyTests.test_cohen_d_uses_degrees_of_freedom_weighted_pooled_sd) ... ok
+test_explicit_cliff_request_is_rejected (__main__.CohenOnlyTests.test_explicit_cliff_request_is_rejected) ... ok
+test_latest_preserves_seed_trace_fix (__main__.CohenOnlyTests.test_latest_preserves_seed_trace_fix) ... ok
+test_latest_scan_matches_cohen_branch_on_archived_inputs (__main__.CohenOnlyTests.test_latest_scan_matches_cohen_branch_on_archived_inputs) ... ok
+test_no_active_cliff_calls_and_output_key_renamed (__main__.CohenOnlyTests.test_no_active_cliff_calls_and_output_key_renamed) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 7.383s
+
+OK

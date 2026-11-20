@@ -1,0 +1,720 @@
+{
+  "protocol": {
+    "path": "<PROJECT_ROOT>\\TLOG_TRANSITION_VALIDATION_PROTOCOL.md",
+    "version": "1.0",
+    "frozen_before_calculation": true,
+    "physical_input": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\finite_size_results.csv",
+    "physical_marker": "finite-size chi_abs peak and its block-bootstrap 95% interval",
+    "input_flux_for_d_kind": "E_per_spin only",
+    "windows": [
+      31,
+      41
+    ],
+    "d_critical_band": [
+      3.5,
+      4.5
+    ],
+    "localization_padding": 0.01,
+    "null_sizes": [
+      16,
+      64
+    ],
+    "null_replicates_per_size": 10,
+    "null_sampled_centers_per_window": 9,
+    "null_seed": 20261108
+  },
+  "pipeline_version": "v5.8.0-MultiHorizon-L3L5L6-SemanticSplitL7",
+  "estimators": [
+    "Higuchi",
+    "DFA",
+    "Katz",
+    "Hurst",
+    "SampleEn",
+    "Petrosian",
+    "Sevcik",
+    "BoxCounting",
+    "PermutationEntropy",
+    "CorrelationD2",
+    "GrassbergerProcaccia",
+    "InformationD1",
+    "VisibilityGraph",
+    "TwoNN",
+    "DANCo",
+    "Fisher",
+    "LevinaBickel",
+    "PCAIntrinsic",
+    "LocalPCA",
+    "GraphDimension",
+    "PersistentHomology",
+    "MFA",
+    "KolmogorovLZ",
+    "SpectralBeta",
+    "SpectralDimension",
+    "Hurst2mH",
+    "Lyapunov",
+    "MultifractalDeltaAlpha",
+    "SingularityFmax"
+  ],
+  "d_kind_members": {
+    "graph_dimension_proxy": [
+      "Higuchi",
+      "Katz",
+      "Petrosian",
+      "Sevcik",
+      "BoxCounting"
+    ],
+    "process_model_graph_dimension_proxy": [
+      "DFA",
+      "Hurst2mH"
+    ],
+    "correlation_attractor_dimension": [
+      "CorrelationD2",
+      "GrassbergerProcaccia"
+    ],
+    "information_attractor_dimension": [
+      "InformationD1"
+    ],
+    "visibility_graph_dimension_proxy": [
+      "VisibilityGraph"
+    ],
+    "neighbor_intrinsic_dimension": [
+      "TwoNN",
+      "DANCo",
+      "LevinaBickel"
+    ],
+    "inverse_covariance_participation_dimension": [
+      "Fisher"
+    ],
+    "covariance_participation_dimension": [
+      "PCAIntrinsic"
+    ],
+    "local_pca_dimension_proxy": [
+      "LocalPCA"
+    ],
+    "graph_cluster_scaling_proxy": [
+      "GraphDimension"
+    ],
+    "persistent_h0_scaling_proxy": [
+      "PersistentHomology"
+    ],
+    "mixture_local_pca_proxy": [
+      "MFA"
+    ],
+    "spectral_dimension_proxy": [
+      "SpectralDimension"
+    ]
+  },
+  "physical_finite_size_sizes": [
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "l8_excluded_from_localization": "susceptibility-peak confidence interval is right-censored by the temperature grid",
+  "null_control_summary": {
+    "n_null_scans": 40,
+    "familywise_false_alarm_rate": 0.25,
+    "familywise_false_alarm_rate_by_window": {
+      "31": 0.25,
+      "41": 0.25
+    },
+    "false_alarm_rate_by_kind_and_window": {
+      "correlation_attractor_dimension": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "covariance_participation_dimension": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "graph_cluster_scaling_proxy": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "graph_dimension_proxy": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "information_attractor_dimension": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "inverse_covariance_participation_dimension": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "local_pca_dimension_proxy": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "mixture_local_pca_proxy": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "neighbor_intrinsic_dimension": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "persistent_h0_scaling_proxy": {
+        "31": 0.25,
+        "41": 0.25
+      },
+      "process_model_graph_dimension_proxy": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "spectral_dimension_proxy": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "visibility_graph_dimension_proxy": {
+        "31": 0.0,
+        "41": 0.0
+      }
+    }
+  },
+  "pilot_criteria": {
+    "minimum_coverage": 0.8,
+    "minimum_localized_sizes_per_window": 4,
+    "maximum_familywise_false_alarm_rate": 0.1,
+    "maximum_median_window_location_drift": 0.05,
+    "candidate_d_kinds": []
+  },
+  "per_d_kind": [
+    {
+      "d_kind": "correlation_attractor_dimension",
+      "eligible_sizes": [
+        12,
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "window_results": {
+        "31": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        },
+        "41": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        }
+      },
+      "median_prediction_drift_between_windows": null,
+      "false_alarm_rate_by_kind": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "familywise_false_alarm_rate": 0.25,
+      "meets_localization_rule": false,
+      "meets_familywise_false_alarm_rule": false,
+      "meets_window_stability_rule": false,
+      "pilot_candidate": false,
+      "pilot_status": "does_not_meet_predeclared_pilot_criteria"
+    },
+    {
+      "d_kind": "covariance_participation_dimension",
+      "eligible_sizes": [
+        12,
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "window_results": {
+        "31": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        },
+        "41": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        }
+      },
+      "median_prediction_drift_between_windows": null,
+      "false_alarm_rate_by_kind": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "familywise_false_alarm_rate": 0.25,
+      "meets_localization_rule": false,
+      "meets_familywise_false_alarm_rule": false,
+      "meets_window_stability_rule": false,
+      "pilot_candidate": false,
+      "pilot_status": "does_not_meet_predeclared_pilot_criteria"
+    },
+    {
+      "d_kind": "graph_cluster_scaling_proxy",
+      "eligible_sizes": [
+        12,
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "window_results": {
+        "31": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        },
+        "41": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        }
+      },
+      "median_prediction_drift_between_windows": null,
+      "false_alarm_rate_by_kind": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "familywise_false_alarm_rate": 0.25,
+      "meets_localization_rule": false,
+      "meets_familywise_false_alarm_rule": false,
+      "meets_window_stability_rule": false,
+      "pilot_candidate": false,
+      "pilot_status": "does_not_meet_predeclared_pilot_criteria"
+    },
+    {
+      "d_kind": "graph_dimension_proxy",
+      "eligible_sizes": [
+        12,
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "window_results": {
+        "31": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        },
+        "41": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        }
+      },
+      "median_prediction_drift_between_windows": null,
+      "false_alarm_rate_by_kind": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "familywise_false_alarm_rate": 0.25,
+      "meets_localization_rule": false,
+      "meets_familywise_false_alarm_rule": false,
+      "meets_window_stability_rule": false,
+      "pilot_candidate": false,
+      "pilot_status": "does_not_meet_predeclared_pilot_criteria"
+    },
+    {
+      "d_kind": "information_attractor_dimension",
+      "eligible_sizes": [
+        12,
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "window_results": {
+        "31": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        },
+        "41": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        }
+      },
+      "median_prediction_drift_between_windows": null,
+      "false_alarm_rate_by_kind": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "familywise_false_alarm_rate": 0.25,
+      "meets_localization_rule": false,
+      "meets_familywise_false_alarm_rule": false,
+      "meets_window_stability_rule": false,
+      "pilot_candidate": false,
+      "pilot_status": "does_not_meet_predeclared_pilot_criteria"
+    },
+    {
+      "d_kind": "inverse_covariance_participation_dimension",
+      "eligible_sizes": [
+        12,
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "window_results": {
+        "31": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        },
+        "41": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        }
+      },
+      "median_prediction_drift_between_windows": null,
+      "false_alarm_rate_by_kind": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "familywise_false_alarm_rate": 0.25,
+      "meets_localization_rule": false,
+      "meets_familywise_false_alarm_rule": false,
+      "meets_window_stability_rule": false,
+      "pilot_candidate": false,
+      "pilot_status": "does_not_meet_predeclared_pilot_criteria"
+    },
+    {
+      "d_kind": "local_pca_dimension_proxy",
+      "eligible_sizes": [
+        12,
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "window_results": {
+        "31": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        },
+        "41": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        }
+      },
+      "median_prediction_drift_between_windows": null,
+      "false_alarm_rate_by_kind": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "familywise_false_alarm_rate": 0.25,
+      "meets_localization_rule": false,
+      "meets_familywise_false_alarm_rule": false,
+      "meets_window_stability_rule": false,
+      "pilot_candidate": false,
+      "pilot_status": "does_not_meet_predeclared_pilot_criteria"
+    },
+    {
+      "d_kind": "mixture_local_pca_proxy",
+      "eligible_sizes": [
+        12,
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "window_results": {
+        "31": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        },
+        "41": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        }
+      },
+      "median_prediction_drift_between_windows": null,
+      "false_alarm_rate_by_kind": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "familywise_false_alarm_rate": 0.25,
+      "meets_localization_rule": false,
+      "meets_familywise_false_alarm_rule": false,
+      "meets_window_stability_rule": false,
+      "pilot_candidate": false,
+      "pilot_status": "does_not_meet_predeclared_pilot_criteria"
+    },
+    {
+      "d_kind": "neighbor_intrinsic_dimension",
+      "eligible_sizes": [
+        12,
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "window_results": {
+        "31": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        },
+        "41": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        }
+      },
+      "median_prediction_drift_between_windows": null,
+      "false_alarm_rate_by_kind": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "familywise_false_alarm_rate": 0.25,
+      "meets_localization_rule": false,
+      "meets_familywise_false_alarm_rule": false,
+      "meets_window_stability_rule": false,
+      "pilot_candidate": false,
+      "pilot_status": "does_not_meet_predeclared_pilot_criteria"
+    },
+    {
+      "d_kind": "persistent_h0_scaling_proxy",
+      "eligible_sizes": [
+        12,
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "window_results": {
+        "31": {
+          "sizes_with_candidate": 6,
+          "sizes_localized": 1,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": 0.0950000000000002,
+          "median_abs_error_Tc_exact": 0.1908146857869779
+        },
+        "41": {
+          "sizes_with_candidate": 5,
+          "sizes_localized": 1,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": 0.06000000000000005,
+          "median_abs_error_Tc_exact": 0.06918531421302188
+        }
+      },
+      "median_prediction_drift_between_windows": 0.16000000000000014,
+      "false_alarm_rate_by_kind": {
+        "31": 0.25,
+        "41": 0.25
+      },
+      "familywise_false_alarm_rate": 0.25,
+      "meets_localization_rule": false,
+      "meets_familywise_false_alarm_rule": false,
+      "meets_window_stability_rule": false,
+      "pilot_candidate": false,
+      "pilot_status": "does_not_meet_predeclared_pilot_criteria"
+    },
+    {
+      "d_kind": "process_model_graph_dimension_proxy",
+      "eligible_sizes": [
+        12,
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "window_results": {
+        "31": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        },
+        "41": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        }
+      },
+      "median_prediction_drift_between_windows": null,
+      "false_alarm_rate_by_kind": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "familywise_false_alarm_rate": 0.25,
+      "meets_localization_rule": false,
+      "meets_familywise_false_alarm_rule": false,
+      "meets_window_stability_rule": false,
+      "pilot_candidate": false,
+      "pilot_status": "does_not_meet_predeclared_pilot_criteria"
+    },
+    {
+      "d_kind": "spectral_dimension_proxy",
+      "eligible_sizes": [
+        12,
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "window_results": {
+        "31": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": false,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        },
+        "41": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": true,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        }
+      },
+      "median_prediction_drift_between_windows": null,
+      "false_alarm_rate_by_kind": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "familywise_false_alarm_rate": 0.25,
+      "meets_localization_rule": false,
+      "meets_familywise_false_alarm_rule": false,
+      "meets_window_stability_rule": false,
+      "pilot_candidate": false,
+      "pilot_status": "does_not_meet_predeclared_pilot_criteria"
+    },
+    {
+      "d_kind": "visibility_graph_dimension_proxy",
+      "eligible_sizes": [
+        12,
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "window_results": {
+        "31": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": false,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        },
+        "41": {
+          "sizes_with_candidate": 0,
+          "sizes_localized": 0,
+          "sizes_eligible": 6,
+          "coverage_ge_80pct_all_sizes": false,
+          "median_abs_error_peak": null,
+          "median_abs_error_Tc_exact": null
+        }
+      },
+      "median_prediction_drift_between_windows": null,
+      "false_alarm_rate_by_kind": {
+        "31": 0.0,
+        "41": 0.0
+      },
+      "familywise_false_alarm_rate": 0.25,
+      "meets_localization_rule": false,
+      "meets_familywise_false_alarm_rule": false,
+      "meets_window_stability_rule": false,
+      "pilot_candidate": false,
+      "pilot_status": "does_not_meet_predeclared_pilot_criteria"
+    }
+  ],
+  "limitations": [
+    "Physical observables are pooled from three chains; d-kind local estimates do not propagate their Monte Carlo uncertainty.",
+    "The signal is a quasi-static equilibrium response versus temperature, not a time trajectory; attractor and dynamic d_kinds may be out of domain.",
+    "The window sizes span 0.30 and 0.40 in temperature and can smooth sharp finite-size features.",
+    "The quadratic null is a pilot control; 40 scans give a coarse false-alarm estimate.",
+    "A candidate profile does not establish universal validity or justify the reference 4 outside its tested d_kind."
+  ],
+  "outputs": {
+    "positive_local_profiles": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\tlog_typed_transition_validation\\positive_local_profiles.csv",
+    "positive_detection_summary": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\tlog_typed_transition_validation\\positive_detection_summary.csv",
+    "smooth_null_detection": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\tlog_typed_transition_validation\\smooth_null_detection.csv"
+  }
+}

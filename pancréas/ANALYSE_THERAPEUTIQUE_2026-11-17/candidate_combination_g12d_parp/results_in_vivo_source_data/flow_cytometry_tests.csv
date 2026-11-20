@@ -1,0 +1,10 @@
+﻿endpoint,contrast,mean_difference_percentage_points,p_exact_two_sided,permutations,q_BH_across_9_flow_comparisons
+CD4_fraction_within_CD3_percent,Combination - Vehicle,43.59333333333334,0.1,20,0.1125
+CD4_fraction_within_CD3_percent,Combination - Olaparib,34.24333333333334,0.1,20,0.1125
+CD4_fraction_within_CD3_percent,Combination - MRTX1133,4.0,0.3,20,0.3
+TNFa_positive_fraction_within_CD8_percent,Combination - Vehicle,16.046666666666663,0.1,20,0.1125
+TNFa_positive_fraction_within_CD8_percent,Combination - Olaparib,16.186666666666664,0.1,20,0.1125
+TNFa_positive_fraction_within_CD8_percent,Combination - MRTX1133,15.756666666666664,0.1,20,0.1125
+PD1_positive_fraction_within_CD8_percent,Combination - Vehicle,-36.39,0.1,20,0.1125
+PD1_positive_fraction_within_CD8_percent,Combination - Olaparib,-23.656666666666666,0.1,20,0.1125
+PD1_positive_fraction_within_CD8_percent,Combination - MRTX1133,-10.79,0.1,20,0.1125

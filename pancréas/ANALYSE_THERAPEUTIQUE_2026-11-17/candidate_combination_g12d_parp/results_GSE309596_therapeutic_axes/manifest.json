@@ -1,0 +1,399 @@
+{
+  "analysis_id": "GSE309596_sample_level_multiflow_therapeutic_scan_v1",
+  "created_utc": "2026-11-17T22:14:48+00:00",
+  "source": "GEO GSE309596; same published preclinical study as candidate MRTX1133+olaparib paper",
+  "unit_of_analysis": "submitted GEO specimen; 12 samples, 3 per arm; animal ID not explicitly provided in GEO metadata",
+  "cell_counts": {
+    "sum": 115664,
+    "published_target": 115664,
+    "matches_paper": true,
+    "by_sample": {
+      "GSM9270219": 11216,
+      "GSM9270220": 4992,
+      "GSM9270221": 10809,
+      "GSM9270222": 10415,
+      "GSM9270223": 10771,
+      "GSM9270224": 10817,
+      "GSM9270225": 11244,
+      "GSM9270226": 1281,
+      "GSM9270227": 13625,
+      "GSM9270228": 9569,
+      "GSM9270229": 10358,
+      "GSM9270230": 10567
+    }
+  },
+  "design": {
+    "arms": [
+      "vehicle",
+      "MRTX1133",
+      "Olaparib",
+      "Combination"
+    ],
+    "replicates_per_arm": 3,
+    "controls": [
+      "MRTX1133 marginal",
+      "Olaparib marginal",
+      "MRTX1133 × Olaparib interaction",
+      "Combination vs Vehicle"
+    ],
+    "time_axis": "single endpoint; no T0/TLog"
+  },
+  "estimators": {
+    "cell_summaries": [
+      "mean log1p(CPM per 10,000)",
+      "marker-positive fraction >=1 marker",
+      "marker-positive fraction >=2 markers",
+      "within-marker-positive scores at both thresholds with at least 10 cells"
+    ],
+    "effect": "Cohen d for two-group contrasts; factorial interaction contrast standardized by within-arm residual SD",
+    "test": "exact balanced-label permutation over all 369600 assignments of 12 specimens to four groups of 3; conditional on exchangeability",
+    "multiple_testing": "Benjamini-Hochberg over all planned control x flow x metric tests"
+  },
+  "panels": {
+    "tumor_epithelial_identity": [
+      "Epcam",
+      "Krt8",
+      "Krt18",
+      "Krt19",
+      "Krt7",
+      "Sox9",
+      "Muc1"
+    ],
+    "T_cell_identity": [
+      "Trac",
+      "Cd3d",
+      "Cd3e",
+      "Cd247",
+      "Lck"
+    ],
+    "cytotoxic_T_NK": [
+      "Nkg7",
+      "Prf1",
+      "Gzmb",
+      "Ccl5",
+      "Cd8a",
+      "Cd8b1",
+      "Ifng"
+    ],
+    "Treg_identity": [
+      "Foxp3",
+      "Il2ra",
+      "Ctla4",
+      "Ikzf2"
+    ],
+    "T_exhaustion": [
+      "Pdcd1",
+      "Lag3",
+      "Tigit",
+      "Havcr2",
+      "Tox"
+    ],
+    "monocyte_macrophage_identity": [
+      "Lyz2",
+      "Csf1r",
+      "Adgre1",
+      "C1qa",
+      "C1qb",
+      "C1qc",
+      "Fcgr1"
+    ],
+    "myeloid_suppressive_state": [
+      "Arg1",
+      "Mrc1",
+      "Cd163",
+      "Spp1",
+      "Tgfb1",
+      "Il10",
+      "Lgals3"
+    ],
+    "neutrophil_identity": [
+      "Ly6g",
+      "S100a8",
+      "S100a9",
+      "Mpo",
+      "Elane",
+      "Cxcr2"
+    ],
+    "antigen_presentation_MHCII": [
+      "H2-Aa",
+      "H2-Ab1",
+      "H2-Eb1",
+      "Cd74",
+      "Ciita"
+    ],
+    "B_cell_identity": [
+      "Cd79a",
+      "Cd79b",
+      "Ms4a1",
+      "Cd19",
+      "Cd37"
+    ],
+    "CAF_stromal_identity": [
+      "Col1a1",
+      "Col1a2",
+      "Col3a1",
+      "Dcn",
+      "Pdgfra",
+      "Fap",
+      "Acta2"
+    ],
+    "endothelial_identity": [
+      "Pecam1",
+      "Vwf",
+      "Kdr",
+      "Emcn",
+      "Cdh5"
+    ],
+    "HR_DNA_repair": [
+      "Brca1",
+      "Brca2",
+      "Rad51",
+      "Rpa1",
+      "Rpa2",
+      "Palb2",
+      "Atm",
+      "Chek1",
+      "Rad51c",
+      "Mre11a"
+    ],
+    "DNA_damage_apoptosis": [
+      "Bbc3",
+      "Pmaip1",
+      "Bax",
+      "Bcl2l11",
+      "Casp3",
+      "Casp8",
+      "Fas",
+      "Gadd45a",
+      "Cdkn1a"
+    ],
+    "type_I_interferon": [
+      "Isg15",
+      "Ifit1",
+      "Ifit2",
+      "Ifit3",
+      "Ifi27l2a",
+      "Mx1",
+      "Oas1a",
+      "Stat1"
+    ],
+    "IFN_gamma_response": [
+      "Ifng",
+      "Stat1",
+      "Irf1",
+      "Cxcl9",
+      "Cxcl10",
+      "Gbp2",
+      "Icam1"
+    ],
+    "MAPK_ERK_output": [
+      "Dusp4",
+      "Dusp6",
+      "Etv4",
+      "Etv5",
+      "Spry2",
+      "Fos",
+      "Egr1",
+      "Dusp1"
+    ],
+    "cell_cycle_proliferation": [
+      "Mki67",
+      "Top2a",
+      "Pcna",
+      "Mcm2",
+      "Mcm5",
+      "Ccnb1",
+      "Cdk1",
+      "Birc5"
+    ],
+    "EMT_TGF_beta": [
+      "Vim",
+      "Zeb1",
+      "Snai1",
+      "Twist1",
+      "Fn1",
+      "Tgfb1",
+      "Serpine1",
+      "Cdh2"
+    ],
+    "immune_checkpoint": [
+      "Cd274",
+      "Pdcd1",
+      "Ctla4",
+      "Tigit",
+      "Lag3",
+      "Havcr2",
+      "Tox"
+    ],
+    "T_cell_inflamed": [
+      "Cd3d",
+      "Cd3e",
+      "Cd8a",
+      "Nkg7",
+      "Prf1",
+      "Gzmb",
+      "Ifng",
+      "Cxcl9",
+      "Cxcl10"
+    ]
+  },
+  "strata": {
+    "within_tumor_epithelial_marker_positive": "tumor_epithelial_identity",
+    "within_T_cell_marker_positive": "T_cell_identity",
+    "within_monocyte_macrophage_marker_positive": "monocyte_macrophage_identity"
+  },
+  "stratified_flows": {
+    "within_tumor_epithelial_marker_positive": [
+      "HR_DNA_repair",
+      "DNA_damage_apoptosis",
+      "MAPK_ERK_output",
+      "cell_cycle_proliferation",
+      "EMT_TGF_beta"
+    ],
+    "within_T_cell_marker_positive": [
+      "cytotoxic_T_NK",
+      "Treg_identity",
+      "T_exhaustion",
+      "IFN_gamma_response",
+      "immune_checkpoint"
+    ],
+    "within_monocyte_macrophage_marker_positive": [
+      "myeloid_suppressive_state",
+      "antigen_presentation_MHCII",
+      "type_I_interferon",
+      "IFN_gamma_response"
+    ]
+  },
+  "identity_threshold_sensitivity": [
+    1,
+    2
+  ],
+  "cell_matrix_dimensions": {
+    "GSM9270219": {
+      "n_features": 33696,
+      "n_cells": 11216,
+      "nnz": 22076239,
+      "features_sha256": "5021389c4158404d78196f29da31a5fcc01d5f631ce49b6caf21ebf85449f17f",
+      "barcodes_sha256": "9c411d516a11ee73c5a183cf2f865007a4f4b56411f2d552e04ea21bb1ca9e5f"
+    },
+    "GSM9270220": {
+      "n_features": 33696,
+      "n_cells": 4992,
+      "nnz": 5179600,
+      "features_sha256": "8d44deababaf715773c393ed112b94def09c30f599c30d258a32d65fa41d9755",
+      "barcodes_sha256": "2748910bdff3438ff7bf4189c8c4becfb8ed53d937f362d63956b08a9ea31f07"
+    },
+    "GSM9270221": {
+      "n_features": 33696,
+      "n_cells": 10809,
+      "nnz": 29967344,
+      "features_sha256": "97208688b971bb76eea29d50903d02476c1f1fcc26dadffdcd743ce84a399b03",
+      "barcodes_sha256": "588231f7bacaef7a2eb6cfab174a93ff4429068fd638f5f583a0e5cd22b670d9"
+    },
+    "GSM9270222": {
+      "n_features": 33696,
+      "n_cells": 10415,
+      "nnz": 27844477,
+      "features_sha256": "5ffef64b473f064be7c1f505f438ea759930287be050da9d53dcfa3cbaa71454",
+      "barcodes_sha256": "fc5e50228f9f113cc38a92e24a3ab5b291835061c866e61a4379bd0b63de7846"
+    },
+    "GSM9270223": {
+      "n_features": 33696,
+      "n_cells": 10771,
+      "nnz": 28685487,
+      "features_sha256": "a3303e5ff05f2e8388a321a2da6feffa46f95abf7df386b8da7f9af620bc5115",
+      "barcodes_sha256": "b297c620595d78645691cfcac673412bba35dfadd8bc316e75875ad09c545d61"
+    },
+    "GSM9270224": {
+      "n_features": 33696,
+      "n_cells": 10817,
+      "nnz": 34565570,
+      "features_sha256": "711029b6d502e5c5324ee7b764075052cccfc50f76341231b3750494e00cf9c1",
+      "barcodes_sha256": "b4b9d786d65683c2993d6c39d4030510bcc66af51f6779911c578bdce05cfeb5"
+    },
+    "GSM9270225": {
+      "n_features": 33696,
+      "n_cells": 11244,
+      "nnz": 30307872,
+      "features_sha256": "d36f5892333c91048118a4fd3486520b720e2dd801f30d207232de5d73c67b94",
+      "barcodes_sha256": "408e390149f437114eaffda1be7eb8e07728fd866fd935c3bb44fc0bd8ea0d78"
+    },
+    "GSM9270226": {
+      "n_features": 33696,
+      "n_cells": 1281,
+      "nnz": 2710930,
+      "features_sha256": "0242fdb2edad7f5e000271f50b2edffd48102e3c180fd92170f753b3b3e11cf5",
+      "barcodes_sha256": "4415dfc8fb6245a598486550f7ae26f29917642c3ca06e51cff4b9b1bfcc02ba"
+    },
+    "GSM9270227": {
+      "n_features": 33696,
+      "n_cells": 13625,
+      "nnz": 31667990,
+      "features_sha256": "9447ca89cfbfabccc908a27db32c61452f8e2b207ff692e57ffc20246a1d031e",
+      "barcodes_sha256": "66d4c019a2e32166c2eb7dd24df54fdcc23e8f060493d5cf8db9ae1b8089b256"
+    },
+    "GSM9270228": {
+      "n_features": 33696,
+      "n_cells": 9569,
+      "nnz": 27546718,
+      "features_sha256": "0dd81db03bb668683f7fa3c1ab8cc0ba98e649d2d2214374212a8da3e022fffc",
+      "barcodes_sha256": "3f0951a11ac08c5e927ea555bea71ce5aaece99698860fa086ff7ca2e8d6b0ef"
+    },
+    "GSM9270229": {
+      "n_features": 33696,
+      "n_cells": 10358,
+      "nnz": 29387871,
+      "features_sha256": "c47c21de0d4d77380c74fbd11e8d7a912483b21b8cf8c01270bb7b15d0efd69a",
+      "barcodes_sha256": "f5af2e2a72e961ea19b8aa9add5e6b331efc3ac0269dd31fa9ea861b093a002f"
+    },
+    "GSM9270230": {
+      "n_features": 33696,
+      "n_cells": 10567,
+      "nnz": 29922518,
+      "features_sha256": "e8b72ff8afb6e67e7e3260605b4fc16026f7166ebebb3d8a606060b15850d7ff",
+      "barcodes_sha256": "133fbb00e1c94f153fe6f19e5ab36a9ea5c414ed5709f96cde4aadc7d65e8377"
+    }
+  },
+  "input_metadata": {
+    "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\source\\GSE309596_GEO_full_metadata.txt",
+    "sha256": "f60e8db9ef1c5b1be6d815f4bd02fef6f7fc0da2e7fe707fb879595532636a73"
+  },
+  "download_manifest_sha256": "dfa7e996f07687be50ba68b355ac0fbe6248d3c6afae6b0d91f0c1c4af2e8908",
+  "script_sha256": "2780c52371a7fd4b2c03fc570b17229c8e8e6620216ff5a1fb5e4ddccb799a8b",
+  "software": {
+    "python": "3.11.9",
+    "numpy": "1.26.4",
+    "pandas": "3.0.6"
+  },
+  "scope": "therapeutic hypothesis prioritization only; not a cure, clinical result, independent validation, or full 29-estimator/TLog run",
+  "outputs": {
+    "GSE309596_controls_by_flows.csv": {
+      "bytes": 94880,
+      "sha256": "f584cf1243013a3c2488c6f25599549b55235186a437089d586544e7969edbea"
+    },
+    "GSE309596_interaction_flows.png": {
+      "bytes": 118612,
+      "sha256": "56f8766a7ebb25296d5b1d65d1109bfcebd3c9068111935c503803e9b2d1fdec"
+    },
+    "GSE309596_interaction_ranked_flows.csv": {
+      "bytes": 5939,
+      "sha256": "435954a990a03eaf2fa02ac9556adfdfcb05fe9918d87116b449e8c4e3be4a68"
+    },
+    "GSE309596_qc_by_specimen.csv": {
+      "bytes": 2555,
+      "sha256": "2310e9aafd8e1cbc6782a1b88ce5dc989270cdfd160edd117ff16483678df94a"
+    },
+    "GSE309596_sample_level_flows.csv": {
+      "bytes": 169136,
+      "sha256": "fb0856323613a12f5d2a560f0a243111a6105323f5cbdaf20af200ff5fb855cc"
+    },
+    "GSE309596_sample_metadata_reconciled.csv": {
+      "bytes": 1953,
+      "sha256": "c6bf3e2ab9733ac15d98c216ed94c03b2935152fb2a6db52b2a17bf85723c3b5"
+    },
+    "REPORT_GSE309596_therapeutic_axes.md": {
+      "bytes": 4529,
+      "sha256": "3c909fc35eacab275af48a592655003cbf549f17988945fbd97ddd6d7908310b"
+    }
+  }
+}

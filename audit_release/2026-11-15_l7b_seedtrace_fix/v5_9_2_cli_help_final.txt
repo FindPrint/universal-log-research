@@ -1,0 +1,88 @@
+usage: UNIVERSAL_LOG_v5.9.2.py [-h] [--input INPUT] [--target TARGET]
+                               [--control CONTROL] [--controls CONTROLS]
+                               [--control-mode {single,multi,all}]
+                               [--target-mode {fixed,per_control}]
+                               [--generate-example {ising,lorenz,kuramoto,logistic,all}]
+                               [--generate-example-ising]
+                               [--example-ising-output EXAMPLE_ISING_OUTPUT]
+                               [--example-ising-L EXAMPLE_ISING_L]
+                               [--example-output-dir EXAMPLE_OUTPUT_DIR]
+                               [--harmonic-validation]
+                               [--no-harmonic-validation] [--numba-heavy]
+                               [--no-adaptive-walk-forward]
+                               [--no-regime-weights] [--no-telemetry]
+                               [--no-dashboard] [--domain DOMAIN]
+                               [--mode {full,analyze,predict,fast,robust,stable}]
+                               [--horizon HORIZON] [--horizons HORIZONS]
+                               [--output OUTPUT]
+                               [--triangulation TRIANGULATION] [--seed SEED]
+                               [--l7b] [--l7b-full] [--l7b-light] [--no-l7b]
+                               [--max-workers MAX_WORKERS]
+
+UNIVERSAL_LOG v5.9.2-L7aL7b-DKind-AuditFix-SeedTrace-CohenDOnly
+
+options:
+  -h, --help            show this help message and exit
+  --input INPUT, -i INPUT
+                        Input CSV path
+  --target TARGET, -t TARGET
+                        Target observable
+  --control CONTROL, -c CONTROL
+                        Control column (mode single)
+  --controls CONTROLS   Control columns, comma-separated (mode multi, ex.
+                        'A,B')
+  --control-mode {single,multi,all}
+                        Mode de controle (defaut : CONTROL_MODE en tete,
+                        'single')
+  --target-mode {fixed,per_control}
+                        Politique de cible en multi/all : 'fixed' (defaut
+                        v5.4) ou 'per_control' (legacy).
+  --generate-example {ising,lorenz,kuramoto,logistic,all}
+                        EXEMPLE UNIQUEMENT : genere un CSV de reference et
+                        quitte (hors coeur).
+  --generate-example-ising
+                        Alias de --generate-example ising (compatibilite
+                        v5.4).
+  --example-ising-output EXAMPLE_ISING_OUTPUT
+                        Chemin de sortie pour l'exemple Ising
+  --example-ising-L EXAMPLE_ISING_L
+                        Taille L du reseau pour l'exemple Ising
+  --example-output-dir EXAMPLE_OUTPUT_DIR
+                        Dossier pour --generate-example all / lorenz /
+                        kuramoto / logistic
+  --harmonic-validation
+                        Active la validation harmonique (tous modes)
+  --no-harmonic-validation
+                        Desactive la validation harmonique
+  --numba-heavy         Active Katz/DFA/GP Numba seulement si le controle
+                        d'ecart passe.
+  --no-adaptive-walk-forward
+                        Desactive le walk-forward glissant v5.7.
+  --no-regime-weights   Vote L7 strictement poids de domaine (comportement
+                        v5.6).
+  --no-telemetry        Desactive telemetry.jsonl.
+  --no-dashboard        Desactive dashboard.html.
+  --domain DOMAIN, -d DOMAIN
+                        Scientific or industrial domain
+  --mode {full,analyze,predict,fast,robust,stable}, -m {full,analyze,predict,fast,robust,stable}
+  --horizon HORIZON     Un seul horizon L1 (ex. 7). Si --horizon et --horizons
+                        sont absents, v5.6 teste 1..12.
+  --horizons HORIZONS   Multi-horizons L1/L3/L5/L6 : '1-12' (defaut),
+                        '1,3,6,12', ou '7'. Ecrase --horizon. T0 non concerné.
+  --output OUTPUT, -o OUTPUT
+  --triangulation TRIANGULATION
+                        Trio triangulation : 'default', 'robust',
+                        'noise_robust', 'fast', ou 3 noms separes par des
+                        virgules.
+  --seed SEED
+  --l7b                 L7b-ROBUSTESSE FULL : audit complet graine + fenetre
+                        80 pour cent + melange + log (environ 3 a 4 fois le
+                        cout d’un run). Sans ce flag, L7b-LIGHT sans re-run.
+  --l7b-full            Alias de --l7b (L7b-FULL).
+  --l7b-light           L7b-ROBUSTESSE LIGHT : sans re-run, horizon + walk-
+                        forward + coherence interne (defaut).
+  --no-l7b              Desactive L7b-ROBUSTESSE. L7a-COHERENCE seul, comme
+                        v5.8.0.
+  --max-workers MAX_WORKERS
+                        Plafond workers MC. Defaut : cpu-1 borne par la RAM
+                        (Windows: 1).

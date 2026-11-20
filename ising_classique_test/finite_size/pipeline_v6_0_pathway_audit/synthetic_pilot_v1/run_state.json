@@ -1,0 +1,871 @@
+{
+  "cases": {
+    "case_01": {
+      "case_id": "case_01",
+      "n_rows": 76,
+      "status": "complete",
+      "elapsed_seconds": 243.70103569999992,
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "target_used": "target",
+      "t0_rank_pct": 48.80306286143918,
+      "t0_raw_control_units": {
+        "threshold_pct": 48.80306286143918,
+        "control_value_raw": 37.0,
+        "control_value_raw_interp": 37.0,
+        "control_value_raw_median_near": 37.0,
+        "control_value_raw_min_near": 35.0,
+        "control_value_raw_max_near": 39.0,
+        "control_value_raw_spread_near": 4.0,
+        "n_near": 5,
+        "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+        "ambiguous": false,
+        "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+      },
+      "known_boundary_rank_fraction": null,
+      "absolute_normalized_t0_error": null,
+      "estimator_count": 29,
+      "estimator_status_counts": {
+        "success": 26,
+        "insufficient_data": 3
+      },
+      "estimator_statuses": {
+        "Higuchi": "success",
+        "DFA": "success",
+        "Katz": "success",
+        "Hurst": "success",
+        "SampleEn": "success",
+        "Petrosian": "success",
+        "Sevcik": "success",
+        "BoxCounting": "success",
+        "PermutationEntropy": "success",
+        "CorrelationD2": "success",
+        "GrassbergerProcaccia": "success",
+        "InformationD1": "success",
+        "VisibilityGraph": "success",
+        "TwoNN": "insufficient_data",
+        "DANCo": "success",
+        "Fisher": "success",
+        "LevinaBickel": "insufficient_data",
+        "PCAIntrinsic": "success",
+        "LocalPCA": "success",
+        "GraphDimension": "success",
+        "PersistentHomology": "success",
+        "MFA": "success",
+        "KolmogorovLZ": "success",
+        "SpectralBeta": "success",
+        "SpectralDimension": "success",
+        "Hurst2mH": "success",
+        "Lyapunov": "insufficient_data",
+        "MultifractalDeltaAlpha": "success",
+        "SingularityFmax": "success"
+      },
+      "q_finite_counts": {
+        "Q1_Calme_vs_Chaos": {
+          "finite": 116,
+          "numeric": 116
+        },
+        "Q2_Tension_Seuil": {
+          "finite": 116,
+          "numeric": 116
+        },
+        "Q3_Agressivite": {
+          "finite": 58,
+          "numeric": 58
+        },
+        "Q4_Persistence": {
+          "finite": 116,
+          "numeric": 116
+        },
+        "Q5_Actif_Receptif": {
+          "finite": 116,
+          "numeric": 116
+        },
+        "Q6_Actif_Receptif_Echelle": {
+          "finite": 103,
+          "numeric": 116
+        }
+      },
+      "f1_f2": {
+        "T_-1_F1_pre_inflection": 44.63946290311309,
+        "T_0_Monte_Carlo_Central": 48.80306286143918,
+        "T_+1_F1_post_deceleration": 55.92159934993305,
+        "max_F1_velocity": 0.09003707351311101,
+        "max_F2_curvature": 0.012071671525650043,
+        "status": "ok"
+      },
+      "l7a": {
+        "status": "ok",
+        "direction": "up"
+      },
+      "l7b": {
+        "status": "ok",
+        "verdict": "FRAGILE",
+        "checks": {
+          "stabilite_horizon": {
+            "statut": "PASS",
+            "min_stabilite_horizon": 0.917,
+            "stabilites": {
+              "L1": 0.9166666666666666,
+              "L3": 1.0,
+              "L5": 1.0
+            },
+            "detail": "Stabilite horizon >= 0.80 sur L1/L3/L5."
+          },
+          "stabilite_walkforward": {
+            "statut": "FAIL",
+            "t0_std": 24.728,
+            "detail": "T0 tres variable en walk-forward (t0_std > 20)."
+          },
+          "coherence_interne": {
+            "statut": "PASS",
+            "disagreement": false,
+            "contradiction_penalty": 0.0,
+            "detail": "Cible et regime alignes ou non-informes, pas de desaccord directionnel."
+          },
+          "note_graine_fenetre_melange": "Non testes en mode light. Utiliser --l7b-full pour graine / fenetre / melange / echelle."
+        }
+      },
+      "tlog": {
+        "class_median": {
+          "saturation": -11.446431,
+          "criticality": -7.048439,
+          "divergence": -5.819824,
+          "null_reference": -6.86011
+        },
+        "formula": "(d-4)*log(n) ; n=n_samples ; jamais un z-score",
+        "scope": "indicateur de coupe sur dimensions geometriques, pas l'hologramme entier"
+      },
+      "voie1": {
+        "higuchi": 2.00955,
+        "blind_risk": false
+      },
+      "voie2": {
+        "triangulation": {
+          "trio": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "preset": "default",
+          "is_default": false,
+          "trio_values": {
+            "Higuchi": 2.00955,
+            "InformationD1": 0.864985,
+            "LevinaBickel": null
+          },
+          "trio_sat_estimator": "Higuchi",
+          "trio_crit_estimator": "InformationD1",
+          "trio_div_estimator": "LevinaBickel",
+          "trio_sat_value": 2.00955,
+          "trio_crit_value": 0.864985,
+          "trio_div_value": null,
+          "trio_gap_E": 1.144565,
+          "trio_gap_T_log": 4.956805,
+          "trio_gap_mode": "max-min (trio non equilibre)",
+          "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+          "trio_vs_median_gap_disagreement_gap_gt_3": false,
+          "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+          "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+          "presets": {
+            "default": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "robust": [
+              "DFA",
+              "CorrelationD2",
+              "PCAIntrinsic"
+            ],
+            "noise_robust": [
+              "DFA",
+              "InformationD1",
+              "PCAIntrinsic"
+            ],
+            "fast": [
+              "Higuchi",
+              "InformationD1",
+              "KolmogorovLZ"
+            ],
+            "saturation_focus": [
+              "Higuchi",
+              "DFA",
+              "Katz"
+            ],
+            "divergence_focus": [
+              "LevinaBickel",
+              "PCAIntrinsic",
+              "MFA"
+            ]
+          }
+        },
+        "proof_status": "heuristique, triangulation seulement, pas une preuve. Preuve totale impossible theoriquement. Ce diagnostic rend l'echec attribuable (CSV / pipeline / serie / seuil / coeur), il ne prouve pas le coeur."
+      },
+      "input_sha256": "3dee06a489fb4dc6390de05ee6ed11db850ceed7601a085277dc6c0a2e7d84be",
+      "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_01",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_01.log",
+      "started_utc": "2026-11-15T23:44:56.778292+00:00",
+      "finished_utc": "2026-11-15T23:49:01.068802+00:00"
+    },
+    "case_02": {
+      "case_id": "case_02",
+      "n_rows": 76,
+      "status": "complete",
+      "elapsed_seconds": 160.36377119999815,
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "target_used": "target",
+      "t0_rank_pct": 48.80306286143918,
+      "t0_raw_control_units": {
+        "threshold_pct": 48.80306286143918,
+        "control_value_raw": 37.0,
+        "control_value_raw_interp": 37.0,
+        "control_value_raw_median_near": 37.0,
+        "control_value_raw_min_near": 35.0,
+        "control_value_raw_max_near": 39.0,
+        "control_value_raw_spread_near": 4.0,
+        "n_near": 5,
+        "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+        "ambiguous": false,
+        "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+      },
+      "known_boundary_rank_fraction": null,
+      "absolute_normalized_t0_error": null,
+      "estimator_count": 29,
+      "estimator_status_counts": {
+        "success": 26,
+        "insufficient_data": 3
+      },
+      "estimator_statuses": {
+        "Higuchi": "success",
+        "DFA": "success",
+        "Katz": "success",
+        "Hurst": "success",
+        "SampleEn": "success",
+        "Petrosian": "success",
+        "Sevcik": "success",
+        "BoxCounting": "success",
+        "PermutationEntropy": "success",
+        "CorrelationD2": "success",
+        "GrassbergerProcaccia": "success",
+        "InformationD1": "success",
+        "VisibilityGraph": "success",
+        "TwoNN": "insufficient_data",
+        "DANCo": "success",
+        "Fisher": "success",
+        "LevinaBickel": "insufficient_data",
+        "PCAIntrinsic": "success",
+        "LocalPCA": "success",
+        "GraphDimension": "success",
+        "PersistentHomology": "success",
+        "MFA": "success",
+        "KolmogorovLZ": "success",
+        "SpectralBeta": "success",
+        "SpectralDimension": "success",
+        "Hurst2mH": "success",
+        "Lyapunov": "insufficient_data",
+        "MultifractalDeltaAlpha": "success",
+        "SingularityFmax": "success"
+      },
+      "q_finite_counts": {
+        "Q1_Calme_vs_Chaos": {
+          "finite": 29,
+          "numeric": 29
+        },
+        "Q2_Tension_Seuil": {
+          "finite": 29,
+          "numeric": 29
+        },
+        "Q3_Agressivite": {
+          "finite": 29,
+          "numeric": 29
+        },
+        "Q4_Persistence": {
+          "finite": 29,
+          "numeric": 29
+        },
+        "Q5_Actif_Receptif": {
+          "finite": 29,
+          "numeric": 29
+        },
+        "Q6_Actif_Receptif_Echelle": {
+          "finite": 29,
+          "numeric": 29
+        }
+      },
+      "f1_f2": {
+        "T_-1_F1_pre_inflection": 44.63946290311309,
+        "T_0_Monte_Carlo_Central": 48.80306286143918,
+        "T_+1_F1_post_deceleration": 55.92159934993305,
+        "max_F1_velocity": 0.09003707351311101,
+        "max_F2_curvature": 0.012071671525650043,
+        "status": "ok"
+      },
+      "l7a": {
+        "status": "ok",
+        "direction": "up"
+      },
+      "l7b": {
+        "status": "ok",
+        "verdict": "FRAGILE",
+        "checks": {
+          "stabilite_horizon": {
+            "statut": "PASS",
+            "min_stabilite_horizon": 0.917,
+            "stabilites": {
+              "L1": 0.9166666666666666,
+              "L3": 1.0,
+              "L5": 1.0
+            },
+            "detail": "Stabilite horizon >= 0.80 sur L1/L3/L5."
+          },
+          "stabilite_walkforward": {
+            "statut": "FAIL",
+            "t0_std": 24.728,
+            "detail": "T0 tres variable en walk-forward (t0_std > 20)."
+          },
+          "coherence_interne": {
+            "statut": "PASS",
+            "disagreement": false,
+            "contradiction_penalty": 0.0,
+            "detail": "Cible et regime alignes ou non-informes, pas de desaccord directionnel."
+          },
+          "note_graine_fenetre_melange": "Non testes en mode light. Utiliser --l7b-full pour graine / fenetre / melange / echelle."
+        }
+      },
+      "tlog": {
+        "class_median": {
+          "saturation": -11.758414,
+          "criticality": -6.754035,
+          "divergence": -5.83956,
+          "null_reference": -7.163464
+        },
+        "formula": "(d-4)*log(n) ; n=n_samples ; jamais un z-score",
+        "scope": "indicateur de coupe sur dimensions geometriques, pas l'hologramme entier"
+      },
+      "voie1": {
+        "higuchi": 2.00955,
+        "blind_risk": false
+      },
+      "voie2": {
+        "triangulation": {
+          "trio": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "preset": "default",
+          "is_default": false,
+          "trio_values": {
+            "Higuchi": 2.00955,
+            "InformationD1": 0.960543,
+            "LevinaBickel": null
+          },
+          "trio_sat_estimator": "Higuchi",
+          "trio_crit_estimator": "InformationD1",
+          "trio_div_estimator": "LevinaBickel",
+          "trio_sat_value": 2.00955,
+          "trio_crit_value": 0.960543,
+          "trio_div_value": null,
+          "trio_gap_E": 1.049007,
+          "trio_gap_T_log": 4.542968,
+          "trio_gap_mode": "max-min (trio non equilibre)",
+          "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+          "trio_vs_median_gap_disagreement_gap_gt_3": false,
+          "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+          "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+          "presets": {
+            "default": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "robust": [
+              "DFA",
+              "CorrelationD2",
+              "PCAIntrinsic"
+            ],
+            "noise_robust": [
+              "DFA",
+              "InformationD1",
+              "PCAIntrinsic"
+            ],
+            "fast": [
+              "Higuchi",
+              "InformationD1",
+              "KolmogorovLZ"
+            ],
+            "saturation_focus": [
+              "Higuchi",
+              "DFA",
+              "Katz"
+            ],
+            "divergence_focus": [
+              "LevinaBickel",
+              "PCAIntrinsic",
+              "MFA"
+            ]
+          }
+        },
+        "proof_status": "heuristique, triangulation seulement, pas une preuve. Preuve totale impossible theoriquement. Ce diagnostic rend l'echec attribuable (CSV / pipeline / serie / seuil / coeur), il ne prouve pas le coeur."
+      },
+      "input_sha256": "93974aa6f27f1ec904e6697b16f80d362c6bf29985d1998f8c8cac9eeec1b59f",
+      "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_02",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_02.log",
+      "started_utc": "2026-11-15T23:49:01.100803+00:00",
+      "finished_utc": "2026-11-15T23:51:41.502147+00:00"
+    },
+    "case_03": {
+      "case_id": "case_03",
+      "n_rows": 76,
+      "status": "complete",
+      "elapsed_seconds": 192.89414250000118,
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "target_used": "target",
+      "t0_rank_pct": 77.30650431565178,
+      "t0_raw_control_units": {
+        "threshold_pct": 77.30650431565178,
+        "control_value_raw": 58.0,
+        "control_value_raw_interp": 58.0,
+        "control_value_raw_median_near": 58.0,
+        "control_value_raw_min_near": 56.0,
+        "control_value_raw_max_near": 60.0,
+        "control_value_raw_spread_near": 4.0,
+        "n_near": 5,
+        "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+        "ambiguous": false,
+        "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+      },
+      "known_boundary_rank_fraction": null,
+      "absolute_normalized_t0_error": null,
+      "estimator_count": 29,
+      "estimator_status_counts": {
+        "success": 25,
+        "insufficient_data": 4
+      },
+      "estimator_statuses": {
+        "Higuchi": "success",
+        "DFA": "success",
+        "Katz": "success",
+        "Hurst": "success",
+        "SampleEn": "success",
+        "Petrosian": "success",
+        "Sevcik": "success",
+        "BoxCounting": "success",
+        "PermutationEntropy": "success",
+        "CorrelationD2": "success",
+        "GrassbergerProcaccia": "success",
+        "InformationD1": "success",
+        "VisibilityGraph": "success",
+        "TwoNN": "insufficient_data",
+        "DANCo": "success",
+        "Fisher": "success",
+        "LevinaBickel": "success",
+        "PCAIntrinsic": "success",
+        "LocalPCA": "success",
+        "GraphDimension": "success",
+        "PersistentHomology": "success",
+        "MFA": "success",
+        "KolmogorovLZ": "success",
+        "SpectralBeta": "success",
+        "SpectralDimension": "success",
+        "Hurst2mH": "success",
+        "Lyapunov": "insufficient_data",
+        "MultifractalDeltaAlpha": "insufficient_data",
+        "SingularityFmax": "insufficient_data"
+      },
+      "q_finite_counts": {
+        "Q1_Calme_vs_Chaos": {
+          "finite": 87,
+          "numeric": 87
+        },
+        "Q2_Tension_Seuil": {
+          "finite": 87,
+          "numeric": 87
+        },
+        "Q3_Agressivite": {
+          "finite": 58,
+          "numeric": 58
+        },
+        "Q4_Persistence": {
+          "finite": 87,
+          "numeric": 87
+        },
+        "Q5_Actif_Receptif": {
+          "finite": 87,
+          "numeric": 87
+        },
+        "Q6_Actif_Receptif_Echelle": {
+          "finite": 75,
+          "numeric": 87
+        }
+      },
+      "f1_f2": {
+        "T_-1_F1_pre_inflection": 71.96685827227572,
+        "T_0_Monte_Carlo_Central": 77.30650431565178,
+        "T_+1_F1_post_deceleration": 82.64615035902783,
+        "max_F1_velocity": 0.10881908075326632,
+        "max_F2_curvature": 0.026647110602486077,
+        "status": "ok"
+      },
+      "l7a": {
+        "status": "ok",
+        "direction": "up"
+      },
+      "l7b": {
+        "status": "ok",
+        "verdict": "FRAGILE",
+        "checks": {
+          "stabilite_horizon": {
+            "statut": "PASS",
+            "min_stabilite_horizon": 0.917,
+            "stabilites": {
+              "L1": 0.9166666666666666,
+              "L3": 1.0,
+              "L5": 1.0
+            },
+            "detail": "Stabilite horizon >= 0.80 sur L1/L3/L5."
+          },
+          "stabilite_walkforward": {
+            "statut": "FAIL",
+            "t0_std": 32.047,
+            "detail": "T0 tres variable en walk-forward (t0_std > 20)."
+          },
+          "coherence_interne": {
+            "statut": "PASS",
+            "disagreement": false,
+            "contradiction_penalty": 0.0,
+            "detail": "Cible et regime alignes ou non-informes, pas de desaccord directionnel."
+          },
+          "note_graine_fenetre_melange": "Non testes en mode light. Utiliser --l7b-full pour graine / fenetre / melange / echelle."
+        }
+      },
+      "tlog": {
+        "class_median": {
+          "saturation": -12.164058,
+          "criticality": -6.245333,
+          "divergence": -4.385632,
+          "null_reference": -7.770223
+        },
+        "formula": "(d-4)*log(n) ; n=n_samples ; jamais un z-score",
+        "scope": "indicateur de coupe sur dimensions geometriques, pas l'hologramme entier"
+      },
+      "voie1": {
+        "higuchi": 1.924426,
+        "blind_risk": false
+      },
+      "voie2": {
+        "triangulation": {
+          "trio": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "preset": "default",
+          "is_default": false,
+          "trio_values": {
+            "Higuchi": 1.924426,
+            "InformationD1": 0.694929,
+            "LevinaBickel": 4.941807
+          },
+          "trio_sat_estimator": "Higuchi",
+          "trio_crit_estimator": "InformationD1",
+          "trio_div_estimator": "LevinaBickel",
+          "trio_sat_value": 1.924426,
+          "trio_crit_value": 0.694929,
+          "trio_div_value": 4.941807,
+          "trio_gap_E": 3.017381,
+          "trio_gap_T_log": 13.067474,
+          "trio_gap_mode": "div-sat (trio equilibre)",
+          "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+          "trio_vs_median_gap_disagreement_gap_gt_3": true,
+          "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+          "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+          "presets": {
+            "default": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "robust": [
+              "DFA",
+              "CorrelationD2",
+              "PCAIntrinsic"
+            ],
+            "noise_robust": [
+              "DFA",
+              "InformationD1",
+              "PCAIntrinsic"
+            ],
+            "fast": [
+              "Higuchi",
+              "InformationD1",
+              "KolmogorovLZ"
+            ],
+            "saturation_focus": [
+              "Higuchi",
+              "DFA",
+              "Katz"
+            ],
+            "divergence_focus": [
+              "LevinaBickel",
+              "PCAIntrinsic",
+              "MFA"
+            ]
+          }
+        },
+        "proof_status": "heuristique, triangulation seulement, pas une preuve. Preuve totale impossible theoriquement. Ce diagnostic rend l'echec attribuable (CSV / pipeline / serie / seuil / coeur), il ne prouve pas le coeur."
+      },
+      "input_sha256": "535b656d2eb721a8ad108cd84ddca1025a7decfb2090f5854904c4d04fccc725",
+      "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_03",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_03.log",
+      "started_utc": "2026-11-15T23:51:41.518327+00:00",
+      "finished_utc": "2026-11-15T23:54:54.469695+00:00"
+    },
+    "case_04": {
+      "case_id": "case_04",
+      "n_rows": 76,
+      "status": "complete",
+      "elapsed_seconds": 195.21069050000006,
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "target_used": "target",
+      "t0_rank_pct": 90.65561942409191,
+      "t0_raw_control_units": {
+        "threshold_pct": 90.65561942409191,
+        "control_value_raw": 68.0,
+        "control_value_raw_interp": 68.0,
+        "control_value_raw_median_near": 68.0,
+        "control_value_raw_min_near": 66.0,
+        "control_value_raw_max_near": 70.0,
+        "control_value_raw_spread_near": 4.0,
+        "n_near": 5,
+        "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+        "ambiguous": false,
+        "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+      },
+      "known_boundary_rank_fraction": null,
+      "absolute_normalized_t0_error": null,
+      "estimator_count": 29,
+      "estimator_status_counts": {
+        "success": 25,
+        "insufficient_data": 4
+      },
+      "estimator_statuses": {
+        "Higuchi": "success",
+        "DFA": "success",
+        "Katz": "success",
+        "Hurst": "success",
+        "SampleEn": "success",
+        "Petrosian": "success",
+        "Sevcik": "success",
+        "BoxCounting": "success",
+        "PermutationEntropy": "success",
+        "CorrelationD2": "success",
+        "GrassbergerProcaccia": "success",
+        "InformationD1": "success",
+        "VisibilityGraph": "success",
+        "TwoNN": "insufficient_data",
+        "DANCo": "success",
+        "Fisher": "success",
+        "LevinaBickel": "success",
+        "PCAIntrinsic": "success",
+        "LocalPCA": "success",
+        "GraphDimension": "success",
+        "PersistentHomology": "success",
+        "MFA": "success",
+        "KolmogorovLZ": "success",
+        "SpectralBeta": "success",
+        "SpectralDimension": "success",
+        "Hurst2mH": "success",
+        "Lyapunov": "insufficient_data",
+        "MultifractalDeltaAlpha": "insufficient_data",
+        "SingularityFmax": "insufficient_data"
+      },
+      "q_finite_counts": {
+        "Q1_Calme_vs_Chaos": {
+          "finite": 87,
+          "numeric": 87
+        },
+        "Q2_Tension_Seuil": {
+          "finite": 87,
+          "numeric": 87
+        },
+        "Q3_Agressivite": {
+          "finite": 58,
+          "numeric": 58
+        },
+        "Q4_Persistence": {
+          "finite": 87,
+          "numeric": 87
+        },
+        "Q5_Actif_Receptif": {
+          "finite": 87,
+          "numeric": 87
+        },
+        "Q6_Actif_Receptif_Echelle": {
+          "finite": 75,
+          "numeric": 87
+        }
+      },
+      "f1_f2": {
+        "T_-1_F1_pre_inflection": 11.710189519076167,
+        "T_0_Monte_Carlo_Central": 90.65561942409191,
+        "T_+1_F1_post_deceleration": 93.65561942409191,
+        "max_F1_velocity": 0.021295519298258347,
+        "max_F2_curvature": 0.004961265625978588,
+        "status": "ok"
+      },
+      "l7a": {
+        "status": "ok",
+        "direction": "up"
+      },
+      "l7b": {
+        "status": "ok",
+        "verdict": "FRAGILE",
+        "checks": {
+          "stabilite_horizon": {
+            "statut": "FAIL",
+            "min_stabilite_horizon": 0.75,
+            "stabilites": {
+              "L1": 0.75,
+              "L3": 1.0,
+              "L5": 1.0
+            },
+            "detail": "Stabilite horizon entre 0.50 et 0.80 : fragile, ne pas trancher."
+          },
+          "stabilite_walkforward": {
+            "statut": "FAIL",
+            "t0_std": 21.812,
+            "detail": "T0 tres variable en walk-forward (t0_std > 20)."
+          },
+          "coherence_interne": {
+            "statut": "PASS",
+            "disagreement": false,
+            "contradiction_penalty": 0.0,
+            "detail": "Cible et regime alignes ou non-informes, pas de desaccord directionnel."
+          },
+          "note_graine_fenetre_melange": "Non testes en mode light. Utiliser --l7b-full pour graine / fenetre / melange / echelle."
+        }
+      },
+      "tlog": {
+        "class_median": {
+          "saturation": -11.276259,
+          "criticality": -5.699727,
+          "divergence": -4.541989,
+          "null_reference": -6.151813
+        },
+        "formula": "(d-4)*log(n) ; n=n_samples ; jamais un z-score",
+        "scope": "indicateur de coupe sur dimensions geometriques, pas l'hologramme entier"
+      },
+      "voie1": {
+        "higuchi": 2.003398,
+        "blind_risk": false
+      },
+      "voie2": {
+        "triangulation": {
+          "trio": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "preset": "default",
+          "is_default": false,
+          "trio_values": {
+            "Higuchi": 2.003398,
+            "InformationD1": 0.721717,
+            "LevinaBickel": 4.57762
+          },
+          "trio_sat_estimator": "Higuchi",
+          "trio_crit_estimator": "InformationD1",
+          "trio_div_estimator": "LevinaBickel",
+          "trio_sat_value": 2.003398,
+          "trio_crit_value": 0.721717,
+          "trio_div_value": 4.57762,
+          "trio_gap_E": 2.574223,
+          "trio_gap_T_log": 11.148272,
+          "trio_gap_mode": "div-sat (trio equilibre)",
+          "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+          "trio_vs_median_gap_disagreement_gap_gt_3": false,
+          "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+          "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+          "presets": {
+            "default": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "robust": [
+              "DFA",
+              "CorrelationD2",
+              "PCAIntrinsic"
+            ],
+            "noise_robust": [
+              "DFA",
+              "InformationD1",
+              "PCAIntrinsic"
+            ],
+            "fast": [
+              "Higuchi",
+              "InformationD1",
+              "KolmogorovLZ"
+            ],
+            "saturation_focus": [
+              "Higuchi",
+              "DFA",
+              "Katz"
+            ],
+            "divergence_focus": [
+              "LevinaBickel",
+              "PCAIntrinsic",
+              "MFA"
+            ]
+          }
+        },
+        "proof_status": "heuristique, triangulation seulement, pas une preuve. Preuve totale impossible theoriquement. Ce diagnostic rend l'echec attribuable (CSV / pipeline / serie / seuil / coeur), il ne prouve pas le coeur."
+      },
+      "input_sha256": "9f1c131f5340f169e3696146cb444417db8adb6a72617c2b1c82e7290978a73e",
+      "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_04",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_04.log",
+      "started_utc": "2026-11-15T23:54:54.493614+00:00",
+      "finished_utc": "2026-11-15T23:58:10.646612+00:00"
+    },
+    "case_05": {
+      "case_id": "case_05",
+      "n_rows": 7,
+      "status": "error",
+      "started_utc": "2026-11-15T23:58:10.669993+00:00",
+      "finished_utc": "2026-11-15T23:58:10.696678+00:00",
+      "elapsed_seconds": 0.016235799997957656,
+      "input_sha256": "d0153a30b3a21d839431fd62ffbb3a0814197a181a73be97ebad168bb840ef1e",
+      "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_05",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_05.log",
+      "error": "ValueError('Série trop courte : 7 points valides. Au moins 50 sont requis avec la configuration actuelle.')",
+      "traceback": "Traceback (most recent call last):\n  File \"<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\run_synthetic_pilot.py\", line 318, in run\n    returned = pipeline.run_full_unified_pipeline(**kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py\", line 12418, in run_full_unified_pipeline\n    return _run_full_unified_pipeline_single(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py\", line 11693, in _run_full_unified_pipeline_single\n    results, df_feat, fluxes, fluxes_ui = run_pipeline(\n                                          ^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py\", line 6765, in run_pipeline\n    raise ValueError(\nValueError: Série trop courte : 7 points valides. Au moins 50 sont requis avec la configuration actuelle.\n"
+    },
+    "case_06": {
+      "case_id": "case_06",
+      "n_rows": 15,
+      "status": "error",
+      "started_utc": "2026-11-15T23:58:10.724137+00:00",
+      "finished_utc": "2026-11-15T23:58:10.750862+00:00",
+      "elapsed_seconds": 0.01565350000237231,
+      "input_sha256": "1e1d2cbadef4c02e52696d9c8d6e6f9a2fdfc1d04e1d2b172f6823ed93faf885",
+      "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_06",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_06.log",
+      "error": "ValueError('Série trop courte : 15 points valides. Au moins 50 sont requis avec la configuration actuelle.')",
+      "traceback": "Traceback (most recent call last):\n  File \"<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\run_synthetic_pilot.py\", line 318, in run\n    returned = pipeline.run_full_unified_pipeline(**kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py\", line 12418, in run_full_unified_pipeline\n    return _run_full_unified_pipeline_single(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py\", line 11693, in _run_full_unified_pipeline_single\n    results, df_feat, fluxes, fluxes_ui = run_pipeline(\n                                          ^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py\", line 6765, in run_pipeline\n    raise ValueError(\nValueError: Série trop courte : 15 points valides. Au moins 50 sont requis avec la configuration actuelle.\n"
+    },
+    "case_07": {
+      "case_id": "case_07",
+      "n_rows": 30,
+      "status": "error",
+      "started_utc": "2026-11-15T23:58:10.776500+00:00",
+      "finished_utc": "2026-11-15T23:58:10.800482+00:00",
+      "elapsed_seconds": 0.015851299998757895,
+      "input_sha256": "d63d7dd75eaf430ff104826cdbe7c3c2194fe471013d8e6776e8e7342c9bfb6a",
+      "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_07",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\runs\\case_07.log",
+      "error": "ValueError('Série trop courte : 30 points valides. Au moins 50 sont requis avec la configuration actuelle.')",
+      "traceback": "Traceback (most recent call last):\n  File \"<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\synthetic_pilot_v1\\run_synthetic_pilot.py\", line 318, in run\n    returned = pipeline.run_full_unified_pipeline(**kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py\", line 12418, in run_full_unified_pipeline\n    return _run_full_unified_pipeline_single(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py\", line 11693, in _run_full_unified_pipeline_single\n    results, df_feat, fluxes, fluxes_ui = run_pipeline(\n                                          ^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py\", line 6765, in run_pipeline\n    raise ValueError(\nValueError: Série trop courte : 30 points valides. Au moins 50 sont requis avec la configuration actuelle.\n"
+    }
+  }
+}

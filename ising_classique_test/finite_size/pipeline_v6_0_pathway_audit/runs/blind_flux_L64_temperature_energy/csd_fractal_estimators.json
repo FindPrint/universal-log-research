@@ -1,0 +1,2372 @@
+{
+  "status": "completed",
+  "method": "exploratory_csd_indicators_on_fractal_estimator_landscape",
+  "axis_basis": "ordered_df_feat_scan_positions_not_physical_time",
+  "consensus_rule": "strict_majority_of_available_AR1_variance_absolute_skewness_trends_per_estimator",
+  "positive_trend_definition": "Spearman rho > 0; exploratory directional evidence only",
+  "calibration_status": "not_calibrated_for_estimator_trajectories",
+  "bootstrap_used": false,
+  "n_estimators_requested_per_flux": 29,
+  "n_estimators_computed": 24,
+  "n_estimator_signatures": 12,
+  "estimator_results": [
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "Higuchi",
+      "estimator_class": "saturation",
+      "status": "computed",
+      "n_valid": 120,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 40,
+          "variance": 0.04214454162271606,
+          "ar1": 0.8029140645040058,
+          "skewness": -0.64516079241501,
+          "absolute_skewness": 0.64516079241501
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.007466072815725662,
+          "ar1": -0.18725332907849437,
+          "skewness": 0.4084415568933035,
+          "absolute_skewness": 0.4084415568933035
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.0069755963355080785,
+          "ar1": -0.13797944619292016,
+          "skewness": 0.8536771155243118,
+          "absolute_skewness": 0.8536771155243118
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.008181190537767865,
+          "ar1": -0.17423549899805651,
+          "skewness": 0.06926117330668657,
+          "absolute_skewness": 0.06926117330668657
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 40,
+          "variance": 0.03419804211861006,
+          "ar1": 0.7860850871963805,
+          "skewness": -0.6043931822231046,
+          "absolute_skewness": 0.6043931822231046
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": -0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": -0.3,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 0,
+      "required_majority": 2,
+      "positive_indicators": [],
+      "csd_signature_candidate": false,
+      "classification": "exploratory_no_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Aucun consensus exploratoire majoritaire; cela ne d\u00e9montre pas une absence de CSD."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "DFA",
+      "estimator_class": "saturation",
+      "status": "computed",
+      "n_valid": 120,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 40,
+          "variance": 0.28864543987110625,
+          "ar1": 0.7922224799038641,
+          "skewness": -1.0979940507624137,
+          "absolute_skewness": 1.0979940507624137
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.0004189494768345545,
+          "ar1": 0.3027202564551324,
+          "skewness": -0.001267504338355154,
+          "absolute_skewness": 0.001267504338355154
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.001853630106438543,
+          "ar1": 0.603899203324924,
+          "skewness": -0.3586955473204484,
+          "absolute_skewness": 0.3586955473204484
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.0012435271169218176,
+          "ar1": 0.3308366986252532,
+          "skewness": -0.3622205515843547,
+          "absolute_skewness": 0.3622205515843547
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 40,
+          "variance": 0.14990939238023163,
+          "ar1": 0.6731149668400311,
+          "skewness": 0.03491188563274923,
+          "absolute_skewness": 0.03491188563274923
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": -0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": -0.3,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 0,
+      "required_majority": 2,
+      "positive_indicators": [],
+      "csd_signature_candidate": false,
+      "classification": "exploratory_no_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Aucun consensus exploratoire majoritaire; cela ne d\u00e9montre pas une absence de CSD."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "Katz",
+      "estimator_class": "saturation",
+      "status": "computed",
+      "n_valid": 120,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 40,
+          "variance": 0.00018348744404240663,
+          "ar1": 0.9386917873174389,
+          "skewness": -1.3596777238957256,
+          "absolute_skewness": 1.3596777238957256
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 2.97545476359977e-07,
+          "ar1": -0.2823857723041611,
+          "skewness": -0.12028438926888863,
+          "absolute_skewness": 0.12028438926888863
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 3.574372511292947e-07,
+          "ar1": -0.01720365371803739,
+          "skewness": 0.062052094090234815,
+          "absolute_skewness": 0.062052094090234815
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 5.683035927328518e-07,
+          "ar1": 0.11064591319100194,
+          "skewness": 0.23933697695643474,
+          "absolute_skewness": 0.23933697695643474
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 40,
+          "variance": 0.00014628020175084066,
+          "ar1": 0.9350729950690635,
+          "skewness": -1.5357289572060833,
+          "absolute_skewness": 1.5357289572060833
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": 0.0,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.0,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.3,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 1,
+      "required_majority": 2,
+      "positive_indicators": [
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": false,
+      "classification": "exploratory_no_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Aucun consensus exploratoire majoritaire; cela ne d\u00e9montre pas une absence de CSD."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "Hurst",
+      "estimator_class": "null_reference",
+      "status": "computed",
+      "n_valid": 103,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 31,
+          "variance": 0.009295145793636501,
+          "ar1": 0.8171256934727376,
+          "skewness": 2.8337784600544684,
+          "absolute_skewness": 2.8337784600544684
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.00020632992776901894,
+          "ar1": -0.2173243003388048,
+          "skewness": -0.42188856187919044,
+          "absolute_skewness": 0.42188856187919044
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.00020864764725767466,
+          "ar1": 0.061624256648979185,
+          "skewness": -0.7020077566831529,
+          "absolute_skewness": 0.7020077566831529
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.00018137762177357158,
+          "ar1": -0.035444219449019355,
+          "skewness": -0.05442753937027794,
+          "absolute_skewness": 0.05442753937027794
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 32,
+          "variance": 0.016009451943014064,
+          "ar1": 0.8871841038492313,
+          "skewness": 3.0128322499541094,
+          "absolute_skewness": 3.0128322499541094
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": 0.3,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 3,
+      "required_majority": 2,
+      "positive_indicators": [
+        "ar1_increase",
+        "variance_increase",
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": true,
+      "classification": "exploratory_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Signature exploratoire compatible avec une augmentation majoritaire des indicateurs CSD; \u00e0 confirmer par calibration d\u00e9di\u00e9e aux trajectoires d\u2019estimateurs."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "SampleEn",
+      "estimator_class": "null_reference",
+      "status": "computed",
+      "n_valid": 103,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 31,
+          "variance": 0.001500234190885166,
+          "ar1": 0.7151292507128844,
+          "skewness": 1.6755840711729786,
+          "absolute_skewness": 1.6755840711729786
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.005058769248904389,
+          "ar1": 0.7870246475900514,
+          "skewness": 0.7418887057787781,
+          "absolute_skewness": 0.7418887057787781
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.004331956728439282,
+          "ar1": 0.6900891775263291,
+          "skewness": 0.7398193371156225,
+          "absolute_skewness": 0.7398193371156225
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.004486502726529048,
+          "ar1": 0.6610534507876201,
+          "skewness": 0.8366087419447699,
+          "absolute_skewness": 0.8366087419447699
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 32,
+          "variance": 0.013124473962780646,
+          "ar1": 0.7661454725599111,
+          "skewness": 0.32659571516003,
+          "absolute_skewness": 0.32659571516003
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.19999999999999998,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.7,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": -0.7,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 1,
+      "required_majority": 2,
+      "positive_indicators": [
+        "variance_increase"
+      ],
+      "csd_signature_candidate": false,
+      "classification": "exploratory_no_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Aucun consensus exploratoire majoritaire; cela ne d\u00e9montre pas une absence de CSD."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "Petrosian",
+      "estimator_class": "saturation",
+      "status": "computed",
+      "n_valid": 120,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 40,
+          "variance": 1.9782447633532466e-05,
+          "ar1": 0.9513506171861777,
+          "skewness": -1.3497337331223977,
+          "absolute_skewness": 1.3497337331223977
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 2.3877368688644222e-09,
+          "ar1": -0.2307831656885252,
+          "skewness": 0.42432935517647774,
+          "absolute_skewness": 0.42432935517647774
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 2.0892697602563697e-09,
+          "ar1": -0.26623376623376604,
+          "skewness": 0.9072543235395687,
+          "absolute_skewness": 0.9072543235395687
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 2.4810078403044386e-09,
+          "ar1": -0.2849614140875866,
+          "skewness": 0.10406920822631426,
+          "absolute_skewness": 0.10406920822631426
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 40,
+          "variance": 2.6653690395350993e-05,
+          "ar1": 0.9713238830231287,
+          "skewness": 0.8868291144325027,
+          "absolute_skewness": 0.8868291144325027
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": 0.0,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.3,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": -0.49999999999999994,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 1,
+      "required_majority": 2,
+      "positive_indicators": [
+        "variance_increase"
+      ],
+      "csd_signature_candidate": false,
+      "classification": "exploratory_no_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Aucun consensus exploratoire majoritaire; cela ne d\u00e9montre pas une absence de CSD."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "Sevcik",
+      "estimator_class": "saturation",
+      "status": "computed",
+      "n_valid": 120,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 40,
+          "variance": 0.012843203321421238,
+          "ar1": 0.9613412650366213,
+          "skewness": -1.26662763657834,
+          "absolute_skewness": 1.26662763657834
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 8.625273379839122e-05,
+          "ar1": -0.2912610868783724,
+          "skewness": 0.12157182097051898,
+          "absolute_skewness": 0.12157182097051898
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 7.81546484690635e-05,
+          "ar1": -0.27432666204696915,
+          "skewness": 0.451846870969862,
+          "absolute_skewness": 0.451846870969862
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 9.376064040547168e-05,
+          "ar1": -0.37085682521350927,
+          "skewness": 0.07116492565005811,
+          "absolute_skewness": 0.07116492565005811
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 40,
+          "variance": 0.0112565976044706,
+          "ar1": 0.9634365654187821,
+          "skewness": -1.335664226360174,
+          "absolute_skewness": 1.335664226360174
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": 0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": -0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 2,
+      "required_majority": 2,
+      "positive_indicators": [
+        "ar1_increase",
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": true,
+      "classification": "exploratory_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Signature exploratoire compatible avec une augmentation majoritaire des indicateurs CSD; \u00e0 confirmer par calibration d\u00e9di\u00e9e aux trajectoires d\u2019estimateurs."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "BoxCounting",
+      "estimator_class": "saturation",
+      "status": "computed",
+      "n_valid": 103,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 31,
+          "variance": 0.005632556217370895,
+          "ar1": -0.05353313980311451,
+          "skewness": -0.15970617347486743,
+          "absolute_skewness": 0.15970617347486743
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.003725707942264351,
+          "ar1": -0.1124634385526184,
+          "skewness": 0.347135834944253,
+          "absolute_skewness": 0.347135834944253
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.0026558638579982263,
+          "ar1": 0.0003352582176205569,
+          "skewness": 0.8098086896425669,
+          "absolute_skewness": 0.8098086896425669
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.0031438631271536364,
+          "ar1": -0.28408206158328764,
+          "skewness": 0.11640872324056359,
+          "absolute_skewness": 0.11640872324056359
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 32,
+          "variance": 0.004818454631097936,
+          "ar1": -0.03283638792561692,
+          "skewness": -0.12544847479593882,
+          "absolute_skewness": 0.12544847479593882
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": 0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": -0.3,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": -0.49999999999999994,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 1,
+      "required_majority": 2,
+      "positive_indicators": [
+        "ar1_increase"
+      ],
+      "csd_signature_candidate": false,
+      "classification": "exploratory_no_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Aucun consensus exploratoire majoritaire; cela ne d\u00e9montre pas une absence de CSD."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "PermutationEntropy",
+      "estimator_class": "saturation",
+      "status": "computed",
+      "n_valid": 120,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 40,
+          "variance": 0.010367091045249901,
+          "ar1": 0.9551925001098301,
+          "skewness": -1.3269164532417712,
+          "absolute_skewness": 1.3269164532417712
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 2.459132223871913e-05,
+          "ar1": -0.23078316568852533,
+          "skewness": 0.4243293551736008,
+          "absolute_skewness": 0.4243293551736008
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 2.151740695887923e-05,
+          "ar1": -0.2662337662337664,
+          "skewness": 0.9072543235487862,
+          "absolute_skewness": 0.9072543235487862
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 2.5551920763669096e-05,
+          "ar1": -0.28496141408758646,
+          "skewness": 0.10406920822206539,
+          "absolute_skewness": 0.10406920822206539
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 40,
+          "variance": 0.006282041909525193,
+          "ar1": 0.915898545414809,
+          "skewness": 1.4099677215059172,
+          "absolute_skewness": 1.4099677215059172
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.39999999999999997,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": -0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 1,
+      "required_majority": 2,
+      "positive_indicators": [
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": false,
+      "classification": "exploratory_no_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Aucun consensus exploratoire majoritaire; cela ne d\u00e9montre pas une absence de CSD."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "CorrelationD2",
+      "estimator_class": "criticality",
+      "status": "computed",
+      "n_valid": 100,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 30,
+          "variance": 0.0003414275915581058,
+          "ar1": 0.34393305686111525,
+          "skewness": 0.20776129619424633,
+          "absolute_skewness": 0.20776129619424633
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.0004915562042135449,
+          "ar1": 0.6727048025846273,
+          "skewness": 0.24838395264943616,
+          "absolute_skewness": 0.24838395264943616
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.001023056026713605,
+          "ar1": 0.7518778656645075,
+          "skewness": 0.21116648669654534,
+          "absolute_skewness": 0.21116648669654534
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.001636845261261114,
+          "ar1": 0.7670262023325393,
+          "skewness": -0.489775808513908,
+          "absolute_skewness": 0.489775808513908
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 30,
+          "variance": 0.0006460335502582866,
+          "ar1": 0.12588884476443266,
+          "skewness": 0.3883132295362873,
+          "absolute_skewness": 0.3883132295362873
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": 0.0,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.7,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.7999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 2,
+      "required_majority": 2,
+      "positive_indicators": [
+        "variance_increase",
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": true,
+      "classification": "exploratory_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Signature exploratoire compatible avec une augmentation majoritaire des indicateurs CSD; \u00e0 confirmer par calibration d\u00e9di\u00e9e aux trajectoires d\u2019estimateurs."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "GrassbergerProcaccia",
+      "estimator_class": "criticality",
+      "status": "computed",
+      "n_valid": 100,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 30,
+          "variance": 0.0003165912726939241,
+          "ar1": 0.4117207482860992,
+          "skewness": 0.3926723644438429,
+          "absolute_skewness": 0.3926723644438429
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.0006760876074405891,
+          "ar1": 0.61529286268306,
+          "skewness": -0.24531335588471623,
+          "absolute_skewness": 0.24531335588471623
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.0010948787330647227,
+          "ar1": 0.728002134193602,
+          "skewness": -0.3482247992170782,
+          "absolute_skewness": 0.3482247992170782
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.0018966053189755226,
+          "ar1": 0.727069496132201,
+          "skewness": -0.47720741433434477,
+          "absolute_skewness": 0.47720741433434477
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 30,
+          "variance": 0.000768421757637461,
+          "ar1": 0.24073319570481116,
+          "skewness": -0.5608700012466287,
+          "absolute_skewness": 0.5608700012466287
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.7,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.7,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 2,
+      "required_majority": 2,
+      "positive_indicators": [
+        "variance_increase",
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": true,
+      "classification": "exploratory_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Signature exploratoire compatible avec une augmentation majoritaire des indicateurs CSD; \u00e0 confirmer par calibration d\u00e9di\u00e9e aux trajectoires d\u2019estimateurs."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "InformationD1",
+      "estimator_class": "criticality",
+      "status": "computed",
+      "n_valid": 103,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 31,
+          "variance": 0.006865533998576591,
+          "ar1": -0.21162879564158474,
+          "skewness": 1.3573723007356515,
+          "absolute_skewness": 1.3573723007356515
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.011585155948886277,
+          "ar1": 0.10351121290242396,
+          "skewness": 0.37942068123844286,
+          "absolute_skewness": 0.37942068123844286
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.009642067363834363,
+          "ar1": 0.43423329194759674,
+          "skewness": 0.009224719730060227,
+          "absolute_skewness": 0.009224719730060227
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.017153132938319732,
+          "ar1": 0.00034657015331237,
+          "skewness": -0.24571735708299997,
+          "absolute_skewness": 0.24571735708299997
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 32,
+          "variance": 0.021440615282173493,
+          "ar1": -0.1769051434262607,
+          "skewness": -0.007934307048074352,
+          "absolute_skewness": 0.007934307048074352
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": 0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.8999999999999998,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": -0.8999999999999998,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 2,
+      "required_majority": 2,
+      "positive_indicators": [
+        "ar1_increase",
+        "variance_increase"
+      ],
+      "csd_signature_candidate": true,
+      "classification": "exploratory_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Signature exploratoire compatible avec une augmentation majoritaire des indicateurs CSD; \u00e0 confirmer par calibration d\u00e9di\u00e9e aux trajectoires d\u2019estimateurs."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "VisibilityGraph",
+      "estimator_class": "criticality",
+      "status": "computed",
+      "n_valid": 100,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 30,
+          "variance": 0.0016422166062358744,
+          "ar1": 0.3566019538518692,
+          "skewness": 0.0016229869315287774,
+          "absolute_skewness": 0.0016229869315287774
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.0031949332169486128,
+          "ar1": 0.5785242026044681,
+          "skewness": 0.9879456437554752,
+          "absolute_skewness": 0.9879456437554752
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.005363572290623693,
+          "ar1": 0.7772936151500278,
+          "skewness": 0.7860560610925758,
+          "absolute_skewness": 0.7860560610925758
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.003614934231314705,
+          "ar1": 0.7409110257980734,
+          "skewness": 0.7989085868545202,
+          "absolute_skewness": 0.7989085868545202
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 30,
+          "variance": 0.0017323758006183307,
+          "ar1": 0.2722998432210239,
+          "skewness": 0.48084496659430437,
+          "absolute_skewness": 0.48084496659430437
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.3,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 2,
+      "required_majority": 2,
+      "positive_indicators": [
+        "variance_increase",
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": true,
+      "classification": "exploratory_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Signature exploratoire compatible avec une augmentation majoritaire des indicateurs CSD; \u00e0 confirmer par calibration d\u00e9di\u00e9e aux trajectoires d\u2019estimateurs."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "TwoNN",
+      "status": "insufficient_estimator_trajectory",
+      "n_valid": 0,
+      "csd_signature_candidate": null,
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "window_statistics": []
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "DANCo",
+      "status": "insufficient_estimator_trajectory",
+      "n_valid": 0,
+      "csd_signature_candidate": null,
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "window_statistics": []
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "Fisher",
+      "estimator_class": "criticality",
+      "status": "computed",
+      "n_valid": 103,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 31,
+          "variance": 0.007023407604578692,
+          "ar1": 0.43314256242027277,
+          "skewness": -1.3659345458973107,
+          "absolute_skewness": 1.3659345458973107
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.0037837027159015116,
+          "ar1": 0.2183499410954555,
+          "skewness": -0.26577302517667784,
+          "absolute_skewness": 0.26577302517667784
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.006506394737202703,
+          "ar1": 0.6031036786453875,
+          "skewness": -0.09310771106597635,
+          "absolute_skewness": 0.09310771106597635
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.007376120311673608,
+          "ar1": 0.5537838250416969,
+          "skewness": -0.5927880882357852,
+          "absolute_skewness": 0.5927880882357852
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 32,
+          "variance": 0.014957307864451071,
+          "ar1": 0.7585831450489973,
+          "skewness": -1.4658062832482017,
+          "absolute_skewness": 1.4658062832482017
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": 0.7999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.7,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.3,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 3,
+      "required_majority": 2,
+      "positive_indicators": [
+        "ar1_increase",
+        "variance_increase",
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": true,
+      "classification": "exploratory_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Signature exploratoire compatible avec une augmentation majoritaire des indicateurs CSD; \u00e0 confirmer par calibration d\u00e9di\u00e9e aux trajectoires d\u2019estimateurs."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "LevinaBickel",
+      "status": "insufficient_estimator_trajectory",
+      "n_valid": 0,
+      "csd_signature_candidate": null,
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "window_statistics": []
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "PCAIntrinsic",
+      "estimator_class": "divergence",
+      "status": "computed",
+      "n_valid": 100,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 30,
+          "variance": 0.016619570161884263,
+          "ar1": 0.06802329087210507,
+          "skewness": -0.5683823595989543,
+          "absolute_skewness": 0.5683823595989543
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.01751579403791403,
+          "ar1": 0.26215749850568587,
+          "skewness": -0.40360616319947223,
+          "absolute_skewness": 0.40360616319947223
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.033983183624773566,
+          "ar1": 0.6906194003787001,
+          "skewness": -0.16829802972396904,
+          "absolute_skewness": 0.16829802972396904
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.03877396458294831,
+          "ar1": 0.653914351817768,
+          "skewness": -0.6957463682332556,
+          "absolute_skewness": 0.6957463682332556
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 30,
+          "variance": 0.043546060631451784,
+          "ar1": 0.6190630163234457,
+          "skewness": -1.5200078217783513,
+          "absolute_skewness": 1.5200078217783513
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": 0.6,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.9999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.6,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 3,
+      "required_majority": 2,
+      "positive_indicators": [
+        "ar1_increase",
+        "variance_increase",
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": true,
+      "classification": "exploratory_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Signature exploratoire compatible avec une augmentation majoritaire des indicateurs CSD; \u00e0 confirmer par calibration d\u00e9di\u00e9e aux trajectoires d\u2019estimateurs."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "LocalPCA",
+      "estimator_class": "divergence",
+      "status": "computed",
+      "n_valid": 100,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 30,
+          "variance": 0.029275572855900017,
+          "ar1": 0.5791402496593484,
+          "skewness": 3.0980504868512675,
+          "absolute_skewness": 3.0980504868512675
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.002543570874574637,
+          "ar1": 0.2585197674762818,
+          "skewness": 0.34383914764679846,
+          "absolute_skewness": 0.34383914764679846
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.002656290452139539,
+          "ar1": -0.13085184553731571,
+          "skewness": 0.8572973866200293,
+          "absolute_skewness": 0.8572973866200293
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.005689036753156089,
+          "ar1": -0.21220882434465033,
+          "skewness": 0.5166128028283362,
+          "absolute_skewness": 0.5166128028283362
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 30,
+          "variance": 0.01999314234502273,
+          "ar1": -0.11546509969499333,
+          "skewness": 2.948712454127303,
+          "absolute_skewness": 2.948712454127303
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.7,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.0,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": -0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 0,
+      "required_majority": 2,
+      "positive_indicators": [],
+      "csd_signature_candidate": false,
+      "classification": "exploratory_no_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Aucun consensus exploratoire majoritaire; cela ne d\u00e9montre pas une absence de CSD."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "GraphDimension",
+      "estimator_class": "divergence",
+      "status": "computed",
+      "n_valid": 95,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 29,
+          "variance": 0.02120965377371904,
+          "ar1": 0.5123655024270911,
+          "skewness": 2.9254116901527927,
+          "absolute_skewness": 2.9254116901527927
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 38,
+          "variance": 0.0014370671184839488,
+          "ar1": -0.1797120073447279,
+          "skewness": 1.6289848395511186,
+          "absolute_skewness": 1.6289848395511186
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 39,
+          "variance": 0.0010770217465658788,
+          "ar1": -0.14943424520266238,
+          "skewness": 2.451552648731236,
+          "absolute_skewness": 2.451552648731236
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 38,
+          "variance": 0.0008217614177372853,
+          "ar1": -0.2790224589692105,
+          "skewness": 2.117886172289904,
+          "absolute_skewness": 2.117886172289904
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 27,
+          "variance": 0.006585795102572369,
+          "ar1": -0.1608831410645281,
+          "skewness": 3.860017701943637,
+          "absolute_skewness": 3.860017701943637
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.49999999999999994,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": -0.39999999999999997,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.3,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 1,
+      "required_majority": 2,
+      "positive_indicators": [
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": false,
+      "classification": "exploratory_no_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Aucun consensus exploratoire majoritaire; cela ne d\u00e9montre pas une absence de CSD."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "PersistentHomology",
+      "status": "insufficient_estimator_trajectory",
+      "n_valid": 3,
+      "csd_signature_candidate": null,
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "window_statistics": []
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "MFA",
+      "estimator_class": "divergence",
+      "status": "computed",
+      "n_valid": 100,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 30,
+          "variance": 0.06436781609195404,
+          "ar1": 0.694365074829413,
+          "skewness": 3.659998685656696,
+          "absolute_skewness": 3.659998685656696
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.024999999999999998,
+          "ar1": -0.02631578947368419,
+          "skewness": 6.324555320336759,
+          "absolute_skewness": 6.324555320336759
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.024999999999999998,
+          "ar1": -0.026315789473684095,
+          "skewness": 6.32455532033676,
+          "absolute_skewness": 6.32455532033676
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.024999999999999998,
+          "ar1": -0.026315789473684202,
+          "skewness": 6.324555320336759,
+          "absolute_skewness": 6.324555320336759
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 30,
+          "variance": 0.09310344827586206,
+          "ar1": -0.09245003270420488,
+          "skewness": 2.809120229286213,
+          "absolute_skewness": 2.809120229286213
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.8999999999999998,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.22360679774997894,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": -0.20519567041703082,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 1,
+      "required_majority": 2,
+      "positive_indicators": [
+        "variance_increase"
+      ],
+      "csd_signature_candidate": false,
+      "classification": "exploratory_no_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Aucun consensus exploratoire majoritaire; cela ne d\u00e9montre pas une absence de CSD."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "KolmogorovLZ",
+      "estimator_class": "divergence",
+      "status": "computed",
+      "n_valid": 100,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 30,
+          "variance": 0.38620689655172413,
+          "ar1": -0.03770308417611184,
+          "skewness": -0.5172189945643858,
+          "absolute_skewness": 0.5172189945643858
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.2461538461538462,
+          "ar1": -0.23078316568852522,
+          "skewness": 0.42432935517360554,
+          "absolute_skewness": 0.42432935517360554
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.21538461538461534,
+          "ar1": -0.26623376623376666,
+          "skewness": 0.9072543235487686,
+          "absolute_skewness": 0.9072543235487686
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.2557692307692308,
+          "ar1": -0.2849614140875864,
+          "skewness": 0.1040692082220931,
+          "absolute_skewness": 0.1040692082220931
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 30,
+          "variance": 0.3264367816091955,
+          "ar1": -0.17171336116297736,
+          "skewness": -0.7324996179568974,
+          "absolute_skewness": 0.7324996179568974
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.39999999999999997,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": -0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 1,
+      "required_majority": 2,
+      "positive_indicators": [
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": false,
+      "classification": "exploratory_no_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Aucun consensus exploratoire majoritaire; cela ne d\u00e9montre pas une absence de CSD."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "SpectralBeta",
+      "estimator_class": "null_reference",
+      "status": "computed",
+      "n_valid": 100,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 30,
+          "variance": 0.004586948790078375,
+          "ar1": 0.3851706089865602,
+          "skewness": -0.6681364146043398,
+          "absolute_skewness": 0.6681364146043398
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.0038572089293174424,
+          "ar1": 0.5140084019850365,
+          "skewness": 0.23361019445297843,
+          "absolute_skewness": 0.23361019445297843
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.0070200037437648174,
+          "ar1": 0.3911952936026069,
+          "skewness": -0.29345590633016355,
+          "absolute_skewness": 0.29345590633016355
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.026896225328710104,
+          "ar1": -0.055152096098511585,
+          "skewness": 1.0540653370491533,
+          "absolute_skewness": 1.0540653370491533
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 30,
+          "variance": 0.04445362421808695,
+          "ar1": 0.1092203111304518,
+          "skewness": 0.8582329585395753,
+          "absolute_skewness": 0.8582329585395753
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.6,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.8999999999999998,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.6,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 2,
+      "required_majority": 2,
+      "positive_indicators": [
+        "variance_increase",
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": true,
+      "classification": "exploratory_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Signature exploratoire compatible avec une augmentation majoritaire des indicateurs CSD; \u00e0 confirmer par calibration d\u00e9di\u00e9e aux trajectoires d\u2019estimateurs."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "SpectralDimension",
+      "estimator_class": "null_reference",
+      "status": "computed",
+      "n_valid": 100,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 30,
+          "variance": 0.001146737197519593,
+          "ar1": 0.3851706089865597,
+          "skewness": 0.6681364146043036,
+          "absolute_skewness": 0.6681364146043036
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.0009643022323293607,
+          "ar1": 0.514008401985036,
+          "skewness": -0.23361019445297393,
+          "absolute_skewness": 0.23361019445297393
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.0017550009359412028,
+          "ar1": 0.39119529360260663,
+          "skewness": 0.29345590633015867,
+          "absolute_skewness": 0.29345590633015867
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.006724056332177528,
+          "ar1": -0.05515209609851139,
+          "skewness": -1.0540653370491564,
+          "absolute_skewness": 1.0540653370491564
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 30,
+          "variance": 0.011113406054521735,
+          "ar1": 0.10922031113045143,
+          "skewness": -0.8582329585395755,
+          "absolute_skewness": 0.8582329585395755
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.6,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.8999999999999998,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.6,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 2,
+      "required_majority": 2,
+      "positive_indicators": [
+        "variance_increase",
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": true,
+      "classification": "exploratory_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Signature exploratoire compatible avec une augmentation majoritaire des indicateurs CSD; \u00e0 confirmer par calibration d\u00e9di\u00e9e aux trajectoires d\u2019estimateurs."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "Hurst2mH",
+      "estimator_class": "saturation",
+      "status": "computed",
+      "n_valid": 103,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 31,
+          "variance": 0.009295145793636503,
+          "ar1": 0.8171256934727371,
+          "skewness": -2.83377846005446,
+          "absolute_skewness": 2.83377846005446
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 40,
+          "variance": 0.00020632992776901886,
+          "ar1": -0.21732430033880182,
+          "skewness": 0.4218885618791644,
+          "absolute_skewness": 0.4218885618791644
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 40,
+          "variance": 0.000208647647257675,
+          "ar1": 0.06162425664898459,
+          "skewness": 0.7020077566831494,
+          "absolute_skewness": 0.7020077566831494
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 40,
+          "variance": 0.0001813776217735721,
+          "ar1": -0.03544421944901675,
+          "skewness": 0.05442753937027703,
+          "absolute_skewness": 0.05442753937027703
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 32,
+          "variance": 0.016009451943014067,
+          "ar1": 0.8871841038492312,
+          "skewness": -3.012832249954109,
+          "absolute_skewness": 3.012832249954109
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": 0.3,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.09999999999999999,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 3,
+      "required_majority": 2,
+      "positive_indicators": [
+        "ar1_increase",
+        "variance_increase",
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": true,
+      "classification": "exploratory_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Signature exploratoire compatible avec une augmentation majoritaire des indicateurs CSD; \u00e0 confirmer par calibration d\u00e9di\u00e9e aux trajectoires d\u2019estimateurs."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "Lyapunov",
+      "status": "insufficient_estimator_trajectory",
+      "n_valid": 0,
+      "csd_signature_candidate": null,
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "window_statistics": []
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "MultifractalDeltaAlpha",
+      "estimator_class": "null_reference",
+      "status": "computed",
+      "n_valid": 43,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 14,
+          "variance": 3.333224221844924e-05,
+          "ar1": null,
+          "skewness": -0.06693573110890731,
+          "absolute_skewness": 0.06693573110890731
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 16,
+          "variance": 0.00032303656782773466,
+          "ar1": null,
+          "skewness": 1.843661525037736,
+          "absolute_skewness": 1.843661525037736
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 12,
+          "variance": 0.0002737790908914997,
+          "ar1": null,
+          "skewness": -0.010297040163925518,
+          "absolute_skewness": 0.010297040163925518
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 19,
+          "variance": 0.0008811100874560746,
+          "ar1": null,
+          "skewness": -0.1882517395633197,
+          "absolute_skewness": 0.1882517395633197
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 17,
+          "variance": 0.0009675964961929994,
+          "ar1": 0.7609851666016518,
+          "skewness": 0.6883738560453675,
+          "absolute_skewness": 0.6883738560453675
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": null,
+          "n_windows": 1,
+          "status": "insufficient_windows",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": 0.8999999999999998,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.19999999999999998,
+          "n_windows": 5,
+          "status": "computed",
+          "positive_trend": true,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 2,
+      "positive_indicator_count": 2,
+      "required_majority": 2,
+      "positive_indicators": [
+        "variance_increase",
+        "absolute_skewness_increase"
+      ],
+      "csd_signature_candidate": true,
+      "classification": "exploratory_majority_positive_trend",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Signature exploratoire compatible avec une augmentation majoritaire des indicateurs CSD; \u00e0 confirmer par calibration d\u00e9di\u00e9e aux trajectoires d\u2019estimateurs."
+    },
+    {
+      "flux_name": "Energy_per_spin",
+      "estimator": "SingularityFmax",
+      "estimator_class": "null_reference",
+      "status": "computed",
+      "n_valid": 43,
+      "n_scan_points": 120,
+      "axis_basis": "df_feat_scan_order_not_physical_time",
+      "window_size": 40,
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "start_index": 0,
+          "end_index_exclusive": 40,
+          "n_valid": 14,
+          "variance": 0.0,
+          "ar1": null,
+          "skewness": null,
+          "absolute_skewness": null
+        },
+        {
+          "window_index": 1,
+          "start_index": 20,
+          "end_index_exclusive": 60,
+          "n_valid": 16,
+          "variance": 0.0,
+          "ar1": null,
+          "skewness": null,
+          "absolute_skewness": null
+        },
+        {
+          "window_index": 2,
+          "start_index": 40,
+          "end_index_exclusive": 80,
+          "n_valid": 12,
+          "variance": 0.0,
+          "ar1": null,
+          "skewness": null,
+          "absolute_skewness": null
+        },
+        {
+          "window_index": 3,
+          "start_index": 60,
+          "end_index_exclusive": 100,
+          "n_valid": 19,
+          "variance": 0.0,
+          "ar1": null,
+          "skewness": null,
+          "absolute_skewness": null
+        },
+        {
+          "window_index": 4,
+          "start_index": 80,
+          "end_index_exclusive": 120,
+          "n_valid": 17,
+          "variance": 0.0,
+          "ar1": null,
+          "skewness": null,
+          "absolute_skewness": null
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": null,
+          "n_windows": 0,
+          "status": "insufficient_windows",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "variance_increase": {
+          "rho": null,
+          "n_windows": 5,
+          "status": "constant_indicator",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        },
+        "absolute_skewness_increase": {
+          "rho": null,
+          "n_windows": 0,
+          "status": "insufficient_windows",
+          "positive_trend": false,
+          "decision_basis": "exploratory_positive_spearman_trend"
+        }
+      },
+      "available_indicator_count": 0,
+      "positive_indicator_count": 0,
+      "required_majority": 1,
+      "positive_indicators": [],
+      "csd_signature_candidate": false,
+      "classification": "indeterminate_insufficient_indicators",
+      "calibration_status": "not_calibrated_for_estimator_trajectories",
+      "interpretation": "Aucun consensus exploratoire majoritaire; cela ne d\u00e9montre pas une absence de CSD."
+    }
+  ],
+  "flux_summaries": [
+    {
+      "flux_name": "Energy_per_spin",
+      "n_estimators_computed": 24,
+      "n_estimators_requested": 29,
+      "n_estimators_with_csd_signature": 12,
+      "estimators_with_csd_signature": [
+        "Hurst",
+        "Sevcik",
+        "CorrelationD2",
+        "GrassbergerProcaccia",
+        "InformationD1",
+        "VisibilityGraph",
+        "Fisher",
+        "PCAIntrinsic",
+        "SpectralBeta",
+        "SpectralDimension",
+        "Hurst2mH",
+        "MultifractalDeltaAlpha"
+      ],
+      "candidate_fraction": 0.5,
+      "majority_of_estimators_candidate": false
+    }
+  ],
+  "interpretation_limit": "Les estimateurs sont calcul\u00e9s sur des fen\u00eatres de donn\u00e9es et leurs trajectoires peuvent \u00eatre d\u00e9pendantes/chevauchantes. Les tendances sont exploratoires; les seuils calibr\u00e9s sur les flux bruts ne sont pas r\u00e9utilis\u00e9s. Une calibration d\u00e9di\u00e9e devra simuler le pipeline estimateur complet."
+}

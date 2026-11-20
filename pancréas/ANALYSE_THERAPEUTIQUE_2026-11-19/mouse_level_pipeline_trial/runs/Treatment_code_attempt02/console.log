@@ -1,0 +1,25 @@
+
+[CIBLE-FIXE-GLOBALE] politique=fixed mode=single cible_demandee='basal_fraction' -> cible_globale='basal_fraction' methode=user_requested_target controles=['Treatment_code'] | Cette cible unique sera reutilisee pour TOUS les controles. Le run ou controle == cible sera signale explicitement comme diagonal, avec cible_demandee ET cible_utilisee.
+
+================================================================================
+UNIVERSAL_LOG v5.9.4-L7aL7b-DKind-AuditFix-SeedTrace-CohenDOnly-NoPlots — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\pancréas\ANALYSE_THERAPEUTIQUE_2026-11-19\mouse_level_pipeline_trial\GSE271300_PC69_PC106_mouse_level_multiflux.csv | Domain: pdac | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=Treatment_code cible_demandee='basal_fraction' -> cible_utilisee='basal_fraction' | Cible fixee conservee pour ce run.
+Target Observable: basal_fraction | Control Parameter: Treatment_code
+Execution Route: MODE 'FAST'
+Traceback (most recent call last):
+  File "<PROJECT_ROOT>\UNIVERSAL_LOG_v5.9.4.py", line 13413, in <module>
+    main()
+  File "<PROJECT_ROOT>\UNIVERSAL_LOG_v5.9.4.py", line 13218, in main
+    run_full_unified_pipeline(
+  File "<PROJECT_ROOT>\UNIVERSAL_LOG_v5.9.4.py", line 12816, in run_full_unified_pipeline
+    return _run_full_unified_pipeline_single(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT_ROOT>\UNIVERSAL_LOG_v5.9.4.py", line 12065, in _run_full_unified_pipeline_single
+    results, df_feat, fluxes, fluxes_ui = run_pipeline(
+                                          ^^^^^^^^^^^^^
+  File "<PROJECT_ROOT>\UNIVERSAL_LOG_v5.9.4.py", line 7003, in run_pipeline
+    raise ValueError(
+ValueError: Série trop courte : 13 points valides. Au moins 50 sont requis avec la configuration actuelle.

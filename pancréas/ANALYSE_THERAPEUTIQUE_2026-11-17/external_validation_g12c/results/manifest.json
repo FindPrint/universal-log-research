@@ -1,0 +1,200 @@
+{
+  "analysis_id": "pdac_krasi_g12c_cross_moa_external_patient_level_v1",
+  "created_utc": "2026-11-17T11:40:11+00:00",
+  "source_article_doi": "10.1158/2159-8290.CD-24-0177",
+  "source_dataset_doi": "10.1158/2159-8290.32699721",
+  "source_dataset_license": "CC BY as shown on AACR Figshare item page; verify attribution before reuse",
+  "figshare_article_id": 32699721,
+  "figshare_file_id": 65619009,
+  "source_file": {
+    "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\external_validation_g12c\\supplemental_table_1_krasi_g12c_pdac_gi.xlsx",
+    "bytes": 19979,
+    "md5_expected_from_figshare_api": "1e64a9785233ad0bd9ce57b52699a455",
+    "sha256": "4e0110d1cff4affca4cf6c6def425db3ec0e99e29a4510dc6bcb839896767c42"
+  },
+  "cohort": {
+    "unit": "patient",
+    "pdac_patients": 22,
+    "treatment": "adagrasib patients 1-8; sotorasib patients 9-22",
+    "stages": "pretreatment and end-of-therapy only in this supplement; not equally spaced longitudinal series"
+  },
+  "data_rules": {
+    "dash_and_unlisted": "not reported in supplement; not treated as confirmed assay-negative",
+    "vaf": "numeric values only; no zero imputation",
+    "patient_blocking": "one row per patient; repeated variants summarized per patient"
+  },
+  "primary_cross_moa_question": {
+    "question": "Is a pretreatment TP53 variant listed more often among patients with a newly listed KRAS G12C copy-number gain/amplification at end of adagrasib/sotorasib therapy?",
+    "unit": "patient",
+    "patients": 22,
+    "tp53_by_event_table": {
+      "no_pretherapy_variant_listed": {
+        "no_kras_cn_event_listed": 3,
+        "yes": 1
+      },
+      "yes": {
+        "no_kras_cn_event_listed": 15,
+        "yes": 3
+      }
+    },
+    "gain_or_amplification_patient_ids": [
+      "Patient 6",
+      "Patient 9",
+      "Patient 13",
+      "Patient 22"
+    ],
+    "amplification_only_patient_ids": [
+      "Patient 6",
+      "Patient 13",
+      "Patient 22"
+    ],
+    "test": "Fisher exact (patient-level 2x2)",
+    "p_nominal": 1.0,
+    "odds_ratio_or_effect": 0.6,
+    "q_bh_global_in_exploratory_grid": 1.0,
+    "interpretation": "cross-MOA exploratory comparison; rows absent from the supplement are not confirmed negative assays; does not establish TP53 causality or a treatment recommendation"
+  },
+  "controls": [
+    {
+      "name": "treatment",
+      "type": "categorical",
+      "description": "adagrasib vs sotorasib; distinct KRAS G12C inhibitor mechanism cohort"
+    },
+    {
+      "name": "best_response",
+      "type": "categorical",
+      "description": "best response in source table; PD denotes primary resistance"
+    },
+    {
+      "name": "tp53_baseline_variant_listed",
+      "type": "categorical",
+      "description": "TP53 variant with numeric pretreatment VAF listed; absence is not called WT"
+    },
+    {
+      "name": "baseline_kras_g12c_detection",
+      "type": "categorical",
+      "description": "whether numeric pretreatment KRAS G12C VAF appears in supplement"
+    },
+    {
+      "name": "baseline_kras_g12c_vaf_pct",
+      "type": "continuous",
+      "description": "pretreatment KRAS G12C VAF percentage; numeric rows only"
+    },
+    {
+      "name": "technology_profile",
+      "type": "categorical",
+      "description": "assay platform(s) listed per patient; exploratory, sparse levels"
+    }
+  ],
+  "flows": [
+    {
+      "name": "new_kras_cn_amp_listed",
+      "type": "categorical",
+      "description": "KRAS copy-number Amp listed as absent pretreatment and Amp at end of therapy"
+    },
+    {
+      "name": "new_kras_cn_gain_or_amp_listed",
+      "type": "categorical",
+      "description": "KRAS copy-number Gain/Amp listed as absent pretreatment and present at end of therapy"
+    },
+    {
+      "name": "new_any_cn_listed",
+      "type": "categorical",
+      "description": "any copy-number Gain/Amp row listed as new"
+    },
+    {
+      "name": "new_any_mutation_listed",
+      "type": "categorical",
+      "description": "any mutation row absent in pretreatment listing and numeric at end of therapy"
+    },
+    {
+      "name": "new_any_event_listed",
+      "type": "categorical",
+      "description": "any newly listed mutation or copy-number event"
+    },
+    {
+      "name": "new_ras_pi3k_rtk_mutation_listed",
+      "type": "categorical",
+      "description": "newly listed mutation in prespecified RAS/MAPK/PI3K/RTK gene set"
+    },
+    {
+      "name": "new_pik3ca_mutation_listed",
+      "type": "categorical",
+      "description": "newly listed PIK3CA mutation"
+    },
+    {
+      "name": "n_new_mutation_rows_listed",
+      "type": "continuous",
+      "description": "count of newly listed mutation rows; not a variant burden estimate"
+    },
+    {
+      "name": "n_new_copy_number_rows_listed",
+      "type": "continuous",
+      "description": "count of newly listed copy-number rows"
+    },
+    {
+      "name": "eot_kras_g12c_vaf_pct",
+      "type": "continuous",
+      "description": "end-of-therapy KRAS G12C VAF percentage; numeric rows only"
+    },
+    {
+      "name": "delta_kras_g12c_vaf_pp",
+      "type": "continuous",
+      "description": "end-of-therapy minus pretreatment VAF percentage points; both numeric only"
+    }
+  ],
+  "statistics": {
+    "engine_source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\multi_axis_resistance\\pdac_multiaxis_resistance.py",
+    "engine_sha256": "159c1b159e92af6f0e01861c51f6d4be742cabc597e215936b6472a4804863c3",
+    "planned_tests": 66,
+    "estimable_tests": 65,
+    "multiple_testing": "Benjamini-Hochberg over all estimable control x flow tests",
+    "permutation_count": 9999,
+    "seed": 20261117
+  },
+  "scope": "typed multiaxis companion only; not universal-core/TLog validation; no T0; no causal or clinical-treatment claim",
+  "script_sha256": "8574541a4fee572f70c7ff56aceccdedbf6aa4fc775ef4e299b9a7a310b8139f",
+  "software": {
+    "python": "3.11.9",
+    "pandas": "3.0.6",
+    "numpy": "1.26.4"
+  },
+  "outputs": {
+    "controls_by_flows_external_22.csv": {
+      "bytes": 22934,
+      "sha256": "380e0048590291eed75ac9f3ed55ea0fd66998b133c9f11f2294a4118bb6f565"
+    },
+    "controls_by_flows_external_22_heatmap.png": {
+      "bytes": 133813,
+      "sha256": "513c3f2a0af93cec403cf0f2f8d43424ead055f946ad6569c879e4e4f7ac9d3d"
+    },
+    "field_coverage_external_22.csv": {
+      "bytes": 2040,
+      "sha256": "f51af5b313fcc335d0ec92f833d621e3415d4e899756043b42df2083f6158553"
+    },
+    "patient_level_external_22.csv": {
+      "bytes": 4875,
+      "sha256": "f8b5291575500c981d9ad4f46619c1c805b620b5c3d4a08859d643dbcd7e7709"
+    },
+    "pdac_22_variant_rows_normalized.csv": {
+      "bytes": 11433,
+      "sha256": "148baa0645a9053006a5648e9328b09b76bca68e3db7bff109c92a4d3e2c37fb"
+    },
+    "primary_cross_moa_contingency.csv": {
+      "bytes": 102,
+      "sha256": "d4f5112ac9375a22d5ba815a4a49d6f43f5d9fe020ab94c983347e89807aa988"
+    },
+    "primary_cross_moa_contrast.json": {
+      "bytes": 988,
+      "sha256": "de1980d50426781747e90a74ca821dd00d70776da57edd6a31b5911e9a561650"
+    },
+    "REPORT_EXTERNAL_G12C_CROSS_MOA.md": {
+      "bytes": 7235,
+      "sha256": "96ad0bb3b7ecdb8184744e83410264497952ac075592b668522d4775a637a9f3"
+    },
+    "source_supplement_all_rows.csv": {
+      "bytes": 16041,
+      "sha256": "338007bc832d3fcde43a8e3e553f80576f5029078fe7ff21d83f661e601e9cc9"
+    }
+  }
+}

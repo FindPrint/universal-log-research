@@ -1,0 +1,2 @@
+<PROJECT_ROOT>\UNIVERSAL_LOG_v5.9.4.py:1726: RuntimeWarning: invalid value encountered in sqrt
+  d_max = np.max(np.sqrt(np.arange(n)**2 + (s - s[0])**2))

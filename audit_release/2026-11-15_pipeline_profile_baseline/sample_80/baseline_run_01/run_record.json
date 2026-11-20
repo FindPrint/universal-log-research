@@ -1,0 +1,30 @@
+{
+  "label": "baseline_run_01",
+  "profiled": false,
+  "started_utc": "2026-11-15T14:19:54.2977680Z",
+  "elapsed_seconds": 441.264635,
+  "exit_code": 0,
+  "source_sha256": "c02d7e1a4081fcdcb2ccaa9acb17f3818e9950d297cb262ec5da63ca2695dedd",
+  "input_sha256": "b76a2ef1ddc50855baa8959714744e0764304bbe9408c6842c5596530ad9c216",
+  "rows": 80,
+  "columns": [
+    "MC_Update",
+    "Energy_per_spin",
+    "Magnetization",
+    "Abs_magnetization",
+    "M_squared",
+    "M_fourth",
+    "Nearest_neighbor_correlation",
+    "Cluster_fraction",
+    "Noise_axis",
+    "Noise_flux",
+    "Abs_magnetization_shuffled",
+    "Temperature",
+    "L",
+    "Chain",
+    "Seed"
+  ],
+  "output_directory": "<PROJECT_ROOT>\\audit_release\\2026-11-15_pipeline_profile_baseline\\sample_80\\baseline_run_01\\pipeline_output",
+  "console_log": "<PROJECT_ROOT>\\audit_release\\2026-11-15_pipeline_profile_baseline\\sample_80\\baseline_run_01\\console.log",
+  "profile_file": null
+}

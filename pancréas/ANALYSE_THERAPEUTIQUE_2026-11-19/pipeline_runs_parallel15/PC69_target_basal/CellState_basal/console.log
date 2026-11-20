@@ -1,0 +1,34 @@
+
+[CIBLE-FIXE-GLOBALE] politique=fixed mode=single cible_demandee='CellState_basal' -> cible_globale='CellState_basal' methode=user_requested_target controles=['CellState_basal'] | Cette cible unique sera reutilisee pour TOUS les controles. Le run ou controle == cible sera signale explicitement comme diagonal, avec cible_demandee ET cible_utilisee.
+
+================================================================================
+UNIVERSAL_LOG v5.9.4-L7aL7b-DKind-AuditFix-SeedTrace-CohenDOnly-NoPlots — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\pancréas\ANALYSE_THERAPEUTIQUE_2026-11-19\pipeline_inputs_balanced_15\GSE271300_PC69_balanced15_multiflux.csv | Domain: pdac | Mode: fast
+================================================================================
+
+[CIBLE-FIXE-DIAGONALE] politique=fixed controle=CellState_basal cible_demandee='CellState_basal' -> cible_utilisee='Treatment_code' | La cible fixee est EGALE au controle pour ce run. Repli EXPLICITE sur la premiere colonne != controle, pour ce run seulement. Ce run diagonal n'est PAS comparable aux autres : comparer cible_demandee vs cible_utilisee dans les metadonnees.
+Target Observable: Treatment_code | Control Parameter: CellState_basal
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.377
+  règle: uniform
+  n_candidates: 45, resolution: 2.273%
+  w_size: 19, min_grp: 6
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE] controle=CellState_basal direction=non_monotone monotone=False spearman_r=0.065 | Le controle n'est PAS monotone dans l'ordre fourni. La progression n'est donc pas injective : un meme seuil en % peut correspondre a plusieurs valeurs brutes. Les valeurs brutes a cote des % sont exploratoires (voir min / max / spread). Ne pas lire T0 comme une valeur unique du controle.
+[T0-VALEUR-BRUTE] controle=CellState_basal T0=58.94% -> valeur brute controle=1 (median_near=1.0, min_near=1.0, max_near=1.0, spread=0.0, ambiguous=True)
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE-RAPPEL] controle=CellState_basal : T0 en % ne correspond pas a une valeur unique du controle. Voir cascade.thresholds_in_control_units pour min / max / spread.
+Rendu des figures desactive par --no-plots.
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=down regime=down disagreement=False | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: INDETERMINE (mode=off) | L7b desactive (--no-l7b). Ne pas interpreter L7a seul.
+✓ 5-Threshold T_0: 58.94%
+✓ T_0 en valeur brute du controle 'CellState_basal': 1.0 (median_near=1.0, min_near=1.0, max_near=1.0, spread=0.0, ambiguous=True)
+✓ Cible: demandee=CellState_basal | utilisee=Treatment_code | politique=fixed | repli_diagonal=True
+✓ [AVERTISSEMENT] Controle 'CellState_basal' NON MONOTONE (direction=non_monotone) : T0 en % n'est pas une valeur unique du controle, voir spread.
+✓ Tool Footprint: ADC Hardware Quantization Detected (3 discrete levels)
+✓ Holographic Tension: criticality|control=CellState_basal (Delta=1.46, D_vec=[1.537999, 2.499401, 3.0, 2.519735])
+✓ Results exported to: <PROJECT_ROOT>\pancréas\ANALYSE_THERAPEUTIQUE_2026-11-19\pipeline_runs_parallel15\PC69_target_basal\CellState_basal

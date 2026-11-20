@@ -1,0 +1,95 @@
+{
+  "title": "Separate synthetic ground truth; not passed to the pipeline",
+  "created_utc": "2026-11-15T23:44:19.555368+00:00",
+  "cases": {
+    "case_01": {
+      "family": "abrupt_step",
+      "event_present": true,
+      "event_definition": "first row at or after which the generated target has a level shift",
+      "change_index_zero_based": 38,
+      "boundary_control_midpoint": 37.5,
+      "boundary_rank_fraction": 0.5,
+      "data_seed": 202611151,
+      "flow_relations": [
+        "correlated proxy",
+        "exact affine copy",
+        "independent noise"
+      ],
+      "description": "abrupt event with related, affine-copy, and independent flows"
+    },
+    "case_02": {
+      "family": "abrupt_step",
+      "event_present": true,
+      "event_definition": "first row at or after which the generated target has a level shift",
+      "change_index_zero_based": 38,
+      "boundary_control_midpoint": 37.5,
+      "boundary_rank_fraction": 0.5,
+      "data_seed": 202611151,
+      "flow_relations": [
+        "correlated proxy",
+        "exact affine copy",
+        "independent noise"
+      ],
+      "description": "paired same event and target; additional flows removed"
+    },
+    "case_03": {
+      "family": "stationary_ar1_null",
+      "event_present": false,
+      "event_definition": "none; stationary AR(1) target with fixed phi=0.55 and fixed innovation scale",
+      "target_phi": 0.55,
+      "target_innovation_sigma": 0.45,
+      "data_seed": 202611153
+    },
+    "case_04": {
+      "family": "smooth_drift_null",
+      "event_present": false,
+      "event_definition": "no discrete transition; linear trend plus stationary measurement noise",
+      "data_seed": 202611154
+    },
+    "case_05": {
+      "family": "abrupt_step",
+      "event_present": true,
+      "event_definition": "first row at or after which the generated target has a level shift",
+      "change_index_zero_based": 3,
+      "boundary_control_midpoint": 2.5,
+      "boundary_rank_fraction": 0.4166666666666667,
+      "data_seed": 202611157,
+      "flow_relations": [
+        "correlated proxy",
+        "exact affine copy",
+        "independent noise"
+      ],
+      "description": "short-series stress case N=7"
+    },
+    "case_06": {
+      "family": "abrupt_step",
+      "event_present": true,
+      "event_definition": "first row at or after which the generated target has a level shift",
+      "change_index_zero_based": 7,
+      "boundary_control_midpoint": 6.5,
+      "boundary_rank_fraction": 0.4642857142857143,
+      "data_seed": 202611158,
+      "flow_relations": [
+        "correlated proxy",
+        "exact affine copy",
+        "independent noise"
+      ],
+      "description": "short-series stress case N=15"
+    },
+    "case_07": {
+      "family": "abrupt_step",
+      "event_present": true,
+      "event_definition": "first row at or after which the generated target has a level shift",
+      "change_index_zero_based": 15,
+      "boundary_control_midpoint": 14.5,
+      "boundary_rank_fraction": 0.5,
+      "data_seed": 202611159,
+      "flow_relations": [
+        "correlated proxy",
+        "exact affine copy",
+        "independent noise"
+      ],
+      "description": "short-series stress case N=30"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "control_mode": "multi",
+  "controls": [
+    "MC_Update",
+    "Noise_axis"
+  ],
+  "created_utc": "2026-11-14T21:38:29.248442+00:00",
+  "deviation_record": "A separate outer-mode=full light run was stopped at 15 minutes with no output and retained in audit_release/2026-11-14_l7b_integration/ATTEMPT_01_OUTER_FULL_TIMEOUT.txt. The light/full comparison below uses the faster outer mode so the L7b mode remains the tested factor.",
+  "hypotheses_not_results": [
+    "H1: L7b-light returns one structured result per requested control without launching robustness re-runs.",
+    "H2: L7b-full executes alternate-seed, 80-percent window, shuffled-target, and log-scale checks for each requested control, with each check represented as ROBUSTE, FRAGILE, or INDETERMINE.",
+    "H3: MC_Update and Noise_axis are treated as distinct analysis axes with a fixed shared target; differences across axes are descriptive and not causal."
+  ],
+  "input": "ising_classique_test\\finite_size\\multiflux_mcmc_pipeline_test\\pipeline_inputs\\L16_T2.269185_chain0.csv",
+  "input_sha256": "ed79ab331acebee7bb44d9cd4589809b52f91ea1f73d873600206680dad92d4f",
+  "other_call_arguments": "domain=generic, risk=moderate, horizon=None, horizons=None, n_scenarios=48, mode=fast (selected after the default full mode failed to return in 15 minutes); output_dir is mode-specific; max_workers=1.",
+  "rows": 200,
+  "scope_limit": "This verifies software orchestration and output semantics on one archived synthetic Ising data file. It is not calibration of L7b thresholds or evidence of physical criticality detection.",
+  "seed": 20261108,
+  "shared_target_policy": "fixed",
+  "source": "audit_release\\UNIVERSAL_LOG_v5_9_1_AUDITFIX.py",
+  "source_sha256": "a2173839b8ebfcf3dfcf0ee809c5d0a7b2cb1fd34bcaa1199175fa6b23aa2ef8",
+  "status": "predeclared_before_execution",
+  "target": "Abs_magnetization",
+  "title": "v5.9.1 L7b end-to-end integration on the archived Ising CSV"
+}

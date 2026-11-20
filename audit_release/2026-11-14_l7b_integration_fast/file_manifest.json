@@ -1,0 +1,427 @@
+[
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\full_console.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\integration_summary.json",
+    "bytes": 2523,
+    "sha256": "93c2ae607ebb1ac8489197a2d489bbd818cf3f3275e4fdc09ae7d00d90668ff6"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\controls_summary.json",
+    "bytes": 21742,
+    "sha256": "b2d9b7636b9035c8d2ee7a7d0bd178127733bc4a5412f4167c2f1c44be2f5545"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\controls_summary.txt",
+    "bytes": 1716,
+    "sha256": "7699f2294a581686d9d1709b801b85f70a0b127c97cd1ba2ea900f437210fda7"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\csd_consensus.csv",
+    "bytes": 2840,
+    "sha256": "643db731d6b389038c610c719cd81a56596062f2ca454f0e2cf5667a13a753e6"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\csd_consensus.json",
+    "bytes": 75403,
+    "sha256": "9620a8c4b27396c88ec38452068b181697ec68f63a96864a18e3e76f23c0ed49"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\csd_consensus.png",
+    "bytes": 164822,
+    "sha256": "2ef45de327b95a6a7c3012a9d403bb719b0ea4a4faadc52ccc4515a4a48109de"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\csd_correlation.json",
+    "bytes": 27260,
+    "sha256": "8567dd64b429b911f334b30ceda7dc3ec9b28d854f5650238105bf4649d698da"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\csd_correlation.png",
+    "bytes": 186921,
+    "sha256": "1a972a25acbe8ff9bb70c43bde51fb897d05d898c1f0326c1b74c5abb7ff0594"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\csd_fractal_estimators.csv",
+    "bytes": 60075,
+    "sha256": "c510ab7335d6ab8db32b1c88bbb07043a8f90a061b5929152efd4cbf933a66f6"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\csd_fractal_estimators.json",
+    "bytes": 1049587,
+    "sha256": "ee4bc8a25d61d8adacf065a4389ef799ce0b8e4630f5936c4325a8b35cac89ef"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\csd_fractal_estimators.png",
+    "bytes": 211494,
+    "sha256": "825a6661954444fa60ed0248f0c03c93ad9cd7239c41f7e56db0e377d94bc301"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\dashboard.html",
+    "bytes": 892,
+    "sha256": "8ca2ab4d89c723e1746737d7fd154e5926ba9d589d75cdc3dbb98d4d6929f40e"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\df_feat.csv",
+    "bytes": 812938,
+    "sha256": "28fd518549ef2d03f9d75e4199c310cb828164d005a191d1cb81a22563d6d06b"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\estimator_four_tests.csv",
+    "bytes": 517188,
+    "sha256": "ed506bf145ff9c4d659d440050bb70f700d2f14a37f30279e079db735df9cdb9"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\estimator_four_tests.json",
+    "bytes": 3510471,
+    "sha256": "c98a41c45b5dcb9a65e8a1e903777f58c61163e075d86aa69a516a47634f51fb"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\estimator_measurement_types.csv",
+    "bytes": 9751,
+    "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\estimator_measurement_types.json",
+    "bytes": 23504,
+    "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\estimator_redundancy.csv",
+    "bytes": 16915,
+    "sha256": "3ce4c6d9ab242826fb24b30bcface03eff3a2831a81cff6a5a490642154b9375"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\estimator_redundancy.json",
+    "bytes": 220211,
+    "sha256": "68cf182f31c5fabe0d01dd7bebcde19424c4a5171c19d7b1a1585b34a23beb09"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\estimator_redundancy.png",
+    "bytes": 184857,
+    "sha256": "299db8c5bf0b116899042bab0313454e57ee1aefbc5a4029ec21713a474ece32"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\fluxes_raw.csv",
+    "bytes": 33284,
+    "sha256": "81c0e5ff34ce6d9c40247419e1c8c2967a83046bb712c44da888774fb96301ef"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\holographic_tension.png",
+    "bytes": 72524,
+    "sha256": "27cba230b46ead4096cc91771e11c4869c8d5046463f9d475ce91d7295a6f65d"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\landscape_complexity.png",
+    "bytes": 2831155,
+    "sha256": "e3afd4579383f21870ccd32d1f7674ce2843f2d8d65ad75e5775eef8c77a7418"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\landscape_complexity_improved.png",
+    "bytes": 3264273,
+    "sha256": "5864e90b55b0fa094aa40894b4658a853665271c30091982e9e73da37c17c869"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\logs.json",
+    "bytes": 261,
+    "sha256": "736543f099a9f9174416c61691d3991f8f061b2cf4ecacffb00a7d80f7a3fafa"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\master_results.json",
+    "bytes": 10773772,
+    "sha256": "49afce7df2b8ce20a93b9808e19f19c7a19232f003190e7e6c51e23a99735122"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\noise_diagnostic.json",
+    "bytes": 5135135,
+    "sha256": "3124e028515901251f604a797f9d7ed3c72c65988da2e4e6064b745fc61b5d88"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\noise_diagnostic.png",
+    "bytes": 380322,
+    "sha256": "3d5c47846f8ec7a94646d1b519d4d356f7b3cce6c376970c860e2f900f5b8366"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\post_threshold.png",
+    "bytes": 217219,
+    "sha256": "abc49ea4c375f01e22f7a25da71aede336af75c49c5d9cb9f16adc8d92c67199"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\predictive_mc_complexity.json",
+    "bytes": 71452,
+    "sha256": "43dbe934558b02a6042d2a4ecb8724688cd5c7273d692555269bab2d2e85caaf"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\raw_fluxes.png",
+    "bytes": 84219,
+    "sha256": "9276d47ffe5d81a2f2da655ddee72a9347ceb2d049f73a2f03df55caa31bb19a"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\reading_synthesis.json",
+    "bytes": 72890,
+    "sha256": "50e4429123f1fbe958a28a6de5fd0c61ad5da582b4d4a1c7d3c58283eabb0952"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\scan_curve.json",
+    "bytes": 2100,
+    "sha256": "5c7d5ae3facef3c99780210e883c1ab26aaa276b107763180b80d9a90e432c34"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\scores.json",
+    "bytes": 174983,
+    "sha256": "8e43734764e523336d4206d36565795238b15e8f04e7712f7a5878c25e0c2d6c"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\separation_clustermap.png",
+    "bytes": 1505473,
+    "sha256": "46949ec9e197b0d0d6620b2e4febb058c68e6f6d9c8c0c6aba28b1b8117ead61"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\separation_heatmap.png",
+    "bytes": 2456437,
+    "sha256": "72655a50ea0345e2fa6fc2e98a22b05218b67e02de6de028f8e7b81ee6e48766"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\telemetry.jsonl",
+    "bytes": 761,
+    "sha256": "fb87e604df0a134ee51a151c475bdaded7719625559dafadbb3e125f46eaef8c"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\threshold_scan.png",
+    "bytes": 94256,
+    "sha256": "3ba18278ecab7db08a134865c7c9f2c5ebb18a7a551e54967f0d89ad3c7a1992"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\transition_analysis.json",
+    "bytes": 356406,
+    "sha256": "125690d8dbd1fec00ab11b3fbe8fb54ef6b7d945f17aa6a8b14bcc03d2c4c0e3"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\universal_master_report.txt",
+    "bytes": 11349,
+    "sha256": "514ec388d0db529bc23e87f2ef99cce95f8485019b5aec6bc3f390e06ca6cf03"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\MC_Update\\zscore_fluxes.png",
+    "bytes": 1190447,
+    "sha256": "579d4a9a324ebe46afac167a7e14eee16073df8cef4a5bfc82f24b73685a451b"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\csd_consensus.csv",
+    "bytes": 2815,
+    "sha256": "83ad8f06c6450a75088db8d3c2a35d3734b54d026df84ebb90394c91f42f1c7e"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\csd_consensus.json",
+    "bytes": 75180,
+    "sha256": "d03b060fedc985f296f11b77065a44d561ff334389c7ace00880782cb47af6de"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\csd_consensus.png",
+    "bytes": 165520,
+    "sha256": "b25adbb9b6f637056ae00915663c35963f8e2e5f92dfce592fede93b30d74ca1"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\csd_correlation.json",
+    "bytes": 23696,
+    "sha256": "67e5612233ee84f9177eac7d332e7d6a61ebdf851985838a4e840174ec0776be"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\csd_correlation.png",
+    "bytes": 182101,
+    "sha256": "d00a07391fe0cb9baf2047cb742eb4f65518fe4a93158587f5ced0738e7040f3"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\csd_fractal_estimators.csv",
+    "bytes": 60904,
+    "sha256": "48449179f4716b0eeae0fb1e6a4e910dd53b1dfe1f25c6d3f0859c92e5c0b7c2"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\csd_fractal_estimators.json",
+    "bytes": 1039343,
+    "sha256": "0c07ab68e8dd52bf216a2b29fc8e31db52a35f9b9236d1f1ae1481ca0244476a"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\csd_fractal_estimators.png",
+    "bytes": 210363,
+    "sha256": "27dffcda3fac24596b5b42ed49c8ef90d0080d79a9593a5fd8c17750c206fed3"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\dashboard.html",
+    "bytes": 888,
+    "sha256": "23e80f94485733c1ef31cd70623295ca0bff9222018e57e2b098a69b9640ff0c"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\df_feat.csv",
+    "bytes": 803120,
+    "sha256": "05c72935add26d04cf81d35e5e62b249f1cd421e0aef633f5ca13e74d7c65021"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\estimator_four_tests.csv",
+    "bytes": 513883,
+    "sha256": "f62340acd7200eef3190785633f02a1b55304571e45d2355b10018e16f866cb2"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\estimator_four_tests.json",
+    "bytes": 3518447,
+    "sha256": "63eaf106343bae30b271f6af8d9b07b9b3d68f3f9f262b2e64e42abacd32536e"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\estimator_measurement_types.csv",
+    "bytes": 9751,
+    "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\estimator_measurement_types.json",
+    "bytes": 23504,
+    "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\estimator_redundancy.csv",
+    "bytes": 16127,
+    "sha256": "9f9cfbdce569073995fea90870001c60a39b8bbe3f5328167b3e8c55142bcca2"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\estimator_redundancy.json",
+    "bytes": 215833,
+    "sha256": "a571b48a0ccd4d5d0d2762377ea76a70f933dece8eb93879d44fb0643bce6cf7"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\estimator_redundancy.png",
+    "bytes": 184984,
+    "sha256": "6b12fce6dea550c2014481e1c345a214d156c58af51508757fe7a99ef03045a0"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\fluxes_raw.csv",
+    "bytes": 33284,
+    "sha256": "81c0e5ff34ce6d9c40247419e1c8c2967a83046bb712c44da888774fb96301ef"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\holographic_tension.png",
+    "bytes": 63028,
+    "sha256": "70e1cef95745926d4354ed8b9813b3f2d76d7d7d746d41b6ce53370e78901ff8"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\landscape_complexity.png",
+    "bytes": 3399424,
+    "sha256": "435b92827c38ec785519a152fbd3fee4b0259515bb29f4290a2d7d6f027a96df"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\landscape_complexity_improved.png",
+    "bytes": 3729168,
+    "sha256": "4359f642e02ca4af85824c4c923ac527b402fd2ef7beb7031b62f561c1d79d71"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\logs.json",
+    "bytes": 261,
+    "sha256": "736543f099a9f9174416c61691d3991f8f061b2cf4ecacffb00a7d80f7a3fafa"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\master_results.json",
+    "bytes": 10763419,
+    "sha256": "3cd9d1ce944298b18bbcfe8d925fff7f895ccb3111311a7a6ef7b0de6daec6ee"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\noise_diagnostic.json",
+    "bytes": 5131965,
+    "sha256": "eb17625edc068df78b1d505a0cf6247e1f30a0054df6e8c3915398f41b9fd9a3"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\noise_diagnostic.png",
+    "bytes": 385012,
+    "sha256": "19f89f9bf598857f2a42ae8f91cf64ac4780f34c4cf9ca74ff326553686cbed0"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\post_threshold.png",
+    "bytes": 225649,
+    "sha256": "1ab5800f4ae00224d8e9ba827805305d74c47f18d451b148ad01f309b0528c86"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\predictive_mc_complexity.json",
+    "bytes": 71488,
+    "sha256": "398b11cfff2afd0ade9dd4e37ff4bb80e0863345e0525c66fccd4db65ab0612b"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\raw_fluxes.png",
+    "bytes": 84555,
+    "sha256": "b4e213e593638f06d4875efed5d913ba6de58cb232842f887188a7e628414ba2"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\reading_synthesis.json",
+    "bytes": 73008,
+    "sha256": "6d404abb9f155604b051ae73d6a5e7ecf3058fd4454c026b217a39cb3cd5913b"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\scan_curve.json",
+    "bytes": 4023,
+    "sha256": "0529a1c029e36b927a4803afa24c935ba2e8e9e8c23340c1d2aaedfd0789e54b"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\scores.json",
+    "bytes": 174765,
+    "sha256": "015c8db16ac458d81978f0ed838d8b40fe4610119322105056efc5b28f033ae3"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\separation_clustermap.png",
+    "bytes": 1512412,
+    "sha256": "24699901e8cc046d6c8857229335a4f6b485532926c624c0d77ce0ad312c1841"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\separation_heatmap.png",
+    "bytes": 2497803,
+    "sha256": "74e538648e665765e878385677439bd1da3eaa46999664e5fb0616a18c028f09"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\telemetry.jsonl",
+    "bytes": 761,
+    "sha256": "d95069bac6991a8d48b8ebb7559ff359234ab5bcdb0fd49ec074b878ea8f0c5f"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\threshold_scan.png",
+    "bytes": 107964,
+    "sha256": "3b097f36511782650f7bca6e7676e8efd93af18a76f8bb4aa509fa831135d665"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\transition_analysis.json",
+    "bytes": 357222,
+    "sha256": "2df1dfa45844464c932421ac9f989630387e95b427d1083731baba5f9b7db080"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\universal_master_report.txt",
+    "bytes": 11957,
+    "sha256": "f6b9ecf235ebf39cc059e4a31b6daca93925ee551195c7239d8a62e2632b704c"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light\\Noise_axis\\zscore_fluxes.png",
+    "bytes": 2428971,
+    "sha256": "3bb9842c7a1b0d79924ddeecd4b17e55c9dd625ae25ffe7741aeceee2eb67e60"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light_axis_summary.json",
+    "bytes": 3656,
+    "sha256": "beb8decde4e08b7b5ed5082177ccb1a8a4add6a5c4e44bdd2d5b3f0408f639af"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light_console.log",
+    "bytes": 10719,
+    "sha256": "af11650aaf45fbda75494702337fcf756f01789ec807bed65d78aa7fec7caefa"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\light_result.json",
+    "bytes": 23345,
+    "sha256": "c7e71f694f3e454721aec1bbab6e566a453197d367ef15b11e4a094eca89113c"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\protocol_predeclared.json",
+    "bytes": 1975,
+    "sha256": "e41efce6afc644133ac931e43ee17172a6e09d3fd3ec507f7ff08bafd948b6e2"
+  },
+  {
+    "path": "audit_release\\2026-11-14_l7b_integration_fast\\runner_executed_exact.py",
+    "bytes": 7243,
+    "sha256": "b41b18c28a7bfffa0fd734ef156d43c9815f293707aa92c461125874d2fd635d"
+  }
+]

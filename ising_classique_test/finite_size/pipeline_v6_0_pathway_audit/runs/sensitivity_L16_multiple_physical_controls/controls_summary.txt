@@ -1,0 +1,14 @@
+================================================================================
+UNIVERSAL_LOG v6.0.0-L7aL7b-CohenD — CONTROLES SUMMARY (multi)
+================================================================================
+
+File: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\inputs\ising_L16_physical.csv | Mode: fast | Domain: physics
+Control selection: fallback_used=False missing=[] reason=None
+Politique cible: fixed | Cible demandee globale: Energy_per_spin | Cible globale resolue: Energy_per_spin | Resolution: {'policy': 'fixed', 'requested': 'Energy_per_spin', 'resolved': 'Energy_per_spin', 'method': 'user_requested_target', 'fallback_used': False, 'reason': "cible demandee par l'utilisateur, reutilisee pour tous les controles"}
+Cible FIXE (defaut v5.4) : une seule cible pour tous les controles. Cas diagonal signale explicitement avec cible_demandee ET cible_utilisee.
+
+- Temperature : ok | target_demandee=Energy_per_spin | target_utilisee=Energy_per_spin | politique=fixed | repli_diagonal=False | T0=60.50594227473842% -> valeur brute controle=2.34 (min_near=2.32, max_near=2.36, spread=0.040000000000000036, ambiguous=False) | monotone_controle=True | avertissement_non_monotone=False | consensus=up | harmonic=None
+- abs_magnetization : ok | target_demandee=Energy_per_spin | target_utilisee=Energy_per_spin | politique=fixed | repli_diagonal=False | T0=31.65670141939858% -> valeur brute controle=0.505807942708 (min_near=0.478847005208, max_near=0.53571484375, spread=0.056867838542000004, ambiguous=True) | monotone_controle=False | avertissement_non_monotone=True | consensus=up | harmonic=None
+- chi_abs_per_spin : ok | target_demandee=Energy_per_spin | target_utilisee=Energy_per_spin | politique=fixed | repli_diagonal=False | T0=44.40588744142819% -> valeur brute controle=3.2719477921 (min_near=2.62223405679, max_near=3.33996627096, spread=0.7177322141700002, ambiguous=True) | monotone_controle=False | avertissement_non_monotone=True | consensus=up | harmonic=None
+- Cv_per_spin : ok | target_demandee=Energy_per_spin | target_utilisee=Energy_per_spin | politique=fixed | repli_diagonal=False | T0=11.871263032274468% -> valeur brute controle=0.695392347452 (min_near=0.669681162427, max_near=0.706650002942, spread=0.036968840514999934, ambiguous=True) | monotone_controle=False | avertissement_non_monotone=True | consensus=up | harmonic=None
+- Binder_U4 : ok | target_demandee=Energy_per_spin | target_utilisee=Energy_per_spin | politique=fixed | repli_diagonal=False | T0=31.65670141939858% -> valeur brute controle=0.494218575698 (min_near=0.472758369579, max_near=0.517666606175, spread=0.04490823659600002, ambiguous=True) | monotone_controle=False | avertissement_non_monotone=True | consensus=up | harmonic=None

@@ -1,0 +1,158 @@
+{
+  "pdf": "<PROJECT_ROOT>\\output\\pdf\\ADDENDUM_AUDIT_THERAPEUTIQUE_PDAC_2026-11-17.pdf",
+  "pdf_bytes": 39990345,
+  "pdf_sha256": "cf2f698370225955cc480e561aab3ae5e1e827561d428a4313fa62275094b1f6",
+  "pages": 7,
+  "attachments": [
+    {
+      "name": "reanalyze_published_in_vivo_source_data.py",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\reanalyze_published_in_vivo_source_data.py",
+      "bytes": 25318,
+      "sha256": "3d2d7fd8d3ce06586c910a8f89129036040769153f2b4b26065d4a5e5dbaa0ab"
+    },
+    {
+      "name": "primary_cohort_summary.json",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_in_vivo_source_data\\primary_cohort_summary.json",
+      "bytes": 54560,
+      "sha256": "be2d9930f62f597d7b07da305b37e80dea3cf969658f7c60923757611fabe9c7"
+    },
+    {
+      "name": "primary_pairwise_tests.csv",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_in_vivo_source_data\\primary_pairwise_tests.csv",
+      "bytes": 6517,
+      "sha256": "0131a8ed5b0a4d40fb0703a2a0682f23a659c66a97180eb31cde86f46e96c6a8"
+    },
+    {
+      "name": "factorial_interactions.csv",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_in_vivo_source_data\\factorial_interactions.csv",
+      "bytes": 3610,
+      "sha256": "9ae09d93ed49280529b3ccc0501ec6eaec7349462c499cd0cd0c89122b950b26"
+    },
+    {
+      "name": "individual_animal_tumor_volume_long.csv",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_in_vivo_source_data\\individual_animal_tumor_volume_long.csv",
+      "bytes": 62528,
+      "sha256": "bea4f13c563392624ecb96966d5c81a9ea849869b52346f5b0ceefa717c6aba3"
+    },
+    {
+      "name": "flow_cytometry_mouse_values.csv",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_in_vivo_source_data\\flow_cytometry_mouse_values.csv",
+      "bytes": 2075,
+      "sha256": "81c4a3f73c1641e508d7c84884ed435f09e678388cce2ed4ea4a0f93d743e066"
+    },
+    {
+      "name": "flow_cytometry_tests.csv",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_in_vivo_source_data\\flow_cytometry_tests.csv",
+      "bytes": 930,
+      "sha256": "8e6180792cdf8f186716a8509c81dc49b8c3b1b164d1cfe3b592922e65af8ef9"
+    },
+    {
+      "name": "published_in_vivo_trajectories.png",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_in_vivo_source_data\\published_in_vivo_trajectories.png",
+      "bytes": 666734,
+      "sha256": "038c3384e584f7269c778dd21e0579aec74643c6c9295ab4487c513987dc0a48"
+    },
+    {
+      "name": "manifest.json",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_in_vivo_source_data\\manifest.json",
+      "bytes": 1898,
+      "sha256": "b30bf3f57236df01213f704715de0a2195744cc7065256ea0ccf5c249bfffdf8"
+    },
+    {
+      "name": "GSE309596_report.md",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_GSE309596_therapeutic_axes\\REPORT_GSE309596_therapeutic_axes.md",
+      "bytes": 4529,
+      "sha256": "3c909fc35eacab275af48a592655003cbf549f17988945fbd97ddd6d7908310b"
+    },
+    {
+      "name": "GSE309596_manifest.json",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_GSE309596_therapeutic_axes\\manifest.json",
+      "bytes": 11114,
+      "sha256": "6fd4ca59ef0aa07fd5d2077834cee6b01e5cbe293bca65425d90f8ab9d6e162b"
+    },
+    {
+      "name": "GSE309596_controls_by_flows.csv",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_GSE309596_therapeutic_axes\\GSE309596_controls_by_flows.csv",
+      "bytes": 94880,
+      "sha256": "f584cf1243013a3c2488c6f25599549b55235186a437089d586544e7969edbea"
+    },
+    {
+      "name": "GSE309596_sample_level_flows.csv",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_GSE309596_therapeutic_axes\\GSE309596_sample_level_flows.csv",
+      "bytes": 169136,
+      "sha256": "fb0856323613a12f5d2a560f0a243111a6105323f5cbdaf20af200ff5fb855cc"
+    },
+    {
+      "name": "GSE309596_qc_by_specimen.csv",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_GSE309596_therapeutic_axes\\GSE309596_qc_by_specimen.csv",
+      "bytes": 2555,
+      "sha256": "2310e9aafd8e1cbc6782a1b88ce5dc989270cdfd160edd117ff16483678df94a"
+    },
+    {
+      "name": "analyze_GSE309596_therapeutic_axes.py",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\analyze_GSE309596_therapeutic_axes.py",
+      "bytes": 30288,
+      "sha256": "2780c52371a7fd4b2c03fc570b17229c8e8e6620216ff5a1fb5e4ddccb799a8b"
+    },
+    {
+      "name": "download_GSE309596.py",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\download_GSE309596.py",
+      "bytes": 5982,
+      "sha256": "7670f1570ff013348bc7dcc95cb1083f6677f6d69ffaacac1c367e6c90d526d9"
+    },
+    {
+      "name": "download_manifest_GSE309596.json",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\source\\GSE309596_raw_counts\\download_manifest.json",
+      "bytes": 8245,
+      "sha256": "dfa7e996f07687be50ba68b355ac0fbe6248d3c6afae6b0d91f0c1c4af2e8908"
+    },
+    {
+      "name": "source_data_download_manifest.json",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\source\\PMC13043926_source_data_download_manifest.json",
+      "bytes": 881,
+      "sha256": "212dea3ae9013f5e61c90795407948b925b9257afaef141417130ede810cdfb4"
+    },
+    {
+      "name": "source_provenance_manifest.json",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\source\\PMC13043926_source_provenance_manifest.json",
+      "bytes": 2275,
+      "sha256": "83060a46e7784b8e74a0c57eb09d599e34f8e4f9348a5a20eb52f43f5adb60cd"
+    },
+    {
+      "name": "full_supplementary_archive.zip",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\source\\PMC13043926_supplementaryFiles.zip",
+      "bytes": 25684981,
+      "sha256": "dc2484aa80279bb032ce34c13712456e7a68b1ff5e738f87e32c7b2755a7b2d8"
+    },
+    {
+      "name": "article_fullTextXML.xml",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\source\\PMC13043926_fullTextXML.xml",
+      "bytes": 146345,
+      "sha256": "32ec1ed03d4f476304c210d45c794589c69d2320023fb9ba937b7a61564ea502"
+    },
+    {
+      "name": "correction_fullTextXML.xml",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\source\\PMC13103420_author_correction_fullTextXML.xml",
+      "bytes": 7784,
+      "sha256": "40de5c202a2d94159bfc5df21761eb995de3a13d1359529b0723a9bc93504fcb"
+    },
+    {
+      "name": "original_source_data.xlsx",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\source\\41467_2026_69695_MOESM7_source_data.xlsx",
+      "bytes": 5116879,
+      "sha256": "9f88ce9bbc4de2ba26871671c9232595be6d78c4d3762ed9c72f35940d19463e"
+    },
+    {
+      "name": "analysis_report.md",
+      "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-17\\candidate_combination_g12d_parp\\results_in_vivo_source_data\\RAPPORT_REANALYSE_THERAPEUTIQUE_2026-11-17.md",
+      "bytes": 18011,
+      "sha256": "c46fd6d4b7e7aa72d53142570f9bd1fe0685446fb738977f57405f175bb08c9a"
+    },
+    {
+      "name": "full_audit_previous_v4.pdf",
+      "source": "<PROJECT_ROOT>\\output\\pdf\\ADDENDUM_AUDIT_PDAC_MULTIFLUX_2026-11-17_v4_MAPPING_QA.pdf",
+      "bytes": 7052623,
+      "sha256": "24fb2feff3f1c471f8581fcdd3ca84ebbded94aa65ea061ed1c69847e844df4a"
+    }
+  ]
+}

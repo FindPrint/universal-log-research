@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-11-16T23:18:49.583745+00:00",
+  "status": "completed_exploratory_synthetic_calibration",
+  "pipeline_path": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py",
+  "pipeline_sha256": "bb8bbdba4eb1f8c55b49748274ae8fbfef8a43f6c1b890964f18ba77960c0773",
+  "protocol_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\calibration_v1\\PROTOCOL_SCAN_ABSTENTION_V1.md",
+  "protocol_sha256": "762292119c3dc94e784264108a5264bc45cb87ba37dc365e4c31b8683c6565ea",
+  "runner_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\calibration_v1\\run_scan_calibration.py",
+  "runner_sha256": "7e077153264ba4621966cef3002f0d8c0f988d6b31c046cf560e9829a95d945c",
+  "summarizer_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\calibration_v1\\summarize_scan_calibration.py",
+  "summarizer_sha256": "78e4287152acab109383344eb9177e22c44ca47f4e80926b5c2ee45e36cb6970",
+  "python": "3.11.9",
+  "numpy": "1.26.4",
+  "pandas": "3.0.6",
+  "seed": 20261116,
+  "replicates_per_scenario": 200,
+  "lengths": [
+    76,
+    150,
+    300,
+    600
+  ],
+  "profiles": [
+    "target_only",
+    "target_plus_2_linked",
+    "target_plus_2_linked_3_unrelated"
+  ],
+  "scan_records": 19200,
+  "failed_scans": 0,
+  "raw_csv_sha256": "6329c5053a63fc072a36bfb12459550718fb7aabdd7257ae6ec3ee96db7806f0",
+  "summary_csv_sha256": "fc62584e50c7f5ecb2c243ffd276fbb0498505eb6916871f0ea89b8efef63cbe",
+  "report_json_sha256": "532c9845f10c60c3db7420aff288158b25049fd5b102bd00c6f20a6a8a1b7daf",
+  "run_note": "Initial run completed all 19,200 scans and wrote raw CSV; the mixed-schema summary export raised a DictWriter fieldnames error. Summary and manifest were reconstructed from the preserved raw CSV without rerunning scans. Runner now uses the union of summary fields."
+}

@@ -1,0 +1,92 @@
+{
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271300",
+  "script": {
+    "path": "analyze_GSE271300_mouse_level.py",
+    "sha256": "a2ec2ee27e7f2c4445398006de6150ae9bd1a0fef52be2a039f1b708e859c606"
+  },
+  "inputs": [
+    {
+      "file": "GSE271300_PDX_GA60_analyzed.h5ad",
+      "bytes": 460680620,
+      "sha256": "f49492f1e7e827e6ec5cca41e0a4a4e7dc10eea9c1eef843292ce1839d375fbf"
+    },
+    {
+      "file": "GSE271300_PDX_GA60_QC.h5ad",
+      "bytes": 395579692,
+      "sha256": "3ce4d2d5d902a5cfd8899dfaf9c6e06cfdc65fbd2f17f677985b98a076d71cb9"
+    },
+    {
+      "file": "GSE271300_PDX_PC106_analyzed.h5ad",
+      "bytes": 314187624,
+      "sha256": "1ba2117d115068c5b43f642682e89e9b2787ef9511446147561d296d5ebb811c"
+    },
+    {
+      "file": "GSE271300_PDX_PC106_QC.h5ad",
+      "bytes": 288757280,
+      "sha256": "d0eb2c3cea23ce94291b71c8044642016ead05e2fef0ff84b1ca8d989f307295"
+    },
+    {
+      "file": "GSE271300_PDX_PC69_analyzed.h5ad",
+      "bytes": 204546811,
+      "sha256": "fd05a35d32358c564f4fdc53e8a115722fd53edd8bd7fd669e29b1c520339ab4"
+    },
+    {
+      "file": "GSE271300_PDX_PC69_QC.h5ad",
+      "bytes": 230170749,
+      "sha256": "cc7b1602ae82cfd5e036b5bcd77234f8d49ef6c1f48845c93842b64d5310c1ad"
+    }
+  ],
+  "analysis_report_sha256": "d7e9705bf228a07c778f581efcb67d01aacb8b87504e88a8ddcf3b1987553337",
+  "analysis_outputs": [
+    {
+      "file": "GSE271300_ANALYSIS_REPORT.json",
+      "bytes": 30153,
+      "sha256": "d7e9705bf228a07c778f581efcb67d01aacb8b87504e88a8ddcf3b1987553337"
+    },
+    {
+      "file": "GSE271300_ANALYSIS_REPORT.md",
+      "bytes": 4931,
+      "sha256": "bb8b56c9b057f179adb9743a7f429fc8af7aab9a3d5d3e4b1de0d86f3e2db39c"
+    },
+    {
+      "file": "GSE271300_basal_fraction_by_mouse.png",
+      "bytes": 74569,
+      "sha256": "1861979215ff55e2ecdf7feb27815b724bb22b78b3224f1ea040135cefa52639"
+    },
+    {
+      "file": "GSE271300_classical_state_target_expression_contrasts.csv",
+      "bytes": 10773,
+      "sha256": "fee078620d8574bcbab26653b3aaa52140ffbebf26fd03c52c7c293cbd20c60f"
+    },
+    {
+      "file": "GSE271300_exact_mouse_permutation_contrasts.csv",
+      "bytes": 6528,
+      "sha256": "d99b70e27d33df04808a2b0087845b3e1db11b5537ce2002be963e5e079203b1"
+    },
+    {
+      "file": "GSE271300_GA60_pooled_descriptive.csv",
+      "bytes": 528,
+      "sha256": "6759a226e7277bdf86eb681c8beda56566a92d71382e56c56993a1ffb84cc231"
+    },
+    {
+      "file": "GSE271300_HTO_ratio_ge_2_sensitivity_contrasts.csv",
+      "bytes": 6686,
+      "sha256": "68cea313f1f777cfec550f03727cd28b3418c9b450e2cf2807aad2ab5e1a86ae"
+    },
+    {
+      "file": "GSE271300_HTO_ratio_ge_2_sensitivity_mouse_summaries.csv",
+      "bytes": 2544,
+      "sha256": "1a97d9f37ae2ee5b32a438fb32540c0836328cb9f89eddfba72ea759e611fb91"
+    },
+    {
+      "file": "GSE271300_mouse_level_summaries.csv",
+      "bytes": 2544,
+      "sha256": "e4a0fcfbb708251bca0123b56bdca85db7bcd74fd756b09802651c41c297137c"
+    },
+    {
+      "file": "GSE271300_target_expression_by_mouse_state.csv",
+      "bytes": 27395,
+      "sha256": "3d1b6a0cac1732a8b507b402ce95ad9bf7812eeff7584b8d5061ccd657bd937e"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+control,flow,n_treated,n_control,treatment_minus_control_mean_log2FPKM,Cohens_d_pooled,Cohens_d_by_model,p_exact_blocked,permutations,status,family,q_bh_over_estimable_of_9_planned
+"MRTX1133 vs vehicle, blocked by cell line; G12D only",BRCA1,0,0,,,,,0,not_available_in_cell_line_GEO_matrix; not zero-imputed,paper-named HR gene,
+PDX combo vs vehicle; no single-agent RNA-seq arm,BRCA1,3,3,0.0150891305,0.04811983638,not reported; PDX IDs not mapped in matrix,1,20,estimable,paper-named HR gene; exploratory PDX endpoint,1
+BI-2865 vs vehicle in single G12V line; separate exploratory stratum,BRCA1,0,0,,,,,0,not_available_in_cell_line_GEO_matrix; not zero-imputed,not comparable to G12D/MRTX1133 arm,
+"MRTX1133 vs vehicle, blocked by cell line; G12D only",RAD51,0,0,,,,,0,not_available_in_cell_line_GEO_matrix; not zero-imputed,paper-named HR gene,
+PDX combo vs vehicle; no single-agent RNA-seq arm,RAD51,3,3,0.1649667091,1.217305587,not reported; PDX IDs not mapped in matrix,0.4,20,estimable,paper-named HR gene; exploratory PDX endpoint,1
+BI-2865 vs vehicle in single G12V line; separate exploratory stratum,RAD51,0,0,,,,,0,not_available_in_cell_line_GEO_matrix; not zero-imputed,not comparable to G12D/MRTX1133 arm,
+"MRTX1133 vs vehicle, blocked by cell line; G12D only",RPA2,9,9,-0.1872516637,-0.2763220997,"{""AsPC-1"": -8.601533998510828, ""PANC-1"": -8.712118338378339, ""SW1990"": 3.4100416002072667}",0.068,8000,estimable,paper-named HR gene; available GEO flows only,0.34
+PDX combo vs vehicle; no single-agent RNA-seq arm,RPA2,3,3,-0.1329369136,-0.4033073779,not reported; PDX IDs not mapped in matrix,0.6,20,estimable,paper-named HR gene; exploratory PDX endpoint,1
+BI-2865 vs vehicle in single G12V line; separate exploratory stratum,RPA2,3,3,0.0246874068,0.1621711751,"{""CFPAC-1"": 0.16217117508561182}",1,20,estimable,not comparable to G12D/MRTX1133 arm,1

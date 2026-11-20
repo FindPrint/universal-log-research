@@ -1,0 +1,27 @@
+{
+  "record_created_utc": "2026-11-14T15:30:46Z",
+  "runtime": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "sources": {
+    "v5_8": {
+      "path": "<PROJECT_ROOT>\\UNIVERSAL_LOG_v5.8.py",
+      "bytes": 616680,
+      "sha256": "4a21809ed263bb743bc8022e88f532a38310b4340c24b4e0def9e517776c65c0",
+      "lines": 12988
+    },
+    "v5_9": {
+      "path": "<PROJECT_ROOT>\\universal_x5f_log_x5f_L7a_x5f_L7b_x5f_v5.9.0f_0_n0z8.py",
+      "bytes": 622212,
+      "sha256": "4f80f6a7d0809e802cbc9ec30c0bed552c1c8a95eb58687fd78e4ffd8e808260",
+      "lines": 13013
+    }
+  },
+  "test_commands": [
+    ".venv\\Scripts\\python.exe -m py_compile universal_x5f_log_x5f_L7a_x5f_L7b_x5f_v5.9.0f_0_n0z8.py",
+    "AST/API comparison of v5.8 and v5.9; L7b pure-function edge inputs were evaluated directly; no full-pipeline L7b integration run yet."
+  ],
+  "git_repository_available": false,
+  "note": "User source files were read and imported but not modified. The previous v5.8 file includes a local experiment-only landscape_scan_points option added earlier in this thread."
+}

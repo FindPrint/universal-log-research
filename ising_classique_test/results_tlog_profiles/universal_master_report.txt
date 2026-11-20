@@ -1,0 +1,50 @@
+================================================================================
+UNIVERSAL_LOG v5.3-ControleRelatifNullCadre — MASTER SYNTHESIS REPORT
+================================================================================
+
+File: .\ising_classique_test\ising_temperature_sweep.csv | Domain: generic
+Target: Abs_magnetization | Control: Temperature
+Complexity fluxes: mode=explicit selected=['Energy_per_spin', 'Magnetization'] target_is_core_flux=False
+T_log scales: observations:105 (d estimators=20, anchors=4), system_size:256 (d estimators=20, anchors=4)
+Control selection: mode=single fallback_used=True missing=['Time'] reason=colonne demandee 'Time' absente du CSV : repli sur la premiere colonne numerique
+Harmonic validation enabled: False status=None
+
+Direction Consensus: DOWN (Confidence: 35.28%)
+Expected Horizon Value: -0.0222
+
+Canonical 5-Threshold Devil's Staircase Cascade:
+  T_-2_F2_pre_onset           :  22.48%
+  T_-1_F1_pre_inflection      :  35.89%
+  T_0_Monte_Carlo_Central     :  42.64%
+  T_+1_F1_post_deceleration   :  46.51%
+  T_+2_F2_post_attractor      :  67.37%
+
+Early Warning Alert: NORMAL (Lead Time: 0.0%)
+Tool Footprint Audit: ['Pure Continuous Physical Phenomenon (No tool artifact)']
+Lecture holographique v5.2 (Q1-Q6 et score de seuil inchanges):
+  [Couche geometrique — T_log]
+  d_sat  : 1.252
+  d_crit : 2.714
+  d_div  : 2.607
+  d_null (SpectralDimension) : 2.412
+  Delta (d_div - d_sat) : 1.355
+  Regime : CRITICALITY
+  Regime relatif : criticality|control=Temperature
+  Null role : measurement_frame_not_interchangeable_d
+  Classification heuristique : True
+  Validation physique : False
+  Evidence : ['delta_in_[1.2,3.0]']
+  T_log class median : {'saturation': -12.78938, 'criticality': -5.986566, 'divergence': -6.483324, 'null_reference': -7.389843}
+  Falsification : ECART SOUS 0.5 (geometrique vs SpectralDimension)
+  [Couche relative — z croise des 29, hors T_log]
+  class_z_median : {'saturation': -0.432252, 'criticality': 0.177699, 'divergence': 0.290759, 'null_reference': -0.672349}
+  cliff_between_classes : {'saturation_vs_divergence': {'cliff_delta': -0.75, 'n_a': 8, 'n_b': 7, 'note': 'sur z croise des medianes ; pas une dimension'}, 'saturation_vs_criticality': {'cliff_delta': -0.666667, 'n_a': 8, 'n_b': 6, 'note': 'sur z croise des medianes ; pas une dimension'}, 'criticality_vs_divergence': {'cliff_delta': -0.333333, 'n_a': 6, 'n_b': 7, 'note': 'sur z croise des medianes ; pas une dimension'}, 'criticality_vs_null_reference': {'cliff_delta': 0.722222, 'n_a': 6, 'n_b': 6, 'note': 'sur z croise des medianes ; pas une dimension'}, 'saturation_vs_null_reference': {'cliff_delta': 0.625, 'n_a': 8, 'n_b': 6, 'note': 'sur z croise des medianes ; pas une dimension'}, 'divergence_vs_null_reference': {'cliff_delta': 0.857143, 'n_a': 7, 'n_b': 6, 'note': 'sur z croise des medianes ; pas une dimension'}}
+  Q3 recopie Q1 : True
+Ce que mesurent les questions (scores numeriques inchanges):
+  Q1_Calme_vs_Chaos: Taille d'effet entre progression basse et haute, une colonne flux x estimateur. Ce n'est pas un test de chaos.
+  Q2_Tension_Seuil: Meme taille d'effet dans une marge avant le seuil contre une marge apres.
+  Q3_Agressivite: Meme comparaison que Q1 restreinte aux flux agressifs ; peut recopier Q1 si couverture faible.
+  Q4_Persistence: Separation intra-fenetre du flux brut, recopiee sur les colonnes d'estimateurs. Ce n'est pas Hurst.
+  Q5_Actif_Receptif: Separation actifs / receptifs sur moyennes brutes. 0 si etiquettes absentes.
+  Q6_Actif_Receptif_Echelle: Q5 apres division par l'ecart-type sans centrage. Ne remplace pas Q5.
+================================================================================

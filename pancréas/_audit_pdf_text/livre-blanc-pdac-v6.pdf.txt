@@ -1,0 +1,1787 @@
+===== PAGE 1 =====\nLivre blanc PDAC v6 - page 1
+L IVR E BL AN C — D OC U MEN T VIVAN T — 1 5 N OVEMBR E 2 0 2 6
+PDAC : chercher des pistes
+thérapeutiques avec
+UNIVERSAL_LOG v6
+Cancer du pancréas — ARN, protéine, CRISPR et autres flux — pipeline
+UNIVERSAL_LOG v6.0.0 (Cohen-d). Tout ce qui a été fait, testé, pensé, analysé — ce qui
+est connu et ce qui ne l'est pas.
+Mandat
+Zackary Drasse-Ménard, 15 novembre 2026 : « Trouver un remède pour le
+cancer du pancréas en utilisant ARN, protéine et CRISPR et autre flux/data
+information et avec mon pipeline. Maintenir un livre blanc de tout ce que tu fais
+tester penser analyse connais connais pas. »
+Pipeline
+UNIVERSAL_LOG v6.0.0 (universal_v6.0.0_cohen.py, SHA bb8bbdba…
+c0773) — Cohen-d partout, Cliff retiré, preuve HP35 du 14 novembre 2026 (4/4
+cascades identiques, environ 11x plus rapide). Original v5.9.0f intact.
+Règle de provenance
+Chaque donnée, chaque résultat, chaque affirmation porte sa source complète,
+la nature des lignes, comment chaque valeur a été produite, les hachages, et
+ce qui manque.
+Archive complète
+Ce PDF accompagne l'archive ZIP du projet : livre blanc source, code, flux,
+sorties complètes des runs, journaux, provenances, projet d'origine tlog28
+(juillet–octobre 2026) et trace de construction de la v6 (HP35). Manifeste et
+sommes SHA-256 dans le ZIP.
+Le résultat qui tient — 3 cohortes sur 3
+Le groupe de patients au KRAS le plus fort a les marqueurs CA125 (MUC16) et CEA (CEACAM5) élevés :
+CA125 +0,64 / +0,67 / +0,48 écarts-types et CEA +0,43 / +0,38 / +0,63 dans TCGA (178 tumeurs),
+GSE71729 (145 tumeurs) et GSE62452 (69 tumeurs). C'est vrai dans les données brutes, sans aucune
+correction. Sans aucun seuil, KRAS et CA125 prédisent chacun une survie plus courte (Cox continu, 177
+patients : HR 1,31 et 1,34 en multivarié).
+L'effondrement des marqueurs de différenciation (PGC, DPCR1, CLDN18) observé en TCGA ne tient que
+dans TCGA : il dépend de la correction de pureté et s'inverse dans les deux autres cohortes. Les tests
+CRISPR (DepMap) et médicaments (PRISM, 6 790 composés) sont négatifs. La chaîne ne se confirme pas
+en protéine (CPTAC). Aucun candidat thérapeutique n'est validé à ce jour : CLDN18, MUC16 et
+CEACAM5 restent des pistes, pas des candidats.
+\n\n===== PAGE 2 =====\nLivre blanc PDAC v6 - page 2
+Lecture honnête, exigée par le mandat : ce document ne présente jamais une piste comme un remède, ni un seuil comme une
+preuve clinique. Un résultat négatif est un résultat, il est noté comme tel. Le pipeline lui-même reste privé (règle permanente) ;
+le travail PDAC est public.
+1. Objectif, dit honnêtement
+But visé : trouver des pistes thérapeutiques contre le PDAC — des cibles, des combinaisons, des moments
+d'intervention — en détectant des changements de régime dans des séries de flux multi-omiques réelles avec la v6.
+Ce que le pipeline fait vraiment : il détecte des seuils et des cascades de seuils dans des séries ordonnées. Il ne
+trouve pas un remède tout seul. Il peut montrer où un système change de régime, dans quel ordre les flux
+réagissent, et quels flux portent la tension — ce qui pointe vers des cibles et des combinaisons à tester ensuite,
+jamais vers une conclusion clinique.
+Ce que ce livre blanc ne fera jamais : présenter une piste comme un remède, présenter un seuil comme une
+preuve clinique, ou cacher un résultat négatif. Un nul qui invalide une piste est un résultat, il est noté ici comme tel.
+2. État antérieur — ce qui est connu (projet tlog28, juillet–octobre
+2026)
+Projet d'origine : juillet 2026, UNIVERSAL_LOG v3.0 appliqué au PDAC — CSD, découverte de combinaisons
+thérapeutiques, simulation EDO. Code, données et figures reproductibles. Dépôt local ~/workspace/tlog28-
+cancer-pdac/ (original archivé intact, jamais touché) ; dépôt privé GitHub FindPrint/tlog28-cancer-pdac créé le 2
+oct. 2026 (seul le README poussé à ce jour, envoi du contenu en pause) ; archive complète tlog28-cancer-
+pdac-complet.zip (17 Mo, 118 fichiers) dans ce dossier de projet.
+Données réelles déjà utilisées : z-scores RNA-seq TCGA PAAD via cBioPortal, données cliniques TCGA, MSK,
+ctDNA longitudinales Pietrasz et al. 2017 (38 points).
+Résultats validés / invalidés (à ne pas répéter comme acquis) : - R1 — infirmé : le seuil pseudo-temporel à 7,3
+% comme point de bascule (0/5 expériences). - R2 — infirmé : l'axe pseudo-temporel comme source prédictive
+hors échantillon (accuracy 0,4612, p = 0,9581 ; aucun flux ne prédit seul). - R3 — confirmé en simulation EDO
+seulement : le timing influence continûment l'issue. - Requalification : le projet est devenu de la stratification
+pronostique, pas de la prédiction par pseudo-temps. - Balayage de raideur (~560 runs EDO, σ de 0,25 à 24 jours)
+: durcir concentre la courbure (0,176 → 0,896), adoucir la disperse ; les seuils apparents à δ = 40/75/105 sont des
+sorties de phase de la fenêtre de protocole de 120 jours, pas de la criticité du système ; le levier b2 reste dominant à
+toutes les raideurs. - Conclusion durable : ces résultats ne constituent ni validation clinique ni réhabilitation du
+pseudo-temps.
+À revoir — demande de Zackary, 15 nov. 2026, 07h34 : l'axe pseudo-temporel invalidé n'est pas à jeter —
+l'échec lui-même peut apporter de l'information. À relire en détail (R1/R2/R3 + balayage de raideur) : pourquoi le
+seuil à 7,3 % apparaît puis disparaît après correction, ce que la stratification pronostique montre quand même, ce
+que la structure de l'échec dit de l'ordonnancement, et si une partie du signal survit sous une autre lecture. Témoin
+dormant, jamais détruit.
+2.1 Relecture du 15 nov. 2026 — ce que l'échec apporte (lu dans les 4 rapports)
+Sources relues : 
+~/workspace/tlog28-cancer-pdac/docs/VALIDATION_REPORT.md (R1, 5 expériences),
+VALIDATION_R2_REPORT.md, VALIDATION_R3_REPORT.md, EXPLORATION_STEEPNESS.md. Ce qui suit est mesuré
+dans ces rapports, pas une opinion.
+\n\n===== PAGE 3 =====\nLivre blanc PDAC v6 - page 3
+1. Loi générale pour les scans de la v6 — le biais d'argmax (+9,3 pp). Exp 1 : même avec un proxy
+PARFAIT (ordre exact, |ρ| = 1,0), le scan par argmax du |d de Cohen| place le seuil à 59–67 % au lieu du vrai
+50 % — biais systématique de +9,3 pp sur 200 réplicats, pas du bruit. Mécanisme : l'argmax maximise le
+contraste standardisé pré/post, pas la position du coude. Conséquence pour la v6 : l'optimum Monte-Carlo
+de la v6 est aussi un maximum de contraste — un T0 ne doit jamais être lu comme « l'emplacement d'une
+bifurcation » sans confirmation indépendante (cascade, F1/F2, nul, rotation). Point positif : le test de
+permutation fonctionne (p < 0,05 dans 20/25 runs ordonnés).
+2. Deux flux survivent à tout : EMT_Invasion et Stroma_Desmoplasia. Exp 5 (pipeline corrigé) : le 7,3 %
+disparaît, nouveau seuil ~82 % avec séparation faible (0,362 / 0,231, MEDIUM/LOW), et ce sont ces deux
+flux qui sont sélectionnés — plausibles pour une progression tardive, détection faible. À reprendre en
+priorité comme flux dans le nouveau travail TCGA.
+3. Le levier thérapeutique, c'est b2. R3 + raideur : la transition phase 1→2 (ATR/G6PD →
+MRTX/venetoclax) domine à toutes les raideurs et dans toutes les analyses (24,3 pts de charge ; b2 ≫ b3 >
+b1, à tout σ). La combinaison ATR-i + G6PD-i et le timing du passage à MRTX/venetoclax sont l'hypothèse
+mécanistique la plus forte à tester contre DepMap/GDSC.
+4. Le chevauchement bat le séquençage net (intra-modèle). Raideur : adoucir améliore le meilleur outcome
+(charge min 12,40 → 7,53) — la polythérapie partielle simultanée bat le séquençage net. Réserve : la
+sigmoïde « fuit » (à σ=24, activité pré-onset ~42 %) — c'est séquençage net contre polythérapie floue à
+démarrage précoce, pas deux phasages équivalents. Hypothèse à tester, pas conclusion.
+5. Lire les cascades comme des paysages d'influence, pas des interrupteurs. R3 : le paysage d'onset est
+monotone et continu, SANS seuil discret (charge 12,31 → 78,91, +540 %) ; l'influence est répartie (24/34/37
+% par tiers), densifiée vers le tardif, sans pic étroit pré-rupture ; point de rupture du système non traité :
+81,17 j (transition douce, 2nd ordre). Le CTST a été reformulé : « optimiser le timing sur le paysage
+d'influence », pas « déclencher AU seuil ». La référence [15,45,80] perd contre +18 j ([33,63,98], −13,3 %,
+robuste 9/9) — ne pas s'ancrer sur les premiers seuils trouvés.
+6. Les pics de courbure à δ=40/75/105 sont des falaises de protocole, pas de la criticité. Raideur : ce sont
+les points où des phases entières tombent hors de la fenêtre de 120 jours. Dans la région intérieure (δ ≤ 40),
+la courbure est faible à tout σ — aucun point-seuil n'émerge, même en quasi-marche.
+7. Biais de cohorte TCGA-PAAD : patients opérés/résécables sur-représentés (stade IIB 68 %) ; IA (n=2), III
+(n=3), IV (n=3) minuscules. Survie par stade non monotone (IB 16,4 / IIA 15,8 / IIB 15,3 / III 17,8 / IV 17,9
+mois). Tout résultat TCGA hérite de ce biais.
+8. Les négatifs sont solides (pas des instruments cassés) : contrôles positifs prouvent que les tests détectent
+un vrai signal quand il existe (R2 : signal distribué → accuracy 0,9456, p=0,0196). Les invalidations sont
+des mesures. Limites connues : n=99 petit ; vote majoritaire dilue un signal porté par un seul flux (signal
+concentré : 0,64) ; dichotomie médiane de la survie.
+9. Drapeaux rouges à surveiller dans les runs v6 : seuil qui isole un minuscule groupe extrême (le 7,26 %
+isolait le groupe à progression quasi nulle) ; colonnes dérivées de la variable d'ordonnancement (en exp 3,
+elles portaient la séparation publiée) ; ordonnancement par une variable de sortie (circularité, exp 4) ;
+affirmations CSD avec 4–5 points par patient (infaisable, exp 4).
+Conséquence directe pour ce nouveau mandat : l'axe pseudo-temporel est invalidé comme axe de contrôle. Il
+faut un autre axe pour ordonner les séries (temps réel, progression clinique, dose, ordre de sensibilité, etc.). Cet axe
+est une question ouverte — voir §5.
+3. Cadre de travail
+Système : PDAC humain — tumeurs, lignées, organoïdes selon les données disponibles.
+\n\n===== PAGE 4 =====\nLivre blanc PDAC v6 - page 4
+Flux (familles) : ARN (expression RNA-seq, simple-cellule), protéine (protéomique, phospho-
+protéomique), CRISPR (scores de dépendance / essentialité), sensibilité aux médicaments, clinique (survie,
+stade, ctDNA).
+Contrôle : à définir par source (voir §5) — jamais le pseudo-temps invalidé, jamais une variable importée
+sans justification.
+Cible : à définir par run (un flux mesuré, jamais une vérité terrain importée dans le pipeline).
+Pipeline aveugle : la v6 ne voit ni la variable de contrôle physique ni la vérité terrain. La traduction et les
+comparaisons se font après le run, dans le harnais, sans retour dans les paramètres.
+Règle du 15 nov. 2026 (Zackary) : les données et les conclusions des autres expériences ne sont PAS
+importées dans le travail du jour — elles restent des hypothèses à tester, jamais des entrées. Seules les
+données du jour et les runs du jour font les verdicts. L'état antérieur (§2) est du contexte, pas une preuve.
+Exigence du 15 nov. 2026 (Zackary) : tout doit être traçable, reproductible, clair et public. Traçable :
+chaque valeur porte sa source, sa méthode et son hachage. Reproductible : chaque run porte son protocole
+gelé, sa commande exacte, ses graines, ses versions. Clair : expliqué simplement, sans jargon — Zackary ne
+connaît pas ce domaine, et c'est à moi de rendre chaque résultat compréhensible. Public : le travail (livre
+blanc, données, résultats) doit pouvoir être montré et vérifié par d'autres. Limite : le pipeline lui-même
+reste privé (règle permanente de Zackary : jamais vendu ni exposé) — c'est le travail PDAC qui est public,
+pas le code du pipeline, sauf s'il me dit explicitement le contraire.
+Témoins : chaque run a son nul permuté (mêmes marginales, ordre temporel détruit). Un seuil qui survit au
+nul vaut d'être regardé ; un seuil que le nul reproduit ne prouve rien.
+Rotation des contrôles : chaque flux est testé en colonne de contrôle à tour de rôle. Jamais de verdict
+depuis un seul contrôle.
+Seuils multiples : on ne cherche pas UN seuil. On lit chaque seuil détecté et son pourquoi ; une chaîne
+causale de seuils critiques serait le résultat le plus intéressant.
+4. Hypothèses (toutes à tester, aucune n'est un fait)
+1. H1 — Des changements de régime existent dans l'expression ARN le long de la progression du PDAC, et la
+v6 peut les dater en ordre (quels gènes/voies bougent en premier).
+2. H2 — La protéomique porte une information que l'ARN seul ne porte pas (les deux couches ne sont pas
+redondantes).
+3. H3 — Les scores de dépendance CRISPR (DepMap) identifient des gènes essentiels propres aux lignées
+pancréatiques, et leurs variations le long d'un axe ordonné pointent des fenêtres de vulnérabilité.
+4. H4 — Une combinaison (deux cibles dont les seuils se succèdent en chaîne causale) vaut plus qu'une cible
+seule.
+5. H5 — Les seuils détectés sur données réelles survivent au nul permuté et à la rotation des contrôles (sinon
+ce sont des artefacts de construction).
+6. H6 — Il existe un axe d'ordonnancement légitime autre que le pseudo-temps (temps réel, dose, progression)
+— à trouver par source, pas à supposer.
+5. Ce que je sais / ce que je ne sais pas / ce que j'attends
+Je sais
+La v6 fonctionne et donne les mêmes seuils que la v5.9.0f en Cohen (vérifié sur HP35, 15 nov. 2026).
+\n\n===== PAGE 5 =====\nLivre blanc PDAC v6 - page 5
+Le pseudo-temps est invalidé comme axe prédictif sur TCGA (R1, R2).
+Les données TCGA PAAD (ARN + clinique) existent et sont accessibles ; DepMap, CPTAC, GEO existent
+aussi (à vérifier une par une).
+Le PDAC est un cancer à forte létalité, avec KRAS muté dans ~90 % des cas (connaissance scientifique
+générale — hypothèse de contexte, pas une mesure de ce projet).
+Je ne sais pas
+Quel axe ordonnera chaque série de flux (la question centrale, ouverte).
+Si les flux ARN/protéine/CRISPR porteront des seuils qui survivent au nul et à la rotation des contrôles.
+Si les cibles pointées par la v6 auront un sens biologique ou seront des artefacts.
+Quelles sources seront réellement téléchargeables et utilisables sur cette machine (2 vCPU, 7,7 Go RAM —
+pas de données brutes massives).
+Si une piste thérapeutique concrète émergera — c'est le but, pas une promesse.
+J'attends de voir
+Des cascades de seuils stables sur au moins une source réelle, avec un nul qui ne les reproduit pas en force.
+Des flux qui réagissent dans un ordre lisible (chaîne causale candidate).
+Des cibles qui reviennent dans plusieurs sources indépendantes (ARN + protéine + CRISPR).
+6. Données — inventaire et provenance
+Section tenue à jour au fur et à mesure du repérage et des téléchargements. Chaque source : nom, auteur/date,
+dépôt, URL, accès, taille, hachage, nature des lignes, ce qui manque.
+6.1 Déjà présentes (projet tlog28)
+TCGA PAAD : z-scores RNA-seq via cBioPortal ; données cliniques TCGA ; MSK ; ctDNA Pietrasz et al.
+2017 (38 points). Provenance détaillée dans le dépôt tlog28 (à recopier ici avec hachages).
+À compléter après inventaire du 15 nov. 2026.
+6.2 Repérées / à télécharger — rapport du 15 nov. 2026, vérifié
+Inventaire tlog28 confirmé : données réelles présentes = TCGA PAAD via cBioPortal (RNA-seq RSEM z-scores,
+~70 gènes ciblés, 179 échantillons, expression_matrix_real.csv) + clinique 107 patients ; ctDNA MSK, 188
+patients ; Pietrasz et al. 2017, VAF KRAS ddPCR longitudinal, 38 points / 9 patients ; dérivé pdac_fluxes.csv
+(10 scores de voies, 99 patients, ordonnés par survie décroissante = le pseudo-temps). Manques confirmés : pas de
+protéomique, pas de CRISPR, pas de sensibilité aux médicaments, pas de single-cell.
+#
+Source
+Provenance
+Accès / taille
+Statut vérifié le 15 nov. 2026
+C1
+DepMap Public 24Q4 —
+CRISPRGeneEffect.csv
+(Chronos) + Model.csv
+DepMap, Broad Institute ; figshare
+article 27993248, DOI
+10.25452/figshare.plus.27993248.v1
+Libre, sans compte, via
+figshare.
+CRISPRGeneEffect.csv
+= 428,7 Mo (fichier
+51064667), Model.csv =
+0,6 Mo (51065297)
+CONFIRMÉ via API figshare.
+Taille réelle supérieure à
+l'estimation (428,7 Mo, pas
+~200). À télécharger en premier.
+\n\n===== PAGE 6 =====\nLivre blanc PDAC v6 - page 6
+#
+Source
+Provenance
+Accès / taille
+Statut vérifié le 15 nov. 2026
+A1b
+TCGA-PAAD via Firehose
+— matrice RSEM normalisée
+complète, 20 532 gènes ×
+183 échantillons
+TCGA ; Broad GDAC Firehose stddata
+2016-01-28, PAAD ; RNA-seq V2 RSEM
+normalisé (UNC Illumina HiSeq)
+Libre, sans compte. Tarball
+15 296 232 o, MD5 vérifié
+b09569ce…
+TÉLÉCHARGÉ et vérifié le 15
+nov. 2026, 07h58. 178 tumeurs
+primaires (code 01) retenues, 5
+autres écartées (06/11). Flux v1 :
+12 gènes de plus forte variance
+(PNLIP, CTRB2, CELA3A,
+CTRB1, CPA1, CELA2A, CPB1,
+CELA3B, CLPS, XIST, CTRC,
+CPA2 — SHA e012e9fd… ).
+Flux v2 : mêmes règles, 40 gènes
+de pureté/sexe exclus (SHA
+9d0b1ca8… ). Ordre des deux :
+expression KRAS croissante.
+Provenance :
+PROVENANCE_tcga.md ,
+PROVENANCE_tcga_v2.md .
+A1
+TCGA-PAAD PanCancer
+Atlas 2018 via cBioPortal
+TCGA ; Liu et al., Cell 2018 (PMID
+29625055) ; étude
+paad_tcga_pan_can_atlas_2018
+Libre, sans compte. ~10–30
+Mo estimés, TSV
+Étude EXISTE dans datahub
+(liste GitHub vérifiée), mais le lien
+S3 direct renvoie 403 Forbidden
+et le README datahub (lu le 15
+nov. 2026) ne donne aucune URL
+de téléchargement (notes de
+transformation seulement,
+sources GDAC Firehose). Accès
+correct = API cBioPortal
+(https://www.cbioportal.org/api)
+— à mettre en place. Non
+bloquant : les données TCGA 70
+gènes existent déjà localement.
+B1
+CPTAC PDAC —
+protéomique TMT, 140
+tumeurs + 67 NAT, +
+phospho/glyco + ARN
+apparié
+Cao et al., Cell 2021, 184:5031–5052
+(PMID 34534465) ; PDC PDC000393 ;
+tables via linkedomics ; étude cBioPortal
+paad_cptac_2021
+Libre, sans compte (tables
+traitées). Quelques dizaines
+de Mo estimés, TSV
+À vérifier au téléchargement.
+Cibles nommées par l'article :
+PAK1/PAK2 (aval de KRAS).
+D1
+GDSC release 8.5 — dose-
+réponse ajustée (LN IC50 +
+AUC)
+Garnett et al., Nature 2012 ; Iorio et al.,
+Cell 2016 ; Sanger
+Libre, sans compte. ~130 Mo
+estimés, XLSX
+LIENS MORTS : les deux XLSX
+renvoient 404 (vérifié 15 nov.
+2026). FTP Sanger : releases
+jusqu'à 8.4 visibles, pas de 8.5.
+Nouvelle adresse à retrouver
+avant tout téléchargement.
+A2
+Single-cell PDAC —
+TISCH2 (Steele 2020
+GSE155698, Lin 2020
+GSE154778, Moncada 2020
+GSE111672)
+Steele et al., Nat. Cancer 2020 ; Lin et
+al., Genome Med. 2020 ; Moncada et
+al., Nat. Biotechnol. 2020 ; GEO +
+TISCH2
+Libre, sans compte.
+Quelques Mo par jeu,
+matrices traitées
+En réserve, après les 3
+premières.
+D2
+PRISM Repurposing 24Q2
+Corsello et al., Nat. Cancer 2020 ;
+DepMap ; figshare article 25917643
+Libre via figshare. Matrice
+primaire : plusieurs
+centaines de Mo (non
+vérifiée)
+En réserve.
+Versions à épingler : DepMap 24Q4, GDSC 8.5, CPTAC PDC000393, cBioPortal PanCancer Atlas 2018. Sans
+version, l'analyse n'est pas reproductible.
+Avertissement central (confirmé par le repérage) : aucune de ces sources ne fournit un axe temporel réel de
+progression tumorale chez le patient (sauf Pietrasz, déjà présent : 38 points — CSD infaisable). Toute série
+ordonnée par un score construit (survie, trajectoire inférée, rang d'AUC) est une hypothèse d'ordonnancement, pas
+un temps : elle exige un nul permuté et une validation externe.
+\n\n===== PAGE 7 =====\nLivre blanc PDAC v6 - page 7
+7. Expériences
+Chaque expérience : protocole gelé avant le run, commande exacte, SHA du code et des données, sorties complètes,
+verdict. Aucun run sans protocole gelé.
+#
+Date
+Données
+Contrôle
+Cible
+Mode
+Résultat
+Verdict
+1
+15
+nov.
+2026,
+07h39
+DepMap 24Q4, 45 lignées
+pancréas, 12 flux (voir §6.2 +
+PROVENANCE_depmap.md)
+step (ordre =
+effet KRAS
+croissant)
+EFR3A
+(1re
+colonne,
+politique
+fixe du
+pipeline)
+fast
+v6
+ÉCHEC technique, exit 1 en
+4 s : « Série trop courte : 45
+points valides. Au moins 50
+sont requis » (min_len 50,
+w_size 80). Idem pour le nul.
+Log : runs_pdac_v6.log .
+Pas un verdict
+sur les
+données — la
+v6 n'a rien
+calculé. Mur à
+contourner
+(voir §10).
+1b
+15
+nov.
+2026,
+07h39
+idem, nul permuté (graine 42)
+step
+EFR3A
+fast
+v6
+ÉCHEC technique, exit 1,
+même raison.
+Idem.
+2
+15
+nov.
+2026,
+07h59
+TCGA-PAAD Firehose, 178
+tumeurs, 12 flux v1 (variance
+brute — voir §6.2 +
+PROVENANCE_tcga.md)
+step (ordre =
+expression
+KRAS
+croissante)
+PNLIP
+(1re
+colonne)
+fast
+v6
+TERMINÉ, exit 0. Cascade 0 /
+49,63 % → 88 / T_0 60,90 %
+→ 108 / 97,39 % → 173 (×2).
+MC optimum 66,30 %. L7a
+DOWN (34,7 % up / 49,9 %
+down, conf. 0,195). L7b
+FRAGILE. Régime
+divergence, Delta 3,68. Log
+runs_tcga_v6.log ,
+sorties
+results_fast_tcga_v1/
+(36 fichiers).
+L'ordre par
+KRAS porte
+l'information
+(voir §8). La v1
+mesurant la
+pureté, le
+DOWN = les
+marqueurs
+acineux
+baissent quand
+KRAS monte.
+2b
+15
+nov.
+2026,
+07h59
+idem, nul permuté (graine 42)
+step
+PNLIP
+fast
+v6
+TERMINÉ, exit 0. Cascade
+1,06 / 6,39 / 9,58 / 15,96 /
+22,63. MC optimum 70,65 %.
+L7a UP 77,7 % (down 0 %).
+L7b FRAGILE. Régime
+divergence, Delta 4,30.
+Le nul place
+son seuil
+ailleurs et vote
+à l'inverse.
+Delta ne
+distingue pas
+réel et nul.
+3
+15
+nov.
+2026,
+07h59
+TCGA-PAAD Firehose, 178
+tumeurs, 12 flux v2 (variance
+hors 40 gènes pureté/sexe —
+voir
+PROVENANCE_tcga_v2.md)
+step (ordre =
+expression
+KRAS
+croissante)
+PNLIPRP1
+(1re
+colonne)
+fast
+v6
+TERMINÉ, exit 0. Cascade 0 /
+29,55 % → 53 / T_0 48,70 %
+→ 87 / 58,35 % → 104 / 67,12
+% → 120. MC optimum 66,30
+%. L7a DOWN (31,9 % up /
+52,0 % down, conf. 0,201).
+L7b FRAGILE. Régime
+divergence, Delta 3,74.
+La v2 lit encore
+la pureté : à
+T_-1 les
+marqueurs
+acineux
+montent (+0,2
+à +0,75 sd), à
+T_0 ils
+baissent tous
+(−0,36 à −0,67
+sd). Voir §8.
+3b
+15
+nov.
+2026,
+07h59
+idem, nul permuté (graine 42)
+step
+PNLIPRP1
+fast
+v6
+TERMINÉ, exit 0. Cascade
+0,53 / 6,39 / 9,58 / 15,96 /
+16,54. MC optimum 69,57 %.
+L7a UP 85,0 %. L7b
+FRAGILE. Régime
+divergence, Delta 4,30.
+Nul : seuil au
+début, vote
+inverse.
+\n\n===== PAGE 8 =====\nLivre blanc PDAC v6 - page 8
+#
+Date
+Données
+Contrôle
+Cible
+Mode
+Résultat
+Verdict
+4
+15
+nov.
+2026,
+08h10
+TCGA-PAAD Firehose, 178
+tumeurs, 12 flux v3 (résidus
+après régression sur 2 scores
+de pureté — voir
+PROVENANCE_tcga_v3.md)
+step (ordre =
+résidu KRAS
+croissant)
+XIST (1re
+colonne)
+fast
+v6
+TERMINÉ, exit 0. Cascade 0 /
+25,55 % → 45 / T_0 89,57 %
+→ 159 / 97,91 % → 174 (×2).
+MC optimum 14,13 %. L7a
+DOWN (39,7 % up / 46,2 %
+down, conf. 0,174). L7b
+FRAGILE. Régime
+divergence, Delta 3,84.
+À T_0, XIST
+baisse (−0,52
+sd) et les 6
+gènes Y
+montent (+0,42
+à +0,51 sd) : le
+seuil v3 est
+d'abord une
+frontière
+homme/femme,
+avec la baisse
+tumorale
+dessous (PGC
+−0,55, DPCR1
+−0,40). Voir §8.
+4b
+15
+nov.
+2026,
+08h10
+idem, nul permuté (graine 42)
+step
+XIST
+fast
+v6
+TERMINÉ, exit 0. Cascade 0 /
+49,63 / 61,32 / 88,01 / 88,01.
+MC optimum 55,43 %. L7a
+DOWN 85,7 % (conf. 0,420).
+L7b FRAGILE. Régime
+divergence, Delta 3,89.
+Attention : le
+nul v3 vote
+DOWN lui
+aussi (fort). La
+direction ne
+distingue pas
+réel et nul en
+v3 — seule la
+position du
+seuil diffère
+(89,57 %
+contre 61,32
+%).
+5
+15
+nov.
+2026,
+08h10
+TCGA-PAAD Firehose, 178
+tumeurs, 12 flux v4 (v3 +
+exclusion des gènes du sexe
+— voir
+PROVENANCE_tcga_v4.md)
+step (ordre =
+résidu KRAS
+croissant)
+PGC (1re
+colonne)
+fast
+v6
+TERMINÉ, exit 0. Cascade 0 /
+74,06 % → 132 / T_0 93,22 %
+→ 166 / 98,44 % → 175 /
+98,96 % → 176. MC optimum
+10,87 %. L7a DOWN 86,3 %
+(up 0 %, conf. 0,408 — la plus
+forte des 4 versions). L7b
+FRAGILE. Régime
+divergence, Delta 4,18.
+Falsification delta_vs_null
+0,849 (seuil 0,5).
+Le résultat le
+plus fort du
+jour. Chaîne
+en deux temps
+: à T_-1,
+KRT20 −0,66
+sd et CLCA1
+−0,59 sd
+baissent,
+CEACAM5
++0,43 sd monte
+; à T_0, PGC
+−0,89 sd,
+DPCR1 −0,85
+sd, CLDN18
+−0,46 sd
+s'effondrent,
+MUC16 +0,64
+sd monte. Voir
+§8.
+5b
+15
+nov.
+2026,
+08h10
+idem, nul permuté (graine 42)
+step
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade 0 /
+10,65 / 15,96 / 67,12 / 67,12.
+MC optimum 81,52 %. L7a UP
+45,1 % (conf. 0,167, faible).
+L7b FRAGILE. Régime
+divergence, Delta 3,77.
+Nul : seuil au
+début, vote
+inverse et
+faible. La v4
+sépare réel et
+nul sur la
+position ET le
+sens.
+6
+15
+nov.
+2026,
+08h33
+CPTAC PDAC PDC000393,
+centre UMich, 63 tumeurs
+(cas complets, 7 flux
+protéiques : PGC, REG4,
+CLDN18, KRT20, CEACAM5,
+CLCA1, MUC16 — voir
+PROVENANCE_cptac.md)
+KRAS
+protéique
+croissant
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade 0 /
+1,69 % → 1 / T_0 4,69 % → 3
+/ 25,00 % → 16 (×2). MC
+optimum 19,35 %. L7a UP
+mais probabilités NaN, conf.
+0,5 (dégénéré). L7b
+FRAGILE. Régime criticité,
+Delta 1,48.
+Non-
+confirmation.
+Le T_0 tombe
+au tout début
+(3 points avant)
+; le test direct
+s'inverse entre
+top 4 et top 12.
+Voir §8.8.
+\n\n===== PAGE 9 =====\nLivre blanc PDAC v6 - page 9
+#
+Date
+Données
+Contrôle
+Cible
+Mode
+Résultat
+Verdict
+6b
+15
+nov.
+2026,
+08h33
+idem, nul permuté (graine 42)
+KRAS
+protéique
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade 0 /
+44,40 / 51,65 / 54,91 / 68,15.
+MC optimum 58,06 %. L7a
+UP, NaN aussi. L7b FRAGILE.
+Régime criticité, Delta 1,49.
+Delta réel ≈
+Delta nul (1,48
+contre 1,49) :
+le pipeline ne
+sépare pas réel
+et nul en
+protéine.
+7
+15
+nov.
+2026,
+08h33
+CPTAC PDAC PDC000393,
+centre BCM, 52 tumeurs (cas
+complets, 6 flux — MUC16
+exclue, 48/52 < 50)
+KRAS
+protéique
+croissant
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade
+5,71 / 59,64 / T_0 63,26 % →
+33 / 69,04 (×2). MC optimum
+23,81 %. L7a UP, NaN. L7b
+FRAGILE. Régime criticité,
+Delta 1,55.
+Non-
+confirmation.
+Le T_0 à 63 %
+n'a aucun
+mouvement de
+flux derrière lui
+(+0,01 à +0,33
+sd). Voir §8.8.
+7b
+15
+nov.
+2026,
+08h33
+idem, nul permuté (graine 42)
+KRAS
+protéique
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade 0 /
+15,22 / 20,93 / 32,40 / 46,64.
+MC optimum 23,81 %. L7a
+UP, NaN. L7b ROBUSTE (non
+informatif — verdict clos).
+Régime criticité, Delta 1,52.
+Delta réel ≈
+Delta nul (1,55
+contre 1,52).
+8
+15
+nov.
+2026,
+08h52
+Rotations de contrôle v4 —
+KRAS-valeur (même ordre,
+contrôle = valeur du résidu
+KRAS au lieu du rang step)
+KRAS_resid
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade 0 /
+74,06 / 93,22 / 98,44 / 98,96
+— IDENTIQUE à la v4,
+chiffre par chiffre. L7a
+DOWN 85,8 % (conf. 0,404).
+Delta 4,18. MC optimum 10,87
+%.
+La métrique du
+contrôle ne
+change rien : le
+résultat ne
+dépend pas du
+rang uniforme.
+Voir §8.9.
+8b
+15
+nov.
+2026,
+08h52
+idem, nul permuté (graine 42)
+KRAS_resid
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade 0 /
+10,65 / 15,96 / 67,12 / 67,12.
+L7a UP 45,1 % (conf. 0,167).
+Delta 3,77.
+Identique au
+nul v4 —
+cohérent,
+même ordre.
+9
+15
+nov.
+2026,
+08h52
+Rotations — CLDN18 comme
+contrôle (lignes triées par
+CLDN18 croissant)
+CLDN18
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade
+4,26 / 46,59 / 84,42 / 91,14 /
+91,14. L7a UP 85,5 % (conf.
+0,417). Delta 3,86.
+Pas de
+discrimination :
+le nul vote
+pareil (UP 86,3
+%). La chaîne
+est spécifique
+à l'axe KRAS.
+Voir §8.9.
+9b
+15
+nov.
+2026,
+08h52
+idem, nul permuté (graine 42)
+CLDN18
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade
+1,06 / 34,29 / 60,38 / 97,39 /
+97,39. L7a UP 86,3 % (conf.
+0,420). Delta 3,80.
+Nul quasi
+identique au
+réel sur le vote.
+10
+15
+nov.
+2026,
+08h52
+Rotations — pureté comme
+contrôle (lignes triées par score
+acineux croissant, témoin
+négatif)
+score_acineux
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade
+3,19 / 24,57 / 42,52 / 59,37 /
+59,37. L7a UP 53,4 % (conf.
+0,198, faible). Delta 3,10.
+Aucune
+chaîne : vote
+faible,
+mouvements
+modestes et
+uniformes
+(−0,13 à −0,55
+sd). Le témoin
+négatif se
+comporte
+comme
+attendu. Voir
+§8.9.
+10b
+15
+nov.
+2026,
+08h52
+idem, nul permuté (graine 42)
+score_acineux
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade 0 /
+59,37 / 81,51 / 94,26 / 94,26.
+L7a DOWN 58,2 % (conf.
+0,225). Delta 3,77.
+Vote faible
+aussi — rien
+de fort ni d'un
+côté ni de
+l'autre.
+\n\n===== PAGE 10 =====\nLivre blanc PDAC v6 - page 10
+#
+Date
+Données
+Contrôle
+Cible
+Mode
+Résultat
+Verdict
+11
+15
+nov.
+2026,
+08h52
+Rotations — miroir (ordre
+KRAS décroissant, contrôle
+step)
+step
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade
+1,06 / 46,59 / 60,38 / 84,86 /
+84,86. L7a DOWN 86,2 %
+(conf. 0,431). Delta 3,96.
+La chaîne est
+dans les
+données,
+miroir exact
+flux par flux
+(voir §8.9),
+mais la
+cascade ne
+place pas son
+T_0 au miroir
+(60,38 % au
+lieu de ~6,8 %)
+et L7a ne se
+retourne pas —
+deux
+comportements
+de l'instrument
+à noter, pas
+des verdicts
+sur les
+données.
+11b
+15
+nov.
+2026,
+08h52
+idem, nul permuté (graine 42)
+step
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade 0 /
+61,80 / 98,44 / 100,00 /
+100,00. L7a UP 85,3 % (conf.
+0,406). Delta 3,80.
+Nul : seuil au
+bout, vote
+inverse.
+12
+15
+nov.
+2026,
+09h16
+GEO GSE71729, 145 tumeurs
+primaires (Moffitt 2015, puce
+Agilent GPL20769 ; variante
+(a) : les 12 mêmes gènes que
+la v4 TCGA — voir
+PROVENANCE_geo71729.md)
+KRAS
+croissant
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade
+1,31 / 43,85 / 76,77 % → 111 /
+89,70 / 89,70. L7a UP 82,1 %
+(conf. 0,416). Delta 2,16.
+Non-
+confirmation.
+À T_0 les
+gènes montent
+(+0,18 à +0,65
+sd) au lieu de
+s'effondrer.
+Test direct top
+12 : CLDN18
++0,68, MUC16
++0,67, DPCR1
++0,60 —
+l'inverse de
+TCGA. Voir
+§8.10.
+12b
+15
+nov.
+2026,
+09h16
+idem, nul permuté (graine 42)
+KRAS
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade —
+T_0 7,84 %. L7a UP 85 %
+(conf. ~0,42). Delta 2,20.
+Réel ≈ nul
+(Delta 2,16
+contre 2,20,
+L7a UP des
+deux côtés) :
+pas de
+séparation.
+13
+15
+nov.
+2026,
+09h16
+GEO GSE71729 — variante (b)
+: re-sélection fraîche protocole
+v4 (top 12 : CABP7, DMBT1,
+PPY, C4orf7, TFF2, RPA4,
+DES, PPY2, IGH@, REG4,
+CCL19, SPINK4 — seul REG4
+recoupe la v4)
+KRAS
+croissant
+CABP7
+fast
+v6
+TERMINÉ, exit 0. T_0 25,09
+%. L7a UP 82,8 % (conf.
+0,398). Delta 2,96.
+Réel et nul
+placent leur
+seuil au même
+endroit (25,09
+% contre 24,44
+%) — pas de
+chaîne.
+13b
+15
+nov.
+2026,
+09h16
+idem, nul permuté (graine 42)
+KRAS
+CABP7
+fast
+v6
+TERMINÉ, exit 0. T_0 24,44
+%. Delta 2,90.
+Seuil au même
+endroit que le
+réel.
+\n\n===== PAGE 11 =====\nLivre blanc PDAC v6 - page 11
+#
+Date
+Données
+Contrôle
+Cible
+Mode
+Résultat
+Verdict
+14
+15
+nov.
+2026,
+09h16
+GEO GSE71729 — variante (c)
+: les 12 mêmes gènes, corrigés
+de la pureté par régression,
+ordre résidu KRAS
+résidu KRAS
+PGC
+fast
+v6
+TERMINÉ, exit 0. T_0 41,11
+%. L7a UP 83,1 % (conf.
+0,429). Delta 2,93.
+À T_0 :
+CEACAM5
+−0,70, REG4
+−0,46, CLDN18
+−0,19, MUC16
++0,05 — aucun
+effondrement.
+La correction
+de pureté ne
+retourne pas le
+sens.
+14b
+15
+nov.
+2026,
+09h16
+idem, nul permuté (graine 42)
+résidu KRAS
+PGC
+fast
+v6
+TERMINÉ, exit 0. T_0 85,68
+%. Delta 2,66.
+—
+15
+15
+nov.
+2026,
+10h11
+GEO GSE62452, 69 tumeurs
+(puce Affymetrix HuGene-1.0-
+st, plateforme réelle GPL6244
+— pas GPL570 comme
+annoncé ; variante (a) : les 12
+mêmes gènes que la v4 TCGA
+— voir
+PROVENANCE_geo62452.md)
+KRAS
+croissant
+PGC
+fast
+v6
+TERMINÉ, exit 0. Cascade
+1,42 / 35,67 / 95,64 % → 66 /
+98,64 / 100,00. L7a UP, NaN
+(dégénéré, comme CPTAC).
+Delta 1,41.
+OUI, 3/3. Test
+direct top 12 :
+MUC16 +0,48
+sd, CEACAM5
++0,63 (rho
++0,441,
+p=0,0001),
+DPCR1 +0,93,
+CLDN18 +0,55
+—
+l'effondrement
+ne réapparaît
+pas. Voir
+§8.13.
+15b
+15
+nov.
+2026,
+10h11
+idem, nul permuté (graine 42)
+KRAS
+PGC
+fast
+v6
+TERMINÉ, exit 0. T_0 17,10
+%. Delta 1,26. L7a NaN.
+Nul : tout entre
+−0,38 et +0,45
+sd. Pas de
+séparation
+réel/nul sur la
+cascade.
+16
+15
+nov.
+2026,
+10h11
+GEO GSE62452 — variante (b)
+: re-sélection fraîche protocole
+v4 (top 12 : DPCR1,
+CEACAM5, PPY, SLC6A14,
+CRP, OLFM4, GABRP,
+CRISP3, CP, IGJ, RNU5D-1,
+HLA-DRB5)
+KRAS
+croissant
+DPCR1
+fast
+v6
+TERMINÉ, exit 0. T_0 79,67
+%. L7a UP, NaN. Delta 1,37.
+La sélection
+indépendante
+retrouve
+DPCR1 (rho
++0,394,
+p=0,0008) et
+CEACAM5 (rho
++0,372,
+p=0,0016) qui
+montent avec
+KRAS —
+preuve
+convergente.
+16b
+15
+nov.
+2026,
+10h11
+idem, nul permuté (graine 42)
+KRAS
+DPCR1
+fast
+v6
+TERMINÉ, exit 0. T_0 84,02
+%. Delta 1,40.
+Réel et nul au
+même endroit
+— pas de
+séparation.
+8. Résultats et analyses
+À remplir après chaque run : cascade seuil par seuil, lecture flux par flux, comparaison au nul, rotation des
+contrôles, ce qui bouge et ce qui ne bouge pas.
+\n\n===== PAGE 12 =====\nLivre blanc PDAC v6 - page 12
+8.1 Run v1 — TCGA, 178 tumeurs, ordre KRAS croissant (15 nov. 2026, exit 0)
+Ce que la v1 mesure : les 12 flux sont des marqueurs de pancréas normal (enzymes digestives) + XIST. La v1 lit
+donc le gradient de pureté (quantité de pancréas normal dans la biopsie) le long de l'expression KRAS. Ce n'est pas
+une transition du cancer lui-même — c'est la lecture de référence, le témoin contre lequel v2/v3/v4 seront jugées.
+Cascade (réel) : T_-2 0 % → step 0 ; T_-1 49,63 % → step 88 ; T_0 60,90 % → step 108 ; T_+1 = T_+2 97,39 %
+→ step 173. MC optimum 66,30 % (distinct de T_0, comme sur HP35).
+L7a : DOWN — up 34,7 %, down 49,9 %, flat 15,4 %, confiance 0,195 (faible). Lecture simple : quand
+l'expression KRAS monte, les marqueurs acineux baissent. L7b : FRAGILE, mode léger — non informatif (verdict
+clos le 13 nov.), ne pas l'utiliser comme mesure de fragilité. Régime : divergence, Delta 3,68 (d_div 5,30, d_sat
+1,63, d_crit 3,16). Diagnostic de bruit : score moyen 0,508, verdict MEDIUM, « Mixte » ; XIST se comporte
+comme du bruit blanc en série (Q5 0,13 contre 0,12).
+Nul permuté (graine 42) : cascade 1,06 / 6,39 / 9,58 / 15,96 / 22,63 ; L7a UP 77,7 % (down 0 %) ; Delta 4,30. Le
+nul place son seuil tout au début et vote à l'inverse du réel.
+Ce qui distingue le réel du nul : l'endroit où tombe le seuil (60,9 % contre 9,6 %) et le sens du vote (DOWN
+contre UP). Ce qui ne distingue pas : le régime divergence (Delta 4,30 nul > 3,68 réel) et L7b FRAGILE des deux
+côtés — même leçon que sur HP35. L'ordre par KRAS porte donc une information réelle : la relation « KRAS
+monte, pancréas normal baisse » n'est pas un artefact de l'ordre des lignes.
+Ce que ça ne prouve pas : aucune cible thérapeutique. La v1 ne dit rien du cancer lui-même, seulement de la
+composition des biopsies. Les cibles ne pourront venir que des versions nettoyées (v2/v3/v4).
+8.2 Run v2 — pureté, deuxième couche (15 nov. 2026, exit 0)
+Cascade (réel) : 0 / 29,55 % → 53 / 48,70 % → 87 / 58,35 % → 104 / 67,12 % → 120. L7a DOWN (conf. 0,201).
+Delta 3,74. Nul : T_0 9,58 %, L7a UP 85,0 %, Delta 4,30.
+Lecture flux par flux : à T_-1 (step 53), tous les marqueurs acineux/îlots MONTENT (+0,19 à +0,75 sd, PGC
++0,75) ; à T_0 (step 87), ils BAISSENT tous (−0,36 à −0,67 sd, sauf GCG/INS qui montent un peu). La v2 décrit
+donc une arche de pureté le long de KRAS : les biopsies contiennent de plus en plus de pancréas normal jusqu'au
+step 53, puis de moins en moins après le step 87. Même leçon que v1, un cran plus fin — toujours pas le cancer lui-
+même.
+8.3 Run v3 — après correction de pureté, le sexe apparaît (15 nov. 2026, exit 0)
+Cascade (réel) : 0 / 25,55 % → 45 / 89,57 % → 159 / 97,91 % → 174 (×2). L7a DOWN (conf. 0,174, faible).
+Delta 3,84. Nul : T_0 61,32 %, L7a DOWN 85,7 % (conf. 0,420).
+Lecture flux par flux : à T_0 (step 159), XIST baisse de −0,52 sd et les 6 gènes Y montent de +0,42 à +0,51 sd :
+après le step 159, les patients sont presque tous des hommes. Le seuil v3 est donc d'abord une frontière
+homme/femme dans l'ordre KRAS. Mais dessous, les mêmes gènes tumoraux baissent déjà : PGC −0,55 sd,
+DPCR1 −0,40 sd, CLDN18 −0,34 sd.
+Avertissement honnête : le nul v3 vote DOWN lui aussi, et fort (85,7 %, conf. 0,420). En v3, la direction ne
+distingue pas le réel du nul — seule la position du seuil diffère (89,57 % contre 61,32 %). La v3 seule ne suffit pas ;
+c'est la v4 qui tranche, en enlevant le sexe.
+8.4 Run v4 — la couche tumorale : une chaîne en deux temps (15 nov. 2026, exit 0)
+Cascade (réel) : 0 / 74,06 % → 132 / 93,22 % → 166 / 98,44 % → 175 / 98,96 % → 176. L7a DOWN 86,3 % (up
+0 %, conf. 0,408 — la plus forte des 4 versions réelles). Delta 4,18. Falsification delta_vs_null 0,849 (seuil 0,5).
+Nul : T_0 15,96 %, L7a UP 45,1 % (conf. 0,167, faible), Delta 3,77. La v4 sépare le réel du nul sur la position du
+seuil ET sur le sens du vote.
+\n\n===== PAGE 13 =====\nLivre blanc PDAC v6 - page 13
+Lecture flux par flux — la chaîne : - Premier temps, T_-1 (step 132, 74,06 %) : KRT20 −0,66 sd et CLCA1
+−0,59 sd baissent, CR2 −0,42 sd baisse, CEACAM5 (CEA) +0,43 sd monte. Les marqueurs d'épithélium
+commencent à tomber, le marqueur tumoral CEA monte. - Deuxième temps, T_0 (step 166, 93,22 %) : PGC −0,89
+sd (de +1,72 à −2,14), DPCR1 −0,85 sd (de +2,83 à −0,47), CLDN18 −0,46 sd (de +1,75 à −0,07) s'effondrent ;
+MUC16 (CA125) +0,64 sd monte (de −0,22 à +2,11) ; CLCA1 +0,32 sd et CEACAM5 +0,21 sd montent un peu.
+Lecture simple : les ~12 patients avec l'expression KRAS la plus forte (steps 166–178, après correction de pureté)
+forment un groupe à part : leurs tumeurs perdent leurs marqueurs de différenciation (PGC, DPCR1, CLDN18) et
+gagnent MUC16. C'est une chaîne causale en deux temps — exactement le type de résultat cherché — et c'est le
+seul run du jour où le réel se distingue du nul sur les deux plans (position + sens) avec la confiance la plus forte.
+Ce que ça ne prouve pas : ce n'est pas un remède, pas une cible validée, pas un pronostic (aucune donnée de
+survie n'a servi ici). C'est un sous-groupe moléculaire mesuré, reproductible (protocole gelé, SHA, nul), qui
+demande une confirmation indépendante (autre cohorte : CPTAC protéine, GEO, ou DepMap/GDSC pour la
+réponse aux médicaments). Les pistes qui en sortent sont au §9 — des pistes, pas des candidats.
+8.6 Couche CRISPR — test « plus que mesurer » nº 1 (15 nov. 2026, 08h34)
+Question : dans DepMap 24Q4 (47 lignées pancréatiques, effets Chronos), les lignées les plus dépendantes de
+KRAS dépendent-elles différemment des gènes de la v4 ? Autrement dit : CLDN18, MUC16, CEACAM5 sont-ils
+des vulnérabilités génétiques du sous-groupe, ou seulement des marqueurs ?
+Résultat : NON — ce sont des marqueurs, pas des vulnérabilités. Corrélations de Spearman avec la dépendance
+KRAS (47 lignées) : CLDN18 +0,045 ; MUC16 −0,117 ; CEACAM5 −0,131 ; PGC −0,122 ; KRT20 +0,061 ;
+CLCA1 +0,232 ; CR2 +0,217 ; REG4 −0,036 ; MUC17 +0,005 ; GSTM1 +0,129 — toutes faibles (|rho| ≤ 0,23).
+Par tertile KRAS, la dépendance moyenne ne bouge pas : CLDN18 +0,09 / +0,10 / +0,09 (jamais essentiel nulle
+part) ; MUC16 −0,03 / −0,02 / −0,05 ; CEACAM5 +0,03 / +0,02 / +0,01. DPCR1 et MUC2 sont absents de la
+bibliothèque DepMap 24Q4 (DPCR1 : aucune entrée ; MUC2 : seuls MUC20/21/22 présents).
+Lecture : éteindre ces gènes ne tue pas les lignées pancréatiques, quel que soit KRAS. C'est cohérent avec leur
+biologie : CLDN18 (protéine de jonction serrée), MUC16 (mucine) et CEACAM5 sont des protéines de surface —
+des cibles pour anticorps et conjugués anticorps-médicament, pas des gènes essentiels. La piste thérapeutique n'est
+donc pas une létalité synthétique CRISPR, mais un ciblage de surface — à tester sur des données de sensibilité aux
+médicaments (PRISM, test nº 2 ci-dessous), pas sur CRISPR.
+Détail technique : la première colonne de CRISPRGeneEffect.csv est sans nom (les ModelID sont l'index) et les
+gènes sont nommés « SYMBOLE (Entrez) » — deux scripts ont échoué sur ces formats avant le bon (alignement
+des colonnes vérifié par le KRAS médian −1,76, identique à la construction des flux du matin).
+8.7 Couche médicaments (PRISM 24Q2) — test « plus que mesurer » nº 2 (15 nov.
+2026, 08h36)
+Question : parmi les lignées pancréatiques, un médicament tue-t-il de préférence les lignées les plus dépendantes
+de KRAS ? Criblage de 6 790 composés (dose unique 2,5 µM), 38 lignées pancréatiques communes PRISM ×
+DepMap, corrélation de Spearman entre viabilité et effet Chronos KRAS. Provenance : DepMap Repurposing
+Public 24Q2, figshare article 25917643 (matrice 72 456 953 octets, métadonnées, liste des composés) ; script
+prism_screen.py, sorties data/prism_kras_screen*.csv.
+Résultat : NÉGATIF — aucun médicament ne se détache une fois la correction faite. Le meilleur, le pamiparib
+(inhibiteur PARP), a rho −0,614 et p < 0,0001, mais FDR (Benjamini-Hochberg) = 0,286 ; zéro composé passe
+FDR < 0,05 sur 6 790 testés (12 ont p < 0,001, contre ~7 attendus par hasard). Surtout, il n'y a aucun effet de
+classe PARP : médiane rho des 25 inhibiteurs PARP = +0,032 (olaparib −0,221 ; talazoparib −0,143 ; niraparib
++0,048 ; rucaparib −0,252) — le pamiparib est un cas isolé dans sa propre classe, probablement un effet hors-cible
+ou du bruit. Les inhibiteurs MEK non plus ne montrent rien de cohérent (tramétinib +0,226 ; sélumétinib +0,063 ;
+\n\n===== PAGE 14 =====\nLivre blanc PDAC v6 - page 14
+signes mélangés). Les autres têtes de liste (céfopérazone, lévodopa, imétit, palmitate d'isopropyle — un hydratant
+cosmétique) n'ont aucun mécanisme plausible : du bruit d'écran.
+Lecture honnête : le test médicaments ne donne pas de piste médicamenteuse pour le sous-groupe. Le pamiparib
+reste noté comme curiosité (nº 1 du criblage, p < 0,0001 non corrigé), mais il ne tient pas après correction et n'a pas
+d'appui de classe — ce n'est pas un candidat. Le sous-groupe v4 reste un sous-groupe moléculaire mesuré (ARN),
+dont la confirmation décisive est maintenant la protéine (CPTAC, §8.8) — pas un médicament.
+8.8 Confirmation protéique CPTAC — NON, la chaîne ne se confirme pas (15 nov.
+2026, 08h33–09h05)
+Ce qui a été testé : étude CPTAC PDAC PDC000393 (Cao et al. 2021, Cell), deux centres séparés — UMich (63
+tumeurs, 7 flux) et BCM (52 tumeurs, 6 flux, MUC16 exclue car 48/52 < 50). Fichiers téléchargés depuis le miroir
+Zenodo du paquet cptac (record 8394329), MD5 vérifiés exacts ; l'accès PDC n'était ni contrôlé ni bloqué. DPCR1
+exclu (symbole ambigu en protéine), CR2/MUC17/GSTM1/MUC2 exclus (trop peu de valeurs mesurées, jamais
+d'imputation). Ordre = KRAS protéique croissant, nul permuté graine 42, v6 fast, 4 runs exit 0. Détail complet :
+PROVENANCE_cptac.md.
+Résultat : NON. UMich : T_0 à 4,69 % (step 3 — trois points avant le seuil, porté par la seule tumeur au KRAS le
+plus faible) ; Delta réel 1,48 contre nul 1,49 (quasi identiques, contre 4,18 contre 3,77 en ARN) ; L7a dégénéré —
+probabilités NaN, confiance 0,5 — sur les 4 runs, réel comme nul (cause non diagnostiquée, à investiguer avant
+tout nouveau run protéique). BCM : T_0 à 63,26 % mais aucun mouvement de flux derrière lui (+0,01 à +0,33 sd) ;
+Delta 1,55 contre 1,52. Test direct : UMich top 4 → CLDN18 −0,28 sd, MUC16 +0,99 sd (un air de la chaîne) mais
+top 12 → CLDN18 +0,41 sd, MUC16 −0,25 sd (inversion) ; BCM top 4 → CLDN18 −0,52 sd, top 12 → +0,57 sd
+(même instabilité). Spearman flux contre rang KRAS : tous |rho| ≤ 0,14 (UMich) et ≤ 0,20 (BCM), p > 0,16 —
+aucune relation monotone.
+Ce que ça n'invalide pas : le résultat ARN v4 reste debout — autre cohorte (178 patients TCGA contre 63/52
+CPTAC, patients différents, pas d'appariement), autre couche de mesure (ARN ≠ protéine, surtout pour des mucines
+bruyantes en protéomique), cohortes protéiques plus petites. La voie de secours RPPA n'a pas été lancée : le panel
+RPPA ne contient ni CLDN18, ni MUC16, ni CEACAM5, ni KRAS — elle ne servirait à rien ici.
+Suite proposée (à décider) : (a) confirmation sur une autre cohorte ARN (ICGC ou GEO PDAC) — la
+confirmation la plus directe du motif ARN ; (b) test de la réponse aux médicaments anti-CLDN18.2 selon
+CLDN18/KRAS dans les lignées ; (c) diagnostic du L7a NaN sur matrices protéiques avant tout nouveau run
+protéique.
+8.9 Rotations de contrôle — la chaîne est réelle et propre à l'axe KRAS (15 nov. 2026,
+08h52–09h24)
+Question (règle permanente) : la chaîne v4 tient-elle quand on change l'axe de contrôle ? Quatre rotations, mêmes
+12 flux, mêmes 178 patients, 8 runs exit 0. Protocole et provenance : 
+build_rotations.py,
+PROVENANCE_rotations.md (ordre v4 reproduit exactement, SHA v4 inchangé e7a2adab…).
+1. KRAS-valeur — IDENTIQUE, chiffre par chiffre. Contrôle = valeur du résidu KRAS au lieu du rang
+step : cascade 0 / 74,06 / 93,22 / 98,44 / 98,96, L7a DOWN 85,8 % (conf. 0,404), Delta 4,18, MC 10,87 %
+— les mêmes nombres que la v4. La métrique du contrôle ne change rien : le résultat ne dépend pas de
+l'espacement uniforme des rangs.
+2. Miroir (KRAS décroissant) — la chaîne est dans les données, miroir exact flux par flux. Aux positions
+miroirs, les mouvements sont les mêmes avec les signes inversés : au step 12 (miroir du T_0) PGC +0,89 sd,
+DPCR1 +0,85, CLDN18 +0,46, MUC16 −0,64 (v4 : −0,89 / −0,85 / −0,46 / +0,64) ; au step 46 (miroir du
+T_-1) KRT20 +0,66, CLCA1 +0,59, CEACAM5 −0,43 (v4 : −0,66 / −0,59 / +0,43). Mais la cascade ne
+place pas son T_0 au miroir (60,38 % au lieu de ~6,8 % ; à son T_0 les mouvements sont petits, max +0,34
+sd) et L7a ne se retourne pas (DOWN 86,2 %, conf. 0,431, quasi identique à la v4). Deux comportements de
+\n\n===== PAGE 15 =====\nLivre blanc PDAC v6 - page 15
+l'instrument à noter comme questions ouvertes (le balayage et le vote semblent directionnels) — pas des
+verdicts sur les données, qui, elles, se retournent exactement.
+3. CLDN18 comme contrôle — pas de discrimination. Réel : T_0 84,42 %, L7a UP 85,5 % (conf. 0,417) ;
+nul : T_0 60,38 %, L7a UP 86,3 % (conf. 0,420). Le nul vote pareil et aussi fort — ordonner par CLDN18
+ne sépare pas réel et nul. La chaîne est spécifique à l'axe KRAS : elle ne se lit pas depuis un autre gène.
+4. Pureté comme contrôle (témoin négatif) — aucune chaîne, comme attendu. Réel : T_0 42,52 %, L7a UP
+53,4 % (conf. 0,198, faible) ; à son T_0 tous les flux baissent modestement et ensemble (−0,13 à −0,55 sd).
+Nul : DOWN 58,2 % (conf. 0,225). Rien de fort d'aucun côté — la v4, qui a enlevé la pureté, ne réapparaît
+pas quand on ordonne par la pureté.
+Verdict des rotations : la chaîne est invariante à la métrique du contrôle (KRAS valeur = KRAS rang, identique),
+elle se retourne exactement dans les données (miroir), elle est propre à l'axe KRAS (absente sous CLDN18 et sous
+pureté). Les deux bizarreries de l'instrument — cascade qui ne place pas son T_0 au miroir, L7a qui ne se retourne
+pas — sont notées comme questions ouvertes, à investiguer avant d'en tirer un verdict.
+8.10 Confirmation GEO GSE71729 — NON, et la moitié « marqueurs qui montent »
+tient (15 nov. 2026, 09h16–09h40)
+Ce qui a été testé : cohorte Moffitt GSE71729 (Moffitt et al. 2015), 145 tumeurs primaires, puce Agilent
+GPL20769, matrice 15 622 315 octets, SHA b2287893…536a54. Les ID de la matrice sont déjà des symboles de
+gènes (19 749 lignes, 0 duplicata). Trois variantes, 6 runs exit 0 : (a) les 12 mêmes gènes que la v4 ; (b) re-sélection
+fraîche protocole v4 ; (c) les 12 mêmes gènes corrigés de la pureté. Détail complet : PROVENANCE_geo71729.md.
+Limite de traçabilité notée : le script de la variante (c) a été exécuté en ligne et n'a pas été sauvegardé en fichier —
+sa construction est décrite dans la provenance et reproductible depuis la matrice, mais le fichier manque.
+Résultat : NON pour la chaîne, OUI partiel pour deux marqueurs. (a) T_0 76,77 %, L7a UP 82,1 % contre nul
+UP 85 %, Delta 2,16 contre 2,20 — le pipeline ne sépare pas réel et nul. À T_0 les gènes MONTENT (+0,18 à
++0,65 sd) au lieu de s'effondrer. Test direct (top 12 KRAS contre le reste, vérifié) : CLDN18 +0,68 sd, MUC16
++0,67, DPCR1 +0,60, KRT20 +0,60, CEACAM5 +0,38, PGC +0,25 — l'inverse de TCGA pour CLDN18, PGC,
+DPCR1, KRT20 (TCGA : −0,46 / −0,89 / −0,85 / −0,66). (b) Réel et nul placent leur seuil au même endroit (25,09
+% contre 24,44 %) — pas de chaîne. (c) La correction de pureté ne retourne pas le sens (CLDN18 −0,19, MUC16
++0,05 à T_0) — l'objection la plus directe est fermée.
+Ce qui tient dans les deux cohortes : MUC16 et CEACAM5. MUC16 est plus élevé dans le groupe KRAS-le-
+plus-fort dans les deux cohortes (TCGA +0,64 sd ; GEO (c) +0,65 top 12 / +0,73 top 7) et CEACAM5 aussi
+(TCGA +0,43 sd à T_-1 ; GEO +0,38 / +0,33 top 12). La moitié « marqueurs qui montent » (CA125, CEA) tient ; la
+moitié « marqueurs de différenciation qui s'effondrent » (PGC, DPCR1, CLDN18, KRT20) s'inverse. Note
+d'honnêteté : en variante (a), MUC16 vaut +0,67 au top 12 mais +0,10 au top 7 — c'est la variante (c), corrigée
+pureté, qui rend l'élévation MUC16 robuste au choix du seuil.
+Ce que ça n'invalide pas : le résultat TCGA v4 reste debout dans sa cohorte (rotations §8.9). Hypothèses non
+testées sur la différence : technologie (puce Agilent contre ARN-seq), cohortes différentes (Moffitt 2015, chirurgie,
+contre TCGA mixte), ou chaîne spécifique à la cohorte TCGA.
+8.11 Test décisif : l'effondrement est-il dans les données brutes ? (15 nov. 2026,
+10h05)
+Question : la moitié « effondrement » de la chaîne v4 (PGC, DPCR1, CLDN18 qui tombent) existe-t-elle dans les
+valeurs brutes, ou est-elle créée par la correction de pureté de la v4 ? Test direct sur la matrice Firehose (log2
+RSEM+1, sans correction), mêmes 12 patients que la v4 (11/12 communs entre l'ordre par résidu KRAS et l'ordre
+par KRAS brut).
+Résultat : la moitié « marqueurs qui montent » est dans le brut, la moitié « effondrement » dépend de la
+correction. Valeurs brutes, top 12 contre reste : MUC16 +0,58 sd (v4 : +0,64), CEACAM5 +0,75 (v4 : +0,43 à
+\n\n===== PAGE 16 =====\nLivre blanc PDAC v6 - page 16
+T_-1) — présentes et aussi fortes sans correction. PGC −0,51 (v4 : −0,89) — la baisse existe dans le brut, plus
+faible. DPCR1 −0,17 (v4 : −0,85) et CLDN18 −0,04 (v4 : −0,46) — quasiment absentes dans le brut, l'essentiel de
+leur « effondrement » vient de la correction. KRT20 +0,24 et CLCA1 +0,37 dans le brut (en v4 ils baissaient à T_-1
+: −0,66 / −0,59).
+Lecture honnête : la correction de pureté n'explique que 2,0 % de la variance en médiane (v3) — elle ne devrait
+pas créer un tel écart, et la question reste ouverte (modèle linéaire imparfait ? scores de pureté incomplets ?). Ce qui
+est mesuré, sans interprétation : la hausse de CA125/CEA ne dépend d'aucune correction et tient dans deux cohortes
+; l'effondrement de DPCR1/CLDN18 dépend de la correction et ne tient dans aucune autre cohorte. Le résultat
+robuste du jour se resserre donc sur : le groupe KRAS-le-plus-fort a CA125 et CEA élevés. L'effondrement
+reste une observation TCGA, à ne pas présenter comme un fait général.
+8.12 Survie — le paysage dépend du seuil, le test sans seuil tient (15 nov. 2026,
+10h11–10h20)
+Données : clinique TCGA PAAD PanCan Atlas (cBioPortal datahub, data_clinical_patient.txt, 184 patients,
+OS_MONTHS/OS_STATUS/DFS, âge, sexe, stade) ; 177 patients avec ARN + survie (92 décès), OS médiane de la
+cohorte 20,0 mois. Source et SHA dans la provenance (à ajouter à PROVENANCE_tcga.md).
+Paysage de survie (9 définitions de groupe, toutes rapportées — aucune choisie) :
+Groupe
+n
+décès
+OS médiane (reste)
+log-rank p
+top12 KRAS résidu (v4)
+11
+9
+9,1 mois (20,4)
+0,024
+top12 KRAS brut
+11
+10
+9,1 mois (20,6)
+0,002
+top12 score KRAS+CA125+CEA
+11
+8
+8,2 mois (20,4)
+0,064
+top7 KRAS résidu
+6
+5
+19,5 mois (20,2)
+0,243
+top20 KRAS résidu
+19
+14
+17,9 mois (20,6)
+0,053
+quartile sup. MUC16 (CA125) seul
+45
+29
+15,8 mois (20,8)
+0,034
+quartile sup. CEACAM5 (CEA) seul
+45
+29
+15,6 mois (20,8)
+0,037
+quartile sup. KRAS brut seul
+44
+29
+15,6 mois (20,8)
+0,044
+CA125 ET CEA élevés (2 quartiles sup.)
+15
+11
+15,8 mois (20,4)
+0,127
+Lecture — exactement l'avertissement de l'utilisateur (10h11) : le seuil change la réponse. Le groupe top12
+meurt nettement plus tôt (9 contre 20 mois), mais l'effet disparaît au top7 (19,5 mois, p=0,24) et s'affaiblit au top20
+(p=0,053) ; le score combiné KRAS+CA125+CEA n'atteint pas le seuil (p=0,064) et le double-quartile
+CA125+CEA non plus (p=0,127). Avec 9 définitions testées et n=11, ce paysage est une piste, pas une preuve.
+Test sans seuil (Cox continu, aucune coupure, aucun groupe) — n=177, 92 décès, risque par +1 écart-type :
+KRAS HR 1,29 (p=0,035) ; MUC16 HR 1,28 (p=0,072) ; CEACAM5 HR 1,02 (p=0,89) ; PGC HR 1,00 (p=0,99) ;
+DPCR1 HR 1,26 (p=0,14) ; CLDN18 HR 0,96 (p=0,82). En multivarié (KRAS + MUC16 + CEACAM5
+ensemble) : KRAS HR 1,31 (p=0,018), MUC16 HR 1,34 (p=0,014), CEACAM5 HR 1,08 (p=0,52). Sans aucun
+seuil : KRAS et CA125 prédisent chacun, indépendamment, une survie plus courte (risque ×1,3 par écart-type) ;
+CEA ne porte rien en continu — son élévation dans le groupe extrême est un marqueur du groupe, pas un prédicteur
+gradué de la survie. C'est la version du résultat qui ne dépend d'aucun seuil, et elle pointe dans le même sens que le
+groupe top12.
+8.13 Troisième cohorte GSE62452 — OUI, 3/3, et le seuil seul retourne le signe (15
+nov. 2026, 10h11–10h36)
+Ce qui a été testé : GEO GSE62452, 69 tumeurs PDAC, puce Affymetrix HuGene-1.0-st (plateforme réelle
+GPL6244 — la mission annonçait GPL570 par erreur, corrigé en cours ; mapping extrait de la table GPL6244, 25
+293 sondes avec symbole). Matrice 14 447 291 octets, SHA 8f41d5b3…078cba (premier téléchargement tronqué à
+\n\n===== PAGE 17 =====\nLivre blanc PDAC v6 - page 17
+12 943 600 octets, re-téléchargé et vérifié). Deux variantes, 4 runs exit 0. Détail complet :
+PROVENANCE_geo62452.md. Note : KRAS R² pureté = 19,6 % ici (contre 0,3 % TCGA, 1,4 % GSE71729) — la
+pureté pèse beaucoup plus sur KRAS dans cette cohorte ; données fusionnées de deux lots, effet de lot retiré par les
+auteurs (Partek), non vérifiable depuis la matrice. Survie absente de la matrice.
+Résultat : OUI, 3 cohortes sur 3. Test direct (top 12 contre le reste, vérifié) : MUC16 +0,48 sd, CEACAM5 +0,63
+(Spearman rho +0,441, p=0,0001 — le signal le plus fort du paysage), DPCR1 +0,93 (rho +0,334, p=0,005),
+CLDN18 +0,55, PGC +0,11, KRT20 +0,15. Nul : tout entre −0,38 et +0,45 sd. Comparaison 3 cohortes (top 12) :
+MUC16 +0,64 / +0,67 / +0,48 ; CEACAM5 +0,43 / +0,38 / +0,63 — 3/3 en hausse. CLDN18 −0,46 / +0,68 /
++0,55 ; DPCR1 −0,85 / +0,60 / +0,93 ; PGC −0,89 / +0,25 / +0,11 — l'effondrement ne tient que dans TCGA.
+La variante (b), re-sélection fraîche, retrouve indépendamment DPCR1 (rho +0,394, p=0,0008) et CEACAM5 (rho
++0,372, p=0,0016) qui montent avec KRAS — preuve convergente sans utiliser la liste v4.
+Le pipeline ne sépare pas réel et nul ici (Delta 1,41 contre 1,26 ; en (b) T_0 réel 79,67 % contre nul 84,02 %) —
+le verdict repose sur les tests directs, pas sur sa cascade. L7a dégénéré (NaN) sur les 4 runs — comme CPTAC
+(n=63/52). Motif qui se précise pour la question ouverte : L7a dégénère aux petits n (52, 63, 69) et fonctionne à
+n=145, 178, 1000 — piste, pas une preuve.
+Illustration vivante de l'avertissement de l'utilisateur (10h11) : le T_0 de la variante (a) tombe au step 66 — il
+ne reste que 3 points après. La lecture par flux à ce seuil donne MUC16 −0,83 sd (3 points), alors que le test top 12
+donne +0,48 et le top 7 +0,29. Un seul seuil, 3 points, et le signe de MUC16 se retourne. Le verdict ne doit pas
+venir de ce seuil : il vient des tests directs (12 et 7 points) et des Spearman, cohérents entre eux et entre les 3
+cohortes.
+État du résultat robuste après 3 cohortes : le groupe KRAS-le-plus-fort a CA125 et CEA élevés — 3/3, dans le
+brut, sans correction, avec des Spearman significatifs. L'effondrement des marqueurs de différenciation est une
+observation TCGA seule. La survie (TCGA, §8.12) pointe dans le même sens sans seuil pour KRAS et CA125.
+8.5 Synthèse des 4 versions — ce qui bouge, ce qui ne bouge pas
+v1 (brute)
+v2 (hors pureté)
+v3 (+ correction)
+v4 (+ hors sexe)
+Ce que ça mesure
+Pureté
+Pureté, 2e couche
+Sexe (+ tumeur dessous)
+Tumeur
+T_0 réel
+60,90 % → 108
+48,70 % → 87
+89,57 % → 159
+93,22 % → 166
+T_0 nul
+9,58 %
+9,58 %
+61,32 %
+15,96 %
+L7a réel
+DOWN (conf. 0,195)
+DOWN (0,201)
+DOWN (0,174)
+DOWN 86,3 % (0,408)
+L7a nul
+UP 77,7 %
+UP 85,0 %
+DOWN 85,7 %
+UP 45,1 %
+Delta réel / nul
+3,68 / 4,30
+3,74 / 4,30
+3,84 / 3,89
+4,18 / 3,77
+MC optimum réel
+66,30 %
+66,30 %
+14,13 %
+10,87 %
+Ce qui ne bouge pas : les 4 runs réels votent DOWN ; L7b FRAGILE partout (non informatif) ; le régime
+divergence partout ; Delta ne sépare jamais réel et nul. Ce qui bouge : l'endroit du seuil (60,9 → 48,7 → 89,6 →
+93,2 %) et ce que le seuil mesure (pureté → sexe → tumeur). Chaque version décrit sa propre fenêtre — comme
+prévu, ce n'est pas une propriété absolue, c'est une lecture par couches. La couche tumorale (v4) est la plus forte et
+la seule à se distinguer du nul sur les deux plans.
+Note sur MC optimum contre T_0 : en v3/v4 ils s'écartent fortement (14,13 % contre 89,57 % ; 10,87 % contre
+93,22 %). Le MC optimum et le T_0 de la cascade sont deux quantités différentes (scan contre structure F1/F2) —
+ne pas les confondre, ne pas en choisir une seule.
+\n\n===== PAGE 18 =====\nLivre blanc PDAC v6 - page 18
+9. Candidats thérapeutiques
+À remplir uniquement à partir de résultats mesurés : cible/combinaison, sources qui la soutiennent, seuils associés,
+force de la preuve, ce qui manque pour y croire. Aucun candidat sans preuve mesurée.
+Aucun candidat validé à ce jour (15 nov. 2026). Ce qui suit sont des PISTES — des hypothèses issues du run
+v4, à tester, pas des candidats.
+Piste (hypothèse)
+Ce qui a été mesuré (v4,
+TCGA 178 patients)
+Ce que ça suggérerait, si
+confirmé
+Ce qui manque pour y croire
+CLDN18 (Claudine
+18.2) — le groupe
+KRAS-très-fort y
+répondrait MOINS
+CLDN18 s'effondre de −0,46
+sd à T_0 (step 166, 93,22 %)
+et baisse déjà de −0,34 sd en
+v3 ; les 12 patients KRAS-les-
+plus-forts perdent ce marqueur
+Les thérapies anti-CLDN18.2
+(connues dans le cancer
+gastrique) seraient moins
+efficaces dans ce sous-groupe —
+il faudrait le tester avant de
+traiter
+Confirmation indépendante (CPTAC
+protéine : CLDN18 protéique dans le
+même sous-groupe ; autre cohorte
+ARN) ; lien avec la réponse réelle au
+médicament (GDSC/PRISM)
+MUC16 (CA125) —
+marqueur du
+groupe KRAS-très-
+fort
+MUC16 monte de +0,64 sd à
+T_0 (de −0,22 à +2,11)
+CA125, déjà utilisé comme
+marqueur tumoral, marquerait ce
+sous-groupe agressif
+Même confirmation indépendante ;
+corrélation avec la survie (non testée
+ici)
+CEACAM5 (CEA) —
+monte dès le
+premier temps
+CEACAM5 monte de +0,43 sd
+à T_-1 (step 132, 74,06 %),
+puis encore +0,21 sd à T_0
+Le CEA monte avant
+l'effondrement des marqueurs de
+différenciation — un signal
+précoce possible du
+basculement
+Confirmation indépendante ; test : le
+CEA sérique sépare-t-il ces patients
+en clinique ?
+Le sous-groupe lui-
+même (~12 patients,
+KRAS le plus fort)
+Chaîne en deux temps (T_-1
+74,06 % puis T_0 93,22 %),
+L7a DOWN 86,3 % (conf.
+0,408), nul à l'inverse
+Un sous-groupe moléculaire
+distinct, moins différencié, à
+étudier en priorité
+Reproduction sur une autre cohorte ;
+caractérisation clinique (stade, survie,
+mutations) de ces patients
+Ce qui n'est PAS dans ce tableau : aucune combinaison thérapeutique, aucun médicament nommé comme
+efficace, aucune promesse clinique. Les pistes ci-dessus disent seulement où regarder ensuite — et ce qu'il faudrait
+mesurer pour y croire.
+10. Journal
+15 nov. 2026, 07h30 : mandat de Zackary — v6 + remède PDAC (ARN, protéine, CRISPR, autres
+flux/données) + livre blanc. Livre blanc créé. Agent de repérage lancé (inventaire tlog28 + sources réelles
+gratuites). Rien téléchargé, aucun run lancé.
+15 nov. 2026, 07h33 : rapport de repérage reçu et vérifié. Inventaire confirmé (voir §6.1). 3 sources
+recommandées, mais vérification faite : DepMap 24Q4 CONFIRMÉ (CRISPRGeneEffect.csv 428,7 Mo,
+Model.csv 0,6 Mo, via figshare) ; cBioPortal S3 403 (étude existe dans datahub, accès à retrouver) ; GDSC
+8.5 liens 404 (nouvelle adresse à retrouver). Téléchargement DepMap lancé.
+15 nov. 2026, 07h34 : Zackary demande de revoir l'axe pseudo-temporel invalidé — il peut apporter de
+l'information. Relecture détaillée R1/R2/R3 à venir, résultats notés ici.
+15 nov. 2026, 07h36 : relecture faite (4 rapports relus en entier, §2.1). Apports : biais d'argmax +9,3 pp (un
+T0 est un maximum de contraste, pas une bifurcation) ; EMT_Invasion + Stroma_Desmoplasia survivent au
+pipeline corrigé ; levier b2 (ATR/G6PD → MRTX/venetoclax) dominant partout ; chevauchement des
+phases > séquençage net (intra-modèle) ; lire les cascades comme paysages d'influence ; pics δ=40/75/105 =
+falaises de protocole ; biais de cohorte TCGA (IIB 68 %) ; drapeaux rouges pour les runs v6.
+Téléchargement DepMap en cours (~43 % à 07h35, ~1 min restante estimée).
+15 nov. 2026, 07h37 : CRISPRGeneEffect.csv téléchargé — taille exacte 428 678 699 octets, conforme à
+l'API figshare (MD5 non fourni par figshare, vérification par taille + SHA-256 consigné dans
+\n\n===== PAGE 19 =====\nLivre blanc PDAC v6 - page 19
+download_depmap.log). Model.csv en cours. Accès cBioPortal résolu : pas de tarball S3 (403) ni de
+fichiers dans datahub (README lu, aucune URL) — la voie est l'API cBioPortal, à mettre en place ; non
+bloquant.
+15 nov. 2026, 07h38 : téléchargement DepMap TERMINÉ et vérifié (exits 0, tailles exactes, SHA
+3d8f3ec6… / b7a0c138…). Inspecté : 2 105 modèles, 68 lignées pancréas dont 64 adénocarcinomes, 17 916
+gènes, tous les gènes candidats présents.
+15 nov. 2026, 07h38 : correction de Zackary — ne pas importer les données/conclusions des autres
+expériences, se concentrer sur le travail du jour. Règle ajoutée au §3 : l'état antérieur est du contexte, jamais
+une entrée ; seuls les données et runs du jour font les verdicts.
+15 nov. 2026, 07h39 : exigence de Zackary — tout traçable, reproductible, clair et public ; il ne connaît pas
+ce domaine, donc tout expliqué simplement. Règle ajoutée au §3 (travail public, pipeline privé). Instruction :
+donner le maximum, ne pas s'arrêter avant d'avoir quelque chose de vrai à présenter — ni faux espoir, ni
+défaite.
+15 nov. 2026, 07h39 : flux du jour construits (45 lignées × 12 gènes, SHA 7d605fef…, nul SHA
+ac2e0db5…). Premiers runs v6 BLOQUÉS : la v6 exige ≥ 50 points, on en a 45 (47 avec les 2
+adénosquameuses). Échecs enregistrés au §7 (exit 1, pas un verdict). Solution proposée : copie v6.1 «
+séries courtes », en attente du go de Zackary.
+15 nov. 2026, 07h46–07h58 : Zackary demande une autre source pour dépasser 50 points. Pour CRISPR :
+non — DepMap est déjà la plus grande source au monde (47 lignées pancréas max). Pour les patients :
+oui. TCGA-PAAD via API cBioPortal : vérifié que l'étude et les profils existent (184 échantillons, 177
+ARN), mais le téléchargement complet est BLOQUÉ par l'API : le GET molecular-data exige un
+gène à la fois (20 000 requêtes), le POST molecular-data/fetch est refusé par le serveur («
+interceptedMolecularDataMultipleStudyFilter must be true »), les fichiers datahub sont des pointeurs
+Git LFS (130 o) et le tarball S3 refuse (403). UCSC Xena : S3 AccessDenied. Voie retenue : Broad
+GDAC Firehose 2016-01-28, matrice RSEM normalisée PAAD complète (un seul fichier) —
+téléchargement lancé 07h58, MD5 à vérifier. Secours : GEO GSE71729 (145 tumeurs primaires,
+matrice 15,6 Mo, vérifiée accessible).
+15 nov. 2026, 07h58 : Firehose TÉLÉCHARGÉ et vérifié (15 296 232 o, MD5 exact b09569ce…). Matrice :
+20 532 gènes × 183 échantillons, 178 tumeurs primaires. Premier fait mesuré du jour : les 12 gènes de
+plus forte variance sont presque tous des enzymes digestives du pancréas normal (PNLIP, CTRB,
+CELA, CPA, CPB, CLPS, CTRC) + XIST (sexe) — dans une biopsie, ils mesurent la quantité de
+pancréas normal mélangée à la tumeur et le sexe, pas le cancer. Variante v2 construite (40 gènes
+exclus, liste consignée) : les 12 suivants sont encore des marqueurs de pancréas normal (PNLIPRP1/2,
+CELA2B, PLA2G1B, GP2, CEL, INS, GCG, PPY…) — la variance dominante des données brutes,
+c'est la composition du tissu. Runs v6 lancés (v1 + v1 nul + v2 + v2 nul, log runs_tcga_v6.log).
+15 nov. 2026, 08h01 : variante v3 construite : correction de pureté par régression (2 scores — acineux 11
+gènes, îlots 4 gènes — médiane des gènes : 2,0 % de variance expliquée seulement ; KRAS 0,3 %). Après
+correction, la variance dominante devient le sexe (XIST + 6 gènes Y dans le top 12). Variante v4 construite
+(v3 + exclusion des 17 gènes du sexe) : top 12 enfin tumoraux — PGC, REG4, CLDN18, MUC17, DPCR1,
+CR2, KRT20, MUC2, GSTM1, CEACAM5, CLCA1, MUC16. Chaque version est un témoin de la suivante
+; rien n'est caché. Runs v3/v4 à lancer après le lot v1/v2.
+15 nov. 2026, 07h46 : échec TCGA, HTTP 400 (GET sans entrezGeneId + POST champ singulier) ;
+correctif vérifié 08h00 (molecularProfileIds pluriel, transport curl) ; relance cBioPortal arrêtée
+volontairement, voie Firehose 178 patients retenue, runs en cours. Détail vérifié : le POST /molecular-
+data/fetch exige le champ molecularProfileIds (pluriel, liste) — avec le singulier, le serveur refuse en
+400 « interceptedMolecularDataMultipleStudyFilter must be true » ; avec le pluriel, HTTP 200, 531 lignes
+pour 3 gènes × 177 échantillons, valeurs identiques au GET (KRAS TCGA-2J-AAB1-01 : −0,562).
+Deuxième problème : urllib levait IncompleteRead sur les réponses chunked de cBioPortal — transport
+passé à curl (vérifié 3/3 sur /api/genes). Script corrigé : runs/pdac-v6/fetch_tcga_fluxes.py (POST
+\n\n===== PAGE 20 =====\nLivre blanc PDAC v6 - page 20
+par lots de 1000 gènes via /api/genes, champ pluriel, transport curl, 5 tentatives) — gardé comme route de
+contre-vérification (z-scores cBioPortal, 177 patients), à ne lancer que sous un autre nom de fichier, pour ne
+pas écraser la v1 Firehose pendant les runs (SHA préservés : v1 e012e9fd… vérifié inchangé).
+15 nov. 2026, 08h07 : run v1 TERMINÉ, exit 0. Cascade : 0 / 49,63 % → step 88 / T_0 60,90 % → step
+108 / 97,39 % → step 173 (×2). Cible PNLIP. L7a DOWN (up 34,7 %, down 49,9 %, confiance 0,195). L7b
+FRAGILE (léger, non informatif — verdict clos). Régime divergence, Delta 3,68. Nul : cascade 1,06 / 6,39 /
+9,58 / 15,96 / 22,63, L7a UP 77,7 %, Delta 4,30 — le nul place son seuil ailleurs et vote à l'inverse ; Delta ne
+distingue pas réel et nul (4,30 nul > 3,68 réel). Lecture : l'ordre par KRAS porte l'information (où tombe le
+seuil, dans quel sens) ; la v1 mesurant la pureté, le DOWN dit que les marqueurs acineux baissent quand
+KRAS monte. Détail au §8.
+15 nov. 2026, 08h10 : redémarrage VM — le lot v2 a été tué en cours (dossier results_fast_tcga_v2/
+vide, 0 fichier, aucun EXIT ; la v6 n'écrit qu'à la fin). v1 réel + v1 nul intacts (exit 0, 36 fichiers
+chacun). Relance : v2 réel + v2 nul, puis v3 + v3 nul, v4 + v4 nul, en une seule file (log
+runs_tcga_v6.log).
+15 nov. 2026, 08h31 : LES 8 RUNS TCGA TERMINÉS, exit 0. v2 : T_0 48,70 % → 87, L7a DOWN,
+Delta 3,74 (nul : T_0 9,58 %, UP 85 %). v3 : T_0 89,57 % → 159, L7a DOWN (nul : T_0 61,32 %, DOWN
+85,7 % — la direction ne distingue pas en v3). v4 : T_0 93,22 % → 166, L7a DOWN 86,3 % (conf. 0,408,
+la plus forte), Delta 4,18 (nul : T_0 15,96 %, UP 45,1 %). Premier résultat vrai du jour (§8.4) : chaîne
+en deux temps — à T_-1 (74,06 %) KRT20 et CLCA1 baissent, CEA monte ; à T_0 (93,22 %) PGC,
+DPCR1 et CLDN18 s'effondrent, MUC16 monte. Les ~12 patients KRAS-les-plus-forts forment un
+groupe à part, moins différencié. Pistes au §9 (CLDN18, MUC16, CEACAM5) — des hypothèses à
+tester, pas des candidats, pas un remède.
+15 nov. 2026, 08h34 : « Essaie de faire plus que mesurer » — deux tests d'action lancés. Test CRISPR
+(DepMap 24Q4, 47 lignées) : NÉGATIF — aucune corrélation forte avec KRAS (CLDN18 +0,045,
+MUC16 −0,117, CEACAM5 −0,131) : ces gènes sont des marqueurs de surface, pas des vulnérabilités
+génétiques. Test médicaments (PRISM 24Q2, 6 790 composés, 38 lignées) : NÉGATIF — pamiparib nº
+1 (rho −0,614, p < 0,0001) mais FDR 0,286, zéro composé sous FDR 0,05, aucun effet de classe PARP
+(médiane +0,032). La confirmation décisive restante est la protéine CPTAC (PDC000393, agent lancé
+08h33). Détail au §8.6/§8.7.
+15 nov. 2026, 09h05 : CPTAC — NON-CONFIRMATION. Sur les deux centres (UMich 63 tumeurs,
+BCM 52 tumeurs), la chaîne v4 n'apparaît pas en protéine : UMich T_0 à 4,69 % (3 points avant),
+Delta réel 1,48 contre nul 1,49 ; BCM T_0 à 63,26 % sans aucun mouvement de flux ; L7a dégénéré
+(probabilités NaN) sur les 4 runs ; le test direct s'inverse entre top 4 et top 12 dans les deux centres. Le
+résultat ARN v4 reste debout (autre cohorte, autre couche), mais il n'est pas confirmé. Suite proposée
+: autre cohorte ARN (ICGC/GEO) — la confirmation la plus directe. Détail au §8.8. Rotations de
+contrôle v4 en cours (2/8 terminées).
+15 nov. 2026, 09h24 : ROTATIONS v4 TERMINÉES, 8/8 exit 0 — la chaîne est réelle et propre à l'axe
+KRAS. (1) KRAS-valeur : cascade IDENTIQUE à la v4 chiffre par chiffre (0 / 74,06 / 93,22 / 98,44 /
+98,96, L7a DOWN 85,8 %) — la métrique du contrôle ne change rien. (2) Miroir : la chaîne se
+retourne EXACTEMENT flux par flux (PGC +0,89, DPCR1 +0,85, CLDN18 +0,46, MUC16 −0,64 au
+step 12), mais la cascade ne place pas son T_0 au miroir (60,38 %) et L7a ne se retourne pas —
+comportements de l'instrument notés comme questions ouvertes. (3) CLDN18 comme contrôle : pas
+de discrimination (réel UP 85,5 % contre nul UP 86,3 %). (4) Pureté comme contrôle : aucune chaîne,
+comme attendu (vote faible). Tout consigné au §8.9. GEO GSE71729 en cours.
+15 nov. 2026, 09h40 : GEO GSE71729 — NON-CONFIRMATION, mais la moitié « marqueurs qui
+montent » tient. Sur 145 tumeurs (3 variantes, 6 runs exit 0), la chaîne ne se confirme pas : les gènes
+qui s'effondraient en TCGA MONTENT avec KRAS ici (top 12 : CLDN18 +0,68 sd, DPCR1 +0,60,
+KRT20 +0,60 — vérifié) ; le pipeline ne sépare pas réel et nul (Delta 2,16 contre 2,20). En revanche
+MUC16 (CA125) et CEACAM5 (CEA) sont plus élevés dans le groupe KRAS-le-plus-fort dans LES
+\n\n===== PAGE 21 =====\nLivre blanc PDAC v6 - page 21
+DEUX cohortes (MUC16 : +0,64 TCGA, +0,65 GEO ; CEA : +0,43 TCGA, +0,38 GEO). La moitié «
+différenciation qui s'effondre » s'inverse ; la moitié « marqueurs qui montent » tient. Le résultat
+TCGA reste debout dans sa cohorte, mais il n'est pas universel. Détail au §8.10. Limite : script de la
+variante (c) non sauvegardé (exécuté en ligne, construction décrite dans la provenance).
+15 nov. 2026, 10h05 : TEST DÉCISIF — les données brutes tranchent les deux moitiés. Sur la matrice
+Firehose sans correction, mêmes 12 patients que la v4 : CA125 +0,58 sd et CEA +0,75 sont là dans le
+brut (aussi forts qu'en v4) ; PGC −0,51 existe mais plus faible ; DPCR1 −0,17 et CLDN18 −0,04 sont
+quasiment absents dans le brut (contre −0,85 / −0,46 en v4). La hausse de CA125/CEA ne dépend
+d'aucune correction et tient dans deux cohortes ; l'effondrement de DPCR1/CLDN18 dépend de la
+correction et ne tient nulle part ailleurs. Le résultat robuste se resserre sur : le groupe KRAS-le-plus-
+fort a CA125 et CEA élevés. Détail au §8.11.
+15 nov. 2026, 10h20 : SURVIE — le paysage dépend du seuil (avertissement de Zackary, 10h11 : ne
+pas se fixer sur un seuil/flux/contrôle). 9 définitions testées, toutes rapportées : top12 KRAS vit 9,1
+mois contre 20,4 (p=0,024 ; brut p=0,002), mais top7 rien (19,5 mois, p=0,24), top20 limite (p=0,053),
+score combiné et double-quartile non significatifs. Test SANS seuil (Cox continu, n=177, 92 décès) :
+KRAS HR 1,29 (p=0,035), MUC16 HR 1,28 (p=0,072) ; en multivarié KRAS HR 1,31 (p=0,018) et
+MUC16 HR 1,34 (p=0,014) ; CEA rien en continu (HR 1,02, p=0,89). Sans aucun seuil, KRAS et
+CA125 prédisent chacun une survie plus courte. Troisième cohorte ARN (GSE62452) lancée pour
+tester CA125/CEA une troisième fois, paysage complet demandé. Détail au §8.12.
+15 nov. 2026, 10h36 : TROISIÈME COHORTE — OUI, 3/3. GSE62452 (69 tumeurs, puce Affymetrix
+HuGene-1.0-st, GPL6244 réelle) : CA125 +0,48 sd et CEA +0,63 chez les KRAS-les-plus-forts (CEA
+rho +0,441, p=0,0001) ; DPCR1 +0,93 et CLDN18 +0,55 MONTENT aussi — l'effondrement ne tient
+que dans TCGA. Re-sélection fraîche retrouve DPCR1 et CEA qui montent. Le pipeline ne sépare pas
+réel et nul ici (Delta 1,41 contre 1,26) ; L7a NaN sur les 4 runs — motif qui se précise : L7a dégénère
+aux petits n (52, 63, 69) et fonctionne à 145, 178, 1000. Illustration de l'avertissement : le T_0 tombe au
+step 66 (3 points après) et retourne le signe de CA125 (−0,83) contre +0,48 au top 12 — le verdict vient
+des tests directs, pas du seuil. Résultat robuste : KRAS fort = CA125 et CEA élevés, 3 cohortes sur 3.
+Détail au §8.13.
+14 nov. 2026 : preuve Cohen vs Cliff complète (4/4 cascades identiques) ; v6 construite et vérifiée sur
+HP35.
+2 oct. 2026 : synthèse des trois validations PDAC (R1/R2/R3) ; pseudo-temps invalidé ; projet requalifié en
+stratification pronostique.
+Fin de la version initiale du livre blanc — 15 novembre 2026. Le reste se mesure.

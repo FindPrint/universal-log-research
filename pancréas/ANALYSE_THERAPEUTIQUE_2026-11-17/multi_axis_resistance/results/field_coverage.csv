@@ -1,0 +1,22 @@
+field,role,type,description,n_patients,n_observed,n_missing_or_censored,distinct_nonmissing
+baseline_tp53,control,categorical,baseline biomarker,44,44,0,2
+kras_subtype,control,categorical,baseline genotype,44,44,0,6
+dose_mg,control,continuous,planned exposure; nonrandomized,44,44,0,4
+dose_group,control,categorical,planned exposure; alternate encoding,44,44,0,4
+best_response,control,categorical,post-baseline response; selected cohort,44,44,0,3
+ras_vaf_pre_status,control,categorical,baseline detection status,44,44,0,2
+ras_vaf_pre,control,continuous,baseline ctDNA VAF; detected only,44,37,7,37
+acquired_ras_short,flow,categorical,acquired RAS/MAPK/PI3K/RTK short alteration listed,44,44,0,2
+acquired_ras_cna,flow,categorical,acquired RAS-pathway copy-number alteration listed,44,44,0,2
+acquired_kras_amp,flow,categorical,acquired KRAS amplification listed,44,44,0,2
+acquired_myc_amp,flow,categorical,acquired MYC amplification listed,44,44,0,2
+acquired_other,flow,categorical,other acquired alteration listed,44,44,0,2
+acquired_any_listed,flow,categorical,any listed acquired alteration,44,44,0,2
+multiple_ras_pathway_classes,flow,categorical,both short-variant and CNA classes listed,44,44,0,2
+ras_vaf_on_status,flow,categorical,on-treatment detection status,44,44,0,3
+ras_vaf_eot_status,flow,categorical,end-of-treatment detection status,44,44,0,2
+ras_vaf_eot,flow,continuous,end-of-treatment RAS VAF; detected only,44,41,3,41
+genomic_max_vaf_eot,flow,continuous,end-of-treatment maximum genomic VAF; detected only,44,44,0,44
+delta_pre_to_on_vaf_pp,flow,continuous,pre-to-on stage difference; both detected,44,20,24,20
+delta_on_to_eot_vaf_pp,flow,continuous,on-to-end stage difference; both detected,44,20,24,20
+delta_pre_to_eot_vaf_pp,flow,continuous,pre-to-end stage difference; both detected,44,35,9,35

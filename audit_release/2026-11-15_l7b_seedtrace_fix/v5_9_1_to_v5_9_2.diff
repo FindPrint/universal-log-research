@@ -1,0 +1,58 @@
+--- UNIVERSAL_LOG_v5_9_1_AUDITFIX.py
++++ UNIVERSAL_LOG_v5_9_2_AUDITFIX_SEEDTRACE.py
+@@ -9512,9 +9512,9 @@
+ # =============================================================================
+ # UNIVERSAL_LOG v4.0.0-Master — MOTEUR UNIFIÉ MULTI-NIVEAUX & CASCADE UNIVERSELLE
+ # =============================================================================
+ 
+-VERSION_MASTER = "v5.9.1-L7aL7b-DKind-AuditFix"
++VERSION_MASTER = "v5.9.2-L7aL7b-DKind-AuditFix-SeedTrace"
+ # v5.9.0 L7a/L7b : L7a-COHERENCE (vote, existant) + L7b-ROBUSTESSE (audit, nouveau). Voir bloc v5.9.0 avant level_coherence_universal. CLI : --l7b-full / --l7b-light (defaut) / --no-l7b.
+ # VERSION est un alias de VERSION_MASTER, jamais édité séparément :
+ # la version annoncée (docstring, argparse, print RUNNING) = celle écrite
+ # dans master_results.json et dans le rapport. Ne pas remettre "v5.4" ici.
+@@ -11020,10 +11020,10 @@
+     except Exception:
+         return None
+ 
+ 
+-def _l7b_extract_summary(result):
+-    """Extrait le minimum necessaire d un run pour L7b, sans dependre du detail interne."""
++def _l7b_extract_summary(result, seed=None):
++    """Extrait le resume L7b et conserve la graine connue par l appelant."""
+     if not isinstance(result, dict):
+         return None
+     try:
+         casc = result.get("five_threshold_cascade") or {}
+@@ -11040,16 +11040,19 @@
+                 d_sat = _l7b_safe_float(dv.get("d_sat"))
+                 d_div = _l7b_safe_float(dv.get("d_div"))
+                 if d_sat is not None and d_div is not None:
+                     delta = float(d_div - d_sat)
+-        return {
++        summary = {
+             "T0_pct": t0,
+             "consensus_direction": (l7.get("consensus_direction") if isinstance(l7, dict) else None),
+             "global_confidence": _l7b_safe_float(l7.get("global_confidence")) if isinstance(l7, dict) else None,
+             "Delta": delta,
+             "dominant_regime": holo.get("dominant_regime") if isinstance(holo, dict) else None,
+             "L7_status": (l7.get("status") if isinstance(l7, dict) else None),
+         }
++        if seed is not None:
++            summary["seed"] = int(seed)
++        return summary
+     except Exception:
+         return None
+ 
+ 
+@@ -11314,9 +11317,9 @@
+                     control_selection_info=None, max_workers=max_workers,
+                     target_policy=target_policy, target_resolution=target_resolution,
+                     triangulation_estimators=None, l7b_mode="off",
+                 )
+-                return _l7b_extract_summary(res)
++                return _l7b_extract_summary(res, seed=seed_v)
+             except Exception as _e:
+                 print(f"[L7b-FULL] re-run {sub} echoue, check = INDETERMINE : {_e}")
+                 return None
+         # Reference summary : on le recalcule a partir du run principal via le fichier JSON deja ecrit ? Non : on le passe en argument dans le caller.

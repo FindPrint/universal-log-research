@@ -1,0 +1,26 @@
+{
+  "failure_log": [
+    {
+      "stage": "noise_step4_spectral",
+      "exc_type": "ValueError",
+      "exc_msg": "Spectre nul/insuffisant : pente logarithmique non d\u00e9finie"
+    },
+    {
+      "stage": "noise_step4_spectral",
+      "exc_type": "ValueError",
+      "exc_msg": "Spectre nul/insuffisant : pente logarithmique non d\u00e9finie"
+    },
+    {
+      "stage": "noise_step4_spectral",
+      "exc_type": "ValueError",
+      "exc_msg": "Spectre nul/insuffisant : pente logarithmique non d\u00e9finie"
+    },
+    {
+      "stage": "noise_step4_spectral",
+      "exc_type": "ValueError",
+      "exc_msg": "Spectre nul/insuffisant : pente logarithmique non d\u00e9finie"
+    }
+  ],
+  "scan_fast_fallback_log": [],
+  "threshold_warnings": []
+}

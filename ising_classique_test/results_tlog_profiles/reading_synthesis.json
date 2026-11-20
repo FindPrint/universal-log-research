@@ -1,0 +1,1210 @@
+{
+  "version": "v5.3-ControleRelatifNullCadre",
+  "status": "ok",
+  "reason": null,
+  "enters_threshold_score": false,
+  "q_numeric_scores_modified": false,
+  "n_samples": 105.0,
+  "control_col": "Temperature",
+  "observer_axis": "Temperature",
+  "aggregation_geometric": "median_of_per_estimator_medians_DIMENSION_FOR_TLOG_only",
+  "aggregation_relative": "cross_estimator_z_of_29_raw_medians_plus_cliff_delta",
+  "D_vector": {
+    "d_sat": 1.251936,
+    "d_crit": 2.713662,
+    "d_div": 2.606923,
+    "d_null": 2.412139
+  },
+  "D_vector_roles": {
+    "d_sat": "ancre micro / sol stable (saturation)",
+    "d_crit": "ancre de transition (criticite)",
+    "d_div": "ancre d'ouverture / degres de liberte (divergence)",
+    "d_null": "cadre de mesure spectral (null) ; pas un d T_log interchangeable"
+  },
+  "spectral_width_delta": 1.354987,
+  "Delta_tension": 1.354987,
+  "dominant_regime": "criticality",
+  "dominant_regime_relative": "criticality|control=Temperature",
+  "regime_is_physical_call": false,
+  "regime_is_heuristic": true,
+  "regime_classification_method": "dimension_threshold_heuristic",
+  "regime_evidence": [
+    "delta_in_[1.2,3.0]"
+  ],
+  "regime_rule": "Etiquette de COUPE sous le controle choisi. divergence si d_div>=5.5 ou delta>3 ; sinon criticite si d_crit dans [3.5,4.5] ou delta dans [1.2,3] ; sinon saturation seulement si d_sat et d_div finis ; sinon indeterminate. Classification heuristique non validee physiquement; les seuils sont des regles de lecture, pas des theoremes. Couche geometrique seulement ; T_log n'est pas l'hologramme entier.",
+  "interpretation": "Signal heuristique de criticite sous controle 'Temperature' : d_crit dans [3.5, 4.5] ou Delta dans [1.2, 3] sur la couche geometrique. Etiquette de coupe, pas convergence forcee des 29.",
+  "null_role": "measurement_frame_not_interchangeable_d",
+  "null_role_note": "Null (SpectralDimension + signatures) = residu du cadre de mesure humain (spectre, conventions, instrumentation). Contrepoids pour falsifier. Les 3 ancres sat/crit/div cartographient la tension micro\u2194macro.",
+  "falsification_vs_null": {
+    "status": "ok",
+    "compared": "d_crit geometrique vs SpectralDimension (cadre null)",
+    "null_role": "measurement_frame_spectral_counterweight",
+    "is_significant_nonlinearity": false,
+    "delta_vs_null": 0.301523,
+    "threshold": 0.5,
+    "reason": null,
+    "note": "Null = cadre de mesure / residu d'instrumentation, pas un d interchangeable pour T_log."
+  },
+  "geometric_layer": {
+    "axes": {
+      "saturation": {
+        "dimension_median": 1.251936,
+        "n_dimension_estimators_used": 7,
+        "estimators_used": [
+          "Higuchi",
+          "Katz",
+          "Petrosian",
+          "Sevcik",
+          "BoxCounting",
+          "Hurst2mH",
+          "DFA"
+        ],
+        "estimators_without_finite_values": [],
+        "class_members_excluded_from_geometric": [
+          "PermutationEntropy"
+        ]
+      },
+      "criticality": {
+        "dimension_median": 2.713662,
+        "n_dimension_estimators_used": 6,
+        "estimators_used": [
+          "CorrelationD2",
+          "GrassbergerProcaccia",
+          "InformationD1",
+          "VisibilityGraph",
+          "DANCo",
+          "Fisher"
+        ],
+        "estimators_without_finite_values": [
+          "TwoNN"
+        ],
+        "class_members_excluded_from_geometric": []
+      },
+      "divergence": {
+        "dimension_median": 2.606923,
+        "n_dimension_estimators_used": 6,
+        "estimators_used": [
+          "LevinaBickel",
+          "PCAIntrinsic",
+          "LocalPCA",
+          "GraphDimension",
+          "PersistentHomology",
+          "MFA"
+        ],
+        "estimators_without_finite_values": [],
+        "class_members_excluded_from_geometric": [
+          "KolmogorovLZ"
+        ]
+      },
+      "null_reference": {
+        "dimension_median": 2.412139,
+        "n_dimension_estimators_used": 1,
+        "estimators_used": [
+          "SpectralDimension"
+        ],
+        "estimators_without_finite_values": [],
+        "class_members_excluded_from_geometric": [
+          "SpectralBeta",
+          "Hurst",
+          "SampleEn",
+          "Lyapunov",
+          "MultifractalDeltaAlpha",
+          "SingularityFmax"
+        ]
+      }
+    },
+    "T_log_by_estimator": {
+      "Higuchi": {
+        "d": 1.85565,
+        "T_log": -9.979722,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "DFA": {
+        "d": 1.251936,
+        "T_log": -12.78938,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Katz": {
+        "d": 1.085854,
+        "T_log": -13.562321,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Petrosian": {
+        "d": 1.050654,
+        "T_log": -13.726139,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Sevcik": {
+        "d": 1.592519,
+        "T_log": -11.204323,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "BoxCounting": {
+        "d": 1.044001,
+        "T_log": -13.757104,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "CorrelationD2": {
+        "d": 2.698538,
+        "T_log": -6.056954,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "GrassbergerProcaccia": {
+        "d": 2.728786,
+        "T_log": -5.916178,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "InformationD1": {
+        "d": 0.521142,
+        "T_log": -16.190468,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "VisibilityGraph": {
+        "d": 2.05098,
+        "T_log": -9.070663,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "DANCo": {
+        "d": 2.753817,
+        "T_log": -5.799685,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Fisher": {
+        "d": 3.582312,
+        "T_log": -1.943904,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "LevinaBickel": {
+        "d": 3.584207,
+        "T_log": -1.935082,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "PCAIntrinsic": {
+        "d": 6.007379,
+        "T_log": 9.342263,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "LocalPCA": {
+        "d": 2.213846,
+        "T_log": -8.312688,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "GraphDimension": {
+        "d": 1.041266,
+        "T_log": -13.76983,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "PersistentHomology": {
+        "d": 2.065729,
+        "T_log": -9.002022,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "MFA": {
+        "d": 3.0,
+        "T_log": -4.65396,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "SpectralDimension": {
+        "d": 2.412139,
+        "T_log": -7.389843,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Hurst2mH": {
+        "d": 1.400378,
+        "T_log": -12.098539,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      }
+    },
+    "T_log_class_median": {
+      "saturation": -12.78938,
+      "criticality": -5.986566,
+      "divergence": -6.483324,
+      "null_reference": -7.389843
+    },
+    "T_log_formula": "(d-4)*log(n) ; n=n_samples ; jamais un z-score",
+    "T_log_scope": "indicateur de coupe sur dimensions geometriques, pas l'hologramme entier"
+  },
+  "relative_layer": {
+    "method": "cross_estimator_z_of_medians",
+    "note": "Les 29 restent dans ESTIMATOR_CLASSES. Le z croise compare les ancres sans les brancher sur d=4. KolmogorovLZ et PermutationEntropy votent ici.",
+    "z_by_estimator": {
+      "Higuchi": -0.161087,
+      "DFA": -0.399463,
+      "Katz": -0.46504,
+      "Hurst": -0.657029,
+      "SampleEn": -0.731208,
+      "Petrosian": -0.478939,
+      "Sevcik": -0.264984,
+      "BoxCounting": -0.481566,
+      "PermutationEntropy": -0.511779,
+      "CorrelationD2": 0.171727,
+      "GrassbergerProcaccia": 0.183671,
+      "InformationD1": -0.688017,
+      "VisibilityGraph": -0.083961,
+      "DANCo": 0.193554,
+      "Fisher": 0.520685,
+      "LevinaBickel": 0.521433,
+      "PCAIntrinsic": 1.478222,
+      "LocalPCA": -0.019653,
+      "GraphDimension": -0.482646,
+      "PersistentHomology": -0.078137,
+      "MFA": 0.290759,
+      "KolmogorovLZ": 4.436679,
+      "SpectralBeta": -0.824405,
+      "SpectralDimension": 0.058643,
+      "Hurst2mH": -0.340851,
+      "MultifractalDeltaAlpha": -0.687668,
+      "SingularityFmax": -0.49894
+    },
+    "class_z_median": {
+      "saturation": -0.432252,
+      "criticality": 0.177699,
+      "divergence": 0.290759,
+      "null_reference": -0.672349
+    },
+    "class_raw_median_all_members": {
+      "saturation": {
+        "Higuchi": 1.85565,
+        "DFA": 1.251936,
+        "Katz": 1.085854,
+        "Petrosian": 1.050654,
+        "Sevcik": 1.592519,
+        "BoxCounting": 1.044001,
+        "PermutationEntropy": 0.967484,
+        "Hurst2mH": 1.400378
+      },
+      "criticality": {
+        "CorrelationD2": 2.698538,
+        "GrassbergerProcaccia": 2.728786,
+        "InformationD1": 0.521142,
+        "VisibilityGraph": 2.05098,
+        "TwoNN": null,
+        "DANCo": 2.753817,
+        "Fisher": 3.582312
+      },
+      "divergence": {
+        "LevinaBickel": 3.584207,
+        "PCAIntrinsic": 6.007379,
+        "LocalPCA": 2.213846,
+        "GraphDimension": 1.041266,
+        "PersistentHomology": 2.065729,
+        "MFA": 3.0,
+        "KolmogorovLZ": 13.5
+      },
+      "null_reference": {
+        "Hurst": 0.599622,
+        "SampleEn": 0.411754,
+        "SpectralBeta": 0.175722,
+        "SpectralDimension": 2.412139,
+        "Lyapunov": null,
+        "MultifractalDeltaAlpha": 0.522024,
+        "SingularityFmax": 1.0
+      }
+    },
+    "cliff_between_classes": {
+      "saturation_vs_divergence": {
+        "cliff_delta": -0.75,
+        "n_a": 8,
+        "n_b": 7,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "saturation_vs_criticality": {
+        "cliff_delta": -0.666667,
+        "n_a": 8,
+        "n_b": 6,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "criticality_vs_divergence": {
+        "cliff_delta": -0.333333,
+        "n_a": 6,
+        "n_b": 7,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "criticality_vs_null_reference": {
+        "cliff_delta": 0.722222,
+        "n_a": 6,
+        "n_b": 6,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "saturation_vs_null_reference": {
+        "cliff_delta": 0.625,
+        "n_a": 8,
+        "n_b": 6,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "divergence_vs_null_reference": {
+        "cliff_delta": 0.857143,
+        "n_a": 7,
+        "n_b": 6,
+        "note": "sur z croise des medianes ; pas une dimension"
+      }
+    }
+  },
+  "per_estimator": {
+    "Higuchi": {
+      "raw_median": 1.85565,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.161087
+    },
+    "DFA": {
+      "raw_median": 1.251936,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.399463
+    },
+    "Katz": {
+      "raw_median": 1.085854,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.46504
+    },
+    "Hurst": {
+      "raw_median": 0.599622,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "exposant R/S ; la dimension de graphe 2-H est Hurst2mH / DFA",
+      "cross_z": -0.657029
+    },
+    "SampleEn": {
+      "raw_median": 0.411754,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "entropie echantillonnale, signature null",
+      "cross_z": -0.731208
+    },
+    "Petrosian": {
+      "raw_median": 1.050654,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.478939
+    },
+    "Sevcik": {
+      "raw_median": 1.592519,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.264984
+    },
+    "BoxCounting": {
+      "raw_median": 1.044001,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.481566
+    },
+    "PermutationEntropy": {
+      "raw_median": 0.967484,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "entropie normalisee (0,1], ancre de saturation dans la taxonomie, pas un d pour T_log",
+      "cross_z": -0.511779
+    },
+    "CorrelationD2": {
+      "raw_median": 2.698538,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.171727
+    },
+    "GrassbergerProcaccia": {
+      "raw_median": 2.728786,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.183671
+    },
+    "InformationD1": {
+      "raw_median": 0.521142,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.688017
+    },
+    "VisibilityGraph": {
+      "raw_median": 2.05098,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.083961
+    },
+    "TwoNN": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": false,
+      "non_dimension_reason": null,
+      "cross_z": null
+    },
+    "DANCo": {
+      "raw_median": 2.753817,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.193554
+    },
+    "Fisher": {
+      "raw_median": 3.582312,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.520685
+    },
+    "LevinaBickel": {
+      "raw_median": 3.584207,
+      "n_fluxes_used": 1,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.521433
+    },
+    "PCAIntrinsic": {
+      "raw_median": 6.007379,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 1.478222
+    },
+    "LocalPCA": {
+      "raw_median": 2.213846,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.019653
+    },
+    "GraphDimension": {
+      "raw_median": 1.041266,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.482646
+    },
+    "PersistentHomology": {
+      "raw_median": 2.065729,
+      "n_fluxes_used": 1,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.078137
+    },
+    "MFA": {
+      "raw_median": 3.0,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.290759
+    },
+    "KolmogorovLZ": {
+      "raw_median": 13.5,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "nombre de productions LZ76, non borne ; ancre de divergence relative, pas une dimension de Hausdorff",
+      "cross_z": 4.436679
+    },
+    "SpectralBeta": {
+      "raw_median": 0.175722,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "pente spectrale, signature null, pas un d",
+      "cross_z": -0.824405
+    },
+    "SpectralDimension": {
+      "raw_median": 2.412139,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.058643
+    },
+    "Hurst2mH": {
+      "raw_median": 1.400378,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.340851
+    },
+    "Lyapunov": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "exposant de Lyapunov, signature de stabilite, pas un d",
+      "cross_z": null
+    },
+    "MultifractalDeltaAlpha": {
+      "raw_median": 0.522024,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "largeur de spectre multifractal, signature null",
+      "cross_z": -0.687668
+    },
+    "SingularityFmax": {
+      "raw_median": 1.0,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "maximum de f(alpha), signature null",
+      "cross_z": -0.49894
+    }
+  },
+  "q_glossary": {
+    "Q1_Calme_vs_Chaos": "Taille d'effet entre progression basse et haute, une colonne flux x estimateur. Ce n'est pas un test de chaos.",
+    "Q2_Tension_Seuil": "Meme taille d'effet dans une marge avant le seuil contre une marge apres.",
+    "Q3_Agressivite": "Meme comparaison que Q1 restreinte aux flux agressifs ; peut recopier Q1 si couverture faible.",
+    "Q4_Persistence": "Separation intra-fenetre du flux brut, recopiee sur les colonnes d'estimateurs. Ce n'est pas Hurst.",
+    "Q5_Actif_Receptif": "Separation actifs / receptifs sur moyennes brutes. 0 si etiquettes absentes.",
+    "Q6_Actif_Receptif_Echelle": "Q5 apres division par l'ecart-type sans centrage. Ne remplace pas Q5."
+  },
+  "q3_identical_to_q1": true,
+  "primary_n_scale": {
+    "kind": "observations",
+    "value": 105
+  },
+  "T_log_profile_schema_version": "1.0",
+  "T_log_profiles": [
+    {
+      "profile_id": "observations:105",
+      "n_scale": {
+        "kind": "observations",
+        "value": 105
+      },
+      "formula": "T_log=(d-4)*ln(n)",
+      "estimator_readings": {
+        "Higuchi": {
+          "class": "saturation",
+          "d": 1.85565,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -9.97972,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "DFA": {
+          "class": "saturation",
+          "d": 1.251936,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -12.789381,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "Katz": {
+          "class": "saturation",
+          "d": 1.085854,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -13.56232,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "Petrosian": {
+          "class": "saturation",
+          "d": 1.050654,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -13.726139,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "Sevcik": {
+          "class": "saturation",
+          "d": 1.592519,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -11.204321,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "BoxCounting": {
+          "class": "saturation",
+          "d": 1.044001,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -13.757102,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "CorrelationD2": {
+          "class": "criticality",
+          "d": 2.698538,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -6.056953,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "GrassbergerProcaccia": {
+          "class": "criticality",
+          "d": 2.728786,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -5.91618,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "InformationD1": {
+          "class": "criticality",
+          "d": 0.521142,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -16.190467,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "VisibilityGraph": {
+          "class": "criticality",
+          "d": 2.05098,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -9.070662,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "DANCo": {
+          "class": "criticality",
+          "d": 2.753817,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -5.799686,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "Fisher": {
+          "class": "criticality",
+          "d": 3.582312,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -1.943903,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "LevinaBickel": {
+          "class": "divergence",
+          "d": 3.584207,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -1.935084,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "PCAIntrinsic": {
+          "class": "divergence",
+          "d": 6.007379,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": 9.342262,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "LocalPCA": {
+          "class": "divergence",
+          "d": 2.213846,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -8.31269,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "GraphDimension": {
+          "class": "divergence",
+          "d": 1.041266,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -13.769831,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "PersistentHomology": {
+          "class": "divergence",
+          "d": 2.065729,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -9.002021,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "MFA": {
+          "class": "divergence",
+          "d": 3.0,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -4.65396,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "SpectralDimension": {
+          "class": "null_reference",
+          "d": 2.412139,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -7.389842,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "Hurst2mH": {
+          "class": "saturation",
+          "d": 1.400378,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -12.098538,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        }
+      },
+      "anchor_readings": {
+        "saturation": {
+          "d": 1.251936,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -12.789381,
+          "estimators_used": [
+            "Higuchi",
+            "Katz",
+            "Petrosian",
+            "Sevcik",
+            "BoxCounting",
+            "Hurst2mH",
+            "DFA"
+          ],
+          "n_estimators_used": 7,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "criticality": {
+          "d": 2.713662,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -5.986566,
+          "estimators_used": [
+            "CorrelationD2",
+            "GrassbergerProcaccia",
+            "InformationD1",
+            "VisibilityGraph",
+            "DANCo",
+            "Fisher"
+          ],
+          "n_estimators_used": 6,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "divergence": {
+          "d": 2.606923,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -6.483325,
+          "estimators_used": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "LocalPCA",
+            "GraphDimension",
+            "PersistentHomology",
+            "MFA"
+          ],
+          "n_estimators_used": 6,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "null_reference": {
+          "d": 2.412139,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -7.389842,
+          "estimators_used": [
+            "SpectralDimension"
+          ],
+          "n_estimators_used": 1,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        }
+      },
+      "global_tension": {
+        "status": "not_defined",
+        "reason": "La r\u00e8gle de triangulation finale n'est pas encore formalis\u00e9e."
+      }
+    },
+    {
+      "profile_id": "system_size:256",
+      "n_scale": {
+        "kind": "system_size",
+        "value": 256
+      },
+      "formula": "T_log=(d-4)*ln(n)",
+      "estimator_readings": {
+        "Higuchi": {
+          "class": "saturation",
+          "d": 1.85565,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -11.890801,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "DFA": {
+          "class": "saturation",
+          "d": 1.251936,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -15.238503,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "Katz": {
+          "class": "saturation",
+          "d": 1.085854,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -16.159457,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "Petrosian": {
+          "class": "saturation",
+          "d": 1.050654,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -16.354647,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "Sevcik": {
+          "class": "saturation",
+          "d": 1.592519,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -13.349909,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "BoxCounting": {
+          "class": "saturation",
+          "d": 1.044001,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -16.391539,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "CorrelationD2": {
+          "class": "criticality",
+          "d": 2.698538,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -7.216838,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "GrassbergerProcaccia": {
+          "class": "criticality",
+          "d": 2.728786,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -7.049107,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "InformationD1": {
+          "class": "criticality",
+          "d": 0.521142,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -19.290885,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "VisibilityGraph": {
+          "class": "criticality",
+          "d": 2.05098,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -10.807662,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "DANCo": {
+          "class": "criticality",
+          "d": 2.753817,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -6.910306,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "Fisher": {
+          "class": "criticality",
+          "d": 3.582312,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -2.316154,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "LevinaBickel": {
+          "class": "divergence",
+          "d": 3.584207,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -2.305646,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "PCAIntrinsic": {
+          "class": "divergence",
+          "d": 6.007379,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": 11.131273,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "LocalPCA": {
+          "class": "divergence",
+          "d": 2.213846,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -9.904541,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "GraphDimension": {
+          "class": "divergence",
+          "d": 1.041266,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -16.406705,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "PersistentHomology": {
+          "class": "divergence",
+          "d": 2.065729,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -10.725876,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "MFA": {
+          "class": "divergence",
+          "d": 3.0,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -5.545177,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "SpectralDimension": {
+          "class": "null_reference",
+          "d": 2.412139,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -8.804971,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "Hurst2mH": {
+          "class": "saturation",
+          "d": 1.400378,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -14.415365,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        }
+      },
+      "anchor_readings": {
+        "saturation": {
+          "d": 1.251936,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -15.238503,
+          "estimators_used": [
+            "Higuchi",
+            "Katz",
+            "Petrosian",
+            "Sevcik",
+            "BoxCounting",
+            "Hurst2mH",
+            "DFA"
+          ],
+          "n_estimators_used": 7,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "criticality": {
+          "d": 2.713662,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -7.132972,
+          "estimators_used": [
+            "CorrelationD2",
+            "GrassbergerProcaccia",
+            "InformationD1",
+            "VisibilityGraph",
+            "DANCo",
+            "Fisher"
+          ],
+          "n_estimators_used": 6,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "divergence": {
+          "d": 2.606923,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -7.724859,
+          "estimators_used": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "LocalPCA",
+            "GraphDimension",
+            "PersistentHomology",
+            "MFA"
+          ],
+          "n_estimators_used": 6,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        },
+        "null_reference": {
+          "d": 2.412139,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -8.804971,
+          "estimators_used": [
+            "SpectralDimension"
+          ],
+          "n_estimators_used": 1,
+          "uncertainty": {
+            "status": "not_estimated",
+            "reason": "Le pipeline ne propage pas encore l'incertitude de d dans T_log."
+          }
+        }
+      },
+      "global_tension": {
+        "status": "not_defined",
+        "reason": "La r\u00e8gle de triangulation finale n'est pas encore formalis\u00e9e."
+      }
+    }
+  ]
+}

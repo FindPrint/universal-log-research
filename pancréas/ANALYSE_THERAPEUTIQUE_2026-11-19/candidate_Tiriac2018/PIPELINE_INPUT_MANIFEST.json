@@ -1,0 +1,97 @@
+{
+  "dataset": "Tiriac et al. 2018 PDAC patient-derived organoid drug AUC tables",
+  "article_doi": "10.1158/2159-8290.CD-18-0349",
+  "source_article_url": "https://aacrjournals.org/cancerdiscovery/article/8/9/1112/10165/Organoid-Profiling-Identifies-Common-Responders-to",
+  "source_files": [
+    {
+      "path": "supplement_4775187.xlsx",
+      "sha256": "d80eb561b653f9a2c78d7db79e9c9220a105d3c8bbe8ece700a7698ed0abc8c8",
+      "table": "Table S4A (Chemo) and S4B (Targeted)"
+    },
+    {
+      "path": "supplement_4775186.xlsx",
+      "sha256": "0a2e0220e3cbc41359c5b68744d216507d331aadbe2a590fd5555c1d5b1ca16d",
+      "table": "Table S1A-D cohort/genomic descriptors; not used as fluxes"
+    }
+  ],
+  "input_csv": "Tiriac2018_60PDO_completecase_drug_AUC.csv",
+  "input_sha256": "eb9fc0b9092e6dd18eb6896ae27ade6c0410cb2ed7b2129e5e9ba384e191bad4",
+  "observations": 60,
+  "source_table_rows": {
+    "S4A_chemo": 66,
+    "S4B_targeted": 66
+  },
+  "observation_unit": "PDO model; only PDO IDs with both chemotherapy and targeted-agent AUC profiles",
+  "matched_pdo_ids": 60,
+  "unmatched_source_ids_excluded_without_imputation": {
+    "chemo_only": [
+      "hT83"
+    ],
+    "targeted_only": [
+      "hT96"
+    ],
+    "cohort_sheet_check": "S1A marks hT83 Chemo=YES/Targeted=NO and hT96 Chemo=NO/Targeted=YES"
+  },
+  "matched_before_complete_case_filter": 65,
+  "missing_values_by_flux_before_filter": {
+    "5-FU": 2,
+    "Oxaliplatin": 3
+  },
+  "incomplete_matched_pdo_ids_excluded_without_imputation": [
+    "hF81",
+    "hM19D",
+    "hT127",
+    "hT133",
+    "hT44"
+  ],
+  "complete_case_n_after_filter": 60,
+  "id_normalization": "leading/trailing whitespace stripped; S4B hF74 has a trailing space and matches S4A hF74",
+  "row_order": "S4A published sample order preserved for shared PDO IDs; targeted rows joined by normalized exact PDO ID",
+  "axis_note": "No physical time axis is supplied; the pipeline constructs its progress axis from each selected drug-AUC control. T0 is not interpreted as a temporal or biological transition in this cross-sectional dataset.",
+  "response_metric": "The source key states the displayed values are AUC. Values are copied without transformation; no new sensitivity cutoff is applied.",
+  "chemo_fluxes": [
+    "Gemcitabine",
+    "Paclitaxel",
+    "SN-38",
+    "5-FU",
+    "Oxaliplatin"
+  ],
+  "targeted_fluxes": [
+    "Selumetinib",
+    "Afatinib",
+    "Bortezomib",
+    "Lapatinib",
+    "Sunitinib",
+    "Olaparib",
+    "Nutlin-3",
+    "MK-2206",
+    "KU-55933",
+    "Everolimus",
+    "Celecoxib",
+    "Ruxolitinib",
+    "SB5225334",
+    "SGI-1776",
+    "OSI-420",
+    "TPCA-1",
+    "LY2874455",
+    "SF1670",
+    "K-ras(G12C) Inhibitor 9",
+    "WIKI4",
+    "Disulfuram"
+  ],
+  "n_fluxes": 26,
+  "n_missing_response_values_after_filter": 0,
+  "excluded_source_annotation": {
+    "column": "Insensitive",
+    "reason": "categorical source annotation; excluded from numeric flux matrix because its coding/threshold is not specified in the copied AUC key"
+  },
+  "planned_pipeline_test": {
+    "version": "UNIVERSAL_LOG_v5.9.4.py",
+    "mode": "fast",
+    "domain": "pdac",
+    "estimator_profile": "Cohen-d-only as configured by the source pipeline",
+    "design": "fixed Gemcitabine AUC target against each of the other numeric drug-AUC columns as control, preserving all 26 AUC profiles as the multiflux input",
+    "n_target_control_pairs": 25,
+    "selection_note": "Gemcitabine is the prespecified standard-chemotherapy anchor for this first all-controls pass. This is an exploratory response-profile analysis, not a drug ranking or clinical recommendation."
+  }
+}

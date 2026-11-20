@@ -1,0 +1,43 @@
+<PROJECT_ROOT>\UNIVERSAL_LOG_v5.9.2.py:4950: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  skew = float(stats.skew(vals, bias=False)) if len(vals) >= 8 and np.std(vals) > 0 else np.nan
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+<PROJECT_ROOT>\UNIVERSAL_LOG_v5.9.2.py:5164: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap.set_bad(color='#d9d9d9')
+
+[CIBLE-FIXE-GLOBALE] politique=fixed mode=single cible_demandee='Abs_magnetization' -> cible_globale='Abs_magnetization' methode=user_requested_target controles=['MC_Update'] | Cette cible unique sera reutilisee pour TOUS les controles. Le run ou controle == cible sera signale explicitement comme diagonal, avec cible_demandee ET cible_utilisee.
+
+================================================================================
+UNIVERSAL_LOG v5.9.2-L7aL7b-DKind-AuditFix-SeedTrace-CohenDOnly — RUNNING MASTER PIPELINE
+File: .\audit_release\2026-11-14_l7b_full_reduced\data\L16_T2.269185_chain0_first80.csv | Domain: generic | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=MC_Update cible_demandee='Abs_magnetization' -> cible_utilisee='Abs_magnetization' | Cible fixee conservee pour ce run.
+Target Observable: Abs_magnetization | Control Parameter: MC_Update
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.546
+  règle: uniform
+  n_candidates: 65, resolution: 1.562%
+  w_size: 16, min_grp: 9
+[T0-VALEUR-BRUTE] controle=MC_Update T0=89.29% -> valeur brute controle=1401 (median_near=1401.0, min_near=1361.0, max_near=1441.0, spread=80.0, ambiguous=False)
+✓ Paysage des 29 estimateurs sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-15_l7b_seedtrace_fix\v5_9_2_cohen_fast_smoke\landscape_complexity.png
+Paysage ameliore v4.4.3 sauvegarde: <PROJECT_ROOT>\audit_release\2026-11-15_l7b_seedtrace_fix\v5_9_2_cohen_fast_smoke\landscape_complexity_improved.png
+Clustermap separation v4.4.3: <PROJECT_ROOT>\audit_release\2026-11-15_l7b_seedtrace_fix\v5_9_2_cohen_fast_smoke\separation_clustermap.png
+Tension holographique sauvegardee: <PROJECT_ROOT>\audit_release\2026-11-15_l7b_seedtrace_fix\v5_9_2_cohen_fast_smoke\holographic_tension.png
+✓ Courbe de scan sauvegardée: <PROJECT_ROOT>\audit_release\2026-11-15_l7b_seedtrace_fix\v5_9_2_cohen_fast_smoke\threshold_scan.png
+✓ Graphique diagnostic bruit sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-15_l7b_seedtrace_fix\v5_9_2_cohen_fast_smoke\noise_diagnostic.png
+✓ Graphique des flux sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-15_l7b_seedtrace_fix\v5_9_2_cohen_fast_smoke\raw_fluxes.png
+✓ Heatmaps de séparation par classe sauvegardées: <PROJECT_ROOT>\audit_release\2026-11-15_l7b_seedtrace_fix\v5_9_2_cohen_fast_smoke\separation_heatmap.png
+✓ Graphique post-seuil sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-15_l7b_seedtrace_fix\v5_9_2_cohen_fast_smoke\post_threshold.png
+✓ Graphique de corrélation CSD vs f' sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-15_l7b_seedtrace_fix\v5_9_2_cohen_fast_smoke\csd_correlation.png
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=up regime=up disagreement=False | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: INDETERMINE (mode=off) | L7b desactive (--no-l7b). Ne pas interpreter L7a seul.
+✓ 5-Threshold T_0: 89.29%
+✓ T_0 en valeur brute du controle 'MC_Update': 1401.0 (median_near=1401.0, min_near=1361.0, max_near=1441.0, spread=80.0, ambiguous=False)
+✓ Cible: demandee=Abs_magnetization | utilisee=Abs_magnetization | politique=fixed | repli_diagonal=False
+✓ Tool Footprint: IEEE 754 Mantissa Truncation Detected (Katz FD = 4.16)
+✓ Holographic Tension: criticality|control=MC_Update (Delta=1.34, D_vec=[1.479419, 2.365282, 2.818927, 2.489435])
+✓ Results exported to: <PROJECT_ROOT>\audit_release\2026-11-15_l7b_seedtrace_fix\v5_9_2_cohen_fast_smoke

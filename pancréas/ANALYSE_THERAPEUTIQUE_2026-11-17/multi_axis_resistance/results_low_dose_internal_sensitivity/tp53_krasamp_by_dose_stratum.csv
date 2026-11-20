@@ -1,0 +1,4 @@
+dose_stratum,n_patients_with_tp53_status,tp53_mut_n,tp53_mut_kras_amp_n,tp53_mut_kras_amp_fraction,tp53_wt_n,tp53_wt_kras_amp_n,tp53_wt_kras_amp_fraction,table_rows_mut_then_wt_columns_amp_then_no_amp,odds_ratio,fisher_two_sided_p_nominal
+160-300 mg,44,32,15,0.46875,12,1,0.08333333333333333,"[[15,17],[1,11]]",9.705882352941176,0.032154031495500175
+<=120 mg,13,9,1,0.1111111111111111,4,0,0.0,"[[1,8],[0,4]]",inf,1.0
+pooled 20-300 mg; descriptive only,57,41,16,0.3902439024390244,16,1,0.0625,"[[16,25],[1,15]]",9.6,0.02216305726471139

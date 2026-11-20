@@ -1,0 +1,111 @@
+{
+  "created_utc": "2026-11-17T01:02:07+00:00",
+  "paper": "https://doi.org/10.1038/s41591-026-04537-w",
+  "source_urls": {
+    "supplementary_tables": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41591-026-04537-w/MediaObjects/41591_2026_4537_MOESM3_ESM.xlsx",
+    "source_data_figures_4": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41591-026-04537-w/MediaObjects/41591_2026_4537_MOESM7_ESM.zip",
+    "source_data_figures_5": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41591-026-04537-w/MediaObjects/41591_2026_4537_MOESM8_ESM.zip",
+    "clinical_context_fda": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-daraxonrasib-metastatic-pancreatic-adenocarcinoma",
+    "clinical_context_phase3": "https://www.cancer.gov/research/participate/clinical-trials-search/v?id=NCI-2026-06840"
+  },
+  "runtime": {
+    "python": "3.11.9",
+    "numpy": "1.26.4",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1"
+  },
+  "parser_revision": "2; GraphPad nested replicates mapped by block and excluded cells honored; v1 Fig. 5 extraction superseded",
+  "inputs": {
+    "41591_2026_4537_MOESM3_ESM.xlsx": {
+      "sha256": "2320467a5e628fca2ff35e89cc6c4dd52a5761b8349cbb89b127e78db72b5369",
+      "bytes": 28699
+    },
+    "41591_2026_4537_MOESM7_ESM.zip": {
+      "sha256": "929d98a6f3a35e626a887b8e8991c1758e02515b37fac328c2590a4e14f1ce45",
+      "bytes": 914029
+    },
+    "41591_2026_4537_MOESM8_ESM.zip": {
+      "sha256": "75db037e1ea8e5ea0771f79c4a3555670bd69f9457ee5ab9f04fac604a9d682e",
+      "bytes": 779754
+    }
+  },
+  "script": {
+    "name": "reanalyze_daraxonrasib_source_data.py",
+    "sha256": "47828ef9e61fb4a3f7c3f7fe2e520e562cdeb39cd137e379d295f6a2d36e6dda"
+  },
+  "outputs": {
+    "build_daraxonrasib_audit_pdf.py": {
+      "sha256": "17eef0a97b281db8a022f3e5150fe158009716705f38729806e2eaca2e099b92",
+      "bytes": 11871
+    },
+    "clinical_baseline_genomics_57.csv": {
+      "sha256": "b7c1c2145bceedb62ff7736607831e09c2b79ad132d57e03a86584dcb1df41be",
+      "bytes": 6375
+    },
+    "clinical_high_dose_44.csv": {
+      "sha256": "069324e46734542d60c7d8180cce5e3b5d1f8cb9ab991aab4cdf075072f361e1",
+      "bytes": 6533
+    },
+    "clinical_KRAS_amplification_16.csv": {
+      "sha256": "efbe7c18c003d104393ac8321da94d2410ee20327f78488d7faab2df39e32161",
+      "bytes": 1060
+    },
+    "clinical_lower_dose_13.csv": {
+      "sha256": "530039c0d7cb73c7848c348347170e98a3ecaf038dde9462664bd01745df363e",
+      "bytes": 2650
+    },
+    "clinical_replication_metrics.csv": {
+      "sha256": "1ad70643c2f4ca7f33e850594f3a605ce5598341dac5dfb1ec958c0bb2ec9d4f",
+      "bytes": 337
+    },
+    "clinical_replication_tests.csv": {
+      "sha256": "a44d1000ac71e27f33f44b3ab9ba50ca9d5f371e8a9b34450c7b06a5c6c4c9aa",
+      "bytes": 242
+    },
+    "fig4_amivantamab_endpoint_comparisons_initial.csv": {
+      "sha256": "44a61a6b26117713452019afc3d9a4cd495fb8294fe3df4397875ac6700d72ce",
+      "bytes": 665
+    },
+    "fig5d_KM_summary.csv": {
+      "sha256": "ada2b9ddae98e530a5c68ddbfc465becee789c458211a1a542e5f3da6d49171f",
+      "bytes": 328
+    },
+    "fig5d_logrank_combo_vs_monos.csv": {
+      "sha256": "c7e9600e6c08e76e94f62dbc5d114161054461957356cee87d3223e75ccfe415",
+      "bytes": 466
+    },
+    "fig5d_logrank_omnibus.csv": {
+      "sha256": "240bf01b6e4dc2bed85de2b82d144b3f3dda6b9dab62af1bbf9e203abbc5fa7a",
+      "bytes": 216
+    },
+    "fig5d_mouse_time_to_doubling.csv": {
+      "sha256": "e1544c1df8739550c1707a6b584643fa8d579eee1af20462dfd029ee45e68f29",
+      "bytes": 7830
+    },
+    "figure5d_pfs_km.png": {
+      "sha256": "ba77c4c7f469bbe6155c665817dfbafcfd41a027cd8a184bde0277ea2b9bab8b",
+      "bytes": 73661
+    },
+    "preclinical_combo_endpoint_comparisons.csv": {
+      "sha256": "cb9d1afc41823a1f819d77e8776716c38f55d4d72140effcfaef9d4553971ef5",
+      "bytes": 2069
+    },
+    "preclinical_model_inventory.csv": {
+      "sha256": "b90412a908858f8949f5709e52c59be87c8ccff93d20e8596a0a2e6a2e7ac87e",
+      "bytes": 5969
+    },
+    "prism_waterfall_animals.csv": {
+      "sha256": "e7183b72b3ae95ea26f05a69722f5667e7222bd956c77aa43b0938c6d1bda308",
+      "bytes": 24946
+    },
+    "prism_waterfall_summary.csv": {
+      "sha256": "52ed20b284b8a37c4a3b8641afed54e774d9bdbee860cd50f7bf4ab057fde8ba",
+      "bytes": 5013
+    },
+    "RAPPORT_REANALYSE_DARAXONRASIB.md": {
+      "sha256": "a40073769b23fbbb0a963367eed19d8543dad0df79fde4a9447d034ce87b21d5",
+      "bytes": 15622
+    }
+  },
+  "interpretation": "Published selected cohort and animal experiments; reanalysis is not independent replication or evidence of cure."
+}

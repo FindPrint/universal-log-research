@@ -1,0 +1,962 @@
+--- UNIVERSAL_LOG_v5.8.py
++++ universal_x5f_log_x5f_L7a_x5f_L7b_x5f_v5.9.0f_0_n0z8.py
+@@ -162,11 +162,6 @@
+         L7, walk-forward. Pas les séries brutes.
+     (g) Dashboard HTML optionnel (Plotly si présent, sinon tableau des 5
+         seuils). N'altère aucun score. --no-dashboard pour le couper.
+-24. v5.8 — TAXONOMIE SÉMANTIQUE DES 29 : d_kind, quantity_type et conseil
+-    sur le seuil 4 exportés par méthode; profils T_log additionnels par
+-    d_kind. Les médianes historiques par classe sont conservées et signalent
+-    les classes qui combinent plusieurs types. Aucune formule d'estimateur
+-    ou valeur historique n'est modifiée.
+ """
+ 
+ # =============================================================================
+@@ -1935,239 +1930,6 @@
+     "MultifractalDeltaAlpha": "largeur de spectre multifractal, signature null",
+     "SingularityFmax": "maximum de f(alpha), signature null",
+ }
+-
+-# v5.8 — semantic types for every estimator. This is additive metadata:
+-# it does not change the 29 calculations, their legacy classes, or T_log.
+-D_KIND_REGISTRY = {
+-    "graph_dimension_proxy": {
+-        "quantity_type": "dimension_proxy",
+-        "label_fr": "Proxy de dimension du graphe",
+-        "definition_fr": "Approximation de la rugosité de la courbe (temps, signal); biais et échelles dépendent de l'algorithme.",
+-        "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil générique de ce type.",
+-    },
+-    "process_model_graph_dimension_proxy": {
+-        "quantity_type": "dimension_proxy",
+-        "label_fr": "Dimension de graphe issue d'un modèle de processus",
+-        "definition_fr": "Transformation d'un exposant en 2-H ou 2-alpha; valable seulement pour la classe de processus et les hypothèses qui justifient cette relation.",
+-        "reference_4_guidance_fr": "Le seuil 4 ne convient pas à une dimension de graphe scalaire usuelle; ne pas appliquer la transformation à une série arbitraire.",
+-    },
+-    "visibility_graph_dimension_proxy": {
+-        "quantity_type": "dimension_proxy",
+-        "label_fr": "Proxy de dimension par graphe de visibilité",
+-        "definition_fr": "Dimension déduite de la distribution des degrés avec la relation spécifique codée pour une famille de signaux.",
+-        "reference_4_guidance_fr": "Relation et seuil à valider pour le domaine; ne pas assimiler à une dimension intrinsèque d'attracteur.",
+-    },
+-    "correlation_attractor_dimension": {
+-        "quantity_type": "dimension_proxy",
+-        "label_fr": "Dimension de corrélation d'attracteur (D2)",
+-        "definition_fr": "Pente d'échelle de corrélation dans un nuage reconstruit; dépend de l'embedding, du bruit et de la plage d'échelle.",
+-        "reference_4_guidance_fr": "4 est une hypothèse testable seulement avec une reconstruction suffisamment dimensionnée, une plage d'échelle stable et une référence connue.",
+-    },
+-    "information_attractor_dimension": {
+-        "quantity_type": "dimension_proxy",
+-        "label_fr": "Dimension d'information d'attracteur (D1)",
+-        "definition_fr": "Pente de l'entropie de Shannon selon la résolution du nuage reconstruit; peut différer de D2 pour une mesure non uniforme.",
+-        "reference_4_guidance_fr": "4 est une hypothèse testable sur D1 seulement si la définition de D1 et le protocole de reconstruction sont fixés.",
+-    },
+-    "neighbor_intrinsic_dimension": {
+-        "quantity_type": "dimension_proxy",
+-        "label_fr": "Dimension intrinsèque par voisinage",
+-        "definition_fr": "Dimension locale déduite des distances ou des angles de voisins proches dans le nuage reconstruit.",
+-        "reference_4_guidance_fr": "4 est une hypothèse testable si le voisinage, l'échantillonnage et l'embedding sont adéquats et calibrés.",
+-    },
+-    "covariance_participation_dimension": {
+-        "quantity_type": "dimension_proxy",
+-        "label_fr": "Dimension effective par participation de covariance",
+-        "definition_fr": "Nombre effectif de directions selon les valeurs propres de covariance; ce n'est ni le rang exact ni nécessairement la dimension de variété.",
+-        "reference_4_guidance_fr": "Comparer à 4 teste une dimension effective de variance; cette lecture n'est pas interchangeable avec la dimension d'attracteur.",
+-    },
+-    "inverse_covariance_participation_dimension": {
+-        "quantity_type": "dimension_proxy",
+-        "label_fr": "Dimension effective par participation de covariance inverse",
+-        "definition_fr": "Nombre effectif de directions après pondération par les valeurs propres inverses, avec le seuil numérique défini dans le code.",
+-        "reference_4_guidance_fr": "Comparer à 4 teste une dimension effective propre à cette métrique; elle n'est pas interchangeable avec une dimension d'attracteur.",
+-    },
+-    "local_pca_dimension_proxy": {
+-        "quantity_type": "dimension_proxy",
+-        "label_fr": "Dimension locale par PCA",
+-        "definition_fr": "Nombre de composantes expliquant 95 % de la variance dans des voisinages locaux.",
+-        "reference_4_guidance_fr": "Le seuil dépend du voisinage et de la coupure à 95 %; calibration spécifique requise.",
+-    },
+-    "graph_cluster_scaling_proxy": {
+-        "quantity_type": "dimension_proxy",
+-        "label_fr": "Proxy d'échelle par grappes de graphe",
+-        "definition_fr": "Pente de croissance de grappes sur le graphe de voisins proches construit par le code.",
+-        "reference_4_guidance_fr": "4 n'a de sens qu'après calibration sur des géométries connues et une plage d'échelle stable.",
+-    },
+-    "persistent_h0_scaling_proxy": {
+-        "quantity_type": "dimension_proxy",
+-        "label_fr": "Proxy d'échelle par fusion H0",
+-        "definition_fr": "Pente du nombre de composantes connexes fusionnées; cette implémentation H0 est un proxy de dimension.",
+-        "reference_4_guidance_fr": "4 n'a de sens qu'après calibration de cette pente sur des formes et tailles connues.",
+-    },
+-    "mixture_local_pca_proxy": {
+-        "quantity_type": "dimension_proxy",
+-        "label_fr": "Maximum de dimensions PCA locales par groupes",
+-        "definition_fr": "Le code partitionne le nuage puis garde le nombre maximal de composantes PCA à 95 %.",
+-        "reference_4_guidance_fr": "Cette valeur dépend du nombre de groupes et du seuil PCA; elle n'est pas une dimension intrinsèque générique.",
+-    },
+-    "spectral_dimension_proxy": {
+-        "quantity_type": "dimension_proxy",
+-        "label_fr": "Dimension spectrale transformée",
+-        "definition_fr": "Valeur (5-beta)/2 calculée à partir de la pente spectrale dans cette version.",
+-        "reference_4_guidance_fr": "Le seuil 4 doit être justifié par le modèle spectral du domaine.",
+-    },
+-    "ordinal_entropy": {
+-        "quantity_type": "signature",
+-        "label_fr": "Entropie ordinale",
+-        "definition_fr": "Diversité normalisée des motifs d'ordre; ce n'est pas une dimension.",
+-        "reference_4_guidance_fr": "Non applicable : signature hors de la couche géométrique T_log.",
+-    },
+-    "sample_entropy": {
+-        "quantity_type": "signature",
+-        "label_fr": "Entropie échantillonnale",
+-        "definition_fr": "Fréquence relative de motifs proches qui restent proches quand leur longueur augmente.",
+-        "reference_4_guidance_fr": "Non applicable : signature hors de la couche géométrique T_log.",
+-    },
+-    "algorithmic_complexity": {
+-        "quantity_type": "signature",
+-        "label_fr": "Complexité algorithmique proxy",
+-        "definition_fr": "Nombre de productions LZ76 sur une suite discrétisée; dépend de la longueur et de la discrétisation.",
+-        "reference_4_guidance_fr": "Non applicable : le compte LZ n'est pas une dimension à comparer à 4.",
+-    },
+-    "spectral_exponent": {
+-        "quantity_type": "signature",
+-        "label_fr": "Exposant spectral",
+-        "definition_fr": "Pente beta du spectre de puissance; la dimension spectrale transformée est une autre sortie.",
+-        "reference_4_guidance_fr": "Non applicable directement : beta n'est pas d.",
+-    },
+-    "hurst_exponent": {
+-        "quantity_type": "signature",
+-        "label_fr": "Exposant de Hurst",
+-        "definition_fr": "Exposant de persistance estimé par R/S; 2-H est une transformation sous hypothèses de processus.",
+-        "reference_4_guidance_fr": "Non applicable directement : H n'est pas d.",
+-    },
+-    "lyapunov_exponent": {
+-        "quantity_type": "signature",
+-        "label_fr": "Exposant de Lyapunov",
+-        "definition_fr": "Taux de séparation de trajectoires voisines; dépend de l'unité de temps et de la reconstruction.",
+-        "reference_4_guidance_fr": "Non applicable : taux dynamique, pas dimension.",
+-    },
+-    "multifractal_width": {
+-        "quantity_type": "signature",
+-        "label_fr": "Largeur multifractale",
+-        "definition_fr": "Largeur estimée du spectre des singularités.",
+-        "reference_4_guidance_fr": "Non applicable directement : largeur de spectre, pas dimension unique d.",
+-    },
+-    "multifractal_peak": {
+-        "quantity_type": "signature",
+-        "label_fr": "Maximum multifractal",
+-        "definition_fr": "Maximum de f(alpha) estimé par le calcul multifractal du code.",
+-        "reference_4_guidance_fr": "Non applicable directement : résumé de spectre, pas dimension T_log définie.",
+-    },
+-}
+-
+-ESTIMATOR_D_KIND = {
+-    "Higuchi": "graph_dimension_proxy",
+-    "Katz": "graph_dimension_proxy",
+-    "Petrosian": "graph_dimension_proxy",
+-    "Sevcik": "graph_dimension_proxy",
+-    "BoxCounting": "graph_dimension_proxy",
+-    "DFA": "process_model_graph_dimension_proxy",
+-    "Hurst2mH": "process_model_graph_dimension_proxy",
+-    "VisibilityGraph": "visibility_graph_dimension_proxy",
+-    "CorrelationD2": "correlation_attractor_dimension",
+-    "GrassbergerProcaccia": "correlation_attractor_dimension",
+-    "InformationD1": "information_attractor_dimension",
+-    "TwoNN": "neighbor_intrinsic_dimension",
+-    "DANCo": "neighbor_intrinsic_dimension",
+-    "LevinaBickel": "neighbor_intrinsic_dimension",
+-    "PCAIntrinsic": "covariance_participation_dimension",
+-    "Fisher": "inverse_covariance_participation_dimension",
+-    "LocalPCA": "local_pca_dimension_proxy",
+-    "MFA": "mixture_local_pca_proxy",
+-    "GraphDimension": "graph_cluster_scaling_proxy",
+-    "PersistentHomology": "persistent_h0_scaling_proxy",
+-    "SpectralDimension": "spectral_dimension_proxy",
+-    "PermutationEntropy": "ordinal_entropy",
+-    "SampleEn": "sample_entropy",
+-    "KolmogorovLZ": "algorithmic_complexity",
+-    "SpectralBeta": "spectral_exponent",
+-    "Hurst": "hurst_exponent",
+-    "Lyapunov": "lyapunov_exponent",
+-    "MultifractalDeltaAlpha": "multifractal_width",
+-    "SingularityFmax": "multifractal_peak",
+-}
+-
+-def _estimator_measurement_metadata(name):
+-    """Semantic type and plain-language meaning for one of the 29 outputs."""
+-    kind = ESTIMATOR_D_KIND[name]
+-    info = dict(D_KIND_REGISTRY[kind])
+-    info.update({
+-        "d_kind": kind,
+-        "tlog_eligible": name in {
+-            estimator for members in DIMENSION_FOR_TLOG.values() for estimator in members
+-        },
+-        "tlog_membership": (
+-            "existing_geometric_layer" if name in {
+-                estimator for members in DIMENSION_FOR_TLOG.values() for estimator in members
+-            } else "signature_only"
+-        ),
+-    })
+-    return info
+-
+-ESTIMATOR_MEASUREMENT_TYPES = {
+-    name: _estimator_measurement_metadata(name) for name in ESTIMATOR_NAMES
+-}
+-
+-def _check_estimator_measurement_types():
+-    if set(ESTIMATOR_D_KIND) != set(ESTIMATOR_NAMES):
+-        missing = sorted(set(ESTIMATOR_NAMES) - set(ESTIMATOR_D_KIND))
+-        extra = sorted(set(ESTIMATOR_D_KIND) - set(ESTIMATOR_NAMES))
+-        raise ValueError(f"Taxonomie d_kind des 29 invalide; manquants={missing}, extra={extra}")
+-    if any(kind not in D_KIND_REGISTRY for kind in ESTIMATOR_D_KIND.values()):
+-        raise ValueError("d_kind sans définition dans D_KIND_REGISTRY")
+-    tlog_names = {name for members in DIMENSION_FOR_TLOG.values() for name in members}
+-    typed_dimensions = {
+-        name for name, kind in ESTIMATOR_D_KIND.items()
+-        if D_KIND_REGISTRY[kind]["quantity_type"] == "dimension_proxy"
+-    }
+-    if typed_dimensions != tlog_names:
+-        raise ValueError(
+-            "Les types sémantiques dimension/signature ne concordent pas avec DIMENSION_FOR_TLOG; "
+-            f"écart={sorted(typed_dimensions ^ tlog_names)}"
+-        )
+-
+-_check_estimator_measurement_types()
+-
+-def _write_estimator_measurement_type_exports(output_dir):
+-    """Write the complete 29-method d_kind registry as JSON and CSV."""
+-    output_dir = Path(output_dir)
+-    output_dir.mkdir(parents=True, exist_ok=True)
+-    rows = []
+-    for name in ESTIMATOR_NAMES:
+-        info = ESTIMATOR_MEASUREMENT_TYPES[name]
+-        rows.append({
+-            "estimator": name,
+-            "estimator_class": estimator_class(name),
+-            "d_kind": info["d_kind"],
+-            "quantity_type": info["quantity_type"],
+-            "label_fr": info["label_fr"],
+-            "definition_fr": info["definition_fr"],
+-            "tlog_eligible": info["tlog_eligible"],
+-            "tlog_membership": info["tlog_membership"],
+-            "reference_4_guidance_fr": info["reference_4_guidance_fr"],
+-        })
+-    csv_path = output_dir / "estimator_measurement_types.csv"
+-    json_path = output_dir / "estimator_measurement_types.json"
+-    pd.DataFrame(rows).to_csv(csv_path, index=False)
+-    with open(json_path, "w", encoding="utf-8") as fh:
+-        json.dump({
+-            "schema_version": "1.0",
+-            "d_kind_registry": D_KIND_REGISTRY,
+-            "estimators": ESTIMATOR_MEASUREMENT_TYPES,
+-        }, fh, ensure_ascii=False, indent=2)
+-    return {"csv": str(csv_path), "json": str(json_path)}
+ 
+ def _check_dimension_for_tlog_partition():
+     for cls, names in DIMENSION_FOR_TLOG.items():
+@@ -5449,11 +5211,8 @@
+                 trajectories[label] = tests
+             if any(trajectories[k].get('status') in ('computed', 'partially_computed') for k in trajectories):
+                 computed_names.add(metric)
+-            _measurement = ESTIMATOR_MEASUREMENT_TYPES[metric]
+             flux_out[metric] = {'status': 'computed' if np.any(np.isfinite(y)) else 'not_computed',
+                                 'estimator_class': estimator_class(metric),
+-                                'd_kind': _measurement['d_kind'],
+-                                'quantity_type': _measurement['quantity_type'],
+                                 'trajectories': trajectories}
+         output['by_flux'][str(flux_name)] = flux_out
+     output['n_estimators_computed'] = int(len(computed_names))
+@@ -6942,8 +6701,7 @@
+         if v is not None and k in ('random_seed', 'harmonic_prob',
+                                     'mc_complexity_enabled', 'mc_complexity_max_scenarios',
+                                     'auto_optimize_threshold', 'optimization_iterations',
+-                                    'max_workers', 'estimator_profile',
+-                                    'landscape_scan_points'):
++                                    'max_workers', 'estimator_profile'):
+             mode_cfg[k] = v
+         elif v is not None:
+             # Tout autre depassement est enregistre, pas applique en douce.
+@@ -7317,10 +7075,7 @@
+     # Build Regime Signatures Landscape
+     # 120 positions : permet au Step 3 (5 bins) d'avoir des sous-séries
+     # assez longues pour estimer Hurst sans réduire artificiellement le nombre de bins.
+-    # v5.8.1 additive: permit a fixed, explicit landscape resolution for
+-    # controlled multi-axis studies. Default 120 preserves prior behavior.
+-    scan_point_count = max(2, int(mode_cfg.get('landscape_scan_points', 120)))
+-    scan_points = np.linspace(progress.min(), progress.max(), scan_point_count)
++    scan_points = np.linspace(progress.min(), progress.max(), 120)
+     n_pts = len(progress)
+     # Utiliser le w_size optimisé par Monte Carlo si disponible, sinon la valeur par défaut
+     if mode_cfg.get('auto_optimize_threshold', True) and threshold_optimization and threshold_optimization.get('best_config'):
+@@ -7829,8 +7584,6 @@
+         'q_params': q_params,
+         'parameter_overrides': parameter_overrides,
+         'estimator_classes': ESTIMATOR_CLASSES,
+-        'measurement_taxonomy_schema_version': '1.0',
+-        'estimator_measurement_types': ESTIMATOR_MEASUREMENT_TYPES,
+         'estimator_profile': mode_cfg.get('estimator_profile', 'all'),
+         'estimators_computed': (list(CORE_METRICS) if mode_cfg.get('estimator_profile', 'all') == 'core' else list(ESTIMATOR_NAMES)),
+         'estimators_skipped_by_profile': (list(EXTRA_ESTIMATOR_NAMES) if mode_cfg.get('estimator_profile', 'all') == 'core' else []),
+@@ -7842,7 +7595,6 @@
+             'stat_test': stat_test,
+             'w_size': w_size,
+             'n_pts': n_pts,
+-            'landscape_scan_points': int(len(scan_points)),
+                         'opt_threshold': main_threshold,
+             'threshold_source': threshold_source,
+             'threshold_status': (('exploratory_non_empirical' if main_threshold is not None and np.isfinite(main_threshold) else 'unavailable_non_empirical') if _control_axis_degenerate else ('available' if main_threshold is not None and np.isfinite(main_threshold) else 'unavailable')),
+@@ -7965,10 +7717,7 @@
+             "threshold": 0.5,
+             "reason": "comparaison impossible sans les deux dimensions",
+         },
+-        "geometric_layer": {
+-            "axes": {}, "T_log_by_estimator": {}, "T_log_class_median": {},
+-            "T_log_by_d_kind": {},
+-        },
++        "geometric_layer": {"axes": {}, "T_log_by_estimator": {}, "T_log_class_median": {}},
+         "tension_gap_diagnostics": {"status": "unavailable", "reason": "pas de mediane geometrique", "tension_gap_E": None, "voie1_blind_risk": None, "proof_status": "heuristique, pas une preuve"},
+         "relative_layer": {
+             "method": "cross_estimator_z_of_medians",
+@@ -7979,8 +7728,6 @@
+             "cliff_between_classes": {},
+         },
+         "per_estimator": {},
+-        "measurement_taxonomy_schema_version": "1.0",
+-        "estimator_measurement_types": ESTIMATOR_MEASUREMENT_TYPES,
+         "q_glossary": dict(Q_SCORE_MEANING),
+         "q3_identical_to_q1": None,
+     }
+@@ -8235,18 +7982,11 @@
+                 pooled.append(med)
+         est_med, n_flux = _median_finite(pooled)
+         raw_medians[name] = est_med
+-        measurement = ESTIMATOR_MEASUREMENT_TYPES[name]
+         per_estimator[name] = {
+             "raw_median": _json_number(est_med),
+             "n_fluxes_used": int(n_flux),
+             "n_columns": int(len(columns)),
+             "estimator_class": estimator_class(name),
+-            "d_kind": measurement["d_kind"],
+-            "quantity_type": measurement["quantity_type"],
+-            "d_kind_label_fr": measurement["label_fr"],
+-            "d_kind_definition_fr": measurement["definition_fr"],
+-            "reference_4_guidance_fr": measurement["reference_4_guidance_fr"],
+-            "tlog_membership": measurement["tlog_membership"],
+             "enters_geometric_D": name in set(
+                 n for names in DIMENSION_FOR_TLOG.values() for n in names
+             ) and est_med is not None,
+@@ -8267,17 +8007,10 @@
+                 votes.append(med)
+         dim_med, _n = _median_finite(votes)
+         class_value[cls] = dim_med
+-        d_kinds = sorted({ESTIMATOR_D_KIND[name] for name in used})
+         geometric_axes[cls] = {
+             "dimension_median": _json_number(dim_med),
+             "n_dimension_estimators_used": int(len(used)),
+             "estimators_used": used,
+-            "d_kinds_present": d_kinds,
+-            "semantic_type_homogeneous": len(d_kinds) <= 1,
+-            "semantic_warning": (
+-                None if len(d_kinds) <= 1 else
+-                "Cette médiane de classe combine plusieurs d_kind; la lire comme l'ancre historique du code, pas comme une dimension homogène."
+-            ),
+             "estimators_without_finite_values": missing,
+             "class_members_excluded_from_geometric": [
+                 n for n in ESTIMATOR_CLASSES[cls] if n not in members
+@@ -8345,20 +8078,15 @@
+     for name, med in raw_medians.items():
+         if med is None or name not in set(n for names in DIMENSION_FOR_TLOG.values() for n in names):
+             continue
+-        measurement = ESTIMATOR_MEASUREMENT_TYPES[name]
+         if log_n is None:
+             tlog_by_est[name] = {
+                 "d": _json_number(med),
+-                "d_kind": measurement["d_kind"],
+-                "quantity_type": measurement["quantity_type"],
+                 "T_log": None,
+                 "reason": "n_samples manquant ou <= 1",
+             }
+         else:
+             tlog_by_est[name] = {
+                 "d": _json_number(med),
+-                "d_kind": measurement["d_kind"],
+-                "quantity_type": measurement["quantity_type"],
+                 "T_log": _json_number((float(med) - 4.0) * log_n),
+                 "n": n_eff,
+                 "formula": "(d-4)*log(n)",
+@@ -8372,50 +8100,6 @@
+                 vals.append(tl)
+         med_tl, _n = _median_finite(vals)
+         tlog_class[cls] = _json_number(med_tl)
+-
+-    # Add typed profiles while preserving legacy class medians unchanged.
+-    # Each d_kind profile is auditable and never combines different semantic
+-    # kinds. Its median remains exploratory because same-kind algorithms can
+-    # still have different finite-sample biases.
+-    d_kind_members = {}
+-    for name, med in raw_medians.items():
+-        if med is None or name not in {
+-            estimator for members in DIMENSION_FOR_TLOG.values() for estimator in members
+-        }:
+-            continue
+-        d_kind_members.setdefault(ESTIMATOR_D_KIND[name], []).append((name, float(med)))
+-    tlog_by_d_kind = {}
+-    for kind, entries in sorted(d_kind_members.items()):
+-        names = [name for name, _value in entries]
+-        values = [value for _name, value in entries]
+-        d_kind_median, _n = _median_finite(values)
+-        info = D_KIND_REGISTRY[kind]
+-        tlog_by_d_kind[kind] = {
+-            "label_fr": info["label_fr"],
+-            "quantity_type": info["quantity_type"],
+-            "definition_fr": info["definition_fr"],
+-            "reference_4_guidance_fr": info["reference_4_guidance_fr"],
+-            "d_median": _json_number(d_kind_median),
+-            "T_log": (
+-                _json_number((float(d_kind_median) - 4.0) * log_n)
+-                if d_kind_median is not None and log_n is not None else None
+-            ),
+-            "n": n_eff,
+-            "formula": "(d-4)*log(n)",
+-            "estimators_used": names,
+-            "n_estimators_used": len(names),
+-            "estimator_values": {name: _json_number(value) for name, value in entries},
+-            "between_estimator_iqr": (
+-                _json_number(np.percentile(values, 75) - np.percentile(values, 25))
+-                if len(values) > 1 else None
+-            ),
+-            "between_estimator_iqr_status": (
+-                "estimated" if len(values) > 1 else "not_estimable_single_estimator"
+-            ),
+-            "sampling_uncertainty": "not_propagated_in_this_by_kind_summary",
+-            "aggregation": "exploratory_median_of_per_estimator_medians_same_d_kind",
+-            "status": "exploratory_requires_domain_calibration",
+-        }
+ 
+     if d_crit is None or d_null is None:
+         falsification = {
+@@ -8566,11 +8250,9 @@
+         "geometric_layer": {
+             "axes": geometric_axes,
+             "T_log_by_estimator": tlog_by_est,
+-            "T_log_by_d_kind": tlog_by_d_kind,
+             "T_log_class_median": tlog_class,
+             "T_log_formula": "(d-4)*log(n) ; n=n_samples ; jamais un z-score",
+             "T_log_scope": "indicateur de coupe sur dimensions geometriques, pas l'hologramme entier",
+-            "class_median_note": "T_log_class_median conserve la lecture historique et peut agréger plusieurs d_kind; préférer T_log_by_d_kind pour une lecture sémantiquement typée.",
+         },
+         "relative_layer": {
+             "method": "cross_estimator_z_of_medians",
+@@ -8584,8 +8266,6 @@
+             "cliff_between_classes": cliff_pairs,
+         },
+         "per_estimator": per_estimator,
+-        "measurement_taxonomy_schema_version": "1.0",
+-        "estimator_measurement_types": ESTIMATOR_MEASUREMENT_TYPES,
+         "q_glossary": dict(Q_SCORE_MEANING),
+         "q3_identical_to_q1": _scores_are_identical(
+             q_scores.get("Q1_Calme_vs_Chaos"), q_scores.get("Q3_Agressivite")
+@@ -9530,7 +9210,8 @@
+ # UNIVERSAL_LOG v4.0.0-Master — MOTEUR UNIFIÉ MULTI-NIVEAUX & CASCADE UNIVERSELLE
+ # =============================================================================
+ 
+-VERSION_MASTER = "v5.8.0-MultiHorizon-L3L5L6-SemanticSplitL7"
++VERSION_MASTER = "v5.9.0-L7aL7b-CoherenceRobustesse"
++# v5.9.0 L7a/L7b : L7a-COHERENCE (vote, existant) + L7b-ROBUSTESSE (audit, nouveau). Voir bloc v5.9.0 avant level_coherence_universal. CLI : --l7b-full / --l7b-light (defaut) / --no-l7b.
+ # VERSION est un alias de VERSION_MASTER, jamais édité séparément :
+ # la version annoncée (docstring, argparse, print RUNNING) = celle écrite
+ # dans master_results.json et dans le rapport. Ne pas remettre "v5.4" ici.
+@@ -11005,6 +10686,293 @@
+     out["validation"]["multi_horizon_median_directional_accuracy"] = float(np.median(das)) if das else None
+     return out
+ 
++
++# =============================================================================
++# v5.9.0 — L7a / L7b : DEUX L7, DEUX JOBS. NE PAS FUSIONNER.
++# -----------------------------------------------------------------------------
++# L7a-COHERENCE (existant, inchange) : level_coherence_universal().
++#   Vote pondere L1+L2+L3+L4+L5+L6, poids de domaine, saliency semantique.
++#   Sortie : UP / DOWN / FLAT + confiance. Ne prouve rien, ne teste pas la stabilite.
++# L7b-ROBUSTESSE (nouveau, ci-dessous) : audit de robustesse.
++#   Sortie : ROBUSTE / FRAGILE / INDETERMINE + checks PASS / FAIL.
++#   Ne sort JAMAIS UP / DOWN. Ne vote pas. Ne change pas L7a.
++#   Ne utilise ni poids de domaine, ni saliency.
++# Modes :
++#   - "off"   : L7b desactive, sortie = {status: disabled}.
++#   - "light" (defaut) : sans re-run. Utilise stabilites horizon deja calculees,
++#                        walk-forward deja calcule, disagreement L7a.
++#   - "full"  (--l7b-full) : 4 re-runs en mode off (anti-recursion) :
++#                        graine 123, fenetre 80%, melange, log.
++#                        Cout ~ 3-4x un run. Echec d un re-run = INDETERMINE, jamais crash du run principal.
++# =============================================================================
++
++def _l7b_safe_float(x):
++    try:
++        if x is None:
++            return None
++        v = float(x)
++        if not np.isfinite(v):
++            return None
++        return v
++    except Exception:
++        return None
++
++
++def _l7b_extract_summary(result):
++    """Extrait le minimum necessaire d un run pour L7b, sans dependre du detail interne."""
++    if not isinstance(result, dict):
++        return None
++    try:
++        casc = result.get("five_threshold_cascade") or {}
++        holo = result.get("holographic_tension_state") or {}
++        levels = result.get("prediction_levels") or {}
++        l7 = levels.get("L7_consensus") or levels.get("L7a_coherence") or {}
++        t0 = _l7b_safe_float(casc.get("T_0_Monte_Carlo_Central"))
++        delta = _l7b_safe_float(holo.get("Delta_tension"))
++        if delta is None:
++            delta = _l7b_safe_float(holo.get("spectral_width_delta"))
++        if delta is None:
++            dv = holo.get("D_vector") or {}
++            if isinstance(dv, dict):
++                d_sat = _l7b_safe_float(dv.get("d_sat"))
++                d_div = _l7b_safe_float(dv.get("d_div"))
++                if d_sat is not None and d_div is not None:
++                    delta = float(d_div - d_sat)
++        return {
++            "T0_pct": t0,
++            "consensus_direction": (l7.get("consensus_direction") if isinstance(l7, dict) else None),
++            "global_confidence": _l7b_safe_float(l7.get("global_confidence")) if isinstance(l7, dict) else None,
++            "Delta": delta,
++            "dominant_regime": holo.get("dominant_regime") if isinstance(holo, dict) else None,
++            "L7_status": (l7.get("status") if isinstance(l7, dict) else None),
++        }
++    except Exception:
++        return None
++
++
++def level_robustness_L7b_light(L1, L3, L5, L7, adaptive_wf, cascade, holographic_tension):
++    """L7b-LIGHT : sans re-run. A partir de ce qui est deja calcule."""
++    try:
++        if not isinstance(L7, dict) or L7.get("status") != "ok":
++            return {"version": "L7b-ROBUSTESSE", "mode": "light", "status": "ok",
++                    "verdict": "INDETERMINE",
++                    "lecture": "L7a non ok, L7b ne peut pas auditer. Ne pas interpreter L7a seul.",
++                    "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE. Ne jamais moyenner les deux.",
++                    "checks": {"raison": {"statut": "INDETERMINE", "detail": "L7a status != ok"}}}
++        h1 = _l7b_safe_float(L7.get("l1_horizon_stability"))
++        h3 = _l7b_safe_float(L7.get("l3_horizon_stability"))
++        h5 = _l7b_safe_float(L7.get("l5_horizon_stability"))
++        stabs = [v for v in [h1, h3, h5] if v is not None]
++        if stabs:
++            min_stab = min(stabs)
++            if min_stab >= 0.80:
++                chk_h = {"statut": "PASS", "min_stabilite_horizon": round(min_stab, 3),
++                         "stabilites": {"L1": h1, "L3": h3, "L5": h5},
++                         "detail": "Stabilite horizon >= 0.80 sur L1/L3/L5."}
++            elif min_stab < 0.50:
++                chk_h = {"statut": "FAIL", "min_stabilite_horizon": round(min_stab, 3),
++                         "stabilites": {"L1": h1, "L3": h3, "L5": h5},
++                         "detail": "Stabilite horizon < 0.50 : la direction change selon l horizon."}
++            else:
++                chk_h = {"statut": "FAIL", "min_stabilite_horizon": round(min_stab, 3),
++                         "stabilites": {"L1": h1, "L3": h3, "L5": h5},
++                         "detail": "Stabilite horizon entre 0.50 et 0.80 : fragile, ne pas trancher."}
++        else:
++            chk_h = {"statut": "INDETERMINE", "detail": "Aucune stabilite horizon disponible (mono-horizon ?). Utiliser --horizons '1-12' ou --l7b-full."}
++        wf = adaptive_wf if isinstance(adaptive_wf, dict) else {}
++        t0_std = _l7b_safe_float(wf.get("t0_std"))
++        if t0_std is None:
++            chk_wf = {"statut": "INDETERMINE", "detail": "Walk-forward t0_std indisponible."}
++        elif t0_std <= 10.0:
++            chk_wf = {"statut": "PASS", "t0_std": round(t0_std, 3), "detail": "T0 stable en walk-forward (t0_std <= 10)."}
++        elif t0_std > 20.0:
++            chk_wf = {"statut": "FAIL", "t0_std": round(t0_std, 3), "detail": "T0 tres variable en walk-forward (t0_std > 20)."}
++        else:
++            chk_wf = {"statut": "FAIL", "t0_std": round(t0_std, 3), "detail": "T0 moyennement variable en walk-forward (10 < t0_std <= 20)."}
++        sem = L7.get("semantic_split") or {}
++        disagreement = bool(sem.get("disagreement")) if isinstance(sem, dict) else False
++        contradiction = _l7b_safe_float(L7.get("contradiction_penalty"))
++        if disagreement or (contradiction is not None and contradiction >= 0.20):
++            chk_coh = {"statut": "FAIL", "disagreement": disagreement, "contradiction_penalty": contradiction,
++                       "target_direction": sem.get("target_direction"), "regime_structural_direction": sem.get("regime_structural_direction"),
++                       "detail": "Cible (L1) et regime (L3/L6) ne disent pas la meme chose. Reporter les deux, ne pas forcer un seul sens."}
++        else:
++            chk_coh = {"statut": "PASS", "disagreement": False, "contradiction_penalty": contradiction,
++                       "detail": "Cible et regime alignes ou non-informes, pas de desaccord directionnel."}
++        checks = {"stabilite_horizon": chk_h, "stabilite_walkforward": chk_wf, "coherence_interne": chk_coh,
++                  "note_graine_fenetre_melange": "Non testes en mode light. Utiliser --l7b-full pour graine / fenetre / melange / echelle."}
++        if any(c.get("statut") == "FAIL" for c in [chk_h, chk_wf, chk_coh]):
++            verdict = "FRAGILE"
++            lecture = "Au moins un check light FAIL. Ne pas utiliser L7a seul pour decider. Passer en --l7b-full pour confirmer."
++        elif any(c.get("statut") == "INDETERMINE" for c in [chk_h, chk_wf, chk_coh]):
++            verdict = "INDETERMINE"
++            lecture = "Checks light incomplets. Ne pas trancher, passer en --l7b-full."
++        else:
++            verdict = "ROBUSTE"
++            lecture = "Checks light tous PASS. Cela ne prouve pas L7a, cela dit que L7a est stable sur horizon / walk-forward / coherence interne."
++        return {"version": "L7b-ROBUSTESSE", "mode": "light", "status": "ok", "verdict": verdict,
++                "lecture": lecture,
++                "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE. Ne jamais moyenner les deux.",
++                "checks": checks}
++    except Exception as _e:
++        return {"version": "L7b-ROBUSTESSE", "mode": "light", "status": "error", "verdict": "INDETERMINE",
++                "lecture": "L7b-light en erreur, ne pas interpreter L7a seul.",
++                "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE.",
++                "detail": str(_e), "checks": {}}
++
++
++def level_robustness_L7b_from_summaries(ref, seed_alt, window_80, shuffled, log_run):
++    """L7b-FULL : a partir des resumes des 4 re-runs. Ne vote jamais UP/DOWN."""
++    try:
++        if ref is None:
++            return {"version": "L7b-ROBUSTESSE", "mode": "full", "status": "error", "verdict": "INDETERMINE",
++                    "lecture": "Resume de reference manquant, audit impossible.", "checks": {}}
++        t0_ref = ref.get("T0_pct")
++        dir_ref = ref.get("consensus_direction")
++        delta_ref = ref.get("Delta")
++        # 1. Graine
++        if seed_alt is None:
++            chk_graine = {"statut": "INDETERMINE", "detail": "Re-run graine 123 echoue ou indisponible."}
++        else:
++            d = abs(t0_ref - seed_alt.get("T0_pct")) if (t0_ref is not None and seed_alt.get("T0_pct") is not None) else None
++            same_dir = (seed_alt.get("consensus_direction") == dir_ref)
++            if d is not None and d <= 5.0 and same_dir:
++                chk_graine = {"statut": "PASS", "T0_ref": t0_ref, "T0_graine_123": seed_alt.get("T0_pct"), "ecart_T0": round(d, 3),
++                              "direction_ref": dir_ref, "direction_graine_123": seed_alt.get("consensus_direction"),
++                              "detail": "T0 stable a 5 points et direction identique entre graines."}
++            else:
++                chk_graine = {"statut": "FAIL", "T0_ref": t0_ref, "T0_graine_123": seed_alt.get("T0_pct"), "ecart_T0": (round(d, 3) if d is not None else None),
++                              "direction_ref": dir_ref, "direction_graine_123": seed_alt.get("consensus_direction"),
++                              "detail": "Seule la graine change et T0 ou direction bouge : direction L7a non fiable."}
++        # 2. Fenetre
++        if window_80 is None:
++            chk_fen = {"statut": "INDETERMINE", "detail": "Re-run fenetre 80% echoue ou indisponible."}
++        else:
++            d = abs(t0_ref - window_80.get("T0_pct")) if (t0_ref is not None and window_80.get("T0_pct") is not None) else None
++            same_dir = (window_80.get("consensus_direction") == dir_ref)
++            if d is not None and d <= 10.0 and same_dir:
++                chk_fen = {"statut": "PASS", "T0_ref": t0_ref, "T0_fenetre_80": window_80.get("T0_pct"), "ecart_T0": round(d, 3),
++                           "direction_ref": dir_ref, "direction_fenetre_80": window_80.get("consensus_direction"),
++                           "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."}
++            else:
++                chk_fen = {"statut": "FAIL", "T0_ref": t0_ref, "T0_fenetre_80": window_80.get("T0_pct"), "ecart_T0": (round(d, 3) if d is not None else None),
++                           "direction_ref": dir_ref, "direction_fenetre_80": window_80.get("consensus_direction"),
++                           "detail": "T0 suit la fin de fenetre ou direction flip a 80% : T0 relatif a la fenetre, pas absolu."}
++        # 3. Melange
++        if shuffled is None:
++            chk_mel = {"statut": "INDETERMINE", "detail": "Re-run melange echoue ou indisponible."}
++        else:
++            d_sh = shuffled.get("Delta")
++            if d_sh is None or (delta_ref is not None and d_sh < 0.5 * delta_ref) or shuffled.get("T0_pct") is None or shuffled.get("L7_status") != "ok":
++                chk_mel = {"statut": "PASS", "T0_ref": t0_ref, "T0_melange": shuffled.get("T0_pct"), "Delta_ref": delta_ref, "Delta_melange": d_sh,
++                           "detail": "Signal s effondre quand l ordre est casse : il depend bien de l ordre temporel."}
++            elif delta_ref is not None and d_sh is not None and d_sh >= 0.8 * delta_ref:
++                chk_mel = {"statut": "FAIL", "T0_ref": t0_ref, "T0_melange": shuffled.get("T0_pct"), "Delta_ref": delta_ref, "Delta_melange": d_sh,
++                           "detail": "T0 persiste et Delta persiste sans ordre temporel : signal venant de la distribution, pas de l ordre."}
++            else:
++                chk_mel = {"statut": "PASS", "T0_ref": t0_ref, "T0_melange": shuffled.get("T0_pct"), "Delta_ref": delta_ref, "Delta_melange": d_sh,
++                           "detail": "Delta melange nettement plus faible que Delta original."}
++        # 4. Echelle : INFORMATIF seulement, jamais FAIL.
++        if log_run is None:
++            chk_ech = {"statut": "INDETERMINE", "sensibilite": "INCONNUE", "detail": "Re-run log echoue ou cible <= 0, log impossible."}
++        else:
++            d = abs(t0_ref - log_run.get("T0_pct")) if (t0_ref is not None and log_run.get("T0_pct") is not None) else None
++            same_dir = (log_run.get("consensus_direction") == dir_ref)
++            if d is not None and d > 20.0 or not same_dir:
++                chk_ech = {"statut": "INFORMATIF", "sensibilite": "SENSIBLE", "T0_ref": t0_ref, "T0_log": log_run.get("T0_pct"),
++                           "direction_ref": dir_ref, "direction_log": log_run.get("consensus_direction"),
++                           "detail": "Log change T0 ou direction : pipeline sensible a l echelle. Assumer si voulu, avertir si biomarqueur en log standard."}
++            else:
++                chk_ech = {"statut": "INFORMATIF", "sensibilite": "INVARIANT", "T0_ref": t0_ref, "T0_log": log_run.get("T0_pct"),
++                           "direction_ref": dir_ref, "direction_log": log_run.get("consensus_direction"),
++                           "detail": "Log ne change ni T0 ni direction : invariant d echelle sur ce cas."}
++        checks = {"graine": chk_graine, "fenetre": chk_fen, "melange": chk_mel, "echelle": chk_ech}
++        decisifs = [chk_graine, chk_fen, chk_mel]
++        if any(c.get("statut") == "FAIL" for c in decisifs):
++            verdict = "FRAGILE"
++            lecture = "Au moins un check decisif FAIL (graine / fenetre / melange). Ne pas utiliser L7a seul pour decider."
++        elif any(c.get("statut") == "INDETERMINE" for c in decisifs):
++            verdict = "INDETERMINE"
++            lecture = "Checks decisifs incomplets. Ne pas trancher."
++        else:
++            verdict = "ROBUSTE"
++            lecture = "Graine, fenetre et melange tous PASS. L7a est stable a ces trois stress. Cela ne prouve pas L7a, cela dit qu il survit a ces stress."
++        return {"version": "L7b-ROBUSTESSE", "mode": "full", "status": "ok", "verdict": verdict,
++                "lecture": lecture,
++                "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE. Ne jamais moyenner les deux.",
++                "reference": ref, "checks": checks}
++    except Exception as _e:
++        return {"version": "L7b-ROBUSTESSE", "mode": "full", "status": "error", "verdict": "INDETERMINE",
++                "lecture": "L7b-full en erreur, ne pas interpreter L7a seul.", "detail": str(_e), "checks": {}}
++
++
++def _run_l7b_full_checks(csv_path, target_col, control_col, domain, risk, horizon, horizons, seed, mode, base_out_path, target_policy, target_resolution, control_selection_info, max_workers):
++    """Lance les 4 re-runs L7b en mode off (anti-recursion). Echec partiel = INDETERMINE, jamais crash."""
++    import tempfile
++    import shutil
++    tmp_root = Path(base_out_path) / "_l7b_tmp"
++    try:
++        tmp_root.mkdir(parents=True, exist_ok=True)
++        df0 = pd.read_csv(csv_path)
++        df0.columns = df0.columns.str.strip().str.replace('"', '').str.replace("'", "")
++        if target_col not in df0.columns or control_col not in df0.columns:
++            return level_robustness_L7b_from_summaries({"T0_pct": None, "consensus_direction": None, "Delta": None}, None, None, None, None)
++        # Fichiers temporaires
++        # 1. Graine : meme fichier, graine differente
++        seed_alt = int(seed) + 81 if int(seed) != 123 else 42
++        # 2. Fenetre 80%
++        df_win = df0.iloc[:max(50, int(len(df0) * 0.80))].copy()
++        p_win = tmp_root / "l7b_fenetre80.csv"
++        df_win.to_csv(p_win, index=False)
++        # 3. Melange : melanger la cible, garder le controle
++        rng = np.random.default_rng(int(seed) + 999)
++        df_sh = df0.copy()
++        vals = df_sh[target_col].values.copy()
++        rng.shuffle(vals)
++        df_sh[target_col] = vals
++        p_sh = tmp_root / "l7b_melange.csv"
++        df_sh.to_csv(p_sh, index=False)
++        # 4. Log : seulement si cible > 0 partout
++        p_log = None
++        try:
++            if bool((df0[target_col].values > 0).all()):
++                df_log = df0.copy()
++                df_log[target_col] = np.log(df_log[target_col].values.astype(float))
++                p_log = tmp_root / "l7b_log.csv"
++                df_log.to_csv(p_log, index=False)
++        except Exception:
++            p_log = None
++        def _one(csv_p, seed_v, sub):
++            try:
++                out = tmp_root / sub
++                out.mkdir(parents=True, exist_ok=True)
++                res = _run_full_unified_pipeline_single(
++                    csv_path=str(csv_p), target_col=target_col, control_col=control_col,
++                    domain=domain, risk=risk, horizon=horizon, horizons=horizons,
++                    n_scenarios=48, seed=int(seed_v), output_dir=str(out), mode=mode,
++                    harmonic_validation=False, harmonic_params=None,
++                    control_selection_info=None, max_workers=max_workers,
++                    target_policy=target_policy, target_resolution=target_resolution,
++                    triangulation_estimators=None, l7b_mode="off",
++                )
++                return _l7b_extract_summary(res)
++            except Exception as _e:
++                print(f"[L7b-FULL] re-run {sub} echoue, check = INDETERMINE : {_e}")
++                return None
++        # Reference summary : on le recalcule a partir du run principal via le fichier JSON deja ecrit ? Non : on le passe en argument dans le caller.
++        # Ici on ne relance pas la reference, le caller la fournit. Cette fonction est appelee avec ref deja calcule dans le caller, voir ci-dessous.
++        # Pour garder la fonction autonome, on ne fait que les 4 re-runs et on retourne leurs resumes.
++        return {"seed_alt": _one(str(csv_path), seed_alt, "seed123"),
++                "window_80": _one(str(p_win), int(seed), "fenetre80"),
++                "shuffled": _one(str(p_sh), int(seed), "melange"),
++                "log_run": (_one(str(p_log), int(seed), "log") if p_log is not None else None),
++                "tmp_root": str(tmp_root)}
++    except Exception as _e:
++        print(f"[L7b-FULL] preparation echoue : {_e}")
++        return {"seed_alt": None, "window_80": None, "shuffled": None, "log_run": None, "tmp_root": str(tmp_root)}
++
++
++
+ def level_coherence_universal(
+     L1: Dict[str, Any],
+     L3: Dict[str, Any],
+@@ -11610,7 +11578,12 @@
+     target_policy: Optional[str] = None,
+     target_resolution: Optional[Dict[str, Any]] = None,
+     triangulation_estimators=None,
++    l7b_mode: Optional[str] = "light",
+ ) -> Dict[str, Any]:
++    # v5.9.0 L7b : normalisation. "off" / "light" / "full". Defaut light = sans re-run.
++    _l7b_mode = str(l7b_mode).lower() if l7b_mode is not None else "light"
++    if _l7b_mode not in ("off", "light", "full"):
++        _l7b_mode = "light"
+     out_path = Path(output_dir) if output_dir else Path(DEFAULT_OUTPUT_DIR)
+     out_path.mkdir(parents=True, exist_ok=True)
+     
+@@ -11848,6 +11821,19 @@
+         L7['regime_weighted_consensus'] = _regime_w_info
+         L7['domain_weights_base'] = domain_weights_base
+         L7['domain_weights_used'] = domain_weights
++    # v5.9.0 L7a / L7b : L7a = L7 existant, inchange. L7b = audit, calcule ici en light, remplace en full plus bas si demande.
++    # L7b ne modifie jamais L7a, ne vote jamais UP/DOWN.
++    if _l7b_mode == "off":
++        _l7b = {"version": "L7b-ROBUSTESSE", "mode": "off", "status": "disabled", "verdict": "INDETERMINE",
++                "lecture": "L7b desactive (--no-l7b). Ne pas interpreter L7a seul.",
++                "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE.",
++                "checks": {}}
++    else:
++        try:
++            _l7b = level_robustness_L7b_light(L1, L3, L5, L7, adaptive_wf, cascade, holographic_tension)
++        except Exception as _e_l7b:
++            _l7b = {"version": "L7b-ROBUSTESSE", "mode": "light", "status": "error", "verdict": "INDETERMINE",
++                    "lecture": "L7b-light en erreur, ne pas interpreter L7a seul.", "detail": str(_e_l7b), "checks": {}}
+     _telemetry_emit(
+         'l7_consensus',
+         regime=(_regime_w_info or {}).get('regime'),
+@@ -11934,8 +11920,6 @@
+             "q_params": results.get('q_params', {}),
+             "parameter_overrides": results.get('parameter_overrides', {}),
+             "estimator_classes": results.get('estimator_classes', ESTIMATOR_CLASSES),
+-            "measurement_taxonomy_schema_version": results.get('measurement_taxonomy_schema_version', '1.0'),
+-            "estimator_measurement_types": results.get('estimator_measurement_types', ESTIMATOR_MEASUREMENT_TYPES),
+             "landscape_by_class": results.get('landscape_by_class', {}),
+         },
+         "run_pipeline": {
+@@ -11958,7 +11942,9 @@
+             "L4_risk": L4,
+             "L5_complexity": L5,
+             "L6_cascade": l6_cascade,
+-            "L7_consensus": L7
++            "L7_consensus": L7,
++            "L7a_coherence": L7,
++            "L7b_robustesse": _l7b
+         },
+         "early_warning_alert": {
+             "in_precursor_zone": is_precursor,
+@@ -11984,6 +11970,28 @@
+         },
+     }
+     
++    # v5.9.0 L7b-FULL : 4 re-runs en mode off, AVANT plots / rapport / console, pour que JSON + rapport + console voient le meme L7b.
++    if _l7b_mode == "full":
++        try:
++            print("\n[L7b-FULL] Audit complet : graine + fenetre 80% + melange + log. Cela prend ~3-4x un run.")
++            _ref_summary = _l7b_extract_summary(final_output)
++            _extra = _run_l7b_full_checks(
++                csv_path=str(csv_path), target_col=target_col, control_col=control_col,
++                domain=domain, risk=risk, horizon=horizon, horizons=horizons,
++                seed=seed, mode=mode, base_out_path=out_path,
++                target_policy=_target_policy, target_resolution=target_resolution,
++                control_selection_info=_control_info, max_workers=max_workers,
++            )
++            if isinstance(_extra, dict) and "seed_alt" in _extra:
++                _l7b_full = level_robustness_L7b_from_summaries(
++                    _ref_summary, _extra.get("seed_alt"), _extra.get("window_80"), _extra.get("shuffled"), _extra.get("log_run"))
++                _l7b = _l7b_full
++                final_output["prediction_levels"]["L7b_robustesse"] = _l7b
++                print(f"[L7b-FULL] Verdict : {_l7b.get('verdict')} | graine={(_l7b.get('checks') or {}).get('graine', {}).get('statut')} fenetre={(_l7b.get('checks') or {}).get('fenetre', {}).get('statut')} melange={(_l7b.get('checks') or {}).get('melange', {}).get('statut')} echelle={(_l7b.get('checks') or {}).get('echelle', {}).get('sensibilite')}")
++            else:
++                print("[L7b-FULL] Re-runs indisponibles, on garde L7b-light.")
++        except Exception as _e_full:
++            print(f"[L7b-FULL] Echec, on garde L7b-light : {_e_full}")
+     plot_complexity_landscape(df_feat, fluxes, cascade["T_0_Monte_Carlo_Central"], out_path / 'landscape_complexity.png')
+     try:
+         plot_complexity_landscape_improved(df_feat, fluxes, cascade["T_0_Monte_Carlo_Central"], out_path / 'landscape_complexity_improved.png')
+@@ -12084,9 +12092,8 @@
+     # Fichiers de donnees complets
+     try:
+         df_feat.to_csv(out_path / 'df_feat.csv', index=False)
+-        _write_estimator_measurement_type_exports(out_path)
+     except Exception as _e:
+-        _log_failure('df_feat_and_measurement_taxonomy_export', _e)
++        _log_failure('df_feat_csv', _e)
+     try:
+         with open(out_path / 'scan_curve.json', 'w', encoding='utf-8') as _f:
+             json.dump(results.get('scan_curve', []), _f, indent=2, default=str)
+@@ -12108,10 +12115,6 @@
+                 for _trajectory, _suite in (_entry.get('trajectories') or {}).items():
+                     _row = {'flux': _flux, 'estimator': _estimator,
+                             'estimator_class': _entry.get('estimator_class'),
+-                            'd_kind': _entry.get('d_kind', ESTIMATOR_D_KIND.get(_estimator)),
+-                            'quantity_type': _entry.get(
+-                                'quantity_type', ESTIMATOR_MEASUREMENT_TYPES.get(_estimator, {}).get('quantity_type')
+-                            ),
+                             'trajectory': _trajectory, 'status': _suite.get('status'),
+                             'n_valid': _suite.get('n_valid')}
+                     for _step, _step_data in (_suite.get('steps') or {}).items():
+@@ -12208,6 +12211,16 @@
+                     "analyses conservees, seuils exploratoires non empiriques.\n")
+         f.write("\n")
+         f.write(f"Direction Consensus: {L7['consensus_direction'].upper()} (Confidence: {L7['global_confidence']:.2%})\n")
++        # v5.9.0 : L7a / L7b separes dans le rapport. Ne jamais fusionner.
++        try:
++            _lb = _l7b if isinstance(_l7b, dict) else {}
++            f.write(f"L7a-COHERENCE : vote interne {L7['consensus_direction'].upper()} ({L7['global_confidence']:.2%}) | cible={(L7.get('semantic_split') or {}).get('target_direction')} regime={(L7.get('semantic_split') or {}).get('regime_structural_direction')} disagreement={(L7.get('semantic_split') or {}).get('disagreement')} | L7a ne prouve rien, ne teste pas la stabilite.\n")
++            f.write(f"L7b-ROBUSTESSE : audit {_lb.get('verdict')} (mode={_lb.get('mode')}) | {_lb.get('lecture')}\n")
++            for _ck, _cv in (_lb.get('checks') or {}).items():
++                if isinstance(_cv, dict):
++                    f.write(f"  L7b check {_ck} : {_cv.get('statut')} | {_cv.get('detail')}\n")
++        except Exception:
++            pass
+         f.write(f"Expected Horizon Value: {L1['expected_value']:.4f}\n")
+         # v5.6/v5.8 : multi-horizons L1/L3/L5/L6 + semantic_split L7 dans le rapport
+         try:
+@@ -12287,15 +12300,6 @@
+         f.write(f"  Appel physique : {holographic_tension.get('regime_is_physical_call')}\n")
+         f.write(f"  Evidence : {holographic_tension.get('regime_evidence')}\n")
+         f.write(f"  T_log class median : {_geo.get('T_log_class_median')}\n")
+-        f.write("  T_log par type de mesure (médianes exploratoires, sans mélanger les d_kind) :\n")
+-        for _kind, _entry in (_geo.get('T_log_by_d_kind') or {}).items():
+-            f.write(
+-                f"    {_kind}: d={_fmt_opt(_entry.get('d_median'))} "
+-                f"T_log={_fmt_opt(_entry.get('T_log'))} "
+-                f"estimateurs={_entry.get('estimators_used')} "
+-                f"dispersion_IQR={_fmt_opt(_entry.get('between_estimator_iqr'))}\n"
+-            )
+-        f.write("  Les références 4 restent des hypothèses à calibrer selon d_kind.\n")
+         f.write(f"  Falsification : {_sig_txt}\n")
+         f.write("  [Couche relative — z croise des 29, hors T_log]\n")
+         f.write(f"  class_z_median : {_rel.get('class_z_median')}\n")
+@@ -12307,7 +12311,15 @@
+         f.write("=" * 80 + "\n")
+ 
+     print(f"\n✓ Pipeline Master completed successfully!")
+-    print(f"✓ Consensus: {L7['consensus_direction'].upper()} ({L7['global_confidence']:.2%})")
++    print(f"✓ L7a-COHERENCE: {L7['consensus_direction'].upper()} ({L7['global_confidence']:.2%}) | cible={(L7.get('semantic_split') or {}).get('target_direction')} regime={(L7.get('semantic_split') or {}).get('regime_structural_direction')} disagreement={(L7.get('semantic_split') or {}).get('disagreement')} | L7a = vote interne, ne prouve rien.")
++    try:
++        _lb2 = _l7b if isinstance(_l7b, dict) else {}
++        print(f"✓ L7b-ROBUSTESSE: {_lb2.get('verdict')} (mode={_lb2.get('mode')}) | {_lb2.get('lecture')}")
++        for _ck2, _cv2 in (_lb2.get('checks') or {}).items():
++            if isinstance(_cv2, dict):
++                print(f"    L7b check {_ck2}: {_cv2.get('statut')} | {_cv2.get('detail')}")
++    except Exception:
++        pass
+     print(f"✓ 5-Threshold T_0: {cascade['T_0_Monte_Carlo_Central']:.2f}%")
+     try:
+         _t0r = (_thresholds_in_control_units or {}).get("T_0_Monte_Carlo_Central", {}) or {}
+@@ -12347,6 +12359,7 @@
+     target_policy: Optional[str] = None,
+     target_mode: Optional[str] = None,
+     triangulation_estimators=None,
++    l7b_mode: Optional[str] = "light",
+ ) -> Dict[str, Any]:
+     """Point d'entree public v4.2.1 (signature v4.2.0 conservee + kwargs).
+ 
+@@ -12413,6 +12426,7 @@
+             control_selection_info=info, max_workers=max_workers,
+             target_policy=_target_policy, target_resolution=_target_resolution,
+             triangulation_estimators=triangulation_estimators,
++            l7b_mode=l7b_mode,
+         )
+     base_out = Path(output_dir) if output_dir else Path(DEFAULT_OUTPUT_DIR)
+     base_out.mkdir(parents=True, exist_ok=True)
+@@ -12435,6 +12449,7 @@
+                 control_selection_info={**info, "controls": [ctrl]}, max_workers=max_workers,
+                 target_policy=_target_policy, target_resolution=_target_resolution,
+                 triangulation_estimators=triangulation_estimators,
++                l7b_mode=l7b_mode,
+             )
+             casc = (result.get("five_threshold_cascade") or {})
+             cons = ((result.get("prediction_levels") or {}).get("L7_consensus") or {})
+@@ -12741,6 +12756,15 @@
+     parser.add_argument("--triangulation", default=None,
+                         help="Trio triangulation : 'default', 'robust', 'noise_robust', 'fast', ou 3 noms separes par des virgules.")
+     parser.add_argument("--seed", type=int, default=42)
++    parser.add_argument("--l7b", dest="l7b_mode", action="store_const", const="full",
++                        help="L7b-ROBUSTESSE FULL : audit complet graine + fenetre 80% + melange + log (~3-4x un run). Sans ce flag, L7b-LIGHT sans re-run.")
++    parser.add_argument("--l7b-full", dest="l7b_mode", action="store_const", const="full",
++                        help="Alias de --l7b (L7b-FULL).")
++    parser.add_argument("--l7b-light", dest="l7b_mode", action="store_const", const="light",
++                        help="L7b-ROBUSTESSE LIGHT : sans re-run, horizon + walk-forward + coherence interne (defaut).")
++    parser.add_argument("--no-l7b", dest="l7b_mode", action="store_const", const="off",
++                        help="Desactive L7b-ROBUSTESSE. L7a-COHERENCE seul, comme v5.8.0.")
++    parser.set_defaults(l7b_mode="light")
+     parser.add_argument("--max-workers", type=int, default=None,
+                         help="Plafond workers MC. Defaut : cpu-1 borne par la RAM (Windows: 1).")
+     args = parser.parse_args()
+@@ -12808,6 +12832,7 @@
+         max_workers=args.max_workers,
+         target_policy=args.target_mode,
+         triangulation_estimators=getattr(args, 'triangulation', None),
++        l7b_mode=getattr(args, 'l7b_mode', 'light'),
+     )
+ 
+ 

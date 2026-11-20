@@ -1,0 +1,65 @@
+{
+  "status": "completed",
+  "created_utc": "2026-11-15T13:12:09.984195+00:00",
+  "purpose": "Final bounded end-to-end CLI smoke run of v5.9.2 CohenDOnly with conventional weighted pooled SD; software integration evidence only.",
+  "source": "UNIVERSAL_LOG_v5.9.2.py",
+  "source_sha256": "c02d7e1a4081fcdcb2ccaa9acb17f3818e9950d297cb262ec5da63ca2695dedd",
+  "executed_source_copy": "runner_executed_exact.py",
+  "executed_source_copy_sha256": "c02d7e1a4081fcdcb2ccaa9acb17f3818e9950d297cb262ec5da63ca2695dedd",
+  "input": "audit_release\\2026-11-14_l7b_full_reduced\\data\\L16_T2.269185_chain0_first80.csv",
+  "input_sha256": "b76a2ef1ddc50855baa8959714744e0764304bbe9408c6842c5596530ad9c216",
+  "rows": 80,
+  "target": "Abs_magnetization",
+  "control": "MC_Update",
+  "mode": "fast",
+  "l7b": "off",
+  "seed": 20261108,
+  "cli_exit_code": 0,
+  "console_completion_marker": "Pipeline Master completed successfully!",
+  "version_reported": "v5.9.2-L7aL7b-DKind-AuditFix-SeedTrace-CohenDOnly",
+  "threshold_optimizer": {
+    "T0_pct": 89.2907951105244,
+    "n_candidates": 13,
+    "window_size": 35,
+    "minimum_group": 4,
+    "best_score": 0.525
+  },
+  "L7a_summary": {
+    "status": "ok",
+    "consensus_direction": "up",
+    "global_confidence": 0.5,
+    "l1_horizon_stability": 0.4166666666666667
+  },
+  "L7b_summary": {
+    "status": "disabled",
+    "mode": "off",
+    "verdict": "INDETERMINE"
+  },
+  "holographic_dominant_regime": "criticality",
+  "tlog": {
+    "present": true,
+    "formula": "(d-4)*log(n) ; n=n_samples ; jamais un z-score",
+    "scope": "indicateur de coupe sur dimensions geometriques, pas l'hologramme entier",
+    "n_samples": 80.0,
+    "eligible_estimator_count": 21,
+    "d_kind_group_count": 13,
+    "class_median_count": 4,
+    "class_medians": {
+      "saturation": -11.011224,
+      "criticality": -6.045236,
+      "divergence": -2.905474,
+      "null_reference": -6.538934
+    }
+  },
+  "cohen_d_class_diagnostic_present": true,
+  "cliff_class_diagnostic_present": false,
+  "master_results_sha256": "7a519096733df721da3e954842fd5a5ef5e92e98770ff570c2a86b328d2e54a7",
+  "console_log_sha256": "d6735128ef8a12b20f5f6db9d898a4d0dc5d047750ae57fc6b931f4defd485fe",
+  "notices": [
+    "RuntimeWarning: precision loss in near-constant moment calculation.",
+    "noise_step4_spectral reported zero/insufficient spectrum twice.",
+    "PendingDeprecationWarning for matplotlib set_bad.",
+    "Pipeline reported IEEE 754 Mantissa Truncation Detected (Katz FD = 4.16)."
+  ],
+  "interpretation_limit": "80-row software smoke run only. T0 is an internal pipeline threshold, L7b was disabled, and no physical Tc or universality claim is made."
+}

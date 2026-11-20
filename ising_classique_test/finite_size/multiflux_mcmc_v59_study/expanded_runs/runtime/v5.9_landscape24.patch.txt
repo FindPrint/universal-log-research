@@ -1,0 +1,3 @@
+Only source change in derived experiment copy:
+- scan_points = np.linspace(progress.min(), progress.max(), 120)
++ scan_points = np.linspace(progress.min(), progress.max(), 24)

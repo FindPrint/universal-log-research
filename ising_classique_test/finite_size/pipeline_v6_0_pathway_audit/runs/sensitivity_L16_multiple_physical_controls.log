@@ -1,0 +1,235 @@
+
+[CIBLE-FIXE-GLOBALE] politique=fixed mode=multi cible_demandee='Energy_per_spin' -> cible_globale='Energy_per_spin' methode=user_requested_target controles=['Temperature', 'abs_magnetization', 'chi_abs_per_spin', 'Cv_per_spin', 'Binder_U4'] | Cette cible unique sera reutilisee pour TOUS les controles. Le run ou controle == cible sera signale explicitement comme diagonal, avec cible_demandee ET cible_utilisee.
+
+================================================================================
+UNIVERSAL_LOG v6.0.0-L7aL7b-CohenD — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\inputs\ising_L16_physical.csv | Domain: physics | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=Temperature cible_demandee='Energy_per_spin' -> cible_utilisee='Energy_per_spin' | Cible fixee conservee pour ce run.
+Target Observable: Energy_per_spin | Control Parameter: Temperature
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.564
+  règle: uniform
+  n_candidates: 61, resolution: 1.667%
+  w_size: 14, min_grp: 6
+[T0-VALEUR-BRUTE] controle=Temperature T0=60.51% -> valeur brute controle=2.34 (median_near=2.34, min_near=2.32, max_near=2.36, spread=0.040000000000000036, ambiguous=False)
+✓ Paysage des 29 estimateurs sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Temperature\landscape_complexity.png
+Paysage ameliore v4.4.3 sauvegarde: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Temperature\landscape_complexity_improved.png
+Clustermap separation v4.4.3: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Temperature\separation_clustermap.png
+Tension holographique sauvegardee: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Temperature\holographic_tension.png
+✓ Courbe de scan sauvegardée: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Temperature\threshold_scan.png
+✓ Graphique diagnostic bruit sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Temperature\noise_diagnostic.png
+<PROJECT_ROOT>\pancréas\Archive complète PDAC v6 — ZIP\universal_v6.0.0_cohen.py:4929: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap.set_bad(color='#d9d9d9')
+✓ Graphique des flux sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Temperature\raw_fluxes.png
+✓ Heatmaps de séparation par classe sauvegardées: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Temperature\separation_heatmap.png
+✓ Graphique post-seuil sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Temperature\post_threshold.png
+✓ Graphique de corrélation CSD vs f' sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Temperature\csd_correlation.png
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=flat regime=up disagreement=False | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: FRAGILE (mode=light) | Au moins un check light FAIL. Ne pas utiliser L7a seul pour decider. Passer en --l7b-full pour confirmer.
+    L7b check stabilite_horizon: PASS | Stabilite horizon >= 0.80 sur L1/L3/L5.
+    L7b check stabilite_walkforward: FAIL | T0 moyennement variable en walk-forward (10 < t0_std <= 20).
+    L7b check coherence_interne: PASS | Cible et regime alignes ou non-informes, pas de desaccord directionnel.
+✓ 5-Threshold T_0: 60.51%
+✓ T_0 en valeur brute du controle 'Temperature': 2.34 (median_near=2.34, min_near=2.32, max_near=2.36, spread=0.040000000000000036, ambiguous=False)
+✓ Cible: demandee=Energy_per_spin | utilisee=Energy_per_spin | politique=fixed | repli_diagonal=False
+✓ Tool Footprint: Pure Continuous Physical Phenomenon (No tool artifact)
+✓ Holographic Tension: saturation|control=Temperature (Delta=0.97, D_vec=[1.033946, 1.2193, 2.0, 1.890089])
+✓ Results exported to: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Temperature
+
+================================================================================
+UNIVERSAL_LOG v6.0.0-L7aL7b-CohenD — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\inputs\ising_L16_physical.csv | Domain: physics | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=abs_magnetization cible_demandee='Energy_per_spin' -> cible_utilisee='Energy_per_spin' | Cible fixee conservee pour ce run.
+Target Observable: Energy_per_spin | Control Parameter: abs_magnetization
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.568
+  règle: uniform
+  n_candidates: 61, resolution: 1.667%
+  w_size: 14, min_grp: 6
+
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE] controle=abs_magnetization direction=non_monotone monotone=False spearman_r=-1.000 | Le controle n'est PAS monotone dans l'ordre fourni. La progression n'est donc pas injective : un meme seuil en % peut correspondre a plusieurs valeurs brutes. Les valeurs brutes a cote des % sont exploratoires (voir min / max / spread). Ne pas lire T0 comme une valeur unique du controle.
+[T0-VALEUR-BRUTE] controle=abs_magnetization T0=31.66% -> valeur brute controle=0.505808 (median_near=0.505807942708, min_near=0.478847005208, max_near=0.53571484375, spread=0.056867838542000004, ambiguous=True)
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE-RAPPEL] controle=abs_magnetization : T0 en % ne correspond pas a une valeur unique du controle. Voir cascade.thresholds_in_control_units pour min / max / spread.
+✓ Paysage des 29 estimateurs sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\abs_magnetization\landscape_complexity.png
+Paysage ameliore v4.4.3 sauvegarde: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\abs_magnetization\landscape_complexity_improved.png
+Clustermap separation v4.4.3: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\abs_magnetization\separation_clustermap.png
+Tension holographique sauvegardee: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\abs_magnetization\holographic_tension.png
+✓ Courbe de scan sauvegardée: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\abs_magnetization\threshold_scan.png
+✓ Graphique diagnostic bruit sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\abs_magnetization\noise_diagnostic.png
+<PROJECT_ROOT>\pancréas\Archive complète PDAC v6 — ZIP\universal_v6.0.0_cohen.py:4929: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap.set_bad(color='#d9d9d9')
+✓ Graphique des flux sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\abs_magnetization\raw_fluxes.png
+✓ Heatmaps de séparation par classe sauvegardées: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\abs_magnetization\separation_heatmap.png
+✓ Graphique post-seuil sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\abs_magnetization\post_threshold.png
+<PROJECT_ROOT>\pancréas\Archive complète PDAC v6 — ZIP\universal_v6.0.0_cohen.py:6183: NearConstantInputWarning: An input array is nearly constant; the computed correlation coefficient may be inaccurate.
+  corr_sig_fprime, p_sig_fprime = stats.pearsonr(flux_zscore[:min_len_sig], f_prime_signal[:min_len_sig])
+✓ Graphique de corrélation CSD vs f' sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\abs_magnetization\csd_correlation.png
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=flat regime=down disagreement=False | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: FRAGILE (mode=light) | Au moins un check light FAIL. Ne pas utiliser L7a seul pour decider. Passer en --l7b-full pour confirmer.
+    L7b check stabilite_horizon: FAIL | Stabilite horizon entre 0.50 et 0.80 : fragile, ne pas trancher.
+    L7b check stabilite_walkforward: FAIL | T0 moyennement variable en walk-forward (10 < t0_std <= 20).
+    L7b check coherence_interne: PASS | Cible et regime alignes ou non-informes, pas de desaccord directionnel.
+✓ 5-Threshold T_0: 31.66%
+✓ T_0 en valeur brute du controle 'abs_magnetization': 0.505807942708 (median_near=0.505807942708, min_near=0.478847005208, max_near=0.53571484375, spread=0.056867838542000004, ambiguous=True)
+✓ Cible: demandee=Energy_per_spin | utilisee=Energy_per_spin | politique=fixed | repli_diagonal=False
+✓ [AVERTISSEMENT] Controle 'abs_magnetization' NON MONOTONE (direction=non_monotone) : T0 en % n'est pas une valeur unique du controle, voir spread.
+✓ Tool Footprint: Pure Continuous Physical Phenomenon (No tool artifact)
+✓ Holographic Tension: saturation|control=abs_magnetization (Delta=0.51, D_vec=[1.03338, 1.197828, 1.543283, 1.863656])
+✓ Results exported to: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\abs_magnetization
+
+================================================================================
+UNIVERSAL_LOG v6.0.0-L7aL7b-CohenD — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\inputs\ising_L16_physical.csv | Domain: physics | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=chi_abs_per_spin cible_demandee='Energy_per_spin' -> cible_utilisee='Energy_per_spin' | Cible fixee conservee pour ce run.
+Target Observable: Energy_per_spin | Control Parameter: chi_abs_per_spin
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.554
+  règle: uniform
+  n_candidates: 61, resolution: 1.667%
+  w_size: 14, min_grp: 6
+
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE] controle=chi_abs_per_spin direction=non_monotone monotone=False spearman_r=0.777 | Le controle n'est PAS monotone dans l'ordre fourni. La progression n'est donc pas injective : un meme seuil en % peut correspondre a plusieurs valeurs brutes. Les valeurs brutes a cote des % sont exploratoires (voir min / max / spread). Ne pas lire T0 comme une valeur unique du controle.
+[T0-VALEUR-BRUTE] controle=chi_abs_per_spin T0=44.41% -> valeur brute controle=3.27195 (median_near=3.2719477921, min_near=2.62223405679, max_near=3.33996627096, spread=0.7177322141700002, ambiguous=True)
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE-RAPPEL] controle=chi_abs_per_spin : T0 en % ne correspond pas a une valeur unique du controle. Voir cascade.thresholds_in_control_units pour min / max / spread.
+✓ Paysage des 29 estimateurs sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\chi_abs_per_spin\landscape_complexity.png
+Paysage ameliore v4.4.3 sauvegarde: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\chi_abs_per_spin\landscape_complexity_improved.png
+Clustermap separation v4.4.3: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\chi_abs_per_spin\separation_clustermap.png
+Tension holographique sauvegardee: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\chi_abs_per_spin\holographic_tension.png
+✓ Courbe de scan sauvegardée: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\chi_abs_per_spin\threshold_scan.png
+✓ Graphique diagnostic bruit sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\chi_abs_per_spin\noise_diagnostic.png
+<PROJECT_ROOT>\pancréas\Archive complète PDAC v6 — ZIP\universal_v6.0.0_cohen.py:4929: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap.set_bad(color='#d9d9d9')
+✓ Graphique des flux sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\chi_abs_per_spin\raw_fluxes.png
+✓ Heatmaps de séparation par classe sauvegardées: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\chi_abs_per_spin\separation_heatmap.png
+✓ Graphique post-seuil sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\chi_abs_per_spin\post_threshold.png
+<PROJECT_ROOT>\pancréas\Archive complète PDAC v6 — ZIP\universal_v6.0.0_cohen.py:6183: NearConstantInputWarning: An input array is nearly constant; the computed correlation coefficient may be inaccurate.
+  corr_sig_fprime, p_sig_fprime = stats.pearsonr(flux_zscore[:min_len_sig], f_prime_signal[:min_len_sig])
+✓ Graphique de corrélation CSD vs f' sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\chi_abs_per_spin\csd_correlation.png
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=down regime=up disagreement=True | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: FRAGILE (mode=light) | Au moins un check light FAIL. Ne pas utiliser L7a seul pour decider. Passer en --l7b-full pour confirmer.
+    L7b check stabilite_horizon: PASS | Stabilite horizon >= 0.80 sur L1/L3/L5.
+    L7b check stabilite_walkforward: FAIL | T0 moyennement variable en walk-forward (10 < t0_std <= 20).
+    L7b check coherence_interne: FAIL | Cible (L1) et regime (L3/L6) ne disent pas la meme chose. Reporter les deux, ne pas forcer un seul sens.
+✓ 5-Threshold T_0: 44.41%
+✓ T_0 en valeur brute du controle 'chi_abs_per_spin': 3.2719477921 (median_near=3.2719477921, min_near=2.62223405679, max_near=3.33996627096, spread=0.7177322141700002, ambiguous=True)
+✓ Cible: demandee=Energy_per_spin | utilisee=Energy_per_spin | politique=fixed | repli_diagonal=False
+✓ [AVERTISSEMENT] Controle 'chi_abs_per_spin' NON MONOTONE (direction=non_monotone) : T0 en % n'est pas une valeur unique du controle, voir spread.
+✓ Tool Footprint: Pure Continuous Physical Phenomenon (No tool artifact)
+✓ Holographic Tension: saturation|control=chi_abs_per_spin (Delta=0.91, D_vec=[1.195128, 1.567784, 2.103774, 2.139181])
+✓ Results exported to: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\chi_abs_per_spin
+
+================================================================================
+UNIVERSAL_LOG v6.0.0-L7aL7b-CohenD — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\inputs\ising_L16_physical.csv | Domain: physics | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=Cv_per_spin cible_demandee='Energy_per_spin' -> cible_utilisee='Energy_per_spin' | Cible fixee conservee pour ce run.
+Target Observable: Energy_per_spin | Control Parameter: Cv_per_spin
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.414
+  règle: phi
+  n_candidates: 13, resolution: 8.333%
+  w_size: 38, min_grp: 9
+<PROJECT_ROOT>\pancréas\Archive complète PDAC v6 — ZIP\universal_v6.0.0_cohen.py:4715: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  skew = float(stats.skew(vals, bias=False)) if len(vals) >= 8 and np.std(vals) > 0 else np.nan
+
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE] controle=Cv_per_spin direction=non_monotone monotone=False spearman_r=0.288 | Le controle n'est PAS monotone dans l'ordre fourni. La progression n'est donc pas injective : un meme seuil en % peut correspondre a plusieurs valeurs brutes. Les valeurs brutes a cote des % sont exploratoires (voir min / max / spread). Ne pas lire T0 comme une valeur unique du controle.
+[T0-VALEUR-BRUTE] controle=Cv_per_spin T0=11.87% -> valeur brute controle=0.695392 (median_near=0.695392347452, min_near=0.669681162427, max_near=0.706650002942, spread=0.036968840514999934, ambiguous=True)
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE-RAPPEL] controle=Cv_per_spin : T0 en % ne correspond pas a une valeur unique du controle. Voir cascade.thresholds_in_control_units pour min / max / spread.
+✓ Paysage des 29 estimateurs sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Cv_per_spin\landscape_complexity.png
+Paysage ameliore v4.4.3 sauvegarde: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Cv_per_spin\landscape_complexity_improved.png
+Clustermap separation v4.4.3: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Cv_per_spin\separation_clustermap.png
+Tension holographique sauvegardee: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Cv_per_spin\holographic_tension.png
+✓ Courbe de scan sauvegardée: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Cv_per_spin\threshold_scan.png
+✓ Graphique diagnostic bruit sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Cv_per_spin\noise_diagnostic.png
+<PROJECT_ROOT>\pancréas\Archive complète PDAC v6 — ZIP\universal_v6.0.0_cohen.py:4929: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap.set_bad(color='#d9d9d9')
+✓ Graphique des flux sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Cv_per_spin\raw_fluxes.png
+✓ Heatmaps de séparation par classe sauvegardées: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Cv_per_spin\separation_heatmap.png
+✓ Graphique post-seuil sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Cv_per_spin\post_threshold.png
+<PROJECT_ROOT>\pancréas\Archive complète PDAC v6 — ZIP\universal_v6.0.0_cohen.py:6183: NearConstantInputWarning: An input array is nearly constant; the computed correlation coefficient may be inaccurate.
+  corr_sig_fprime, p_sig_fprime = stats.pearsonr(flux_zscore[:min_len_sig], f_prime_signal[:min_len_sig])
+✓ Graphique de corrélation CSD vs f' sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Cv_per_spin\csd_correlation.png
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=down regime=up disagreement=True | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: FRAGILE (mode=light) | Au moins un check light FAIL. Ne pas utiliser L7a seul pour decider. Passer en --l7b-full pour confirmer.
+    L7b check stabilite_horizon: PASS | Stabilite horizon >= 0.80 sur L1/L3/L5.
+    L7b check stabilite_walkforward: FAIL | T0 tres variable en walk-forward (t0_std > 20).
+    L7b check coherence_interne: FAIL | Cible (L1) et regime (L3/L6) ne disent pas la meme chose. Reporter les deux, ne pas forcer un seul sens.
+✓ 5-Threshold T_0: 11.87%
+✓ T_0 en valeur brute du controle 'Cv_per_spin': 0.695392347452 (median_near=0.695392347452, min_near=0.669681162427, max_near=0.706650002942, spread=0.036968840514999934, ambiguous=True)
+✓ Cible: demandee=Energy_per_spin | utilisee=Energy_per_spin | politique=fixed | repli_diagonal=False
+✓ [AVERTISSEMENT] Controle 'Cv_per_spin' NON MONOTONE (direction=non_monotone) : T0 en % n'est pas une valeur unique du controle, voir spread.
+✓ Tool Footprint: Pure Continuous Physical Phenomenon (No tool artifact)
+✓ Holographic Tension: criticality|control=Cv_per_spin (Delta=2.01, D_vec=[1.40515, 2.13829, 3.414286, 2.516699])
+✓ Results exported to: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Cv_per_spin
+
+================================================================================
+UNIVERSAL_LOG v6.0.0-L7aL7b-CohenD — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\inputs\ising_L16_physical.csv | Domain: physics | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=Binder_U4 cible_demandee='Energy_per_spin' -> cible_utilisee='Energy_per_spin' | Cible fixee conservee pour ce run.
+Target Observable: Energy_per_spin | Control Parameter: Binder_U4
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.570
+  règle: uniform
+  n_candidates: 61, resolution: 1.667%
+  w_size: 14, min_grp: 6
+
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE] controle=Binder_U4 direction=non_monotone monotone=False spearman_r=-1.000 | Le controle n'est PAS monotone dans l'ordre fourni. La progression n'est donc pas injective : un meme seuil en % peut correspondre a plusieurs valeurs brutes. Les valeurs brutes a cote des % sont exploratoires (voir min / max / spread). Ne pas lire T0 comme une valeur unique du controle.
+[T0-VALEUR-BRUTE] controle=Binder_U4 T0=31.66% -> valeur brute controle=0.494219 (median_near=0.494218575698, min_near=0.472758369579, max_near=0.517666606175, spread=0.04490823659600002, ambiguous=True)
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE-RAPPEL] controle=Binder_U4 : T0 en % ne correspond pas a une valeur unique du controle. Voir cascade.thresholds_in_control_units pour min / max / spread.
+✓ Paysage des 29 estimateurs sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Binder_U4\landscape_complexity.png
+Paysage ameliore v4.4.3 sauvegarde: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Binder_U4\landscape_complexity_improved.png
+Clustermap separation v4.4.3: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Binder_U4\separation_clustermap.png
+Tension holographique sauvegardee: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Binder_U4\holographic_tension.png
+✓ Courbe de scan sauvegardée: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Binder_U4\threshold_scan.png
+✓ Graphique diagnostic bruit sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Binder_U4\noise_diagnostic.png
+<PROJECT_ROOT>\pancréas\Archive complète PDAC v6 — ZIP\universal_v6.0.0_cohen.py:4929: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap.set_bad(color='#d9d9d9')
+✓ Graphique des flux sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Binder_U4\raw_fluxes.png
+✓ Heatmaps de séparation par classe sauvegardées: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Binder_U4\separation_heatmap.png
+✓ Graphique post-seuil sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Binder_U4\post_threshold.png
+<PROJECT_ROOT>\pancréas\Archive complète PDAC v6 — ZIP\universal_v6.0.0_cohen.py:6183: NearConstantInputWarning: An input array is nearly constant; the computed correlation coefficient may be inaccurate.
+  corr_sig_fprime, p_sig_fprime = stats.pearsonr(flux_zscore[:min_len_sig], f_prime_signal[:min_len_sig])
+✓ Graphique de corrélation CSD vs f' sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Binder_U4\csd_correlation.png
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=flat regime=down disagreement=False | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: FRAGILE (mode=light) | Au moins un check light FAIL. Ne pas utiliser L7a seul pour decider. Passer en --l7b-full pour confirmer.
+    L7b check stabilite_horizon: FAIL | Stabilite horizon entre 0.50 et 0.80 : fragile, ne pas trancher.
+    L7b check stabilite_walkforward: FAIL | T0 moyennement variable en walk-forward (10 < t0_std <= 20).
+    L7b check coherence_interne: PASS | Cible et regime alignes ou non-informes, pas de desaccord directionnel.
+✓ 5-Threshold T_0: 31.66%
+✓ T_0 en valeur brute du controle 'Binder_U4': 0.494218575698 (median_near=0.494218575698, min_near=0.472758369579, max_near=0.517666606175, spread=0.04490823659600002, ambiguous=True)
+✓ Cible: demandee=Energy_per_spin | utilisee=Energy_per_spin | politique=fixed | repli_diagonal=False
+✓ [AVERTISSEMENT] Controle 'Binder_U4' NON MONOTONE (direction=non_monotone) : T0 en % n'est pas une valeur unique du controle, voir spread.
+✓ Tool Footprint: Pure Continuous Physical Phenomenon (No tool artifact)
+✓ Holographic Tension: saturation|control=Binder_U4 (Delta=0.51, D_vec=[1.033077, 1.110634, 1.543283, 1.877786])
+✓ Results exported to: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\Binder_U4
+
+[CONTROLE] Mode multi termine : 5 controle(s), 5 OK, resume dans <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\sensitivity_L16_multiple_physical_controls\controls_summary.json

@@ -1,0 +1,429 @@
+{
+  "source": "<PROJECT_ROOT>\\universal_x5f_log_x5f_L7a_x5f_L7b_x5f_v5.9.0f_0_n0z8.py",
+  "source_sha256": "4f80f6a7d0809e802cbc9ec30c0bed552c1c8a95eb58687fd78e4ffd8e808260",
+  "version": "v5.9.0-L7aL7b-CoherenceRobustesse",
+  "test_kind": "direct synthetic inputs to pure helper functions; not a pipeline integration test",
+  "scientific_validity_of_thresholds": "not evaluated by these edge cases",
+  "scenarios": [
+    {
+      "case": "available_reference_shuffle_preserves_signal",
+      "inputs": {
+        "reference": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "seed_alt": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "window_80": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "shuffled": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        }
+      },
+      "observed_verdict": "FRAGILE",
+      "checks": {
+        "graine": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_graine_123": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_graine_123": "up",
+          "detail": "T0 stable a 5 points et direction identique entre graines."
+        },
+        "fenetre": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."
+        },
+        "melange": {
+          "statut": "FAIL",
+          "T0_ref": 50.0,
+          "T0_melange": 50.0,
+          "Delta_ref": 2.0,
+          "Delta_melange": 2.0,
+          "detail": "T0 persiste et Delta persiste sans ordre temporel : signal venant de la distribution, pas de l ordre."
+        },
+        "echelle": {
+          "statut": "INDETERMINE",
+          "sensibilite": "INCONNUE",
+          "detail": "Re-run log echoue ou cible <= 0, log impossible."
+        }
+      }
+    },
+    {
+      "case": "seed_rerun_missing_T0",
+      "inputs": {
+        "reference": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "seed_alt": {
+          "T0_pct": null,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "window_80": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "shuffled": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        }
+      },
+      "observed_verdict": "FRAGILE",
+      "checks": {
+        "graine": {
+          "statut": "FAIL",
+          "T0_ref": 50.0,
+          "T0_graine_123": null,
+          "ecart_T0": null,
+          "direction_ref": "up",
+          "direction_graine_123": "up",
+          "detail": "Seule la graine change et T0 ou direction bouge : direction L7a non fiable."
+        },
+        "fenetre": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."
+        },
+        "melange": {
+          "statut": "FAIL",
+          "T0_ref": 50.0,
+          "T0_melange": 50.0,
+          "Delta_ref": 2.0,
+          "Delta_melange": 2.0,
+          "detail": "T0 persiste et Delta persiste sans ordre temporel : signal venant de la distribution, pas de l ordre."
+        },
+        "echelle": {
+          "statut": "INDETERMINE",
+          "sensibilite": "INCONNUE",
+          "detail": "Re-run log echoue ou cible <= 0, log impossible."
+        }
+      }
+    },
+    {
+      "case": "window_rerun_missing_T0",
+      "inputs": {
+        "reference": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "seed_alt": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "window_80": {
+          "T0_pct": null,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "shuffled": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        }
+      },
+      "observed_verdict": "FRAGILE",
+      "checks": {
+        "graine": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_graine_123": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_graine_123": "up",
+          "detail": "T0 stable a 5 points et direction identique entre graines."
+        },
+        "fenetre": {
+          "statut": "FAIL",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": null,
+          "ecart_T0": null,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 suit la fin de fenetre ou direction flip a 80% : T0 relatif a la fenetre, pas absolu."
+        },
+        "melange": {
+          "statut": "FAIL",
+          "T0_ref": 50.0,
+          "T0_melange": 50.0,
+          "Delta_ref": 2.0,
+          "Delta_melange": 2.0,
+          "detail": "T0 persiste et Delta persiste sans ordre temporel : signal venant de la distribution, pas de l ordre."
+        },
+        "echelle": {
+          "statut": "INDETERMINE",
+          "sensibilite": "INCONNUE",
+          "detail": "Re-run log echoue ou cible <= 0, log impossible."
+        }
+      }
+    },
+    {
+      "case": "reference_Delta_missing",
+      "inputs": {
+        "reference": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": null,
+          "L7_status": "ok"
+        },
+        "seed_alt": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "window_80": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "shuffled": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 1.0,
+          "L7_status": "ok"
+        }
+      },
+      "observed_verdict": "ROBUSTE",
+      "checks": {
+        "graine": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_graine_123": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_graine_123": "up",
+          "detail": "T0 stable a 5 points et direction identique entre graines."
+        },
+        "fenetre": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."
+        },
+        "melange": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_melange": 50.0,
+          "Delta_ref": null,
+          "Delta_melange": 1.0,
+          "detail": "Delta melange nettement plus faible que Delta original."
+        },
+        "echelle": {
+          "statut": "INDETERMINE",
+          "sensibilite": "INCONNUE",
+          "detail": "Re-run log echoue ou cible <= 0, log impossible."
+        }
+      }
+    },
+    {
+      "case": "signed_Delta_magnitude_halved",
+      "inputs": {
+        "reference": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": -2.0,
+          "L7_status": "ok"
+        },
+        "seed_alt": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": -2.0,
+          "L7_status": "ok"
+        },
+        "window_80": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": -2.0,
+          "L7_status": "ok"
+        },
+        "shuffled": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": -1.0,
+          "L7_status": "ok"
+        }
+      },
+      "observed_verdict": "FRAGILE",
+      "checks": {
+        "graine": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_graine_123": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_graine_123": "up",
+          "detail": "T0 stable a 5 points et direction identique entre graines."
+        },
+        "fenetre": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."
+        },
+        "melange": {
+          "statut": "FAIL",
+          "T0_ref": 50.0,
+          "T0_melange": 50.0,
+          "Delta_ref": -2.0,
+          "Delta_melange": -1.0,
+          "detail": "T0 persiste et Delta persiste sans ordre temporel : signal venant de la distribution, pas de l ordre."
+        },
+        "echelle": {
+          "statut": "INDETERMINE",
+          "sensibilite": "INCONNUE",
+          "detail": "Re-run log echoue ou cible <= 0, log impossible."
+        }
+      }
+    },
+    {
+      "case": "positive_Delta_shuffled_below_half",
+      "inputs": {
+        "reference": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "seed_alt": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "window_80": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 2.0,
+          "L7_status": "ok"
+        },
+        "shuffled": {
+          "T0_pct": 50.0,
+          "consensus_direction": "up",
+          "Delta": 0.8,
+          "L7_status": "ok"
+        }
+      },
+      "observed_verdict": "ROBUSTE",
+      "checks": {
+        "graine": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_graine_123": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_graine_123": "up",
+          "detail": "T0 stable a 5 points et direction identique entre graines."
+        },
+        "fenetre": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."
+        },
+        "melange": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_melange": 50.0,
+          "Delta_ref": 2.0,
+          "Delta_melange": 0.8,
+          "detail": "Signal s effondre quand l ordre est casse : il depend bien de l ordre temporel."
+        },
+        "echelle": {
+          "statut": "INDETERMINE",
+          "sensibilite": "INCONNUE",
+          "detail": "Re-run log echoue ou cible <= 0, log impossible."
+        }
+      }
+    },
+    {
+      "case": "light_values_exactly_at_implementation_cutoffs",
+      "inputs": {
+        "L7": {
+          "status": "ok",
+          "l1_horizon_stability": 0.8,
+          "l3_horizon_stability": 0.8,
+          "l5_horizon_stability": 0.8,
+          "semantic_split": {
+            "disagreement": false
+          },
+          "contradiction_penalty": 0.0
+        },
+        "walkforward": {
+          "t0_std": 10.0
+        }
+      },
+      "observed_verdict": "ROBUSTE",
+      "checks": {
+        "stabilite_horizon": {
+          "statut": "PASS",
+          "min_stabilite_horizon": 0.8,
+          "stabilites": {
+            "L1": 0.8,
+            "L3": 0.8,
+            "L5": 0.8
+          },
+          "detail": "Stabilite horizon >= 0.80 sur L1/L3/L5."
+        },
+        "stabilite_walkforward": {
+          "statut": "PASS",
+          "t0_std": 10.0,
+          "detail": "T0 stable en walk-forward (t0_std <= 10)."
+        },
+        "coherence_interne": {
+          "statut": "PASS",
+          "disagreement": false,
+          "contradiction_penalty": 0.0,
+          "detail": "Cible et regime alignes ou non-informes, pas de desaccord directionnel."
+        }
+      }
+    }
+  ]
+}

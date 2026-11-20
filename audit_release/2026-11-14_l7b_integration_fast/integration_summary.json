@@ -1,0 +1,64 @@
+{
+  "status": "light_completed_full_reduced_separate",
+  "results": {
+    "MC_Update": {
+      "verdict": "FRAGILE",
+      "checks": {
+        "stabilite_horizon": {
+          "statut": "FAIL",
+          "min_stabilite_horizon": 0.417,
+          "stabilites": {
+            "L1": 0.4166666666666667,
+            "L3": 1.0,
+            "L5": 1.0
+          },
+          "detail": "Stabilite horizon < 0.50 : la direction change selon l horizon."
+        },
+        "stabilite_walkforward": {
+          "statut": "FAIL",
+          "t0_std": 40.501,
+          "detail": "T0 tres variable en walk-forward (t0_std > 20)."
+        },
+        "coherence_interne": {
+          "statut": "PASS",
+          "disagreement": false,
+          "contradiction_penalty": 0.0,
+          "detail": "Cible et regime alignes ou non-informes, pas de desaccord directionnel."
+        },
+        "note_graine_fenetre_melange": "Non testes en mode light. Utiliser --l7b-full pour graine / fenetre / melange / echelle."
+      }
+    },
+    "Noise_axis": {
+      "verdict": "FRAGILE",
+      "checks": {
+        "stabilite_horizon": {
+          "statut": "FAIL",
+          "min_stabilite_horizon": 0.667,
+          "stabilites": {
+            "L1": 0.6666666666666666,
+            "L3": 1.0,
+            "L5": 1.0
+          },
+          "detail": "Stabilite horizon entre 0.50 et 0.80 : fragile, ne pas trancher."
+        },
+        "stabilite_walkforward": {
+          "statut": "FAIL",
+          "t0_std": 21.806,
+          "detail": "T0 tres variable en walk-forward (t0_std > 20)."
+        },
+        "coherence_interne": {
+          "statut": "FAIL",
+          "disagreement": true,
+          "contradiction_penalty": 0.12,
+          "target_direction": "down",
+          "regime_structural_direction": "up",
+          "detail": "Cible (L1) et regime (L3/L6) ne disent pas la meme chose. Reporter les deux, ne pas forcer un seul sens."
+        },
+        "note_graine_fenetre_melange": "Non testes en mode light. Utiliser --l7b-full pour graine / fenetre / melange / echelle."
+      }
+    }
+  },
+  "elapsed_seconds_for_two_controls": 900.79,
+  "full_mode_note": "The two-axis full run was not started after measuring about 7 minutes per axis for L7b-light. A separate one-axis, 80-row L7b-full integration is recorded under 2026-11-14_l7b_full_reduced.",
+  "interpretation": "L7b verdicts are implementation heuristic outputs, not scientific classifications of Ising criticality."
+}

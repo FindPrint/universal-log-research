@@ -1,0 +1,7 @@
+matrix,matrix_label,interpreted_as,basis,certainty
+cell_lines,A,AsPC-1,prefix abbreviation; no explicit crosswalk column in matrix,provisional
+cell_lines,P,PANC-1,prefix abbreviation; no explicit crosswalk column in matrix,provisional
+cell_lines,C,CFPAC-1,prefix abbreviation; no explicit crosswalk column in matrix,provisional
+cell_lines,S9,SW1990,prefix abbreviation; no explicit crosswalk column in matrix,provisional
+cell_lines,NT/M,vehicle/compound,treatment suffix interpreted against GEO sample records,provisional
+PDX,p1-p3 / p4-p6,vehicle / MRTX1133+Olaparib,positional mapping to ordered GEO sample records; no direct GSM-to-column crosswalk,provisional

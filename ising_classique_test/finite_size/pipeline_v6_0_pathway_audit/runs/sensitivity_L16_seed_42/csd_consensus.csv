@@ -1,0 +1,6 @@
+flux_name,status,csd_detected,classification,available_indicator_count,positive_indicator_count,required_majority,synthetic_positive_control_power,ar1_increase_rho,ar1_increase_null_q95,ar1_increase_signal,variance_increase_rho,variance_increase_null_q95,variance_increase_signal,absolute_skewness_increase_rho,absolute_skewness_increase_null_q95,absolute_skewness_increase_signal
+Energy_per_spin,computed,False,indeterminate_low_synthetic_power,3,0,2,0.18,-0.8999999999999998,0.7999999999999999,False,0.3,0.8999999999999998,False,0.6,0.7999999999999999,False
+abs_magnetization,computed,False,indeterminate_low_synthetic_power,3,0,2,0.18,-0.7,0.7999999999999999,False,0.6,0.8999999999999998,False,-0.19999999999999998,0.7999999999999999,False
+chi_abs_per_spin,computed,False,indeterminate_low_synthetic_power,3,0,2,0.18,-0.3,0.7999999999999999,False,0.19999999999999998,0.8999999999999998,False,-0.39999999999999997,0.7999999999999999,False
+Cv_per_spin,computed,False,indeterminate_low_synthetic_power,3,0,2,0.18,-0.3,0.7999999999999999,False,0.09999999999999999,0.8999999999999998,False,-0.09999999999999999,0.7999999999999999,False
+Binder_U4,computed,False,indeterminate_low_synthetic_power,3,0,2,0.18,-0.49999999999999994,0.7999999999999999,False,0.8999999999999998,0.8999999999999998,False,-0.7999999999999999,0.7999999999999999,False

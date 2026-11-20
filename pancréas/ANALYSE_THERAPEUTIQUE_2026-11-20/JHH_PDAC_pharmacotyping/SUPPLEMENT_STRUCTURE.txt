@@ -1,0 +1,109 @@
+Supplemental Methods:
+Organoid establishment, expansion, and pharmacotyping protocols
+A research pathologist collected a portion of the tumor mass at the time of pathological sectioning, which was brought fresh to our laboratory for organoid development. Samples obtained from the multi-institutional trial were snap frozen and shipped to our institution for organoid establishment.  Surgical specimens were minced sharply and enzymatically digested in culture medium with collagenase XI, while endoscopic biopsy specimens were mechanically dissociated. Single cells were suspended in liquid Matrigel, plated on non-treated culture plates, then covered with human complete feeding media with growth factor supplementation. 23 Cultures were passaged biweekly for biomass expansion and organoid characterization.
+Pharmacotyping was performed according to previously established protocols.35 Organoids were dissociated once adequate biomass had been achieved and plated onto 384-well plates in Matrigel. Chemotherapeutic agents were applied to the growing organoids across a logarithmic dose scale in DMSO, including vehicle controls and in four technical replicates. Agents selected for pharmacotyping included 5-FU, SN-38, oxaliplatin, gemcitabine, and paclitaxel. IC50 values were calculated for each organoid for each of the five agents, and the cohort was divided into “Sensitive,” “Intermediate,” and “Resistant” tertiles for each agent, with categories assigned separately depending on the pre-treatment status of the PDO.24
+R code for matching function
+regimenMatch<- function(pharmacotypedCases, preferredRegimens = NULL, prohibitedRegimens = NULL, sensitivityLevels = c("Sensitive", "Intermediate", "Resistant"), usePermutedCombos = TRUE){
+#get list of agents from provided grid
+chemoAgentsList <- colnames(pharmacotypedCases[,1:(ncol(pharmacotypedCases)-1)])
+#compute all possible combinations of agents
+chemoCombinations <- chemoAgentsList
+for (i in 2:length(chemoAgentsList)) {
+chemoCombo <- combn(chemoAgentsList, i)
+chemoCombinations <- c(chemoCombinations, apply(chemoCombo, 2, paste0, collapse = "-"))
+}
+allRegimens <- chemoCombinations
+rm(chemoCombo, chemoCombinations, i)
+## get list of computed regimens that aren't in provided prohibited list or preferred list
+## note will favor multi-agent over single-agent by default, including higher-multi-agent regimens
+leftoverRegimens <- rev(allRegimens[!allRegimens %in% c(preferredRegimens, prohibitedRegimens) ])
+if (!usePermutedCombos) {leftoverRegimens = NULL}
+allRegimensPrioritized <- unique(c(preferredRegimens, leftoverRegimens, "Pan-resistant"))
+#build key of which drugs are in which combos, including null/pan-resistant "combo"
+chemoCombinationsKey <- data.frame(combo = allRegimensPrioritized)
+for (i in 1:length(chemoAgentsList)){
+chemoCombinationsKey[,1+i] <- ifelse(grepl(chemoAgentsList[[i]], chemoCombinationsKey$combo), 1 , 0)
+}
+#set row and column names, drop "combo" column once it's used to set rownames
+colnames(chemoCombinationsKey) <- c("combo", chemoAgentsList)
+rownames(chemoCombinationsKey) <- chemoCombinationsKey$combo
+chemoCombinationsKey <- chemoCombinationsKey[,chemoAgentsList]
+#put all zeros for pan resistant
+chemoCombinationsKey["Pan-resistant",] <- rep(0, ncol(chemoCombinationsKey))
+#make new empty column of matches per each case in pharmacotyping grid
+pharmacotypedCases$matchedRegimen<-NA
+## below nested for loops cycle through pharmacotype grid to match each pharmacotype to its nearest regimen, testing regimens in ranked order provided
+## for each row of pharmacotype grid
+for (i in 1:nrow(pharmacotypedCases)){
+# gradually expand allowable distance for match calls
+#   (note starts at 1 not 0 which gives slight advantage/weight to ranked list over pure distance)
+for (h in 1:10){
+# if already found a regimen match for this case, go start next case
+if (!is.na(pharmacotypedCases[i,"matchedRegimen"])){break}
+#check current case against each regimen (in priority order)
+for (j in 1:nrow(chemoCombinationsKey)){
+#compute distance from current regimen's ideal position to current pharmacotyped case
+ijDistance <-
+dist(rbind(
+as.numeric(pharmacotypedCases[i, chemoAgentsList])-1,
+as.numeric(chemoCombinationsKey[j, ])*(length(sensitivityLevels)-1)),
+method = "manhattan")
+#if we match, write name of regimen and stop checking more regimens
+if (ijDistance <= h) {
+pharmacotypedCases[i,"matchedRegimen"]<-rownames(chemoCombinationsKey)[[j]]
+break
+}
+#repeat against each regimen until something matches at this radius, if not expand radius and try again
+}
+}
+#repeat for each case until grid completed
+}
+}
+## function call and parameters to generate Fig 2A:
+SimPharmacotypeMatchResults <- regimenMatch(pharmacotypedCases = pharmacotypedCasesSim, preferredRegimens = c(NCCNRegimens, alternateRegimens), prohibitedRegimens = c("FU-SN38-OX-GEM", "FU-SN38-OX-PAC", "FU-SN38-GEM-PAC", "FU-OX-GEM-PAC", "SN38-OX-GEM-PAC", "FU-SN38-OX-GEM-PAC"), usePermutedCombos = FALSE)
+Supplemental Figure 1 Pharmacotyping ranks per drug by treatment status
+Supplemental Figure 1: Rank-based comparisons of organoid pharmacotyping results for each chemotherapeutic agent tested, categorized by the pre-treatment status of the organoid. Median rank (by Kruskal-Wallis test) and rank distribution (by Kolmogorov-Smirnov test) were not statistically different across these pre-treatment categories for any agent studied. A) Result for 5-FU. B) Result for SN-38/irinotecan. C) Result for oxaliplatin. D) Result for gemcitabine. E) Result for paclitaxel.
+Supplemental Figure 2: Imaging response during neoadjuvant chemotherapy
+Supplemental Figure 2: A) Waterfall plot of relative imaging response during neoadjuvant chemotherapy for patients who were poorly-matched versus well-matched to the neoadjuvant therapy they received. B) Bar plot of dichotomized imaging response (30% or more decrease in diameter) for patients who were poorly-matched versus well-matched to the neoadjuvant chemotherapy they received (p = 0.28 by Fisher’s exact test).
+Supplemental Table 1
+
+[TABLE 1: rows=3 max_columns=2]
+	Possible regimens
+Preferred (NCCN PDAC)	"FU-SN38-OX" (FOLFIRINOX)"GEM-PAC" (gemcitabine-nab-paclitaxel)"FU-GEM" (capecitabine-gemcitabine)"FU-OX" (FOLFOX)"FU-SN38" (FOLFIRI)"GEM-OX-PAC" (Gemcitabine-cisplatin-nab-paclitaxel)"GEM-OX" (Gemcitabine-cisplatin)"FU" (5-FU monotherapy)"GEM" (gemcitabine monotherapy)
+Allowed (NCCN non-PDAC)	"FU-OX-PAC" (FLOT for gastric cancer)"OX-PAC""SN38-OX""SN38-PAC""SN38""PAC"
+Supplemental Table 2
+
+[TABLE 2: rows=15 max_columns=3]
+	CA 19-9 became normal after neoadjuvant	CA 9-9 remained or became elevated after neoadjuvant
+Neoadjuvant chemotherapy		
+FFX	15	22
+FFX: well-matched	10	7
+FFX: poorly-matched	5	15
+GnP	5	6
+GnP: well-matched	2	1
+GnP: poorly-matched	3	5
+Neoadjuvant radiation		
+No radiation	7	21
+No radiation: well-matched	2	6
+No radiation: poorly-matched	5	14
+Radiation	13	8
+Radiation: well-matched	10	2
+Radiation: poorly-matched	3	6
+Supplemental Table 3
+
+[TABLE 3: rows=15 max_columns=3]
+	N+ after neoadjuvant	N0 after neoadjuvant
+Neoadjuvant chemotherapy		
+FFX	20	17
+FFX: well-matched	3	9
+FFX: poorly-matched	17	8
+GnP	7	5
+GnP: well-matched	2	2
+GnP: poorly-matched	5	3
+Neoadjuvant radiation		
+No radiation	18	13
+No radiation: well-matched	3	6
+No radiation: poorly-matched	15	7
+Radiation	9	10
+Radiation: well-matched	2	5
+Radiation: poorly-matched	7	4

@@ -1,0 +1,5 @@
+term,estimate_log1p_scale,HC3_standard_error,CI95_low,CI95_high,t_HC3,p_nominal_unadjusted,n_complete_patients,model,status
+intercept,2.069292542,0.8314782429,0.3776373372,3.760947747,2.488691147,0.0180419511,37,log1p(EOT max VAF) ~ baseline TP53 + log1p(baseline RAS VAF detected) + planned dose/100mg,post-scan exploratory; not included in primary BH family
+baseline_TP53_Mut_vs_WT,1.131834377,0.4195538372,0.278245677,1.985423077,2.697709511,0.01091375823,37,log1p(EOT max VAF) ~ baseline TP53 + log1p(baseline RAS VAF detected) + planned dose/100mg,post-scan exploratory; not included in primary BH family
+log1p_baseline_RAS_VAF_detected,0.07341049555,0.1051372401,-0.1404928278,0.2873138189,0.6982349495,0.4899216608,37,log1p(EOT max VAF) ~ baseline TP53 + log1p(baseline RAS VAF detected) + planned dose/100mg,post-scan exploratory; not included in primary BH family
+planned_dose_per_100mg,-0.2061159902,0.2863106391,-0.7886193653,0.3763873848,-0.719903357,0.4766527187,37,log1p(EOT max VAF) ~ baseline TP53 + log1p(baseline RAS VAF detected) + planned dose/100mg,post-scan exploratory; not included in primary BH family

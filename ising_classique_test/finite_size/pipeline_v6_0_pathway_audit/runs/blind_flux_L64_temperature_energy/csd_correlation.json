@@ -1,0 +1,93 @@
+{
+  "csd_fluxes": [
+    "Energy_per_spin"
+  ],
+  "csd_count": 1,
+  "csd_correlations": {
+    "Energy_per_spin": {
+      "csd_estimators": [
+        "Hurst",
+        "Sevcik",
+        "CorrelationD2",
+        "GrassbergerProcaccia",
+        "InformationD1",
+        "VisibilityGraph",
+        "Fisher",
+        "PCAIntrinsic",
+        "SpectralBeta",
+        "SpectralDimension",
+        "Hurst2mH",
+        "MultifractalDeltaAlpha"
+      ],
+      "signal_fprime_correlation": 0.08112641737775102,
+      "signal_fprime_p_value": 0.48898962289800996,
+      "signal_fprime_significant": "False",
+      "metric_fprime_correlations": {
+        "Hurst": {
+          "estimator_fprime_corr": -0.20709611318380078,
+          "p_value": 0.03675373010448217,
+          "significant": "False"
+        },
+        "Sevcik": {
+          "estimator_fprime_corr": -0.1510881882707803,
+          "p_value": 0.10096135712285596,
+          "significant": "False"
+        },
+        "CorrelationD2": {
+          "estimator_fprime_corr": -0.25665381359617345,
+          "p_value": 0.010336981382444729,
+          "significant": "False"
+        },
+        "GrassbergerProcaccia": {
+          "estimator_fprime_corr": -0.28413803453290687,
+          "p_value": 0.004368801565841249,
+          "significant": "False"
+        },
+        "InformationD1": {
+          "estimator_fprime_corr": -0.5980337681881827,
+          "p_value": 3.203035867570392e-11,
+          "significant": "True"
+        },
+        "VisibilityGraph": {
+          "estimator_fprime_corr": -0.40791299205990966,
+          "p_value": 2.778036069557415e-05,
+          "significant": "True"
+        },
+        "Fisher": {
+          "estimator_fprime_corr": -0.40340911484327885,
+          "p_value": 2.620950276038759e-05,
+          "significant": "True"
+        },
+        "PCAIntrinsic": {
+          "estimator_fprime_corr": -0.41018790142619355,
+          "p_value": 2.480174244430829e-05,
+          "significant": "True"
+        },
+        "SpectralBeta": {
+          "estimator_fprime_corr": -0.6070396637866551,
+          "p_value": 2.7239365326423577e-11,
+          "significant": "True"
+        },
+        "SpectralDimension": {
+          "estimator_fprime_corr": -0.6070396637866552,
+          "p_value": 2.7239365326423037e-11,
+          "significant": "True"
+        },
+        "Hurst2mH": {
+          "estimator_fprime_corr": -0.20709611318380078,
+          "p_value": 0.03675373010448217,
+          "significant": "False"
+        },
+        "MultifractalDeltaAlpha": {
+          "estimator_fprime_corr": -0.27070447642533435,
+          "p_value": 0.08292497215565497,
+          "significant": "False"
+        }
+      }
+    }
+  },
+  "statistics": {
+    "avg_signal_fprime_correlation": 0.08112641737775102,
+    "total_csd_tested": 1
+  }
+}

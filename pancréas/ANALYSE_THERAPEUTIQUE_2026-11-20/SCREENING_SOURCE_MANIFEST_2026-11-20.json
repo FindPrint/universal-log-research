@@ -1,0 +1,55 @@
+{
+  "screened_on": "2026-11-20",
+  "result": "No qualifying confirmatory external PDAC drug-response matrix identified among the screened candidates; one below-threshold pilot was run and rejected by the pipeline sample minimum.",
+  "sources": [
+    {
+      "dataset": "Nature Communications 2025 PDAC organoid drug-response AUCs",
+      "article_doi": "10.1038/s41467-025-57520-3",
+      "article_url": "https://doi.org/10.1038/s41467-025-57520-3",
+      "file_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-57520-3/MediaObjects/41467_2025_57520_MOESM13_ESM.xlsx",
+      "local_file": "candidate_NatureComm2025_PAAD/NatureComm2025_Supplementary_Data10.xlsx",
+      "sha256": "0e009cd56d2f6c25b0b355590becc4abfee3e1080633173bc33606d1bf325340",
+      "observed_structure": "63 drug rows by 46 PDO columns; 0 missing numeric cells",
+      "pipeline_input": "candidate_NatureComm2025_PAAD/NatureComm2025_46PDO_63Drug_AUC.csv",
+      "pipeline_input_sha256": "296681b64d3ad5309aab349696439257185f0e679cf50a35858a898b046cb3fd",
+      "decision": "Pilot only; pipeline requires at least 50 points and rejected N=46."
+    },
+    {
+      "dataset": "Nature Communications 2025 source data workbook",
+      "article_doi": "10.1038/s41467-025-57520-3",
+      "file_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-57520-3/MediaObjects/41467_2025_57520_MOESM17_ESM.xlsx",
+      "local_file": "candidate_NatureComm2025_PAAD/NatureComm2025_SourceData.xlsx",
+      "sha256": "917a1011426c5ee749343ccabf8126e35923a65c4719ec929f84aa29a511f7b1",
+      "decision": "Inspected for provenance; the pipeline input matrix comes from Supplementary Data 10."
+    },
+    {
+      "dataset": "Johns Hopkins PDAC organoid pharmacotyping article supplement",
+      "article_doi": "10.1097/SLA.0000000000006517",
+      "article_url": "https://doi.org/10.1097/SLA.0000000000006517",
+      "file_url": "https://links.lww.com/SLA/F291",
+      "local_file": "JHH_PDAC_pharmacotyping/NIHMS2020869_Supplemental_Data_File.docx",
+      "sha256": "3d6d24a5b80dcf45a6c7c6a42336bf6f74d21b6e63097ee59b2bc16adca7a0b2",
+      "observed_structure": "Supplemental methods, matching R code, and aggregate outcome tables; no per-PDO numeric IC50 matrix in the inspected file.",
+      "decision": "Not runnable using the accessed public files."
+    },
+    {
+      "dataset": "AACR 2025 high-throughput PDAC PDO screening abstract",
+      "article_url": "https://www.aacr.org/wp-content/uploads/2025/05/AACR2025_Proceedings_050725.pdf",
+      "observed_structure": "Abstract reports 120 PDAC PDOs and large drug screens; row-level response matrix not linked in the proceedings inspected.",
+      "decision": "Potential data-access lead; no external contact sent."
+    }
+  ],
+  "pipeline_attempt": {
+    "pipeline": "UNIVERSAL_LOG_v5.9.4.py",
+    "target": "Gemcitabine",
+    "control": "APR-246",
+    "controls_planned": 62,
+    "controls_launched": 1,
+    "controls_completed": 0,
+    "n_observations": 46,
+    "minimum_required": 50,
+    "observed_error": "Série trop courte : 46 points valides. Au moins 50 sont requis avec la configuration actuelle.",
+    "console_log_sha256": "d2638f4b228ef65ac2732f20ffa9f644d738852aa51521455f0cee65405cc9d",
+    "interpretation": "Input-gate rejection before estimator calculations; no biological result."
+  }
+}

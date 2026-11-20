@@ -1,0 +1,175 @@
+{
+  "analysis_id": "pdac_daraxonrasib_typed_controls_by_flows_v1",
+  "created_utc": "2026-11-17T10:34:39+00:00",
+  "unit_of_analysis": "one patient (44 unique patient IDs); repeated sample stages remain within patient",
+  "source": {
+    "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-16\\daraxonrasib_resistance_2026\\reanalyzed\\clinical_high_dose_44.csv",
+    "sha256": "069324e46734542d60c7d8180cce5e3b5d1f8cb9ab991aab4cdf075072f361e1",
+    "bytes": 6533,
+    "paper": "https://doi.org/10.1038/s41591-026-04537-w"
+  },
+  "selection": "44 patients with initial CR/PR/SD and subsequent progression on daraxonrasib; no nonprogression control cohort",
+  "controls": [
+    {
+      "name": "baseline_tp53",
+      "type": "categorical",
+      "status": "baseline biomarker"
+    },
+    {
+      "name": "kras_subtype",
+      "type": "categorical",
+      "status": "baseline genotype"
+    },
+    {
+      "name": "dose_mg",
+      "type": "continuous",
+      "status": "planned exposure; nonrandomized"
+    },
+    {
+      "name": "dose_group",
+      "type": "categorical",
+      "status": "planned exposure; alternate encoding"
+    },
+    {
+      "name": "best_response",
+      "type": "categorical",
+      "status": "post-baseline response; selected cohort"
+    },
+    {
+      "name": "ras_vaf_pre_status",
+      "type": "categorical",
+      "status": "baseline detection status"
+    },
+    {
+      "name": "ras_vaf_pre",
+      "type": "continuous",
+      "status": "baseline ctDNA VAF; detected only"
+    }
+  ],
+  "flows": [
+    {
+      "name": "acquired_ras_short",
+      "type": "categorical",
+      "status": "acquired RAS/MAPK/PI3K/RTK short alteration listed"
+    },
+    {
+      "name": "acquired_ras_cna",
+      "type": "categorical",
+      "status": "acquired RAS-pathway copy-number alteration listed"
+    },
+    {
+      "name": "acquired_kras_amp",
+      "type": "categorical",
+      "status": "acquired KRAS amplification listed"
+    },
+    {
+      "name": "acquired_myc_amp",
+      "type": "categorical",
+      "status": "acquired MYC amplification listed"
+    },
+    {
+      "name": "acquired_other",
+      "type": "categorical",
+      "status": "other acquired alteration listed"
+    },
+    {
+      "name": "acquired_any_listed",
+      "type": "categorical",
+      "status": "any listed acquired alteration"
+    },
+    {
+      "name": "multiple_ras_pathway_classes",
+      "type": "categorical",
+      "status": "both short-variant and CNA classes listed"
+    },
+    {
+      "name": "ras_vaf_on_status",
+      "type": "categorical",
+      "status": "on-treatment detection status"
+    },
+    {
+      "name": "ras_vaf_eot_status",
+      "type": "categorical",
+      "status": "end-of-treatment detection status"
+    },
+    {
+      "name": "ras_vaf_eot",
+      "type": "continuous",
+      "status": "end-of-treatment RAS VAF; detected only"
+    },
+    {
+      "name": "genomic_max_vaf_eot",
+      "type": "continuous",
+      "status": "end-of-treatment maximum genomic VAF; detected only"
+    },
+    {
+      "name": "delta_pre_to_on_vaf_pp",
+      "type": "continuous",
+      "status": "pre-to-on stage difference; both detected"
+    },
+    {
+      "name": "delta_on_to_eot_vaf_pp",
+      "type": "continuous",
+      "status": "on-to-end stage difference; both detected"
+    },
+    {
+      "name": "delta_pre_to_eot_vaf_pp",
+      "type": "continuous",
+      "status": "pre-to-end stage difference; both detected"
+    }
+  ],
+  "missingness": "Not detected and Not tested preserved as statuses; no numeric imputation",
+  "statistics": {
+    "categorical_2x2": "two-sided Fisher exact",
+    "other_pairs": "patient-level permutation tests",
+    "permutations": 9999,
+    "seed": 20261117,
+    "adjustment": "Benjamini-Hochberg across all estimable control x flow tests"
+  },
+  "posthoc_model": {
+    "n_complete_patients": 37,
+    "tp53_mut_n": 28,
+    "tp53_wt_n": 9,
+    "tp53_coefficient_log1p": 1.131834376936986,
+    "tp53_hc3_se": 0.4195538372460775,
+    "tp53_ci95_low": 0.27824567695627145,
+    "tp53_ci95_high": 1.9854230769177006,
+    "tp53_nominal_p": 0.010913758234846409,
+    "r_squared": 0.26737256917463936,
+    "formula": "log1p(EOT max VAF) ~ TP53-mut + log1p(baseline RAS VAF, detected only) + dose/100mg",
+    "interpretation": "association within a progression-selected cohort; baseline-VAF complete cases only; post-scan and uncorrected for multiplicity"
+  },
+  "pipeline_scope": "typed multi-axis companion; no T0/TLog because n<50 and cohort is progression-selected; no causal treatment claim",
+  "software": {
+    "python": "3.11.9",
+    "pandas": "3.0.6",
+    "numpy": "1.26.4"
+  },
+  "script_sha256": "159c1b159e92af6f0e01861c51f6d4be742cabc597e215936b6472a4804863c3",
+  "outputs": {
+    "controls_by_flows_all_tests.csv": {
+      "sha256": "4df7dc5a76d43ae027c516d80c47d355e32daf6a1adaf33a200b692ac0b71f9e",
+      "bytes": 24632
+    },
+    "controls_by_flows_heatmap.png": {
+      "sha256": "d249ee5145866c6bee876f5254f0ca21e2501bf9b685cecfb143381cb52583fe",
+      "bytes": 124818
+    },
+    "field_coverage.csv": {
+      "sha256": "918ffffab97b3109fed7177151ed4190461932a52f403ab57d02b8629fe722e8",
+      "bytes": 1834
+    },
+    "patient_level_normalized_44.csv": {
+      "sha256": "2589d129c4a2f55df58b27a6ee302623d0586208d74094aa88a8c9a105763ea7",
+      "bytes": 8597
+    },
+    "posthoc_TP53_eot_vaf_adjusted.csv": {
+      "sha256": "e89ae0466a481cd68db8376f947dbd457e80b672761057c9a8aaeecc0edad902",
+      "bytes": 1132
+    },
+    "REPORT_MULTIAxis_PDac_v1.md": {
+      "sha256": "5e2afff3c27e02097113ddc811f03891197004635584e4180ee4db5b63181b09",
+      "bytes": 5902
+    }
+  }
+}

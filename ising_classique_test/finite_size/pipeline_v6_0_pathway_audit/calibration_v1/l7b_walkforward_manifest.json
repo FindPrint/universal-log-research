@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-11-16T23:20:39.362155+00:00",
+  "status": "completed_exploratory_l7b_walkforward_component_calibration",
+  "pipeline_path": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py",
+  "pipeline_sha256": "bb8bbdba4eb1f8c55b49748274ae8fbfef8a43f6c1b890964f18ba77960c0773",
+  "script_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\calibration_v1\\run_l7b_walkforward_calibration.py",
+  "script_sha256": "4ab021efbc66c8a55f2fb763fb6ffe02815ab8ba552e38026141e3d901da2e99",
+  "python": "3.11.9",
+  "numpy": "1.26.4",
+  "pandas": "3.0.6",
+  "seed": 20261117,
+  "replicates": 200,
+  "lengths": [
+    76,
+    150,
+    300,
+    600
+  ],
+  "scenarios": [
+    {
+      "scenario": "stationary_ar1",
+      "amplitude_sd": 0.0,
+      "event_present": false
+    },
+    {
+      "scenario": "linear_drift_no_break",
+      "amplitude_sd": 0.0,
+      "event_present": false
+    },
+    {
+      "scenario": "abrupt_step",
+      "amplitude_sd": 0.5,
+      "event_present": true
+    },
+    {
+      "scenario": "abrupt_step",
+      "amplitude_sd": 1.0,
+      "event_present": true
+    },
+    {
+      "scenario": "sigmoid_transition",
+      "amplitude_sd": 0.5,
+      "event_present": true
+    },
+    {
+      "scenario": "sigmoid_transition",
+      "amplitude_sd": 1.0,
+      "event_present": true
+    }
+  ],
+  "method": "Exact v6 adaptive_walk_forward_validation component; control is fixed monotone rank 0..100; horizon=15; n_splits=5; window_frac=0.5; min_window=30.",
+  "interpretation_guard": "This estimates only the walk-forward T0 variability check, not the full L7b verdict and not end-to-end pipeline sensitivity.",
+  "raw_sha256": "63c8b5a58fedad4e7addf3e4540bc62c38b518bb35b6643fff77643dddf8bc7a",
+  "summary_sha256": "a61161608f826ecd59a3c6da581d49720065b15c5911a6ee73511d6ef9585a54",
+  "records": 4800,
+  "summary_rows": 24
+}

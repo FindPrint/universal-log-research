@@ -1,0 +1,1093 @@
+gsm,flow,metric,value,n_cells,n_stratum_cells,genes_available,stratum_rule
+GSM9270219,tumor_epithelial_identity,marker_positive_fraction_ge1,0.9909058488,11216,11216,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270219,tumor_epithelial_identity,marker_positive_fraction_ge2,0.9457917261,11216,11216,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270219,tumor_epithelial_identity,mean_log1p_CPM10k_all_cells,1.385638118,11216,11216,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270219,T_cell_identity,marker_positive_fraction_ge1,0.01471112696,11216,11216,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270219,T_cell_identity,marker_positive_fraction_ge2,0.0003566333809,11216,11216,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270219,T_cell_identity,mean_log1p_CPM10k_all_cells,0.003048368497,11216,11216,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270219,cytotoxic_T_NK,marker_positive_fraction_ge1,0.003655492154,11216,11216,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270219,cytotoxic_T_NK,marker_positive_fraction_ge2,0.0004457917261,11216,11216,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270219,cytotoxic_T_NK,mean_log1p_CPM10k_all_cells,0.0009202209185,11216,11216,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270219,Treg_identity,marker_positive_fraction_ge1,0.04404422254,11216,11216,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270219,Treg_identity,marker_positive_fraction_ge2,0.0009807417974,11216,11216,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270219,Treg_identity,mean_log1p_CPM10k_all_cells,0.01056316588,11216,11216,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270219,T_exhaustion,marker_positive_fraction_ge1,0.05278174037,11216,11216,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270219,T_exhaustion,marker_positive_fraction_ge2,0.0006241084165,11216,11216,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270219,T_exhaustion,mean_log1p_CPM10k_all_cells,0.01087572612,11216,11216,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270219,monocyte_macrophage_identity,marker_positive_fraction_ge1,0.01480028531,11216,11216,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270219,monocyte_macrophage_identity,marker_positive_fraction_ge2,0.00187232525,11216,11216,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270219,monocyte_macrophage_identity,mean_log1p_CPM10k_all_cells,0.003092989326,11216,11216,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270219,myeloid_suppressive_state,marker_positive_fraction_ge1,0.8614479315,11216,11216,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270219,myeloid_suppressive_state,marker_positive_fraction_ge2,0.5346825963,11216,11216,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270219,myeloid_suppressive_state,mean_log1p_CPM10k_all_cells,0.4534796178,11216,11216,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270219,neutrophil_identity,marker_positive_fraction_ge1,0.04012125535,11216,11216,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270219,neutrophil_identity,marker_positive_fraction_ge2,0.003655492154,11216,11216,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270219,neutrophil_identity,mean_log1p_CPM10k_all_cells,0.00909887813,11216,11216,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270219,antigen_presentation_MHCII,marker_positive_fraction_ge1,0.275053495,11216,11216,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270219,antigen_presentation_MHCII,marker_positive_fraction_ge2,0.09753922967,11216,11216,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270219,antigen_presentation_MHCII,mean_log1p_CPM10k_all_cells,0.1300163716,11216,11216,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270219,B_cell_identity,marker_positive_fraction_ge1,0.004725392297,11216,11216,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270219,B_cell_identity,marker_positive_fraction_ge2,0,11216,11216,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270219,B_cell_identity,mean_log1p_CPM10k_all_cells,0.0009356377413,11216,11216,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270219,CAF_stromal_identity,marker_positive_fraction_ge1,0.5807774608,11216,11216,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270219,CAF_stromal_identity,marker_positive_fraction_ge2,0.2513373752,11216,11216,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270219,CAF_stromal_identity,mean_log1p_CPM10k_all_cells,0.2291061729,11216,11216,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270219,endothelial_identity,marker_positive_fraction_ge1,0.01729671897,11216,11216,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270219,endothelial_identity,marker_positive_fraction_ge2,0.002139800285,11216,11216,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270219,endothelial_identity,mean_log1p_CPM10k_all_cells,0.005233231466,11216,11216,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270219,HR_DNA_repair,marker_positive_fraction_ge1,0.3915834522,11216,11216,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270219,HR_DNA_repair,marker_positive_fraction_ge2,0.1518366619,11216,11216,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270219,HR_DNA_repair,mean_log1p_CPM10k_all_cells,0.06561332941,11216,11216,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270219,DNA_damage_apoptosis,marker_positive_fraction_ge1,0.6144793153,11216,11216,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270219,DNA_damage_apoptosis,marker_positive_fraction_ge2,0.3338980029,11216,11216,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270219,DNA_damage_apoptosis,mean_log1p_CPM10k_all_cells,0.1551809609,11216,11216,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270219,type_I_interferon,marker_positive_fraction_ge1,0.2732703281,11216,11216,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270219,type_I_interferon,marker_positive_fraction_ge2,0.06125178317,11216,11216,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270219,type_I_interferon,mean_log1p_CPM10k_all_cells,0.05102245137,11216,11216,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270219,IFN_gamma_response,marker_positive_fraction_ge1,0.5567047076,11216,11216,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270219,IFN_gamma_response,marker_positive_fraction_ge2,0.2384094151,11216,11216,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270219,IFN_gamma_response,mean_log1p_CPM10k_all_cells,0.1857754886,11216,11216,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270219,MAPK_ERK_output,marker_positive_fraction_ge1,0.9182417974,11216,11216,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270219,MAPK_ERK_output,marker_positive_fraction_ge2,0.7371611983,11216,11216,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270219,MAPK_ERK_output,mean_log1p_CPM10k_all_cells,0.5519444346,11216,11216,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270219,cell_cycle_proliferation,marker_positive_fraction_ge1,0.522200428,11216,11216,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270219,cell_cycle_proliferation,marker_positive_fraction_ge2,0.2751426534,11216,11216,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270219,cell_cycle_proliferation,mean_log1p_CPM10k_all_cells,0.1868219674,11216,11216,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270219,EMT_TGF_beta,marker_positive_fraction_ge1,0.9291191155,11216,11216,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270219,EMT_TGF_beta,marker_positive_fraction_ge2,0.752585592,11216,11216,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270219,EMT_TGF_beta,mean_log1p_CPM10k_all_cells,0.6378551126,11216,11216,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270219,immune_checkpoint,marker_positive_fraction_ge1,0.08291726106,11216,11216,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270219,immune_checkpoint,marker_positive_fraction_ge2,0.003566333809,11216,11216,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270219,immune_checkpoint,mean_log1p_CPM10k_all_cells,0.01255941018,11216,11216,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270219,T_cell_inflamed,marker_positive_fraction_ge1,0.1288338088,11216,11216,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270219,T_cell_inflamed,marker_positive_fraction_ge2,0.01239300999,11216,11216,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270219,T_cell_inflamed,mean_log1p_CPM10k_all_cells,0.02274891362,11216,11216,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270219,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.06587389112,11216,11114,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.1559440047,11216,11114,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.553088069,11216,11114,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.1879882962,11216,11114,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.6381121278,11216,11114,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.06716290861,11216,10608,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270219,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.1586574763,11216,10608,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270219,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.5579673052,11216,10608,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270219,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.1920732558,11216,10608,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270219,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.6420955062,11216,10608,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270219,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.02350333892,11216,165,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.02081300691,11216,165,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.02212071046,11216,165,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2111784071,11216,165,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.02809912153,11216,165,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,11216,4,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270219,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,11216,4,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270219,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,11216,4,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270219,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,11216,4,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270219,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,11216,4,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270219,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.5512517691,11216,166,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.1852064729,11216,166,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.07269536704,11216,166,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.2525595725,11216,166,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270219,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.8485655189,11216,21,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270219,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.1920200288,11216,21,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270219,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.1220449582,11216,21,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270219,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.2422054857,11216,21,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,tumor_epithelial_identity,marker_positive_fraction_ge1,0.8884214744,4992,4992,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270220,tumor_epithelial_identity,marker_positive_fraction_ge2,0.7311698718,4992,4992,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270220,tumor_epithelial_identity,mean_log1p_CPM10k_all_cells,1.144636273,4992,4992,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270220,T_cell_identity,marker_positive_fraction_ge1,0.01181891026,4992,4992,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270220,T_cell_identity,marker_positive_fraction_ge2,0.0004006410256,4992,4992,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270220,T_cell_identity,mean_log1p_CPM10k_all_cells,0.004295968916,4992,4992,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270220,cytotoxic_T_NK,marker_positive_fraction_ge1,0.001602564103,4992,4992,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270220,cytotoxic_T_NK,marker_positive_fraction_ge2,0.0002003205128,4992,4992,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270220,cytotoxic_T_NK,mean_log1p_CPM10k_all_cells,0.0005534047959,4992,4992,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270220,Treg_identity,marker_positive_fraction_ge1,0.02363782051,4992,4992,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270220,Treg_identity,marker_positive_fraction_ge2,0.0002003205128,4992,4992,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270220,Treg_identity,mean_log1p_CPM10k_all_cells,0.01005345304,4992,4992,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270220,T_exhaustion,marker_positive_fraction_ge1,0.02143429487,4992,4992,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270220,T_exhaustion,marker_positive_fraction_ge2,0.0002003205128,4992,4992,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270220,T_exhaustion,mean_log1p_CPM10k_all_cells,0.00756694423,4992,4992,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270220,monocyte_macrophage_identity,marker_positive_fraction_ge1,0.008413461538,4992,4992,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270220,monocyte_macrophage_identity,marker_positive_fraction_ge2,0.001201923077,4992,4992,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270220,monocyte_macrophage_identity,mean_log1p_CPM10k_all_cells,0.003729608143,4992,4992,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270220,myeloid_suppressive_state,marker_positive_fraction_ge1,0.6464342949,4992,4992,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270220,myeloid_suppressive_state,marker_positive_fraction_ge2,0.2223557692,4992,4992,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270220,myeloid_suppressive_state,mean_log1p_CPM10k_all_cells,0.3134135902,4992,4992,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270220,neutrophil_identity,marker_positive_fraction_ge1,0.02363782051,4992,4992,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270220,neutrophil_identity,marker_positive_fraction_ge2,0.002403846154,4992,4992,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270220,neutrophil_identity,mean_log1p_CPM10k_all_cells,0.01122123748,4992,4992,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270220,antigen_presentation_MHCII,marker_positive_fraction_ge1,0.1340144231,4992,4992,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270220,antigen_presentation_MHCII,marker_positive_fraction_ge2,0.06189903846,4992,4992,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270220,antigen_presentation_MHCII,mean_log1p_CPM10k_all_cells,0.103808023,4992,4992,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270220,B_cell_identity,marker_positive_fraction_ge1,0.001602564103,4992,4992,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270220,B_cell_identity,marker_positive_fraction_ge2,0,4992,4992,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270220,B_cell_identity,mean_log1p_CPM10k_all_cells,0.0004914276651,4992,4992,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270220,CAF_stromal_identity,marker_positive_fraction_ge1,0.3503605769,4992,4992,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270220,CAF_stromal_identity,marker_positive_fraction_ge2,0.1418269231,4992,4992,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270220,CAF_stromal_identity,mean_log1p_CPM10k_all_cells,0.2695710063,4992,4992,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270220,endothelial_identity,marker_positive_fraction_ge1,0.01282051282,4992,4992,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270220,endothelial_identity,marker_positive_fraction_ge2,0.002604166667,4992,4992,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270220,endothelial_identity,mean_log1p_CPM10k_all_cells,0.008324531838,4992,4992,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270220,HR_DNA_repair,marker_positive_fraction_ge1,0.2161458333,4992,4992,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270220,HR_DNA_repair,marker_positive_fraction_ge2,0.04346955128,4992,4992,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270220,HR_DNA_repair,mean_log1p_CPM10k_all_cells,0.04691616073,4992,4992,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270220,DNA_damage_apoptosis,marker_positive_fraction_ge1,0.4342948718,4992,4992,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270220,DNA_damage_apoptosis,marker_positive_fraction_ge2,0.1474358974,4992,4992,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270220,DNA_damage_apoptosis,mean_log1p_CPM10k_all_cells,0.1242616028,4992,4992,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270220,type_I_interferon,marker_positive_fraction_ge1,0.1572516026,4992,4992,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270220,type_I_interferon,marker_positive_fraction_ge2,0.02163461538,4992,4992,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270220,type_I_interferon,mean_log1p_CPM10k_all_cells,0.04140487686,4992,4992,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270220,IFN_gamma_response,marker_positive_fraction_ge1,0.3655849359,4992,4992,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270220,IFN_gamma_response,marker_positive_fraction_ge2,0.1045673077,4992,4992,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270220,IFN_gamma_response,mean_log1p_CPM10k_all_cells,0.151333198,4992,4992,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270220,MAPK_ERK_output,marker_positive_fraction_ge1,0.8741987179,4992,4992,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270220,MAPK_ERK_output,marker_positive_fraction_ge2,0.6037660256,4992,4992,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270220,MAPK_ERK_output,mean_log1p_CPM10k_all_cells,0.5660084486,4992,4992,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270220,cell_cycle_proliferation,marker_positive_fraction_ge1,0.3064903846,4992,4992,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270220,cell_cycle_proliferation,marker_positive_fraction_ge2,0.1290064103,4992,4992,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270220,cell_cycle_proliferation,mean_log1p_CPM10k_all_cells,0.1310792267,4992,4992,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270220,EMT_TGF_beta,marker_positive_fraction_ge1,0.8309294872,4992,4992,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270220,EMT_TGF_beta,marker_positive_fraction_ge2,0.5162259615,4992,4992,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270220,EMT_TGF_beta,mean_log1p_CPM10k_all_cells,0.5281257033,4992,4992,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270220,immune_checkpoint,marker_positive_fraction_ge1,0.04086538462,4992,4992,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270220,immune_checkpoint,marker_positive_fraction_ge2,0.001602564103,4992,4992,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270220,immune_checkpoint,mean_log1p_CPM10k_all_cells,0.01045531966,4992,4992,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270220,T_cell_inflamed,marker_positive_fraction_ge1,0.05588942308,4992,4992,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270220,T_cell_inflamed,marker_positive_fraction_ge2,0.005608974359,4992,4992,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270220,T_cell_inflamed,mean_log1p_CPM10k_all_cells,0.01454535965,4992,4992,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270220,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.04815950617,4992,4435,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.1277705282,4992,4435,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.5602106452,4992,4435,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.1346542686,4992,4435,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.5024566054,4992,4435,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.04852150381,4992,3650,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.1322644353,4992,3650,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.5583143234,4992,3650,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.1396328211,4992,3650,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.4847803414,4992,3650,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.01334297936,4992,59,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.03318559751,4992,59,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.0252551306,4992,59,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2266272008,4992,59,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.02252947539,4992,59,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,4992,2,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,4992,2,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,4992,2,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,4992,2,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,4992,2,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.3592152596,4992,42,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.2940806746,4992,42,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.07784876227,4992,42,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.1626582891,4992,42,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270220,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,,4992,6,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,,4992,6,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,,4992,6,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270220,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,,4992,6,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,tumor_epithelial_identity,marker_positive_fraction_ge1,0.8008141364,10809,10809,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270221,tumor_epithelial_identity,marker_positive_fraction_ge2,0.5937644555,10809,10809,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270221,tumor_epithelial_identity,mean_log1p_CPM10k_all_cells,0.7152193785,10809,10809,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270221,T_cell_identity,marker_positive_fraction_ge1,0.3196410399,10809,10809,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270221,T_cell_identity,marker_positive_fraction_ge2,0.202978999,10809,10809,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270221,T_cell_identity,mean_log1p_CPM10k_all_cells,0.2641739249,10809,10809,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270221,cytotoxic_T_NK,marker_positive_fraction_ge1,0.4526783236,10809,10809,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270221,cytotoxic_T_NK,marker_positive_fraction_ge2,0.2110278472,10809,10809,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270221,cytotoxic_T_NK,mean_log1p_CPM10k_all_cells,0.2602483928,10809,10809,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270221,Treg_identity,marker_positive_fraction_ge1,0.2252752336,10809,10809,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270221,Treg_identity,marker_positive_fraction_ge2,0.05902488667,10809,10809,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270221,Treg_identity,mean_log1p_CPM10k_all_cells,0.1172569692,10809,10809,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270221,T_exhaustion,marker_positive_fraction_ge1,0.2220371912,10809,10809,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270221,T_exhaustion,marker_positive_fraction_ge2,0.0481080581,10809,10809,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270221,T_exhaustion,mean_log1p_CPM10k_all_cells,0.07513606548,10809,10809,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270221,monocyte_macrophage_identity,marker_positive_fraction_ge1,0.6003330558,10809,10809,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270221,monocyte_macrophage_identity,marker_positive_fraction_ge2,0.3322231474,10809,10809,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270221,monocyte_macrophage_identity,mean_log1p_CPM10k_all_cells,0.3849192262,10809,10809,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270221,myeloid_suppressive_state,marker_positive_fraction_ge1,0.8215376075,10809,10809,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270221,myeloid_suppressive_state,marker_positive_fraction_ge2,0.5744287168,10809,10809,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270221,myeloid_suppressive_state,mean_log1p_CPM10k_all_cells,0.4397824407,10809,10809,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270221,neutrophil_identity,marker_positive_fraction_ge1,0.1731890092,10809,10809,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270221,neutrophil_identity,marker_positive_fraction_ge2,0.05782218522,10809,10809,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270221,neutrophil_identity,mean_log1p_CPM10k_all_cells,0.08967915177,10809,10809,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270221,antigen_presentation_MHCII,marker_positive_fraction_ge1,0.6662040892,10809,10809,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270221,antigen_presentation_MHCII,marker_positive_fraction_ge2,0.4253862522,10809,10809,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270221,antigen_presentation_MHCII,mean_log1p_CPM10k_all_cells,0.5832593441,10809,10809,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270221,B_cell_identity,marker_positive_fraction_ge1,0.1437690813,10809,10809,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270221,B_cell_identity,marker_positive_fraction_ge2,0.009251549635,10809,10809,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270221,B_cell_identity,mean_log1p_CPM10k_all_cells,0.04202799872,10809,10809,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270221,CAF_stromal_identity,marker_positive_fraction_ge1,0.7515958923,10809,10809,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270221,CAF_stromal_identity,marker_positive_fraction_ge2,0.5165140161,10809,10809,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270221,CAF_stromal_identity,mean_log1p_CPM10k_all_cells,0.4850178957,10809,10809,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270221,endothelial_identity,marker_positive_fraction_ge1,0.2331390508,10809,10809,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270221,endothelial_identity,marker_positive_fraction_ge2,0.06124525858,10809,10809,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270221,endothelial_identity,mean_log1p_CPM10k_all_cells,0.1172341779,10809,10809,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270221,HR_DNA_repair,marker_positive_fraction_ge1,0.4909797391,10809,10809,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270221,HR_DNA_repair,marker_positive_fraction_ge2,0.2360995467,10809,10809,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270221,HR_DNA_repair,mean_log1p_CPM10k_all_cells,0.07249020785,10809,10809,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270221,DNA_damage_apoptosis,marker_positive_fraction_ge1,0.8436488112,10809,10809,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270221,DNA_damage_apoptosis,marker_positive_fraction_ge2,0.6479785364,10809,10809,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270221,DNA_damage_apoptosis,mean_log1p_CPM10k_all_cells,0.3090259135,10809,10809,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270221,type_I_interferon,marker_positive_fraction_ge1,0.6962716255,10809,10809,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270221,type_I_interferon,marker_positive_fraction_ge2,0.3315755389,10809,10809,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270221,type_I_interferon,mean_log1p_CPM10k_all_cells,0.2000383735,10809,10809,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270221,IFN_gamma_response,marker_positive_fraction_ge1,0.7904524008,10809,10809,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270221,IFN_gamma_response,marker_positive_fraction_ge2,0.5145711907,10809,10809,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270221,IFN_gamma_response,mean_log1p_CPM10k_all_cells,0.3055462837,10809,10809,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270221,MAPK_ERK_output,marker_positive_fraction_ge1,0.8751040799,10809,10809,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270221,MAPK_ERK_output,marker_positive_fraction_ge2,0.7076510315,10809,10809,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270221,MAPK_ERK_output,mean_log1p_CPM10k_all_cells,0.5345897079,10809,10809,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270221,cell_cycle_proliferation,marker_positive_fraction_ge1,0.5466740679,10809,10809,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270221,cell_cycle_proliferation,marker_positive_fraction_ge2,0.3194560089,10809,10809,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270221,cell_cycle_proliferation,mean_log1p_CPM10k_all_cells,0.1825127006,10809,10809,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270221,EMT_TGF_beta,marker_positive_fraction_ge1,0.9304283467,10809,10809,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270221,EMT_TGF_beta,marker_positive_fraction_ge2,0.7895272458,10809,10809,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270221,EMT_TGF_beta,mean_log1p_CPM10k_all_cells,0.6833346486,10809,10809,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270221,immune_checkpoint,marker_positive_fraction_ge1,0.3775557406,10809,10809,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270221,immune_checkpoint,marker_positive_fraction_ge2,0.126376168,10809,10809,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270221,immune_checkpoint,mean_log1p_CPM10k_all_cells,0.1080742851,10809,10809,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270221,T_cell_inflamed,marker_positive_fraction_ge1,0.4610972338,10809,10809,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270221,T_cell_inflamed,marker_positive_fraction_ge2,0.2571005643,10809,10809,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270221,T_cell_inflamed,mean_log1p_CPM10k_all_cells,0.1960553527,10809,10809,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270221,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.07538047433,10809,8656,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.3158982098,10809,8656,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.5699793696,10809,8656,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.204523623,10809,8656,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.7287522554,10809,8656,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.07913740724,10809,6418,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.3138889968,10809,6418,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.6092647314,10809,6418,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.2321482599,10809,6418,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.7670559883,10809,6418,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.6989121437,10809,3455,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.3101007044,10809,3455,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.183845982,10809,3455,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.3597263098,10809,3455,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2279550135,10809,3455,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.9687082767,10809,2194,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.427385807,10809,2194,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.257732451,10809,2194,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.3972533643,10809,2194,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.3116234839,10809,2194,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.5399423838,10809,6489,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.7892661095,10809,6489,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.2181642801,10809,6489,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.3086333275,10809,6489,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270221,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.6597136855,10809,3591,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,1.096724391,10809,3591,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.2632309496,10809,3591,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270221,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.3296270967,10809,3591,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,tumor_epithelial_identity,marker_positive_fraction_ge1,0.7964474316,10415,10415,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270222,tumor_epithelial_identity,marker_positive_fraction_ge2,0.6120019203,10415,10415,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270222,tumor_epithelial_identity,mean_log1p_CPM10k_all_cells,0.7878549695,10415,10415,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270222,T_cell_identity,marker_positive_fraction_ge1,0.18674988,10415,10415,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270222,T_cell_identity,marker_positive_fraction_ge2,0.1063850216,10415,10415,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270222,T_cell_identity,mean_log1p_CPM10k_all_cells,0.1410892457,10415,10415,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270222,cytotoxic_T_NK,marker_positive_fraction_ge1,0.2574171867,10415,10415,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270222,cytotoxic_T_NK,marker_positive_fraction_ge2,0.1000480077,10415,10415,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270222,cytotoxic_T_NK,mean_log1p_CPM10k_all_cells,0.1291100085,10415,10415,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270222,Treg_identity,marker_positive_fraction_ge1,0.150456073,10415,10415,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270222,Treg_identity,marker_positive_fraction_ge2,0.03466154585,10415,10415,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270222,Treg_identity,mean_log1p_CPM10k_all_cells,0.07090602815,10415,10415,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270222,T_exhaustion,marker_positive_fraction_ge1,0.1604416707,10415,10415,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270222,T_exhaustion,marker_positive_fraction_ge2,0.02554008641,10415,10415,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270222,T_exhaustion,mean_log1p_CPM10k_all_cells,0.04864966497,10415,10415,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270222,monocyte_macrophage_identity,marker_positive_fraction_ge1,0.5379740759,10415,10415,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270222,monocyte_macrophage_identity,marker_positive_fraction_ge2,0.277868459,10415,10415,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270222,monocyte_macrophage_identity,mean_log1p_CPM10k_all_cells,0.3566952944,10415,10415,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270222,myeloid_suppressive_state,marker_positive_fraction_ge1,0.8389822372,10415,10415,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270222,myeloid_suppressive_state,marker_positive_fraction_ge2,0.6201632261,10415,10415,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270222,myeloid_suppressive_state,mean_log1p_CPM10k_all_cells,0.5017800331,10415,10415,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270222,neutrophil_identity,marker_positive_fraction_ge1,0.3055208833,10415,10415,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270222,neutrophil_identity,marker_positive_fraction_ge2,0.1067690831,10415,10415,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270222,neutrophil_identity,mean_log1p_CPM10k_all_cells,0.1638717055,10415,10415,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270222,antigen_presentation_MHCII,marker_positive_fraction_ge1,0.5522803649,10415,10415,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270222,antigen_presentation_MHCII,marker_positive_fraction_ge2,0.3061929909,10415,10415,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270222,antigen_presentation_MHCII,mean_log1p_CPM10k_all_cells,0.4456828237,10415,10415,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270222,B_cell_identity,marker_positive_fraction_ge1,0.08948631781,10415,10415,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270222,B_cell_identity,marker_positive_fraction_ge2,0.004416706673,10415,10415,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270222,B_cell_identity,mean_log1p_CPM10k_all_cells,0.02607673034,10415,10415,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270222,CAF_stromal_identity,marker_positive_fraction_ge1,0.5956793087,10415,10415,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270222,CAF_stromal_identity,marker_positive_fraction_ge2,0.3325972156,10415,10415,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270222,CAF_stromal_identity,mean_log1p_CPM10k_all_cells,0.2895906866,10415,10415,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270222,endothelial_identity,marker_positive_fraction_ge1,0.1951992319,10415,10415,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270222,endothelial_identity,marker_positive_fraction_ge2,0.06644263082,10415,10415,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270222,endothelial_identity,mean_log1p_CPM10k_all_cells,0.1163294688,10415,10415,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270222,HR_DNA_repair,marker_positive_fraction_ge1,0.456168987,10415,10415,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270222,HR_DNA_repair,marker_positive_fraction_ge2,0.2442630821,10415,10415,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270222,HR_DNA_repair,mean_log1p_CPM10k_all_cells,0.0663459152,10415,10415,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270222,DNA_damage_apoptosis,marker_positive_fraction_ge1,0.847143543,10415,10415,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270222,DNA_damage_apoptosis,marker_positive_fraction_ge2,0.6493518963,10415,10415,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270222,DNA_damage_apoptosis,mean_log1p_CPM10k_all_cells,0.2963248193,10415,10415,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270222,type_I_interferon,marker_positive_fraction_ge1,0.6208353337,10415,10415,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270222,type_I_interferon,marker_positive_fraction_ge2,0.2676908305,10415,10415,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270222,type_I_interferon,mean_log1p_CPM10k_all_cells,0.1671315581,10415,10415,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270222,IFN_gamma_response,marker_positive_fraction_ge1,0.6784445511,10415,10415,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270222,IFN_gamma_response,marker_positive_fraction_ge2,0.3783005281,10415,10415,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270222,IFN_gamma_response,mean_log1p_CPM10k_all_cells,0.2246387005,10415,10415,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270222,MAPK_ERK_output,marker_positive_fraction_ge1,0.8710513682,10415,10415,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270222,MAPK_ERK_output,marker_positive_fraction_ge2,0.7126260202,10415,10415,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270222,MAPK_ERK_output,mean_log1p_CPM10k_all_cells,0.5082330108,10415,10415,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270222,cell_cycle_proliferation,marker_positive_fraction_ge1,0.5619779165,10415,10415,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270222,cell_cycle_proliferation,marker_positive_fraction_ge2,0.3621699472,10415,10415,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270222,cell_cycle_proliferation,mean_log1p_CPM10k_all_cells,0.2191332132,10415,10415,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270222,EMT_TGF_beta,marker_positive_fraction_ge1,0.9090734518,10415,10415,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270222,EMT_TGF_beta,marker_positive_fraction_ge2,0.7599615939,10415,10415,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270222,EMT_TGF_beta,mean_log1p_CPM10k_all_cells,0.6296722293,10415,10415,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270222,immune_checkpoint,marker_positive_fraction_ge1,0.3241478637,10415,10415,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270222,immune_checkpoint,marker_positive_fraction_ge2,0.08650984157,10415,10415,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270222,immune_checkpoint,mean_log1p_CPM10k_all_cells,0.08440595865,10415,10415,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270222,T_cell_inflamed,marker_positive_fraction_ge1,0.3090734518,10415,10415,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270222,T_cell_inflamed,marker_positive_fraction_ge2,0.1354776764,10415,10415,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270222,T_cell_inflamed,mean_log1p_CPM10k_all_cells,0.1127071381,10415,10415,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270222,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.07327526063,10415,8295,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.2914063334,10415,8295,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.5255906582,10415,8295,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.2524441183,10415,8295,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.672737062,10415,8295,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.08008302748,10415,6374,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.2823943496,10415,6374,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.5442144275,10415,6374,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.2877562642,10415,6374,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.6994453669,10415,6374,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.577965498,10415,1945,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2978126407,10415,1945,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.1661331803,10415,1945,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2691110969,10415,1945,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2198188454,10415,1945,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.8991134167,10415,1108,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.425021708,10415,1108,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.2476936877,10415,1108,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.3144590259,10415,1108,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.3159639239,10415,1108,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.6223912239,10415,5603,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.6603640318,10415,5603,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.1906532794,10415,5603,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.2326898575,10415,5603,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270222,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.7612377405,10415,2894,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,1.005293846,10415,2894,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.2430511415,10415,2894,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270222,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.2487701029,10415,2894,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,tumor_epithelial_identity,marker_positive_fraction_ge1,0.7831213444,10771,10771,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270223,tumor_epithelial_identity,marker_positive_fraction_ge2,0.5904744221,10771,10771,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270223,tumor_epithelial_identity,mean_log1p_CPM10k_all_cells,0.7785398364,10771,10771,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270223,T_cell_identity,marker_positive_fraction_ge1,0.2078729923,10771,10771,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270223,T_cell_identity,marker_positive_fraction_ge2,0.1254293937,10771,10771,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270223,T_cell_identity,mean_log1p_CPM10k_all_cells,0.1714814156,10771,10771,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270223,cytotoxic_T_NK,marker_positive_fraction_ge1,0.3048927676,10771,10771,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270223,cytotoxic_T_NK,marker_positive_fraction_ge2,0.1211586668,10771,10771,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270223,cytotoxic_T_NK,mean_log1p_CPM10k_all_cells,0.1618994623,10771,10771,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270223,Treg_identity,marker_positive_fraction_ge1,0.1733358091,10771,10771,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270223,Treg_identity,marker_positive_fraction_ge2,0.0476278897,10771,10771,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270223,Treg_identity,mean_log1p_CPM10k_all_cells,0.08673331141,10771,10771,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270223,T_exhaustion,marker_positive_fraction_ge1,0.1902330331,10771,10771,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270223,T_exhaustion,marker_positive_fraction_ge2,0.04447126543,10771,10771,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270223,T_exhaustion,mean_log1p_CPM10k_all_cells,0.06743863225,10771,10771,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270223,monocyte_macrophage_identity,marker_positive_fraction_ge1,0.6764460124,10771,10771,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270223,monocyte_macrophage_identity,marker_positive_fraction_ge2,0.3929997215,10771,10771,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270223,monocyte_macrophage_identity,mean_log1p_CPM10k_all_cells,0.4884082675,10771,10771,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270223,myeloid_suppressive_state,marker_positive_fraction_ge1,0.8522885526,10771,10771,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270223,myeloid_suppressive_state,marker_positive_fraction_ge2,0.5952093585,10771,10771,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270223,myeloid_suppressive_state,mean_log1p_CPM10k_all_cells,0.5013275146,10771,10771,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270223,neutrophil_identity,marker_positive_fraction_ge1,0.3534490762,10771,10771,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270223,neutrophil_identity,marker_positive_fraction_ge2,0.1329495869,10771,10771,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270223,neutrophil_identity,mean_log1p_CPM10k_all_cells,0.1976352483,10771,10771,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270223,antigen_presentation_MHCII,marker_positive_fraction_ge1,0.6250116052,10771,10771,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270223,antigen_presentation_MHCII,marker_positive_fraction_ge2,0.384922477,10771,10771,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270223,antigen_presentation_MHCII,mean_log1p_CPM10k_all_cells,0.5500045419,10771,10771,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270223,B_cell_identity,marker_positive_fraction_ge1,0.1296072788,10771,10771,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270223,B_cell_identity,marker_positive_fraction_ge2,0.006870299879,10771,10771,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270223,B_cell_identity,mean_log1p_CPM10k_all_cells,0.0359076485,10771,10771,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270223,CAF_stromal_identity,marker_positive_fraction_ge1,0.7033701606,10771,10771,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270223,CAF_stromal_identity,marker_positive_fraction_ge2,0.4483334881,10771,10771,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270223,CAF_stromal_identity,mean_log1p_CPM10k_all_cells,0.4159242213,10771,10771,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270223,endothelial_identity,marker_positive_fraction_ge1,0.1433478786,10771,10771,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270223,endothelial_identity,marker_positive_fraction_ge2,0.02840961842,10771,10771,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270223,endothelial_identity,mean_log1p_CPM10k_all_cells,0.06181766093,10771,10771,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270223,HR_DNA_repair,marker_positive_fraction_ge1,0.4343143626,10771,10771,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270223,HR_DNA_repair,marker_positive_fraction_ge2,0.2032308978,10771,10771,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270223,HR_DNA_repair,mean_log1p_CPM10k_all_cells,0.0588732399,10771,10771,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270223,DNA_damage_apoptosis,marker_positive_fraction_ge1,0.855352335,10771,10771,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270223,DNA_damage_apoptosis,marker_positive_fraction_ge2,0.6562993223,10771,10771,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270223,DNA_damage_apoptosis,mean_log1p_CPM10k_all_cells,0.3114132285,10771,10771,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270223,type_I_interferon,marker_positive_fraction_ge1,0.6893510352,10771,10771,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270223,type_I_interferon,marker_positive_fraction_ge2,0.3211400984,10771,10771,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270223,type_I_interferon,mean_log1p_CPM10k_all_cells,0.1936958879,10771,10771,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270223,IFN_gamma_response,marker_positive_fraction_ge1,0.7403212329,10771,10771,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270223,IFN_gamma_response,marker_positive_fraction_ge2,0.4435985517,10771,10771,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270223,IFN_gamma_response,mean_log1p_CPM10k_all_cells,0.2599512339,10771,10771,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270223,MAPK_ERK_output,marker_positive_fraction_ge1,0.8989880234,10771,10771,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270223,MAPK_ERK_output,marker_positive_fraction_ge2,0.7632531798,10771,10771,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270223,MAPK_ERK_output,mean_log1p_CPM10k_all_cells,0.6070592999,10771,10771,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270223,cell_cycle_proliferation,marker_positive_fraction_ge1,0.4937331724,10771,10771,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270223,cell_cycle_proliferation,marker_positive_fraction_ge2,0.2671061183,10771,10771,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270223,cell_cycle_proliferation,mean_log1p_CPM10k_all_cells,0.1574391574,10771,10771,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270223,EMT_TGF_beta,marker_positive_fraction_ge1,0.9071581097,10771,10771,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270223,EMT_TGF_beta,marker_positive_fraction_ge2,0.7575898245,10771,10771,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270223,EMT_TGF_beta,mean_log1p_CPM10k_all_cells,0.6385301352,10771,10771,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270223,immune_checkpoint,marker_positive_fraction_ge1,0.3674682017,10771,10771,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270223,immune_checkpoint,marker_positive_fraction_ge2,0.1123386872,10771,10771,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270223,immune_checkpoint,mean_log1p_CPM10k_all_cells,0.1065471545,10771,10771,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270223,T_cell_inflamed,marker_positive_fraction_ge1,0.3431436264,10771,10771,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270223,T_cell_inflamed,marker_positive_fraction_ge2,0.1615448891,10771,10771,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270223,T_cell_inflamed,mean_log1p_CPM10k_all_cells,0.1344023049,10771,10771,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270223,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.06407637894,10771,8435,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.3008145094,10771,8435,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.6255132556,10771,8435,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.1798524261,10771,8435,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.6901895404,10771,8435,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.06748315692,10771,6360,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.2850707173,10771,6360,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.6369386911,10771,6360,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.1960570514,10771,6360,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.7139196992,10771,6360,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.6377502084,10771,2239,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.349920392,10771,2239,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2432429492,10771,2239,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.3033985198,10771,2239,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2895410657,10771,2239,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.9629282951,10771,1351,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.5224748254,10771,1351,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.3640063405,10771,1351,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.3257618546,10771,1351,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.4227055609,10771,1351,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.5850063562,10771,7286,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.7003512383,10771,7286,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.2075900286,10771,7286,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.2687908411,10771,7286,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270223,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.7182281613,10771,4233,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.9809876084,10771,4233,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.2413265854,10771,4233,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270223,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.2858348489,10771,4233,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,tumor_epithelial_identity,marker_positive_fraction_ge1,0.878894333,10817,10817,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270224,tumor_epithelial_identity,marker_positive_fraction_ge2,0.731626144,10817,10817,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270224,tumor_epithelial_identity,mean_log1p_CPM10k_all_cells,0.933322072,10817,10817,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270224,T_cell_identity,marker_positive_fraction_ge1,0.2358324859,10817,10817,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270224,T_cell_identity,marker_positive_fraction_ge2,0.1334935749,10817,10817,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270224,T_cell_identity,mean_log1p_CPM10k_all_cells,0.1819253862,10817,10817,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270224,cytotoxic_T_NK,marker_positive_fraction_ge1,0.3622076361,10817,10817,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270224,cytotoxic_T_NK,marker_positive_fraction_ge2,0.1449570121,10817,10817,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270224,cytotoxic_T_NK,mean_log1p_CPM10k_all_cells,0.1831095517,10817,10817,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270224,Treg_identity,marker_positive_fraction_ge1,0.1503189424,10817,10817,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270224,Treg_identity,marker_positive_fraction_ge2,0.03143200518,10817,10817,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270224,Treg_identity,mean_log1p_CPM10k_all_cells,0.0629928112,10817,10817,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270224,T_exhaustion,marker_positive_fraction_ge1,0.1809189239,10817,10817,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270224,T_exhaustion,marker_positive_fraction_ge2,0.03374318203,10817,10817,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270224,T_exhaustion,mean_log1p_CPM10k_all_cells,0.05391446874,10817,10817,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270224,monocyte_macrophage_identity,marker_positive_fraction_ge1,0.3777387446,10817,10817,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270224,monocyte_macrophage_identity,marker_positive_fraction_ge2,0.1365443284,10817,10817,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270224,monocyte_macrophage_identity,mean_log1p_CPM10k_all_cells,0.1711514145,10817,10817,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270224,myeloid_suppressive_state,marker_positive_fraction_ge1,0.8650272719,10817,10817,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270224,myeloid_suppressive_state,marker_positive_fraction_ge2,0.6523065545,10817,10817,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270224,myeloid_suppressive_state,mean_log1p_CPM10k_all_cells,0.463625282,10817,10817,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270224,neutrophil_identity,marker_positive_fraction_ge1,0.1603032264,10817,10817,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270224,neutrophil_identity,marker_positive_fraction_ge2,0.05084589073,10817,10817,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270224,neutrophil_identity,mean_log1p_CPM10k_all_cells,0.08343914151,10817,10817,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270224,antigen_presentation_MHCII,marker_positive_fraction_ge1,0.5651289637,10817,10817,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270224,antigen_presentation_MHCII,marker_positive_fraction_ge2,0.3004529907,10817,10817,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270224,antigen_presentation_MHCII,mean_log1p_CPM10k_all_cells,0.3612035215,10817,10817,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270224,B_cell_identity,marker_positive_fraction_ge1,0.07876490709,10817,10817,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270224,B_cell_identity,marker_positive_fraction_ge2,0.002403623925,10817,10817,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270224,B_cell_identity,mean_log1p_CPM10k_all_cells,0.0205077529,10817,10817,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270224,CAF_stromal_identity,marker_positive_fraction_ge1,0.7485439586,10817,10817,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270224,CAF_stromal_identity,marker_positive_fraction_ge2,0.5038365536,10817,10817,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270224,CAF_stromal_identity,mean_log1p_CPM10k_all_cells,0.3808566332,10817,10817,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270224,endothelial_identity,marker_positive_fraction_ge1,0.2207636128,10817,10817,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270224,endothelial_identity,marker_positive_fraction_ge2,0.06628455209,10817,10817,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270224,endothelial_identity,mean_log1p_CPM10k_all_cells,0.1215089634,10817,10817,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270224,HR_DNA_repair,marker_positive_fraction_ge1,0.5581954331,10817,10817,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270224,HR_DNA_repair,marker_positive_fraction_ge2,0.3072016271,10817,10817,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270224,HR_DNA_repair,mean_log1p_CPM10k_all_cells,0.08219965547,10817,10817,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270224,DNA_damage_apoptosis,marker_positive_fraction_ge1,0.8634556716,10817,10817,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270224,DNA_damage_apoptosis,marker_positive_fraction_ge2,0.7001016918,10817,10817,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270224,DNA_damage_apoptosis,mean_log1p_CPM10k_all_cells,0.2972865105,10817,10817,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270224,type_I_interferon,marker_positive_fraction_ge1,0.6532310252,10817,10817,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270224,type_I_interferon,marker_positive_fraction_ge2,0.2840898586,10817,10817,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270224,type_I_interferon,mean_log1p_CPM10k_all_cells,0.1449749023,10817,10817,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270224,IFN_gamma_response,marker_positive_fraction_ge1,0.8395118794,10817,10817,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270224,IFN_gamma_response,marker_positive_fraction_ge2,0.605528335,10817,10817,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270224,IFN_gamma_response,mean_log1p_CPM10k_all_cells,0.3614584804,10817,10817,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270224,MAPK_ERK_output,marker_positive_fraction_ge1,0.8857354165,10817,10817,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270224,MAPK_ERK_output,marker_positive_fraction_ge2,0.750300453,10817,10817,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270224,MAPK_ERK_output,mean_log1p_CPM10k_all_cells,0.551330328,10817,10817,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270224,cell_cycle_proliferation,marker_positive_fraction_ge1,0.6496255894,10817,10817,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270224,cell_cycle_proliferation,marker_positive_fraction_ge2,0.4407876491,10817,10817,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270224,cell_cycle_proliferation,mean_log1p_CPM10k_all_cells,0.25464347,10817,10817,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270224,EMT_TGF_beta,marker_positive_fraction_ge1,0.9488767681,10817,10817,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270224,EMT_TGF_beta,marker_positive_fraction_ge2,0.8268466303,10817,10817,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270224,EMT_TGF_beta,mean_log1p_CPM10k_all_cells,0.7071749568,10817,10817,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270224,immune_checkpoint,marker_positive_fraction_ge1,0.3341037256,10817,10817,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270224,immune_checkpoint,marker_positive_fraction_ge2,0.09429601553,10817,10817,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270224,immune_checkpoint,mean_log1p_CPM10k_all_cells,0.07969737053,10817,10817,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270224,T_cell_inflamed,marker_positive_fraction_ge1,0.4675973005,10817,10817,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270224,T_cell_inflamed,marker_positive_fraction_ge2,0.2233521309,10817,10817,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270224,T_cell_inflamed,mean_log1p_CPM10k_all_cells,0.1666543782,10817,10817,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270224,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.08686883003,10817,9507,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.2992660105,10817,9507,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.5704756975,10817,9507,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.2778210342,10817,9507,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.7370115519,10817,9507,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.09238931537,10817,7914,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.3006448448,10817,7914,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.5968872309,10817,7914,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.3060466647,10817,7914,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.7608997822,10817,7914,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.6540941596,10817,2551,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.224781543,10817,2551,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.1657723635,10817,2551,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.4034995735,10817,2551,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2035895437,10817,2551,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,1.019230008,10817,1444,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.3457022011,10817,1444,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.2649559677,10817,1444,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.4212912917,10817,1444,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.3144374788,10817,1444,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.5565993786,10817,4086,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.6160925031,10817,4086,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.1627111882,10817,4086,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.3825829327,10817,4086,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270224,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.667868197,10817,1477,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,1.224884391,10817,1477,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.222061038,10817,1477,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270224,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.4241814315,10817,1477,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,tumor_epithelial_identity,marker_positive_fraction_ge1,0.7205620776,11244,11244,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270225,tumor_epithelial_identity,marker_positive_fraction_ge2,0.538153682,11244,11244,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270225,tumor_epithelial_identity,mean_log1p_CPM10k_all_cells,0.6412100196,11244,11244,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270225,T_cell_identity,marker_positive_fraction_ge1,0.1782283885,11244,11244,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270225,T_cell_identity,marker_positive_fraction_ge2,0.1148167912,11244,11244,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270225,T_cell_identity,mean_log1p_CPM10k_all_cells,0.1648951769,11244,11244,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270225,cytotoxic_T_NK,marker_positive_fraction_ge1,0.2773034507,11244,11244,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270225,cytotoxic_T_NK,marker_positive_fraction_ge2,0.1107257204,11244,11244,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270225,cytotoxic_T_NK,mean_log1p_CPM10k_all_cells,0.1594153941,11244,11244,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270225,Treg_identity,marker_positive_fraction_ge1,0.1301138385,11244,11244,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270225,Treg_identity,marker_positive_fraction_ge2,0.02783706866,11244,11244,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270225,Treg_identity,mean_log1p_CPM10k_all_cells,0.05932935327,11244,11244,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270225,T_exhaustion,marker_positive_fraction_ge1,0.1495908929,11244,11244,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270225,T_exhaustion,marker_positive_fraction_ge2,0.02543578798,11244,11244,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270225,T_exhaustion,mean_log1p_CPM10k_all_cells,0.05015379936,11244,11244,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270225,monocyte_macrophage_identity,marker_positive_fraction_ge1,0.4855923159,11244,11244,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270225,monocyte_macrophage_identity,marker_positive_fraction_ge2,0.2288331555,11244,11244,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270225,monocyte_macrophage_identity,mean_log1p_CPM10k_all_cells,0.3185670972,11244,11244,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270225,myeloid_suppressive_state,marker_positive_fraction_ge1,0.8214158662,11244,11244,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270225,myeloid_suppressive_state,marker_positive_fraction_ge2,0.5565635005,11244,11244,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270225,myeloid_suppressive_state,mean_log1p_CPM10k_all_cells,0.4165393412,11244,11244,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270225,neutrophil_identity,marker_positive_fraction_ge1,0.2225186766,11244,11244,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270225,neutrophil_identity,marker_positive_fraction_ge2,0.07221629313,11244,11244,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270225,neutrophil_identity,mean_log1p_CPM10k_all_cells,0.1295591444,11244,11244,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270225,antigen_presentation_MHCII,marker_positive_fraction_ge1,0.626378513,11244,11244,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270225,antigen_presentation_MHCII,marker_positive_fraction_ge2,0.3704197794,11244,11244,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270225,antigen_presentation_MHCII,mean_log1p_CPM10k_all_cells,0.5370137691,11244,11244,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270225,B_cell_identity,marker_positive_fraction_ge1,0.08457844184,11244,11244,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270225,B_cell_identity,marker_positive_fraction_ge2,0.001422981145,11244,11244,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270225,B_cell_identity,mean_log1p_CPM10k_all_cells,0.02362203784,11244,11244,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270225,CAF_stromal_identity,marker_positive_fraction_ge1,0.7871753824,11244,11244,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270225,CAF_stromal_identity,marker_positive_fraction_ge2,0.557808609,11244,11244,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270225,CAF_stromal_identity,mean_log1p_CPM10k_all_cells,0.5865584612,11244,11244,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270225,endothelial_identity,marker_positive_fraction_ge1,0.2011739594,11244,11244,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270225,endothelial_identity,marker_positive_fraction_ge2,0.0906261117,11244,11244,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270225,endothelial_identity,mean_log1p_CPM10k_all_cells,0.1556663513,11244,11244,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270225,HR_DNA_repair,marker_positive_fraction_ge1,0.4606901459,11244,11244,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270225,HR_DNA_repair,marker_positive_fraction_ge2,0.2101565279,11244,11244,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270225,HR_DNA_repair,mean_log1p_CPM10k_all_cells,0.06311424822,11244,11244,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270225,DNA_damage_apoptosis,marker_positive_fraction_ge1,0.8748665955,11244,11244,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270225,DNA_damage_apoptosis,marker_positive_fraction_ge2,0.6901458556,11244,11244,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270225,DNA_damage_apoptosis,mean_log1p_CPM10k_all_cells,0.3183625937,11244,11244,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270225,type_I_interferon,marker_positive_fraction_ge1,0.684453931,11244,11244,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270225,type_I_interferon,marker_positive_fraction_ge2,0.3238171469,11244,11244,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270225,type_I_interferon,mean_log1p_CPM10k_all_cells,0.1833433956,11244,11244,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270225,IFN_gamma_response,marker_positive_fraction_ge1,0.8201707577,11244,11244,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270225,IFN_gamma_response,marker_positive_fraction_ge2,0.5683920313,11244,11244,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270225,IFN_gamma_response,mean_log1p_CPM10k_all_cells,0.3871015608,11244,11244,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270225,MAPK_ERK_output,marker_positive_fraction_ge1,0.870864461,11244,11244,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270225,MAPK_ERK_output,marker_positive_fraction_ge2,0.7224297403,11244,11244,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270225,MAPK_ERK_output,mean_log1p_CPM10k_all_cells,0.5182352662,11244,11244,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270225,cell_cycle_proliferation,marker_positive_fraction_ge1,0.522411953,11244,11244,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270225,cell_cycle_proliferation,marker_positive_fraction_ge2,0.3103877624,11244,11244,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270225,cell_cycle_proliferation,mean_log1p_CPM10k_all_cells,0.184204638,11244,11244,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270225,EMT_TGF_beta,marker_positive_fraction_ge1,0.9371220206,11244,11244,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270225,EMT_TGF_beta,marker_positive_fraction_ge2,0.8300426894,11244,11244,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270225,EMT_TGF_beta,mean_log1p_CPM10k_all_cells,0.7716876268,11244,11244,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270225,immune_checkpoint,marker_positive_fraction_ge1,0.30585201,11244,11244,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270225,immune_checkpoint,marker_positive_fraction_ge2,0.07977588047,11244,11244,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270225,immune_checkpoint,mean_log1p_CPM10k_all_cells,0.08258980513,11244,11244,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270225,T_cell_inflamed,marker_positive_fraction_ge1,0.4237815724,11244,11244,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270225,T_cell_inflamed,marker_positive_fraction_ge2,0.1846318036,11244,11244,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270225,T_cell_inflamed,mean_log1p_CPM10k_all_cells,0.1558905989,11244,11244,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270225,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.07111749798,11244,8102,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.3135356307,11244,8102,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.5248787403,11244,8102,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.2197578549,11244,8102,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.8321214914,11244,8102,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.07765743136,11244,6051,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.3027792275,11244,6051,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.5152441263,11244,6051,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.2469377518,11244,6051,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.8321440816,11244,6051,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.7401918769,11244,2004,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2706000805,11244,2004,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2011701763,11244,2004,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.4060444534,11244,2004,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2424339205,11244,2004,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,1.06374836,11244,1291,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.3614585102,11244,1291,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.2825586498,11244,1291,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.409075588,11244,1291,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.3306140304,11244,1291,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.5288714767,11244,5460,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.8350902796,11244,5460,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.2157167047,11244,5460,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.4048548639,11244,5460,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270225,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.6759881973,11244,2573,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,1.390692234,11244,2573,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.2797254324,11244,2573,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270225,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.4318266809,11244,2573,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,tumor_epithelial_identity,marker_positive_fraction_ge1,0.881342701,1281,1281,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270226,tumor_epithelial_identity,marker_positive_fraction_ge2,0.6869633099,1281,1281,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270226,tumor_epithelial_identity,mean_log1p_CPM10k_all_cells,0.9759796858,1281,1281,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270226,T_cell_identity,marker_positive_fraction_ge1,0.03356752537,1281,1281,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270226,T_cell_identity,marker_positive_fraction_ge2,0.005464480874,1281,1281,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270226,T_cell_identity,mean_log1p_CPM10k_all_cells,0.01355776284,1281,1281,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270226,cytotoxic_T_NK,marker_positive_fraction_ge1,0.02263856362,1281,1281,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270226,cytotoxic_T_NK,marker_positive_fraction_ge2,0.007806401249,1281,1281,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270226,cytotoxic_T_NK,mean_log1p_CPM10k_all_cells,0.01324162912,1281,1281,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270226,Treg_identity,marker_positive_fraction_ge1,0.06479313037,1281,1281,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270226,Treg_identity,marker_positive_fraction_ge2,0.00156128025,1281,1281,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270226,Treg_identity,mean_log1p_CPM10k_all_cells,0.02117712423,1281,1281,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270226,T_exhaustion,marker_positive_fraction_ge1,0.06167056987,1281,1281,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270226,T_exhaustion,marker_positive_fraction_ge2,0.0031225605,1281,1281,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270226,T_exhaustion,mean_log1p_CPM10k_all_cells,0.0179592371,1281,1281,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270226,monocyte_macrophage_identity,marker_positive_fraction_ge1,0.05152224824,1281,1281,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270226,monocyte_macrophage_identity,marker_positive_fraction_ge2,0.004683840749,1281,1281,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270226,monocyte_macrophage_identity,mean_log1p_CPM10k_all_cells,0.01997389272,1281,1281,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270226,myeloid_suppressive_state,marker_positive_fraction_ge1,0.725214676,1281,1281,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270226,myeloid_suppressive_state,marker_positive_fraction_ge2,0.3692427791,1281,1281,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270226,myeloid_suppressive_state,mean_log1p_CPM10k_all_cells,0.3282463849,1281,1281,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270226,neutrophil_identity,marker_positive_fraction_ge1,0.3364558938,1281,1281,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270226,neutrophil_identity,marker_positive_fraction_ge2,0.09523809524,1281,1281,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270226,neutrophil_identity,mean_log1p_CPM10k_all_cells,0.1941360533,1281,1281,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270226,antigen_presentation_MHCII,marker_positive_fraction_ge1,0.4324746292,1281,1281,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270226,antigen_presentation_MHCII,marker_positive_fraction_ge2,0.2045277127,1281,1281,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270226,antigen_presentation_MHCII,mean_log1p_CPM10k_all_cells,0.2954905927,1281,1281,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270226,B_cell_identity,marker_positive_fraction_ge1,0.02107728337,1281,1281,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270226,B_cell_identity,marker_positive_fraction_ge2,0,1281,1281,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270226,B_cell_identity,mean_log1p_CPM10k_all_cells,0.007744149771,1281,1281,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270226,CAF_stromal_identity,marker_positive_fraction_ge1,0.7228727557,1281,1281,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270226,CAF_stromal_identity,marker_positive_fraction_ge2,0.4301327088,1281,1281,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270226,CAF_stromal_identity,mean_log1p_CPM10k_all_cells,0.5158471465,1281,1281,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270226,endothelial_identity,marker_positive_fraction_ge1,0.2037470726,1281,1281,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270226,endothelial_identity,marker_positive_fraction_ge2,0.1194379391,1281,1281,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270226,endothelial_identity,mean_log1p_CPM10k_all_cells,0.2255231887,1281,1281,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270226,HR_DNA_repair,marker_positive_fraction_ge1,0.3403590945,1281,1281,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270226,HR_DNA_repair,marker_positive_fraction_ge2,0.1116315379,1281,1281,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270226,HR_DNA_repair,mean_log1p_CPM10k_all_cells,0.05417981371,1281,1281,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270226,DNA_damage_apoptosis,marker_positive_fraction_ge1,0.7548790008,1281,1281,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270226,DNA_damage_apoptosis,marker_positive_fraction_ge2,0.4894613583,1281,1281,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270226,DNA_damage_apoptosis,mean_log1p_CPM10k_all_cells,0.2512868941,1281,1281,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270226,type_I_interferon,marker_positive_fraction_ge1,0.7962529274,1281,1281,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270226,type_I_interferon,marker_positive_fraction_ge2,0.5370804059,1281,1281,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270226,type_I_interferon,mean_log1p_CPM10k_all_cells,0.365958035,1281,1281,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270226,IFN_gamma_response,marker_positive_fraction_ge1,0.8524590164,1281,1281,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270226,IFN_gamma_response,marker_positive_fraction_ge2,0.6057767369,1281,1281,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270226,IFN_gamma_response,mean_log1p_CPM10k_all_cells,0.5253493786,1281,1281,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270226,MAPK_ERK_output,marker_positive_fraction_ge1,0.9039812646,1281,1281,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270226,MAPK_ERK_output,marker_positive_fraction_ge2,0.7540983607,1281,1281,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270226,MAPK_ERK_output,mean_log1p_CPM10k_all_cells,0.6495150328,1281,1281,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270226,cell_cycle_proliferation,marker_positive_fraction_ge1,0.362217018,1281,1281,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270226,cell_cycle_proliferation,marker_positive_fraction_ge2,0.1327088212,1281,1281,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270226,cell_cycle_proliferation,mean_log1p_CPM10k_all_cells,0.09825079888,1281,1281,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270226,EMT_TGF_beta,marker_positive_fraction_ge1,0.9234972678,1281,1281,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270226,EMT_TGF_beta,marker_positive_fraction_ge2,0.7634660422,1281,1281,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270226,EMT_TGF_beta,mean_log1p_CPM10k_all_cells,0.6627996564,1281,1281,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270226,immune_checkpoint,marker_positive_fraction_ge1,0.2131147541,1281,1281,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270226,immune_checkpoint,marker_positive_fraction_ge2,0.02107728337,1281,1281,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270226,immune_checkpoint,mean_log1p_CPM10k_all_cells,0.04987831786,1281,1281,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270226,T_cell_inflamed,marker_positive_fraction_ge1,0.3075722092,1281,1281,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270226,T_cell_inflamed,marker_positive_fraction_ge2,0.08352849336,1281,1281,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270226,T_cell_inflamed,mean_log1p_CPM10k_all_cells,0.08417911828,1281,1281,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270226,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.05694731325,1281,1129,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.2524910271,1281,1129,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.6387455463,1281,1129,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.1034739688,1281,1129,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.660923779,1281,1129,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.06316004694,1281,880,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.2531346381,1281,880,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.6242574453,1281,880,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.1144984886,1281,880,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.6485028267,1281,880,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2997288406,1281,43,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.1582619548,1281,43,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.14466995,1281,43,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.6104965806,1281,43,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.1624115258,1281,43,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,1281,7,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,1281,7,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,1281,7,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,1281,7,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,,1281,7,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.3255447149,1281,66,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.4586410224,1281,66,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.3649586439,1281,66,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.4465577304,1281,66,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270226,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,,1281,6,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,,1281,6,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,,1281,6,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270226,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,,1281,6,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,tumor_epithelial_identity,marker_positive_fraction_ge1,0.752146789,13625,13625,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270227,tumor_epithelial_identity,marker_positive_fraction_ge2,0.5388623853,13625,13625,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270227,tumor_epithelial_identity,mean_log1p_CPM10k_all_cells,0.7063201666,13625,13625,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270227,T_cell_identity,marker_positive_fraction_ge1,0.1416513761,13625,13625,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270227,T_cell_identity,marker_positive_fraction_ge2,0.08286238532,13625,13625,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270227,T_cell_identity,mean_log1p_CPM10k_all_cells,0.1032583863,13625,13625,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270227,cytotoxic_T_NK,marker_positive_fraction_ge1,0.2249541284,13625,13625,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270227,cytotoxic_T_NK,marker_positive_fraction_ge2,0.08755963303,13625,13625,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270227,cytotoxic_T_NK,mean_log1p_CPM10k_all_cells,0.1159270629,13625,13625,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270227,Treg_identity,marker_positive_fraction_ge1,0.1571376147,13625,13625,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270227,Treg_identity,marker_positive_fraction_ge2,0.03544954128,13625,13625,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270227,Treg_identity,mean_log1p_CPM10k_all_cells,0.08107346296,13625,13625,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270227,T_exhaustion,marker_positive_fraction_ge1,0.1522201835,13625,13625,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270227,T_exhaustion,marker_positive_fraction_ge2,0.04293577982,13625,13625,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270227,T_exhaustion,mean_log1p_CPM10k_all_cells,0.06200521439,13625,13625,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270227,monocyte_macrophage_identity,marker_positive_fraction_ge1,0.5953027523,13625,13625,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270227,monocyte_macrophage_identity,marker_positive_fraction_ge2,0.3302752294,13625,13625,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270227,monocyte_macrophage_identity,mean_log1p_CPM10k_all_cells,0.4622791708,13625,13625,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270227,myeloid_suppressive_state,marker_positive_fraction_ge1,0.7880366972,13625,13625,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270227,myeloid_suppressive_state,marker_positive_fraction_ge2,0.4519633028,13625,13625,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270227,myeloid_suppressive_state,mean_log1p_CPM10k_all_cells,0.3596065938,13625,13625,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270227,neutrophil_identity,marker_positive_fraction_ge1,0.2093944954,13625,13625,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270227,neutrophil_identity,marker_positive_fraction_ge2,0.05746788991,13625,13625,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270227,neutrophil_identity,mean_log1p_CPM10k_all_cells,0.1015464216,13625,13625,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270227,antigen_presentation_MHCII,marker_positive_fraction_ge1,0.6438165138,13625,13625,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270227,antigen_presentation_MHCII,marker_positive_fraction_ge2,0.3904587156,13625,13625,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270227,antigen_presentation_MHCII,mean_log1p_CPM10k_all_cells,0.6100481749,13625,13625,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270227,B_cell_identity,marker_positive_fraction_ge1,0.08183486239,13625,13625,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270227,B_cell_identity,marker_positive_fraction_ge2,0.001834862385,13625,13625,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270227,B_cell_identity,mean_log1p_CPM10k_all_cells,0.02126987837,13625,13625,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270227,CAF_stromal_identity,marker_positive_fraction_ge1,0.8377247706,13625,13625,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270227,CAF_stromal_identity,marker_positive_fraction_ge2,0.6333944954,13625,13625,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270227,CAF_stromal_identity,mean_log1p_CPM10k_all_cells,0.8348752856,13625,13625,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270227,endothelial_identity,marker_positive_fraction_ge1,0.1911192661,13625,13625,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270227,endothelial_identity,marker_positive_fraction_ge2,0.08264220183,13625,13625,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270227,endothelial_identity,mean_log1p_CPM10k_all_cells,0.1397618651,13625,13625,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270227,HR_DNA_repair,marker_positive_fraction_ge1,0.3608073394,13625,13625,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270227,HR_DNA_repair,marker_positive_fraction_ge2,0.1393761468,13625,13625,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270227,HR_DNA_repair,mean_log1p_CPM10k_all_cells,0.050778348,13625,13625,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270227,DNA_damage_apoptosis,marker_positive_fraction_ge1,0.8239266055,13625,13625,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270227,DNA_damage_apoptosis,marker_positive_fraction_ge2,0.5895045872,13625,13625,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270227,DNA_damage_apoptosis,mean_log1p_CPM10k_all_cells,0.2851663828,13625,13625,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270227,type_I_interferon,marker_positive_fraction_ge1,0.8772110092,13625,13625,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270227,type_I_interferon,marker_positive_fraction_ge2,0.6123302752,13625,13625,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270227,type_I_interferon,mean_log1p_CPM10k_all_cells,0.415697962,13625,13625,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270227,IFN_gamma_response,marker_positive_fraction_ge1,0.792,13625,13625,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270227,IFN_gamma_response,marker_positive_fraction_ge2,0.5368807339,13625,13625,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270227,IFN_gamma_response,mean_log1p_CPM10k_all_cells,0.3580218554,13625,13625,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270227,MAPK_ERK_output,marker_positive_fraction_ge1,0.863412844,13625,13625,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270227,MAPK_ERK_output,marker_positive_fraction_ge2,0.7157431193,13625,13625,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270227,MAPK_ERK_output,mean_log1p_CPM10k_all_cells,0.5541211963,13625,13625,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270227,cell_cycle_proliferation,marker_positive_fraction_ge1,0.4010275229,13625,13625,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270227,cell_cycle_proliferation,marker_positive_fraction_ge2,0.191853211,13625,13625,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270227,cell_cycle_proliferation,mean_log1p_CPM10k_all_cells,0.1236578822,13625,13625,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270227,EMT_TGF_beta,marker_positive_fraction_ge1,0.919559633,13625,13625,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270227,EMT_TGF_beta,marker_positive_fraction_ge2,0.7691009174,13625,13625,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270227,EMT_TGF_beta,mean_log1p_CPM10k_all_cells,0.6730876565,13625,13625,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270227,immune_checkpoint,marker_positive_fraction_ge1,0.3062018349,13625,13625,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270227,immune_checkpoint,marker_positive_fraction_ge2,0.09174311927,13625,13625,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270227,immune_checkpoint,mean_log1p_CPM10k_all_cells,0.09269949049,13625,13625,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270227,T_cell_inflamed,marker_positive_fraction_ge1,0.3621284404,13625,13625,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270227,T_cell_inflamed,marker_positive_fraction_ge2,0.1448073394,13625,13625,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270227,T_cell_inflamed,mean_log1p_CPM10k_all_cells,0.1187830046,13625,13625,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270227,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.05570958927,13625,10248,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.2826015055,13625,10248,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.5683973432,13625,10248,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.141458571,13625,10248,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.6997333169,13625,10248,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.06074898317,13625,7342,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.2709589899,13625,7342,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.5545142293,13625,7342,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.160525158,13625,7342,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.6816132069,13625,7342,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.6412407756,13625,1930,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.4302604198,13625,1930,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.3163106143,13625,1930,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.3642912209,13625,1930,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.3418025374,13625,1930,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.9150515199,13625,1129,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.6255400777,13625,1129,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.4769883454,13625,1129,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.352817595,13625,1129,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.4926235974,13625,1129,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.4381947815,13625,8111,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.8501973152,13625,8111,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.4571139514,13625,8111,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.366584599,13625,8111,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270227,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.5514215231,13625,4500,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,1.264048815,13625,4500,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.5112060905,13625,4500,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270227,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.3694467843,13625,4500,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,tumor_epithelial_identity,marker_positive_fraction_ge1,0.7488765806,9569,9569,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270228,tumor_epithelial_identity,marker_positive_fraction_ge2,0.5208485735,9569,9569,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270228,tumor_epithelial_identity,mean_log1p_CPM10k_all_cells,0.6621442437,9569,9569,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270228,T_cell_identity,marker_positive_fraction_ge1,0.1436931759,9569,9569,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270228,T_cell_identity,marker_positive_fraction_ge2,0.08370780646,9569,9569,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270228,T_cell_identity,mean_log1p_CPM10k_all_cells,0.1254878193,9569,9569,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270228,cytotoxic_T_NK,marker_positive_fraction_ge1,0.1996028843,9569,9569,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270228,cytotoxic_T_NK,marker_positive_fraction_ge2,0.07545198035,9569,9569,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270228,cytotoxic_T_NK,mean_log1p_CPM10k_all_cells,0.1053508893,9569,9569,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270228,Treg_identity,marker_positive_fraction_ge1,0.1447382172,9569,9569,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270228,Treg_identity,marker_positive_fraction_ge2,0.03500888285,9569,9569,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270228,Treg_identity,mean_log1p_CPM10k_all_cells,0.06469751894,9569,9569,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270228,T_exhaustion,marker_positive_fraction_ge1,0.1679381336,9569,9569,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270228,T_exhaustion,marker_positive_fraction_ge2,0.03615842826,9569,9569,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270228,T_exhaustion,mean_log1p_CPM10k_all_cells,0.05432061851,9569,9569,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270228,monocyte_macrophage_identity,marker_positive_fraction_ge1,0.4858396907,9569,9569,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270228,monocyte_macrophage_identity,marker_positive_fraction_ge2,0.2202947016,9569,9569,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270228,monocyte_macrophage_identity,mean_log1p_CPM10k_all_cells,0.3185789883,9569,9569,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270228,myeloid_suppressive_state,marker_positive_fraction_ge1,0.8165952555,9569,9569,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270228,myeloid_suppressive_state,marker_positive_fraction_ge2,0.5091441112,9569,9569,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270228,myeloid_suppressive_state,mean_log1p_CPM10k_all_cells,0.3756111562,9569,9569,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270228,neutrophil_identity,marker_positive_fraction_ge1,0.1361688787,9569,9569,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270228,neutrophil_identity,marker_positive_fraction_ge2,0.03647194064,9569,9569,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270228,neutrophil_identity,mean_log1p_CPM10k_all_cells,0.06603931636,9569,9569,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270228,antigen_presentation_MHCII,marker_positive_fraction_ge1,0.6474030724,9569,9569,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270228,antigen_presentation_MHCII,marker_positive_fraction_ge2,0.4031769255,9569,9569,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270228,antigen_presentation_MHCII,mean_log1p_CPM10k_all_cells,0.5704392791,9569,9569,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270228,B_cell_identity,marker_positive_fraction_ge1,0.0977113596,9569,9569,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270228,B_cell_identity,marker_positive_fraction_ge2,0.003239627965,9569,9569,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270228,B_cell_identity,mean_log1p_CPM10k_all_cells,0.02284706943,9569,9569,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270228,CAF_stromal_identity,marker_positive_fraction_ge1,0.857038353,9569,9569,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270228,CAF_stromal_identity,marker_positive_fraction_ge2,0.6397742711,9569,9569,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270228,CAF_stromal_identity,mean_log1p_CPM10k_all_cells,0.7547801137,9569,9569,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270228,endothelial_identity,marker_positive_fraction_ge1,0.3465356882,9569,9569,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270228,endothelial_identity,marker_positive_fraction_ge2,0.1667885881,9569,9569,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270228,endothelial_identity,mean_log1p_CPM10k_all_cells,0.2991423905,9569,9569,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270228,HR_DNA_repair,marker_positive_fraction_ge1,0.4554289894,9569,9569,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270228,HR_DNA_repair,marker_positive_fraction_ge2,0.1871668931,9569,9569,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270228,HR_DNA_repair,mean_log1p_CPM10k_all_cells,0.05973083153,9569,9569,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270228,DNA_damage_apoptosis,marker_positive_fraction_ge1,0.8501410806,9569,9569,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270228,DNA_damage_apoptosis,marker_positive_fraction_ge2,0.6883686906,9569,9569,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270228,DNA_damage_apoptosis,mean_log1p_CPM10k_all_cells,0.3326513469,9569,9569,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270228,type_I_interferon,marker_positive_fraction_ge1,0.669139931,9569,9569,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270228,type_I_interferon,marker_positive_fraction_ge2,0.3291880029,9569,9569,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270228,type_I_interferon,mean_log1p_CPM10k_all_cells,0.1673817635,9569,9569,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270228,IFN_gamma_response,marker_positive_fraction_ge1,0.8487825269,9569,9569,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270228,IFN_gamma_response,marker_positive_fraction_ge2,0.6301598913,9569,9569,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270228,IFN_gamma_response,mean_log1p_CPM10k_all_cells,0.4439823031,9569,9569,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270228,MAPK_ERK_output,marker_positive_fraction_ge1,0.8391681471,9569,9569,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270228,MAPK_ERK_output,marker_positive_fraction_ge2,0.6879506741,9569,9569,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270228,MAPK_ERK_output,mean_log1p_CPM10k_all_cells,0.5340954661,9569,9569,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270228,cell_cycle_proliferation,marker_positive_fraction_ge1,0.4434110147,9569,9569,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270228,cell_cycle_proliferation,marker_positive_fraction_ge2,0.1935416449,9569,9569,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270228,cell_cycle_proliferation,mean_log1p_CPM10k_all_cells,0.1099383682,9569,9569,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270228,EMT_TGF_beta,marker_positive_fraction_ge1,0.9546452085,9569,9569,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270228,EMT_TGF_beta,marker_positive_fraction_ge2,0.8437663288,9569,9569,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270228,EMT_TGF_beta,mean_log1p_CPM10k_all_cells,0.7658027411,9569,9569,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270228,immune_checkpoint,marker_positive_fraction_ge1,0.3418330024,9569,9569,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270228,immune_checkpoint,marker_positive_fraction_ge2,0.1009509876,9569,9569,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270228,immune_checkpoint,mean_log1p_CPM10k_all_cells,0.08522453159,9569,9569,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270228,T_cell_inflamed,marker_positive_fraction_ge1,0.433796635,9569,9569,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270228,T_cell_inflamed,marker_positive_fraction_ge2,0.1735813565,9569,9569,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270228,T_cell_inflamed,mean_log1p_CPM10k_all_cells,0.1430160701,9569,9569,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270228,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.06296869367,9569,7166,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.3314548731,9569,7166,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.5490577817,9569,7166,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.1220214218,9569,7166,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.7862332463,9569,7166,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.06623388082,9569,4984,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.3222220838,9569,4984,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.5448572636,9569,4984,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.1319351047,9569,4984,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.7680639625,9569,4984,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.5961254835,9569,1375,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.3470547795,9569,1375,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2551273108,9569,1375,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.4727468491,9569,1375,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2950587273,9569,1375,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.9195252061,9569,801,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.555817008,9569,801,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.407134831,9569,801,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.4422479272,9569,801,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.4498616457,9569,801,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.4730987251,9569,4649,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.8552544117,9569,4649,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.1871940196,9569,4649,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.4543783069,9569,4649,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270228,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.6242241263,9569,2108,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,1.405974627,9569,2108,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.2253781408,9569,2108,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270228,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.4492673874,9569,2108,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,tumor_epithelial_identity,marker_positive_fraction_ge1,0.7833558602,10358,10358,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270229,tumor_epithelial_identity,marker_positive_fraction_ge2,0.5483684109,10358,10358,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270229,tumor_epithelial_identity,mean_log1p_CPM10k_all_cells,0.5700958371,10358,10358,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270229,T_cell_identity,marker_positive_fraction_ge1,0.2490828345,10358,10358,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270229,T_cell_identity,marker_positive_fraction_ge2,0.1424020081,10358,10358,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270229,T_cell_identity,mean_log1p_CPM10k_all_cells,0.2035973668,10358,10358,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270229,cytotoxic_T_NK,marker_positive_fraction_ge1,0.5041513806,10358,10358,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270229,cytotoxic_T_NK,marker_positive_fraction_ge2,0.1760957714,10358,10358,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270229,cytotoxic_T_NK,mean_log1p_CPM10k_all_cells,0.2385949045,10358,10358,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270229,Treg_identity,marker_positive_fraction_ge1,0.1976250241,10358,10358,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270229,Treg_identity,marker_positive_fraction_ge2,0.0455686426,10358,10358,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270229,Treg_identity,mean_log1p_CPM10k_all_cells,0.08331368119,10358,10358,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270229,T_exhaustion,marker_positive_fraction_ge1,0.1888395443,10358,10358,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270229,T_exhaustion,marker_positive_fraction_ge2,0.04865804209,10358,10358,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270229,T_exhaustion,mean_log1p_CPM10k_all_cells,0.06543708593,10358,10358,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270229,monocyte_macrophage_identity,marker_positive_fraction_ge1,0.690770419,10358,10358,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270229,monocyte_macrophage_identity,marker_positive_fraction_ge2,0.4092488897,10358,10358,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270229,monocyte_macrophage_identity,mean_log1p_CPM10k_all_cells,0.4396604598,10358,10358,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270229,myeloid_suppressive_state,marker_positive_fraction_ge1,0.8379996138,10358,10358,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270229,myeloid_suppressive_state,marker_positive_fraction_ge2,0.5621741649,10358,10358,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270229,myeloid_suppressive_state,mean_log1p_CPM10k_all_cells,0.4020106494,10358,10358,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270229,neutrophil_identity,marker_positive_fraction_ge1,0.1865224947,10358,10358,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270229,neutrophil_identity,marker_positive_fraction_ge2,0.03890712493,10358,10358,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270229,neutrophil_identity,mean_log1p_CPM10k_all_cells,0.06767219305,10358,10358,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270229,antigen_presentation_MHCII,marker_positive_fraction_ge1,0.7614404325,10358,10358,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270229,antigen_presentation_MHCII,marker_positive_fraction_ge2,0.5309905387,10358,10358,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270229,antigen_presentation_MHCII,mean_log1p_CPM10k_all_cells,0.6878772378,10358,10358,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270229,B_cell_identity,marker_positive_fraction_ge1,0.1253137671,10358,10358,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270229,B_cell_identity,marker_positive_fraction_ge2,0.002703224561,10358,10358,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270229,B_cell_identity,mean_log1p_CPM10k_all_cells,0.03095318004,10358,10358,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270229,CAF_stromal_identity,marker_positive_fraction_ge1,0.8688936088,10358,10358,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270229,CAF_stromal_identity,marker_positive_fraction_ge2,0.6655725043,10358,10358,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270229,CAF_stromal_identity,mean_log1p_CPM10k_all_cells,0.6957653165,10358,10358,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270229,endothelial_identity,marker_positive_fraction_ge1,0.3101950183,10358,10358,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270229,endothelial_identity,marker_positive_fraction_ge2,0.1354508592,10358,10358,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270229,endothelial_identity,mean_log1p_CPM10k_all_cells,0.2192154825,10358,10358,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270229,HR_DNA_repair,marker_positive_fraction_ge1,0.4719057733,10358,10358,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270229,HR_DNA_repair,marker_positive_fraction_ge2,0.2009075111,10358,10358,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270229,HR_DNA_repair,mean_log1p_CPM10k_all_cells,0.06418978423,10358,10358,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270229,DNA_damage_apoptosis,marker_positive_fraction_ge1,0.8783548948,10358,10358,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270229,DNA_damage_apoptosis,marker_positive_fraction_ge2,0.7011971423,10358,10358,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270229,DNA_damage_apoptosis,mean_log1p_CPM10k_all_cells,0.3236992955,10358,10358,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270229,type_I_interferon,marker_positive_fraction_ge1,0.706410504,10358,10358,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270229,type_I_interferon,marker_positive_fraction_ge2,0.3455300251,10358,10358,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270229,type_I_interferon,mean_log1p_CPM10k_all_cells,0.1786646992,10358,10358,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270229,IFN_gamma_response,marker_positive_fraction_ge1,0.8828924503,10358,10358,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270229,IFN_gamma_response,marker_positive_fraction_ge2,0.6982042865,10358,10358,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270229,IFN_gamma_response,mean_log1p_CPM10k_all_cells,0.514757216,10358,10358,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270229,MAPK_ERK_output,marker_positive_fraction_ge1,0.8569221858,10358,10358,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270229,MAPK_ERK_output,marker_positive_fraction_ge2,0.6825642016,10358,10358,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270229,MAPK_ERK_output,mean_log1p_CPM10k_all_cells,0.503254652,10358,10358,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270229,cell_cycle_proliferation,marker_positive_fraction_ge1,0.4547209886,10358,10358,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270229,cell_cycle_proliferation,marker_positive_fraction_ge2,0.209306816,10358,10358,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270229,cell_cycle_proliferation,mean_log1p_CPM10k_all_cells,0.1191242933,10358,10358,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270229,EMT_TGF_beta,marker_positive_fraction_ge1,0.9634099247,10358,10358,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270229,EMT_TGF_beta,marker_positive_fraction_ge2,0.858659973,10358,10358,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270229,EMT_TGF_beta,mean_log1p_CPM10k_all_cells,0.7441706061,10358,10358,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270229,immune_checkpoint,marker_positive_fraction_ge1,0.4078972775,10358,10358,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270229,immune_checkpoint,marker_positive_fraction_ge2,0.1248310485,10358,10358,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270229,immune_checkpoint,mean_log1p_CPM10k_all_cells,0.1090517566,10358,10358,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270229,T_cell_inflamed,marker_positive_fraction_ge1,0.6021432709,10358,10358,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270229,T_cell_inflamed,marker_positive_fraction_ge2,0.3068159876,10358,10358,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270229,T_cell_inflamed,mean_log1p_CPM10k_all_cells,0.2293933779,10358,10358,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270229,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.06882612407,10358,8114,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.3265748322,10358,8114,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.5173383951,10358,8114,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.1328543872,10358,8114,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.7737583518,10358,8114,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.07461452484,10358,5680,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.3221493959,10358,5680,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.5089000463,10358,5680,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.1541719884,10358,5680,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.7812579274,10358,5680,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.7456649542,10358,2580,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2667556107,10358,2580,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2030179054,10358,2580,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.4986606836,10358,2580,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2578808665,10358,2580,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,1.194123268,10358,1475,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.4225376546,10358,1475,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.3332992196,10358,1475,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.4518359303,10358,1475,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.3947988153,10358,1475,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.466121465,10358,7155,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.8464426398,10358,7155,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.1871892065,10358,7155,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.5346118808,10358,7155,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270229,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.5623063445,10358,4239,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,1.13428092,10358,4239,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.2062699795,10358,4239,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270229,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.55365026,10358,4239,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,tumor_epithelial_identity,marker_positive_fraction_ge1,0.7925617488,10567,10567,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270230,tumor_epithelial_identity,marker_positive_fraction_ge2,0.5686571402,10567,10567,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270230,tumor_epithelial_identity,mean_log1p_CPM10k_all_cells,0.6274873018,10567,10567,Epcam;Krt8;Krt18;Krt19;Krt7;Sox9;Muc1,
+GSM9270230,T_cell_identity,marker_positive_fraction_ge1,0.1816977382,10567,10567,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270230,T_cell_identity,marker_positive_fraction_ge2,0.1032459544,10567,10567,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270230,T_cell_identity,mean_log1p_CPM10k_all_cells,0.1529381424,10567,10567,Trac;Cd3d;Cd3e;Cd247;Lck,
+GSM9270230,cytotoxic_T_NK,marker_positive_fraction_ge1,0.3738052427,10567,10567,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270230,cytotoxic_T_NK,marker_positive_fraction_ge2,0.1128986467,10567,10567,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270230,cytotoxic_T_NK,mean_log1p_CPM10k_all_cells,0.1692213863,10567,10567,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,
+GSM9270230,Treg_identity,marker_positive_fraction_ge1,0.1832118861,10567,10567,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270230,Treg_identity,marker_positive_fraction_ge2,0.04126052806,10567,10567,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270230,Treg_identity,mean_log1p_CPM10k_all_cells,0.08070974052,10567,10567,Foxp3;Il2ra;Ctla4;Ikzf2,
+GSM9270230,T_exhaustion,marker_positive_fraction_ge1,0.1915396991,10567,10567,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270230,T_exhaustion,marker_positive_fraction_ge2,0.04930443835,10567,10567,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270230,T_exhaustion,mean_log1p_CPM10k_all_cells,0.06992579252,10567,10567,Pdcd1;Lag3;Tigit;Havcr2;Tox,
+GSM9270230,monocyte_macrophage_identity,marker_positive_fraction_ge1,0.7555597615,10567,10567,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270230,monocyte_macrophage_identity,marker_positive_fraction_ge2,0.5024131731,10567,10567,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270230,monocyte_macrophage_identity,mean_log1p_CPM10k_all_cells,0.5852802396,10567,10567,Lyz2;Csf1r;Adgre1;C1qa;C1qb;C1qc;Fcgr1,
+GSM9270230,myeloid_suppressive_state,marker_positive_fraction_ge1,0.8609823034,10567,10567,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270230,myeloid_suppressive_state,marker_positive_fraction_ge2,0.5928835053,10567,10567,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270230,myeloid_suppressive_state,mean_log1p_CPM10k_all_cells,0.4271048903,10567,10567,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,
+GSM9270230,neutrophil_identity,marker_positive_fraction_ge1,0.3348159364,10567,10567,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270230,neutrophil_identity,marker_positive_fraction_ge2,0.09728399735,10567,10567,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270230,neutrophil_identity,mean_log1p_CPM10k_all_cells,0.142296955,10567,10567,Ly6g;S100a8;S100a9;Mpo;Elane;Cxcr2,
+GSM9270230,antigen_presentation_MHCII,marker_positive_fraction_ge1,0.8423393584,10567,10567,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270230,antigen_presentation_MHCII,marker_positive_fraction_ge2,0.6505157566,10567,10567,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270230,antigen_presentation_MHCII,mean_log1p_CPM10k_all_cells,0.9354507327,10567,10567,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,
+GSM9270230,B_cell_identity,marker_positive_fraction_ge1,0.1489542917,10567,10567,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270230,B_cell_identity,marker_positive_fraction_ge2,0.005488785843,10567,10567,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270230,B_cell_identity,mean_log1p_CPM10k_all_cells,0.03527180478,10567,10567,Cd79a;Cd79b;Ms4a1;Cd19;Cd37,
+GSM9270230,CAF_stromal_identity,marker_positive_fraction_ge1,0.8867228163,10567,10567,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270230,CAF_stromal_identity,marker_positive_fraction_ge2,0.692722627,10567,10567,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270230,CAF_stromal_identity,mean_log1p_CPM10k_all_cells,0.7660930157,10567,10567,Col1a1;Col1a2;Col3a1;Dcn;Pdgfra;Fap;Acta2,
+GSM9270230,endothelial_identity,marker_positive_fraction_ge1,0.2392353554,10567,10567,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270230,endothelial_identity,marker_positive_fraction_ge2,0.09113277184,10567,10567,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270230,endothelial_identity,mean_log1p_CPM10k_all_cells,0.1577743292,10567,10567,Pecam1;Vwf;Kdr;Emcn;Cdh5,
+GSM9270230,HR_DNA_repair,marker_positive_fraction_ge1,0.4299233463,10567,10567,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270230,HR_DNA_repair,marker_positive_fraction_ge2,0.158985521,10567,10567,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270230,HR_DNA_repair,mean_log1p_CPM10k_all_cells,0.05210695416,10567,10567,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,
+GSM9270230,DNA_damage_apoptosis,marker_positive_fraction_ge1,0.8960916059,10567,10567,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270230,DNA_damage_apoptosis,marker_positive_fraction_ge2,0.7366329138,10567,10567,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270230,DNA_damage_apoptosis,mean_log1p_CPM10k_all_cells,0.3496245146,10567,10567,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,
+GSM9270230,type_I_interferon,marker_positive_fraction_ge1,0.6993470238,10567,10567,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270230,type_I_interferon,marker_positive_fraction_ge2,0.3604618151,10567,10567,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270230,type_I_interferon,mean_log1p_CPM10k_all_cells,0.1803030372,10567,10567,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,
+GSM9270230,IFN_gamma_response,marker_positive_fraction_ge1,0.8844515946,10567,10567,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270230,IFN_gamma_response,marker_positive_fraction_ge2,0.6845840825,10567,10567,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270230,IFN_gamma_response,mean_log1p_CPM10k_all_cells,0.4969747066,10567,10567,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,
+GSM9270230,MAPK_ERK_output,marker_positive_fraction_ge1,0.8928740418,10567,10567,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270230,MAPK_ERK_output,marker_positive_fraction_ge2,0.743068042,10567,10567,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270230,MAPK_ERK_output,mean_log1p_CPM10k_all_cells,0.5896503329,10567,10567,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,
+GSM9270230,cell_cycle_proliferation,marker_positive_fraction_ge1,0.4081574714,10567,10567,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270230,cell_cycle_proliferation,marker_positive_fraction_ge2,0.1618245481,10567,10567,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270230,cell_cycle_proliferation,mean_log1p_CPM10k_all_cells,0.08966098726,10567,10567,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,
+GSM9270230,EMT_TGF_beta,marker_positive_fraction_ge1,0.9493706823,10567,10567,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270230,EMT_TGF_beta,marker_positive_fraction_ge2,0.845367654,10567,10567,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270230,EMT_TGF_beta,mean_log1p_CPM10k_all_cells,0.7437457442,10567,10567,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,
+GSM9270230,immune_checkpoint,marker_positive_fraction_ge1,0.4127945491,10567,10567,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270230,immune_checkpoint,marker_positive_fraction_ge2,0.1289864673,10567,10567,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270230,immune_checkpoint,mean_log1p_CPM10k_all_cells,0.1181607917,10567,10567,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,
+GSM9270230,T_cell_inflamed,marker_positive_fraction_ge1,0.5556922495,10567,10567,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270230,T_cell_inflamed,marker_positive_fraction_ge2,0.2351660831,10567,10567,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270230,T_cell_inflamed,mean_log1p_CPM10k_all_cells,0.1920068413,10567,10567,Cd3d;Cd3e;Cd8a;Nkg7;Prf1;Gzmb;Ifng;Cxcl9;Cxcl10,
+GSM9270230,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.05540564656,10567,8375,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.3473858535,10567,8375,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.6044467688,10567,8375,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.09857457876,10567,8375,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge1,0.7799469829,10567,8375,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,HR_DNA_repair,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.05944644287,10567,6009,Brca1;Brca2;Rad51;Rpa1;Rpa2;Palb2;Atm;Chek1;Rad51c;Mre11a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,DNA_damage_apoptosis,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.3382616937,10567,6009,Bbc3;Pmaip1;Bax;Bcl2l11;Casp3;Casp8;Fas;Gadd45a;Cdkn1a,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,MAPK_ERK_output,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.593105197,10567,6009,Dusp4;Dusp6;Etv4;Etv5;Spry2;Fos;Egr1;Dusp1,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,cell_cycle_proliferation,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.1061722264,10567,6009,Mki67;Top2a;Pcna;Mcm2;Mcm5;Ccnb1;Cdk1;Birc5,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,EMT_TGF_beta,mean_log1p_CPM10k_within_tumor_epithelial_marker_positive_ge2,0.7945503592,10567,6009,Vim;Zeb1;Snai1;Twist1;Fn1;Tgfb1;Serpine1;Cdh2,tumor_epithelial_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.6630551219,10567,1920,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.3316538632,10567,1920,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.2685949206,10567,1920,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.4857794344,10567,1920,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge1,0.3214696646,10567,1920,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,cytotoxic_T_NK,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,1.073779464,10567,1091,Nkg7;Prf1;Gzmb;Ccl5;Cd8a;Cd8b1;Ifng,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,Treg_identity,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.5403936505,10567,1091,Foxp3;Il2ra;Ctla4;Ikzf2,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,T_exhaustion,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.4436092079,10567,1091,Pdcd1;Lag3;Tigit;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,IFN_gamma_response,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.4481198788,10567,1091,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,immune_checkpoint,mean_log1p_CPM10k_within_T_cell_marker_positive_ge2,0.5022873282,10567,1091,Cd274;Pdcd1;Ctla4;Tigit;Lag3;Havcr2;Tox,T_cell_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.4782248139,10567,7984,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,1.098961234,10567,7984,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.1894441098,10567,7984,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge1,0.5228144526,10567,7984,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge1 positive-marker threshold; >=10 cells
+GSM9270230,myeloid_suppressive_state,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.5477986932,10567,5309,Arg1;Mrc1;Cd163;Spp1;Tgfb1;Il10;Lgals3,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,antigen_presentation_MHCII,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,1.410459518,10567,5309,H2-Aa;H2-Ab1;H2-Eb1;Cd74;Ciita,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,type_I_interferon,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.2024543881,10567,5309,Isg15;Ifit1;Ifit2;Ifit3;Ifi27l2a;Mx1;Oas1a;Stat1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells
+GSM9270230,IFN_gamma_response,mean_log1p_CPM10k_within_monocyte_macrophage_marker_positive_ge2,0.5484634638,10567,5309,Ifng;Stat1;Irf1;Cxcl9;Cxcl10;Gbp2;Icam1,monocyte_macrophage_identity with ge2 positive-marker threshold; >=10 cells

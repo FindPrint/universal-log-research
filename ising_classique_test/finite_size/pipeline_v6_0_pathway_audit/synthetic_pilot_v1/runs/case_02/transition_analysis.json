@@ -1,0 +1,1374 @@
+{
+  "Higuchi": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.012628023179919045,
+      "second_derivative": -0.0011854050469643673,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.013373684926167194,
+      "second_derivative_pre": -0.0014263223170419665,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.02600170810608624,
+      "delta_second_derivative": 0.00024091727007759917,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.012628023179919045,
+      "second_derivative": -0.0011854050469643673,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.013373684926167194,
+      "second_derivative_pre": -0.0014263223170419665,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.02600170810608624,
+      "delta_second_derivative": 0.00024091727007759917,
+      "sign_change": true
+    }
+  },
+  "DFA": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": -0.00560122572542841,
+      "second_derivative": -0.004762174160986469,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.02240135086114661,
+      "second_derivative_pre": -0.0021942281484690343,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0168001251357182,
+      "delta_second_derivative": -0.0025679460125174348,
+      "sign_change": false
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": -0.00560122572542841,
+      "second_derivative": -0.004762174160986469,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.02240135086114661,
+      "second_derivative_pre": -0.0021942281484690343,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0168001251357182,
+      "delta_second_derivative": -0.0025679460125174348,
+      "sign_change": false
+    }
+  },
+  "Katz": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.004867353695241301,
+      "second_derivative": 1.644682639504998e-05,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.004253835952150595,
+      "second_derivative_pre": 3.86243277503236e-05,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.009121189647391895,
+      "delta_second_derivative": -2.217750135527362e-05,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.004867353695241301,
+      "second_derivative": 1.644682639504998e-05,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.004253835952150595,
+      "second_derivative_pre": 3.86243277503236e-05,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.009121189647391895,
+      "delta_second_derivative": -2.217750135527362e-05,
+      "sign_change": true
+    }
+  },
+  "Hurst": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.006272505902365853,
+      "second_derivative": 0.00165326831148327,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.0013334783610971191,
+      "second_derivative_pre": 0.0020094977218313684,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0076059842634629725,
+      "delta_second_derivative": -0.0003562294103480984,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.006272505902365853,
+      "second_derivative": 0.00165326831148327,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.0013334783610971191,
+      "second_derivative_pre": 0.0020094977218313684,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0076059842634629725,
+      "delta_second_derivative": -0.0003562294103480984,
+      "sign_change": true
+    }
+  },
+  "SampleEn": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": -0.01545542266558039,
+      "second_derivative": 0.0003433477932219367,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.00900809542061107,
+      "second_derivative_pre": 0.00036037278745364447,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.02446351808619146,
+      "delta_second_derivative": -1.702499423170779e-05,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": -0.01545542266558039,
+      "second_derivative": 0.0003433477932219367,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.00900809542061107,
+      "second_derivative_pre": 0.00036037278745364447,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.02446351808619146,
+      "delta_second_derivative": -1.702499423170779e-05,
+      "sign_change": true
+    }
+  },
+  "Petrosian": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.0008285606529688632,
+      "second_derivative": 5.361518107998868e-05,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.00046130444411162627,
+      "second_derivative_pre": 5.3691154860844225e-05,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0012898650970804895,
+      "delta_second_derivative": -7.597378085554728e-08,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.0008285606529688632,
+      "second_derivative": 5.361518107998868e-05,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.00046130444411162627,
+      "second_derivative_pre": 5.3691154860844225e-05,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0012898650970804895,
+      "delta_second_derivative": -7.597378085554728e-08,
+      "sign_change": true
+    }
+  },
+  "Sevcik": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.00208328008292697,
+      "second_derivative": -0.000511721253687586,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.0006766634058643846,
+      "second_derivative_pre": -0.00037166206465069586,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0027599434887913546,
+      "delta_second_derivative": -0.0001400591890368902,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.00208328008292697,
+      "second_derivative": -0.000511721253687586,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.0006766634058643846,
+      "second_derivative_pre": -0.00037166206465069586,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0027599434887913546,
+      "delta_second_derivative": -0.0001400591890368902,
+      "sign_change": true
+    }
+  },
+  "BoxCounting": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": -0.018892421653756722,
+      "second_derivative": -0.0009834637024263247,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.016119668210362273,
+      "second_derivative_pre": -0.0009388406598574013,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.035012089864118995,
+      "delta_second_derivative": -4.4623042568923466e-05,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": -0.018892421653756722,
+      "second_derivative": -0.0009834637024263247,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.016119668210362273,
+      "second_derivative_pre": -0.0009388406598574013,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.035012089864118995,
+      "delta_second_derivative": -4.4623042568923466e-05,
+      "sign_change": true
+    }
+  },
+  "PermutationEntropy": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": -0.0007572897257766219,
+      "second_derivative": 1.594448098228105e-05,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.0017088163402744184,
+      "second_derivative_pre": 0.000158322384779582,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0009515266144977965,
+      "delta_second_derivative": -0.00014237790379730095,
+      "sign_change": false
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": -0.0007572897257766219,
+      "second_derivative": 1.594448098228105e-05,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.0017088163402744184,
+      "second_derivative_pre": 0.000158322384779582,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0009515266144977965,
+      "delta_second_derivative": -0.00014237790379730095,
+      "sign_change": false
+    }
+  },
+  "CorrelationD2": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.027711168800214334,
+      "second_derivative": -0.005853873984192933,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.04319058574826469,
+      "second_derivative_pre": -0.0019269914124872103,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.07090175454847902,
+      "delta_second_derivative": -0.003926882571705722,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.027711168800214334,
+      "second_derivative": -0.005853873984192933,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.04319058574826469,
+      "second_derivative_pre": -0.0019269914124872103,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.07090175454847902,
+      "delta_second_derivative": -0.003926882571705722,
+      "sign_change": true
+    }
+  },
+  "GrassbergerProcaccia": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.02849973609425411,
+      "second_derivative": -0.005806985478864169,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.04504530435515369,
+      "second_derivative_pre": -0.001439505175922789,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0735450404494078,
+      "delta_second_derivative": -0.00436748030294138,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.02849973609425411,
+      "second_derivative": -0.005806985478864169,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.04504530435515369,
+      "second_derivative_pre": -0.001439505175922789,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0735450404494078,
+      "delta_second_derivative": -0.00436748030294138,
+      "sign_change": true
+    }
+  },
+  "InformationD1": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": -0.00906095455601345,
+      "second_derivative": 0.0016625618529127202,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.030862629849527215,
+      "second_derivative_pre": -0.0002925719343216582,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.03992358440554067,
+      "delta_second_derivative": 0.0019551337872343783,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": -0.00906095455601345,
+      "second_derivative": 0.0016625618529127202,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.030862629849527215,
+      "second_derivative_pre": -0.0002925719343216582,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.03992358440554067,
+      "delta_second_derivative": 0.0019551337872343783,
+      "sign_change": true
+    }
+  },
+  "VisibilityGraph": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.002422285458213223,
+      "second_derivative": 0.00021330011294234385,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.0001060709536186334,
+      "second_derivative_pre": 0.0001848612173039338,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0023162145045945897,
+      "delta_second_derivative": 2.843889563841005e-05,
+      "sign_change": false
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.002422285458213223,
+      "second_derivative": 0.00021330011294234385,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.0001060709536186334,
+      "second_derivative_pre": 0.0001848612173039338,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.0023162145045945897,
+      "delta_second_derivative": 2.843889563841005e-05,
+      "sign_change": false
+    }
+  },
+  "TwoNN": {
+    "Tous": {
+      "status": "insufficient_data",
+      "reason": "Points insuffisants apr\u00e8s seuil",
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "insufficient_data",
+      "reason_pre": "Points insuffisants avant seuil"
+    },
+    "target": {
+      "status": "insufficient_data",
+      "reason": "Points insuffisants apr\u00e8s seuil",
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "insufficient_data",
+      "reason_pre": "Points insuffisants avant seuil"
+    }
+  },
+  "DANCo": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": -1.0311828590373461e-15,
+      "second_derivative": 4.0732260428870454e-17,
+      "sign": "neutral",
+      "order": "linear",
+      "interpretation": "Transition lin\u00e9aire - Pas de pente notable post-seuil.",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -5.9581884539215e-16,
+      "second_derivative_pre": -3.299843333397313e-17,
+      "sign_pre": "neutral",
+      "order_pre": "linear",
+      "interpretation_pre": "Transition lineaire AVANT seuil - Pas de pente notable avant seuil.",
+      "points_count_pre": 63,
+      "delta_first_derivative": -4.353640136451962e-16,
+      "delta_second_derivative": 7.373069376284358e-17,
+      "sign_change": false
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": -1.0311828590373461e-15,
+      "second_derivative": 4.0732260428870454e-17,
+      "sign": "neutral",
+      "order": "linear",
+      "interpretation": "Transition lin\u00e9aire - Pas de pente notable post-seuil.",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -5.9581884539215e-16,
+      "second_derivative_pre": -3.299843333397313e-17,
+      "sign_pre": "neutral",
+      "order_pre": "linear",
+      "interpretation_pre": "Transition lineaire AVANT seuil - Pas de pente notable avant seuil.",
+      "points_count_pre": 63,
+      "delta_first_derivative": -4.353640136451962e-16,
+      "delta_second_derivative": 7.373069376284358e-17,
+      "sign_change": false
+    }
+  },
+  "Fisher": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.0039293562828802125,
+      "second_derivative": -0.0016406585441058334,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.0077385763605023064,
+      "second_derivative_pre": -0.004235203412616634,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.003809220077622094,
+      "delta_second_derivative": 0.002594544868510801,
+      "sign_change": false
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.0039293562828802125,
+      "second_derivative": -0.0016406585441058334,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.0077385763605023064,
+      "second_derivative_pre": -0.004235203412616634,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.003809220077622094,
+      "delta_second_derivative": 0.002594544868510801,
+      "sign_change": false
+    }
+  },
+  "LevinaBickel": {
+    "Tous": {
+      "status": "insufficient_data",
+      "reason": "Points insuffisants apr\u00e8s seuil",
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "insufficient_data",
+      "reason_pre": "Points insuffisants avant seuil"
+    },
+    "target": {
+      "status": "insufficient_data",
+      "reason": "Points insuffisants apr\u00e8s seuil",
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "insufficient_data",
+      "reason_pre": "Points insuffisants avant seuil"
+    }
+  },
+  "PCAIntrinsic": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": -0.023714223558726048,
+      "second_derivative": -0.0067434236098125495,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.05613459366454322,
+      "second_derivative_pre": -0.009443776041309119,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.03242037010581718,
+      "delta_second_derivative": 0.002700352431496569,
+      "sign_change": false
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": -0.023714223558726048,
+      "second_derivative": -0.0067434236098125495,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.05613459366454322,
+      "second_derivative_pre": -0.009443776041309119,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.03242037010581718,
+      "delta_second_derivative": 0.002700352431496569,
+      "sign_change": false
+    }
+  },
+  "LocalPCA": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.0435214670617572,
+      "second_derivative": 0.002351575103274499,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.027477294025840034,
+      "second_derivative_pre": 0.002423131916489645,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.07099876108759723,
+      "delta_second_derivative": -7.15568132151458e-05,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.0435214670617572,
+      "second_derivative": 0.002351575103274499,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.027477294025840034,
+      "second_derivative_pre": 0.002423131916489645,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.07099876108759723,
+      "delta_second_derivative": -7.15568132151458e-05,
+      "sign_change": true
+    }
+  },
+  "GraphDimension": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.006413572805919335,
+      "second_derivative": 0.00033498101062586687,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.00130211080747975,
+      "second_derivative_pre": -0.0007363392340840433,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.007715683613399085,
+      "delta_second_derivative": 0.00107132024470991,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.006413572805919335,
+      "second_derivative": 0.00033498101062586687,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.00130211080747975,
+      "second_derivative_pre": -0.0007363392340840433,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.007715683613399085,
+      "delta_second_derivative": 0.00107132024470991,
+      "sign_change": true
+    }
+  },
+  "PersistentHomology": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": -3.646866208790614e-16,
+      "second_derivative": 1.7751793170172788e-17,
+      "sign": "neutral",
+      "order": "linear",
+      "interpretation": "Transition lin\u00e9aire - Pas de pente notable post-seuil.",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 1.2137050554284536e-16,
+      "second_derivative_pre": 6.9199707659693175e-18,
+      "sign_pre": "neutral",
+      "order_pre": "linear",
+      "interpretation_pre": "Transition lineaire AVANT seuil - Pas de pente notable avant seuil.",
+      "points_count_pre": 63,
+      "delta_first_derivative": -4.860571264219068e-16,
+      "delta_second_derivative": 1.0831822404203471e-17,
+      "sign_change": false
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": -3.646866208790614e-16,
+      "second_derivative": 1.7751793170172788e-17,
+      "sign": "neutral",
+      "order": "linear",
+      "interpretation": "Transition lin\u00e9aire - Pas de pente notable post-seuil.",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 1.2137050554284536e-16,
+      "second_derivative_pre": 6.9199707659693175e-18,
+      "sign_pre": "neutral",
+      "order_pre": "linear",
+      "interpretation_pre": "Transition lineaire AVANT seuil - Pas de pente notable avant seuil.",
+      "points_count_pre": 63,
+      "delta_first_derivative": -4.860571264219068e-16,
+      "delta_second_derivative": 1.0831822404203471e-17,
+      "sign_change": false
+    }
+  },
+  "MFA": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": -0.012256184824817756,
+      "second_derivative": -0.004506049565862379,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.011954704638562089,
+      "second_derivative_pre": -0.00020719241443109004,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.00030148018625566694,
+      "delta_second_derivative": -0.004298857151431289,
+      "sign_change": false
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": -0.012256184824817756,
+      "second_derivative": -0.004506049565862379,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.011954704638562089,
+      "second_derivative_pre": -0.00020719241443109004,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.00030148018625566694,
+      "delta_second_derivative": -0.004298857151431289,
+      "sign_change": false
+    }
+  },
+  "KolmogorovLZ": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.0335104498451067,
+      "second_derivative": -0.0062405035123696264,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.08046561825470287,
+      "second_derivative_pre": -0.016062981806968864,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.046955168409596175,
+      "delta_second_derivative": 0.009822478294599236,
+      "sign_change": false
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.0335104498451067,
+      "second_derivative": -0.0062405035123696264,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.08046561825470287,
+      "second_derivative_pre": -0.016062981806968864,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.046955168409596175,
+      "delta_second_derivative": 0.009822478294599236,
+      "sign_change": false
+    }
+  },
+  "SpectralBeta": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": -0.0120449118725591,
+      "second_derivative": 0.0022948919703130377,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.04579192222308809,
+      "second_derivative_pre": -0.00045943443775606826,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.05783683409564719,
+      "delta_second_derivative": 0.002754326408069106,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": -0.0120449118725591,
+      "second_derivative": 0.0022948919703130377,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.04579192222308809,
+      "second_derivative_pre": -0.00045943443775606826,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.05783683409564719,
+      "delta_second_derivative": 0.002754326408069106,
+      "sign_change": true
+    }
+  },
+  "SpectralDimension": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.006022455936279548,
+      "second_derivative": -0.0011474459851565143,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.022895961111543985,
+      "second_derivative_pre": 0.00022971721887803115,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.02891841704782353,
+      "delta_second_derivative": -0.0013771632040345454,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.006022455936279548,
+      "second_derivative": -0.0011474459851565143,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": -0.022895961111543985,
+      "second_derivative_pre": 0.00022971721887803115,
+      "sign_pre": "negative",
+      "order_pre": "1st",
+      "interpretation_pre": "Transition de 1er ordre AVANT seuil (chute du signal avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": 0.02891841704782353,
+      "delta_second_derivative": -0.0013771632040345454,
+      "sign_change": true
+    }
+  },
+  "Hurst2mH": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": -0.006272505902365803,
+      "second_derivative": -0.001653268311483275,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.001333478361097108,
+      "second_derivative_pre": -0.0020094977218313662,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.007605984263462911,
+      "delta_second_derivative": 0.00035622941034809123,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": -0.006272505902365803,
+      "second_derivative": -0.001653268311483275,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.001333478361097108,
+      "second_derivative_pre": -0.0020094977218313662,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.007605984263462911,
+      "delta_second_derivative": 0.00035622941034809123,
+      "sign_change": true
+    }
+  },
+  "Lyapunov": {
+    "Tous": {
+      "status": "insufficient_data",
+      "reason": "Points insuffisants apr\u00e8s seuil",
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "insufficient_data",
+      "reason_pre": "Points insuffisants avant seuil"
+    },
+    "target": {
+      "status": "insufficient_data",
+      "reason": "Points insuffisants apr\u00e8s seuil",
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "insufficient_data",
+      "reason_pre": "Points insuffisants avant seuil"
+    }
+  },
+  "MultifractalDeltaAlpha": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": 0.0023084101428648184,
+      "second_derivative": 0.00911117775146039,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.02863181448983218,
+      "second_derivative_pre": 0.005601093632705074,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.026323404346967363,
+      "delta_second_derivative": 0.0035100841187553165,
+      "sign_change": false
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": 0.0023084101428648184,
+      "second_derivative": 0.00911117775146039,
+      "sign": "positive",
+      "order": "2nd",
+      "interpretation": "Transition de 2nd ordre (Transition Douce : Complexit\u00e9/signal en hausse post-seuil).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.02863181448983218,
+      "second_derivative_pre": 0.005601093632705074,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.026323404346967363,
+      "delta_second_derivative": 0.0035100841187553165,
+      "sign_change": false
+    }
+  },
+  "SingularityFmax": {
+    "Tous": {
+      "status": "success",
+      "first_derivative": -0.0006319427348308088,
+      "second_derivative": -6.42738346041144e-05,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.0017644234755804652,
+      "second_derivative_pre": -0.000206472554791001,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.002396366210411274,
+      "delta_second_derivative": 0.0001421987201868866,
+      "sign_change": true
+    },
+    "target": {
+      "status": "success",
+      "first_derivative": -0.0006319427348308088,
+      "second_derivative": -6.42738346041144e-05,
+      "sign": "negative",
+      "order": "1st",
+      "interpretation": "Transition de 1er ordre (Transition Brutale : Chute du signal/complexit\u00e9 post-seuil, stabilisation).",
+      "points_count": 57,
+      "window_pre": [
+        0.0,
+        52.10084033613445
+      ],
+      "window_expanded_pre": false,
+      "status_pre": "success",
+      "first_derivative_pre": 0.0017644234755804652,
+      "second_derivative_pre": -0.000206472554791001,
+      "sign_pre": "positive",
+      "order_pre": "2nd",
+      "interpretation_pre": "Transition de 2nd ordre AVANT seuil (signal en hausse avant seuil).",
+      "points_count_pre": 63,
+      "delta_first_derivative": -0.002396366210411274,
+      "delta_second_derivative": 0.0001421987201868866,
+      "sign_change": true
+    }
+  }
+}

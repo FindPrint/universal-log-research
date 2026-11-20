@@ -1,0 +1,14 @@
+{
+  "label": "baseline_run_01",
+  "profiled": false,
+  "started_utc": "2026-11-15T14:13:26.4953934Z",
+  "elapsed_seconds": 320.183627,
+  "exit_code": -1,
+  "source_sha256": "c02d7e1a4081fcdcb2ccaa9acb17f3818e9950d297cb262ec5da63ca2695dedd",
+  "full_input_sha256": "5d04a61aca4ce18fb982106974f07c92c08bb7d8baba1ccca077f3c437b40cc5",
+  "derived_input_sha256": "c84bbd24a802f0066191d969b2d06ef32c6e0821f67c522e722e308e4bdd33b8",
+  "derived_rows": 1024,
+  "output_directory": "<PROJECT_ROOT>\\audit_release\\2026-11-15_pipeline_profile_baseline\\sample_1024\\baseline_run_01\\pipeline_output",
+  "console_log": "<PROJECT_ROOT>\\audit_release\\2026-11-15_pipeline_profile_baseline\\sample_1024\\baseline_run_01\\console.log",
+  "profile_file": null
+}

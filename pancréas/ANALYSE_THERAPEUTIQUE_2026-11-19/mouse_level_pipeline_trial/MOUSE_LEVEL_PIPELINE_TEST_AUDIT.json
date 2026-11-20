@@ -1,0 +1,39 @@
+{
+  "pipeline": "<PROJECT_ROOT>\\UNIVERSAL_LOG_v5.9.4.py",
+  "pipeline_sha256": "72fd242c4cb26e5663fa40f1b4998de60c63e2aebbae2773d0d34d904152001b",
+  "test_status": "failed_minimum_series_length",
+  "exit_code": 1,
+  "minimum_points_error": "Série trop courte : 13 points valides. Au moins 50 sont requis avec la configuration actuelle.",
+  "files": [
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\results_mouse_level\\GSE271300_mouse_level_summaries.csv",
+      "bytes": 2544,
+      "sha256": "e4a0fcfbb708251bca0123b56bdca85db7bcd74fd756b09802651c41c297137c"
+    },
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\prepare_mouse_level_pipeline_input.py",
+      "bytes": 3578,
+      "sha256": "ded433bb517d4bb3db3e423c4dde4be9a481ff9fabbe5749674e17f646593d98"
+    },
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\mouse_level_pipeline_trial\\GSE271300_PC69_PC106_mouse_level_multiflux.csv",
+      "bytes": 1197,
+      "sha256": "24776588101068ecaa961a2cf1c396cebedce71e20779390c7f632e8d05bd55c"
+    },
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\mouse_level_pipeline_trial\\MOUSE_LEVEL_INPUT_MANIFEST.json",
+      "bytes": 1495,
+      "sha256": "7b55dc748258f2364d69a5f616da7ab9f614e0e76b7281043d6582febd07293b"
+    },
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\mouse_level_pipeline_trial\\runs\\Treatment_code_attempt02\\run_status.json",
+      "bytes": 1364,
+      "sha256": "9694cb6e59167960a2c5d29b8178a9aad7433433a09bad95965330dce8d38a3a"
+    },
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\mouse_level_pipeline_trial\\runs\\Treatment_code_attempt02\\console.log",
+      "bytes": 1989,
+      "sha256": "617e2d35da5b54b7e24d7a501e57c18fea1d0957fdf5cc0c07b2a429529997f4"
+    }
+  ]
+}

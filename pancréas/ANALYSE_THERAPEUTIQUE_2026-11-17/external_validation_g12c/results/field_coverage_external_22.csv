@@ -1,0 +1,18 @@
+field,role,type,description,n_patients,n_observed,n_missing,n_levels_or_values
+treatment,control,categorical,adagrasib vs sotorasib; distinct KRAS G12C inhibitor mechanism cohort,22,22,0,2
+best_response,control,categorical,best response in source table; PD denotes primary resistance,22,22,0,3
+tp53_baseline_variant_listed,control,categorical,TP53 variant with numeric pretreatment VAF listed; absence is not called WT,22,22,0,2
+baseline_kras_g12c_detection,control,categorical,whether numeric pretreatment KRAS G12C VAF appears in supplement,22,22,0,2
+baseline_kras_g12c_vaf_pct,control,continuous,pretreatment KRAS G12C VAF percentage; numeric rows only,22,20,2,20
+technology_profile,control,categorical,"assay platform(s) listed per patient; exploratory, sparse levels",22,22,0,3
+new_kras_cn_amp_listed,flow,categorical,KRAS copy-number Amp listed as absent pretreatment and Amp at end of therapy,22,22,0,2
+new_kras_cn_gain_or_amp_listed,flow,categorical,KRAS copy-number Gain/Amp listed as absent pretreatment and present at end of therapy,22,22,0,2
+new_any_cn_listed,flow,categorical,any copy-number Gain/Amp row listed as new,22,22,0,2
+new_any_mutation_listed,flow,categorical,any mutation row absent in pretreatment listing and numeric at end of therapy,22,22,0,2
+new_any_event_listed,flow,categorical,any newly listed mutation or copy-number event,22,22,0,2
+new_ras_pi3k_rtk_mutation_listed,flow,categorical,newly listed mutation in prespecified RAS/MAPK/PI3K/RTK gene set,22,22,0,2
+new_pik3ca_mutation_listed,flow,categorical,newly listed PIK3CA mutation,22,22,0,2
+n_new_mutation_rows_listed,flow,continuous,count of newly listed mutation rows; not a variant burden estimate,22,22,0,5
+n_new_copy_number_rows_listed,flow,continuous,count of newly listed copy-number rows,22,22,0,6
+eot_kras_g12c_vaf_pct,flow,continuous,end-of-therapy KRAS G12C VAF percentage; numeric rows only,22,20,2,20
+delta_kras_g12c_vaf_pp,flow,continuous,end-of-therapy minus pretreatment VAF percentage points; both numeric only,22,18,4,18

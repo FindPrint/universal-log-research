@@ -1,0 +1,39 @@
+{
+  "source": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\results_mouse_level\\GSE271300_mouse_level_summaries.csv",
+  "source_sha256": "e4a0fcfbb708251bca0123b56bdca85db7bcd74fd756b09802651c41c297137c",
+  "output": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\mouse_level_pipeline_trial\\GSE271300_PC69_PC106_mouse_level_multiflux.csv",
+  "output_sha256": "24776588101068ecaa961a2cf1c396cebedce71e20779390c7f632e8d05bd55c",
+  "rows": 13,
+  "unique_animals": 13,
+  "source_rows_preserved_in_order": true,
+  "target": "basal_fraction",
+  "numeric_controls": [
+    "Treatment_code",
+    "PDX_model_code",
+    "mean_scBasalScore",
+    "mean_scClassicalScore",
+    "mean_S_score",
+    "mean_G2M_score"
+  ],
+  "categorical_code_mappings": {
+    "Treatment_code": {
+      "veh": 0,
+      "mrtx": 1
+    },
+    "PDX_model_code": {
+      "PC69": 0,
+      "PC106": 1
+    }
+  },
+  "excluded_fields": [
+    "animal",
+    "model",
+    "treatment",
+    "n_cells_assigned",
+    "n_cells_in_analysis",
+    "basal_cells",
+    "state_labeled_cells"
+  ],
+  "construction": "One source row per mouse; common complete mouse-level target/fluxes only; no aggregation, imputation, sorting, or shuffling in this step.",
+  "critical_axis_note": "This is cross-sectional. Row order is not time or disease progression; pipeline T0/axis outputs must not be read as temporal or therapeutic thresholds."
+}

@@ -1,0 +1,54 @@
+﻿,,Supplementary Table 1. Acquired genomic alterations detected in paired baseline and EOT ctDNA profiled from 44 patients treated with 160 to 300 mg doses of daily daraxonrasib.,,,,,,,,,
+Patient ID,"Planned Dose
+(mg) ","Enrollment
+RAS Mutation",Best Overall Response (confirmed),"Acquired short variants in RAS signaling pathway
+(not present at baseline)",Acquired copy number alterations in RAS signaling pathway (not present at baseline),"Pretreatment
+TP53 Status",Other Acquired Alterations (not present at baseline),Genomic Max VAF percentage detected in end of treatment ctDNA (%),RAS VAF detected in pre-treatment ctDNA (%),RAS VAF detected in On-treatment ctDNA (%),RAS VAF detected in End of Treatment ctDNA (%)
+Patient 1,300mg QD,KRAS G12D,CR,Not detected ,KRAS AMP; MYC AMP,Mut,MSH6 D390fs; TP53 SPLICE,20.350000000000001,7.0000000000000007E-2,Not detected,33.31
+Patient 2,160mg QD,KRAS G12R,PR,Not detected ,KRAS AMP,Mut,KMT2D M3382fs; LRP1B SPLICE,25.61,0.68,Not detected,67.22
+Patient 3,200mg QD,KRAS G12V,PR,MAP2K1 G128D,RICTOR AMP,Mut,ADARB2 AMP; TERT AMP; ETV1 AMP; GATA3 AMP; CYP19A1 AMP,48.91,4.3499999999999996,0.25,39.340000000000003
+Patient 4,200mg QD,KRAS G12V,SD,Not detected ,KRAS AMP,Mut,MGA S670*; SMARCA4 C1205*; KMT2C L1664fs; DNMT3A I715fs; LRP1B R2066fs; CCND2 AMP,22.46,1.38,Not detected,41.96
+Patient 5,200mg QD,KRAS G12D,PR,Not detected ,KRAS AMP,Mut,TP53 R213*; TP53 R273C; DNMT3A F414L; TET2 N281*; CHEK2 D118Gfs; PPM1D R581*; KMT2C R3079*,15.07,Not detected,Not detected,19.39
+Patient 6,300mg QD,KRAS G12D,PR,NF1 SPLICE,Not detected ,WT,LRP5 K120fs,11.63,Not detected,Not detected,Not detected
+Patient 7,300mg QD,KRAS G12D,PR,BRAF G466A,Not detected ,Mut,Not detected ,8.5,9.76,0.13,8.5
+Patient 8,300mg QD,KRAS Q61H,PR,ARAF S214C,Not detected ,Mut,CCND1 AMP; FGF19 AMP,21.79,22.61,0.05,30.04
+Patient 9,160mg QD,KRAS G12D,SD, MET-CREB3L2,KRAS AMP,Mut,SETD2 R1565*; ARID1A G2069fs; BAP1 SPLICE; CDKN2A DEL; SMAD4 DEL,51.32,34.590000000000003,0.51,97.23
+Patient 10,160mg QD,KRAS G12D,SD,NF1 H1842fs,Not detected ,Mut,TP53 Y205*; KDM6A A788fs,2.66,Not detected,Not detected,2.66
+Patient 11,160mg QD,KRAS G12R,SD,ARAF S214F; ARAF S214T; ARAF S214Y; RAF1 S259F; ARAF N217K; RAF1 P261R; ARAF S214C; BRAF G469R; BRAF T599dup,KRAS AMP; RAF1 AMP,Mut,RNASEH2B E223*; MGA F88fs,37.64,56.1,8.42,63.74
+Patient 12,160mg QD,KRAS G12D,SD,Not detected ,KRAS AMP,WT,TP53 R248W; TP53 C176Y,14.12,0.26,Not tested ,18.420000000000002
+Patient 13,220mg QD,KRAS G12V,SD,PIK3CA E545K; RIT1 F82L; PIK3CA E542K; PIK3R1 F456_Q457del; KEAP1 L175fs,KRAS AMP,Mut,MAP2K4 W95*; PBRM1 F1266fs; CDKN2A DEL; MTAP DEL,25.58,17.899999999999999,1.4,42.93
+Patient 14,200mg QD,KRAS G12R,SD,AKT1 W80R,KRAS AMP,Mut,BRIP1 W63*,23.26,21.15,5.16,41.46
+Patient 15,200mg QD,KRAS G12D,SD,FGFR1-KAT6A,Not detected ,WT,TP53 R175H,11.83,0.62,Not detected,11.83
+Patient 16,200mg QD,KRAS G12V,SD,MET Y1230C,Not detected ,WT,Not detected ,0.34,0.13,Not detected,Not detected
+Patient 17,200mg QD,KRAS G12D,SD,BRAF-AGK,Not detected ,Mut,Not detected ,8.9600000000000009,11.02,Not detected,8.9600000000000009
+Patient 18,200mg QD,KRAS G12V,SD,BRAF-LRGUK; BRAF-IGF1R,Not detected ,Mut,CCND2 AMP,24.3,39.659999999999997,6.75,22.11
+Patient 19,200mg QD,KRAS G12V,SD,Not detected ,KRAS AMP,Mut,TP53 P152L,20.399999999999999,0.19,Not detected,31.34
+Patient 20,300mg QD,KRAS G12R,SD,Not detected ,KRAS AMP,Mut,Not detected ,20.41,28.52,1.79,30.32
+Patient 21,300mg QD,KRAS G12R,SD,PTPN11 Y63C; KEAP1 Y85*,KRAS AMP,Mut,CDKN2A DEL; MTAP DEL,25.73,4.2300000000000004,0.56999999999999995,45.31
+Patient 22,300mg QD,KRAS G12D,SD,Not detected ,KRAS AMP; ERBB2 AMP,Mut,TP53 P152L,18.149999999999999,0.5,Not detected,26.39
+Patient 23,300mg QD,KRAS G12D,SD,Not detected ,AKT2 AMP; RICTOR AMP,WT,BRCA1 E1287*; GNAS R201H,13.07,3.35,2.1,13.07
+Patient 24,300mg QD,KRAS G12D,SD,MAP2K1 I103N,KRAS AMP,Mut,Not detected ,17.059999999999999,2.31,Not detected,23.14
+Patient 25,300mg QD,KRAS Q61R,SD,Not detected ,KRAS AMP,Mut,U2AF1 S34F; TET2 Q1852fs,16.420000000000002,28.35,1.67,22.17
+Patient 26,300mg QD,KRAS G12R,SD,Not detected ,KRAS AMP,Mut,TP53 R342*; SMAD4 G386V; CTNNB1 S37C; CTNNB1 S37F; CDH1 V430fs; CDKN2A DEL; MTAP DEL,51.54,0.16,0.05,95.91
+Patient 27,300mg QD,KRAS G12V,SD,Not detected ,Not detected ,Mut,TP53 R306*; DNMT3B R571*,4.42,Not detected,Not detected,3.32
+Patient 28,200mg QD,KRAS G12D,SD,Not detected ,Not detected ,Mut,Not detected ,18.579999999999998,4.22,0.39,12.69
+Patient 29,200mg QD,KRAS G12D,SD,Not detected ,Not detected ,WT,TET2 S1556fs,6.77,Not detected,Not detected,0.76
+Patient 30,300mg QD,KRAS G12D,PR,Not detected ,Not detected ,WT,Not detected ,3.41,51.05,Not detected,3.41
+Patient 31,300mg QD,KRAS G12D,PR,Not detected ,Not detected ,WT,ARID1A G801fs,8.73,0.72,Not detected,8.73
+Patient 32,200mg QD,KRAS G12V,PR,Not detected ,Not detected ,Mut,TP53 H214R,0.75,3.34,Not detected,0.75
+Patient 33,300mg QD,KRAS G12R,SD,Not detected ,Not detected ,Mut,ATR Q1830*; PPM1D F449Lfs*2,27.35,15.42,2.86,51.19
+Patient 34,300mg QD,KRAS Q61H,SD,Not detected ,Not detected ,Mut,Not detected ,1.59,0.66,0.05,1.59
+Patient 35,300mg QD,KRAS G12V,SD,Not detected ,Not detected ,Mut,POT1 Y223C,25.42,53.61,5.91,75
+Patient 36,200mg QD,KRAS G12V,SD,Not detected ,Not detected ,WT,SF3B1 K700E; FOXL2 S70fs,0.31,0.41,Not tested ,0.31
+Patient 37,200mg QD,KRAS G12D,SD,Not detected ,Not detected ,Mut,LRP1B C3854*; NSD1 C2208fs,21.4,10.68,0.23,11.87
+Patient 38,200mg QD,KRAS G12V,PR,Not detected ,Not detected ,WT,Not detected ,2.1,Not detected,Not detected,0.27
+Patient 39,300mg QD,KRAS Q61H,PR,Not detected ,Not detected ,Mut,Not detected ,13.9,0.49,Not detected,2
+Patient 40,300mg QD,KRAS Q61H,SD,Not detected ,Not detected ,WT,CDKN2A S12L; ZMYM3 W105*; TP53 Y220C,0.82,0.39,Not detected,Not detected
+Patient 41,200mg QD,KRAS G12D,SD,Not detected ,Not detected ,WT,TP53 V143A; SMAD4 G510V; SMAD4 L535_E538delinsP; EZH2 L619fs; KMT2C H636fs,5.74,0.32,Not detected,5.17
+Patient 42,300mg QD,KRAS Q61K,SD,Not detected ,Not detected ,Mut,PPM1D W427fs,0.87,16.88,0.96,0.08
+Patient 43,300mg QD,KRAS G12D,SD,Not detected ,Not detected ,Mut,SMAD4 L43F; RBM10 P97fs; ASXL1 T1024fs,1.97,Not detected,Not detected,0.11
+Patient 44,200mg QD,KRAS G12V,SD,Not detected ,Not detected ,Mut,SDHC F18fs,4.1100000000000003,13.63,0.22,4.1100000000000003
+fs= Frameshift,,,,,,,,,,,
+del=Deletion via copy number alteration,,,,,,,,,,,
+amp=Gene Amplification,,,,,,,,,,,
+*= premature stop codon resulting from a nonsense mutation,,,,,,,,,,,

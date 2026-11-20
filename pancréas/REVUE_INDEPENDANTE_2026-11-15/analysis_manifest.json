@@ -1,0 +1,212 @@
+{
+  "analysis": "independent threshold-free expression audit; no UNIVERSAL_LOG code imported",
+  "created_utc": "2026-11-15T12:40:23.511266-05:00",
+  "python": "3.11.9",
+  "numpy": "1.26.4",
+  "pandas": "3.0.6",
+  "scipy": "1.17.1",
+  "archive_root": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\pdac-v6-archive-complete-2026-11-15",
+  "source_inputs": [
+    {
+      "cohort": "TCGA-PAAD Firehose 2016-01-28",
+      "source_file": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\pdac-v6-archive-complete-2026-11-15\\03_runs-pdac-v6-2026-11-15\\data\\tcga_paad_rsem.tar.gz",
+      "sha256": "c3dd138b3257ad5bae5a58160f5607d2ad9c2871c83f6cdb5959cc9116d262c9",
+      "sample_rule": "TCGA barcode sample-type code 01; primary tumors",
+      "expression_scale": "log2(RSEM normalized + 1)",
+      "n_samples": 178,
+      "n_genes": 20502,
+      "removed_rows_with_missing": 1,
+      "purity_proxy_genes_acinar": [
+        "PNLIP",
+        "CTRB2",
+        "CELA3A",
+        "CTRB1",
+        "CPA1",
+        "CELA2A",
+        "CPB1",
+        "CELA3B",
+        "CLPS",
+        "CTRC",
+        "CPA2"
+      ],
+      "purity_proxy_genes_islet": [
+        "INS",
+        "GCG",
+        "PPY",
+        "SST"
+      ]
+    },
+    {
+      "cohort": "GEO GSE71729 (Moffitt et al. 2015)",
+      "source_file": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\pdac-v6-archive-complete-2026-11-15\\03_runs-pdac-v6-2026-11-15\\data\\GSE71729_series_matrix.txt.gz",
+      "sha256": "b228789314ec4d866ec51b65724664abaa24b822577c55d3727820c867536a54",
+      "sample_rule": "GEO characteristics_ch2 tissue type: Primary",
+      "expression_scale": "author-provided log2 Cy5 values",
+      "n_samples": 145,
+      "n_genes": 19749,
+      "removed_rows_with_missing": null,
+      "purity_proxy_genes_acinar": [
+        "PNLIP",
+        "CTRB2",
+        "CTRB1",
+        "CPA1",
+        "CPB1",
+        "CLPS",
+        "CTRC",
+        "CPA2"
+      ],
+      "purity_proxy_genes_islet": [
+        "INS",
+        "GCG",
+        "PPY",
+        "SST"
+      ]
+    },
+    {
+      "cohort": "GEO GSE62452 (Hussain et al.)",
+      "source_file": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\pdac-v6-archive-complete-2026-11-15\\03_runs-pdac-v6-2026-11-15\\data\\GSE62452_series_matrix.txt.gz",
+      "sha256": "8f41d5b3f11451e653fd6bfc0c6b216c219d46711a7676d1e453dee16a078cba",
+      "mapping_file": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\pdac-v6-archive-complete-2026-11-15\\03_runs-pdac-v6-2026-11-15\\data\\GPL6244_probe2symbol.tsv",
+      "mapping_sha256": "d1a9cf25c68e4ffbf6c65ec2ab2f2b07610d0ad0d0a3c0ff1bc388336c836815",
+      "sample_rule": "GEO characteristics_ch1 tumor tissue; GPL6244 probe-to-symbol, median across probes",
+      "expression_scale": "author-provided log2 Affymetrix intensity values",
+      "n_samples": 69,
+      "n_genes": 23308,
+      "removed_rows_with_missing": null,
+      "purity_proxy_genes_acinar": [
+        "PNLIP",
+        "CTRB2",
+        "CELA3A",
+        "CPA1",
+        "CELA2A",
+        "CPB1",
+        "CELA3B",
+        "CLPS",
+        "CTRC",
+        "CPA2"
+      ],
+      "purity_proxy_genes_islet": [
+        "INS",
+        "GCG",
+        "PPY",
+        "SST"
+      ]
+    }
+  ],
+  "tests": "Spearman of each measured gene with KRAS expression; partial Spearman of every measured gene conditional on acinar/islet expression proxies; BH within each cohort across every measured gene except KRAS itself for both tests; descriptive top-k Cohen d only.",
+  "selected_targets": [
+    "MUC16",
+    "CEACAM5"
+  ],
+  "important_limit": "Targets were highlighted after exploratory TCGA discovery; the two GEO cohorts are the independent replication set. This expression analysis does not validate a change point, TLog, protein abundance, serum biomarkers, KRAS mutation/activity, treatment response, causality, or clinical utility.",
+  "geo_replication_stouffer": [
+    {
+      "gene": "MUC16",
+      "cohorts": [
+        "GEO GSE71729 (Moffitt et al. 2015)",
+        "GEO GSE62452 (Hussain et al.)"
+      ],
+      "directional_weighted_z": 1.8889692331962895,
+      "p_one_sided_positive": 0.02944797571366988,
+      "n_independent_cohorts": 2,
+      "BH_q_across_two_targets": 0.02944797571366988
+    },
+    {
+      "gene": "CEACAM5",
+      "cohorts": [
+        "GEO GSE71729 (Moffitt et al. 2015)",
+        "GEO GSE62452 (Hussain et al.)"
+      ],
+      "directional_weighted_z": 4.888524627903597,
+      "p_one_sided_positive": 5.079724486941411E-07,
+      "n_independent_cohorts": 2,
+      "BH_q_across_two_targets": 1.0159448973882822E-06
+    }
+  ],
+  "geo_replication_partial_spearman_stouffer_adjusted_for_purity_proxies": [
+    {
+      "gene": "MUC16",
+      "cohorts": [
+        "GEO GSE71729 (Moffitt et al. 2015)",
+        "GEO GSE62452 (Hussain et al.)"
+      ],
+      "directional_weighted_z": 1.1659158763544586,
+      "p_one_sided_positive": 0.12182422965629308,
+      "n_independent_cohorts": 2,
+      "BH_q_across_two_targets": 0.12182422965629308
+    },
+    {
+      "gene": "CEACAM5",
+      "cohorts": [
+        "GEO GSE71729 (Moffitt et al. 2015)",
+        "GEO GSE62452 (Hussain et al.)"
+      ],
+      "directional_weighted_z": 4.545631512696556,
+      "p_one_sided_positive": 2.7385392748058994E-06,
+      "n_independent_cohorts": 2,
+      "BH_q_across_two_targets": 5.477078549611799E-06
+    }
+  ],
+  "three_cohort_stouffer_exploratory": [
+    {
+      "gene": "MUC16",
+      "cohorts": [
+        "TCGA-PAAD Firehose 2016-01-28",
+        "GEO GSE71729 (Moffitt et al. 2015)",
+        "GEO GSE62452 (Hussain et al.)"
+      ],
+      "directional_weighted_z": 3.9344242656556747,
+      "p_one_sided_positive": 4.1698179544727216E-05,
+      "n_independent_cohorts": 3,
+      "BH_q_across_two_targets": 4.1698179544727216E-05
+    },
+    {
+      "gene": "CEACAM5",
+      "cohorts": [
+        "TCGA-PAAD Firehose 2016-01-28",
+        "GEO GSE71729 (Moffitt et al. 2015)",
+        "GEO GSE62452 (Hussain et al.)"
+      ],
+      "directional_weighted_z": 6.7743998382983985,
+      "p_one_sided_positive": 6.246187228587714E-12,
+      "n_independent_cohorts": 3,
+      "BH_q_across_two_targets": 1.2492374457175428E-11
+    }
+  ],
+  "survival_audit": {
+    "clinical_source": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\pdac-v6-archive-complete-2026-11-15\\03_runs-pdac-v6-2026-11-15\\data_clinical_patient.txt",
+    "clinical_sha256": "0c2742688e59bb918d446d35f755d7a849c3e647ab184dc54d4f7e807be2efe5",
+    "clinical_rows_PAAD": 184,
+    "expression_patients": 178,
+    "joined_patients": 177,
+    "method": "Cox proportional hazards partial likelihood; Breslow tied-event approximation; Wald CI/p from observed information; RNA and age standardized within each complete-case model; marker-only and age/sex/pathologic-stage adjusted models; exploratory, no external clinical validation.",
+    "stage_counts_all_joined": {
+      "II": 146,
+      "I": 21,
+      "III_IV": 8,
+      "Unknown": 2
+    }
+  },
+  "geo62452_probe_aggregation_sensitivity": {
+    "source_file": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\pdac-v6-archive-complete-2026-11-15\\03_runs-pdac-v6-2026-11-15\\data\\GSE62452_series_matrix.txt.gz",
+    "source_sha256": "8f41d5b3f11451e653fd6bfc0c6b216c219d46711a7676d1e453dee16a078cba",
+    "mapping_file": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\pdac-v6-archive-complete-2026-11-15\\03_runs-pdac-v6-2026-11-15\\data\\GPL6244_probe2symbol.tsv",
+    "mapping_sha256": "d1a9cf25c68e4ffbf6c65ec2ab2f2b07610d0ad0d0a3c0ff1bc388336c836815",
+    "scope": "Sensitivity only: median versus mean across mapped GPL6244 probes; also reports each target probe against median KRAS probe expression. The per-probe tests are descriptive and not independently FDR-adjusted.",
+    "tumor_samples": 69
+  },
+  "outputs": {
+    "target_associations.csv": "5f4da478888555da6a4b9a504d49d5082a17b0a960d0b37268d20dafc62600bb",
+    "all_gene_spearman_vs_KRAS.csv": "b1389ce50cb4389c0c285d0c19248e2dbb1572c05a0ac19424cab8c2f8ad5bff",
+    "survival_cox_audit.csv": "04ac0c84ef0bfda53525ef8ec24502ef889bfc36067db8276bf3d59638e33162",
+    "geo62452_probe_sensitivity.csv": "55b07775fb670465190d8b9341676ae6353c5ca7a953cb34547c4e378bb27eac"
+  },
+  "reproducibility": {
+    "command": "& .\\.venv\\Scripts\\python.exe \"pancréas\\REVUE_INDEPENDANTE_2026-11-15\\reanalyze_raw_expression.py\"",
+    "script_sha256": "625b28c082cfa698b0b8e4674e35886df4ab2c9c30ed60c7145308c6f47a52d7",
+    "execution_log": "<PROJECT_ROOT>\\pancréas\\REVUE_INDEPENDANTE_2026-11-15\\independent_reanalysis.log",
+    "execution_log_sha256": "ac50ee5c263acd8cc68db674d50323bd39df2d92d73025af155f7f512bb974a7",
+    "wrapper_sha256": "96c7a99de94200d997aa7f37c5405420fb4cf67a29c8eb0036f1b50c9b439d20",
+    "report_sha256": "8eef2f503e6fb8de57128482d51f9b5ed6add424682b82575870b635420aa309"
+  }
+}

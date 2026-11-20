@@ -1,0 +1,68 @@
+{
+  "generated_utc": "2026-11-15T20:45:54.586768+00:00",
+  "script_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\run_pipeline_v6_ising.py",
+  "script_sha256": "4a4a904c95d4e13dfade33f6956d46553ad3abe64073162857cb618475a16caf",
+  "protocol_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\PROTOCOL_PIPELINE_COMPLET_V6.md",
+  "protocol_sha256": "df2f4a78cf046171b75ab31dbebfcd1e47a8d9272c12e33b5f638ecaa8935a4b",
+  "pipeline_path": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py",
+  "pipeline_sha256": "bb8bbdba4eb1f8c55b49748274ae8fbfef8a43f6c1b890964f18ba77960c0773",
+  "source_csv_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\finite_size_results.csv",
+  "source_csv_sha256": "6749b0fb12ebbcf10ac784fa9b4514fba5dd37e96057451fb0694e1290da196e",
+  "peaks_csv_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\finite_size_peaks.csv",
+  "peaks_csv_sha256": "740b4c509f0b6f7df5673553c2191e1de35bea0afe74b2d7634101af82b4b4fa",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "1.26.4",
+  "pandas": "3.0.6",
+  "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+  "run_state_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\run_state.json",
+  "summary_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\pipeline_v6_ising_summary.csv",
+  "protocol_commit": "480f402",
+  "primary_reference": {
+    "Tc_exact": 2.269185314213022,
+    "peak_table": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\finite_size_peaks.csv",
+    "peak_table_sha256": "740b4c509f0b6f7df5673553c2191e1de35bea0afe74b2d7634101af82b4b4fa"
+  },
+  "prepared_inputs": {
+    "ising_L8_physical": {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L8_physical.csv",
+      "sha256": "f81b25b2d5c49b40576dd8ea5e31134021c9fcc54d31b5202d66f9f13404bccd"
+    },
+    "ising_L12_physical": {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L12_physical.csv",
+      "sha256": "a35bdc81f79d6cb6cec2fb3b2727285a48534a6467f350966d00eff4ebb49646"
+    },
+    "ising_L16_physical": {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L16_physical.csv",
+      "sha256": "d6dbe2ef23a2d0825c7c184d8a36ac7d00f166179830e97279461c4360eecdd1"
+    },
+    "ising_L24_physical": {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L24_physical.csv",
+      "sha256": "b27f92b433d1ae3d58bb30632b7a3cd99d166f9644d068a8a98c38523e59680c"
+    },
+    "ising_L32_physical": {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L32_physical.csv",
+      "sha256": "281af14a0d0f89c32fc9cd68da7ff3b4d01ecf7c7c0e6c7652030dfeb635d79f"
+    },
+    "ising_L48_physical": {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L48_physical.csv",
+      "sha256": "af049a9cdac28ce12350fca1a50140d703af338a1a5ac3c2565fdfdfa2087fac"
+    },
+    "ising_L64_physical": {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L64_physical.csv",
+      "sha256": "e1d890f2d0d7d83d01c29c0f0d0c8d7a95bbbb3d5b7149c1cf347835597a7be4"
+    },
+    "ising_L16_plus_independent_noise": {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L16_plus_independent_noise.csv",
+      "sha256": "fe80fd8417140f3d483e0470203704c2d560f35f98764046a96b6e2440a470ec"
+    },
+    "ising_L16_plus_affine_duplicate_energy": {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L16_plus_affine_duplicate_energy.csv",
+      "sha256": "4b81c555dea156848473a53963924f8dfc45744fd29ff8a6c0940072c2aec126"
+    },
+    "ising_L16_reversed_row_order": {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L16_reversed_row_order.csv",
+      "sha256": "7465b49dd6d8f8488c4b7f0c5328ac4061841a2a5e6a8379a213ce76f45651b2"
+    }
+  }
+}

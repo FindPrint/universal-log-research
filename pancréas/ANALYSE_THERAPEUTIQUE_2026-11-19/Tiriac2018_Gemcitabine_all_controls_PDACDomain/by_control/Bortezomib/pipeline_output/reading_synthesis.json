@@ -1,0 +1,1494 @@
+{
+  "version": "v5.9.4-L7aL7b-DKind-AuditFix-SeedTrace-CohenDOnly-NoPlots",
+  "status": "ok",
+  "reason": null,
+  "enters_threshold_score": false,
+  "q_numeric_scores_modified": false,
+  "n_samples": 60.0,
+  "control_col": "Bortezomib",
+  "observer_axis": "Bortezomib",
+  "aggregation_geometric": "median_of_per_estimator_medians_DIMENSION_FOR_TLOG_only",
+  "aggregation_relative": "cross_estimator_z_of_29_raw_medians_plus_cohen_d",
+  "D_vector": {
+    "d_sat": 1.460058,
+    "d_crit": 2.490291,
+    "d_div": 2.990566,
+    "d_null": 2.582983
+  },
+  "D_vector_roles": {
+    "d_sat": "ancre micro / sol stable (saturation)",
+    "d_crit": "ancre de transition (criticite)",
+    "d_div": "ancre d'ouverture / degres de liberte (divergence)",
+    "d_null": "cadre de mesure spectral (null) ; pas un d T_log interchangeable"
+  },
+  "spectral_width_delta": 1.530508,
+  "Delta_tension": 1.530508,
+  "tension_gap_diagnostics": {
+    "tension_gap_E": 1.530508,
+    "tension_gap_E_median_29": 1.530508,
+    "tension_gap_E_note": "Median 29 : D_div mediane de 6 estimateurs divergence moins D_sat mediane de 8 saturation. Peut diluer Levina. Voir trio ci-dessous.",
+    "triangulation": {
+      "trio": [
+        "Higuchi",
+        "InformationD1",
+        "LevinaBickel"
+      ],
+      "preset": "default",
+      "is_default": true,
+      "trio_values": {
+        "Higuchi": 2.028723,
+        "InformationD1": 0.798571,
+        "LevinaBickel": null
+      },
+      "trio_sat_estimator": "Higuchi",
+      "trio_crit_estimator": "InformationD1",
+      "trio_div_estimator": "LevinaBickel",
+      "trio_sat_value": 2.028723,
+      "trio_crit_value": 0.798571,
+      "trio_div_value": null,
+      "trio_gap_E": 1.230153,
+      "trio_gap_T_log": 5.036669,
+      "trio_gap_mode": "max-min (trio non equilibre)",
+      "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+      "trio_vs_median_gap_disagreement_gap_gt_3": false,
+      "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+      "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+      "presets": {
+        "default": [
+          "Higuchi",
+          "InformationD1",
+          "LevinaBickel"
+        ],
+        "robust": [
+          "DFA",
+          "CorrelationD2",
+          "PCAIntrinsic"
+        ],
+        "noise_robust": [
+          "DFA",
+          "InformationD1",
+          "PCAIntrinsic"
+        ],
+        "fast": [
+          "Higuchi",
+          "InformationD1",
+          "KolmogorovLZ"
+        ],
+        "saturation_focus": [
+          "Higuchi",
+          "DFA",
+          "Katz"
+        ],
+        "divergence_focus": [
+          "LevinaBickel",
+          "PCAIntrinsic",
+          "MFA"
+        ]
+      }
+    },
+    "tension_gap_E_same_as_Delta": true,
+    "tension_gap_T_log": 6.266429,
+    "tension_gap_formula": "(d_div-d_sat)*ln(n) = T_div - T_sat",
+    "tension_gap_primary_metric": "Ecart plus stable que signe seul sur finance V1-V3, tsunami, PM2.5 direction",
+    "voie1_higuchi": 2.028723,
+    "voie1_blind_risk": false,
+    "voie1_note": "Voie1 = 1 seul estimateur (Higuchi). Aveugle 4 fois sur 4 dans les tests figes finance/PM2.5/tsunami/soleil-social.",
+    "sign_vs_gap_disagreement": false,
+    "sign_note": "Si sat<4 et div>4, il n'y a pas un signe, il y a un spectre. Lire l'ecart, pas le signe seul.",
+    "estimator_limits": {
+      "Higuchi_Katz_Petrosian_Sevcik": "bornes 1-2, ne peuvent jamais donner divergence",
+      "LevinaBickel": "sensible au bruit et au plongement delay m=10, sur bruit blanc donne divergence meme au calme",
+      "InformationD1": "sur distribution concentree (1 pic viral), D1 tres bas, pas comparable a Higuchi"
+    },
+    "series_provenance": {
+      "control_col": "Bortezomib",
+      "n_samples": 60.0,
+      "n_definition": "n = nombre de lignes du CSV, pas taille physique du systeme. Changer n change T_log magnitude, pas signe si d fixe.",
+      "series_note": "Changer de serie (Price vs LogReturn, hauteur vs rendements) peut inverser le signe de T_log avec Levina. La serie choisie doit etre figee avant le test.",
+      "log_base": "naturel, np.log",
+      "formula": "(d-4)*log(n)"
+    },
+    "thresholds_provenance": {
+      "note": "Seuils = conventions de lecture, pas theoremes, pas preuves. 1.0 arbitraire a echoue de 0.05 sur PM2.5 et 0.04 sur social. 2.0 justifie par finance V1-V3.",
+      "regime_divergence": "d_div>=5.5 ou delta>3",
+      "regime_criticality": "d_crit dans [3.5,4.5] ou delta dans [1.2,3]",
+      "regime_saturation": "d_sat et d_div finis, aucune clause precedente",
+      "falsification_vs_null_threshold": 0.5
+    },
+    "proof_status": "heuristique, triangulation seulement, pas une preuve. Preuve totale impossible theoriquement. Ce diagnostic rend l'echec attribuable (CSV / pipeline / serie / seuil / coeur), il ne prouve pas le coeur.",
+    "warnings": []
+  },
+  "dominant_regime": "criticality",
+  "dominant_regime_relative": "criticality|control=Bortezomib",
+  "regime_is_physical_call": true,
+  "regime_evidence": [
+    "delta_in_[1.2,3.0]"
+  ],
+  "regime_rule": "Etiquette de COUPE sous le controle choisi. divergence si d_div>=5.5 ou delta>3 ; sinon criticite si d_crit dans [3.5,4.5] ou delta dans [1.2,3] ; sinon saturation seulement si d_sat et d_div finis ; sinon indeterminate. Seuils = regles de lecture, pas theoremes. Couche geometrique seulement ; T_log n'est pas l'hologramme entier.",
+  "interpretation": "Transition (criticite) sous controle 'Bortezomib' : d_crit dans [3.5, 4.5] ou Delta dans [1.2, 3] sur la couche geometrique. Etiquette de coupe, pas convergence forcee des 29.",
+  "null_role": "measurement_frame_not_interchangeable_d",
+  "null_role_note": "Null (SpectralDimension + signatures) = residu du cadre de mesure humain (spectre, conventions, instrumentation). Contrepoids pour falsifier. Les 3 ancres sat/crit/div cartographient la tension micro\u2194macro.",
+  "falsification_vs_null": {
+    "status": "ok",
+    "compared": "d_crit geometrique vs SpectralDimension (cadre null)",
+    "null_role": "measurement_frame_spectral_counterweight",
+    "is_significant_nonlinearity": false,
+    "delta_vs_null": 0.092691,
+    "threshold": 0.5,
+    "reason": null,
+    "note": "Null = cadre de mesure / residu d'instrumentation, pas un d interchangeable pour T_log."
+  },
+  "geometric_layer": {
+    "axes": {
+      "saturation": {
+        "dimension_median": 1.460058,
+        "n_dimension_estimators_used": 7,
+        "estimators_used": [
+          "Higuchi",
+          "Katz",
+          "Petrosian",
+          "Sevcik",
+          "BoxCounting",
+          "Hurst2mH",
+          "DFA"
+        ],
+        "d_kinds_present": [
+          "graph_dimension_proxy",
+          "process_model_graph_dimension_proxy"
+        ],
+        "semantic_type_homogeneous": false,
+        "semantic_warning": "Cette m\u00e9diane de classe combine plusieurs d_kind; la lire comme l'ancre historique du code, pas comme une dimension homog\u00e8ne.",
+        "estimators_without_finite_values": [],
+        "class_members_excluded_from_geometric": [
+          "PermutationEntropy"
+        ]
+      },
+      "criticality": {
+        "dimension_median": 2.490291,
+        "n_dimension_estimators_used": 5,
+        "estimators_used": [
+          "CorrelationD2",
+          "GrassbergerProcaccia",
+          "InformationD1",
+          "VisibilityGraph",
+          "Fisher"
+        ],
+        "d_kinds_present": [
+          "correlation_attractor_dimension",
+          "information_attractor_dimension",
+          "inverse_covariance_participation_dimension",
+          "visibility_graph_dimension_proxy"
+        ],
+        "semantic_type_homogeneous": false,
+        "semantic_warning": "Cette m\u00e9diane de classe combine plusieurs d_kind; la lire comme l'ancre historique du code, pas comme une dimension homog\u00e8ne.",
+        "estimators_without_finite_values": [
+          "TwoNN",
+          "DANCo"
+        ],
+        "class_members_excluded_from_geometric": []
+      },
+      "divergence": {
+        "dimension_median": 2.990566,
+        "n_dimension_estimators_used": 5,
+        "estimators_used": [
+          "PCAIntrinsic",
+          "LocalPCA",
+          "GraphDimension",
+          "PersistentHomology",
+          "MFA"
+        ],
+        "d_kinds_present": [
+          "covariance_participation_dimension",
+          "graph_cluster_scaling_proxy",
+          "local_pca_dimension_proxy",
+          "mixture_local_pca_proxy",
+          "persistent_h0_scaling_proxy"
+        ],
+        "semantic_type_homogeneous": false,
+        "semantic_warning": "Cette m\u00e9diane de classe combine plusieurs d_kind; la lire comme l'ancre historique du code, pas comme une dimension homog\u00e8ne.",
+        "estimators_without_finite_values": [
+          "LevinaBickel"
+        ],
+        "class_members_excluded_from_geometric": [
+          "KolmogorovLZ"
+        ]
+      },
+      "null_reference": {
+        "dimension_median": 2.582983,
+        "n_dimension_estimators_used": 1,
+        "estimators_used": [
+          "SpectralDimension"
+        ],
+        "d_kinds_present": [
+          "spectral_dimension_proxy"
+        ],
+        "semantic_type_homogeneous": true,
+        "semantic_warning": null,
+        "estimators_without_finite_values": [],
+        "class_members_excluded_from_geometric": [
+          "SpectralBeta",
+          "Hurst",
+          "SampleEn",
+          "Lyapunov",
+          "MultifractalDeltaAlpha",
+          "SingularityFmax"
+        ]
+      }
+    },
+    "T_log_by_estimator": {
+      "Higuchi": {
+        "d": 2.028723,
+        "d_kind": "graph_dimension_proxy",
+        "quantity_type": "dimension_proxy",
+        "T_log": -8.071087,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "DFA": {
+        "d": 1.460058,
+        "d_kind": "process_model_graph_dimension_proxy",
+        "quantity_type": "dimension_proxy",
+        "T_log": -10.3994,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Katz": {
+        "d": 1.163066,
+        "d_kind": "graph_dimension_proxy",
+        "quantity_type": "dimension_proxy",
+        "T_log": -11.615385,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Petrosian": {
+        "d": 1.06659,
+        "d_kind": "graph_dimension_proxy",
+        "quantity_type": "dimension_proxy",
+        "T_log": -12.01039,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Sevcik": {
+        "d": 1.590332,
+        "d_kind": "graph_dimension_proxy",
+        "quantity_type": "dimension_proxy",
+        "T_log": -9.86601,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "BoxCounting": {
+        "d": 0.607251,
+        "d_kind": "graph_dimension_proxy",
+        "quantity_type": "dimension_proxy",
+        "T_log": -13.891083,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "CorrelationD2": {
+        "d": 2.490291,
+        "d_kind": "correlation_attractor_dimension",
+        "quantity_type": "dimension_proxy",
+        "T_log": -6.181267,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "GrassbergerProcaccia": {
+        "d": 2.534338,
+        "d_kind": "correlation_attractor_dimension",
+        "quantity_type": "dimension_proxy",
+        "T_log": -6.000925,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "InformationD1": {
+        "d": 0.798571,
+        "d_kind": "information_attractor_dimension",
+        "quantity_type": "dimension_proxy",
+        "T_log": -13.107755,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "VisibilityGraph": {
+        "d": 1.968926,
+        "d_kind": "visibility_graph_dimension_proxy",
+        "quantity_type": "dimension_proxy",
+        "T_log": -8.315918,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Fisher": {
+        "d": 3.410732,
+        "d_kind": "inverse_covariance_participation_dimension",
+        "quantity_type": "dimension_proxy",
+        "T_log": -2.412664,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "PCAIntrinsic": {
+        "d": 5.643695,
+        "d_kind": "covariance_participation_dimension",
+        "quantity_type": "dimension_proxy",
+        "T_log": 6.729853,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "LocalPCA": {
+        "d": 2.990566,
+        "d_kind": "local_pca_dimension_proxy",
+        "quantity_type": "dimension_proxy",
+        "T_log": -4.13297,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "GraphDimension": {
+        "d": 1.085988,
+        "d_kind": "graph_cluster_scaling_proxy",
+        "quantity_type": "dimension_proxy",
+        "T_log": -11.930969,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "PersistentHomology": {
+        "d": 0.963841,
+        "d_kind": "persistent_h0_scaling_proxy",
+        "quantity_type": "dimension_proxy",
+        "T_log": -12.431079,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "MFA": {
+        "d": 3.0,
+        "d_kind": "mixture_local_pca_proxy",
+        "quantity_type": "dimension_proxy",
+        "T_log": -4.094345,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "SpectralDimension": {
+        "d": 2.582983,
+        "d_kind": "spectral_dimension_proxy",
+        "quantity_type": "dimension_proxy",
+        "T_log": -5.801756,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Hurst2mH": {
+        "d": 1.498903,
+        "d_kind": "process_model_graph_dimension_proxy",
+        "quantity_type": "dimension_proxy",
+        "T_log": -10.240352,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)"
+      }
+    },
+    "T_log_by_d_kind": {
+      "correlation_attractor_dimension": {
+        "label_fr": "Dimension de corr\u00e9lation d'attracteur (D2)",
+        "quantity_type": "dimension_proxy",
+        "definition_fr": "Pente d'\u00e9chelle de corr\u00e9lation dans un nuage reconstruit; d\u00e9pend de l'embedding, du bruit et de la plage d'\u00e9chelle.",
+        "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable seulement avec une reconstruction suffisamment dimensionn\u00e9e, une plage d'\u00e9chelle stable et une r\u00e9f\u00e9rence connue.",
+        "d_median": 2.512315,
+        "T_log": -6.091096,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)",
+        "estimators_used": [
+          "CorrelationD2",
+          "GrassbergerProcaccia"
+        ],
+        "n_estimators_used": 2,
+        "estimator_values": {
+          "CorrelationD2": 2.490291,
+          "GrassbergerProcaccia": 2.534338
+        },
+        "between_estimator_iqr": 0.022023,
+        "between_estimator_iqr_status": "estimated",
+        "sampling_uncertainty": "not_propagated_in_this_by_kind_summary",
+        "aggregation": "exploratory_median_of_per_estimator_medians_same_d_kind",
+        "status": "exploratory_requires_domain_calibration"
+      },
+      "covariance_participation_dimension": {
+        "label_fr": "Dimension effective par participation de covariance",
+        "quantity_type": "dimension_proxy",
+        "definition_fr": "Nombre effectif de directions selon les valeurs propres de covariance; ce n'est ni le rang exact ni n\u00e9cessairement la dimension de vari\u00e9t\u00e9.",
+        "reference_4_guidance_fr": "Comparer \u00e0 4 teste une dimension effective de variance; cette lecture n'est pas interchangeable avec la dimension d'attracteur.",
+        "d_median": 5.643695,
+        "T_log": 6.729853,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)",
+        "estimators_used": [
+          "PCAIntrinsic"
+        ],
+        "n_estimators_used": 1,
+        "estimator_values": {
+          "PCAIntrinsic": 5.643695
+        },
+        "between_estimator_iqr": null,
+        "between_estimator_iqr_status": "not_estimable_single_estimator",
+        "sampling_uncertainty": "not_propagated_in_this_by_kind_summary",
+        "aggregation": "exploratory_median_of_per_estimator_medians_same_d_kind",
+        "status": "exploratory_requires_domain_calibration"
+      },
+      "graph_cluster_scaling_proxy": {
+        "label_fr": "Proxy d'\u00e9chelle par grappes de graphe",
+        "quantity_type": "dimension_proxy",
+        "definition_fr": "Pente de croissance de grappes sur le graphe de voisins proches construit par le code.",
+        "reference_4_guidance_fr": "4 n'a de sens qu'apr\u00e8s calibration sur des g\u00e9om\u00e9tries connues et une plage d'\u00e9chelle stable.",
+        "d_median": 1.085988,
+        "T_log": -11.930969,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)",
+        "estimators_used": [
+          "GraphDimension"
+        ],
+        "n_estimators_used": 1,
+        "estimator_values": {
+          "GraphDimension": 1.085988
+        },
+        "between_estimator_iqr": null,
+        "between_estimator_iqr_status": "not_estimable_single_estimator",
+        "sampling_uncertainty": "not_propagated_in_this_by_kind_summary",
+        "aggregation": "exploratory_median_of_per_estimator_medians_same_d_kind",
+        "status": "exploratory_requires_domain_calibration"
+      },
+      "graph_dimension_proxy": {
+        "label_fr": "Proxy de dimension du graphe",
+        "quantity_type": "dimension_proxy",
+        "definition_fr": "Approximation de la rugosit\u00e9 de la courbe (temps, signal); biais et \u00e9chelles d\u00e9pendent de l'algorithme.",
+        "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil g\u00e9n\u00e9rique de ce type.",
+        "d_median": 1.163066,
+        "T_log": -11.615385,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)",
+        "estimators_used": [
+          "Higuchi",
+          "Katz",
+          "Petrosian",
+          "Sevcik",
+          "BoxCounting"
+        ],
+        "n_estimators_used": 5,
+        "estimator_values": {
+          "Higuchi": 2.028723,
+          "Katz": 1.163066,
+          "Petrosian": 1.06659,
+          "Sevcik": 1.590332,
+          "BoxCounting": 0.607251
+        },
+        "between_estimator_iqr": 0.523742,
+        "between_estimator_iqr_status": "estimated",
+        "sampling_uncertainty": "not_propagated_in_this_by_kind_summary",
+        "aggregation": "exploratory_median_of_per_estimator_medians_same_d_kind",
+        "status": "exploratory_requires_domain_calibration"
+      },
+      "information_attractor_dimension": {
+        "label_fr": "Dimension d'information d'attracteur (D1)",
+        "quantity_type": "dimension_proxy",
+        "definition_fr": "Pente de l'entropie de Shannon selon la r\u00e9solution du nuage reconstruit; peut diff\u00e9rer de D2 pour une mesure non uniforme.",
+        "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable sur D1 seulement si la d\u00e9finition de D1 et le protocole de reconstruction sont fix\u00e9s.",
+        "d_median": 0.798571,
+        "T_log": -13.107755,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)",
+        "estimators_used": [
+          "InformationD1"
+        ],
+        "n_estimators_used": 1,
+        "estimator_values": {
+          "InformationD1": 0.798571
+        },
+        "between_estimator_iqr": null,
+        "between_estimator_iqr_status": "not_estimable_single_estimator",
+        "sampling_uncertainty": "not_propagated_in_this_by_kind_summary",
+        "aggregation": "exploratory_median_of_per_estimator_medians_same_d_kind",
+        "status": "exploratory_requires_domain_calibration"
+      },
+      "inverse_covariance_participation_dimension": {
+        "label_fr": "Dimension effective par participation de covariance inverse",
+        "quantity_type": "dimension_proxy",
+        "definition_fr": "Nombre effectif de directions apr\u00e8s pond\u00e9ration par les valeurs propres inverses, avec le seuil num\u00e9rique d\u00e9fini dans le code.",
+        "reference_4_guidance_fr": "Comparer \u00e0 4 teste une dimension effective propre \u00e0 cette m\u00e9trique; elle n'est pas interchangeable avec une dimension d'attracteur.",
+        "d_median": 3.410732,
+        "T_log": -2.412664,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)",
+        "estimators_used": [
+          "Fisher"
+        ],
+        "n_estimators_used": 1,
+        "estimator_values": {
+          "Fisher": 3.410732
+        },
+        "between_estimator_iqr": null,
+        "between_estimator_iqr_status": "not_estimable_single_estimator",
+        "sampling_uncertainty": "not_propagated_in_this_by_kind_summary",
+        "aggregation": "exploratory_median_of_per_estimator_medians_same_d_kind",
+        "status": "exploratory_requires_domain_calibration"
+      },
+      "local_pca_dimension_proxy": {
+        "label_fr": "Dimension locale par PCA",
+        "quantity_type": "dimension_proxy",
+        "definition_fr": "Nombre de composantes expliquant 95 % de la variance dans des voisinages locaux.",
+        "reference_4_guidance_fr": "Le seuil d\u00e9pend du voisinage et de la coupure \u00e0 95 %; calibration sp\u00e9cifique requise.",
+        "d_median": 2.990566,
+        "T_log": -4.13297,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)",
+        "estimators_used": [
+          "LocalPCA"
+        ],
+        "n_estimators_used": 1,
+        "estimator_values": {
+          "LocalPCA": 2.990566
+        },
+        "between_estimator_iqr": null,
+        "between_estimator_iqr_status": "not_estimable_single_estimator",
+        "sampling_uncertainty": "not_propagated_in_this_by_kind_summary",
+        "aggregation": "exploratory_median_of_per_estimator_medians_same_d_kind",
+        "status": "exploratory_requires_domain_calibration"
+      },
+      "mixture_local_pca_proxy": {
+        "label_fr": "Maximum de dimensions PCA locales par groupes",
+        "quantity_type": "dimension_proxy",
+        "definition_fr": "Le code partitionne le nuage puis garde le nombre maximal de composantes PCA \u00e0 95 %.",
+        "reference_4_guidance_fr": "Cette valeur d\u00e9pend du nombre de groupes et du seuil PCA; elle n'est pas une dimension intrins\u00e8que g\u00e9n\u00e9rique.",
+        "d_median": 3.0,
+        "T_log": -4.094345,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)",
+        "estimators_used": [
+          "MFA"
+        ],
+        "n_estimators_used": 1,
+        "estimator_values": {
+          "MFA": 3.0
+        },
+        "between_estimator_iqr": null,
+        "between_estimator_iqr_status": "not_estimable_single_estimator",
+        "sampling_uncertainty": "not_propagated_in_this_by_kind_summary",
+        "aggregation": "exploratory_median_of_per_estimator_medians_same_d_kind",
+        "status": "exploratory_requires_domain_calibration"
+      },
+      "persistent_h0_scaling_proxy": {
+        "label_fr": "Proxy d'\u00e9chelle par fusion H0",
+        "quantity_type": "dimension_proxy",
+        "definition_fr": "Pente du nombre de composantes connexes fusionn\u00e9es; cette impl\u00e9mentation H0 est un proxy de dimension.",
+        "reference_4_guidance_fr": "4 n'a de sens qu'apr\u00e8s calibration de cette pente sur des formes et tailles connues.",
+        "d_median": 0.963841,
+        "T_log": -12.431079,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)",
+        "estimators_used": [
+          "PersistentHomology"
+        ],
+        "n_estimators_used": 1,
+        "estimator_values": {
+          "PersistentHomology": 0.963841
+        },
+        "between_estimator_iqr": null,
+        "between_estimator_iqr_status": "not_estimable_single_estimator",
+        "sampling_uncertainty": "not_propagated_in_this_by_kind_summary",
+        "aggregation": "exploratory_median_of_per_estimator_medians_same_d_kind",
+        "status": "exploratory_requires_domain_calibration"
+      },
+      "process_model_graph_dimension_proxy": {
+        "label_fr": "Dimension de graphe issue d'un mod\u00e8le de processus",
+        "quantity_type": "dimension_proxy",
+        "definition_fr": "Transformation d'un exposant en 2-H ou 2-alpha; valable seulement pour la classe de processus et les hypoth\u00e8ses qui justifient cette relation.",
+        "reference_4_guidance_fr": "Le seuil 4 ne convient pas \u00e0 une dimension de graphe scalaire usuelle; ne pas appliquer la transformation \u00e0 une s\u00e9rie arbitraire.",
+        "d_median": 1.47948,
+        "T_log": -10.319876,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)",
+        "estimators_used": [
+          "DFA",
+          "Hurst2mH"
+        ],
+        "n_estimators_used": 2,
+        "estimator_values": {
+          "DFA": 1.460058,
+          "Hurst2mH": 1.498903
+        },
+        "between_estimator_iqr": 0.019423,
+        "between_estimator_iqr_status": "estimated",
+        "sampling_uncertainty": "not_propagated_in_this_by_kind_summary",
+        "aggregation": "exploratory_median_of_per_estimator_medians_same_d_kind",
+        "status": "exploratory_requires_domain_calibration"
+      },
+      "spectral_dimension_proxy": {
+        "label_fr": "Dimension spectrale transform\u00e9e",
+        "quantity_type": "dimension_proxy",
+        "definition_fr": "Valeur (5-beta)/2 calcul\u00e9e \u00e0 partir de la pente spectrale dans cette version.",
+        "reference_4_guidance_fr": "Le seuil 4 doit \u00eatre justifi\u00e9 par le mod\u00e8le spectral du domaine.",
+        "d_median": 2.582983,
+        "T_log": -5.801756,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)",
+        "estimators_used": [
+          "SpectralDimension"
+        ],
+        "n_estimators_used": 1,
+        "estimator_values": {
+          "SpectralDimension": 2.582983
+        },
+        "between_estimator_iqr": null,
+        "between_estimator_iqr_status": "not_estimable_single_estimator",
+        "sampling_uncertainty": "not_propagated_in_this_by_kind_summary",
+        "aggregation": "exploratory_median_of_per_estimator_medians_same_d_kind",
+        "status": "exploratory_requires_domain_calibration"
+      },
+      "visibility_graph_dimension_proxy": {
+        "label_fr": "Proxy de dimension par graphe de visibilit\u00e9",
+        "quantity_type": "dimension_proxy",
+        "definition_fr": "Dimension d\u00e9duite de la distribution des degr\u00e9s avec la relation sp\u00e9cifique cod\u00e9e pour une famille de signaux.",
+        "reference_4_guidance_fr": "Relation et seuil \u00e0 valider pour le domaine; ne pas assimiler \u00e0 une dimension intrins\u00e8que d'attracteur.",
+        "d_median": 1.968926,
+        "T_log": -8.315918,
+        "n": 60.0,
+        "formula": "(d-4)*log(n)",
+        "estimators_used": [
+          "VisibilityGraph"
+        ],
+        "n_estimators_used": 1,
+        "estimator_values": {
+          "VisibilityGraph": 1.968926
+        },
+        "between_estimator_iqr": null,
+        "between_estimator_iqr_status": "not_estimable_single_estimator",
+        "sampling_uncertainty": "not_propagated_in_this_by_kind_summary",
+        "aggregation": "exploratory_median_of_per_estimator_medians_same_d_kind",
+        "status": "exploratory_requires_domain_calibration"
+      }
+    },
+    "T_log_class_median": {
+      "saturation": -10.3994,
+      "criticality": -6.181267,
+      "divergence": -4.13297,
+      "null_reference": -5.801756
+    },
+    "T_log_formula": "(d-4)*log(n) ; n=n_samples ; jamais un z-score",
+    "T_log_scope": "indicateur de coupe sur dimensions geometriques, pas l'hologramme entier",
+    "class_median_note": "T_log_class_median conserve la lecture historique et peut agr\u00e9ger plusieurs d_kind; pr\u00e9f\u00e9rer T_log_by_d_kind pour une lecture s\u00e9mantiquement typ\u00e9e."
+  },
+  "relative_layer": {
+    "method": "cross_estimator_z_of_medians",
+    "note": "Les 29 restent dans ESTIMATOR_CLASSES. Le z croise compare les ancres sans les brancher sur d=4. KolmogorovLZ et PermutationEntropy votent ici.",
+    "z_by_estimator": {
+      "Higuchi": -0.0364,
+      "DFA": -0.308374,
+      "Katz": -0.450415,
+      "Hurst": -0.767012,
+      "SampleEn": -0.884515,
+      "Petrosian": -0.496556,
+      "Sevcik": -0.246068,
+      "BoxCounting": -0.716242,
+      "PermutationEntropy": -0.559138,
+      "CorrelationD2": 0.184352,
+      "GrassbergerProcaccia": 0.205418,
+      "InformationD1": -0.624741,
+      "VisibilityGraph": -0.064999,
+      "Fisher": 0.624568,
+      "PCAIntrinsic": 1.692519,
+      "LocalPCA": 0.423617,
+      "GraphDimension": -0.487279,
+      "PersistentHomology": -0.545697,
+      "MFA": 0.428129,
+      "KolmogorovLZ": 3.775992,
+      "SpectralBeta": -1.086046,
+      "SpectralDimension": 0.228683,
+      "Hurst2mH": -0.289795
+    },
+    "class_z_median": {
+      "saturation": -0.379394,
+      "criticality": 0.184352,
+      "divergence": 0.425873,
+      "null_reference": -0.825764
+    },
+    "class_raw_median_all_members": {
+      "saturation": {
+        "Higuchi": 2.028723,
+        "DFA": 1.460058,
+        "Katz": 1.163066,
+        "Petrosian": 1.06659,
+        "Sevcik": 1.590332,
+        "BoxCounting": 0.607251,
+        "PermutationEntropy": 0.935739,
+        "Hurst2mH": 1.498903
+      },
+      "criticality": {
+        "CorrelationD2": 2.490291,
+        "GrassbergerProcaccia": 2.534338,
+        "InformationD1": 0.798571,
+        "VisibilityGraph": 1.968926,
+        "TwoNN": null,
+        "DANCo": null,
+        "Fisher": 3.410732
+      },
+      "divergence": {
+        "LevinaBickel": null,
+        "PCAIntrinsic": 5.643695,
+        "LocalPCA": 2.990566,
+        "GraphDimension": 1.085988,
+        "PersistentHomology": 0.963841,
+        "MFA": 3.0,
+        "KolmogorovLZ": 10.0
+      },
+      "null_reference": {
+        "Hurst": 0.501097,
+        "SampleEn": 0.255413,
+        "SpectralBeta": -0.165966,
+        "SpectralDimension": 2.582983,
+        "Lyapunov": null,
+        "MultifractalDeltaAlpha": null,
+        "SingularityFmax": null
+      }
+    },
+    "cohen_d_between_classes": {
+      "saturation_vs_divergence": {
+        "cohen_d": -1.188872,
+        "n_a": 8,
+        "n_b": 6,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "saturation_vs_criticality": {
+        "cohen_d": -1.399057,
+        "n_a": 8,
+        "n_b": 5,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "criticality_vs_divergence": {
+        "cohen_d": -0.649838,
+        "n_a": 5,
+        "n_b": 6,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "criticality_vs_null_reference": {
+        "cohen_d": 1.33965,
+        "n_a": 5,
+        "n_b": 4,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "saturation_vs_null_reference": {
+        "cohen_d": 0.653535,
+        "n_a": 8,
+        "n_b": 4,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "divergence_vs_null_reference": {
+        "cohen_d": 1.1247,
+        "n_a": 6,
+        "n_b": 4,
+        "note": "sur z croise des medianes ; pas une dimension"
+      }
+    }
+  },
+  "per_estimator": {
+    "Higuchi": {
+      "raw_median": 2.028723,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "saturation",
+      "d_kind": "graph_dimension_proxy",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Proxy de dimension du graphe",
+      "d_kind_definition_fr": "Approximation de la rugosit\u00e9 de la courbe (temps, signal); biais et \u00e9chelles d\u00e9pendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil g\u00e9n\u00e9rique de ce type.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.0364
+    },
+    "DFA": {
+      "raw_median": 1.460058,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "saturation",
+      "d_kind": "process_model_graph_dimension_proxy",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Dimension de graphe issue d'un mod\u00e8le de processus",
+      "d_kind_definition_fr": "Transformation d'un exposant en 2-H ou 2-alpha; valable seulement pour la classe de processus et les hypoth\u00e8ses qui justifient cette relation.",
+      "reference_4_guidance_fr": "Le seuil 4 ne convient pas \u00e0 une dimension de graphe scalaire usuelle; ne pas appliquer la transformation \u00e0 une s\u00e9rie arbitraire.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.308374
+    },
+    "Katz": {
+      "raw_median": 1.163066,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "saturation",
+      "d_kind": "graph_dimension_proxy",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Proxy de dimension du graphe",
+      "d_kind_definition_fr": "Approximation de la rugosit\u00e9 de la courbe (temps, signal); biais et \u00e9chelles d\u00e9pendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil g\u00e9n\u00e9rique de ce type.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.450415
+    },
+    "Hurst": {
+      "raw_median": 0.501097,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "null_reference",
+      "d_kind": "hurst_exponent",
+      "quantity_type": "signature",
+      "d_kind_label_fr": "Exposant de Hurst",
+      "d_kind_definition_fr": "Exposant de persistance estim\u00e9 par R/S; 2-H est une transformation sous hypoth\u00e8ses de processus.",
+      "reference_4_guidance_fr": "Non applicable directement : H n'est pas d.",
+      "tlog_membership": "signature_only",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "exposant R/S ; la dimension de graphe 2-H est Hurst2mH / DFA",
+      "cross_z": -0.767012
+    },
+    "SampleEn": {
+      "raw_median": 0.255413,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "null_reference",
+      "d_kind": "sample_entropy",
+      "quantity_type": "signature",
+      "d_kind_label_fr": "Entropie \u00e9chantillonnale",
+      "d_kind_definition_fr": "Fr\u00e9quence relative de motifs proches qui restent proches quand leur longueur augmente.",
+      "reference_4_guidance_fr": "Non applicable : signature hors de la couche g\u00e9om\u00e9trique T_log.",
+      "tlog_membership": "signature_only",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "entropie echantillonnale, signature null",
+      "cross_z": -0.884515
+    },
+    "Petrosian": {
+      "raw_median": 1.06659,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "saturation",
+      "d_kind": "graph_dimension_proxy",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Proxy de dimension du graphe",
+      "d_kind_definition_fr": "Approximation de la rugosit\u00e9 de la courbe (temps, signal); biais et \u00e9chelles d\u00e9pendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil g\u00e9n\u00e9rique de ce type.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.496556
+    },
+    "Sevcik": {
+      "raw_median": 1.590332,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "saturation",
+      "d_kind": "graph_dimension_proxy",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Proxy de dimension du graphe",
+      "d_kind_definition_fr": "Approximation de la rugosit\u00e9 de la courbe (temps, signal); biais et \u00e9chelles d\u00e9pendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil g\u00e9n\u00e9rique de ce type.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.246068
+    },
+    "BoxCounting": {
+      "raw_median": 0.607251,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "saturation",
+      "d_kind": "graph_dimension_proxy",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Proxy de dimension du graphe",
+      "d_kind_definition_fr": "Approximation de la rugosit\u00e9 de la courbe (temps, signal); biais et \u00e9chelles d\u00e9pendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil g\u00e9n\u00e9rique de ce type.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.716242
+    },
+    "PermutationEntropy": {
+      "raw_median": 0.935739,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "saturation",
+      "d_kind": "ordinal_entropy",
+      "quantity_type": "signature",
+      "d_kind_label_fr": "Entropie ordinale",
+      "d_kind_definition_fr": "Diversit\u00e9 normalis\u00e9e des motifs d'ordre; ce n'est pas une dimension.",
+      "reference_4_guidance_fr": "Non applicable : signature hors de la couche g\u00e9om\u00e9trique T_log.",
+      "tlog_membership": "signature_only",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "entropie normalisee (0,1], ancre de saturation dans la taxonomie, pas un d pour T_log",
+      "cross_z": -0.559138
+    },
+    "CorrelationD2": {
+      "raw_median": 2.490291,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "criticality",
+      "d_kind": "correlation_attractor_dimension",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Dimension de corr\u00e9lation d'attracteur (D2)",
+      "d_kind_definition_fr": "Pente d'\u00e9chelle de corr\u00e9lation dans un nuage reconstruit; d\u00e9pend de l'embedding, du bruit et de la plage d'\u00e9chelle.",
+      "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable seulement avec une reconstruction suffisamment dimensionn\u00e9e, une plage d'\u00e9chelle stable et une r\u00e9f\u00e9rence connue.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.184352
+    },
+    "GrassbergerProcaccia": {
+      "raw_median": 2.534338,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "criticality",
+      "d_kind": "correlation_attractor_dimension",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Dimension de corr\u00e9lation d'attracteur (D2)",
+      "d_kind_definition_fr": "Pente d'\u00e9chelle de corr\u00e9lation dans un nuage reconstruit; d\u00e9pend de l'embedding, du bruit et de la plage d'\u00e9chelle.",
+      "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable seulement avec une reconstruction suffisamment dimensionn\u00e9e, une plage d'\u00e9chelle stable et une r\u00e9f\u00e9rence connue.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.205418
+    },
+    "InformationD1": {
+      "raw_median": 0.798571,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "criticality",
+      "d_kind": "information_attractor_dimension",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Dimension d'information d'attracteur (D1)",
+      "d_kind_definition_fr": "Pente de l'entropie de Shannon selon la r\u00e9solution du nuage reconstruit; peut diff\u00e9rer de D2 pour une mesure non uniforme.",
+      "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable sur D1 seulement si la d\u00e9finition de D1 et le protocole de reconstruction sont fix\u00e9s.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.624741
+    },
+    "VisibilityGraph": {
+      "raw_median": 1.968926,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "criticality",
+      "d_kind": "visibility_graph_dimension_proxy",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Proxy de dimension par graphe de visibilit\u00e9",
+      "d_kind_definition_fr": "Dimension d\u00e9duite de la distribution des degr\u00e9s avec la relation sp\u00e9cifique cod\u00e9e pour une famille de signaux.",
+      "reference_4_guidance_fr": "Relation et seuil \u00e0 valider pour le domaine; ne pas assimiler \u00e0 une dimension intrins\u00e8que d'attracteur.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.064999
+    },
+    "TwoNN": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 25,
+      "estimator_class": "criticality",
+      "d_kind": "neighbor_intrinsic_dimension",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Dimension intrins\u00e8que par voisinage",
+      "d_kind_definition_fr": "Dimension locale d\u00e9duite des distances ou des angles de voisins proches dans le nuage reconstruit.",
+      "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable si le voisinage, l'\u00e9chantillonnage et l'embedding sont ad\u00e9quats et calibr\u00e9s.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": false,
+      "non_dimension_reason": null,
+      "cross_z": null
+    },
+    "DANCo": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 25,
+      "estimator_class": "criticality",
+      "d_kind": "neighbor_intrinsic_dimension",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Dimension intrins\u00e8que par voisinage",
+      "d_kind_definition_fr": "Dimension locale d\u00e9duite des distances ou des angles de voisins proches dans le nuage reconstruit.",
+      "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable si le voisinage, l'\u00e9chantillonnage et l'embedding sont ad\u00e9quats et calibr\u00e9s.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": false,
+      "non_dimension_reason": null,
+      "cross_z": null
+    },
+    "Fisher": {
+      "raw_median": 3.410732,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "criticality",
+      "d_kind": "inverse_covariance_participation_dimension",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Dimension effective par participation de covariance inverse",
+      "d_kind_definition_fr": "Nombre effectif de directions apr\u00e8s pond\u00e9ration par les valeurs propres inverses, avec le seuil num\u00e9rique d\u00e9fini dans le code.",
+      "reference_4_guidance_fr": "Comparer \u00e0 4 teste une dimension effective propre \u00e0 cette m\u00e9trique; elle n'est pas interchangeable avec une dimension d'attracteur.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.624568
+    },
+    "LevinaBickel": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 25,
+      "estimator_class": "divergence",
+      "d_kind": "neighbor_intrinsic_dimension",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Dimension intrins\u00e8que par voisinage",
+      "d_kind_definition_fr": "Dimension locale d\u00e9duite des distances ou des angles de voisins proches dans le nuage reconstruit.",
+      "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable si le voisinage, l'\u00e9chantillonnage et l'embedding sont ad\u00e9quats et calibr\u00e9s.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": false,
+      "non_dimension_reason": null,
+      "cross_z": null
+    },
+    "PCAIntrinsic": {
+      "raw_median": 5.643695,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "divergence",
+      "d_kind": "covariance_participation_dimension",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Dimension effective par participation de covariance",
+      "d_kind_definition_fr": "Nombre effectif de directions selon les valeurs propres de covariance; ce n'est ni le rang exact ni n\u00e9cessairement la dimension de vari\u00e9t\u00e9.",
+      "reference_4_guidance_fr": "Comparer \u00e0 4 teste une dimension effective de variance; cette lecture n'est pas interchangeable avec la dimension d'attracteur.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 1.692519
+    },
+    "LocalPCA": {
+      "raw_median": 2.990566,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "divergence",
+      "d_kind": "local_pca_dimension_proxy",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Dimension locale par PCA",
+      "d_kind_definition_fr": "Nombre de composantes expliquant 95 % de la variance dans des voisinages locaux.",
+      "reference_4_guidance_fr": "Le seuil d\u00e9pend du voisinage et de la coupure \u00e0 95 %; calibration sp\u00e9cifique requise.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.423617
+    },
+    "GraphDimension": {
+      "raw_median": 1.085988,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "divergence",
+      "d_kind": "graph_cluster_scaling_proxy",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Proxy d'\u00e9chelle par grappes de graphe",
+      "d_kind_definition_fr": "Pente de croissance de grappes sur le graphe de voisins proches construit par le code.",
+      "reference_4_guidance_fr": "4 n'a de sens qu'apr\u00e8s calibration sur des g\u00e9om\u00e9tries connues et une plage d'\u00e9chelle stable.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.487279
+    },
+    "PersistentHomology": {
+      "raw_median": 0.963841,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "divergence",
+      "d_kind": "persistent_h0_scaling_proxy",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Proxy d'\u00e9chelle par fusion H0",
+      "d_kind_definition_fr": "Pente du nombre de composantes connexes fusionn\u00e9es; cette impl\u00e9mentation H0 est un proxy de dimension.",
+      "reference_4_guidance_fr": "4 n'a de sens qu'apr\u00e8s calibration de cette pente sur des formes et tailles connues.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.545697
+    },
+    "MFA": {
+      "raw_median": 3.0,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "divergence",
+      "d_kind": "mixture_local_pca_proxy",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Maximum de dimensions PCA locales par groupes",
+      "d_kind_definition_fr": "Le code partitionne le nuage puis garde le nombre maximal de composantes PCA \u00e0 95 %.",
+      "reference_4_guidance_fr": "Cette valeur d\u00e9pend du nombre de groupes et du seuil PCA; elle n'est pas une dimension intrins\u00e8que g\u00e9n\u00e9rique.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.428129
+    },
+    "KolmogorovLZ": {
+      "raw_median": 10.0,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "divergence",
+      "d_kind": "algorithmic_complexity",
+      "quantity_type": "signature",
+      "d_kind_label_fr": "Complexit\u00e9 algorithmique proxy",
+      "d_kind_definition_fr": "Nombre de productions LZ76 sur une suite discr\u00e9tis\u00e9e; d\u00e9pend de la longueur et de la discr\u00e9tisation.",
+      "reference_4_guidance_fr": "Non applicable : le compte LZ n'est pas une dimension \u00e0 comparer \u00e0 4.",
+      "tlog_membership": "signature_only",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "nombre de productions LZ76, non borne ; ancre de divergence relative, pas une dimension de Hausdorff",
+      "cross_z": 3.775992
+    },
+    "SpectralBeta": {
+      "raw_median": -0.165966,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "null_reference",
+      "d_kind": "spectral_exponent",
+      "quantity_type": "signature",
+      "d_kind_label_fr": "Exposant spectral",
+      "d_kind_definition_fr": "Pente beta du spectre de puissance; la dimension spectrale transform\u00e9e est une autre sortie.",
+      "reference_4_guidance_fr": "Non applicable directement : beta n'est pas d.",
+      "tlog_membership": "signature_only",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "pente spectrale, signature null, pas un d",
+      "cross_z": -1.086046
+    },
+    "SpectralDimension": {
+      "raw_median": 2.582983,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "null_reference",
+      "d_kind": "spectral_dimension_proxy",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Dimension spectrale transform\u00e9e",
+      "d_kind_definition_fr": "Valeur (5-beta)/2 calcul\u00e9e \u00e0 partir de la pente spectrale dans cette version.",
+      "reference_4_guidance_fr": "Le seuil 4 doit \u00eatre justifi\u00e9 par le mod\u00e8le spectral du domaine.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.228683
+    },
+    "Hurst2mH": {
+      "raw_median": 1.498903,
+      "n_fluxes_used": 25,
+      "n_columns": 25,
+      "estimator_class": "saturation",
+      "d_kind": "process_model_graph_dimension_proxy",
+      "quantity_type": "dimension_proxy",
+      "d_kind_label_fr": "Dimension de graphe issue d'un mod\u00e8le de processus",
+      "d_kind_definition_fr": "Transformation d'un exposant en 2-H ou 2-alpha; valable seulement pour la classe de processus et les hypoth\u00e8ses qui justifient cette relation.",
+      "reference_4_guidance_fr": "Le seuil 4 ne convient pas \u00e0 une dimension de graphe scalaire usuelle; ne pas appliquer la transformation \u00e0 une s\u00e9rie arbitraire.",
+      "tlog_membership": "existing_geometric_layer",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.289795
+    },
+    "Lyapunov": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 25,
+      "estimator_class": "null_reference",
+      "d_kind": "lyapunov_exponent",
+      "quantity_type": "signature",
+      "d_kind_label_fr": "Exposant de Lyapunov",
+      "d_kind_definition_fr": "Taux de s\u00e9paration de trajectoires voisines; d\u00e9pend de l'unit\u00e9 de temps et de la reconstruction.",
+      "reference_4_guidance_fr": "Non applicable : taux dynamique, pas dimension.",
+      "tlog_membership": "signature_only",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "exposant de Lyapunov, signature de stabilite, pas un d",
+      "cross_z": null
+    },
+    "MultifractalDeltaAlpha": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 25,
+      "estimator_class": "null_reference",
+      "d_kind": "multifractal_width",
+      "quantity_type": "signature",
+      "d_kind_label_fr": "Largeur multifractale",
+      "d_kind_definition_fr": "Largeur estim\u00e9e du spectre des singularit\u00e9s.",
+      "reference_4_guidance_fr": "Non applicable directement : largeur de spectre, pas dimension unique d.",
+      "tlog_membership": "signature_only",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "largeur de spectre multifractal, signature null",
+      "cross_z": null
+    },
+    "SingularityFmax": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 25,
+      "estimator_class": "null_reference",
+      "d_kind": "multifractal_peak",
+      "quantity_type": "signature",
+      "d_kind_label_fr": "Maximum multifractal",
+      "d_kind_definition_fr": "Maximum de f(alpha) estim\u00e9 par le calcul multifractal du code.",
+      "reference_4_guidance_fr": "Non applicable directement : r\u00e9sum\u00e9 de spectre, pas dimension T_log d\u00e9finie.",
+      "tlog_membership": "signature_only",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "maximum de f(alpha), signature null",
+      "cross_z": null
+    }
+  },
+  "measurement_taxonomy_schema_version": "1.0",
+  "estimator_measurement_types": {
+    "Higuchi": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension du graphe",
+      "definition_fr": "Approximation de la rugosit\u00e9 de la courbe (temps, signal); biais et \u00e9chelles d\u00e9pendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil g\u00e9n\u00e9rique de ce type.",
+      "d_kind": "graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "DFA": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension de graphe issue d'un mod\u00e8le de processus",
+      "definition_fr": "Transformation d'un exposant en 2-H ou 2-alpha; valable seulement pour la classe de processus et les hypoth\u00e8ses qui justifient cette relation.",
+      "reference_4_guidance_fr": "Le seuil 4 ne convient pas \u00e0 une dimension de graphe scalaire usuelle; ne pas appliquer la transformation \u00e0 une s\u00e9rie arbitraire.",
+      "d_kind": "process_model_graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "Katz": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension du graphe",
+      "definition_fr": "Approximation de la rugosit\u00e9 de la courbe (temps, signal); biais et \u00e9chelles d\u00e9pendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil g\u00e9n\u00e9rique de ce type.",
+      "d_kind": "graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "Hurst": {
+      "quantity_type": "signature",
+      "label_fr": "Exposant de Hurst",
+      "definition_fr": "Exposant de persistance estim\u00e9 par R/S; 2-H est une transformation sous hypoth\u00e8ses de processus.",
+      "reference_4_guidance_fr": "Non applicable directement : H n'est pas d.",
+      "d_kind": "hurst_exponent",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "SampleEn": {
+      "quantity_type": "signature",
+      "label_fr": "Entropie \u00e9chantillonnale",
+      "definition_fr": "Fr\u00e9quence relative de motifs proches qui restent proches quand leur longueur augmente.",
+      "reference_4_guidance_fr": "Non applicable : signature hors de la couche g\u00e9om\u00e9trique T_log.",
+      "d_kind": "sample_entropy",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "Petrosian": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension du graphe",
+      "definition_fr": "Approximation de la rugosit\u00e9 de la courbe (temps, signal); biais et \u00e9chelles d\u00e9pendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil g\u00e9n\u00e9rique de ce type.",
+      "d_kind": "graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "Sevcik": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension du graphe",
+      "definition_fr": "Approximation de la rugosit\u00e9 de la courbe (temps, signal); biais et \u00e9chelles d\u00e9pendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil g\u00e9n\u00e9rique de ce type.",
+      "d_kind": "graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "BoxCounting": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension du graphe",
+      "definition_fr": "Approximation de la rugosit\u00e9 de la courbe (temps, signal); biais et \u00e9chelles d\u00e9pendent de l'algorithme.",
+      "reference_4_guidance_fr": "Pour un graphe scalaire, la dimension usuelle est entre 1 et 2; le seuil 4 n'est pas un seuil g\u00e9n\u00e9rique de ce type.",
+      "d_kind": "graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "PermutationEntropy": {
+      "quantity_type": "signature",
+      "label_fr": "Entropie ordinale",
+      "definition_fr": "Diversit\u00e9 normalis\u00e9e des motifs d'ordre; ce n'est pas une dimension.",
+      "reference_4_guidance_fr": "Non applicable : signature hors de la couche g\u00e9om\u00e9trique T_log.",
+      "d_kind": "ordinal_entropy",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "CorrelationD2": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension de corr\u00e9lation d'attracteur (D2)",
+      "definition_fr": "Pente d'\u00e9chelle de corr\u00e9lation dans un nuage reconstruit; d\u00e9pend de l'embedding, du bruit et de la plage d'\u00e9chelle.",
+      "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable seulement avec une reconstruction suffisamment dimensionn\u00e9e, une plage d'\u00e9chelle stable et une r\u00e9f\u00e9rence connue.",
+      "d_kind": "correlation_attractor_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "GrassbergerProcaccia": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension de corr\u00e9lation d'attracteur (D2)",
+      "definition_fr": "Pente d'\u00e9chelle de corr\u00e9lation dans un nuage reconstruit; d\u00e9pend de l'embedding, du bruit et de la plage d'\u00e9chelle.",
+      "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable seulement avec une reconstruction suffisamment dimensionn\u00e9e, une plage d'\u00e9chelle stable et une r\u00e9f\u00e9rence connue.",
+      "d_kind": "correlation_attractor_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "InformationD1": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension d'information d'attracteur (D1)",
+      "definition_fr": "Pente de l'entropie de Shannon selon la r\u00e9solution du nuage reconstruit; peut diff\u00e9rer de D2 pour une mesure non uniforme.",
+      "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable sur D1 seulement si la d\u00e9finition de D1 et le protocole de reconstruction sont fix\u00e9s.",
+      "d_kind": "information_attractor_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "VisibilityGraph": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy de dimension par graphe de visibilit\u00e9",
+      "definition_fr": "Dimension d\u00e9duite de la distribution des degr\u00e9s avec la relation sp\u00e9cifique cod\u00e9e pour une famille de signaux.",
+      "reference_4_guidance_fr": "Relation et seuil \u00e0 valider pour le domaine; ne pas assimiler \u00e0 une dimension intrins\u00e8que d'attracteur.",
+      "d_kind": "visibility_graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "TwoNN": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension intrins\u00e8que par voisinage",
+      "definition_fr": "Dimension locale d\u00e9duite des distances ou des angles de voisins proches dans le nuage reconstruit.",
+      "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable si le voisinage, l'\u00e9chantillonnage et l'embedding sont ad\u00e9quats et calibr\u00e9s.",
+      "d_kind": "neighbor_intrinsic_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "DANCo": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension intrins\u00e8que par voisinage",
+      "definition_fr": "Dimension locale d\u00e9duite des distances ou des angles de voisins proches dans le nuage reconstruit.",
+      "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable si le voisinage, l'\u00e9chantillonnage et l'embedding sont ad\u00e9quats et calibr\u00e9s.",
+      "d_kind": "neighbor_intrinsic_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "Fisher": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension effective par participation de covariance inverse",
+      "definition_fr": "Nombre effectif de directions apr\u00e8s pond\u00e9ration par les valeurs propres inverses, avec le seuil num\u00e9rique d\u00e9fini dans le code.",
+      "reference_4_guidance_fr": "Comparer \u00e0 4 teste une dimension effective propre \u00e0 cette m\u00e9trique; elle n'est pas interchangeable avec une dimension d'attracteur.",
+      "d_kind": "inverse_covariance_participation_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "LevinaBickel": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension intrins\u00e8que par voisinage",
+      "definition_fr": "Dimension locale d\u00e9duite des distances ou des angles de voisins proches dans le nuage reconstruit.",
+      "reference_4_guidance_fr": "4 est une hypoth\u00e8se testable si le voisinage, l'\u00e9chantillonnage et l'embedding sont ad\u00e9quats et calibr\u00e9s.",
+      "d_kind": "neighbor_intrinsic_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "PCAIntrinsic": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension effective par participation de covariance",
+      "definition_fr": "Nombre effectif de directions selon les valeurs propres de covariance; ce n'est ni le rang exact ni n\u00e9cessairement la dimension de vari\u00e9t\u00e9.",
+      "reference_4_guidance_fr": "Comparer \u00e0 4 teste une dimension effective de variance; cette lecture n'est pas interchangeable avec la dimension d'attracteur.",
+      "d_kind": "covariance_participation_dimension",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "LocalPCA": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension locale par PCA",
+      "definition_fr": "Nombre de composantes expliquant 95 % de la variance dans des voisinages locaux.",
+      "reference_4_guidance_fr": "Le seuil d\u00e9pend du voisinage et de la coupure \u00e0 95 %; calibration sp\u00e9cifique requise.",
+      "d_kind": "local_pca_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "GraphDimension": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy d'\u00e9chelle par grappes de graphe",
+      "definition_fr": "Pente de croissance de grappes sur le graphe de voisins proches construit par le code.",
+      "reference_4_guidance_fr": "4 n'a de sens qu'apr\u00e8s calibration sur des g\u00e9om\u00e9tries connues et une plage d'\u00e9chelle stable.",
+      "d_kind": "graph_cluster_scaling_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "PersistentHomology": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Proxy d'\u00e9chelle par fusion H0",
+      "definition_fr": "Pente du nombre de composantes connexes fusionn\u00e9es; cette impl\u00e9mentation H0 est un proxy de dimension.",
+      "reference_4_guidance_fr": "4 n'a de sens qu'apr\u00e8s calibration de cette pente sur des formes et tailles connues.",
+      "d_kind": "persistent_h0_scaling_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "MFA": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Maximum de dimensions PCA locales par groupes",
+      "definition_fr": "Le code partitionne le nuage puis garde le nombre maximal de composantes PCA \u00e0 95 %.",
+      "reference_4_guidance_fr": "Cette valeur d\u00e9pend du nombre de groupes et du seuil PCA; elle n'est pas une dimension intrins\u00e8que g\u00e9n\u00e9rique.",
+      "d_kind": "mixture_local_pca_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "KolmogorovLZ": {
+      "quantity_type": "signature",
+      "label_fr": "Complexit\u00e9 algorithmique proxy",
+      "definition_fr": "Nombre de productions LZ76 sur une suite discr\u00e9tis\u00e9e; d\u00e9pend de la longueur et de la discr\u00e9tisation.",
+      "reference_4_guidance_fr": "Non applicable : le compte LZ n'est pas une dimension \u00e0 comparer \u00e0 4.",
+      "d_kind": "algorithmic_complexity",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "SpectralBeta": {
+      "quantity_type": "signature",
+      "label_fr": "Exposant spectral",
+      "definition_fr": "Pente beta du spectre de puissance; la dimension spectrale transform\u00e9e est une autre sortie.",
+      "reference_4_guidance_fr": "Non applicable directement : beta n'est pas d.",
+      "d_kind": "spectral_exponent",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "SpectralDimension": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension spectrale transform\u00e9e",
+      "definition_fr": "Valeur (5-beta)/2 calcul\u00e9e \u00e0 partir de la pente spectrale dans cette version.",
+      "reference_4_guidance_fr": "Le seuil 4 doit \u00eatre justifi\u00e9 par le mod\u00e8le spectral du domaine.",
+      "d_kind": "spectral_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "Hurst2mH": {
+      "quantity_type": "dimension_proxy",
+      "label_fr": "Dimension de graphe issue d'un mod\u00e8le de processus",
+      "definition_fr": "Transformation d'un exposant en 2-H ou 2-alpha; valable seulement pour la classe de processus et les hypoth\u00e8ses qui justifient cette relation.",
+      "reference_4_guidance_fr": "Le seuil 4 ne convient pas \u00e0 une dimension de graphe scalaire usuelle; ne pas appliquer la transformation \u00e0 une s\u00e9rie arbitraire.",
+      "d_kind": "process_model_graph_dimension_proxy",
+      "tlog_eligible": true,
+      "tlog_membership": "existing_geometric_layer"
+    },
+    "Lyapunov": {
+      "quantity_type": "signature",
+      "label_fr": "Exposant de Lyapunov",
+      "definition_fr": "Taux de s\u00e9paration de trajectoires voisines; d\u00e9pend de l'unit\u00e9 de temps et de la reconstruction.",
+      "reference_4_guidance_fr": "Non applicable : taux dynamique, pas dimension.",
+      "d_kind": "lyapunov_exponent",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "MultifractalDeltaAlpha": {
+      "quantity_type": "signature",
+      "label_fr": "Largeur multifractale",
+      "definition_fr": "Largeur estim\u00e9e du spectre des singularit\u00e9s.",
+      "reference_4_guidance_fr": "Non applicable directement : largeur de spectre, pas dimension unique d.",
+      "d_kind": "multifractal_width",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    },
+    "SingularityFmax": {
+      "quantity_type": "signature",
+      "label_fr": "Maximum multifractal",
+      "definition_fr": "Maximum de f(alpha) estim\u00e9 par le calcul multifractal du code.",
+      "reference_4_guidance_fr": "Non applicable directement : r\u00e9sum\u00e9 de spectre, pas dimension T_log d\u00e9finie.",
+      "d_kind": "multifractal_peak",
+      "tlog_eligible": false,
+      "tlog_membership": "signature_only"
+    }
+  },
+  "q_glossary": {
+    "Q1_Calme_vs_Chaos": "Taille d'effet entre progression basse et haute, une colonne flux x estimateur. Ce n'est pas un test de chaos.",
+    "Q2_Tension_Seuil": "Meme taille d'effet dans une marge avant le seuil contre une marge apres.",
+    "Q3_Agressivite": "Meme comparaison que Q1 restreinte aux flux agressifs ; peut recopier Q1 si couverture faible.",
+    "Q4_Persistence": "Separation intra-fenetre du flux brut, recopiee sur les colonnes d'estimateurs. Ce n'est pas Hurst.",
+    "Q5_Actif_Receptif": "Separation actifs / receptifs sur moyennes brutes. 0 si etiquettes absentes.",
+    "Q6_Actif_Receptif_Echelle": "Q5 apres division par l'ecart-type sans centrage. Ne remplace pas Q5."
+  },
+  "q3_identical_to_q1": true
+}

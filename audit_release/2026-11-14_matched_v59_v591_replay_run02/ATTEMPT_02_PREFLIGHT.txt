@@ -1,0 +1,3 @@
+Attempt 02 preflight record
+Timestamp: 2026-11-14 (local workspace date)
+The second preflight stopped before any estimator pipeline call because the corrected guard expected 6 distinct CSVs. The exact archived 20-row configuration matrix reuses 8 CSVs: the six chain-0 size/temperature base inputs plus two chain-1 critical-temperature inputs. No historical project output was changed.

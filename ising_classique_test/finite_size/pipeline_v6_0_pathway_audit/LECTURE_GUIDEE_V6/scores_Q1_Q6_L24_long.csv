@@ -1,0 +1,175 @@
+question,estimateur,score_brut,rang_interne_question,etat
+Q1 — Calme / chaos,Higuchi,0.14536308695003708,0.4482758620689655,calculé
+Q1 — Calme / chaos,DFA,0.11417455967388716,0.3448275862068966,calculé
+Q1 — Calme / chaos,Katz,0.30965684384365244,0.4827586206896552,calculé
+Q1 — Calme / chaos,Hurst,0.10430183298944504,0.2413793103448276,calculé
+Q1 — Calme / chaos,SampleEn,2.374338606744786,0.9655172413793104,calculé
+Q1 — Calme / chaos,Petrosian,1.6639876703496774,0.8620689655172413,calculé
+Q1 — Calme / chaos,Sevcik,0.11200569284015091,0.3103448275862069,calculé
+Q1 — Calme / chaos,BoxCounting,0.6249320641147864,0.6896551724137931,calculé
+Q1 — Calme / chaos,PermutationEntropy,2.0714648324005416,0.9310344827586207,calculé
+Q1 — Calme / chaos,CorrelationD2,2.0598930051893225,0.896551724137931,calculé
+Q1 — Calme / chaos,GrassbergerProcaccia,4.127001026342734,1.0,calculé
+Q1 — Calme / chaos,InformationD1,0.7705596474621146,0.7241379310344828,calculé
+Q1 — Calme / chaos,VisibilityGraph,0.41753649318277564,0.5517241379310345,calculé
+Q1 — Calme / chaos,TwoNN,0.0,0.1206896551724138,calculé
+Q1 — Calme / chaos,DANCo,0.0,0.1206896551724138,calculé
+Q1 — Calme / chaos,Fisher,0.13868452925513663,0.41379310344827586,calculé
+Q1 — Calme / chaos,LevinaBickel,0.0,0.1206896551724138,calculé
+Q1 — Calme / chaos,PCAIntrinsic,1.029848247251068,0.7931034482758621,calculé
+Q1 — Calme / chaos,LocalPCA,1.1085766876074337,0.8275862068965517,calculé
+Q1 — Calme / chaos,GraphDimension,0.12074077722819292,0.3793103448275862,calculé
+Q1 — Calme / chaos,PersistentHomology,0.0,0.1206896551724138,calculé
+Q1 — Calme / chaos,MFA,0.9625337500219258,0.7586206896551724,calculé
+Q1 — Calme / chaos,KolmogorovLZ,0.41598267593058486,0.5172413793103449,calculé
+Q1 — Calme / chaos,SpectralBeta,0.4348776624687345,0.6206896551724138,calculé
+Q1 — Calme / chaos,SpectralDimension,0.43487766246873283,0.5862068965517241,calculé
+Q1 — Calme / chaos,Hurst2mH,0.10430183298944869,0.27586206896551724,calculé
+Q1 — Calme / chaos,Lyapunov,0.0,0.1206896551724138,calculé
+Q1 — Calme / chaos,MultifractalDeltaAlpha,0.493690819776793,0.6551724137931034,calculé
+Q1 — Calme / chaos,SingularityFmax,0.0,0.1206896551724138,calculé
+Q2 — Tension seuil,Higuchi,0.2884315626143835,0.6896551724137931,calculé
+Q2 — Tension seuil,DFA,2.1145530168675055,1.0,calculé
+Q2 — Tension seuil,Katz,0.10362426094914241,0.41379310344827586,calculé
+Q2 — Tension seuil,Hurst,0.055748112802516105,0.2413793103448276,calculé
+Q2 — Tension seuil,SampleEn,0.26248581425072953,0.6551724137931034,calculé
+Q2 — Tension seuil,Petrosian,0.21367337094210087,0.6206896551724138,calculé
+Q2 — Tension seuil,Sevcik,0.1640807848543077,0.4482758620689655,calculé
+Q2 — Tension seuil,BoxCounting,0.10329782014491726,0.3793103448275862,calculé
+Q2 — Tension seuil,PermutationEntropy,0.21367337093872374,0.5517241379310345,calculé
+Q2 — Tension seuil,CorrelationD2,0.4412339385155011,0.8275862068965517,calculé
+Q2 — Tension seuil,GrassbergerProcaccia,0.17101332620439808,0.4827586206896552,calculé
+Q2 — Tension seuil,InformationD1,0.17510217232748668,0.5172413793103449,calculé
+Q2 — Tension seuil,VisibilityGraph,0.6962193376451432,0.8620689655172413,calculé
+Q2 — Tension seuil,TwoNN,0.0,0.1206896551724138,calculé
+Q2 — Tension seuil,DANCo,0.0,0.1206896551724138,calculé
+Q2 — Tension seuil,Fisher,0.7627865580424615,0.896551724137931,calculé
+Q2 — Tension seuil,LevinaBickel,0.0,0.1206896551724138,calculé
+Q2 — Tension seuil,PCAIntrinsic,0.7847499561892806,0.9310344827586207,calculé
+Q2 — Tension seuil,LocalPCA,0.08980826866523978,0.3103448275862069,calculé
+Q2 — Tension seuil,GraphDimension,0.09880232989488344,0.3448275862068966,calculé
+Q2 — Tension seuil,PersistentHomology,0.0,0.1206896551724138,calculé
+Q2 — Tension seuil,MFA,0.3388694968349434,0.7241379310344828,calculé
+Q2 — Tension seuil,KolmogorovLZ,0.21367337093872768,0.5862068965517241,calculé
+Q2 — Tension seuil,SpectralBeta,0.4124340536416466,0.7586206896551724,calculé
+Q2 — Tension seuil,SpectralDimension,0.41243405364165336,0.7931034482758621,calculé
+Q2 — Tension seuil,Hurst2mH,0.05574811280254316,0.27586206896551724,calculé
+Q2 — Tension seuil,Lyapunov,0.0,0.1206896551724138,calculé
+Q2 — Tension seuil,MultifractalDeltaAlpha,0.9979312103736532,0.9655172413793104,calculé
+Q2 — Tension seuil,SingularityFmax,0.0,0.1206896551724138,calculé
+Q3 — Agressivité,Higuchi,0.14536308695003708,0.4482758620689655,calculé
+Q3 — Agressivité,DFA,0.11417455967388716,0.3448275862068966,calculé
+Q3 — Agressivité,Katz,0.30965684384365244,0.4827586206896552,calculé
+Q3 — Agressivité,Hurst,0.10430183298944504,0.2413793103448276,calculé
+Q3 — Agressivité,SampleEn,2.374338606744786,0.9655172413793104,calculé
+Q3 — Agressivité,Petrosian,1.6639876703496774,0.8620689655172413,calculé
+Q3 — Agressivité,Sevcik,0.11200569284015091,0.3103448275862069,calculé
+Q3 — Agressivité,BoxCounting,0.6249320641147864,0.6896551724137931,calculé
+Q3 — Agressivité,PermutationEntropy,2.0714648324005416,0.9310344827586207,calculé
+Q3 — Agressivité,CorrelationD2,2.0598930051893225,0.896551724137931,calculé
+Q3 — Agressivité,GrassbergerProcaccia,4.127001026342734,1.0,calculé
+Q3 — Agressivité,InformationD1,0.7705596474621146,0.7241379310344828,calculé
+Q3 — Agressivité,VisibilityGraph,0.41753649318277564,0.5517241379310345,calculé
+Q3 — Agressivité,TwoNN,0.0,0.1206896551724138,calculé
+Q3 — Agressivité,DANCo,0.0,0.1206896551724138,calculé
+Q3 — Agressivité,Fisher,0.13868452925513663,0.41379310344827586,calculé
+Q3 — Agressivité,LevinaBickel,0.0,0.1206896551724138,calculé
+Q3 — Agressivité,PCAIntrinsic,1.029848247251068,0.7931034482758621,calculé
+Q3 — Agressivité,LocalPCA,1.1085766876074337,0.8275862068965517,calculé
+Q3 — Agressivité,GraphDimension,0.12074077722819292,0.3793103448275862,calculé
+Q3 — Agressivité,PersistentHomology,0.0,0.1206896551724138,calculé
+Q3 — Agressivité,MFA,0.9625337500219258,0.7586206896551724,calculé
+Q3 — Agressivité,KolmogorovLZ,0.41598267593058486,0.5172413793103449,calculé
+Q3 — Agressivité,SpectralBeta,0.4348776624687345,0.6206896551724138,calculé
+Q3 — Agressivité,SpectralDimension,0.43487766246873283,0.5862068965517241,calculé
+Q3 — Agressivité,Hurst2mH,0.10430183298944869,0.27586206896551724,calculé
+Q3 — Agressivité,Lyapunov,0.0,0.1206896551724138,calculé
+Q3 — Agressivité,MultifractalDeltaAlpha,0.493690819776793,0.6551724137931034,calculé
+Q3 — Agressivité,SingularityFmax,0.0,0.1206896551724138,calculé
+Q4 — Persistance,Higuchi,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,DFA,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,Katz,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,Hurst,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,SampleEn,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,Petrosian,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,Sevcik,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,BoxCounting,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,PermutationEntropy,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,CorrelationD2,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,GrassbergerProcaccia,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,InformationD1,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,VisibilityGraph,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,TwoNN,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,DANCo,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,Fisher,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,LevinaBickel,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,PCAIntrinsic,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,LocalPCA,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,GraphDimension,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,PersistentHomology,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,MFA,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,KolmogorovLZ,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,SpectralBeta,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,SpectralDimension,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,Hurst2mH,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,Lyapunov,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,MultifractalDeltaAlpha,3.1974233053810015,0.5172413793103449,calculé
+Q4 — Persistance,SingularityFmax,3.1974233053810015,0.5172413793103449,calculé
+Q5 — Actif / réactif,Higuchi,0.9322878599977732,0.2413793103448276,calculé
+Q5 — Actif / réactif,DFA,2.498584985722524,0.6206896551724138,calculé
+Q5 — Actif / réactif,Katz,2.4115770976348205,0.5517241379310345,calculé
+Q5 — Actif / réactif,Hurst,3.615725204290561,0.7241379310344828,calculé
+Q5 — Actif / réactif,SampleEn,5.1980048590076,0.896551724137931,calculé
+Q5 — Actif / réactif,Petrosian,2.4609764161249146,0.5862068965517241,calculé
+Q5 — Actif / réactif,Sevcik,1.1249568924345106,0.3448275862068966,calculé
+Q5 — Actif / réactif,BoxCounting,3.5160915878746257,0.6896551724137931,calculé
+Q5 — Actif / réactif,PermutationEntropy,4.6687035230623986,0.8620689655172413,calculé
+Q5 — Actif / réactif,CorrelationD2,2.246520050974911,0.5172413793103449,calculé
+Q5 — Actif / réactif,GrassbergerProcaccia,2.0938353381832067,0.4827586206896552,calculé
+Q5 — Actif / réactif,InformationD1,3.7552279085846605,0.7586206896551724,calculé
+Q5 — Actif / réactif,VisibilityGraph,1.3054980398666745,0.41379310344827586,calculé
+Q5 — Actif / réactif,TwoNN,0.0,0.08620689655172414,calculé
+Q5 — Actif / réactif,DANCo,0.0,0.08620689655172414,calculé
+Q5 — Actif / réactif,Fisher,7.258596482462505,0.9310344827586207,calculé
+Q5 — Actif / réactif,LevinaBickel,0.0,0.08620689655172414,calculé
+Q5 — Actif / réactif,PCAIntrinsic,10.191911299823106,0.9655172413793104,calculé
+Q5 — Actif / réactif,LocalPCA,1.146993110113277,0.3793103448275862,calculé
+Q5 — Actif / réactif,GraphDimension,3.9448547424804814,0.7931034482758621,calculé
+Q5 — Actif / réactif,PersistentHomology,0.28585112965196285,0.1724137931034483,calculé
+Q5 — Actif / réactif,MFA,1.027574082184562,0.3103448275862069,calculé
+Q5 — Actif / réactif,KolmogorovLZ,14.303216217518264,1.0,calculé
+Q5 — Actif / réactif,SpectralBeta,0.9442117969495932,0.27586206896551724,calculé
+Q5 — Actif / réactif,SpectralDimension,0.7153329211184197,0.20689655172413793,calculé
+Q5 — Actif / réactif,Hurst2mH,1.3465408990783587,0.4482758620689655,calculé
+Q5 — Actif / réactif,Lyapunov,0.0,0.08620689655172414,calculé
+Q5 — Actif / réactif,MultifractalDeltaAlpha,4.102718153747201,0.8275862068965517,calculé
+Q5 — Actif / réactif,SingularityFmax,2.529773837134402,0.6551724137931034,calculé
+Q6 — Contraste mis à l’échelle,Higuchi,2.3764225910798857,0.375,calculé
+Q6 — Contraste mis à l’échelle,DFA,4.365788942367774,0.7916666666666666,calculé
+Q6 — Contraste mis à l’échelle,Katz,23.114528911897143,1.0,calculé
+Q6 — Contraste mis à l’échelle,Hurst,1.9646481412299306,0.3333333333333333,calculé
+Q6 — Contraste mis à l’échelle,SampleEn,4.1803519653988905,0.7083333333333334,calculé
+Q6 — Contraste mis à l’échelle,Petrosian,11.981285580535433,0.9583333333333334,calculé
+Q6 — Contraste mis à l’échelle,Sevcik,0.5923393399401705,0.125,calculé
+Q6 — Contraste mis à l’échelle,BoxCounting,1.9441447477602454,0.2916666666666667,calculé
+Q6 — Contraste mis à l’échelle,PermutationEntropy,4.252752159196274,0.75,calculé
+Q6 — Contraste mis à l’échelle,CorrelationD2,0.44224249565360374,0.08333333333333333,calculé
+Q6 — Contraste mis à l’échelle,GrassbergerProcaccia,1.7549070690425153,0.25,calculé
+Q6 — Contraste mis à l’échelle,InformationD1,3.0729911461494956,0.625,calculé
+Q6 — Contraste mis à l’échelle,VisibilityGraph,4.963810815722183,0.875,calculé
+Q6 — Contraste mis à l’échelle,TwoNN,,,indisponible
+Q6 — Contraste mis à l’échelle,DANCo,,,indisponible
+Q6 — Contraste mis à l’échelle,Fisher,6.619630074483391,0.9166666666666666,calculé
+Q6 — Contraste mis à l’échelle,LevinaBickel,,,indisponible
+Q6 — Contraste mis à l’échelle,PCAIntrinsic,2.692547814890788,0.4583333333333333,calculé
+Q6 — Contraste mis à l’échelle,LocalPCA,2.454660540055042,0.4166666666666667,calculé
+Q6 — Contraste mis à l’échelle,GraphDimension,2.6990168767285363,0.5,calculé
+Q6 — Contraste mis à l’échelle,PersistentHomology,4.382283247540527,0.8333333333333334,calculé
+Q6 — Contraste mis à l’échelle,MFA,3.9352436930413752,0.6666666666666666,calculé
+Q6 — Contraste mis à l’échelle,KolmogorovLZ,0.7564078833033179,0.16666666666666666,calculé
+Q6 — Contraste mis à l’échelle,SpectralBeta,1.7425708539700486,0.20833333333333334,calculé
+Q6 — Contraste mis à l’échelle,SpectralDimension,3.0156572257221166,0.5833333333333334,calculé
+Q6 — Contraste mis à l’échelle,Hurst2mH,0.22445707566113418,0.041666666666666664,calculé
+Q6 — Contraste mis à l’échelle,Lyapunov,,,indisponible
+Q6 — Contraste mis à l’échelle,MultifractalDeltaAlpha,3.0087394944348023,0.5416666666666666,calculé
+Q6 — Contraste mis à l’échelle,SingularityFmax,,,indisponible

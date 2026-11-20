@@ -1,0 +1,41 @@
+# Machine-specific environments and generated interpreter files
+.venv/
+**/__pycache__/
+*.py[cod]
+
+# Temporary rendering and intermediate work
+tmp/
+**/tmp/
+
+# Very large bundled snapshot and data files; distribute only as reviewed release assets
+output/master_whitepaper_v4/UNIVERSAL_LOG_FULL_PROJECT_SNAPSHOT_*.zip
+output/master_whitepaper_v4/UNIVERSAL_LOG_LIVRE_BLANC_COMPLET_*.pdf
+*.h5ad
+pancréas/**/source/GSE309596_raw_counts/
+pancréas/**/source/
+pancréas/**/sources/
+pancréas/**/candidate_*_sources/
+pancréas/**/data_GSE141017/
+pancréas/**/data_GSE57495/
+pancréas/**/data_GSE271300/
+pancréas/**/GSE141017_ALL.csv.gz
+pancréas/**/CRISPRGeneEffect.csv
+pancréas/Archive complète PDAC v6 — ZIP/
+pancréas/ANALYSE_THERAPEUTIQUE_2026-11-16/pdac_prism_control_by_drug_fluxes.csv
+pancréas/ANALYSE_THERAPEUTIQUE_2026-11-20/candidate_NatureComm2025_PAAD/*.csv
+PMC*.xml
+tmp_pmc_fulltext.xml
+
+# Archives and PDFs are reviewed and published as release assets rather than committed blindly
+*.zip
+*.pdf
+*.xlsx
+*.docx
+pancréas/REVUE_INDEPENDANTE_2026-11-15/data_GSE57495/GSE57495_series_matrix.txt.gz
+pancréas/REVUE_INDEPENDANTE_2026-11-15/data_GSE57495/
+pancréas/VALIDATION_TEMPORELLE_GSE141017/data/
+GITHUB_PUBLICATION_NOTES_*.md
+GITHUB_RELEASE_NOTES_DRAFT_*.md
+
+# Machine-specific profiler binary
+*.pstats

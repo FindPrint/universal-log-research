@@ -1,0 +1,33 @@
+
+[CIBLE-FIXE-GLOBALE] politique=fixed mode=single cible_demandee='CellState_basal' -> cible_globale='CellState_basal' methode=user_requested_target controles=['scBasalScore'] | Cette cible unique sera reutilisee pour TOUS les controles. Le run ou controle == cible sera signale explicitement comme diagonal, avec cible_demandee ET cible_utilisee.
+
+================================================================================
+UNIVERSAL_LOG v5.9.4-L7aL7b-DKind-AuditFix-SeedTrace-CohenDOnly-NoPlots — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\pancréas\ANALYSE_THERAPEUTIQUE_2026-11-19\pipeline_inputs_balanced_15\GSE271300_PC69_balanced15_multiflux.csv | Domain: pdac | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=scBasalScore cible_demandee='CellState_basal' -> cible_utilisee='CellState_basal' | Cible fixee conservee pour ce run.
+Target Observable: CellState_basal | Control Parameter: scBasalScore
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.361
+  règle: uniform
+  n_candidates: 45, resolution: 2.273%
+  w_size: 19, min_grp: 6
+
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE] controle=scBasalScore direction=non_monotone monotone=False spearman_r=0.084 | Le controle n'est PAS monotone dans l'ordre fourni. La progression n'est donc pas injective : un meme seuil en % peut correspondre a plusieurs valeurs brutes. Les valeurs brutes a cote des % sont exploratoires (voir min / max / spread). Ne pas lire T0 comme une valeur unique du controle.
+[T0-VALEUR-BRUTE] controle=scBasalScore T0=76.16% -> valeur brute controle=0.336668 (median_near=0.3366675363286669, min_near=0.3342679145215625, max_near=0.3485977817504548, spread=0.01432986722889229, ambiguous=True)
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE-RAPPEL] controle=scBasalScore : T0 en % ne correspond pas a une valeur unique du controle. Voir cascade.thresholds_in_control_units pour min / max / spread.
+Rendu des figures desactive par --no-plots.
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=up regime=up disagreement=False | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: INDETERMINE (mode=off) | L7b desactive (--no-l7b). Ne pas interpreter L7a seul.
+✓ 5-Threshold T_0: 76.16%
+✓ T_0 en valeur brute du controle 'scBasalScore': 0.3366675363286669 (median_near=0.3366675363286669, min_near=0.3342679145215625, max_near=0.3485977817504548, spread=0.01432986722889229, ambiguous=True)
+✓ Cible: demandee=CellState_basal | utilisee=CellState_basal | politique=fixed | repli_diagonal=False
+✓ [AVERTISSEMENT] Controle 'scBasalScore' NON MONOTONE (direction=non_monotone) : T0 en % n'est pas une valeur unique du controle, voir spread.
+✓ Tool Footprint: ADC Hardware Quantization Detected (3 discrete levels)
+✓ Holographic Tension: criticality|control=scBasalScore (Delta=1.52, D_vec=[1.476753, 2.43971, 3.0, 2.522293])
+✓ Results exported to: <PROJECT_ROOT>\pancréas\ANALYSE_THERAPEUTIQUE_2026-11-19\pipeline_runs_parallel15\PC69_target_basal\scBasalScore

@@ -1,0 +1,28 @@
+{
+  "choice_and_reason": "Use the first 80 rows of the archived L16,Tc,chain0 CSV to bound an expensive integration test while retaining two 40-row windows. This is an engineering test subset, not a scientific sample-size choice.",
+  "control": "MC_Update",
+  "created_utc": "2026-11-14T21:55:52.432459+00:00",
+  "hypotheses_not_results": [
+    "H1: the real run_full_unified_pipeline path with l7b_mode=full emits all four perturbation checks and a structured L7b result.",
+    "H2: absent/failed evidence remains INDETERMINE; the software does not convert missing checks into a robust verdict."
+  ],
+  "input": "ising_classique_test\\finite_size\\multiflux_mcmc_pipeline_test\\pipeline_inputs\\L16_T2.269185_chain0.csv",
+  "input_sha256": "ed79ab331acebee7bb44d9cd4589809b52f91ea1f73d873600206680dad92d4f",
+  "l7b_mode": "full",
+  "limitation": "Software integration evidence only; the 80-row slice and heuristic verdicts do not validate Ising criticality detection.",
+  "other_arguments": "run_full_unified_pipeline defaults retained: domain=generic, risk=moderate, horizon=None, horizons=None, n_scenarios=48; max_workers=1.",
+  "outer_mode": "fast",
+  "rows_original": 200,
+  "rows_used": 80,
+  "runner_sha256": "174686866ed228a2bb8b2852ea3fcf23665cf7c0260cb84c75edef50f89e3b5e",
+  "seed": 20261108,
+  "source": "audit_release\\UNIVERSAL_LOG_v5_9_1_AUDITFIX.py",
+  "source_sha256": "a2173839b8ebfcf3dfcf0ee809c5d0a7b2cb1fd34bcaa1199175fa6b23aa2ef8",
+  "status": "predeclared_before_execution",
+  "subset": "audit_release\\2026-11-14_l7b_full_reduced\\data\\L16_T2.269185_chain0_first80.csv",
+  "subset_rule": "rows [0:80], original row order retained",
+  "subset_sha256": "b76a2ef1ddc50855baa8959714744e0764304bbe9408c6842c5596530ad9c216",
+  "target": "Abs_magnetization",
+  "target_policy": "fixed",
+  "title": "v5.9.1 L7b-full integration - bounded sample"
+}

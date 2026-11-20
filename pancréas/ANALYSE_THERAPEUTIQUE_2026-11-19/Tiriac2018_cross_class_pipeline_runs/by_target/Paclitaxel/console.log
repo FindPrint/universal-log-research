@@ -1,0 +1,6 @@
+RUN MATRIX GROUP: chemo_target__targeted_controls
+TARGET: Paclitaxel
+CONTROLS: ["Selumetinib", "Afatinib", "Bortezomib", "Lapatinib", "Sunitinib", "Olaparib", "Nutlin-3", "MK-2206", "KU-55933", "Everolimus", "Celecoxib", "Ruxolitinib", "SB5225334", "SGI-1776", "OSI-420", "TPCA-1", "LY2874455", "SF1670", "K-ras(G12C) Inhibitor 9", "WIKI4", "Disulfuram"]
+STARTED_UTC: 2026-11-20T03:02:27.222151+00:00
+COMMAND: ["<PROJECT_ROOT>\\.venv\\Scripts\\python.exe", "<PROJECT_ROOT>\\UNIVERSAL_LOG_v5.9.4.py", "--input", "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\candidate_Tiriac2018\\Tiriac2018_66PDO_drug_AUC.csv", "--target", "Paclitaxel", "--controls", "Selumetinib,Afatinib,Bortezomib,Lapatinib,Sunitinib,Olaparib,Nutlin-3,MK-2206,KU-55933,Everolimus,Celecoxib,Ruxolitinib,SB5225334,SGI-1776,OSI-420,TPCA-1,LY2874455,SF1670,K-ras(G12C) Inhibitor 9,WIKI4,Disulfuram", "--control-mode", "multi", "--target-mode", "fixed", "--mode", "fast", "--l7b-light", "--no-plots", "--seed", "42", "--max-workers", "1", "--output", "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\Tiriac2018_cross_class_pipeline_runs\\by_target\\Paclitaxel\\pipeline_output"]
+

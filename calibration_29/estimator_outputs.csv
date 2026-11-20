@@ -1,0 +1,1509 @@
+benchmark,replicate,process,embedding_stress,estimator,class_v53,enters_tlog_geometric_layer,value,finite
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,1.9971076087608977,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.5480857357498983,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.074147476419053,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.5370156522147473,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.1603995812250605,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.0354190632294182,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.6780554896898954,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.7150788984143792,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9991568213375176,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.536050084198023,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.536050084198023,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.7377697881832361,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.026871884092526,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,7.378553423087127,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,6.818932181653834,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,7.576733158697916,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,8.873975359060005,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,7.7365192444745405,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.6,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.5396976015628034,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,1.7833349786934312,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,114.0,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,-0.04618332419634266,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.5230916620981714,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.4629843477852527,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,0.1363202331072236,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.04977653386016356,True
+fGn_H0.50,0,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.0,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.540433606971342,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.5469064855213148,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.0007236388557326,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,1.0126668772148795,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.4125995022220384,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0269149104667104,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.3998116493549553,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.4645406970975912,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.966459267023983,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,1.0622398116187266,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,1.0622398116187266,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,1.1820311714041285,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,1.8358301051925139,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,4.837702871752138,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,4.335364133871492,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,3.8741903518748364,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.0249976883257987,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,4.094117647058823,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.7933027960979826,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,1.6163021584669097,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,2.0,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,36.0,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.7743903605607922,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.6128048197196039,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,0.9873331227851205,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.2229861800422821,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.1731908563695317,True
+fBm_graph_H0.50,0,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.0,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,1.9930882708408715,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.4688455513786418,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.071617039198583,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.5858329874500662,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.0562744823983015,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.0347985564313973,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.6828417748350901,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.7487785004275456,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9982557882132858,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.8521003120557724,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.8521003120557724,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.8856284162275931,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.0438569931736406,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,6.508115202944274,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,6.047514490290315,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,7.564508751121442,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,9.343524923751334,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,7.680590386748899,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.752941176470588,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.6434419305548869,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,3.5950066322177836,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,113.0,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,0.050564116044001385,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.474717941977999,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.414167012549934,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,0.12925664466207665,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.0723719714598261,True
+fGn_H0.50,1,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.0,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.4835379967475542,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.5316300768541029,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.0005633806540055,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,1.008168970906837,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.2706537083664657,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0272615315970108,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.3584860973705029,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.3438242684630153,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.9681165674977432,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,1.0780630425956892,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,1.0780630425956892,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,1.0517330500205757,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,2.0824064481526063,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,4.48390588293481,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,3.5837724504141253,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,3.5941810848119613,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.0222948802370615,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,3.8705882352941177,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.8437054389414949,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,1.3519379512923515,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,3.0,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,34.0,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.7916217858313688,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.6041891070843155,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,0.9918310290931629,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.21148079668386235,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.18111946106633936,True
+fBm_graph_H0.50,1,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.0,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,2.012749672778707,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.480431283653476,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.0743616056832137,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.5995989002679307,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.1405521902373086,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.035323714256094,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.6748941052009305,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.7040896908306622,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9999274705799817,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.98308161346748,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.98308161346748,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.6874791876551412,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.194138954799176,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,6.128987079655176,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,6.263440197230568,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,7.523957802704654,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,9.080987867235635,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,7.595397957511203,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.823529411764706,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.6256131197637043,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,2.1890805510759557,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,117.0,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,-0.06348045285822296,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.5317402264291116,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.4004010997320693,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,,False
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.05718853768118948,True
+fGn_H0.50,2,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.069299005196989,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.48416227987561,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.3773736044286491,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.0001211895230937,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,1.017492008425357,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.3770197848351649,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0267165914883893,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.289318478182762,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.3081611748252062,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.963631861077031,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,0.9704266066071119,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,0.9704266066071119,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,1.2651611121194282,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,2.115414983948579,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,3.480733462438378,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,3.2170627740632756,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,2.774541244171153,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.004059767131312,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,3.0470588235294116,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.7602845675887832,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,0.9695219696435141,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,2.0,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,42.0,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.8236622592644163,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.5881688703677919,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,0.9825079915746431,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.21297274604345878,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.19679090382413333,True
+fBm_graph_H0.50,2,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.0661136362309929,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,1.9947240457590998,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.4440365884887914,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.0717948499911618,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.603023148699346,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.138653401311682,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.0357524604739503,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.669536753765624,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.6695896146284428,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9992897358021678,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.7061678083773555,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.7061678083773555,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.7151034020520746,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.0735142012070673,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,6.699656370135796,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,6.909167535530738,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,7.394667088231084,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,8.263499953103787,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,7.624406119053635,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.788235294117647,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.7476037277869,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,1.2488566201797444,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,112.0,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,0.05851964456914273,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.4707401777154288,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.396976851300654,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,0.1209568992801395,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.05835225331670757,True
+fGn_H0.50,3,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.0,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.4673556377388532,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.4831559545075317,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.0002441137789306,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,0.9787091858257801,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.24102713976472476,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0269149104667104,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.3197057484071104,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.365239199855669,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.9649374115492271,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,0.9720543265920745,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,0.9720543265920745,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,1.4219185991733791,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,1.8844443104966309,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,3.6286979080447272,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,2.993913677730044,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,2.828807413791557,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.0100425650436549,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,2.9176470588235293,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.7921967214897395,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,1.1734812858156811,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,2.0,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,35.0,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.7694873411141754,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.6152563294429123,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,1.0212908141742199,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.17978573619833232,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.029202141599911524,True
+fBm_graph_H0.50,3,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.008661731255951,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,2.0043989726991667,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.5081619627017315,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.0730723353797467,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.5572852577004461,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.1753549184462524,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.0340804078218162,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.6747418915921617,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.7162805299903818,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9988890166401225,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.8172572858708964,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.8172572858708964,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.6550551518293386,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.1526184803539854,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,5.673016984151725,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,6.5299945809082365,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,7.492418712951451,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,9.486069552454687,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,7.770901950191962,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.776470588235294,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.6845957559356366,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,1.8123793853062993,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,111.0,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,0.020720285112270736,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.4896398574438647,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.4427147422995539,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,0.12483875250184706,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.0559591670250178,True
+fGn_H0.50,4,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.0,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.5197997095039435,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.6071130961517694,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.0012836126341853,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,0.9964311228676052,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.5091246027434686,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0261205398634994,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.4100194461460065,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.4500822457258893,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.9595291838689038,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,1.2633485088450211,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,1.2633485088450211,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,1.6595912118031728,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,2.136584938668462,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,4.900433315605865,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,3.792626574595368,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0279526870798086,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,3.9258469914812424,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.0466247275757834,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,4.176470588235294,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.8017427873410288,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,1.5124240648662728,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,3.0,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,41.0,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.736425997628334,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.6317870011858329,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,1.0035688771323947,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.20066817036314774,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.14327835357608398,True
+fBm_graph_H0.50,4,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.0,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,1.9978696776374065,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.497288013717053,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.0720480328520128,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.5522127092432844,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.2211778183587123,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.0355620094520268,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.6738700305393248,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.709882144142975,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9990628156773091,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.6215201144887836,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.6215201144887836,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.549673699311726,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.122197533333572,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,7.657735768213407,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,7.2396233863316395,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,7.302963338321248,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,9.230916467830024,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,7.6389197167074805,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.694117647058824,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.5248047935862572,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,2.481834787178103,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,112.0,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,0.07500275343682225,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.462498623281589,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.4477872907567155,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,,False
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.1144023079620281,True
+fGn_H0.50,5,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.0,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.498016123607062,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.6045237948122109,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.0006699098429734,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,1.011016689983591,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.7145533027118781,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0275087785774726,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.396138237832037,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.5279617580559859,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.9699989948629171,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,1.1920540758847873,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,1.1920540758847873,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,1.4609048550104757,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,1.7632826303536868,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,4.449346526912022,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,3.5579732132225486,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,3.638966163432183,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.024890222612714,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,4.023529411764706,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.8793727511867042,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,1.5579570539461944,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,3.0,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,45.0,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.8500657090064798,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.57496714549676,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,0.9889833100164089,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.25039471159520454,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.1458363032591532,True
+fBm_graph_H0.50,5,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.007499762568841,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,1.986058037530221,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.4817080182980833,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.0702124475466868,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.5863059389504655,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.1802750190224462,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.0359902934185325,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.675750564803657,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.7240440435727622,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9995810158944279,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.713966622024145,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.713966622024145,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.6353505792140304,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.1237318080658776,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,6.4251871399950895,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,6.757208582912033,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,7.083368307658935,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,8.523940585388257,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,7.536448503212428,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.741176470588235,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.5496367167280225,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,1.7587313844557355,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,114.0,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,0.04450297495402992,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.477748512522985,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.4136940610495345,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,0.10677734227897906,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.10950072528582788,True
+fGn_H0.50,6,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.0,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.485686313421816,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.5003847759826672,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.0004181073165745,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,1.0270416944166725,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.2964071489114099,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0258218956754757,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.3594881643660828,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.3970854320713026,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.9564991680267012,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,1.0227541334626116,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,1.0227541334626116,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,1.2944538454563856,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,1.9926230194976027,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,4.331073592512966,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,3.0088178804421464,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,2.9701433408435327,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.0160727047966553,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,3.388235294117647,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.7835531126141717,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,1.989506704779459,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,2.0,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,24.0,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.8249208803455066,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.5875395598272468,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,0.9729583055833275,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.26189911806744276,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.052641019128695454,True
+fBm_graph_H0.50,6,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.0315605724541737,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,2.01349804064564,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.4510805457420761,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.074947961866756,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.6176696920579026,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.110679292175116,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.0356572555074541,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.6897418350210072,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.7084965623547792,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9978792561186494,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.8978597005891436,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.8978597005891436,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.8504087046367774,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.1547944054657147,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,,False
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,6.050907865951847,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,7.445587866507984,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,8.977588516917104,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,7.3100660490888325,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.788235294117647,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.487414085106883,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,2.161060041000016,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,112.0,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,-0.060894781615206395,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.5304473908076033,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.3823303079420974,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,0.12787458191361523,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.10573163586922052,True
+fGn_H0.50,7,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.043994720157417,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.4792253898881544,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.38082492418678293,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.0001251350099891,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,1.00405592653207,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.28717901982644206,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0277063730595215,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.2981218168694637,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.2813328587466062,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.9697296816361028,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,0.7673432543285718,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,0.7673432543285718,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,1.0165249660485751,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,1.9939397019574017,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,3.4111400037665938,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,3.428350589704665,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,3.0499665367179856,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.0039586919314,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,3.1294117647058823,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.7762745885417222,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,0.9729229835075954,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,3.0,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,24.0,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.801732168098545,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.5991339159507274,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,0.9959440734679299,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.22296457560399907,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.3474713144572683,True
+fBm_graph_H0.50,7,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.179778247242575,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,1.8970788826767615,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.2924958275461595,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.0486373460283864,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.7469228163555145,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,1.9867676354035788,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.031669473215173,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.635956274944371,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.6955864133796434,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9932740314143916,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.7529843945230907,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.7529843945230907,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.7531108611862292,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.1828343563960813,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,7.631050381994506,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,6.695364137924947,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,7.313826396595752,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,9.01319438263096,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,6.7468304719730945,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.833333333333333,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.5646726903277575,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,1.682564962703865,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,105.0,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,0.6536100782944754,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.1731949608527623,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.2530771836444856,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,0.12378131376900083,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.16639748791488407,True
+fGn_H0.75,0,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.0,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.2517163676832348,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.28264406483357374,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.0000194946816268,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,1.0144818182369384,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.0710189497592017,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0195037197905934,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.1840815220416998,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.2616785302342535,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.8795211357416415,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,0.732743257741817,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,0.732743257741817,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,1.0187666533979043,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,2.0257007979747295,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,2.2788159547957174,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,2.220084970515786,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,2.136543950896714,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.001347845484984,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,1.8705882352941177,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.8256108116585548,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,0.7511638157992718,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,1.0,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,19.0,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.7890772328447628,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.6054613835776186,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,0.9855181817630616,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.23527877846616227,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.07287728820786299,True
+fBm_graph_H0.75,0,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.017677489773627,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,1.9381849187965277,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.253999548359904,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.054030218918756,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.755751872041275,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.134704220354885,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.0325404676388292,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.6407229268191648,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.695256786406376,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9956447803402768,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.6308122284802278,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.6308122284802278,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.9825398015103692,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,1.9365751464694956,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,,False
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,6.297317061714516,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,6.373046760991728,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,8.44642191603011,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,5.740996904638971,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.752941176470588,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.2940009260143628,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,2.2905619350098725,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,109.0,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,0.5640948422349367,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.2179525788825316,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.244248127958725,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,0.12569864606951497,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.088863288412807,True
+fGn_H0.75,1,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.058500715921951,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.2844814825191182,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.16900012582211565,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.0000269968911215,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,1.0121689493283548,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.07731419302033239,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.020271840962229,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.1950406174582742,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.1759078772015634,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.8863838105082673,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,0.7078683293270757,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,0.7078683293270757,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,1.0249396031341964,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,1.926671718612831,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,2.8546287547827007,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,2.335955340434095,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,2.492592568696396,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.001724748924549,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,1.964705882352941,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.8078324191764348,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,0.8195481696639405,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,1.0,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,14.0,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.8095304121964795,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.5952347939017604,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,0.9878310506716452,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.24205937827518764,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.10446202643123947,True
+fBm_graph_H0.75,1,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.0,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,1.9201839484922396,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.2493099022606164,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.0521598527176412,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.7353935141377056,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.097141118779237,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.0329746693029311,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.6598349802356047,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.7521759894723554,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9973014511438902,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.7530041857047847,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.7530041857047847,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.7370137988412937,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.0324412252419597,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,6.801375197122256,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,5.732077695414976,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,6.812117468641909,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,8.696439769411308,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,6.7336054602094295,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.7976190476190474,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.4762985596908804,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,1.8785394389019625,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,108.0,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,0.5831987916028135,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.208400604198593,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.2646064858622945,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,,False
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.10536877591815852,True
+fGn_H0.75,2,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.0,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.2740588705110067,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.2963489159362851,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.000058483386182,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,1.0154419949527604,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.06112348360102347,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0209862614360812,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.2477852809566892,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.251577161140683,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.9056249890633031,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,0.9293672305517704,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,0.9293672305517704,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,1.1838939346773845,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,1.9305548421530396,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,3.1594296974705234,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,2.344832510045999,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,2.253047881883949,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.0039881135463895,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,2.0823529411764707,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.7939605736170549,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,1.1710474153325163,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,1.0,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,12.0,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,2.053028433518672,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.473485783240664,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,0.9845580050472396,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.27654472922603074,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.04135180003012873,True
+fBm_graph_H0.75,2,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.0130316697943393,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,1.9089927089713936,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.2367263456742295,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.0512944885680624,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.7643169985455898,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.1033775815085654,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.0338405029578375,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.6454116932619058,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.6932805566682527,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9983493583611704,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.652079318703433,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.652079318703433,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.751277071720987,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.1223605076638647,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,7.058459951977224,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,6.789101086088858,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,7.115880032567708,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,8.745248420136527,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,6.12610222528742,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.821428571428571,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.6736941370573732,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,1.2244926643761798,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,105.0,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,0.5653057030165579,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.217347148491721,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.2356830014544102,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,,False
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.1576846868166889,True
+fGn_H0.75,3,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.0,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.2156263755724546,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.17374865541083806,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.0000060190240405,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,0.9912808509656336,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.03172854982017586,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0179074080294965,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.1320295270868064,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.1506020525793483,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.8345036137083853,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,0.5642444145043858,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,0.5642444145043858,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,0.7242498816045849,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,1.718997162890797,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,2.6741248101575326,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,2.0264746592362037,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,1.8758171664703762,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.0004194749426998,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,1.6352941176470588,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.8641309214303702,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,0.53898479724201,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,1.0,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,11.0,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.8143983969491202,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.5928008015254398,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,1.0087191490343663,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.12764572989847048,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.06629468125498783,True
+fBm_graph_H0.75,3,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.0092249619732039,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,1.907110434708958,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.2015629510980386,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.0501023909452325,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.7773689621065737,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.001954046201462,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.033167372167552,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.6267066375788386,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.6563152660240947,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9976154686540124,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.827575657648148,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.827575657648148,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.64142287385739,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.0598596622434,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,6.121616376668131,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,7.113956416311352,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,7.158261208955289,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,8.659680057225453,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,6.04915934947274,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.869047619047619,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.5397794799782996,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,2.0389026008065874,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,101.0,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,0.5874504718477654,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.206274764076117,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.2226310378934264,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,0.12617249080510365,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.10387874407924824,True
+fGn_H0.75,4,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.0542552621146566,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.204519172723115,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.23768401162428243,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.0000104238000562,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,0.9902092442747628,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.11859160923092055,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0193497618895129,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.1536994011628812,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.1447837846162034,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.8581174584207475,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,0.7930979176779989,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,0.7930979176779989,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,0.9318064054600703,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,1.7800733481227713,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,2.408067414904314,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,2.0963263432664183,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,2.0271800947774845,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.0007524982569709,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,1.4588235294117646,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.7772104888406477,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,0.9228735137502756,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,1.0,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,17.0,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.784634060005172,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.607682969997414,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,1.0097907557252372,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.17302625980518396,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.3402720040228062,True
+fBm_graph_H0.75,4,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.0,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,1.9222833989263184,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.252200062820298,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.0533985958519945,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.7800890984344021,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,1.9123874570166697,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.0323472126028148,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.639414951803265,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.6840711404067783,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9955405368929451,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.692767103928371,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.692767103928371,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.6632648850687777,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.1733165582419436,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,7.237022022817422,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,6.3390860053436455,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,6.846963420181977,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,8.800289000040637,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,6.359191601924942,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.761904761904762,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.3830619899737748,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,2.1455450069662283,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,111.0,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,0.569406686733453,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.2152966566332735,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.2199109015655978,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,0.1124113052454002,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.10427915340156912,True
+fGn_H0.75,5,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.0,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.2434586637198244,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.230433938362687,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.000035468293763,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,1.0215890457731789,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.10134482998615171,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0190929170798857,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.1978908361260796,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.221150784625151,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.8704645949102724,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,0.8762979126268585,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,0.8762979126268585,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,0.9166196909758967,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,2.070301893107848,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,3.3997381027257294,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,2.342966166835758,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,2.1623433512475976,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.0024180933275924,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,1.8235294117647058,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.8390062083611648,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,0.7959200832885761,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,1.0,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,17.0,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.8022305646665655,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.5988847176667171,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,0.9784109542268211,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.25594272061642964,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.1152036142391375,True
+fBm_graph_H0.75,5,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.1076925663891881,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,1.922033105961142,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.2689204694766114,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.0504416384572912,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.7619519468250159,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.237189935935522,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.0330710418963422,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.656034896594478,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.7232756974889627,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9968966875129759,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.58374168718579,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.58374168718579,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.612948805613468,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.050719184428642,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,5.716986342298889,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,6.033250777356269,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,6.912640831737281,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,8.129075746696257,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,6.208350594335921,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.880952380952381,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.478850973007737,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,2.0932944428391607,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,7.0,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,110.0,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,0.6292702756147072,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.1853648621926465,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.238048053174984,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,0.11000388945670722,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.042666779934758425,True
+fGn_H0.75,6,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.0,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.237557739012608,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.2268624323477375,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.0000148944341252,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,1.0266361064472107,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.09584012152313945,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0197600686345638,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.1807084372152303,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.1774886297953413,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.885660215463602,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,0.8100925039458351,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,0.8100925039458351,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,1.224755344406647,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,1.5487238783719435,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,2.777314835830907,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,2.208884198198901,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,1.9730562281967075,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.0010195283692092,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,1.588235294117647,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.832989257064599,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,0.8719660148533034,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,1.0,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,27.0,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.7973837434940438,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.601308128252978,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,0.9733638935527893,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.2486798958981812,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.07445884775333678,True
+fBm_graph_H0.75,6,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.0,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,Higuchi,saturation,True,1.909960677052982,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,DFA,saturation,True,1.2046162734510322,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,Katz,saturation,True,1.0502883171917816,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,Hurst,null_reference,False,0.7864342434102232,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,SampleEn,null_reference,False,2.077628304555655,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,Petrosian,saturation,True,1.033311788322395,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,Sevcik,saturation,True,1.6392248635331952,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,BoxCounting,saturation,True,1.6664648519103002,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,PermutationEntropy,saturation,False,0.9979103223004281,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,CorrelationD2,criticality,True,3.7014457923899395,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,GrassbergerProcaccia,criticality,True,3.7014457923899395,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,InformationD1,criticality,True,1.96993040118565,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,VisibilityGraph,criticality,True,2.092957684021948,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,TwoNN,criticality,True,6.9210353617618035,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,DANCo,criticality,True,6.564935000659227,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,Fisher,criticality,True,6.928987525358132,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,LevinaBickel,divergence,True,8.312737127657538,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,PCAIntrinsic,divergence,True,6.214628330805887,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,LocalPCA,divergence,True,6.678571428571429,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,GraphDimension,divergence,True,1.6495204410126345,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,PersistentHomology,divergence,True,2.1892575095908646,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,MFA,divergence,True,8.0,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,KolmogorovLZ,divergence,False,106.0,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,SpectralBeta,null_reference,False,0.6058305634415146,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,SpectralDimension,null_reference,True,2.1970847182792426,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,Hurst2mH,saturation,True,1.2135657565897768,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,Lyapunov,null_reference,False,0.13477086178623005,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,MultifractalDeltaAlpha,null_reference,False,0.1961911618779717,True
+fGn_H0.75,7,fractional Gaussian noise (stationary increments),False,SingularityFmax,null_reference,False,1.0,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,Higuchi,saturation,True,1.2430585299452002,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,DFA,saturation,True,0.26025052968527995,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,Katz,saturation,True,1.000029388473908,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,Hurst,null_reference,False,1.029831681453762,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,SampleEn,null_reference,False,0.12581372692851614,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,Petrosian,saturation,True,1.0188872172129562,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,Sevcik,saturation,True,1.1960476630188133,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,BoxCounting,saturation,True,1.195674929024399,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,PermutationEntropy,saturation,False,0.8735263209394396,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,CorrelationD2,criticality,True,0.8935310608806406,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,GrassbergerProcaccia,criticality,True,0.8935310608806406,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,InformationD1,criticality,True,1.1032028167859762,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,VisibilityGraph,criticality,True,1.7850107311739831,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,TwoNN,criticality,True,3.076883111938307,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,DANCo,criticality,True,2.125871412458811,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,Fisher,criticality,True,1.0,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,LevinaBickel,divergence,True,1.9230259029634291,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,PCAIntrinsic,divergence,True,1.0021438943377179,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,LocalPCA,divergence,True,1.811764705882353,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,GraphDimension,divergence,True,0.801571190499881,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,PersistentHomology,divergence,True,1.1522301715175967,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,MFA,divergence,True,1.0,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,KolmogorovLZ,divergence,False,18.0,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,SpectralBeta,null_reference,False,1.777054668153745,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,SpectralDimension,null_reference,True,1.6114726659231275,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,Hurst2mH,saturation,True,0.970168318546238,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,Lyapunov,null_reference,False,0.23681133717663347,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,MultifractalDeltaAlpha,null_reference,False,0.32180215643828936,True
+fBm_graph_H0.75,7,fractional Brownian sample path (integrated fGn),False,SingularityFmax,null_reference,False,1.0,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,Higuchi,saturation,True,2.156274634004608,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,DFA,saturation,True,1.8128648822460904,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,Katz,saturation,True,1.0265870508301573,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,Hurst,null_reference,False,0.06921397120325622,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,SampleEn,null_reference,False,0.20954809489076798,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,Petrosian,saturation,True,1.012143557682185,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,Sevcik,saturation,True,1.706485032308675,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,BoxCounting,saturation,True,1.9521441344032568,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,PermutationEntropy,saturation,False,0.7629765248524457,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,CorrelationD2,criticality,True,1.1959927850890166,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,GrassbergerProcaccia,criticality,True,1.1959927850890166,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,InformationD1,criticality,True,1.0004524043064085,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,VisibilityGraph,criticality,True,1.9609191833183566,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,TwoNN,criticality,True,2.3452907874290654,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,DANCo,criticality,True,1.1894319196382828,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,Fisher,criticality,True,1.9674750294513388,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,LevinaBickel,divergence,True,1.378172308999475,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,PCAIntrinsic,divergence,True,1.969480021880697,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,LocalPCA,divergence,True,1.0,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,GraphDimension,divergence,True,0.916179151637103,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,PersistentHomology,divergence,True,0.34937232928314554,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,MFA,divergence,True,2.0,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,KolmogorovLZ,divergence,False,20.0,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,SpectralBeta,null_reference,False,0.8651726235908377,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,SpectralDimension,null_reference,True,2.067413688204581,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,Hurst2mH,saturation,True,1.9307860287967438,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,Lyapunov,null_reference,False,,False
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,MultifractalDeltaAlpha,null_reference,False,0.0005580682618833155,True
+torus_k1,0,smooth quasiperiodic scalar observation of a 1-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,Higuchi,saturation,True,2.1560915715847493,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,DFA,saturation,True,1.8133047281231003,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,Katz,saturation,True,1.0265184849309097,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,Hurst,null_reference,False,0.0631341887959478,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,SampleEn,null_reference,False,0.21173994244595282,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,Petrosian,saturation,True,1.012196676254356,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,Sevcik,saturation,True,1.7063513262381615,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,BoxCounting,saturation,True,1.9553530792892877,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,PermutationEntropy,saturation,False,0.7640099617366412,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,CorrelationD2,criticality,True,1.1960036451069935,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,GrassbergerProcaccia,criticality,True,1.1960036451069935,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,InformationD1,criticality,True,1.0040473780961836,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,VisibilityGraph,criticality,True,2.0573041036631654,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,TwoNN,criticality,True,2.3463184125742624,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,DANCo,criticality,True,1.189144147371504,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,Fisher,criticality,True,1.9683284409154618,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,LevinaBickel,divergence,True,1.3786559298834893,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,PCAIntrinsic,divergence,True,1.9673043313467988,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,LocalPCA,divergence,True,1.0,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,GraphDimension,divergence,True,0.916179151637103,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,PersistentHomology,divergence,True,0.4266345085648468,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,MFA,divergence,True,2.0,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,KolmogorovLZ,divergence,False,20.0,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,SpectralBeta,null_reference,False,1.9678913459921301,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,SpectralDimension,null_reference,True,1.516054327003935,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,Hurst2mH,saturation,True,1.9368658112040522,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,Lyapunov,null_reference,False,,False
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,MultifractalDeltaAlpha,null_reference,False,0.0005950765451563367,True
+torus_k1,1,smooth quasiperiodic scalar observation of a 1-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,Higuchi,saturation,True,2.1562225705620133,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,DFA,saturation,True,1.8129432670468695,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,Katz,saturation,True,1.026565014854915,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,Hurst,null_reference,False,0.06801563225047894,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,SampleEn,null_reference,False,0.20961967878088425,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,Petrosian,saturation,True,1.012143557682185,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,Sevcik,saturation,True,1.706437772428154,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,BoxCounting,saturation,True,1.9521441344032568,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,PermutationEntropy,saturation,False,0.7629656028086036,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,CorrelationD2,criticality,True,1.1953311627506156,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,GrassbergerProcaccia,criticality,True,1.1953311627506156,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,InformationD1,criticality,True,1.0042667090077388,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,VisibilityGraph,criticality,True,2.148460457270902,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,TwoNN,criticality,True,2.3451619352554305,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,DANCo,criticality,True,1.189256493087638,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,Fisher,criticality,True,1.9685011474793095,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,LevinaBickel,divergence,True,1.378115346875517,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,PCAIntrinsic,divergence,True,1.9668654756026134,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,LocalPCA,divergence,True,1.0,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,GraphDimension,divergence,True,0.916179151637103,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,PersistentHomology,divergence,True,0.37597513104538494,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,MFA,divergence,True,2.0,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,KolmogorovLZ,divergence,False,20.0,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,SpectralBeta,null_reference,False,1.099977763950767,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,SpectralDimension,null_reference,True,1.9500111180246165,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,Hurst2mH,saturation,True,1.931984367749521,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,Lyapunov,null_reference,False,,False
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,MultifractalDeltaAlpha,null_reference,False,0.0005705637683688369,True
+torus_k1,2,smooth quasiperiodic scalar observation of a 1-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,Higuchi,saturation,True,2.1561067246978376,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,DFA,saturation,True,1.8133232615317425,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,Katz,saturation,True,1.0265131918571901,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,Hurst,null_reference,False,0.0671997062109702,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,SampleEn,null_reference,False,0.21064908628162748,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,Petrosian,saturation,True,1.012196676254356,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,Sevcik,saturation,True,1.706335649262892,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,BoxCounting,saturation,True,1.954553176663655,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,PermutationEntropy,saturation,False,0.7640557994078042,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,CorrelationD2,criticality,True,1.1949902738029627,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,GrassbergerProcaccia,criticality,True,1.1949902738029627,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,InformationD1,criticality,True,0.9799368566616474,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,VisibilityGraph,criticality,True,2.0604872803259995,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,TwoNN,criticality,True,2.3464619110396128,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,DANCo,criticality,True,1.1893475065012218,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,Fisher,criticality,True,1.9685988039472075,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,LevinaBickel,divergence,True,1.3786492915657382,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,PCAIntrinsic,divergence,True,1.966617540072278,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,LocalPCA,divergence,True,1.0,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,GraphDimension,divergence,True,0.916179151637103,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,PersistentHomology,divergence,True,0.40613017066356644,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,MFA,divergence,True,2.0,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,KolmogorovLZ,divergence,False,19.0,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,SpectralBeta,null_reference,False,2.5923649239736526,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,SpectralDimension,null_reference,True,1.2038175380131737,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,Hurst2mH,saturation,True,1.9328002937890298,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,Lyapunov,null_reference,False,,False
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,MultifractalDeltaAlpha,null_reference,False,0.0005727354840069365,True
+torus_k1,3,smooth quasiperiodic scalar observation of a 1-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,Higuchi,saturation,True,2.156120051262017,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,DFA,saturation,True,1.8131097180975133,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,Katz,saturation,True,1.0265406611176153,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,Hurst,null_reference,False,0.06401363755093173,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,SampleEn,null_reference,False,0.20900146860838126,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,Petrosian,saturation,True,1.012196676254356,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,Sevcik,saturation,True,1.7063860959275652,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,BoxCounting,saturation,True,1.9521441344032568,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,PermutationEntropy,saturation,False,0.7640167842181836,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,CorrelationD2,criticality,True,1.1955659544361659,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,GrassbergerProcaccia,criticality,True,1.1955659544361659,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,InformationD1,criticality,True,0.9984079029761561,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,VisibilityGraph,criticality,True,1.9698438422216742,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,TwoNN,criticality,True,2.345690226695457,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,DANCo,criticality,True,1.1893913513580194,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,Fisher,criticality,True,1.968672409089847,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,LevinaBickel,divergence,True,1.3781354538029282,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,PCAIntrinsic,divergence,True,1.9664307694783887,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,LocalPCA,divergence,True,1.0,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,GraphDimension,divergence,True,0.916179151637103,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,PersistentHomology,divergence,True,0.36573729480969347,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,MFA,divergence,True,2.0,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,KolmogorovLZ,divergence,False,19.0,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,SpectralBeta,null_reference,False,1.4050444806798976,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,SpectralDimension,null_reference,True,1.797477759660051,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,Hurst2mH,saturation,True,1.9359863624490683,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,Lyapunov,null_reference,False,,False
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,MultifractalDeltaAlpha,null_reference,False,0.0005532234913168121,True
+torus_k1,4,smooth quasiperiodic scalar observation of a 1-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,Higuchi,saturation,True,1.9142107168654419,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,DFA,saturation,True,1.845986059721927,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,Katz,saturation,True,1.030247589338994,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,Hurst,null_reference,False,0.12287415179856132,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,SampleEn,null_reference,False,0.6219817299347651,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,Petrosian,saturation,True,1.0147831019873044,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,Sevcik,saturation,True,1.6630317252882643,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,BoxCounting,saturation,True,1.9270938222076426,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,PermutationEntropy,saturation,False,0.8131333172615359,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,CorrelationD2,criticality,True,2.4626254250138233,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,GrassbergerProcaccia,criticality,True,2.4626254250138233,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,InformationD1,criticality,True,1.7323639325042572,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,VisibilityGraph,criticality,True,2.156364677277262,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,TwoNN,criticality,True,5.640335033993212,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,DANCo,criticality,True,1.7002876519443606,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,Fisher,criticality,True,2.437186100236745,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,LevinaBickel,divergence,True,1.8243962867581502,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,PCAIntrinsic,divergence,True,2.4822939249670144,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,LocalPCA,divergence,True,3.1904761904761907,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,GraphDimension,divergence,True,0.9259828340026101,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,PersistentHomology,divergence,True,2.322561171926423,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,MFA,divergence,True,4.0,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,KolmogorovLZ,divergence,False,55.0,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,SpectralBeta,null_reference,False,1.0481187582479903,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,SpectralDimension,null_reference,True,1.9759406208760049,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,Hurst2mH,saturation,True,1.8771258482014388,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,Lyapunov,null_reference,False,,False
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,MultifractalDeltaAlpha,null_reference,False,0.19570804474667147,True
+torus_k2,0,smooth quasiperiodic scalar observation of a 2-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,Higuchi,saturation,True,1.9137793637173004,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,DFA,saturation,True,1.8462769039820328,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,Katz,saturation,True,1.0302474805227355,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,Hurst,null_reference,False,0.129505574894832,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,SampleEn,null_reference,False,0.6368127059449172,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,Petrosian,saturation,True,1.0147831019873044,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,Sevcik,saturation,True,1.6624875456588248,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,BoxCounting,saturation,True,1.9348756683665453,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,PermutationEntropy,saturation,False,0.8130953503386099,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,CorrelationD2,criticality,True,2.4943768819730234,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,GrassbergerProcaccia,criticality,True,2.4943768819730234,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,InformationD1,criticality,True,1.7505444722405559,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,VisibilityGraph,criticality,True,2.0839072979374906,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,TwoNN,criticality,True,5.578881265062359,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,DANCo,criticality,True,1.6923117100438787,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,Fisher,criticality,True,2.436219387841671,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,LevinaBickel,divergence,True,1.8408909211267452,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,PCAIntrinsic,divergence,True,2.4829266317352876,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,LocalPCA,divergence,True,3.1785714285714284,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,GraphDimension,divergence,True,0.968383074937919,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,PersistentHomology,divergence,True,1.727981268007665,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,MFA,divergence,True,4.0,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,KolmogorovLZ,divergence,False,56.0,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,SpectralBeta,null_reference,False,1.8934084592544944,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,SpectralDimension,null_reference,True,1.5532957703727528,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,Hurst2mH,saturation,True,1.870494425105168,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,Lyapunov,null_reference,False,,False
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,MultifractalDeltaAlpha,null_reference,False,0.19809234007174503,True
+torus_k2,1,smooth quasiperiodic scalar observation of a 2-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,Higuchi,saturation,True,1.9137926030988495,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,DFA,saturation,True,1.8460258294560237,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,Katz,saturation,True,1.0302467935565924,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,Hurst,null_reference,False,0.13383189367179954,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,SampleEn,null_reference,False,0.6518758488045406,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,Petrosian,saturation,True,1.0148355553730708,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,Sevcik,saturation,True,1.6627976295115676,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,BoxCounting,saturation,True,1.9313690827972136,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,PermutationEntropy,saturation,False,0.8140054578007415,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,CorrelationD2,criticality,True,2.4703015920362392,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,GrassbergerProcaccia,criticality,True,2.4703015920362392,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,InformationD1,criticality,True,1.7261745625050184,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,VisibilityGraph,criticality,True,2.0413580743472366,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,TwoNN,criticality,True,5.694937770535618,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,DANCo,criticality,True,1.6597821985124275,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,Fisher,criticality,True,2.4304509556503975,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,LevinaBickel,divergence,True,1.85465995553148,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,PCAIntrinsic,divergence,True,2.4821079067835945,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,LocalPCA,divergence,True,3.1547619047619047,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,GraphDimension,divergence,True,0.9287265419182287,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,PersistentHomology,divergence,True,2.081673935869931,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,MFA,divergence,True,4.0,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,KolmogorovLZ,divergence,False,57.0,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,SpectralBeta,null_reference,False,2.3643544888814123,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,SpectralDimension,null_reference,True,1.3178227555592938,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,Hurst2mH,saturation,True,1.8661681063282005,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,Lyapunov,null_reference,False,,False
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,MultifractalDeltaAlpha,null_reference,False,0.19744094225621334,True
+torus_k2,2,smooth quasiperiodic scalar observation of a 2-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,Higuchi,saturation,True,1.9149327784972787,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,DFA,saturation,True,1.8453307054858505,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,Katz,saturation,True,1.0302464121254642,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,Hurst,null_reference,False,0.13159576241010643,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,SampleEn,null_reference,False,0.680877087968131,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,Petrosian,saturation,True,1.0147831019873044,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,Sevcik,saturation,True,1.6626466008729954,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,BoxCounting,saturation,True,1.9262445935898695,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,PermutationEntropy,saturation,False,0.8131274922045503,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,CorrelationD2,criticality,True,2.4662586278351046,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,GrassbergerProcaccia,criticality,True,2.4662586278351046,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,InformationD1,criticality,True,1.7357111608599285,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,VisibilityGraph,criticality,True,2.1229610661269556,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,TwoNN,criticality,True,5.520539786551393,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,DANCo,criticality,True,1.7016592130993857,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,Fisher,criticality,True,2.428941615196618,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,LevinaBickel,divergence,True,1.8549936547284676,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,PCAIntrinsic,divergence,True,2.4858724110750776,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,LocalPCA,divergence,True,3.1666666666666665,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,GraphDimension,divergence,True,0.9286714997081806,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,PersistentHomology,divergence,True,1.7839844377664849,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,MFA,divergence,True,4.0,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,KolmogorovLZ,divergence,False,56.0,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,SpectralBeta,null_reference,False,1.8166600195260132,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,SpectralDimension,null_reference,True,1.5916699902369933,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,Hurst2mH,saturation,True,1.8684042375898935,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,Lyapunov,null_reference,False,,False
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,MultifractalDeltaAlpha,null_reference,False,0.20311948909542232,True
+torus_k2,3,smooth quasiperiodic scalar observation of a 2-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,Higuchi,saturation,True,1.9144268831952251,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,DFA,saturation,True,1.8455622273319061,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,Katz,saturation,True,1.0302143195420732,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,Hurst,null_reference,False,0.1380408344992501,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,SampleEn,null_reference,False,0.6629941423892578,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,Petrosian,saturation,True,1.0147831019873044,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,Sevcik,saturation,True,1.6627656980892387,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,BoxCounting,saturation,True,1.9363871555439998,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,PermutationEntropy,saturation,False,0.8131559578387745,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,CorrelationD2,criticality,True,2.443036214468591,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,GrassbergerProcaccia,criticality,True,2.443036214468591,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,InformationD1,criticality,True,1.665159397308267,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,VisibilityGraph,criticality,True,2.115243867111586,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,TwoNN,criticality,True,5.6922723908826285,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,DANCo,criticality,True,1.7040887756822571,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,Fisher,criticality,True,2.4389092536625894,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,LevinaBickel,divergence,True,1.8842636248002549,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,PCAIntrinsic,divergence,True,2.485172288965078,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,LocalPCA,divergence,True,3.142857142857143,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,GraphDimension,divergence,True,0.9697286570648449,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,PersistentHomology,divergence,True,2.183460729189913,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,MFA,divergence,True,4.0,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,KolmogorovLZ,divergence,False,55.0,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,SpectralBeta,null_reference,False,1.5444350725007312,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,SpectralDimension,null_reference,True,1.7277824637496344,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,Hurst2mH,saturation,True,1.86195916550075,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,Lyapunov,null_reference,False,,False
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,MultifractalDeltaAlpha,null_reference,False,0.20875179586536152,True
+torus_k2,4,smooth quasiperiodic scalar observation of a 2-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,Higuchi,saturation,True,1.9412163558737763,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,DFA,saturation,True,1.8741955763258273,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,Katz,saturation,True,1.0368932430306355,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,Hurst,null_reference,False,0.15890085544699323,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,SampleEn,null_reference,False,0.8549133184199785,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,Petrosian,saturation,True,1.016351041513899,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,Sevcik,saturation,True,1.6576253748382648,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,BoxCounting,saturation,True,1.8759984709091824,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,PermutationEntropy,saturation,False,0.8231563645639417,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,CorrelationD2,criticality,True,3.2784749222995475,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,GrassbergerProcaccia,criticality,True,3.2784749222995475,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,InformationD1,criticality,True,1.7087968530250375,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,VisibilityGraph,criticality,True,1.9102946811556847,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,TwoNN,criticality,True,1.3903896514196514,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,DANCo,criticality,True,5.257751158810188,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,Fisher,criticality,True,1.6868107117450848,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,LevinaBickel,divergence,True,4.791428016928629,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,PCAIntrinsic,divergence,True,3.7912770317809144,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,LocalPCA,divergence,True,4.773809523809524,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,GraphDimension,divergence,True,1.4398220059775984,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,PersistentHomology,divergence,True,2.393003727251667,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,MFA,divergence,True,5.0,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,KolmogorovLZ,divergence,False,65.0,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,SpectralBeta,null_reference,False,1.9781133934597155,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,SpectralDimension,null_reference,True,1.5109433032701423,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,Hurst2mH,saturation,True,1.8410991445530067,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,Lyapunov,null_reference,False,,False
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,MultifractalDeltaAlpha,null_reference,False,0.10868943864179981,True
+torus_k3,0,smooth quasiperiodic scalar observation of a 3-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,Higuchi,saturation,True,1.9379983330787518,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,DFA,saturation,True,1.8732784369001738,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,Katz,saturation,True,1.036783021403431,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,Hurst,null_reference,False,0.15705046184994575,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,SampleEn,null_reference,False,0.8623666386679587,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,Petrosian,saturation,True,1.0164551569600302,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,Sevcik,saturation,True,1.658348154529992,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,BoxCounting,saturation,True,1.8655905927177063,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,PermutationEntropy,saturation,False,0.8351344201164072,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,CorrelationD2,criticality,True,3.245975322472533,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,GrassbergerProcaccia,criticality,True,3.245975322472533,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,InformationD1,criticality,True,1.786981336786849,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,VisibilityGraph,criticality,True,1.8702693747635357,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,TwoNN,criticality,True,1.4047475173591455,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,DANCo,criticality,True,5.469088534106265,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,Fisher,criticality,True,1.6981340272780516,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,LevinaBickel,divergence,True,4.746214729525675,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,PCAIntrinsic,divergence,True,3.7936696591676276,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,LocalPCA,divergence,True,4.761904761904762,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,GraphDimension,divergence,True,1.319375172280186,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,PersistentHomology,divergence,True,2.0694431279497993,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,MFA,divergence,True,4.0,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,KolmogorovLZ,divergence,False,69.0,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,SpectralBeta,null_reference,False,0.9752405614623013,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,SpectralDimension,null_reference,True,2.0123797192688495,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,Hurst2mH,saturation,True,1.8429495381500542,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,Lyapunov,null_reference,False,,False
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,MultifractalDeltaAlpha,null_reference,False,0.14221378368687887,True
+torus_k3,1,smooth quasiperiodic scalar observation of a 3-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,Higuchi,saturation,True,1.9453585424739297,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,DFA,saturation,True,1.8733127810352457,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,Katz,saturation,True,1.0368475009632685,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,Hurst,null_reference,False,0.15239639488194814,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,SampleEn,null_reference,False,0.8605154441191578,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,Petrosian,saturation,True,1.016507195415447,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,Sevcik,saturation,True,1.6581236202546787,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,BoxCounting,saturation,True,1.890830356140224,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,PermutationEntropy,saturation,False,0.8268688516532755,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,CorrelationD2,criticality,True,3.232651829369169,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,GrassbergerProcaccia,criticality,True,3.232651829369169,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,InformationD1,criticality,True,1.7058426939832143,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,VisibilityGraph,criticality,True,2.0453605309446474,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,TwoNN,criticality,True,1.3948271309452516,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,DANCo,criticality,True,5.540943586444321,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,Fisher,criticality,True,1.7070651175535554,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,LevinaBickel,divergence,True,4.625126690605883,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,PCAIntrinsic,divergence,True,3.7990739387932426,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,LocalPCA,divergence,True,4.857142857142857,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,GraphDimension,divergence,True,1.3521135234728239,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,PersistentHomology,divergence,True,2.356214536730928,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,MFA,divergence,True,5.0,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,KolmogorovLZ,divergence,False,68.0,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,SpectralBeta,null_reference,False,1.2857392274655957,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,SpectralDimension,null_reference,True,1.8571303862672022,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,Hurst2mH,saturation,True,1.8476036051180518,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,Lyapunov,null_reference,False,,False
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,MultifractalDeltaAlpha,null_reference,False,0.13181766319616495,True
+torus_k3,2,smooth quasiperiodic scalar observation of a 3-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,Higuchi,saturation,True,1.9434398824793127,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,DFA,saturation,True,1.8716336321680613,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,Katz,saturation,True,1.036929645817303,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,Hurst,null_reference,False,0.14573134535769233,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,SampleEn,null_reference,False,0.8662288564125544,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,Petrosian,saturation,True,1.0162468746344673,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,Sevcik,saturation,True,1.6576218017012372,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,BoxCounting,saturation,True,1.88252698303877,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,PermutationEntropy,saturation,False,0.8244274298330667,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,CorrelationD2,criticality,True,3.191995880707148,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,GrassbergerProcaccia,criticality,True,3.191995880707148,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,InformationD1,criticality,True,1.7562178226833023,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,VisibilityGraph,criticality,True,1.8916363634909694,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,TwoNN,criticality,True,1.401333308309269,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,DANCo,criticality,True,5.354327861001237,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,Fisher,criticality,True,1.7113925481038845,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,LevinaBickel,divergence,True,4.873485250185367,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,PCAIntrinsic,divergence,True,3.8123051755580346,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,LocalPCA,divergence,True,4.833333333333333,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,GraphDimension,divergence,True,1.2673291485765255,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,PersistentHomology,divergence,True,2.6145138524379004,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,MFA,divergence,True,4.0,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,KolmogorovLZ,divergence,False,66.0,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,SpectralBeta,null_reference,False,1.5059698231308274,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,SpectralDimension,null_reference,True,1.7470150884345863,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,Hurst2mH,saturation,True,1.8542686546423077,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,Lyapunov,null_reference,False,,False
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,MultifractalDeltaAlpha,null_reference,False,0.11881340572990362,True
+torus_k3,3,smooth quasiperiodic scalar observation of a 3-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,Higuchi,saturation,True,1.939733052692316,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,DFA,saturation,True,1.8731964402764854,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,Katz,saturation,True,1.0368253392306628,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,Hurst,null_reference,False,0.1449036802600579,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,SampleEn,null_reference,False,0.8461561774226871,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,Petrosian,saturation,True,1.0166632338061445,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,Sevcik,saturation,True,1.6597879112830465,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,BoxCounting,saturation,True,1.85310238907539,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,PermutationEntropy,saturation,False,0.8447166673212055,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,CorrelationD2,criticality,True,3.177870834770595,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,GrassbergerProcaccia,criticality,True,3.177870834770595,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,InformationD1,criticality,True,1.7283284013692226,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,VisibilityGraph,criticality,True,2.037104912120788,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,TwoNN,criticality,True,1.3907031004494916,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,DANCo,criticality,True,5.461748303455314,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,Fisher,criticality,True,1.7027292361155841,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,LevinaBickel,divergence,True,4.706776362955738,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,PCAIntrinsic,divergence,True,3.7980477207987615,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,LocalPCA,divergence,True,4.821428571428571,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,GraphDimension,divergence,True,1.28443080729626,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,PersistentHomology,divergence,True,1.7638463728897311,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,MFA,divergence,True,4.0,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,KolmogorovLZ,divergence,False,65.0,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,SpectralBeta,null_reference,False,1.2624922036800046,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,SpectralDimension,null_reference,True,1.8687538981599978,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,Hurst2mH,saturation,True,1.8550963197399422,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,Lyapunov,null_reference,False,,False
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,MultifractalDeltaAlpha,null_reference,False,0.11752227233720491,True
+torus_k3,4,smooth quasiperiodic scalar observation of a 3-torus,False,SingularityFmax,null_reference,False,1.0,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,Higuchi,saturation,True,1.967962685814861,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,DFA,saturation,True,1.8922592140242966,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,Katz,saturation,True,1.0430688537638162,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,Hurst,null_reference,False,0.14407547750961605,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,SampleEn,null_reference,False,1.1435076085760005,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,Petrosian,saturation,True,1.0193497618895129,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,Sevcik,saturation,True,1.6617843980354918,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,BoxCounting,saturation,True,1.8520226519336618,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,PermutationEntropy,saturation,False,0.8824902021018967,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,CorrelationD2,criticality,True,3.4358580090313455,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,GrassbergerProcaccia,criticality,True,3.4358580090313455,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,InformationD1,criticality,True,1.776733982157096,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,VisibilityGraph,criticality,True,2.153019044996152,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,TwoNN,criticality,True,1.0975858261388058,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,DANCo,criticality,True,7.696974142607688,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,Fisher,criticality,True,3.1803013435181042,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,LevinaBickel,divergence,True,7.816461590643308,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,PCAIntrinsic,divergence,True,4.733367763557613,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,LocalPCA,divergence,True,5.75,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,GraphDimension,divergence,True,1.2330614834272273,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,PersistentHomology,divergence,True,2.239573841692296,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,MFA,divergence,True,6.0,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,KolmogorovLZ,divergence,False,68.0,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,SpectralBeta,null_reference,False,1.9445392857398893,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,SpectralDimension,null_reference,True,1.5277303571300553,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,Hurst2mH,saturation,True,1.855924522490384,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,Lyapunov,null_reference,False,,False
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,MultifractalDeltaAlpha,null_reference,False,0.1522133527241193,True
+torus_k4,0,smooth quasiperiodic scalar observation of a 4-torus,True,SingularityFmax,null_reference,False,1.0,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,Higuchi,saturation,True,1.9631671400850803,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,DFA,saturation,True,1.8934973045401278,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,Katz,saturation,True,1.0430359098550361,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,Hurst,null_reference,False,0.1675826694680345,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,SampleEn,null_reference,False,1.1655386669866754,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,Petrosian,saturation,True,1.0184236617934483,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,Sevcik,saturation,True,1.6608918021601078,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,BoxCounting,saturation,True,1.8465718537172597,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,PermutationEntropy,saturation,False,0.8701661545863142,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,CorrelationD2,criticality,True,3.3237051377654323,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,GrassbergerProcaccia,criticality,True,3.3237051377654323,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,InformationD1,criticality,True,1.7334397642218655,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,VisibilityGraph,criticality,True,2.149097571196645,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,TwoNN,criticality,True,1.07466859188217,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,DANCo,criticality,True,6.6551020425680605,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,Fisher,criticality,True,2.9848493934488984,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,LevinaBickel,divergence,True,8.364859910205864,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,PCAIntrinsic,divergence,True,4.726243879537727,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,LocalPCA,divergence,True,5.464285714285714,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,GraphDimension,divergence,True,1.0047460916416173,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,PersistentHomology,divergence,True,3.48922515245233,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,MFA,divergence,True,6.0,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,KolmogorovLZ,divergence,False,74.0,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,SpectralBeta,null_reference,False,2.548904588693427,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,SpectralDimension,null_reference,True,1.2255477056532864,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,Hurst2mH,saturation,True,1.8324173305319655,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,Lyapunov,null_reference,False,0.10971898536225003,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,MultifractalDeltaAlpha,null_reference,False,0.10258471422868487,True
+torus_k4,1,smooth quasiperiodic scalar observation of a 4-torus,True,SingularityFmax,null_reference,False,1.0,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,Higuchi,saturation,True,1.9690479707525017,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,DFA,saturation,True,1.892758523892626,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,Katz,saturation,True,1.043337139845722,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,Hurst,null_reference,False,0.18002004454059192,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,SampleEn,null_reference,False,1.0702415915388943,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,Petrosian,saturation,True,1.019657566200768,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,Sevcik,saturation,True,1.6571075794186143,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,BoxCounting,saturation,True,1.8162262295700793,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,PermutationEntropy,saturation,False,0.8870918396126386,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,CorrelationD2,criticality,True,3.4693296066255632,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,GrassbergerProcaccia,criticality,True,3.4693296066255632,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,InformationD1,criticality,True,1.7790236339157468,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,VisibilityGraph,criticality,True,2.150379635032161,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,TwoNN,criticality,True,1.061554680970094,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,DANCo,criticality,True,7.318714820006294,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,Fisher,criticality,True,2.8815343096025954,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,LevinaBickel,divergence,True,8.201206613610504,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,PCAIntrinsic,divergence,True,4.731812604837186,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,LocalPCA,divergence,True,5.666666666666667,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,GraphDimension,divergence,True,1.3192181271891292,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,PersistentHomology,divergence,True,3.1930548533971357,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,MFA,divergence,True,6.0,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,KolmogorovLZ,divergence,False,75.0,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,SpectralBeta,null_reference,False,1.9488417527998556,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,SpectralDimension,null_reference,True,1.5255791236000722,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,Hurst2mH,saturation,True,1.819979955459408,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,Lyapunov,null_reference,False,,False
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,MultifractalDeltaAlpha,null_reference,False,0.11871061668210581,True
+torus_k4,2,smooth quasiperiodic scalar observation of a 4-torus,True,SingularityFmax,null_reference,False,1.0,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,Higuchi,saturation,True,1.9636593506624611,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,DFA,saturation,True,1.8926139750986484,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,Katz,saturation,True,1.042986685756023,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,Hurst,null_reference,False,0.14920634897578997,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,SampleEn,null_reference,False,1.08036505489362,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,Petrosian,saturation,True,1.018475218036441,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,Sevcik,saturation,True,1.6655721287625278,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,BoxCounting,saturation,True,1.8451634358408595,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,PermutationEntropy,saturation,False,0.8716704121027987,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,CorrelationD2,criticality,True,3.3162140446980364,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,GrassbergerProcaccia,criticality,True,3.3162140446980364,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,InformationD1,criticality,True,1.635884074086407,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,VisibilityGraph,criticality,True,2.046756841459249,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,TwoNN,criticality,True,1.067560707914602,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,DANCo,criticality,True,6.888283966465371,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,Fisher,criticality,True,3.5730265283834215,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,LevinaBickel,divergence,True,8.058726914655084,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,PCAIntrinsic,divergence,True,4.734892117402001,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,LocalPCA,divergence,True,5.535714285714286,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,GraphDimension,divergence,True,1.1755327984036548,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,PersistentHomology,divergence,True,2.8109782124102316,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,MFA,divergence,True,6.0,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,KolmogorovLZ,divergence,False,69.0,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,SpectralBeta,null_reference,False,2.152685781908733,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,SpectralDimension,null_reference,True,1.4236571090456336,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,Hurst2mH,saturation,True,1.85079365102421,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,Lyapunov,null_reference,False,,False
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,MultifractalDeltaAlpha,null_reference,False,0.12564457780702487,True
+torus_k4,3,smooth quasiperiodic scalar observation of a 4-torus,True,SingularityFmax,null_reference,False,1.0,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,Higuchi,saturation,True,1.9600571156932045,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,DFA,saturation,True,1.8933387880353985,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,Katz,saturation,True,1.0430076073616614,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,Hurst,null_reference,False,0.18789282414803668,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,SampleEn,null_reference,False,1.1168306143333073,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,Petrosian,saturation,True,1.0186298115613617,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,Sevcik,saturation,True,1.6613056016147656,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,BoxCounting,saturation,True,1.8342447155300379,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,PermutationEntropy,saturation,False,0.8735115515568559,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,CorrelationD2,criticality,True,3.313850595975742,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,GrassbergerProcaccia,criticality,True,3.313850595975742,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,InformationD1,criticality,True,1.8771038292868765,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,VisibilityGraph,criticality,True,1.9905039694989521,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,TwoNN,criticality,True,1.0681139771553103,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,DANCo,criticality,True,7.1127544729819405,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,Fisher,criticality,True,3.1193711023007507,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,LevinaBickel,divergence,True,8.888607547389778,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,PCAIntrinsic,divergence,True,4.7319670913488014,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,LocalPCA,divergence,True,5.571428571428571,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,GraphDimension,divergence,True,1.0776923867898702,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,PersistentHomology,divergence,True,2.2228263398292323,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,MFA,divergence,True,6.0,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,KolmogorovLZ,divergence,False,71.0,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,SpectralBeta,null_reference,False,1.822617022424334,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,SpectralDimension,null_reference,True,1.588691488787833,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,Hurst2mH,saturation,True,1.8121071758519633,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,Lyapunov,null_reference,False,,False
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,MultifractalDeltaAlpha,null_reference,False,0.09624517699245472,True
+torus_k4,4,smooth quasiperiodic scalar observation of a 4-torus,True,SingularityFmax,null_reference,False,1.0,True

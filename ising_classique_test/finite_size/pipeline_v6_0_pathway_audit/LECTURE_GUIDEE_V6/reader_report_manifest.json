@@ -1,0 +1,144 @@
+{
+  "report_script": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\build_reader_report.py",
+  "report_script_sha256": "2b4d38b1ff5e58cfd12df91b2bec6f6c66b62865215058167260497c7cf76736",
+  "source_state": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\run_state.json",
+  "source_state_sha256": "7efb6d69b1979ad142270dc56ef931801eee64a2196bfcaf716e43175cb3f4c1",
+  "source_peak_table": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\finite_size_peaks.csv",
+  "source_peak_table_sha256": "740b4c509f0b6f7df5673553c2191e1de35bea0afe74b2d7634101af82b4b4fa",
+  "source_binder_crossings": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\binder_crossings.csv",
+  "source_binder_crossings_sha256": "ffbbd426129c68571c73efd1f8c808b7447d1a9904cf21bf732bac0ab79b309c",
+  "source_ising_data": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\finite_size_results.csv",
+  "source_ising_data_sha256": "6749b0fb12ebbcf10ac784fa9b4514fba5dd37e96057451fb0694e1290da196e",
+  "pipeline_manifest_sha256": "b2c078fd4b0b57da202e700d618b377abb0544836d6ea4b807fb1a29a6ea6c0e",
+  "blind_flux_addendum_sha256": "d70a159048cd3e513d060d6e7279c245e82dcbab8c65399a757f1f3fe1226513",
+  "diagonal_addendum_sha256": "a3102676613f4fb4aa06de0b2d8b66d6d9d0968edf87d259df9d1fec48f20b53",
+  "configuration_contract_sha256": "f2bf0719f442bbd13bf3d8326d2703d8203912e2d5e346a821ce1aa79d761711",
+  "synthetic_benchmark_protocol_sha256": "00e1d27af6cbfa5d4d7ec7ca7fa05e8469e12e9acc61a96e0570ae3cbaf6149e",
+  "external_ai_review_sha256": "06f332db531be24e33bb7cfb3178edb9132dc88db6c192c82f828e490f3418e4",
+  "external_ai_source_attachment_sha256": "0fca2b84f147811721c6ee2daf3496f606ae7ea64c9a5ab7ed4859a67095dc0e",
+  "levina_diagnostic_script_sha256": "77b81e8e9107d2d6b75e782520da0b85440b11449142f0757fee7653aac90923",
+  "levina_diagnostic_result_sha256": "d12e191a36e7eb5dd165cf3aabd754b55a11acde5a130812548552c39d40439d",
+  "synthetic_pilot_spec_sha256": "72d00f8d79c0298b0c8270cf3b2fb12389bf2bb3b94ffec26a1ed4436751955a",
+  "synthetic_pilot_runner_sha256": "3268c04ec0a8f08dd2b35faa783170b69b9055d2545950390b0e28a56d5f6906",
+  "synthetic_pilot_scorer_sha256": "857be2267d0e76901f671796a8627b301f3f3ecacf2b4b7fb448c663f0d0d5eb",
+  "synthetic_pilot_truth_sha256": "4ec77436a52a3f6fed508e784a7a23d41bea259afab14c3703c9ac03e2326687",
+  "synthetic_pilot_results_sha256": "f7edde0d65f36fafb49a11aec99371bc6a4c532c2442386e9d7a8754bdc55c18",
+  "synthetic_pilot_report_sha256": "32da4fdd991bb3fae178cb6dbf8cb588ddfdd8e377791364c255b851b4c533a8",
+  "synthetic_pilot_figure_sha256": "c8416b16896f1e650bfa278554af40cbd823f59084738149436d7a2930c0ae85",
+  "synthetic_pilot_completed_run_count": 4,
+  "blind_flux_manifest_sha256": "b020e65b4c1acd0a2ba535d5c270e7d4d7edd163416123a08fc9d983db7419eb",
+  "diagonal_manifest_sha256": "a630a358bde29902446408f8cec14b9ededd1be0013d399d77fe47f1e27285a5",
+  "completed_run_count_at_generation": 12,
+  "outputs": [
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\index.html",
+      "sha256": "2e4866db7e6c326b09dfb0f9c29fe5c780514cf7d2e5cd07c19bcdbb537ab666",
+      "bytes": 20748
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\resultats_synthese_lisible.csv",
+      "sha256": "ce97c93fd77ec5f594bbb9f231fd77787fab749f640f844dfde974597865465c",
+      "bytes": 12538
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\reperes_physiques_et_T0.csv",
+      "sha256": "310ce9a2df32f91ef759f2d962b27ce9a32f97d9093b7d27641e55f877e6c94f",
+      "bytes": 869
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\voies_1_2_par_taille.csv",
+      "sha256": "7e0682b47142b46e39f06e077a9739ba18fab67581706056ced7a41aef73e75a",
+      "bytes": 1609
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\comparaison_flux_complets_vs_deux_colonnes_L64.csv",
+      "sha256": "b0e01573bcfe8b32a1c9b7cfb548f35a89a08ed3690e26ae90af8bee5d2f153e",
+      "bytes": 544
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\comparaison_controle_diagonal_L16.csv",
+      "sha256": "2ca35110a19c0ab8ea8e22b47d736d0de926cae782c778eb8952b86432381b44",
+      "bytes": 485
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\scores_Q1_Q6_L24_long.csv",
+      "sha256": "2547e377000708f593ff5e428155b08c1f3ac0348b58736c9429bd385a8d70ba",
+      "bytes": 13924
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\scores_Q1_Q6_multi_controle_L16_long.csv",
+      "sha256": "dc2a1941b61f5b7659373d1d2b04c8f1a7f6d1db34ade630e5a9e7b68d020c24",
+      "bytes": 256027
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\derivees_F1_F2_multi_controle_L16_long.csv",
+      "sha256": "3657814f1302c1751460b016b6bdf80cce16daeeb00b24a8bb3bdabf1d2b39bc",
+      "bytes": 150722
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\figures\\comparaison_flux_complets_deux_colonnes_L64.png",
+      "sha256": "4f930b8b5e034666129b5c579e752321f0639b920188bf2f43a70e3264a615cb",
+      "bytes": 69001
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\figures\\controle_diagonal_cible_L16.png",
+      "sha256": "64485e994a745a8f9ddb63ad5a810e423971e3d26195787dc5d53450f4de53ae",
+      "bytes": 54820
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\figures\\couverture_Q1_Q6_par_controle_L16.png",
+      "sha256": "caf919020ece60ade235f5b407566c3430b5bfe01fe8069f96ed4cca45d9c0b6",
+      "bytes": 91287
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\figures\\croisements_binder_et_Tc.png",
+      "sha256": "e0c1adc7652361f2d21d8d1263b1faa0b8813f8eae63c4a492ce6dc87dc8b45d",
+      "bytes": 69676
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\figures\\derivees_F1_F2_avant_apres_L24.png",
+      "sha256": "9b4082d7988b1344095c9d1f14a4c2dd96d9c133a0d88aaac3062ec7c51dddf5",
+      "bytes": 91248
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\figures\\localisation_t0_et_reperes.png",
+      "sha256": "a892fc2624942861e5d9826e992401a3a42f8857bcc8fb1f47f0d9393f5ca724",
+      "bytes": 178618
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\figures\\observables_physiques_L16.png",
+      "sha256": "3f7fc7f58b41b5e4a1e7c30bfe5994df70c7607b8cba7cf8e868ab77959d4c3f",
+      "bytes": 185168
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\figures\\profils_Q1_Q6_par_controle_L16.png",
+      "sha256": "7bbc0b84438339c457e639bd09d77f26f0d22d1ca13c94c059111485bf677180",
+      "bytes": 220978
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\figures\\questions_Q1_Q6_rangs_29_estimateurs.png",
+      "sha256": "afce2958e0526f1549fc1772b3a8bec71425aa1daca4a06c6cc032769afedebf",
+      "bytes": 138402
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\figures\\scan_monte_carlo_interne_L24.png",
+      "sha256": "753dfdf44ec8a8348fd61f6bed6d5b5d63dfc879cf7e645f6971e592b53f2b24",
+      "bytes": 79783
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\figures\\sensibilite_T0_graines_flux_L16.png",
+      "sha256": "ef4843880c4ad0eb19e224dfcc007017acb734fb088c95b0151e58e36358f09a",
+      "bytes": 99397
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\figures\\seuil_par_controle_L16.png",
+      "sha256": "1c9ba7dfe083412561e287b7533e6cd82b0f24f56d30397eb999e24234e04e25",
+      "bytes": 94042
+    },
+    {
+      "path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\LECTURE_GUIDEE_V6\\figures\\voies_1_2_ancres_par_taille.png",
+      "sha256": "9483850789ed264c4791220adc79d1e8f256dae56e6b9703c77dab648e354f26",
+      "bytes": 94067
+    }
+  ]
+}

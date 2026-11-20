@@ -1,0 +1,886 @@
+{
+  "analysis_status": "exploratory_extension_after_d_kind_pilot",
+  "pipeline_version": "v5.8.0-MultiHorizon-L3L5L6-SemanticSplitL7",
+  "input": "E_per_spin only; same physical data and markers as d_kind pilot",
+  "estimators_total": 29,
+  "dimension_estimators_tested_individually": [
+    "BoxCounting",
+    "CorrelationD2",
+    "DANCo",
+    "DFA",
+    "Fisher",
+    "GraphDimension",
+    "GrassbergerProcaccia",
+    "Higuchi",
+    "Hurst2mH",
+    "InformationD1",
+    "Katz",
+    "LevinaBickel",
+    "LocalPCA",
+    "MFA",
+    "PCAIntrinsic",
+    "PersistentHomology",
+    "Petrosian",
+    "Sevcik",
+    "SpectralDimension",
+    "TwoNN",
+    "VisibilityGraph"
+  ],
+  "signature_estimators_descriptive_only": [
+    "Hurst",
+    "SampleEn",
+    "PermutationEntropy",
+    "KolmogorovLZ",
+    "SpectralBeta",
+    "Lyapunov",
+    "MultifractalDeltaAlpha",
+    "SingularityFmax"
+  ],
+  "windows": [
+    31,
+    41
+  ],
+  "eligible_sizes": [
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "d4_band": [
+    3.5,
+    4.5
+  ],
+  "null_design": {
+    "sizes": [
+      16,
+      64
+    ],
+    "replicates_per_size": 10,
+    "sampled_centers": 9,
+    "seed": 20261108,
+    "n_scans": 40
+  },
+  "familywise_false_alarm_rate_dimensions": 0.25,
+  "familywise_false_alignment_rate_signatures": 0.475,
+  "dimension_results": [
+    {
+      "estimator": "BoxCounting",
+      "d_kind": "graph_dimension_proxy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 2.9177622918976103,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "CorrelationD2",
+      "d_kind": "correlation_attractor_dimension",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 2.8086407506224225,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "DANCo",
+      "d_kind": "neighbor_intrinsic_dimension",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 2.4130005577295304,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "DFA",
+      "d_kind": "process_model_graph_dimension_proxy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 3.7591272608480124,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "Fisher",
+      "d_kind": "inverse_covariance_participation_dimension",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 3.0,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "GraphDimension",
+      "d_kind": "graph_cluster_scaling_proxy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 3.1891199036113926,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "GrassbergerProcaccia",
+      "d_kind": "correlation_attractor_dimension",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 2.505733110918139,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "Higuchi",
+      "d_kind": "graph_dimension_proxy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 2.9298117838652953,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "Hurst2mH",
+      "d_kind": "process_model_graph_dimension_proxy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 3.00170720835889,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "InformationD1",
+      "d_kind": "information_attractor_dimension",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 2.6139988698294796,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "Katz",
+      "d_kind": "graph_dimension_proxy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 2.998902311976421,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "LevinaBickel",
+      "d_kind": "neighbor_intrinsic_dimension",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 0.0,
+          "coverage_ge_80pct_all_sizes": false,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 2.1500996594430855,
+      "minimum_coverage_all_eligible_sizes": 0.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "LocalPCA",
+      "d_kind": "local_pca_dimension_proxy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 3.0,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "MFA",
+      "d_kind": "mixture_local_pca_proxy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 2.0,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "PCAIntrinsic",
+      "d_kind": "covariance_participation_dimension",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 2.9902806218894393,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "PersistentHomology",
+      "d_kind": "persistent_h0_scaling_proxy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 1,
+          "candidate_sizes": 6,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.25
+        },
+        "41": {
+          "localized_sizes": 1,
+          "candidate_sizes": 5,
+          "eligible_sizes": 6,
+          "coverage_min": 0.9722222222222222,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.25
+        }
+      },
+      "median_prediction_drift": 0.16000000000000014,
+      "best_abs_d_minus_4": 0.009853028962634625,
+      "minimum_coverage_all_eligible_sizes": 0.9722222222222222,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "Petrosian",
+      "d_kind": "graph_dimension_proxy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 2.974167812839834,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "Sevcik",
+      "d_kind": "graph_dimension_proxy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 2.8941439047574375,
+      "minimum_coverage_all_eligible_sizes": 1.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "SpectralDimension",
+      "d_kind": "spectral_dimension_proxy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 0.0,
+          "coverage_ge_80pct_all_sizes": false,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "coverage_ge_80pct_all_sizes": true,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 2.3413691557340086,
+      "minimum_coverage_all_eligible_sizes": 0.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "TwoNN",
+      "d_kind": "neighbor_intrinsic_dimension",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 0.0,
+          "coverage_ge_80pct_all_sizes": false,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 0.0,
+          "coverage_ge_80pct_all_sizes": false,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": null,
+      "minimum_coverage_all_eligible_sizes": 0.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    },
+    {
+      "estimator": "VisibilityGraph",
+      "d_kind": "visibility_graph_dimension_proxy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 0.0,
+          "coverage_ge_80pct_all_sizes": false,
+          "false_alarm_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "candidate_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 0.4444444444444444,
+          "coverage_ge_80pct_all_sizes": false,
+          "false_alarm_rate": 0.0
+        }
+      },
+      "median_prediction_drift": null,
+      "best_abs_d_minus_4": 1.6917529365726,
+      "minimum_coverage_all_eligible_sizes": 0.0,
+      "familywise_false_alarm_rate_21_estimators": 0.25,
+      "meets_localization_coverage": false,
+      "meets_familywise_false_alarm": false,
+      "meets_window_stability": false,
+      "pilot_candidate": false
+    }
+  ],
+  "signature_results": [
+    {
+      "estimator": "Hurst",
+      "d_kind": "hurst_exponent",
+      "window_results": {
+        "31": {
+          "localized_sizes": 1,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "false_alignment_rate": 0.25
+        },
+        "41": {
+          "localized_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "false_alignment_rate": 0.1
+        }
+      },
+      "median_max_slope_location_drift": 0.125,
+      "familywise_false_alignment_rate_8_signatures": 0.475,
+      "tlog_candidate": false,
+      "interpretation": "descriptive_signature_only_no_d4_or_T_log"
+    },
+    {
+      "estimator": "SampleEn",
+      "d_kind": "sample_entropy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "false_alignment_rate": 0.2
+        },
+        "41": {
+          "localized_sizes": 1,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "false_alignment_rate": 0.3
+        }
+      },
+      "median_max_slope_location_drift": 0.11000000000000032,
+      "familywise_false_alignment_rate_8_signatures": 0.475,
+      "tlog_candidate": false,
+      "interpretation": "descriptive_signature_only_no_d4_or_T_log"
+    },
+    {
+      "estimator": "PermutationEntropy",
+      "d_kind": "ordinal_entropy",
+      "window_results": {
+        "31": {
+          "localized_sizes": 1,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "false_alignment_rate": 0.05
+        },
+        "41": {
+          "localized_sizes": 1,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "false_alignment_rate": 0.0
+        }
+      },
+      "median_max_slope_location_drift": 0.06750000000000034,
+      "familywise_false_alignment_rate_8_signatures": 0.475,
+      "tlog_candidate": false,
+      "interpretation": "descriptive_signature_only_no_d4_or_T_log"
+    },
+    {
+      "estimator": "KolmogorovLZ",
+      "d_kind": "algorithmic_complexity",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 0.0,
+          "false_alignment_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "false_alignment_rate": 0.0
+        }
+      },
+      "median_max_slope_location_drift": null,
+      "familywise_false_alignment_rate_8_signatures": 0.475,
+      "tlog_candidate": false,
+      "interpretation": "descriptive_signature_only_no_d4_or_T_log"
+    },
+    {
+      "estimator": "SpectralBeta",
+      "d_kind": "spectral_exponent",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 0.0,
+          "false_alignment_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 1.0,
+          "false_alignment_rate": 0.25
+        }
+      },
+      "median_max_slope_location_drift": null,
+      "familywise_false_alignment_rate_8_signatures": 0.475,
+      "tlog_candidate": false,
+      "interpretation": "descriptive_signature_only_no_d4_or_T_log"
+    },
+    {
+      "estimator": "Lyapunov",
+      "d_kind": "lyapunov_exponent",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 0.6666666666666666,
+          "false_alignment_rate": 0.05
+        },
+        "41": {
+          "localized_sizes": 2,
+          "eligible_sizes": 6,
+          "coverage_min": 0.6666666666666666,
+          "false_alignment_rate": 0.2
+        }
+      },
+      "median_max_slope_location_drift": 0.1625000000000003,
+      "familywise_false_alignment_rate_8_signatures": 0.475,
+      "tlog_candidate": false,
+      "interpretation": "descriptive_signature_only_no_d4_or_T_log"
+    },
+    {
+      "estimator": "MultifractalDeltaAlpha",
+      "d_kind": "multifractal_width",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 0.0,
+          "false_alignment_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 0.0,
+          "false_alignment_rate": 0.0
+        }
+      },
+      "median_max_slope_location_drift": null,
+      "familywise_false_alignment_rate_8_signatures": 0.475,
+      "tlog_candidate": false,
+      "interpretation": "descriptive_signature_only_no_d4_or_T_log"
+    },
+    {
+      "estimator": "SingularityFmax",
+      "d_kind": "multifractal_peak",
+      "window_results": {
+        "31": {
+          "localized_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 0.0,
+          "false_alignment_rate": 0.0
+        },
+        "41": {
+          "localized_sizes": 0,
+          "eligible_sizes": 6,
+          "coverage_min": 0.0,
+          "false_alignment_rate": 0.0
+        }
+      },
+      "median_max_slope_location_drift": null,
+      "familywise_false_alignment_rate_8_signatures": 0.475,
+      "tlog_candidate": false,
+      "interpretation": "descriptive_signature_only_no_d4_or_T_log"
+    }
+  ],
+  "limitations": [
+    "The individual analysis was planned after the d_kind pilot and is exploratory.",
+    "The reference d=4 remains a domain-dependent hypothesis for the 21 dimensional outputs; the v5.8 taxonomy does not justify it universally.",
+    "The 8 signature estimators are not dimensions in v5.8 and are never assigned T_log or compared with 4.",
+    "Only 40 smooth null scans are used, so false-alarm rates are coarse.",
+    "Uncertainty in physical curves is not propagated through estimator values.",
+    "This tests scalar local energy-versus-temperature profiles, not raw spin configurations or dynamic trajectories.",
+    "apply_complexity z-scores each local window, removing absolute amplitude and variance scale before estimating shape."
+  ]
+}

@@ -1,0 +1,8 @@
+run_id,L,voie1_Higuchi,voie2_ancre_saturation,voie2_ancre_transition,voie2_ancre_divergence,voie2_statut,Tlog_classe_median,d_sat,d_crit,d_div
+primary_L8_temperature,8,1.410119,1.410119,0.824118,5.183818,complet,"{'saturation': -12.824674, 'criticality': -10.246599, 'divergence': -8.058004, 'null_reference': -8.801148}",1.038683,1.633981,2.139344
+primary_L12_temperature,12,1.376249,1.376249,0.771656,3.445632,complet,"{'saturation': -12.845765, 'criticality': -10.435269, 'divergence': -10.407872, 'null_reference': -9.186214}",1.033813,1.590415,1.596741
+sensitivity_L16_multiple_physical_controls,16,1.383795,1.383795,0.830086,,ancre manquante,"{'saturation': -12.84519, 'criticality': -12.042468, 'divergence': -8.661467, 'null_reference': -9.137464}",1.033946,1.2193,2.0
+primary_L24_temperature,24,1.393376,1.393376,0.821012,,ancre manquante,"{'saturation': -12.846264, 'criticality': -11.961498, 'divergence': -12.9922, 'null_reference': -9.171516}",1.033698,1.237997,1.0
+primary_L32_temperature,32,1.420772,1.420772,0.853799,,ancre manquante,"{'saturation': -12.847027, 'criticality': -11.829355, 'divergence': -10.293902, 'null_reference': -9.143118}",1.033522,1.26851,1.623058
+primary_L48_temperature,48,1.406932,1.406932,0.842724,6.107316,complet,"{'saturation': -12.851034, 'criticality': -10.445153, 'divergence': -9.40857, 'null_reference': -9.372223}",1.032596,1.588133,1.827488
+primary_L64_temperature,64,1.416705,1.416705,0.850556,4.703149,complet,"{'saturation': -12.849596, 'criticality': -10.508682, 'divergence': -8.75361, 'null_reference': -9.224436}",1.032928,1.573463,1.978723

@@ -1,0 +1,165 @@
+{
+  "analysis_id": "pdac_prism_all_controls_all_drug_fluxes_v1",
+  "created_utc": "2026-11-16T23:50:51.502284+00:00",
+  "seed": 20261116,
+  "bootstrap_resamples": 5000,
+  "minimum_pairwise_n": 15,
+  "software": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "pandas": "3.0.6",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  },
+  "source_data": {
+    "Model.csv": {
+      "path": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\pdac-v6-archive-complete-2026-11-15\\03_runs-pdac-v6-2026-11-15\\data\\Model.csv",
+      "bytes": 645696,
+      "sha256": "b7a0c1385e6cef30132b56aff61f1261d11e3f490490b355c430d32ee0dbdcfa"
+    },
+    "CRISPRGeneEffect.csv": {
+      "path": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\pdac-v6-archive-complete-2026-11-15\\03_runs-pdac-v6-2026-11-15\\data\\CRISPRGeneEffect.csv",
+      "bytes": 428678699,
+      "sha256": "3d8f3ec6dbf2db7ff834b79b508622ec0b226f3518003fe96ecf5a4fcf167e3b"
+    },
+    "Repurposing_Public_24Q2_Extended_Primary_Data_Matrix.csv": {
+      "path": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\pdac-v6-archive-complete-2026-11-15\\03_runs-pdac-v6-2026-11-15\\data\\Repurposing_Public_24Q2_Extended_Primary_Data_Matrix.csv",
+      "bytes": 72456953,
+      "sha256": "3b6554cfc6c765af53088a676edc7bce00ee7d84fe808b93bbfa892de607bc3d"
+    },
+    "Repurposing_Public_24Q2_Extended_Primary_Compound_List.csv": {
+      "path": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\pdac-v6-archive-complete-2026-11-15\\03_runs-pdac-v6-2026-11-15\\data\\Repurposing_Public_24Q2_Extended_Primary_Compound_List.csv",
+      "bytes": 719567,
+      "sha256": "7e78f5901c1a97d2baab0789ab89832e716388da4eacaa9f094e7d2f2f5a3463"
+    },
+    "Repurposing_Public_24Q2_Cell_Line_Meta_Data.csv": {
+      "path": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\pdac-v6-archive-complete-2026-11-15\\03_runs-pdac-v6-2026-11-15\\data\\Repurposing_Public_24Q2_Cell_Line_Meta_Data.csv",
+      "bytes": 157294,
+      "sha256": "13a85da9e45656c455d3911a4491f3636d7d0975a9d2333dc3d0a3e2cd3b0526"
+    }
+  },
+  "selection": {
+    "disease_filter": "Model.csv OncotreePrimaryDisease == 'Pancreatic Adenocarcinoma'",
+    "control_genes": [
+      "KRAS",
+      "EFR3A",
+      "RAB10",
+      "CCND1",
+      "UROD",
+      "CFLAR",
+      "DOCK5",
+      "MYH9",
+      "SCAP",
+      "RAB6A",
+      "CRKL",
+      "MYC",
+      "ACO2"
+    ],
+    "control_gene_origin": "KRAS is the pre-existing primary axis; the other 12 genes were selected in the archived DepMap 24Q4 analysis and are post-selection exploratory controls.",
+    "AS77_target_followup_genes": [
+      "KCNN4",
+      "KCNA3",
+      "KCNA5"
+    ],
+    "AS77_followup": "post hoc; not independent validation",
+    "drug_fluxes": "all rows in Repurposing_Public_24Q2_Extended_Primary_Data_Matrix.csv"
+  },
+  "sample_counts": {
+    "exact_pdac_models_in_Model_csv": 64,
+    "exact_pdac_models_in_prism_matrix": 41,
+    "exact_pdac_models_with_crispr_gene_effect": 38,
+    "models_used_for_gene_control_grid": 38,
+    "prism_compound_rows": 6790,
+    "unique_compound_annotation_ids": 6789,
+    "ambiguous_compound_annotation_ids": 1,
+    "compound_rows_without_annotation": 1
+  },
+  "methods": {
+    "response_scale": "PRISM log2 fold change relative to DMSO/vehicle; lower/more negative means lower viability.",
+    "dependency_scale": "input DepMap Chronos gene effect was multiplied by -1 so larger values indicate stronger dependency.",
+    "association": "two-sided Spearman rank correlation per gene-control by compound response; BH adjusted within each control, within control x screen, and globally over all tests.",
+    "effect_size": "difference of mean PRISM LFC between upper and lower thirds of dependency score; descriptive.",
+    "clinical_status": "cell-line screening hypothesis only; no treatment recommendation or evidence of a cure."
+  },
+  "pipeline_assessment": {
+    "pipeline_file": "pancréas/Archive complète PDAC v6 — ZIP/universal_v6.0.0_cohen.py",
+    "pipeline_fast_minimum_length": 50,
+    "pipeline_fit_for_this_input": false,
+    "reason": "Only 38 matched exact-PDAC cell lines were available for CRISPR x PRISM; this is a cross-sectional set of cell lines with no natural temporal/progression order. The pipeline threshold/T0/TLog stage is sequence-oriented. A forced row order or lowering the minimum would add an arbitrary assumption and could create a non-interpretable threshold. The matrix is saved as a future batch input; no T0/TLog inference was run."
+  },
+  "bootstrap_mrtx1133": {
+    "compound_id": "BRD:BRD-K00104122-001-01-9",
+    "n": 36,
+    "n_bootstrap": 5000,
+    "seed": 20261116,
+    "rho_bootstrap_95pct_percentile_ci": [
+      -0.7107698950696385,
+      -0.12930714809704846
+    ]
+  },
+  "outputs": {
+    "pdac_prism_control_by_drug_fluxes.csv": {
+      "bytes": 28530043,
+      "sha256": "0895ecf211aa008406edf356a8f85fb3bf537dbf5d92d4a990c27a19d4dceee2"
+    },
+    "pdac_prism_KRAS_corrected_all_compounds.csv": {
+      "bytes": 2193558,
+      "sha256": "48bd4c3bbd42aa9ce60c8ddce493a9c74149fc9c294d5f8a0ee5bc53f40a4e25"
+    },
+    "pdac_prism_KRAS_known_treatments.csv": {
+      "bytes": 4383,
+      "sha256": "b9d6eb2004cda1ec531f0085e697bd0f3129f9d8545b778f80a6009c643b630c"
+    },
+    "AS77_channel_target_posthoc.csv": {
+      "bytes": 1102,
+      "sha256": "3ea824b0da6fa239ade264081504a46e8af8710c5588f0758707bba8be250096"
+    },
+    "pdac_prism_control_summary.csv": {
+      "bytes": 786,
+      "sha256": "d25f68aca6930c21d572d00e79ca640ac357271c6f9ca8c21e338279a10bc99d"
+    },
+    "pdac_models_exact_diagnosis_and_controls.csv": {
+      "bytes": 13895,
+      "sha256": "f9666217f9969060a49173a215a1f422771de57d72117e80d3380813abf720db"
+    },
+    "pdac_prism_pipeline_input_cross_sectional.csv": {
+      "bytes": 3066092,
+      "sha256": "3f47e1f68800595f4ac8764e4f15a8c7682509ce404872ffeeb83ab1a2121f25"
+    },
+    "krasscore_selected_drug_response.png": {
+      "bytes": 170796,
+      "sha256": "3db1fff6bde3fe9619fae70c314222e5ba220c4d6b90c08318892d60727ac0d3"
+    },
+    "krasscore_top15_descriptive.png": {
+      "bytes": 79192,
+      "sha256": "901963850022d16c52031814d753ee0b89c5d0c5f6884ba9cef1889faafadbc1"
+    },
+    "Repurposing_Public_24Q2_Readme.txt": {
+      "bytes": 12930,
+      "sha256": "008d6d204f033dcb2e9dc558f3b371087370de341e334a456a762bb0768d717b"
+    },
+    "AUDIT_PRISM_PDACS_v1.md": {
+      "bytes": 9047,
+      "sha256": "c0908d1712fcd2286ae4b40b3740c17e22620d4da56cd238198a83bd84cf72f1"
+    },
+    "analyze_pdac_prism_multicontrol.py": {
+      "bytes": 29869,
+      "sha256": "bc32090c5582307ac2f6aa69f8ab21ecda823f45d377fbe9b3a19f463d502cdc"
+    },
+    "build_prism_audit_pdf.py": {
+      "bytes": 14666,
+      "sha256": "ea2ff59758120c529b94c91e6e6bc27641e789056dd942a4ceb7ecad1e5627fb"
+    },
+    "regenerate_krasscore_selected_plot.py": {
+      "bytes": 3009,
+      "sha256": "771c831737b61eba915e1c4ff0e45028c6c0f06ce9f74052e287ba086a3d4ea1"
+    }
+  },
+  "elapsed_seconds": 120.56,
+  "pipeline_source": {
+    "path": "<PROJECT_ROOT>\\pancréas\\Archive complète PDAC v6 — ZIP\\universal_v6.0.0_cohen.py",
+    "bytes": 622526,
+    "sha256": "bb8bbdba4eb1f8c55b49748274ae8fbfef8a43f6c1b890964f18ba77960c0773"
+  }
+}

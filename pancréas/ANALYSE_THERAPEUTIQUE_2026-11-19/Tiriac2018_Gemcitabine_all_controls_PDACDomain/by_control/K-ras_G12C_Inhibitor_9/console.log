@@ -1,0 +1,41 @@
+TARGET: Gemcitabine
+CONTROL: K-ras(G12C) Inhibitor 9
+STARTED_UTC: 2026-11-20T03:50:57.218934+00:00
+COMMAND: ["<PROJECT_ROOT>\\.venv\\Scripts\\python.exe", "<PROJECT_ROOT>\\UNIVERSAL_LOG_v5.9.4.py", "--input", "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\candidate_Tiriac2018\\Tiriac2018_60PDO_completecase_drug_AUC.csv", "--target", "Gemcitabine", "--control", "K-ras(G12C) Inhibitor 9", "--control-mode", "single", "--target-mode", "fixed", "--domain", "pdac", "--mode", "fast", "--l7b-light", "--no-plots", "--seed", "42", "--max-workers", "1", "--output", "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\Tiriac2018_Gemcitabine_all_controls_PDACDomain\\by_control\\K-ras_G12C_Inhibitor_9\\pipeline_output"]
+
+
+[CIBLE-FIXE-GLOBALE] politique=fixed mode=single cible_demandee='Gemcitabine' -> cible_globale='Gemcitabine' methode=user_requested_target controles=['K-ras(G12C) Inhibitor 9'] | Cette cible unique sera reutilisee pour TOUS les controles. Le run ou controle == cible sera signale explicitement comme diagonal, avec cible_demandee ET cible_utilisee.
+
+================================================================================
+UNIVERSAL_LOG v5.9.4-L7aL7b-DKind-AuditFix-SeedTrace-CohenDOnly-NoPlots — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\pancréas\ANALYSE_THERAPEUTIQUE_2026-11-19\candidate_Tiriac2018\Tiriac2018_60PDO_completecase_drug_AUC.csv | Domain: pdac | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=K-ras(G12C) Inhibitor 9 cible_demandee='Gemcitabine' -> cible_utilisee='Gemcitabine' | Cible fixee conservee pour ce run.
+Target Observable: Gemcitabine | Control Parameter: K-ras(G12C) Inhibitor 9
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.357
+  règle: e
+  n_candidates: 22, resolution: 4.762%
+  w_size: 14, min_grp: 7
+
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE] controle=K-ras(G12C) Inhibitor 9 direction=non_monotone monotone=False spearman_r=0.008 | Le controle n'est PAS monotone dans l'ordre fourni. La progression n'est donc pas injective : un meme seuil en % peut correspondre a plusieurs valeurs brutes. Les valeurs brutes a cote des % sont exploratoires (voir min / max / spread). Ne pas lire T0 comme une valeur unique du controle.
+[T0-VALEUR-BRUTE] controle=K-ras(G12C) Inhibitor 9 T0=69.88% -> valeur brute controle=0.854 (median_near=0.8539999999999999, min_near=0.8499999999999999, max_near=0.8579999999999999, spread=0.008000000000000007, ambiguous=True)
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE-RAPPEL] controle=K-ras(G12C) Inhibitor 9 : T0 en % ne correspond pas a une valeur unique du controle. Voir cascade.thresholds_in_control_units pour min / max / spread.
+Rendu des figures desactive par --no-plots.
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=up regime=up disagreement=False | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: FRAGILE (mode=light) | Au moins un check light FAIL. Ne pas utiliser L7a seul pour decider. Passer en --l7b-full pour confirmer.
+    L7b check stabilite_horizon: FAIL | Stabilite horizon entre 0.50 et 0.80 : fragile, ne pas trancher.
+    L7b check stabilite_walkforward: FAIL | T0 moyennement variable en walk-forward (10 < t0_std <= 20).
+    L7b check coherence_interne: PASS | Cible et regime alignes ou non-informes, pas de desaccord directionnel.
+✓ 5-Threshold T_0: 69.88%
+✓ T_0 en valeur brute du controle 'K-ras(G12C) Inhibitor 9': 0.8539999999999999 (median_near=0.8539999999999999, min_near=0.8499999999999999, max_near=0.8579999999999999, spread=0.008000000000000007, ambiguous=True)
+✓ Cible: demandee=Gemcitabine | utilisee=Gemcitabine | politique=fixed | repli_diagonal=False
+✓ [AVERTISSEMENT] Controle 'K-ras(G12C) Inhibitor 9' NON MONOTONE (direction=non_monotone) : T0 en % n'est pas une valeur unique du controle, voir spread.
+✓ Tool Footprint: Pure Continuous Physical Phenomenon (No tool artifact)
+✓ Holographic Tension: criticality|control=K-ras(G12C) Inhibitor 9 (Delta=1.55, D_vec=[1.420399, 2.397669, 2.974359, 2.513594])
+✓ Results exported to: <PROJECT_ROOT>\pancréas\ANALYSE_THERAPEUTIQUE_2026-11-19\Tiriac2018_Gemcitabine_all_controls_PDACDomain\by_control\K-ras_G12C_Inhibitor_9\pipeline_output

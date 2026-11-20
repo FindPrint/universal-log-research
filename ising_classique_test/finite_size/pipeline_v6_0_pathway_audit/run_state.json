@@ -1,0 +1,3311 @@
+{
+  "runs": {
+    "primary_L24_temperature": {
+      "run_id": "primary_L24_temperature",
+      "input": "ising_L24_physical",
+      "L": 24,
+      "variant": "physical_reference",
+      "control_mode": "single",
+      "control_col": "Temperature",
+      "controls": null,
+      "seed": 20261115,
+      "status": "complete",
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "input_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L24_physical.csv",
+      "input_sha256": "b27f92b433d1ae3d58bb30632b7a3cd99d166f9644d068a8a98c38523e59680c",
+      "output_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\primary_L24_temperature",
+      "elapsed_seconds": 248.70904459999838,
+      "controls_summary": [
+        {
+          "control": null,
+          "status": "ok",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "t0_pct": 60.50594227473842,
+          "t0_control_value_raw": 2.34,
+          "t_minus_2": 0.0,
+          "t_minus_1": 30.337672193590304,
+          "t_plus_1": 97.46810911917156,
+          "t_plus_2": 100.0,
+          "cascade_status": "ok",
+          "control_monotone": true,
+          "control_monotonicity_warning": false,
+          "consensus": "up",
+          "l7b_verdict": "FRAGILE",
+          "dominant_regime_relative": "saturation|control=Temperature",
+          "d_vector": {
+            "d_sat": 1.033698,
+            "d_crit": 1.237997,
+            "d_div": 1.0,
+            "d_null": 1.882226
+          },
+          "voie1_higuchi": 1.393376,
+          "voie1_blind_risk": false,
+          "triangulation": {
+            "trio": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "preset": "default",
+            "is_default": false,
+            "trio_values": {
+              "Higuchi": 1.393376,
+              "InformationD1": 0.821012,
+              "LevinaBickel": null
+            },
+            "trio_sat_estimator": "Higuchi",
+            "trio_crit_estimator": "InformationD1",
+            "trio_div_estimator": "LevinaBickel",
+            "trio_sat_value": 1.393376,
+            "trio_crit_value": 0.821012,
+            "trio_div_value": null,
+            "trio_gap_E": 0.572364,
+            "trio_gap_T_log": 2.478755,
+            "trio_gap_mode": "max-min (trio non equilibre)",
+            "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+            "trio_vs_median_gap_disagreement_gap_gt_3": false,
+            "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+            "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+            "presets": {
+              "default": [
+                "Higuchi",
+                "InformationD1",
+                "LevinaBickel"
+              ],
+              "robust": [
+                "DFA",
+                "CorrelationD2",
+                "PCAIntrinsic"
+              ],
+              "noise_robust": [
+                "DFA",
+                "InformationD1",
+                "PCAIntrinsic"
+              ],
+              "fast": [
+                "Higuchi",
+                "InformationD1",
+                "KolmogorovLZ"
+              ],
+              "saturation_focus": [
+                "Higuchi",
+                "DFA",
+                "Katz"
+              ],
+              "divergence_focus": [
+                "LevinaBickel",
+                "PCAIntrinsic",
+                "MFA"
+              ]
+            }
+          },
+          "tlog_class_median": null
+        }
+      ],
+      "t0_pct": 60.50594227473842,
+      "t0_control_value_raw": 2.34,
+      "t_minus_2": 0.0,
+      "t_minus_1": 30.337672193590304,
+      "t_plus_1": 97.46810911917156,
+      "t_plus_2": 100.0,
+      "cascade_status": "ok",
+      "control_monotone": true,
+      "control_monotonicity_warning": false,
+      "consensus": "up",
+      "l7b_verdict": "FRAGILE",
+      "dominant_regime_relative": "saturation|control=Temperature",
+      "voie1_higuchi": 1.393376,
+      "voie1_blind_risk": false,
+      "tlog_class_median": null,
+      "d_vector": {
+        "d_sat": 1.033698,
+        "d_crit": 1.237997,
+        "d_div": 1.0,
+        "d_null": 1.882226
+      },
+      "triangulation": {
+        "trio": [
+          "Higuchi",
+          "InformationD1",
+          "LevinaBickel"
+        ],
+        "preset": "default",
+        "is_default": false,
+        "trio_values": {
+          "Higuchi": 1.393376,
+          "InformationD1": 0.821012,
+          "LevinaBickel": null
+        },
+        "trio_sat_estimator": "Higuchi",
+        "trio_crit_estimator": "InformationD1",
+        "trio_div_estimator": "LevinaBickel",
+        "trio_sat_value": 1.393376,
+        "trio_crit_value": 0.821012,
+        "trio_div_value": null,
+        "trio_gap_E": 0.572364,
+        "trio_gap_T_log": 2.478755,
+        "trio_gap_mode": "max-min (trio non equilibre)",
+        "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+        "trio_vs_median_gap_disagreement_gap_gt_3": false,
+        "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+        "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+        "presets": {
+          "default": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "robust": [
+            "DFA",
+            "CorrelationD2",
+            "PCAIntrinsic"
+          ],
+          "noise_robust": [
+            "DFA",
+            "InformationD1",
+            "PCAIntrinsic"
+          ],
+          "fast": [
+            "Higuchi",
+            "InformationD1",
+            "KolmogorovLZ"
+          ],
+          "saturation_focus": [
+            "Higuchi",
+            "DFA",
+            "Katz"
+          ],
+          "divergence_focus": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "MFA"
+          ]
+        }
+      },
+      "started_utc": "2026-11-15T19:30:16.326631+00:00",
+      "finished_utc": "2026-11-15T19:34:25.039616+00:00",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\primary_L24_temperature.log"
+    },
+    "primary_L8_temperature": {
+      "run_id": "primary_L8_temperature",
+      "input": "ising_L8_physical",
+      "L": 8,
+      "variant": "physical_reference",
+      "control_mode": "single",
+      "control_col": "Temperature",
+      "controls": null,
+      "seed": 20261115,
+      "status": "complete",
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "input_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L8_physical.csv",
+      "input_sha256": "f81b25b2d5c49b40576dd8ea5e31134021c9fcc54d31b5202d66f9f13404bccd",
+      "output_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\primary_L8_temperature",
+      "elapsed_seconds": 235.31281560000025,
+      "controls_summary": [
+        {
+          "control": null,
+          "status": "ok",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "t0_pct": 60.50594227473842,
+          "t0_control_value_raw": 2.34,
+          "t_minus_2": 0.0,
+          "t_minus_1": 2.6380584516165486,
+          "t_plus_1": 97.46810911917156,
+          "t_plus_2": 100.0,
+          "cascade_status": "ok",
+          "control_monotone": true,
+          "control_monotonicity_warning": false,
+          "consensus": "up",
+          "l7b_verdict": "FRAGILE",
+          "dominant_regime_relative": "saturation|control=Temperature",
+          "d_vector": {
+            "d_sat": 1.038683,
+            "d_crit": 1.633981,
+            "d_div": 2.139344,
+            "d_null": 1.967746
+          },
+          "voie1_higuchi": 1.410119,
+          "voie1_blind_risk": false,
+          "triangulation": {
+            "trio": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "preset": "default",
+            "is_default": false,
+            "trio_values": {
+              "Higuchi": 1.410119,
+              "InformationD1": 0.824118,
+              "LevinaBickel": 5.183818
+            },
+            "trio_sat_estimator": "Higuchi",
+            "trio_crit_estimator": "InformationD1",
+            "trio_div_estimator": "LevinaBickel",
+            "trio_sat_value": 1.410119,
+            "trio_crit_value": 0.824118,
+            "trio_div_value": 5.183818,
+            "trio_gap_E": 3.773699,
+            "trio_gap_T_log": 16.342885,
+            "trio_gap_mode": "div-sat (trio equilibre)",
+            "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+            "trio_vs_median_gap_disagreement_gap_gt_3": true,
+            "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+            "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+            "presets": {
+              "default": [
+                "Higuchi",
+                "InformationD1",
+                "LevinaBickel"
+              ],
+              "robust": [
+                "DFA",
+                "CorrelationD2",
+                "PCAIntrinsic"
+              ],
+              "noise_robust": [
+                "DFA",
+                "InformationD1",
+                "PCAIntrinsic"
+              ],
+              "fast": [
+                "Higuchi",
+                "InformationD1",
+                "KolmogorovLZ"
+              ],
+              "saturation_focus": [
+                "Higuchi",
+                "DFA",
+                "Katz"
+              ],
+              "divergence_focus": [
+                "LevinaBickel",
+                "PCAIntrinsic",
+                "MFA"
+              ]
+            }
+          },
+          "tlog_class_median": {
+            "saturation": -12.824674,
+            "criticality": -10.246599,
+            "divergence": -8.058004,
+            "null_reference": -8.801148
+          }
+        }
+      ],
+      "t0_pct": 60.50594227473842,
+      "t0_control_value_raw": 2.34,
+      "t_minus_2": 0.0,
+      "t_minus_1": 2.6380584516165486,
+      "t_plus_1": 97.46810911917156,
+      "t_plus_2": 100.0,
+      "cascade_status": "ok",
+      "control_monotone": true,
+      "control_monotonicity_warning": false,
+      "consensus": "up",
+      "l7b_verdict": "FRAGILE",
+      "dominant_regime_relative": "saturation|control=Temperature",
+      "voie1_higuchi": 1.410119,
+      "voie1_blind_risk": false,
+      "tlog_class_median": {
+        "saturation": -12.824674,
+        "criticality": -10.246599,
+        "divergence": -8.058004,
+        "null_reference": -8.801148
+      },
+      "d_vector": {
+        "d_sat": 1.038683,
+        "d_crit": 1.633981,
+        "d_div": 2.139344,
+        "d_null": 1.967746
+      },
+      "triangulation": {
+        "trio": [
+          "Higuchi",
+          "InformationD1",
+          "LevinaBickel"
+        ],
+        "preset": "default",
+        "is_default": false,
+        "trio_values": {
+          "Higuchi": 1.410119,
+          "InformationD1": 0.824118,
+          "LevinaBickel": 5.183818
+        },
+        "trio_sat_estimator": "Higuchi",
+        "trio_crit_estimator": "InformationD1",
+        "trio_div_estimator": "LevinaBickel",
+        "trio_sat_value": 1.410119,
+        "trio_crit_value": 0.824118,
+        "trio_div_value": 5.183818,
+        "trio_gap_E": 3.773699,
+        "trio_gap_T_log": 16.342885,
+        "trio_gap_mode": "div-sat (trio equilibre)",
+        "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+        "trio_vs_median_gap_disagreement_gap_gt_3": true,
+        "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+        "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+        "presets": {
+          "default": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "robust": [
+            "DFA",
+            "CorrelationD2",
+            "PCAIntrinsic"
+          ],
+          "noise_robust": [
+            "DFA",
+            "InformationD1",
+            "PCAIntrinsic"
+          ],
+          "fast": [
+            "Higuchi",
+            "InformationD1",
+            "KolmogorovLZ"
+          ],
+          "saturation_focus": [
+            "Higuchi",
+            "DFA",
+            "Katz"
+          ],
+          "divergence_focus": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "MFA"
+          ]
+        }
+      },
+      "started_utc": "2026-11-15T19:38:06.877065+00:00",
+      "finished_utc": "2026-11-15T19:42:02.193159+00:00",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\primary_L8_temperature.log"
+    },
+    "primary_L12_temperature": {
+      "run_id": "primary_L12_temperature",
+      "input": "ising_L12_physical",
+      "L": 12,
+      "variant": "physical_reference",
+      "control_mode": "single",
+      "control_col": "Temperature",
+      "controls": null,
+      "seed": 20261115,
+      "status": "complete",
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "input_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L12_physical.csv",
+      "input_sha256": "a35bdc81f79d6cb6cec2fb3b2727285a48534a6467f350966d00eff4ebb49646",
+      "output_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\primary_L12_temperature",
+      "elapsed_seconds": 209.7678663000006,
+      "controls_summary": [
+        {
+          "control": null,
+          "status": "ok",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "t0_pct": 65.9139103156095,
+          "t0_control_value_raw": 2.38,
+          "t_minus_2": 0.0,
+          "t_minus_1": 59.21428499821004,
+          "t_plus_1": 97.46810911917156,
+          "t_plus_2": 100.0,
+          "cascade_status": "ok",
+          "control_monotone": true,
+          "control_monotonicity_warning": false,
+          "consensus": "up",
+          "l7b_verdict": "ROBUSTE",
+          "dominant_regime_relative": "saturation|control=Temperature",
+          "d_vector": {
+            "d_sat": 1.033813,
+            "d_crit": 1.590415,
+            "d_div": 1.596741,
+            "d_null": 1.878832
+          },
+          "voie1_higuchi": 1.376249,
+          "voie1_blind_risk": false,
+          "triangulation": {
+            "trio": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "preset": "default",
+            "is_default": false,
+            "trio_values": {
+              "Higuchi": 1.376249,
+              "InformationD1": 0.771656,
+              "LevinaBickel": 3.445632
+            },
+            "trio_sat_estimator": "Higuchi",
+            "trio_crit_estimator": "InformationD1",
+            "trio_div_estimator": "LevinaBickel",
+            "trio_sat_value": 1.376249,
+            "trio_crit_value": 0.771656,
+            "trio_div_value": 3.445632,
+            "trio_gap_E": 2.069383,
+            "trio_gap_T_log": 8.961946,
+            "trio_gap_mode": "div-sat (trio equilibre)",
+            "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+            "trio_vs_median_gap_disagreement_gap_gt_3": false,
+            "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+            "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+            "presets": {
+              "default": [
+                "Higuchi",
+                "InformationD1",
+                "LevinaBickel"
+              ],
+              "robust": [
+                "DFA",
+                "CorrelationD2",
+                "PCAIntrinsic"
+              ],
+              "noise_robust": [
+                "DFA",
+                "InformationD1",
+                "PCAIntrinsic"
+              ],
+              "fast": [
+                "Higuchi",
+                "InformationD1",
+                "KolmogorovLZ"
+              ],
+              "saturation_focus": [
+                "Higuchi",
+                "DFA",
+                "Katz"
+              ],
+              "divergence_focus": [
+                "LevinaBickel",
+                "PCAIntrinsic",
+                "MFA"
+              ]
+            }
+          },
+          "tlog_class_median": {
+            "saturation": -12.845765,
+            "criticality": -10.435269,
+            "divergence": -10.407872,
+            "null_reference": -9.186214
+          }
+        }
+      ],
+      "t0_pct": 65.9139103156095,
+      "t0_control_value_raw": 2.38,
+      "t_minus_2": 0.0,
+      "t_minus_1": 59.21428499821004,
+      "t_plus_1": 97.46810911917156,
+      "t_plus_2": 100.0,
+      "cascade_status": "ok",
+      "control_monotone": true,
+      "control_monotonicity_warning": false,
+      "consensus": "up",
+      "l7b_verdict": "ROBUSTE",
+      "dominant_regime_relative": "saturation|control=Temperature",
+      "voie1_higuchi": 1.376249,
+      "voie1_blind_risk": false,
+      "tlog_class_median": {
+        "saturation": -12.845765,
+        "criticality": -10.435269,
+        "divergence": -10.407872,
+        "null_reference": -9.186214
+      },
+      "d_vector": {
+        "d_sat": 1.033813,
+        "d_crit": 1.590415,
+        "d_div": 1.596741,
+        "d_null": 1.878832
+      },
+      "triangulation": {
+        "trio": [
+          "Higuchi",
+          "InformationD1",
+          "LevinaBickel"
+        ],
+        "preset": "default",
+        "is_default": false,
+        "trio_values": {
+          "Higuchi": 1.376249,
+          "InformationD1": 0.771656,
+          "LevinaBickel": 3.445632
+        },
+        "trio_sat_estimator": "Higuchi",
+        "trio_crit_estimator": "InformationD1",
+        "trio_div_estimator": "LevinaBickel",
+        "trio_sat_value": 1.376249,
+        "trio_crit_value": 0.771656,
+        "trio_div_value": 3.445632,
+        "trio_gap_E": 2.069383,
+        "trio_gap_T_log": 8.961946,
+        "trio_gap_mode": "div-sat (trio equilibre)",
+        "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+        "trio_vs_median_gap_disagreement_gap_gt_3": false,
+        "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+        "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+        "presets": {
+          "default": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "robust": [
+            "DFA",
+            "CorrelationD2",
+            "PCAIntrinsic"
+          ],
+          "noise_robust": [
+            "DFA",
+            "InformationD1",
+            "PCAIntrinsic"
+          ],
+          "fast": [
+            "Higuchi",
+            "InformationD1",
+            "KolmogorovLZ"
+          ],
+          "saturation_focus": [
+            "Higuchi",
+            "DFA",
+            "Katz"
+          ],
+          "divergence_focus": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "MFA"
+          ]
+        }
+      },
+      "started_utc": "2026-11-15T19:42:02.211001+00:00",
+      "finished_utc": "2026-11-15T19:45:31.983250+00:00",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\primary_L12_temperature.log"
+    },
+    "primary_L32_temperature": {
+      "run_id": "primary_L32_temperature",
+      "input": "ising_L32_physical",
+      "L": 32,
+      "variant": "physical_reference",
+      "control_mode": "single",
+      "control_col": "Temperature",
+      "controls": null,
+      "seed": 20261115,
+      "status": "complete",
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "input_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L32_physical.csv",
+      "input_sha256": "281af14a0d0f89c32fc9cd68da7ff3b4d01ecf7c7c0e6c7652030dfeb635d79f",
+      "output_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\primary_L32_temperature",
+      "elapsed_seconds": 212.1935128999994,
+      "controls_summary": [
+        {
+          "control": null,
+          "status": "ok",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "t0_pct": 50.06367684308213,
+          "t0_control_value_raw": 2.27,
+          "t_minus_2": 0.0,
+          "t_minus_1": 38.707856917807796,
+          "t_plus_1": 59.21428499821004,
+          "t_plus_2": 100.0,
+          "cascade_status": "ok",
+          "control_monotone": true,
+          "control_monotonicity_warning": false,
+          "consensus": "up",
+          "l7b_verdict": "FRAGILE",
+          "dominant_regime_relative": "saturation|control=Temperature",
+          "d_vector": {
+            "d_sat": 1.033522,
+            "d_crit": 1.26851,
+            "d_div": 1.623058,
+            "d_null": 1.888783
+          },
+          "voie1_higuchi": 1.420772,
+          "voie1_blind_risk": false,
+          "triangulation": {
+            "trio": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "preset": "default",
+            "is_default": false,
+            "trio_values": {
+              "Higuchi": 1.420772,
+              "InformationD1": 0.853799,
+              "LevinaBickel": null
+            },
+            "trio_sat_estimator": "Higuchi",
+            "trio_crit_estimator": "InformationD1",
+            "trio_div_estimator": "LevinaBickel",
+            "trio_sat_value": 1.420772,
+            "trio_crit_value": 0.853799,
+            "trio_div_value": null,
+            "trio_gap_E": 0.566973,
+            "trio_gap_T_log": 2.455408,
+            "trio_gap_mode": "max-min (trio non equilibre)",
+            "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+            "trio_vs_median_gap_disagreement_gap_gt_3": false,
+            "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+            "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+            "presets": {
+              "default": [
+                "Higuchi",
+                "InformationD1",
+                "LevinaBickel"
+              ],
+              "robust": [
+                "DFA",
+                "CorrelationD2",
+                "PCAIntrinsic"
+              ],
+              "noise_robust": [
+                "DFA",
+                "InformationD1",
+                "PCAIntrinsic"
+              ],
+              "fast": [
+                "Higuchi",
+                "InformationD1",
+                "KolmogorovLZ"
+              ],
+              "saturation_focus": [
+                "Higuchi",
+                "DFA",
+                "Katz"
+              ],
+              "divergence_focus": [
+                "LevinaBickel",
+                "PCAIntrinsic",
+                "MFA"
+              ]
+            }
+          },
+          "tlog_class_median": {
+            "saturation": -12.847027,
+            "criticality": -11.829355,
+            "divergence": -10.293902,
+            "null_reference": -9.143118
+          }
+        }
+      ],
+      "t0_pct": 50.06367684308213,
+      "t0_control_value_raw": 2.27,
+      "t_minus_2": 0.0,
+      "t_minus_1": 38.707856917807796,
+      "t_plus_1": 59.21428499821004,
+      "t_plus_2": 100.0,
+      "cascade_status": "ok",
+      "control_monotone": true,
+      "control_monotonicity_warning": false,
+      "consensus": "up",
+      "l7b_verdict": "FRAGILE",
+      "dominant_regime_relative": "saturation|control=Temperature",
+      "voie1_higuchi": 1.420772,
+      "voie1_blind_risk": false,
+      "tlog_class_median": {
+        "saturation": -12.847027,
+        "criticality": -11.829355,
+        "divergence": -10.293902,
+        "null_reference": -9.143118
+      },
+      "d_vector": {
+        "d_sat": 1.033522,
+        "d_crit": 1.26851,
+        "d_div": 1.623058,
+        "d_null": 1.888783
+      },
+      "triangulation": {
+        "trio": [
+          "Higuchi",
+          "InformationD1",
+          "LevinaBickel"
+        ],
+        "preset": "default",
+        "is_default": false,
+        "trio_values": {
+          "Higuchi": 1.420772,
+          "InformationD1": 0.853799,
+          "LevinaBickel": null
+        },
+        "trio_sat_estimator": "Higuchi",
+        "trio_crit_estimator": "InformationD1",
+        "trio_div_estimator": "LevinaBickel",
+        "trio_sat_value": 1.420772,
+        "trio_crit_value": 0.853799,
+        "trio_div_value": null,
+        "trio_gap_E": 0.566973,
+        "trio_gap_T_log": 2.455408,
+        "trio_gap_mode": "max-min (trio non equilibre)",
+        "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+        "trio_vs_median_gap_disagreement_gap_gt_3": false,
+        "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+        "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+        "presets": {
+          "default": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "robust": [
+            "DFA",
+            "CorrelationD2",
+            "PCAIntrinsic"
+          ],
+          "noise_robust": [
+            "DFA",
+            "InformationD1",
+            "PCAIntrinsic"
+          ],
+          "fast": [
+            "Higuchi",
+            "InformationD1",
+            "KolmogorovLZ"
+          ],
+          "saturation_focus": [
+            "Higuchi",
+            "DFA",
+            "Katz"
+          ],
+          "divergence_focus": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "MFA"
+          ]
+        }
+      },
+      "started_utc": "2026-11-15T19:45:31.998846+00:00",
+      "finished_utc": "2026-11-15T19:49:04.197071+00:00",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\primary_L32_temperature.log"
+    },
+    "primary_L48_temperature": {
+      "run_id": "primary_L48_temperature",
+      "input": "ising_L48_physical",
+      "L": 48,
+      "variant": "physical_reference",
+      "control_mode": "single",
+      "control_col": "Temperature",
+      "controls": null,
+      "seed": 20261115,
+      "status": "complete",
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "input_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L48_physical.csv",
+      "input_sha256": "af049a9cdac28ce12350fca1a50140d703af338a1a5ac3c2565fdfdfa2087fac",
+      "output_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\primary_L48_temperature",
+      "elapsed_seconds": 306.1404332000002,
+      "controls_summary": [
+        {
+          "control": null,
+          "status": "ok",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "t0_pct": 50.06367684308213,
+          "t0_control_value_raw": 2.27,
+          "t_minus_2": 0.0,
+          "t_minus_1": 38.707856917807796,
+          "t_plus_1": 61.74436156243866,
+          "t_plus_2": 100.0,
+          "cascade_status": "ok",
+          "control_monotone": true,
+          "control_monotonicity_warning": false,
+          "consensus": "up",
+          "l7b_verdict": "FRAGILE",
+          "dominant_regime_relative": "saturation|control=Temperature",
+          "d_vector": {
+            "d_sat": 1.032596,
+            "d_crit": 1.588133,
+            "d_div": 1.827488,
+            "d_null": 1.835881
+          },
+          "voie1_higuchi": 1.406932,
+          "voie1_blind_risk": false,
+          "triangulation": {
+            "trio": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "preset": "default",
+            "is_default": false,
+            "trio_values": {
+              "Higuchi": 1.406932,
+              "InformationD1": 0.842724,
+              "LevinaBickel": 6.107316
+            },
+            "trio_sat_estimator": "Higuchi",
+            "trio_crit_estimator": "InformationD1",
+            "trio_div_estimator": "LevinaBickel",
+            "trio_sat_value": 1.406932,
+            "trio_crit_value": 0.842724,
+            "trio_div_value": 6.107316,
+            "trio_gap_E": 4.700384,
+            "trio_gap_T_log": 20.356108,
+            "trio_gap_mode": "div-sat (trio equilibre)",
+            "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+            "trio_vs_median_gap_disagreement_gap_gt_3": true,
+            "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+            "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+            "presets": {
+              "default": [
+                "Higuchi",
+                "InformationD1",
+                "LevinaBickel"
+              ],
+              "robust": [
+                "DFA",
+                "CorrelationD2",
+                "PCAIntrinsic"
+              ],
+              "noise_robust": [
+                "DFA",
+                "InformationD1",
+                "PCAIntrinsic"
+              ],
+              "fast": [
+                "Higuchi",
+                "InformationD1",
+                "KolmogorovLZ"
+              ],
+              "saturation_focus": [
+                "Higuchi",
+                "DFA",
+                "Katz"
+              ],
+              "divergence_focus": [
+                "LevinaBickel",
+                "PCAIntrinsic",
+                "MFA"
+              ]
+            }
+          },
+          "tlog_class_median": {
+            "saturation": -12.851034,
+            "criticality": -10.445153,
+            "divergence": -9.40857,
+            "null_reference": -9.372223
+          }
+        }
+      ],
+      "t0_pct": 50.06367684308213,
+      "t0_control_value_raw": 2.27,
+      "t_minus_2": 0.0,
+      "t_minus_1": 38.707856917807796,
+      "t_plus_1": 61.74436156243866,
+      "t_plus_2": 100.0,
+      "cascade_status": "ok",
+      "control_monotone": true,
+      "control_monotonicity_warning": false,
+      "consensus": "up",
+      "l7b_verdict": "FRAGILE",
+      "dominant_regime_relative": "saturation|control=Temperature",
+      "voie1_higuchi": 1.406932,
+      "voie1_blind_risk": false,
+      "tlog_class_median": {
+        "saturation": -12.851034,
+        "criticality": -10.445153,
+        "divergence": -9.40857,
+        "null_reference": -9.372223
+      },
+      "d_vector": {
+        "d_sat": 1.032596,
+        "d_crit": 1.588133,
+        "d_div": 1.827488,
+        "d_null": 1.835881
+      },
+      "triangulation": {
+        "trio": [
+          "Higuchi",
+          "InformationD1",
+          "LevinaBickel"
+        ],
+        "preset": "default",
+        "is_default": false,
+        "trio_values": {
+          "Higuchi": 1.406932,
+          "InformationD1": 0.842724,
+          "LevinaBickel": 6.107316
+        },
+        "trio_sat_estimator": "Higuchi",
+        "trio_crit_estimator": "InformationD1",
+        "trio_div_estimator": "LevinaBickel",
+        "trio_sat_value": 1.406932,
+        "trio_crit_value": 0.842724,
+        "trio_div_value": 6.107316,
+        "trio_gap_E": 4.700384,
+        "trio_gap_T_log": 20.356108,
+        "trio_gap_mode": "div-sat (trio equilibre)",
+        "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+        "trio_vs_median_gap_disagreement_gap_gt_3": true,
+        "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+        "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+        "presets": {
+          "default": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "robust": [
+            "DFA",
+            "CorrelationD2",
+            "PCAIntrinsic"
+          ],
+          "noise_robust": [
+            "DFA",
+            "InformationD1",
+            "PCAIntrinsic"
+          ],
+          "fast": [
+            "Higuchi",
+            "InformationD1",
+            "KolmogorovLZ"
+          ],
+          "saturation_focus": [
+            "Higuchi",
+            "DFA",
+            "Katz"
+          ],
+          "divergence_focus": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "MFA"
+          ]
+        }
+      },
+      "started_utc": "2026-11-15T19:49:04.215068+00:00",
+      "finished_utc": "2026-11-15T19:54:10.371784+00:00",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\primary_L48_temperature.log"
+    },
+    "primary_L64_temperature": {
+      "run_id": "primary_L64_temperature",
+      "input": "ising_L64_physical",
+      "L": 64,
+      "variant": "physical_reference",
+      "control_mode": "single",
+      "control_col": "Temperature",
+      "controls": null,
+      "seed": 20261115,
+      "status": "complete",
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "input_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L64_physical.csv",
+      "input_sha256": "e1d890f2d0d7d83d01c29c0f0d0c8d7a95bbbb3d5b7149c1cf347835597a7be4",
+      "output_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\primary_L64_temperature",
+      "elapsed_seconds": 796.8440477000004,
+      "controls_summary": [
+        {
+          "control": null,
+          "status": "ok",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "t0_pct": 50.06367684308213,
+          "t0_control_value_raw": 2.27,
+          "t_minus_2": 0.0,
+          "t_minus_1": 38.707856917807796,
+          "t_plus_1": 61.74436156243866,
+          "t_plus_2": 100.0,
+          "cascade_status": "ok",
+          "control_monotone": true,
+          "control_monotonicity_warning": false,
+          "consensus": "up",
+          "l7b_verdict": "FRAGILE",
+          "dominant_regime_relative": "saturation|control=Temperature",
+          "d_vector": {
+            "d_sat": 1.032928,
+            "d_crit": 1.573463,
+            "d_div": 1.978723,
+            "d_null": 1.870006
+          },
+          "voie1_higuchi": 1.416705,
+          "voie1_blind_risk": false,
+          "triangulation": {
+            "trio": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "preset": "default",
+            "is_default": false,
+            "trio_values": {
+              "Higuchi": 1.416705,
+              "InformationD1": 0.850556,
+              "LevinaBickel": 4.703149
+            },
+            "trio_sat_estimator": "Higuchi",
+            "trio_crit_estimator": "InformationD1",
+            "trio_div_estimator": "LevinaBickel",
+            "trio_sat_value": 1.416705,
+            "trio_crit_value": 0.850556,
+            "trio_div_value": 4.703149,
+            "trio_gap_E": 3.286444,
+            "trio_gap_T_log": 14.232711,
+            "trio_gap_mode": "div-sat (trio equilibre)",
+            "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+            "trio_vs_median_gap_disagreement_gap_gt_3": true,
+            "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+            "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+            "presets": {
+              "default": [
+                "Higuchi",
+                "InformationD1",
+                "LevinaBickel"
+              ],
+              "robust": [
+                "DFA",
+                "CorrelationD2",
+                "PCAIntrinsic"
+              ],
+              "noise_robust": [
+                "DFA",
+                "InformationD1",
+                "PCAIntrinsic"
+              ],
+              "fast": [
+                "Higuchi",
+                "InformationD1",
+                "KolmogorovLZ"
+              ],
+              "saturation_focus": [
+                "Higuchi",
+                "DFA",
+                "Katz"
+              ],
+              "divergence_focus": [
+                "LevinaBickel",
+                "PCAIntrinsic",
+                "MFA"
+              ]
+            }
+          },
+          "tlog_class_median": {
+            "saturation": -12.849596,
+            "criticality": -10.508682,
+            "divergence": -8.75361,
+            "null_reference": -9.224436
+          }
+        }
+      ],
+      "t0_pct": 50.06367684308213,
+      "t0_control_value_raw": 2.27,
+      "t_minus_2": 0.0,
+      "t_minus_1": 38.707856917807796,
+      "t_plus_1": 61.74436156243866,
+      "t_plus_2": 100.0,
+      "cascade_status": "ok",
+      "control_monotone": true,
+      "control_monotonicity_warning": false,
+      "consensus": "up",
+      "l7b_verdict": "FRAGILE",
+      "dominant_regime_relative": "saturation|control=Temperature",
+      "voie1_higuchi": 1.416705,
+      "voie1_blind_risk": false,
+      "tlog_class_median": {
+        "saturation": -12.849596,
+        "criticality": -10.508682,
+        "divergence": -8.75361,
+        "null_reference": -9.224436
+      },
+      "d_vector": {
+        "d_sat": 1.032928,
+        "d_crit": 1.573463,
+        "d_div": 1.978723,
+        "d_null": 1.870006
+      },
+      "triangulation": {
+        "trio": [
+          "Higuchi",
+          "InformationD1",
+          "LevinaBickel"
+        ],
+        "preset": "default",
+        "is_default": false,
+        "trio_values": {
+          "Higuchi": 1.416705,
+          "InformationD1": 0.850556,
+          "LevinaBickel": 4.703149
+        },
+        "trio_sat_estimator": "Higuchi",
+        "trio_crit_estimator": "InformationD1",
+        "trio_div_estimator": "LevinaBickel",
+        "trio_sat_value": 1.416705,
+        "trio_crit_value": 0.850556,
+        "trio_div_value": 4.703149,
+        "trio_gap_E": 3.286444,
+        "trio_gap_T_log": 14.232711,
+        "trio_gap_mode": "div-sat (trio equilibre)",
+        "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+        "trio_vs_median_gap_disagreement_gap_gt_3": true,
+        "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+        "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+        "presets": {
+          "default": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "robust": [
+            "DFA",
+            "CorrelationD2",
+            "PCAIntrinsic"
+          ],
+          "noise_robust": [
+            "DFA",
+            "InformationD1",
+            "PCAIntrinsic"
+          ],
+          "fast": [
+            "Higuchi",
+            "InformationD1",
+            "KolmogorovLZ"
+          ],
+          "saturation_focus": [
+            "Higuchi",
+            "DFA",
+            "Katz"
+          ],
+          "divergence_focus": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "MFA"
+          ]
+        }
+      },
+      "started_utc": "2026-11-15T19:54:10.458624+00:00",
+      "finished_utc": "2026-11-15T20:07:27.309071+00:00",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\primary_L64_temperature.log"
+    },
+    "sensitivity_L16_multiple_physical_controls": {
+      "run_id": "sensitivity_L16_multiple_physical_controls",
+      "input": "ising_L16_physical",
+      "L": 16,
+      "variant": "physical_reference",
+      "control_mode": "multi",
+      "control_col": null,
+      "controls": [
+        "Temperature",
+        "abs_magnetization",
+        "chi_abs_per_spin",
+        "Cv_per_spin",
+        "Binder_U4"
+      ],
+      "seed": 20261115,
+      "status": "complete",
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "input_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L16_physical.csv",
+      "input_sha256": "d6dbe2ef23a2d0825c7c184d8a36ac7d00f166179830e97279461c4360eecdd1",
+      "output_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_multiple_physical_controls",
+      "elapsed_seconds": 1175.908701299999,
+      "controls_summary": [
+        {
+          "control": "Temperature",
+          "status": "ok",
+          "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_multiple_physical_controls\\Temperature",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "target_policy": "fixed",
+          "target_fallback_used": false,
+          "target_fallback_reason": null,
+          "target_resolution": {
+            "policy": "fixed",
+            "requested": "Energy_per_spin",
+            "resolved": "Energy_per_spin",
+            "method": "user_requested_target",
+            "fallback_used": false,
+            "reason": "cible demandee par l'utilisateur, reutilisee pour tous les controles"
+          },
+          "t0_pct": 60.50594227473842,
+          "t0_control_value_raw": 2.34,
+          "t0_control_value_median_near": 2.34,
+          "t0_control_value_min_near": 2.32,
+          "t0_control_value_max_near": 2.36,
+          "t0_control_value_spread_near": 0.040000000000000036,
+          "t0_control_value_ambiguous": false,
+          "thresholds_in_control_units": {
+            "T_-2_F2_pre_onset": {
+              "threshold_pct": 0.0,
+              "control_value_raw": 1.9,
+              "control_value_raw_interp": 1.9,
+              "control_value_raw_median_near": 1.92,
+              "control_value_raw_min_near": 1.9,
+              "control_value_raw_max_near": 1.94,
+              "control_value_raw_spread_near": 0.040000000000000036,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": false,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_-1_F1_pre_inflection": {
+              "threshold_pct": 2.6380584516165486,
+              "control_value_raw": 1.92,
+              "control_value_raw_interp": 1.92,
+              "control_value_raw_median_near": 1.92,
+              "control_value_raw_min_near": 1.9,
+              "control_value_raw_max_near": 1.94,
+              "control_value_raw_spread_near": 0.040000000000000036,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": false,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_0_Monte_Carlo_Central": {
+              "threshold_pct": 60.50594227473842,
+              "control_value_raw": 2.34,
+              "control_value_raw_interp": 2.34,
+              "control_value_raw_median_near": 2.34,
+              "control_value_raw_min_near": 2.32,
+              "control_value_raw_max_near": 2.36,
+              "control_value_raw_spread_near": 0.040000000000000036,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": false,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+1_F1_post_deceleration": {
+              "threshold_pct": 97.46810911917156,
+              "control_value_raw": 2.63,
+              "control_value_raw_interp": 2.63,
+              "control_value_raw_median_near": 2.63,
+              "control_value_raw_min_near": 2.61,
+              "control_value_raw_max_near": 2.65,
+              "control_value_raw_spread_near": 0.040000000000000036,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": false,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+2_F2_post_attractor": {
+              "threshold_pct": 100.0,
+              "control_value_raw": 2.65,
+              "control_value_raw_interp": 2.65,
+              "control_value_raw_median_near": 2.63,
+              "control_value_raw_min_near": 2.61,
+              "control_value_raw_max_near": 2.65,
+              "control_value_raw_spread_near": 0.040000000000000036,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": false,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            }
+          },
+          "control_monotonicity": {
+            "control": "Temperature",
+            "monotone": true,
+            "direction": "nondecreasing",
+            "constant": false,
+            "is_non_monotone": false,
+            "spearman_order_vs_value_r": 1.0,
+            "spearman_p": 0.0,
+            "n_valid": 76,
+            "n_total": 76,
+            "warning_issued": false,
+            "warning_type": null,
+            "interpretation": null
+          },
+          "control_monotone": true,
+          "control_monotonicity_warning": false,
+          "consensus": "up",
+          "harmonic_validation_status": null
+        },
+        {
+          "control": "abs_magnetization",
+          "status": "ok",
+          "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_multiple_physical_controls\\abs_magnetization",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "target_policy": "fixed",
+          "target_fallback_used": false,
+          "target_fallback_reason": null,
+          "target_resolution": {
+            "policy": "fixed",
+            "requested": "Energy_per_spin",
+            "resolved": "Energy_per_spin",
+            "method": "user_requested_target",
+            "fallback_used": false,
+            "reason": "cible demandee par l'utilisateur, reutilisee pour tous les controles"
+          },
+          "t0_pct": 31.65670141939858,
+          "t0_control_value_raw": 0.505807942708,
+          "t0_control_value_median_near": 0.505807942708,
+          "t0_control_value_min_near": 0.478847005208,
+          "t0_control_value_max_near": 0.53571484375,
+          "t0_control_value_spread_near": 0.056867838542000004,
+          "t0_control_value_ambiguous": true,
+          "thresholds_in_control_units": {
+            "T_-2_F2_pre_onset": {
+              "threshold_pct": 0.0,
+              "control_value_raw": 0.275447916667,
+              "control_value_raw_interp": 0.275447916667,
+              "control_value_raw_median_near": 0.282232421875,
+              "control_value_raw_min_near": 0.275447916667,
+              "control_value_raw_max_near": 0.292041015625,
+              "control_value_raw_spread_near": 0.016593098957999985,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_-1_F1_pre_inflection": {
+              "threshold_pct": 2.6380584516165486,
+              "control_value_raw": 0.282232421875,
+              "control_value_raw_interp": 0.282232421875,
+              "control_value_raw_median_near": 0.282232421875,
+              "control_value_raw_min_near": 0.275447916667,
+              "control_value_raw_max_near": 0.292041015625,
+              "control_value_raw_spread_near": 0.016593098957999985,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_0_Monte_Carlo_Central": {
+              "threshold_pct": 31.65670141939858,
+              "control_value_raw": 0.505807942708,
+              "control_value_raw_interp": 0.505807942708,
+              "control_value_raw_median_near": 0.505807942708,
+              "control_value_raw_min_near": 0.478847005208,
+              "control_value_raw_max_near": 0.53571484375,
+              "control_value_raw_spread_near": 0.056867838542000004,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+1_F1_post_deceleration": {
+              "threshold_pct": 59.21428499821004,
+              "control_value_raw": 0.773541666667,
+              "control_value_raw_interp": 0.773541666667,
+              "control_value_raw_median_near": 0.773541666667,
+              "control_value_raw_min_near": 0.754180338542,
+              "control_value_raw_max_near": 0.793307291667,
+              "control_value_raw_spread_near": 0.03912695312500003,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+2_F2_post_attractor": {
+              "threshold_pct": 100.0,
+              "control_value_raw": 0.939027994792,
+              "control_value_raw_interp": 0.939027994792,
+              "control_value_raw_median_near": 0.933845052083,
+              "control_value_raw_min_near": 0.929078125,
+              "control_value_raw_max_near": 0.939027994792,
+              "control_value_raw_spread_near": 0.009949869792000077,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            }
+          },
+          "control_monotonicity": {
+            "control": "abs_magnetization",
+            "monotone": false,
+            "direction": "non_monotone",
+            "constant": false,
+            "is_non_monotone": true,
+            "spearman_order_vs_value_r": -0.9999453178400547,
+            "spearman_p": 2.534195431404621e-148,
+            "n_valid": 76,
+            "n_total": 76,
+            "warning_issued": true,
+            "warning_type": "non_monotone",
+            "interpretation": "Controle NON MONOTONE dans l'ordre fourni : la progression / le rang n'est pas injectif. Un meme seuil en % peut correspondre a plusieurs valeurs brutes distinctes du controle. Les conversions T en valeur brute sont exploratoires (voir spread). Interpreter T0 en % comme repere de progression, pas comme valeur unique du controle."
+          },
+          "control_monotone": false,
+          "control_monotonicity_warning": true,
+          "consensus": "up",
+          "harmonic_validation_status": null
+        },
+        {
+          "control": "chi_abs_per_spin",
+          "status": "ok",
+          "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_multiple_physical_controls\\chi_abs_per_spin",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "target_policy": "fixed",
+          "target_fallback_used": false,
+          "target_fallback_reason": null,
+          "target_resolution": {
+            "policy": "fixed",
+            "requested": "Energy_per_spin",
+            "resolved": "Energy_per_spin",
+            "method": "user_requested_target",
+            "fallback_used": false,
+            "reason": "cible demandee par l'utilisateur, reutilisee pour tous les controles"
+          },
+          "t0_pct": 44.40588744142819,
+          "t0_control_value_raw": 3.2719477921,
+          "t0_control_value_median_near": 3.2719477921,
+          "t0_control_value_min_near": 2.62223405679,
+          "t0_control_value_max_near": 3.33996627096,
+          "t0_control_value_spread_near": 0.7177322141700002,
+          "t0_control_value_ambiguous": true,
+          "thresholds_in_control_units": {
+            "T_-2_F2_pre_onset": {
+              "threshold_pct": 35.64085208888561,
+              "control_value_raw": 1.94493246443,
+              "control_value_raw_interp": 1.94493246443,
+              "control_value_raw_median_near": 1.94493246443,
+              "control_value_raw_min_near": 1.38155655015,
+              "control_value_raw_max_near": 2.43554358511,
+              "control_value_raw_spread_near": 1.05398703496,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_-1_F1_pre_inflection": {
+              "threshold_pct": 38.707856917807796,
+              "control_value_raw": 2.43554358511,
+              "control_value_raw_interp": 2.43554358511,
+              "control_value_raw_median_near": 2.43554358511,
+              "control_value_raw_min_near": 1.94493246443,
+              "control_value_raw_max_near": 2.62223405679,
+              "control_value_raw_spread_near": 0.6773015923600001,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_0_Monte_Carlo_Central": {
+              "threshold_pct": 44.40588744142819,
+              "control_value_raw": 3.2719477921,
+              "control_value_raw_interp": 3.2719477921,
+              "control_value_raw_median_near": 3.2719477921,
+              "control_value_raw_min_near": 2.62223405679,
+              "control_value_raw_max_near": 3.33996627096,
+              "control_value_raw_spread_near": 0.7177322141700002,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+1_F1_post_deceleration": {
+              "threshold_pct": 50.06367684308213,
+              "control_value_raw": 3.39749843713,
+              "control_value_raw_interp": 3.39749843713,
+              "control_value_raw_median_near": 3.39749843713,
+              "control_value_raw_min_near": 3.33996627096,
+              "control_value_raw_max_near": 3.6172607266,
+              "control_value_raw_spread_near": 0.2772944556399999,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+2_F2_post_attractor": {
+              "threshold_pct": 57.45895308871856,
+              "control_value_raw": 3.91551554754,
+              "control_value_raw_interp": 3.91551554754,
+              "control_value_raw_median_near": 3.91551554754,
+              "control_value_raw_min_near": 3.78650368519,
+              "control_value_raw_max_near": 4.04264998695,
+              "control_value_raw_spread_near": 0.25614630175999986,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            }
+          },
+          "control_monotonicity": {
+            "control": "chi_abs_per_spin",
+            "monotone": false,
+            "direction": "non_monotone",
+            "constant": false,
+            "is_non_monotone": true,
+            "spearman_order_vs_value_r": 0.776842105263158,
+            "spearman_p": 1.612522324807738e-16,
+            "n_valid": 76,
+            "n_total": 76,
+            "warning_issued": true,
+            "warning_type": "non_monotone",
+            "interpretation": "Controle NON MONOTONE dans l'ordre fourni : la progression / le rang n'est pas injectif. Un meme seuil en % peut correspondre a plusieurs valeurs brutes distinctes du controle. Les conversions T en valeur brute sont exploratoires (voir spread). Interpreter T0 en % comme repere de progression, pas comme valeur unique du controle."
+          },
+          "control_monotone": false,
+          "control_monotonicity_warning": true,
+          "consensus": "up",
+          "harmonic_validation_status": null
+        },
+        {
+          "control": "Cv_per_spin",
+          "status": "ok",
+          "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_multiple_physical_controls\\Cv_per_spin",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "target_policy": "fixed",
+          "target_fallback_used": false,
+          "target_fallback_reason": null,
+          "target_resolution": {
+            "policy": "fixed",
+            "requested": "Energy_per_spin",
+            "resolved": "Energy_per_spin",
+            "method": "user_requested_target",
+            "fallback_used": false,
+            "reason": "cible demandee par l'utilisateur, reutilisee pour tous les controles"
+          },
+          "t0_pct": 11.871263032274468,
+          "t0_control_value_raw": 0.695392347452,
+          "t0_control_value_median_near": 0.695392347452,
+          "t0_control_value_min_near": 0.669681162427,
+          "t0_control_value_max_near": 0.706650002942,
+          "t0_control_value_spread_near": 0.036968840514999934,
+          "t0_control_value_ambiguous": true,
+          "thresholds_in_control_units": {
+            "T_-2_F2_pre_onset": {
+              "threshold_pct": 0.0,
+              "control_value_raw": 0.554926092163,
+              "control_value_raw_interp": 0.554926092163,
+              "control_value_raw_median_near": 0.599919057764,
+              "control_value_raw_min_near": 0.554926092163,
+              "control_value_raw_max_near": 0.606792521345,
+              "control_value_raw_spread_near": 0.05186642918199991,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_-1_F1_pre_inflection": {
+              "threshold_pct": 6.595146129041371,
+              "control_value_raw": 0.653754141555,
+              "control_value_raw_interp": 0.653754141555,
+              "control_value_raw_median_near": 0.653754141555,
+              "control_value_raw_min_near": 0.600131428565,
+              "control_value_raw_max_near": 0.669681162427,
+              "control_value_raw_spread_near": 0.06954973386200003,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_0_Monte_Carlo_Central": {
+              "threshold_pct": 11.871263032274468,
+              "control_value_raw": 0.695392347452,
+              "control_value_raw_interp": 0.695392347452,
+              "control_value_raw_median_near": 0.695392347452,
+              "control_value_raw_min_near": 0.669681162427,
+              "control_value_raw_max_near": 0.706650002942,
+              "control_value_raw_spread_near": 0.036968840514999934,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+1_F1_post_deceleration": {
+              "threshold_pct": 15.82835070969929,
+              "control_value_raw": 0.724844384639,
+              "control_value_raw_interp": 0.724844384639,
+              "control_value_raw_median_near": 0.724844384639,
+              "control_value_raw_min_near": 0.700064131836,
+              "control_value_raw_max_near": 0.737084016204,
+              "control_value_raw_spread_near": 0.03701988436799997,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+2_F2_post_attractor": {
+              "threshold_pct": 18.466409161315838,
+              "control_value_raw": 0.737084016204,
+              "control_value_raw_interp": 0.737084016204,
+              "control_value_raw_median_near": 0.737084016204,
+              "control_value_raw_min_near": 0.724844384639,
+              "control_value_raw_max_near": 0.761142328158,
+              "control_value_raw_spread_near": 0.03629794351899995,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            }
+          },
+          "control_monotonicity": {
+            "control": "Cv_per_spin",
+            "monotone": false,
+            "direction": "non_monotone",
+            "constant": false,
+            "is_non_monotone": true,
+            "spearman_order_vs_value_r": 0.2880382775119617,
+            "spearman_p": 0.011630442095127392,
+            "n_valid": 76,
+            "n_total": 76,
+            "warning_issued": true,
+            "warning_type": "non_monotone",
+            "interpretation": "Controle NON MONOTONE dans l'ordre fourni : la progression / le rang n'est pas injectif. Un meme seuil en % peut correspondre a plusieurs valeurs brutes distinctes du controle. Les conversions T en valeur brute sont exploratoires (voir spread). Interpreter T0 en % comme repere de progression, pas comme valeur unique du controle."
+          },
+          "control_monotone": false,
+          "control_monotonicity_warning": true,
+          "consensus": "up",
+          "harmonic_validation_status": null
+        },
+        {
+          "control": "Binder_U4",
+          "status": "ok",
+          "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_multiple_physical_controls\\Binder_U4",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "target_policy": "fixed",
+          "target_fallback_used": false,
+          "target_fallback_reason": null,
+          "target_resolution": {
+            "policy": "fixed",
+            "requested": "Energy_per_spin",
+            "resolved": "Energy_per_spin",
+            "method": "user_requested_target",
+            "fallback_used": false,
+            "reason": "cible demandee par l'utilisateur, reutilisee pour tous les controles"
+          },
+          "t0_pct": 31.65670141939858,
+          "t0_control_value_raw": 0.494218575698,
+          "t0_control_value_median_near": 0.494218575698,
+          "t0_control_value_min_near": 0.472758369579,
+          "t0_control_value_max_near": 0.517666606175,
+          "t0_control_value_spread_near": 0.04490823659600002,
+          "t0_control_value_ambiguous": true,
+          "thresholds_in_control_units": {
+            "T_-2_F2_pre_onset": {
+              "threshold_pct": 0.0,
+              "control_value_raw": 0.232075777779,
+              "control_value_raw_interp": 0.232075777779,
+              "control_value_raw_median_near": 0.244752970406,
+              "control_value_raw_min_near": 0.232075777779,
+              "control_value_raw_max_near": 0.259646916344,
+              "control_value_raw_spread_near": 0.027571138565000014,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_-1_F1_pre_inflection": {
+              "threshold_pct": 2.6380584516165486,
+              "control_value_raw": 0.244752970406,
+              "control_value_raw_interp": 0.244752970406,
+              "control_value_raw_median_near": 0.244752970406,
+              "control_value_raw_min_near": 0.232075777779,
+              "control_value_raw_max_near": 0.259646916344,
+              "control_value_raw_spread_near": 0.027571138565000014,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_0_Monte_Carlo_Central": {
+              "threshold_pct": 31.65670141939858,
+              "control_value_raw": 0.494218575698,
+              "control_value_raw_interp": 0.494218575698,
+              "control_value_raw_median_near": 0.494218575698,
+              "control_value_raw_min_near": 0.472758369579,
+              "control_value_raw_max_near": 0.517666606175,
+              "control_value_raw_spread_near": 0.04490823659600002,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+1_F1_post_deceleration": {
+              "threshold_pct": 59.21428499821004,
+              "control_value_raw": 0.633166810719,
+              "control_value_raw_interp": 0.633166810719,
+              "control_value_raw_median_near": 0.633166810719,
+              "control_value_raw_min_near": 0.626550885145,
+              "control_value_raw_max_near": 0.638589772309,
+              "control_value_raw_spread_near": 0.012038887164000034,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+2_F2_post_attractor": {
+              "threshold_pct": 100.0,
+              "control_value_raw": 0.664680904365,
+              "control_value_raw_interp": 0.664680904365,
+              "control_value_raw_median_near": 0.66435817597,
+              "control_value_raw_min_near": 0.664050000122,
+              "control_value_raw_max_near": 0.664680904365,
+              "control_value_raw_spread_near": 0.0006309042430000522,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            }
+          },
+          "control_monotonicity": {
+            "control": "Binder_U4",
+            "monotone": false,
+            "direction": "non_monotone",
+            "constant": false,
+            "is_non_monotone": true,
+            "spearman_order_vs_value_r": -0.9998086124401915,
+            "spearman_p": 3.4144215547220703e-128,
+            "n_valid": 76,
+            "n_total": 76,
+            "warning_issued": true,
+            "warning_type": "non_monotone",
+            "interpretation": "Controle NON MONOTONE dans l'ordre fourni : la progression / le rang n'est pas injectif. Un meme seuil en % peut correspondre a plusieurs valeurs brutes distinctes du controle. Les conversions T en valeur brute sont exploratoires (voir spread). Interpreter T0 en % comme repere de progression, pas comme valeur unique du controle."
+          },
+          "control_monotone": false,
+          "control_monotonicity_warning": true,
+          "consensus": "up",
+          "harmonic_validation_status": null
+        }
+      ],
+      "control_results": {
+        "Temperature": {
+          "control": "Temperature",
+          "status": "ok",
+          "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_multiple_physical_controls\\Temperature",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "target_policy": "fixed",
+          "target_fallback_used": false,
+          "target_fallback_reason": null,
+          "target_resolution": {
+            "policy": "fixed",
+            "requested": "Energy_per_spin",
+            "resolved": "Energy_per_spin",
+            "method": "user_requested_target",
+            "fallback_used": false,
+            "reason": "cible demandee par l'utilisateur, reutilisee pour tous les controles"
+          },
+          "t0_pct": 60.50594227473842,
+          "t0_control_value_raw": 2.34,
+          "t0_control_value_median_near": 2.34,
+          "t0_control_value_min_near": 2.32,
+          "t0_control_value_max_near": 2.36,
+          "t0_control_value_spread_near": 0.040000000000000036,
+          "t0_control_value_ambiguous": false,
+          "thresholds_in_control_units": {
+            "T_-2_F2_pre_onset": {
+              "threshold_pct": 0.0,
+              "control_value_raw": 1.9,
+              "control_value_raw_interp": 1.9,
+              "control_value_raw_median_near": 1.92,
+              "control_value_raw_min_near": 1.9,
+              "control_value_raw_max_near": 1.94,
+              "control_value_raw_spread_near": 0.040000000000000036,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": false,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_-1_F1_pre_inflection": {
+              "threshold_pct": 2.6380584516165486,
+              "control_value_raw": 1.92,
+              "control_value_raw_interp": 1.92,
+              "control_value_raw_median_near": 1.92,
+              "control_value_raw_min_near": 1.9,
+              "control_value_raw_max_near": 1.94,
+              "control_value_raw_spread_near": 0.040000000000000036,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": false,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_0_Monte_Carlo_Central": {
+              "threshold_pct": 60.50594227473842,
+              "control_value_raw": 2.34,
+              "control_value_raw_interp": 2.34,
+              "control_value_raw_median_near": 2.34,
+              "control_value_raw_min_near": 2.32,
+              "control_value_raw_max_near": 2.36,
+              "control_value_raw_spread_near": 0.040000000000000036,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": false,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+1_F1_post_deceleration": {
+              "threshold_pct": 97.46810911917156,
+              "control_value_raw": 2.63,
+              "control_value_raw_interp": 2.63,
+              "control_value_raw_median_near": 2.63,
+              "control_value_raw_min_near": 2.61,
+              "control_value_raw_max_near": 2.65,
+              "control_value_raw_spread_near": 0.040000000000000036,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": false,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+2_F2_post_attractor": {
+              "threshold_pct": 100.0,
+              "control_value_raw": 2.65,
+              "control_value_raw_interp": 2.65,
+              "control_value_raw_median_near": 2.63,
+              "control_value_raw_min_near": 2.61,
+              "control_value_raw_max_near": 2.65,
+              "control_value_raw_spread_near": 0.040000000000000036,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": false,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            }
+          },
+          "control_monotonicity": {
+            "control": "Temperature",
+            "monotone": true,
+            "direction": "nondecreasing",
+            "constant": false,
+            "is_non_monotone": false,
+            "spearman_order_vs_value_r": 1.0,
+            "spearman_p": 0.0,
+            "n_valid": 76,
+            "n_total": 76,
+            "warning_issued": false,
+            "warning_type": null,
+            "interpretation": null
+          },
+          "control_monotone": true,
+          "control_monotonicity_warning": false,
+          "consensus": "up",
+          "harmonic_validation_status": null
+        },
+        "abs_magnetization": {
+          "control": "abs_magnetization",
+          "status": "ok",
+          "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_multiple_physical_controls\\abs_magnetization",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "target_policy": "fixed",
+          "target_fallback_used": false,
+          "target_fallback_reason": null,
+          "target_resolution": {
+            "policy": "fixed",
+            "requested": "Energy_per_spin",
+            "resolved": "Energy_per_spin",
+            "method": "user_requested_target",
+            "fallback_used": false,
+            "reason": "cible demandee par l'utilisateur, reutilisee pour tous les controles"
+          },
+          "t0_pct": 31.65670141939858,
+          "t0_control_value_raw": 0.505807942708,
+          "t0_control_value_median_near": 0.505807942708,
+          "t0_control_value_min_near": 0.478847005208,
+          "t0_control_value_max_near": 0.53571484375,
+          "t0_control_value_spread_near": 0.056867838542000004,
+          "t0_control_value_ambiguous": true,
+          "thresholds_in_control_units": {
+            "T_-2_F2_pre_onset": {
+              "threshold_pct": 0.0,
+              "control_value_raw": 0.275447916667,
+              "control_value_raw_interp": 0.275447916667,
+              "control_value_raw_median_near": 0.282232421875,
+              "control_value_raw_min_near": 0.275447916667,
+              "control_value_raw_max_near": 0.292041015625,
+              "control_value_raw_spread_near": 0.016593098957999985,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_-1_F1_pre_inflection": {
+              "threshold_pct": 2.6380584516165486,
+              "control_value_raw": 0.282232421875,
+              "control_value_raw_interp": 0.282232421875,
+              "control_value_raw_median_near": 0.282232421875,
+              "control_value_raw_min_near": 0.275447916667,
+              "control_value_raw_max_near": 0.292041015625,
+              "control_value_raw_spread_near": 0.016593098957999985,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_0_Monte_Carlo_Central": {
+              "threshold_pct": 31.65670141939858,
+              "control_value_raw": 0.505807942708,
+              "control_value_raw_interp": 0.505807942708,
+              "control_value_raw_median_near": 0.505807942708,
+              "control_value_raw_min_near": 0.478847005208,
+              "control_value_raw_max_near": 0.53571484375,
+              "control_value_raw_spread_near": 0.056867838542000004,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+1_F1_post_deceleration": {
+              "threshold_pct": 59.21428499821004,
+              "control_value_raw": 0.773541666667,
+              "control_value_raw_interp": 0.773541666667,
+              "control_value_raw_median_near": 0.773541666667,
+              "control_value_raw_min_near": 0.754180338542,
+              "control_value_raw_max_near": 0.793307291667,
+              "control_value_raw_spread_near": 0.03912695312500003,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+2_F2_post_attractor": {
+              "threshold_pct": 100.0,
+              "control_value_raw": 0.939027994792,
+              "control_value_raw_interp": 0.939027994792,
+              "control_value_raw_median_near": 0.933845052083,
+              "control_value_raw_min_near": 0.929078125,
+              "control_value_raw_max_near": 0.939027994792,
+              "control_value_raw_spread_near": 0.009949869792000077,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            }
+          },
+          "control_monotonicity": {
+            "control": "abs_magnetization",
+            "monotone": false,
+            "direction": "non_monotone",
+            "constant": false,
+            "is_non_monotone": true,
+            "spearman_order_vs_value_r": -0.9999453178400547,
+            "spearman_p": 2.534195431404621e-148,
+            "n_valid": 76,
+            "n_total": 76,
+            "warning_issued": true,
+            "warning_type": "non_monotone",
+            "interpretation": "Controle NON MONOTONE dans l'ordre fourni : la progression / le rang n'est pas injectif. Un meme seuil en % peut correspondre a plusieurs valeurs brutes distinctes du controle. Les conversions T en valeur brute sont exploratoires (voir spread). Interpreter T0 en % comme repere de progression, pas comme valeur unique du controle."
+          },
+          "control_monotone": false,
+          "control_monotonicity_warning": true,
+          "consensus": "up",
+          "harmonic_validation_status": null
+        },
+        "chi_abs_per_spin": {
+          "control": "chi_abs_per_spin",
+          "status": "ok",
+          "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_multiple_physical_controls\\chi_abs_per_spin",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "target_policy": "fixed",
+          "target_fallback_used": false,
+          "target_fallback_reason": null,
+          "target_resolution": {
+            "policy": "fixed",
+            "requested": "Energy_per_spin",
+            "resolved": "Energy_per_spin",
+            "method": "user_requested_target",
+            "fallback_used": false,
+            "reason": "cible demandee par l'utilisateur, reutilisee pour tous les controles"
+          },
+          "t0_pct": 44.40588744142819,
+          "t0_control_value_raw": 3.2719477921,
+          "t0_control_value_median_near": 3.2719477921,
+          "t0_control_value_min_near": 2.62223405679,
+          "t0_control_value_max_near": 3.33996627096,
+          "t0_control_value_spread_near": 0.7177322141700002,
+          "t0_control_value_ambiguous": true,
+          "thresholds_in_control_units": {
+            "T_-2_F2_pre_onset": {
+              "threshold_pct": 35.64085208888561,
+              "control_value_raw": 1.94493246443,
+              "control_value_raw_interp": 1.94493246443,
+              "control_value_raw_median_near": 1.94493246443,
+              "control_value_raw_min_near": 1.38155655015,
+              "control_value_raw_max_near": 2.43554358511,
+              "control_value_raw_spread_near": 1.05398703496,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_-1_F1_pre_inflection": {
+              "threshold_pct": 38.707856917807796,
+              "control_value_raw": 2.43554358511,
+              "control_value_raw_interp": 2.43554358511,
+              "control_value_raw_median_near": 2.43554358511,
+              "control_value_raw_min_near": 1.94493246443,
+              "control_value_raw_max_near": 2.62223405679,
+              "control_value_raw_spread_near": 0.6773015923600001,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_0_Monte_Carlo_Central": {
+              "threshold_pct": 44.40588744142819,
+              "control_value_raw": 3.2719477921,
+              "control_value_raw_interp": 3.2719477921,
+              "control_value_raw_median_near": 3.2719477921,
+              "control_value_raw_min_near": 2.62223405679,
+              "control_value_raw_max_near": 3.33996627096,
+              "control_value_raw_spread_near": 0.7177322141700002,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+1_F1_post_deceleration": {
+              "threshold_pct": 50.06367684308213,
+              "control_value_raw": 3.39749843713,
+              "control_value_raw_interp": 3.39749843713,
+              "control_value_raw_median_near": 3.39749843713,
+              "control_value_raw_min_near": 3.33996627096,
+              "control_value_raw_max_near": 3.6172607266,
+              "control_value_raw_spread_near": 0.2772944556399999,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+2_F2_post_attractor": {
+              "threshold_pct": 57.45895308871856,
+              "control_value_raw": 3.91551554754,
+              "control_value_raw_interp": 3.91551554754,
+              "control_value_raw_median_near": 3.91551554754,
+              "control_value_raw_min_near": 3.78650368519,
+              "control_value_raw_max_near": 4.04264998695,
+              "control_value_raw_spread_near": 0.25614630175999986,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            }
+          },
+          "control_monotonicity": {
+            "control": "chi_abs_per_spin",
+            "monotone": false,
+            "direction": "non_monotone",
+            "constant": false,
+            "is_non_monotone": true,
+            "spearman_order_vs_value_r": 0.776842105263158,
+            "spearman_p": 1.612522324807738e-16,
+            "n_valid": 76,
+            "n_total": 76,
+            "warning_issued": true,
+            "warning_type": "non_monotone",
+            "interpretation": "Controle NON MONOTONE dans l'ordre fourni : la progression / le rang n'est pas injectif. Un meme seuil en % peut correspondre a plusieurs valeurs brutes distinctes du controle. Les conversions T en valeur brute sont exploratoires (voir spread). Interpreter T0 en % comme repere de progression, pas comme valeur unique du controle."
+          },
+          "control_monotone": false,
+          "control_monotonicity_warning": true,
+          "consensus": "up",
+          "harmonic_validation_status": null
+        },
+        "Cv_per_spin": {
+          "control": "Cv_per_spin",
+          "status": "ok",
+          "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_multiple_physical_controls\\Cv_per_spin",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "target_policy": "fixed",
+          "target_fallback_used": false,
+          "target_fallback_reason": null,
+          "target_resolution": {
+            "policy": "fixed",
+            "requested": "Energy_per_spin",
+            "resolved": "Energy_per_spin",
+            "method": "user_requested_target",
+            "fallback_used": false,
+            "reason": "cible demandee par l'utilisateur, reutilisee pour tous les controles"
+          },
+          "t0_pct": 11.871263032274468,
+          "t0_control_value_raw": 0.695392347452,
+          "t0_control_value_median_near": 0.695392347452,
+          "t0_control_value_min_near": 0.669681162427,
+          "t0_control_value_max_near": 0.706650002942,
+          "t0_control_value_spread_near": 0.036968840514999934,
+          "t0_control_value_ambiguous": true,
+          "thresholds_in_control_units": {
+            "T_-2_F2_pre_onset": {
+              "threshold_pct": 0.0,
+              "control_value_raw": 0.554926092163,
+              "control_value_raw_interp": 0.554926092163,
+              "control_value_raw_median_near": 0.599919057764,
+              "control_value_raw_min_near": 0.554926092163,
+              "control_value_raw_max_near": 0.606792521345,
+              "control_value_raw_spread_near": 0.05186642918199991,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_-1_F1_pre_inflection": {
+              "threshold_pct": 6.595146129041371,
+              "control_value_raw": 0.653754141555,
+              "control_value_raw_interp": 0.653754141555,
+              "control_value_raw_median_near": 0.653754141555,
+              "control_value_raw_min_near": 0.600131428565,
+              "control_value_raw_max_near": 0.669681162427,
+              "control_value_raw_spread_near": 0.06954973386200003,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_0_Monte_Carlo_Central": {
+              "threshold_pct": 11.871263032274468,
+              "control_value_raw": 0.695392347452,
+              "control_value_raw_interp": 0.695392347452,
+              "control_value_raw_median_near": 0.695392347452,
+              "control_value_raw_min_near": 0.669681162427,
+              "control_value_raw_max_near": 0.706650002942,
+              "control_value_raw_spread_near": 0.036968840514999934,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+1_F1_post_deceleration": {
+              "threshold_pct": 15.82835070969929,
+              "control_value_raw": 0.724844384639,
+              "control_value_raw_interp": 0.724844384639,
+              "control_value_raw_median_near": 0.724844384639,
+              "control_value_raw_min_near": 0.700064131836,
+              "control_value_raw_max_near": 0.737084016204,
+              "control_value_raw_spread_near": 0.03701988436799997,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+2_F2_post_attractor": {
+              "threshold_pct": 18.466409161315838,
+              "control_value_raw": 0.737084016204,
+              "control_value_raw_interp": 0.737084016204,
+              "control_value_raw_median_near": 0.737084016204,
+              "control_value_raw_min_near": 0.724844384639,
+              "control_value_raw_max_near": 0.761142328158,
+              "control_value_raw_spread_near": 0.03629794351899995,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            }
+          },
+          "control_monotonicity": {
+            "control": "Cv_per_spin",
+            "monotone": false,
+            "direction": "non_monotone",
+            "constant": false,
+            "is_non_monotone": true,
+            "spearman_order_vs_value_r": 0.2880382775119617,
+            "spearman_p": 0.011630442095127392,
+            "n_valid": 76,
+            "n_total": 76,
+            "warning_issued": true,
+            "warning_type": "non_monotone",
+            "interpretation": "Controle NON MONOTONE dans l'ordre fourni : la progression / le rang n'est pas injectif. Un meme seuil en % peut correspondre a plusieurs valeurs brutes distinctes du controle. Les conversions T en valeur brute sont exploratoires (voir spread). Interpreter T0 en % comme repere de progression, pas comme valeur unique du controle."
+          },
+          "control_monotone": false,
+          "control_monotonicity_warning": true,
+          "consensus": "up",
+          "harmonic_validation_status": null
+        },
+        "Binder_U4": {
+          "control": "Binder_U4",
+          "status": "ok",
+          "output_dir": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_multiple_physical_controls\\Binder_U4",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "target_policy": "fixed",
+          "target_fallback_used": false,
+          "target_fallback_reason": null,
+          "target_resolution": {
+            "policy": "fixed",
+            "requested": "Energy_per_spin",
+            "resolved": "Energy_per_spin",
+            "method": "user_requested_target",
+            "fallback_used": false,
+            "reason": "cible demandee par l'utilisateur, reutilisee pour tous les controles"
+          },
+          "t0_pct": 31.65670141939858,
+          "t0_control_value_raw": 0.494218575698,
+          "t0_control_value_median_near": 0.494218575698,
+          "t0_control_value_min_near": 0.472758369579,
+          "t0_control_value_max_near": 0.517666606175,
+          "t0_control_value_spread_near": 0.04490823659600002,
+          "t0_control_value_ambiguous": true,
+          "thresholds_in_control_units": {
+            "T_-2_F2_pre_onset": {
+              "threshold_pct": 0.0,
+              "control_value_raw": 0.232075777779,
+              "control_value_raw_interp": 0.232075777779,
+              "control_value_raw_median_near": 0.244752970406,
+              "control_value_raw_min_near": 0.232075777779,
+              "control_value_raw_max_near": 0.259646916344,
+              "control_value_raw_spread_near": 0.027571138565000014,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_-1_F1_pre_inflection": {
+              "threshold_pct": 2.6380584516165486,
+              "control_value_raw": 0.244752970406,
+              "control_value_raw_interp": 0.244752970406,
+              "control_value_raw_median_near": 0.244752970406,
+              "control_value_raw_min_near": 0.232075777779,
+              "control_value_raw_max_near": 0.259646916344,
+              "control_value_raw_spread_near": 0.027571138565000014,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_0_Monte_Carlo_Central": {
+              "threshold_pct": 31.65670141939858,
+              "control_value_raw": 0.494218575698,
+              "control_value_raw_interp": 0.494218575698,
+              "control_value_raw_median_near": 0.494218575698,
+              "control_value_raw_min_near": 0.472758369579,
+              "control_value_raw_max_near": 0.517666606175,
+              "control_value_raw_spread_near": 0.04490823659600002,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+1_F1_post_deceleration": {
+              "threshold_pct": 59.21428499821004,
+              "control_value_raw": 0.633166810719,
+              "control_value_raw_interp": 0.633166810719,
+              "control_value_raw_median_near": 0.633166810719,
+              "control_value_raw_min_near": 0.626550885145,
+              "control_value_raw_max_near": 0.638589772309,
+              "control_value_raw_spread_near": 0.012038887164000034,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            },
+            "T_+2_F2_post_attractor": {
+              "threshold_pct": 100.0,
+              "control_value_raw": 0.664680904365,
+              "control_value_raw_interp": 0.664680904365,
+              "control_value_raw_median_near": 0.66435817597,
+              "control_value_raw_min_near": 0.664050000122,
+              "control_value_raw_max_near": 0.664680904365,
+              "control_value_raw_spread_near": 0.0006309042430000522,
+              "n_near": 5,
+              "method": "interp_sur_axe_progression_MC + mediane_5_plus_proches",
+              "ambiguous": true,
+              "unit_note": "valeur brute du controle, a cote du % (ne remplace pas le %)"
+            }
+          },
+          "control_monotonicity": {
+            "control": "Binder_U4",
+            "monotone": false,
+            "direction": "non_monotone",
+            "constant": false,
+            "is_non_monotone": true,
+            "spearman_order_vs_value_r": -0.9998086124401915,
+            "spearman_p": 3.4144215547220703e-128,
+            "n_valid": 76,
+            "n_total": 76,
+            "warning_issued": true,
+            "warning_type": "non_monotone",
+            "interpretation": "Controle NON MONOTONE dans l'ordre fourni : la progression / le rang n'est pas injectif. Un meme seuil en % peut correspondre a plusieurs valeurs brutes distinctes du controle. Les conversions T en valeur brute sont exploratoires (voir spread). Interpreter T0 en % comme repere de progression, pas comme valeur unique du controle."
+          },
+          "control_monotone": false,
+          "control_monotonicity_warning": true,
+          "consensus": "up",
+          "harmonic_validation_status": null
+        }
+      },
+      "started_utc": "2026-11-15T20:07:27.324528+00:00",
+      "finished_utc": "2026-11-15T20:27:03.237592+00:00",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_multiple_physical_controls.log"
+    },
+    "sensitivity_L16_seed_42": {
+      "run_id": "sensitivity_L16_seed_42",
+      "input": "ising_L16_physical",
+      "L": 16,
+      "variant": "physical_reference",
+      "control_mode": "single",
+      "control_col": "Temperature",
+      "controls": null,
+      "seed": 42,
+      "status": "complete",
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "input_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L16_physical.csv",
+      "input_sha256": "d6dbe2ef23a2d0825c7c184d8a36ac7d00f166179830e97279461c4360eecdd1",
+      "output_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_seed_42",
+      "elapsed_seconds": 237.0572069000009,
+      "controls_summary": [
+        {
+          "control": null,
+          "status": "ok",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "t0_pct": 63.32424154675365,
+          "t0_control_value_raw": 2.37,
+          "t_minus_2": 0.0,
+          "t_minus_1": 54.640161286678165,
+          "t_plus_1": 97.3652907297254,
+          "t_plus_2": 100.0,
+          "cascade_status": "ok",
+          "control_monotone": true,
+          "control_monotonicity_warning": false,
+          "consensus": "up",
+          "l7b_verdict": "FRAGILE",
+          "dominant_regime_relative": "saturation|control=Temperature",
+          "d_vector": {
+            "d_sat": 1.027132,
+            "d_crit": 1.145782,
+            "d_div": 1.799621,
+            "d_null": 1.858819
+          },
+          "voie1_higuchi": 1.360194,
+          "voie1_blind_risk": false,
+          "triangulation": {
+            "trio": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "preset": "default",
+            "is_default": false,
+            "trio_values": {
+              "Higuchi": 1.360194,
+              "InformationD1": 0.897798,
+              "LevinaBickel": null
+            },
+            "trio_sat_estimator": "Higuchi",
+            "trio_crit_estimator": "InformationD1",
+            "trio_div_estimator": "LevinaBickel",
+            "trio_sat_value": 1.360194,
+            "trio_crit_value": 0.897798,
+            "trio_div_value": null,
+            "trio_gap_E": 0.462396,
+            "trio_gap_T_log": 2.002512,
+            "trio_gap_mode": "max-min (trio non equilibre)",
+            "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+            "trio_vs_median_gap_disagreement_gap_gt_3": false,
+            "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+            "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+            "presets": {
+              "default": [
+                "Higuchi",
+                "InformationD1",
+                "LevinaBickel"
+              ],
+              "robust": [
+                "DFA",
+                "CorrelationD2",
+                "PCAIntrinsic"
+              ],
+              "noise_robust": [
+                "DFA",
+                "InformationD1",
+                "PCAIntrinsic"
+              ],
+              "fast": [
+                "Higuchi",
+                "InformationD1",
+                "KolmogorovLZ"
+              ],
+              "saturation_focus": [
+                "Higuchi",
+                "DFA",
+                "Katz"
+              ],
+              "divergence_focus": [
+                "LevinaBickel",
+                "PCAIntrinsic",
+                "MFA"
+              ]
+            }
+          },
+          "tlog_class_median": {
+            "saturation": -12.8747,
+            "criticality": -12.360857,
+            "divergence": -9.529255,
+            "null_reference": -9.272883
+          }
+        }
+      ],
+      "t0_pct": 63.32424154675365,
+      "t0_control_value_raw": 2.37,
+      "t_minus_2": 0.0,
+      "t_minus_1": 54.640161286678165,
+      "t_plus_1": 97.3652907297254,
+      "t_plus_2": 100.0,
+      "cascade_status": "ok",
+      "control_monotone": true,
+      "control_monotonicity_warning": false,
+      "consensus": "up",
+      "l7b_verdict": "FRAGILE",
+      "dominant_regime_relative": "saturation|control=Temperature",
+      "voie1_higuchi": 1.360194,
+      "voie1_blind_risk": false,
+      "tlog_class_median": {
+        "saturation": -12.8747,
+        "criticality": -12.360857,
+        "divergence": -9.529255,
+        "null_reference": -9.272883
+      },
+      "d_vector": {
+        "d_sat": 1.027132,
+        "d_crit": 1.145782,
+        "d_div": 1.799621,
+        "d_null": 1.858819
+      },
+      "triangulation": {
+        "trio": [
+          "Higuchi",
+          "InformationD1",
+          "LevinaBickel"
+        ],
+        "preset": "default",
+        "is_default": false,
+        "trio_values": {
+          "Higuchi": 1.360194,
+          "InformationD1": 0.897798,
+          "LevinaBickel": null
+        },
+        "trio_sat_estimator": "Higuchi",
+        "trio_crit_estimator": "InformationD1",
+        "trio_div_estimator": "LevinaBickel",
+        "trio_sat_value": 1.360194,
+        "trio_crit_value": 0.897798,
+        "trio_div_value": null,
+        "trio_gap_E": 0.462396,
+        "trio_gap_T_log": 2.002512,
+        "trio_gap_mode": "max-min (trio non equilibre)",
+        "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+        "trio_vs_median_gap_disagreement_gap_gt_3": false,
+        "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+        "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+        "presets": {
+          "default": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "robust": [
+            "DFA",
+            "CorrelationD2",
+            "PCAIntrinsic"
+          ],
+          "noise_robust": [
+            "DFA",
+            "InformationD1",
+            "PCAIntrinsic"
+          ],
+          "fast": [
+            "Higuchi",
+            "InformationD1",
+            "KolmogorovLZ"
+          ],
+          "saturation_focus": [
+            "Higuchi",
+            "DFA",
+            "Katz"
+          ],
+          "divergence_focus": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "MFA"
+          ]
+        }
+      },
+      "started_utc": "2026-11-15T20:27:03.257670+00:00",
+      "finished_utc": "2026-11-15T20:31:00.319351+00:00",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_seed_42.log"
+    },
+    "sensitivity_L16_seed_123": {
+      "run_id": "sensitivity_L16_seed_123",
+      "input": "ising_L16_physical",
+      "L": 16,
+      "variant": "physical_reference",
+      "control_mode": "single",
+      "control_col": "Temperature",
+      "controls": null,
+      "seed": 123,
+      "status": "complete",
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "input_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L16_physical.csv",
+      "input_sha256": "d6dbe2ef23a2d0825c7c184d8a36ac7d00f166179830e97279461c4360eecdd1",
+      "output_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_seed_123",
+      "elapsed_seconds": 218.49753109999983,
+      "controls_summary": [
+        {
+          "control": null,
+          "status": "ok",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "t0_pct": 64.49861186516495,
+          "t0_control_value_raw": 2.38,
+          "t_minus_2": 0.0,
+          "t_minus_1": 41.28092245153232,
+          "t_plus_1": 97.36586872859681,
+          "t_plus_2": 100.0,
+          "cascade_status": "ok",
+          "control_monotone": true,
+          "control_monotonicity_warning": false,
+          "consensus": "up",
+          "l7b_verdict": "FRAGILE",
+          "dominant_regime_relative": "saturation|control=Temperature",
+          "d_vector": {
+            "d_sat": 1.043858,
+            "d_crit": 1.6978,
+            "d_div": 1.756579,
+            "d_null": 1.848366
+          },
+          "voie1_higuchi": 1.495568,
+          "voie1_blind_risk": false,
+          "triangulation": {
+            "trio": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "preset": "default",
+            "is_default": false,
+            "trio_values": {
+              "Higuchi": 1.495568,
+              "InformationD1": 0.816988,
+              "LevinaBickel": 4.374775
+            },
+            "trio_sat_estimator": "Higuchi",
+            "trio_crit_estimator": "InformationD1",
+            "trio_div_estimator": "LevinaBickel",
+            "trio_sat_value": 1.495568,
+            "trio_crit_value": 0.816988,
+            "trio_div_value": 4.374775,
+            "trio_gap_E": 2.879207,
+            "trio_gap_T_log": 12.469079,
+            "trio_gap_mode": "div-sat (trio equilibre)",
+            "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+            "trio_vs_median_gap_disagreement_gap_gt_3": false,
+            "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+            "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+            "presets": {
+              "default": [
+                "Higuchi",
+                "InformationD1",
+                "LevinaBickel"
+              ],
+              "robust": [
+                "DFA",
+                "CorrelationD2",
+                "PCAIntrinsic"
+              ],
+              "noise_robust": [
+                "DFA",
+                "InformationD1",
+                "PCAIntrinsic"
+              ],
+              "fast": [
+                "Higuchi",
+                "InformationD1",
+                "KolmogorovLZ"
+              ],
+              "saturation_focus": [
+                "Higuchi",
+                "DFA",
+                "Katz"
+              ],
+              "divergence_focus": [
+                "LevinaBickel",
+                "PCAIntrinsic",
+                "MFA"
+              ]
+            }
+          },
+          "tlog_class_median": {
+            "saturation": -12.802263,
+            "criticality": -9.970213,
+            "divergence": -9.715658,
+            "null_reference": -9.318152
+          }
+        }
+      ],
+      "t0_pct": 64.49861186516495,
+      "t0_control_value_raw": 2.38,
+      "t_minus_2": 0.0,
+      "t_minus_1": 41.28092245153232,
+      "t_plus_1": 97.36586872859681,
+      "t_plus_2": 100.0,
+      "cascade_status": "ok",
+      "control_monotone": true,
+      "control_monotonicity_warning": false,
+      "consensus": "up",
+      "l7b_verdict": "FRAGILE",
+      "dominant_regime_relative": "saturation|control=Temperature",
+      "voie1_higuchi": 1.495568,
+      "voie1_blind_risk": false,
+      "tlog_class_median": {
+        "saturation": -12.802263,
+        "criticality": -9.970213,
+        "divergence": -9.715658,
+        "null_reference": -9.318152
+      },
+      "d_vector": {
+        "d_sat": 1.043858,
+        "d_crit": 1.6978,
+        "d_div": 1.756579,
+        "d_null": 1.848366
+      },
+      "triangulation": {
+        "trio": [
+          "Higuchi",
+          "InformationD1",
+          "LevinaBickel"
+        ],
+        "preset": "default",
+        "is_default": false,
+        "trio_values": {
+          "Higuchi": 1.495568,
+          "InformationD1": 0.816988,
+          "LevinaBickel": 4.374775
+        },
+        "trio_sat_estimator": "Higuchi",
+        "trio_crit_estimator": "InformationD1",
+        "trio_div_estimator": "LevinaBickel",
+        "trio_sat_value": 1.495568,
+        "trio_crit_value": 0.816988,
+        "trio_div_value": 4.374775,
+        "trio_gap_E": 2.879207,
+        "trio_gap_T_log": 12.469079,
+        "trio_gap_mode": "div-sat (trio equilibre)",
+        "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+        "trio_vs_median_gap_disagreement_gap_gt_3": false,
+        "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+        "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+        "presets": {
+          "default": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "robust": [
+            "DFA",
+            "CorrelationD2",
+            "PCAIntrinsic"
+          ],
+          "noise_robust": [
+            "DFA",
+            "InformationD1",
+            "PCAIntrinsic"
+          ],
+          "fast": [
+            "Higuchi",
+            "InformationD1",
+            "KolmogorovLZ"
+          ],
+          "saturation_focus": [
+            "Higuchi",
+            "DFA",
+            "Katz"
+          ],
+          "divergence_focus": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "MFA"
+          ]
+        }
+      },
+      "started_utc": "2026-11-15T20:31:00.343420+00:00",
+      "finished_utc": "2026-11-15T20:34:38.845534+00:00",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_seed_123.log"
+    },
+    "negative_L16_reverse_row_order": {
+      "run_id": "negative_L16_reverse_row_order",
+      "input": "ising_L16_reversed_row_order",
+      "L": 16,
+      "variant": "reversed_row_order",
+      "control_mode": "single",
+      "control_col": "Temperature",
+      "controls": null,
+      "seed": 20261115,
+      "status": "complete",
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "input_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L16_reversed_row_order.csv",
+      "input_sha256": "7465b49dd6d8f8488c4b7f0c5328ac4061841a2a5e6a8379a213ce76f45651b2",
+      "output_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\negative_L16_reverse_row_order",
+      "elapsed_seconds": 211.40533790000154,
+      "controls_summary": [
+        {
+          "control": null,
+          "status": "ok",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "t0_pct": 60.50594227473842,
+          "t0_control_value_raw": 2.34,
+          "t_minus_2": 0.0,
+          "t_minus_1": 2.6380584516165486,
+          "t_plus_1": 97.46810911917156,
+          "t_plus_2": 100.0,
+          "cascade_status": "ok",
+          "control_monotone": true,
+          "control_monotonicity_warning": false,
+          "consensus": "up",
+          "l7b_verdict": "FRAGILE",
+          "dominant_regime_relative": "saturation|control=Temperature",
+          "d_vector": {
+            "d_sat": 1.033946,
+            "d_crit": 1.2193,
+            "d_div": 2.0,
+            "d_null": 1.890089
+          },
+          "voie1_higuchi": 1.383795,
+          "voie1_blind_risk": false,
+          "triangulation": {
+            "trio": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "preset": "default",
+            "is_default": false,
+            "trio_values": {
+              "Higuchi": 1.383795,
+              "InformationD1": 0.830086,
+              "LevinaBickel": null
+            },
+            "trio_sat_estimator": "Higuchi",
+            "trio_crit_estimator": "InformationD1",
+            "trio_div_estimator": "LevinaBickel",
+            "trio_sat_value": 1.383795,
+            "trio_crit_value": 0.830086,
+            "trio_div_value": null,
+            "trio_gap_E": 0.553709,
+            "trio_gap_T_log": 2.397966,
+            "trio_gap_mode": "max-min (trio non equilibre)",
+            "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+            "trio_vs_median_gap_disagreement_gap_gt_3": false,
+            "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+            "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+            "presets": {
+              "default": [
+                "Higuchi",
+                "InformationD1",
+                "LevinaBickel"
+              ],
+              "robust": [
+                "DFA",
+                "CorrelationD2",
+                "PCAIntrinsic"
+              ],
+              "noise_robust": [
+                "DFA",
+                "InformationD1",
+                "PCAIntrinsic"
+              ],
+              "fast": [
+                "Higuchi",
+                "InformationD1",
+                "KolmogorovLZ"
+              ],
+              "saturation_focus": [
+                "Higuchi",
+                "DFA",
+                "Katz"
+              ],
+              "divergence_focus": [
+                "LevinaBickel",
+                "PCAIntrinsic",
+                "MFA"
+              ]
+            }
+          },
+          "tlog_class_median": {
+            "saturation": -12.84519,
+            "criticality": -12.042468,
+            "divergence": -8.661467,
+            "null_reference": -9.137464
+          }
+        }
+      ],
+      "t0_pct": 60.50594227473842,
+      "t0_control_value_raw": 2.34,
+      "t_minus_2": 0.0,
+      "t_minus_1": 2.6380584516165486,
+      "t_plus_1": 97.46810911917156,
+      "t_plus_2": 100.0,
+      "cascade_status": "ok",
+      "control_monotone": true,
+      "control_monotonicity_warning": false,
+      "consensus": "up",
+      "l7b_verdict": "FRAGILE",
+      "dominant_regime_relative": "saturation|control=Temperature",
+      "voie1_higuchi": 1.383795,
+      "voie1_blind_risk": false,
+      "tlog_class_median": {
+        "saturation": -12.84519,
+        "criticality": -12.042468,
+        "divergence": -8.661467,
+        "null_reference": -9.137464
+      },
+      "d_vector": {
+        "d_sat": 1.033946,
+        "d_crit": 1.2193,
+        "d_div": 2.0,
+        "d_null": 1.890089
+      },
+      "triangulation": {
+        "trio": [
+          "Higuchi",
+          "InformationD1",
+          "LevinaBickel"
+        ],
+        "preset": "default",
+        "is_default": false,
+        "trio_values": {
+          "Higuchi": 1.383795,
+          "InformationD1": 0.830086,
+          "LevinaBickel": null
+        },
+        "trio_sat_estimator": "Higuchi",
+        "trio_crit_estimator": "InformationD1",
+        "trio_div_estimator": "LevinaBickel",
+        "trio_sat_value": 1.383795,
+        "trio_crit_value": 0.830086,
+        "trio_div_value": null,
+        "trio_gap_E": 0.553709,
+        "trio_gap_T_log": 2.397966,
+        "trio_gap_mode": "max-min (trio non equilibre)",
+        "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+        "trio_vs_median_gap_disagreement_gap_gt_3": false,
+        "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+        "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+        "presets": {
+          "default": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "robust": [
+            "DFA",
+            "CorrelationD2",
+            "PCAIntrinsic"
+          ],
+          "noise_robust": [
+            "DFA",
+            "InformationD1",
+            "PCAIntrinsic"
+          ],
+          "fast": [
+            "Higuchi",
+            "InformationD1",
+            "KolmogorovLZ"
+          ],
+          "saturation_focus": [
+            "Higuchi",
+            "DFA",
+            "Katz"
+          ],
+          "divergence_focus": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "MFA"
+          ]
+        }
+      },
+      "started_utc": "2026-11-15T20:34:38.878017+00:00",
+      "finished_utc": "2026-11-15T20:38:10.284815+00:00",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\negative_L16_reverse_row_order.log"
+    },
+    "negative_L16_independent_noise_flow": {
+      "run_id": "negative_L16_independent_noise_flow",
+      "input": "ising_L16_plus_independent_noise",
+      "L": 16,
+      "variant": "independent_noise_added",
+      "control_mode": "single",
+      "control_col": "Temperature",
+      "controls": null,
+      "seed": 20261115,
+      "status": "complete",
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "input_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L16_plus_independent_noise.csv",
+      "input_sha256": "fe80fd8417140f3d483e0470203704c2d560f35f98764046a96b6e2440a470ec",
+      "output_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\negative_L16_independent_noise_flow",
+      "elapsed_seconds": 236.94208099999923,
+      "controls_summary": [
+        {
+          "control": null,
+          "status": "ok",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "t0_pct": 60.50594227473842,
+          "t0_control_value_raw": 2.34,
+          "t_minus_2": 0.0,
+          "t_minus_1": 2.6380584516165486,
+          "t_plus_1": 97.46810911917156,
+          "t_plus_2": 100.0,
+          "cascade_status": "ok",
+          "control_monotone": true,
+          "control_monotonicity_warning": false,
+          "consensus": "up",
+          "l7b_verdict": "FRAGILE",
+          "dominant_regime_relative": "saturation|control=Temperature",
+          "d_vector": {
+            "d_sat": 1.035377,
+            "d_crit": 1.607151,
+            "d_div": 2.084976,
+            "d_null": 1.915335
+          },
+          "voie1_higuchi": 1.396008,
+          "voie1_blind_risk": false,
+          "triangulation": {
+            "trio": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "preset": "default",
+            "is_default": false,
+            "trio_values": {
+              "Higuchi": 1.396008,
+              "InformationD1": 0.805303,
+              "LevinaBickel": 4.05646
+            },
+            "trio_sat_estimator": "Higuchi",
+            "trio_crit_estimator": "InformationD1",
+            "trio_div_estimator": "LevinaBickel",
+            "trio_sat_value": 1.396008,
+            "trio_crit_value": 0.805303,
+            "trio_div_value": 4.05646,
+            "trio_gap_E": 2.660452,
+            "trio_gap_T_log": 11.521707,
+            "trio_gap_mode": "div-sat (trio equilibre)",
+            "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+            "trio_vs_median_gap_disagreement_gap_gt_3": false,
+            "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+            "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+            "presets": {
+              "default": [
+                "Higuchi",
+                "InformationD1",
+                "LevinaBickel"
+              ],
+              "robust": [
+                "DFA",
+                "CorrelationD2",
+                "PCAIntrinsic"
+              ],
+              "noise_robust": [
+                "DFA",
+                "InformationD1",
+                "PCAIntrinsic"
+              ],
+              "fast": [
+                "Higuchi",
+                "InformationD1",
+                "KolmogorovLZ"
+              ],
+              "saturation_focus": [
+                "Higuchi",
+                "DFA",
+                "Katz"
+              ],
+              "divergence_focus": [
+                "LevinaBickel",
+                "PCAIntrinsic",
+                "MFA"
+              ]
+            }
+          },
+          "tlog_class_median": {
+            "saturation": -12.838991,
+            "criticality": -10.362789,
+            "divergence": -8.29346,
+            "null_reference": -9.028127
+          }
+        }
+      ],
+      "t0_pct": 60.50594227473842,
+      "t0_control_value_raw": 2.34,
+      "t_minus_2": 0.0,
+      "t_minus_1": 2.6380584516165486,
+      "t_plus_1": 97.46810911917156,
+      "t_plus_2": 100.0,
+      "cascade_status": "ok",
+      "control_monotone": true,
+      "control_monotonicity_warning": false,
+      "consensus": "up",
+      "l7b_verdict": "FRAGILE",
+      "dominant_regime_relative": "saturation|control=Temperature",
+      "voie1_higuchi": 1.396008,
+      "voie1_blind_risk": false,
+      "tlog_class_median": {
+        "saturation": -12.838991,
+        "criticality": -10.362789,
+        "divergence": -8.29346,
+        "null_reference": -9.028127
+      },
+      "d_vector": {
+        "d_sat": 1.035377,
+        "d_crit": 1.607151,
+        "d_div": 2.084976,
+        "d_null": 1.915335
+      },
+      "triangulation": {
+        "trio": [
+          "Higuchi",
+          "InformationD1",
+          "LevinaBickel"
+        ],
+        "preset": "default",
+        "is_default": false,
+        "trio_values": {
+          "Higuchi": 1.396008,
+          "InformationD1": 0.805303,
+          "LevinaBickel": 4.05646
+        },
+        "trio_sat_estimator": "Higuchi",
+        "trio_crit_estimator": "InformationD1",
+        "trio_div_estimator": "LevinaBickel",
+        "trio_sat_value": 1.396008,
+        "trio_crit_value": 0.805303,
+        "trio_div_value": 4.05646,
+        "trio_gap_E": 2.660452,
+        "trio_gap_T_log": 11.521707,
+        "trio_gap_mode": "div-sat (trio equilibre)",
+        "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+        "trio_vs_median_gap_disagreement_gap_gt_3": false,
+        "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+        "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+        "presets": {
+          "default": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "robust": [
+            "DFA",
+            "CorrelationD2",
+            "PCAIntrinsic"
+          ],
+          "noise_robust": [
+            "DFA",
+            "InformationD1",
+            "PCAIntrinsic"
+          ],
+          "fast": [
+            "Higuchi",
+            "InformationD1",
+            "KolmogorovLZ"
+          ],
+          "saturation_focus": [
+            "Higuchi",
+            "DFA",
+            "Katz"
+          ],
+          "divergence_focus": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "MFA"
+          ]
+        }
+      },
+      "started_utc": "2026-11-15T20:38:10.316044+00:00",
+      "finished_utc": "2026-11-15T20:42:07.264013+00:00",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\negative_L16_independent_noise_flow.log"
+    },
+    "sensitivity_L16_redundant_energy_flow": {
+      "run_id": "sensitivity_L16_redundant_energy_flow",
+      "input": "ising_L16_plus_affine_duplicate_energy",
+      "L": 16,
+      "variant": "affine_redundant_flow_added",
+      "control_mode": "single",
+      "control_col": "Temperature",
+      "controls": null,
+      "seed": 20261115,
+      "status": "complete",
+      "pipeline_version": "v6.0.0-L7aL7b-CohenD",
+      "input_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\inputs\\ising_L16_plus_affine_duplicate_energy.csv",
+      "input_sha256": "4b81c555dea156848473a53963924f8dfc45744fd29ff8a6c0940072c2aec126",
+      "output_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_redundant_energy_flow",
+      "elapsed_seconds": 227.26268150000033,
+      "controls_summary": [
+        {
+          "control": null,
+          "status": "ok",
+          "target": "Energy_per_spin",
+          "target_requested": "Energy_per_spin",
+          "target_used": "Energy_per_spin",
+          "t0_pct": 60.50594227473842,
+          "t0_control_value_raw": 2.34,
+          "t_minus_2": 0.0,
+          "t_minus_1": 2.6380584516165486,
+          "t_plus_1": 97.46810911917156,
+          "t_plus_2": 100.0,
+          "cascade_status": "ok",
+          "control_monotone": true,
+          "control_monotonicity_warning": false,
+          "consensus": "up",
+          "l7b_verdict": "FRAGILE",
+          "dominant_regime_relative": "saturation|control=Temperature",
+          "d_vector": {
+            "d_sat": 1.033325,
+            "d_crit": 1.162706,
+            "d_div": 1.5,
+            "d_null": 1.864797
+          },
+          "voie1_higuchi": 1.375353,
+          "voie1_blind_risk": false,
+          "triangulation": {
+            "trio": [
+              "Higuchi",
+              "InformationD1",
+              "LevinaBickel"
+            ],
+            "preset": "default",
+            "is_default": false,
+            "trio_values": {
+              "Higuchi": 1.375353,
+              "InformationD1": 0.781242,
+              "LevinaBickel": null
+            },
+            "trio_sat_estimator": "Higuchi",
+            "trio_crit_estimator": "InformationD1",
+            "trio_div_estimator": "LevinaBickel",
+            "trio_sat_value": 1.375353,
+            "trio_crit_value": 0.781242,
+            "trio_div_value": null,
+            "trio_gap_E": 0.594111,
+            "trio_gap_T_log": 2.572935,
+            "trio_gap_mode": "max-min (trio non equilibre)",
+            "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+            "trio_vs_median_gap_disagreement_gap_gt_3": false,
+            "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+            "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+            "presets": {
+              "default": [
+                "Higuchi",
+                "InformationD1",
+                "LevinaBickel"
+              ],
+              "robust": [
+                "DFA",
+                "CorrelationD2",
+                "PCAIntrinsic"
+              ],
+              "noise_robust": [
+                "DFA",
+                "InformationD1",
+                "PCAIntrinsic"
+              ],
+              "fast": [
+                "Higuchi",
+                "InformationD1",
+                "KolmogorovLZ"
+              ],
+              "saturation_focus": [
+                "Higuchi",
+                "DFA",
+                "Katz"
+              ],
+              "divergence_focus": [
+                "LevinaBickel",
+                "PCAIntrinsic",
+                "MFA"
+              ]
+            }
+          },
+          "tlog_class_median": {
+            "saturation": -12.847879,
+            "criticality": -12.287563,
+            "divergence": -10.826833,
+            "null_reference": -9.246996
+          }
+        }
+      ],
+      "t0_pct": 60.50594227473842,
+      "t0_control_value_raw": 2.34,
+      "t_minus_2": 0.0,
+      "t_minus_1": 2.6380584516165486,
+      "t_plus_1": 97.46810911917156,
+      "t_plus_2": 100.0,
+      "cascade_status": "ok",
+      "control_monotone": true,
+      "control_monotonicity_warning": false,
+      "consensus": "up",
+      "l7b_verdict": "FRAGILE",
+      "dominant_regime_relative": "saturation|control=Temperature",
+      "voie1_higuchi": 1.375353,
+      "voie1_blind_risk": false,
+      "tlog_class_median": {
+        "saturation": -12.847879,
+        "criticality": -12.287563,
+        "divergence": -10.826833,
+        "null_reference": -9.246996
+      },
+      "d_vector": {
+        "d_sat": 1.033325,
+        "d_crit": 1.162706,
+        "d_div": 1.5,
+        "d_null": 1.864797
+      },
+      "triangulation": {
+        "trio": [
+          "Higuchi",
+          "InformationD1",
+          "LevinaBickel"
+        ],
+        "preset": "default",
+        "is_default": false,
+        "trio_values": {
+          "Higuchi": 1.375353,
+          "InformationD1": 0.781242,
+          "LevinaBickel": null
+        },
+        "trio_sat_estimator": "Higuchi",
+        "trio_crit_estimator": "InformationD1",
+        "trio_div_estimator": "LevinaBickel",
+        "trio_sat_value": 1.375353,
+        "trio_crit_value": 0.781242,
+        "trio_div_value": null,
+        "trio_gap_E": 0.594111,
+        "trio_gap_T_log": 2.572935,
+        "trio_gap_mode": "max-min (trio non equilibre)",
+        "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+        "trio_vs_median_gap_disagreement_gap_gt_3": false,
+        "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+        "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+        "presets": {
+          "default": [
+            "Higuchi",
+            "InformationD1",
+            "LevinaBickel"
+          ],
+          "robust": [
+            "DFA",
+            "CorrelationD2",
+            "PCAIntrinsic"
+          ],
+          "noise_robust": [
+            "DFA",
+            "InformationD1",
+            "PCAIntrinsic"
+          ],
+          "fast": [
+            "Higuchi",
+            "InformationD1",
+            "KolmogorovLZ"
+          ],
+          "saturation_focus": [
+            "Higuchi",
+            "DFA",
+            "Katz"
+          ],
+          "divergence_focus": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "MFA"
+          ]
+        }
+      },
+      "started_utc": "2026-11-15T20:42:07.293798+00:00",
+      "finished_utc": "2026-11-15T20:45:54.554668+00:00",
+      "log_path": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\pipeline_v6_0_pathway_audit\\runs\\sensitivity_L16_redundant_energy_flow.log"
+    }
+  }
+}

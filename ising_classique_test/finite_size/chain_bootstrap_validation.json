@@ -1,0 +1,468 @@
+{
+  "protocol": {
+    "sizes": [
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64
+    ],
+    "Tc_reference": 2.269185314213022,
+    "temperature_fit_window": [
+      2.22,
+      2.32
+    ],
+    "chains": 3,
+    "samples_per_chain_cell": 4000,
+    "block_size_updates": 80,
+    "blocks_per_chain_cell": 50,
+    "bootstrap_replicates": 300,
+    "seed": 20261109,
+    "chain_order": "block array is the vstack of chain outputs in chain order",
+    "models": "same cubic Binder scaling fits and fixed pointwise sigma as the original fit"
+  },
+  "point_fits": {
+    "uncorrected": {
+      "Tc": 2.268226665428566,
+      "nu": 1.069057485280956,
+      "U_star": 0.6128733038868006,
+      "AIC": 70.05956632934068,
+      "BIC": 84.1223988604628
+    },
+    "corrected_Lminus2": {
+      "Tc": 2.269368634373666,
+      "nu": 1.0212569763406696,
+      "U_star": 0.6111627791042307,
+      "AIC": 66.81354505226446,
+      "BIC": 85.56398842709393
+    }
+  },
+  "bootstrap_sensitivity": {
+    "pooled_iid": {
+      "binder_crossing_48_64_Tc": {
+        "n_valid": 300,
+        "mean": 2.2697841675468364,
+        "se": 0.003416261545746996,
+        "ci95_low": 2.264287087061736,
+        "ci95_high": 2.277040604937345
+      },
+      "binder_crossing_48_64_U4": {
+        "n_valid": 300,
+        "mean": 0.6083692527839402,
+        "se": 0.006792289123070229,
+        "ci95_low": 0.5941006667224135,
+        "ci95_high": 0.619143961924776
+      },
+      "fits": {
+        "uncorrected": {
+          "n_valid": 300,
+          "Tc": {
+            "n_valid": 300,
+            "mean": 2.26822181023915,
+            "se": 0.0005311467416757937,
+            "ci95_low": 2.2671617166800995,
+            "ci95_high": 2.2692292567230545
+          },
+          "nu": {
+            "n_valid": 300,
+            "mean": 1.0691434905765793,
+            "se": 0.018924658655473322,
+            "ci95_low": 1.0338142271494022,
+            "ci95_high": 1.1090575390678947
+          },
+          "U_star": {
+            "n_valid": 300,
+            "mean": 0.6129081569176755,
+            "se": 0.0004090327122792598,
+            "ci95_low": 0.6121066114145489,
+            "ci95_high": 0.613664149969122
+          }
+        },
+        "corrected_Lminus2": {
+          "n_valid": 300,
+          "Tc": {
+            "n_valid": 300,
+            "mean": 2.2693463771271705,
+            "se": 0.0006918203249190123,
+            "ci95_low": 2.268032760621344,
+            "ci95_high": 2.270708505010162
+          },
+          "nu": {
+            "n_valid": 300,
+            "mean": 1.019694449932879,
+            "se": 0.02932416815870325,
+            "ci95_low": 0.958595743528074,
+            "ci95_high": 1.0706768207676667
+          },
+          "U_star": {
+            "n_valid": 300,
+            "mean": 0.6112218897290904,
+            "se": 0.0007773721424390997,
+            "ci95_low": 0.6097058537648742,
+            "ci95_high": 0.61282180148542
+          }
+        }
+      }
+    },
+    "chain_stratified": {
+      "binder_crossing_48_64_Tc": {
+        "n_valid": 300,
+        "mean": 2.2700669424266082,
+        "se": 0.003451431747893083,
+        "ci95_low": 2.2640091499990134,
+        "ci95_high": 2.2772939098627196
+      },
+      "binder_crossing_48_64_U4": {
+        "n_valid": 300,
+        "mean": 0.6077942968300377,
+        "se": 0.006636798993371838,
+        "ci95_low": 0.5931803510525383,
+        "ci95_high": 0.619011445450236
+      },
+      "fits": {
+        "uncorrected": {
+          "n_valid": 300,
+          "Tc": {
+            "n_valid": 300,
+            "mean": 2.2682036876484357,
+            "se": 0.0004976443299303803,
+            "ci95_low": 2.267259826463297,
+            "ci95_high": 2.269144449410181
+          },
+          "nu": {
+            "n_valid": 300,
+            "mean": 1.0691513977494222,
+            "se": 0.016398401289426646,
+            "ci95_low": 1.0378091745597673,
+            "ci95_high": 1.100881248276115
+          },
+          "U_star": {
+            "n_valid": 300,
+            "mean": 0.6128830737372443,
+            "se": 0.0003774379550571065,
+            "ci95_low": 0.6120515007182802,
+            "ci95_high": 0.6135757223821878
+          }
+        },
+        "corrected_Lminus2": {
+          "n_valid": 300,
+          "Tc": {
+            "n_valid": 300,
+            "mean": 2.269348393290364,
+            "se": 0.000658387364092985,
+            "ci95_low": 2.268008776493009,
+            "ci95_high": 2.270627228688405
+          },
+          "nu": {
+            "n_valid": 300,
+            "mean": 1.023239034690863,
+            "se": 0.027200192310056815,
+            "ci95_low": 0.9743828981963993,
+            "ci95_high": 1.071286182873513
+          },
+          "U_star": {
+            "n_valid": 300,
+            "mean": 0.6111650156704284,
+            "se": 0.0007630591430530635,
+            "ci95_low": 0.6097333397011576,
+            "ci95_high": 0.6126534305671126
+          }
+        }
+      }
+    },
+    "hierarchical_chain_block": {
+      "binder_crossing_48_64_Tc": {
+        "n_valid": 300,
+        "mean": 2.269836348482865,
+        "se": 0.004043247852703727,
+        "ci95_low": 2.2631974744918892,
+        "ci95_high": 2.277310337541364
+      },
+      "binder_crossing_48_64_U4": {
+        "n_valid": 300,
+        "mean": 0.608224319757253,
+        "se": 0.008580920457628323,
+        "ci95_low": 0.5923755805639274,
+        "ci95_high": 0.621651930832561
+      },
+      "fits": {
+        "uncorrected": {
+          "n_valid": 300,
+          "Tc": {
+            "n_valid": 300,
+            "mean": 2.2681631774672106,
+            "se": 0.0006494053707539133,
+            "ci95_low": 2.266865666792159,
+            "ci95_high": 2.2693302013521635
+          },
+          "nu": {
+            "n_valid": 300,
+            "mean": 1.0712245508969527,
+            "se": 0.025118532762824577,
+            "ci95_low": 1.0245256020466553,
+            "ci95_high": 1.1161031050238268
+          },
+          "U_star": {
+            "n_valid": 300,
+            "mean": 0.6129164544931581,
+            "se": 0.0005011420174403444,
+            "ci95_low": 0.6118777337187443,
+            "ci95_high": 0.613806883428548
+          }
+        },
+        "corrected_Lminus2": {
+          "n_valid": 300,
+          "Tc": {
+            "n_valid": 300,
+            "mean": 2.2693570288661142,
+            "se": 0.0008481174689890994,
+            "ci95_low": 2.2677264645012363,
+            "ci95_high": 2.2710164836630824
+          },
+          "nu": {
+            "n_valid": 300,
+            "mean": 1.0196386163906284,
+            "se": 0.036525264555824624,
+            "ci95_low": 0.9453239823448372,
+            "ci95_high": 1.09568329188266
+          },
+          "U_star": {
+            "n_valid": 300,
+            "mean": 0.6111261147211148,
+            "se": 0.0010149608307733467,
+            "ci95_low": 0.6090170978514993,
+            "ci95_high": 0.6130499707768433
+          }
+        }
+      }
+    }
+  },
+  "block_autocorrelation": {
+    "definition": "initial-positive-pair tau_int estimate on 50 consecutive block means per chain; iid baseline is 0.5 block",
+    "temperature_nearest_Tc": 2.27,
+    "by_size": {
+      "8": {
+        "T": 2.27,
+        "observables": {
+          "energy": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              0.5,
+              0.7485023980557121
+            ],
+            "median_tau_int_blocks": 0.5
+          },
+          "m2": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              0.5,
+              0.6542115446543513
+            ],
+            "median_tau_int_blocks": 0.5
+          },
+          "abs_m": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              0.5,
+              0.6279160774045932
+            ],
+            "median_tau_int_blocks": 0.5
+          }
+        }
+      },
+      "12": {
+        "T": 2.27,
+        "observables": {
+          "energy": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              0.9227764339049002,
+              0.5
+            ],
+            "median_tau_int_blocks": 0.5
+          },
+          "m2": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              0.869872381106476,
+              0.5
+            ],
+            "median_tau_int_blocks": 0.5
+          },
+          "abs_m": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              0.9012103845032036,
+              0.5
+            ],
+            "median_tau_int_blocks": 0.5
+          }
+        }
+      },
+      "16": {
+        "T": 2.27,
+        "observables": {
+          "energy": {
+            "tau_int_blocks_per_chain": [
+              0.811743730773487,
+              0.5,
+              0.5
+            ],
+            "median_tau_int_blocks": 0.5
+          },
+          "m2": {
+            "tau_int_blocks_per_chain": [
+              0.9897101414104885,
+              0.5,
+              0.5
+            ],
+            "median_tau_int_blocks": 0.5
+          },
+          "abs_m": {
+            "tau_int_blocks_per_chain": [
+              1.0328547111875124,
+              0.5,
+              0.5
+            ],
+            "median_tau_int_blocks": 0.5
+          }
+        }
+      },
+      "24": {
+        "T": 2.27,
+        "observables": {
+          "energy": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              0.6050727443420475,
+              0.5
+            ],
+            "median_tau_int_blocks": 0.5
+          },
+          "m2": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              0.6519539433243118,
+              0.5
+            ],
+            "median_tau_int_blocks": 0.5
+          },
+          "abs_m": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              0.7011362326791954,
+              0.5
+            ],
+            "median_tau_int_blocks": 0.5
+          }
+        }
+      },
+      "32": {
+        "T": 2.27,
+        "observables": {
+          "energy": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              1.491704631448415,
+              0.5
+            ],
+            "median_tau_int_blocks": 0.5
+          },
+          "m2": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              1.1536340138304548,
+              0.5
+            ],
+            "median_tau_int_blocks": 0.5
+          },
+          "abs_m": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              1.3158705796148624,
+              0.511511661278119
+            ],
+            "median_tau_int_blocks": 0.511511661278119
+          }
+        }
+      },
+      "48": {
+        "T": 2.27,
+        "observables": {
+          "energy": {
+            "tau_int_blocks_per_chain": [
+              0.7846761579517256,
+              0.5,
+              0.5888297919213588
+            ],
+            "median_tau_int_blocks": 0.5888297919213588
+          },
+          "m2": {
+            "tau_int_blocks_per_chain": [
+              0.7430822793268724,
+              0.5,
+              0.7605251475204424
+            ],
+            "median_tau_int_blocks": 0.7430822793268724
+          },
+          "abs_m": {
+            "tau_int_blocks_per_chain": [
+              0.6879136224199084,
+              0.5,
+              0.8128741388244759
+            ],
+            "median_tau_int_blocks": 0.6879136224199084
+          }
+        }
+      },
+      "64": {
+        "T": 2.27,
+        "observables": {
+          "energy": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              0.5,
+              0.5474197138116197
+            ],
+            "median_tau_int_blocks": 0.5
+          },
+          "m2": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              0.5,
+              0.5841661777348826
+            ],
+            "median_tau_int_blocks": 0.5
+          },
+          "abs_m": {
+            "tau_int_blocks_per_chain": [
+              0.5,
+              0.5,
+              0.5668453211650188
+            ],
+            "median_tau_int_blocks": 0.5
+          }
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Archived data contain block averages, not raw per-update trajectories; autocorrelation is only estimated between block averages.",
+    "Three chains provide a weak estimate of between-chain variability; hierarchical intervals should be read as a sensitivity analysis.",
+    "Fits keep the original pointwise sigma fixed; these intervals isolate bootstrap resampling design, not all fit/model uncertainty.",
+    "The chain boundaries are inferred from saved run settings and the documented chain concatenation order."
+  ],
+  "archive_reproduction": {
+    "checks": "recomputed from archived block moments across all (L,T) cells",
+    "maximum_absolute_error": {
+      "Cv_per_spin": 4.440892098500626e-16,
+      "chi_abs_per_spin": 7.105427357601002e-15,
+      "Binder_U4": 9.749688036075899e-17,
+      "abs_magnetization": 1.1102230246251565e-16
+    },
+    "pass_tolerance": 1e-10,
+    "passed": true
+  }
+}

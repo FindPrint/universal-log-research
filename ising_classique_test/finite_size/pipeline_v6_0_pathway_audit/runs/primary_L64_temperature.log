@@ -1,0 +1,43 @@
+
+[CIBLE-FIXE-GLOBALE] politique=fixed mode=single cible_demandee='Energy_per_spin' -> cible_globale='Energy_per_spin' methode=user_requested_target controles=['Temperature'] | Cette cible unique sera reutilisee pour TOUS les controles. Le run ou controle == cible sera signale explicitement comme diagonal, avec cible_demandee ET cible_utilisee.
+
+================================================================================
+UNIVERSAL_LOG v6.0.0-L7aL7b-CohenD — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\inputs\ising_L64_physical.csv | Domain: physics | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=Temperature cible_demandee='Energy_per_spin' -> cible_utilisee='Energy_per_spin' | Cible fixee conservee pour ce run.
+Target Observable: Energy_per_spin | Control Parameter: Temperature
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.561
+  règle: uniform
+  n_candidates: 61, resolution: 1.667%
+  w_size: 14, min_grp: 6
+[T0-VALEUR-BRUTE] controle=Temperature T0=50.06% -> valeur brute controle=2.27 (median_near=2.27, min_near=2.25, max_near=2.29, spread=0.040000000000000036, ambiguous=False)
+✓ Paysage des 29 estimateurs sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\primary_L64_temperature\landscape_complexity.png
+Paysage ameliore v4.4.3 sauvegarde: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\primary_L64_temperature\landscape_complexity_improved.png
+Clustermap separation v4.4.3: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\primary_L64_temperature\separation_clustermap.png
+Tension holographique sauvegardee: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\primary_L64_temperature\holographic_tension.png
+✓ Courbe de scan sauvegardée: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\primary_L64_temperature\threshold_scan.png
+✓ Graphique diagnostic bruit sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\primary_L64_temperature\noise_diagnostic.png
+<PROJECT_ROOT>\pancréas\Archive complète PDAC v6 — ZIP\universal_v6.0.0_cohen.py:4929: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap.set_bad(color='#d9d9d9')
+✓ Graphique des flux sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\primary_L64_temperature\raw_fluxes.png
+✓ Heatmaps de séparation par classe sauvegardées: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\primary_L64_temperature\separation_heatmap.png
+✓ Graphique post-seuil sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\primary_L64_temperature\post_threshold.png
+✓ Graphique de corrélation CSD vs f' sauvegardé: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\primary_L64_temperature\csd_correlation.png
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=flat regime=up disagreement=False | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: FRAGILE (mode=light) | Au moins un check light FAIL. Ne pas utiliser L7a seul pour decider. Passer en --l7b-full pour confirmer.
+    L7b check stabilite_horizon: PASS | Stabilite horizon >= 0.80 sur L1/L3/L5.
+    L7b check stabilite_walkforward: FAIL | T0 tres variable en walk-forward (t0_std > 20).
+    L7b check coherence_interne: PASS | Cible et regime alignes ou non-informes, pas de desaccord directionnel.
+✓ 5-Threshold T_0: 50.06%
+✓ T_0 en valeur brute du controle 'Temperature': 2.27 (median_near=2.27, min_near=2.25, max_near=2.29, spread=0.040000000000000036, ambiguous=False)
+✓ Cible: demandee=Energy_per_spin | utilisee=Energy_per_spin | politique=fixed | repli_diagonal=False
+✓ Tool Footprint: Pure Continuous Physical Phenomenon (No tool artifact)
+✓ Holographic Tension: saturation|control=Temperature (Delta=0.95, D_vec=[1.032928, 1.573463, 1.978723, 1.870006])
+✓ Results exported to: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\runs\primary_L64_temperature

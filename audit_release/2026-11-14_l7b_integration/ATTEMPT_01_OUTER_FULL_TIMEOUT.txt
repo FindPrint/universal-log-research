@@ -1,0 +1,5 @@
+Attempt 01 - outer full mode timeout
+Date: 2026-11-14
+Call: run_full_unified_pipeline(control_mode=multi, controls=[MC_Update, Noise_axis], target=Abs_magnetization, l7b_mode=light), leaving outer mode at the API default (full).
+Outcome: stopped after approximately 15 minutes. The first control had not returned; no output files were emitted under its output directory. The Python process was actively consuming CPU (roughly 722 CPU seconds at the last observation). No pipeline result was produced. This is an execution-cost outcome, not evidence that L7b-light failed.
+Next protocol: repeat the same input, controls, target, and seed with outer mode=fast, keeping l7b_mode light/full as the variable under test.

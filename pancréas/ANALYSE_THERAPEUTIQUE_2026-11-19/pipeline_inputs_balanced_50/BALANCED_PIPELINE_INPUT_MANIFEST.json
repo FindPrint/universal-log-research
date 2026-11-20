@@ -1,0 +1,114 @@
+{
+  "created_utc": "2026-11-19T23:36:42.843927+00:00",
+  "seed": 20261119,
+  "rows_per_group_target": 50,
+  "purpose": "Runtime-feasible pipeline execution across every numeric control; not a biological independent-replicate analysis.",
+  "records": [
+    {
+      "model": "PC69",
+      "source_csv": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_inputs\\GSE271300_PC69_singlet_cells_multiflux.csv",
+      "source_sha256": "66eef4bd2f54096800049e1337aec8812dc291958d0bb6e384ac143d14b292b4",
+      "balanced_csv": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_inputs_balanced_50\\GSE271300_PC69_balanced50_multiflux.csv",
+      "balanced_sha256": "c291239130506e5ec466f9625e3a4b6f63b7f1468792ccb836f75827f3f87010",
+      "rows_selected": 300,
+      "grouping_key": "Animal_ID",
+      "groups": {
+        "MRTX1_B0251": {
+          "available_cells": 1429,
+          "selected_cells": 50
+        },
+        "MRTX2_B0252": {
+          "available_cells": 752,
+          "selected_cells": 50
+        },
+        "MRTX3_B0253": {
+          "available_cells": 1000,
+          "selected_cells": 50
+        },
+        "Vehicle1_B0254": {
+          "available_cells": 586,
+          "selected_cells": 50
+        },
+        "Vehicle2_B0255": {
+          "available_cells": 745,
+          "selected_cells": 50
+        },
+        "Vehicle3_B0256": {
+          "available_cells": 571,
+          "selected_cells": 50
+        }
+      },
+      "selection": "Up to 50 rows without replacement per group; seeded numpy Generator; groups sorted by name; selected rows shuffled."
+    },
+    {
+      "model": "PC106",
+      "source_csv": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_inputs\\GSE271300_PC106_singlet_cells_multiflux.csv",
+      "source_sha256": "18a98e83032e9d50e3cccba100f3a00754100e0a7b373bb67beb06662ed59288",
+      "balanced_csv": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_inputs_balanced_50\\GSE271300_PC106_balanced50_multiflux.csv",
+      "balanced_sha256": "b88137d343485adac08a373d61f116ccf6640dc9cd69e3aab19e2e867d54ca6b",
+      "rows_selected": 350,
+      "grouping_key": "Animal_ID",
+      "groups": {
+        "PC106-ANS184-VEH-B0252": {
+          "available_cells": 1716,
+          "selected_cells": 50
+        },
+        "PC106-ANS185-VEH-B0253": {
+          "available_cells": 1528,
+          "selected_cells": 50
+        },
+        "PC106-ANS187-VEH-B0254": {
+          "available_cells": 2147,
+          "selected_cells": 50
+        },
+        "PC106-ANS188-MRTX1-B0255": {
+          "available_cells": 184,
+          "selected_cells": 50
+        },
+        "PC106-ANS189-MRTX2-B0256": {
+          "available_cells": 749,
+          "selected_cells": 50
+        },
+        "PC106-ANS190-MRTX3-B0257": {
+          "available_cells": 88,
+          "selected_cells": 50
+        },
+        "PC106-ANS191-MRTX4-B0258": {
+          "available_cells": 733,
+          "selected_cells": 50
+        }
+      },
+      "selection": "Up to 50 rows without replacement per group; seeded numpy Generator; groups sorted by name; selected rows shuffled."
+    },
+    {
+      "model": "GA60",
+      "source_csv": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_inputs\\GSE271300_GA60_singlet_cells_multiflux.csv",
+      "source_sha256": "b104a856acf33cf60cee78d8c87e03845f0df31a72850e61e1235ad8c0b05d58",
+      "balanced_csv": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_inputs_balanced_50\\GSE271300_GA60_balanced50_multiflux.csv",
+      "balanced_sha256": "8da939dead06577450f5e01aff668d7cb1ecc54af49fe0571a30fed4308c8550",
+      "rows_selected": 100,
+      "grouping_key": "Treatment",
+      "groups": {
+        "mrtx": {
+          "available_cells": 1366,
+          "selected_cells": 50
+        },
+        "veh": {
+          "available_cells": 13142,
+          "selected_cells": 50
+        }
+      },
+      "selection": "Up to 50 rows without replacement per group; seeded numpy Generator; groups sorted by name; selected rows shuffled."
+    }
+  ],
+  "full_run_attempt": {
+    "model": "PC69",
+    "target": "CellState_basal",
+    "control_mode": "all",
+    "input_rows": 5083,
+    "elapsed_seconds_approx": 894,
+    "status": "interrupted before any final export; no biological result retained",
+    "observed_warning": "RuntimeWarning invalid value encountered in sqrt at UNIVERSAL_LOG_v5.9.4.py:1726",
+    "console_log": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs\\PC69_target_basal\\console.log"
+  }
+}

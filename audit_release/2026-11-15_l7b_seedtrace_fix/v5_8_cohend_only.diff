@@ -1,0 +1,195 @@
+--- UNIVERSAL_LOG_v5.8.py
++++ UNIVERSAL_LOG_v5.8_COHEND_ONLY.py
+@@ -75,7 +75,7 @@
+      (A) couche géométrique : médiane par classe uniquement sur les estimateurs
+      dont la sortie est une dimension, pour D et T_log=(d-4)*log(n) ;
+      (B) couche relative : z-score croisé des médianes des 29 (toutes classes
+-     conservées, y compris KolmogorovLZ et PermutationEntropy) + Cliff's delta
++     conservées, y compris KolmogorovLZ et PermutationEntropy) + Cohen's d
+      entre classes. Le z-score n'entre jamais dans T_log. Aucune constante de
+      repli pour inventer un régime. Q1-Q6, MC et score de seuil inchangés.
+ 18. v5.3 — Régime toujours relatif au contrôle (observateur) :
+@@ -179,7 +179,7 @@
+ # 'fast'   : Analyse rapide, paramètres fixes, pas de bootstrap
+ #            - w_size: 80, test: cohen_d, n_est: 1, boot: False
+ # 'robust' : Analyse robuste, paramètres fixes, bootstrap activé
+-#            - w_size: 150, test: cliff_delta, n_est: 5, boot: True
++#            - w_size: 150, test: cohen_d, n_est: 5, boot: True
+ # 'stable' : Analyse stable, paramètres modifiables ci-dessous, bootstrap activé
+ #            - Utilise les paramètres personnalisés définis ci-dessous
+ ANALYSIS_MODE = 'fast'  # Options: 'fast', 'robust', 'stable'
+@@ -191,7 +191,7 @@
+ # En modes 'fast' et 'robust', ils sont ignorés au profit des valeurs prédéfinies.
+ 
+ # Test statistique
+-STATISTICAL_TEST = 'cohen_d'  # Options: 'cohen_d', 'cliff_delta'
++STATISTICAL_TEST = 'cohen_d'  # Cohen-d-only variant; Cliff helper is legacy only.
+ 
+ # Paramètres de fenêtrage
+ WINDOW_SIZE = 80              # Taille de la fenêtre glissante
+@@ -236,11 +236,11 @@
+ PARAMETERS = {
+     'modes': {
+         'fast': {'n_bootstrap': 1, 'w_size': 80, 'test': 'cohen_d', 'min_grp': 2, 'min_len': 50, 'boot': False, 'window_scan': None, 'auto_optimize_threshold': True, 'optimization_iterations': 12, 'max_workers': _default_max_workers, 'estimator_profile': 'all'},
+-        'robust': {'n_bootstrap': 5, 'w_size': 150, 'test': 'cliff_delta', 'min_grp': 3, 'min_len': 100, 'boot': True, 'window_scan': None, 'auto_optimize_threshold': True, 'max_workers': _default_max_workers, 'estimator_profile': 'all'},
++        'robust': {'n_bootstrap': 5, 'w_size': 150, 'test': 'cohen_d', 'min_grp': 3, 'min_len': 100, 'boot': True, 'window_scan': None, 'auto_optimize_threshold': True, 'max_workers': _default_max_workers, 'estimator_profile': 'all'},
+         'stable': {'n_bootstrap': N_BOOTSTRAP_RESAMPLES, 'w_size': WINDOW_SIZE, 'test': STATISTICAL_TEST, 'min_grp': MIN_GROUP_SIZE, 'min_len': MIN_SERIES_LENGTH, 'boot': ENABLE_BOOTSTRAP, 'window_scan': [50, 80, 100, 120, 150, 180, 220], 'auto_optimize_threshold': True, 'max_workers': _default_max_workers, 'estimator_profile': 'all'},
+-        'full': {'n_bootstrap': 20, 'w_size': 220, 'test': 'cliff_delta', 'min_grp': 5, 'min_len': 150, 'boot': True, 'window_scan': [50, 80, 100, 120, 150, 180, 220, 280, 350, 450], 'auto_optimize_threshold': True, 'max_workers': _default_max_workers, 'estimator_profile': 'all'},
++        'full': {'n_bootstrap': 20, 'w_size': 220, 'test': 'cohen_d', 'min_grp': 5, 'min_len': 150, 'boot': True, 'window_scan': [50, 80, 100, 120, 150, 180, 220, 280, 350, 450], 'auto_optimize_threshold': True, 'max_workers': _default_max_workers, 'estimator_profile': 'all'},
+         'analyze': {'n_bootstrap': 8, 'w_size': 120, 'test': 'cohen_d', 'min_grp': 4, 'min_len': 80, 'boot': True, 'window_scan': [80, 120, 160, 200], 'auto_optimize_threshold': True, 'max_workers': _default_max_workers, 'estimator_profile': 'all'},
+-        'predict': {'n_bootstrap': 3, 'w_size': 100, 'test': 'cliff_delta', 'min_grp': 3, 'min_len': 80, 'boot': True, 'window_scan': None, 'auto_optimize_threshold': True, 'max_workers': _default_max_workers, 'estimator_profile': 'all'},
++        'predict': {'n_bootstrap': 3, 'w_size': 100, 'test': 'cohen_d', 'min_grp': 3, 'min_len': 80, 'boot': True, 'window_scan': None, 'auto_optimize_threshold': True, 'max_workers': _default_max_workers, 'estimator_profile': 'all'},
+     },
+     # Réglages transversaux du Monte-Carlo initial : indépendants du mode.
+     # Les deux interrupteurs peuvent être surchargés par opt_cfg à l'appel.
+@@ -1917,7 +1917,7 @@
+ # ESTIMATOR_CLASSES reste la taxonomie complete des 29 (TLog.txt).
+ # DIMENSION_FOR_TLOG ne retire personne de la classe : il ne selectionne
+ # que les sorties interpretables comme dimension pour la couche geometrique.
+-# Les autres restent dans la couche relative (z croise + Cliff).
++# Les autres restent dans la couche relative (z croise + Cohen d).
+ DIMENSION_FOR_TLOG = {
+     "saturation": ["Higuchi", "Katz", "Petrosian", "Sevcik", "BoxCounting", "Hurst2mH", "DFA"],
+     "criticality": ["CorrelationD2", "GrassbergerProcaccia", "InformationD1", "VisibilityGraph", "TwoNN", "DANCo", "Fisher"],
+@@ -3207,7 +3207,9 @@
+         return np.nan
+     m1, m2 = float(np.mean(g1)), float(np.mean(g2))
+     v1, v2 = np.var(g1, ddof=1), np.var(g2, ddof=1)
+-    pooled_std = np.sqrt((v1 + v2) / 2.0)
++    # Conventional pooled SD: weight sample variances by degrees of freedom.
++    pooled_var = ((len(g1) - 1) * v1 + (len(g2) - 1) * v2) / (len(g1) + len(g2) - 2)
++    pooled_std = np.sqrt(pooled_var)
+     if not np.isfinite(pooled_std):
+         return np.nan
+     if pooled_std == 0.0:
+@@ -3216,6 +3218,7 @@
+         return 0.0 if m1 == m2 else np.nan
+     return _safe_divide(m1 - m2, pooled_std)
+ 
++# Legacy compatibility helper. CohenDOnly pipeline paths never call this.
+ def cliff_delta(g1, g2, min_grp=3):
+     g1, g2 = np.asarray(g1), np.asarray(g2)
+     g1 = g1[~np.isnan(g1)]
+@@ -3237,7 +3240,9 @@
+     
+     # v4.2.3 R5 : calcul complet, pas de plafond a 1 000, pas de tirage.
+         
+-    d = cohen_d(g1, g2) if stat_test == 'cohen_d' else cliff_delta(g1, g2, min_grp)
++    if stat_test != "cohen_d":
++        raise ValueError("This CohenDOnly pipeline accepts only stat_test=cohen_d")
++    d = cohen_d(g1, g2)
+     return abs(d) if not np.isnan(d) else np.nan
+ 
+ # =============================================================================
+@@ -3482,7 +3487,8 @@
+                     m2 = info['anchor'] + s2 / n2
+                     v1 = max(0.0, q1 - (s1 * s1 / n1)) / (n1 - 1)
+                     v2 = max(0.0, q2 - (s2 * s2 / n2)) / (n2 - 1)
+-                    pooled_std = np.sqrt((v1 + v2) / 2.0)
++                    pooled_var = ((n1 - 1) * v1 + (n2 - 1) * v2) / (n1 + n2 - 2)
++                    pooled_std = np.sqrt(pooled_var)
+                     if not np.isfinite(pooled_std):
+                         d = np.nan
+                     elif pooled_std == 0.0:
+@@ -3530,10 +3536,8 @@
+     JOURNALISE sur le scan legacy en cas d'exception. Pour un test autre
+     que cohen_d, le scan legacy est utilise directement (le scan rapide
+     ne reproduit que le chemin cohen_d, seul chemin du protocole gelé)."""
+-    if mode_cfg.get('test', 'cohen_d') != 'cohen_d':
+-        return _scan_critical_threshold_legacy(
+-            fluxes, control_series, mode_cfg, n_candidates, resolution,
+-            w_size, min_grp)
++    if mode_cfg.get("test", "cohen_d") != "cohen_d":
++        raise ValueError("This CohenDOnly pipeline accepts only test=cohen_d")
+     try:
+         return _scan_critical_threshold_fast(
+             fluxes, control_series, mode_cfg, n_candidates, resolution,
+@@ -7976,7 +7980,7 @@
+             "z_by_estimator": {},
+             "class_z_median": {},
+             "class_raw_median_all_members": {},
+-            "cliff_between_classes": {},
++            "cohen_d_between_classes": {},
+         },
+         "per_estimator": {},
+         "measurement_taxonomy_schema_version": "1.0",
+@@ -8200,7 +8204,7 @@
+       Les 3 ancres cartographient la tension micro↔macro.
+ 
+     Couche relative :
+-      z croise des 29 medianes + Cliff's delta entre classes.
++      z croise des 29 medianes + Cohen's d entre classes.
+       KolmogorovLZ, PermutationEntropy, Hurst, etc. restent ici.
+ 
+     Aucune constante de repli. Classe vide = composante absente.
+@@ -8477,8 +8481,8 @@
+         med_z, _n = _median_finite(zs)
+         class_z_median[cls] = _json_number(med_z)
+ 
+-    # Cliff's delta entre classes sur les z (comparable, hors T_log)
+-    cliff_pairs = {}
++    # Cohen's d entre classes sur les z (comparable, hors T_log)
++    cohen_d_pairs = {}
+     pair_names = [
+         ("saturation", "divergence"),
+         ("saturation", "criticality"),
+@@ -8494,18 +8498,18 @@
+         gb = gb[np.isfinite(gb)]
+         if ga.size >= 2 and gb.size >= 2:
+             try:
+-                cd = float(cliff_delta(ga, gb, min_grp=2))
++                cd = float(cohen_d(ga, gb))
+             except Exception:
+                 cd = float("nan")
+-            cliff_pairs[f"{a}_vs_{b}"] = {
+-                "cliff_delta": _json_number(cd) if np.isfinite(cd) else None,
++            cohen_d_pairs[f"{a}_vs_{b}"] = {
++                "cohen_d": _json_number(cd) if np.isfinite(cd) else None,
+                 "n_a": int(ga.size),
+                 "n_b": int(gb.size),
+                 "note": "sur z croise des medianes ; pas une dimension",
+             }
+         else:
+-            cliff_pairs[f"{a}_vs_{b}"] = {
+-                "cliff_delta": None,
++            cohen_d_pairs[f"{a}_vs_{b}"] = {
++                "cohen_d": None,
+                 "n_a": int(ga.size),
+                 "n_b": int(gb.size),
+                 "note": "echantillon insuffisant",
+@@ -8528,7 +8532,7 @@
+         "control_col": control_col,
+         "observer_axis": control_col,
+         "aggregation_geometric": "median_of_per_estimator_medians_DIMENSION_FOR_TLOG_only",
+-        "aggregation_relative": "cross_estimator_z_of_29_raw_medians_plus_cliff_delta",
++        "aggregation_relative": "cross_estimator_z_of_29_raw_medians_plus_cohen_d",
+         "D_vector": {
+             "d_sat": _json_number(d_sat),
+             "d_crit": _json_number(d_crit),
+@@ -8581,7 +8585,7 @@
+             "z_by_estimator": z_by_est,
+             "class_z_median": class_z_median,
+             "class_raw_median_all_members": class_raw_all,
+-            "cliff_between_classes": cliff_pairs,
++            "cohen_d_between_classes": cohen_d_pairs,
+         },
+         "per_estimator": per_estimator,
+         "measurement_taxonomy_schema_version": "1.0",
+@@ -9530,7 +9534,7 @@
+ # UNIVERSAL_LOG v4.0.0-Master — MOTEUR UNIFIÉ MULTI-NIVEAUX & CASCADE UNIVERSELLE
+ # =============================================================================
+ 
+-VERSION_MASTER = "v5.8.0-MultiHorizon-L3L5L6-SemanticSplitL7"
++VERSION_MASTER = "v5.8.0-MultiHorizon-L3L5L6-SemanticSplitL7-CohenDOnly"
+ # VERSION est un alias de VERSION_MASTER, jamais édité séparément :
+ # la version annoncée (docstring, argparse, print RUNNING) = celle écrite
+ # dans master_results.json et dans le rapport. Ne pas remettre "v5.4" ici.
+@@ -12299,7 +12303,7 @@
+         f.write(f"  Falsification : {_sig_txt}\n")
+         f.write("  [Couche relative — z croise des 29, hors T_log]\n")
+         f.write(f"  class_z_median : {_rel.get('class_z_median')}\n")
+-        f.write(f"  cliff_between_classes : {_rel.get('cliff_between_classes')}\n")
++        f.write(f"  cohen_d_between_classes : {_rel.get('cohen_d_between_classes')}\n")
+         f.write(f"  Q3 recopie Q1 : {holographic_tension.get('q3_identical_to_q1')}\n")
+         f.write("Ce que mesurent les questions (scores numeriques inchanges):\n")
+         for _qk, _qt in (holographic_tension.get("q_glossary") or {}).items():

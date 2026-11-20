@@ -1,0 +1,14 @@
+{
+  "trajectory_rows": 180,
+  "trajectory_files_exist_and_match_sha256": true,
+  "sampled_input_files_exist_and_match_sha256": true,
+  "core_run_events": 85,
+  "core_run_events_ok": 85,
+  "matched_run_events": 20,
+  "matched_run_events_ok": 20,
+  "paired_estimator_rows": 580,
+  "paired_rows_exact_equal": 580,
+  "execution_summary_agrees_with_run_ledger": true,
+  "source_v59_sha256": "4f80f6a7d0809e802cbc9ec30c0bed552c1c8a95eb58687fd78e4ffd8e808260",
+  "derived_runtime_sha256": "a9ed57bb35bac39b9a0be3fd2fc2db027e1257690fe2ba64acd169d044eb2e97"
+}

@@ -1,0 +1,58 @@
+{
+  "pipeline_version": "v5.8.0-MultiHorizon-L3L5L6-SemanticSplitL7",
+  "protocol": "<PROJECT_ROOT>\\ISING_MCMC_MULTIFLUX_PROTOCOL.md",
+  "model": "2D square Ising; periodic; J=1; H=0; Wolff cluster updates",
+  "L": [
+    16,
+    32
+  ],
+  "temperatures": [
+    2.0,
+    2.269185314213022,
+    2.5
+  ],
+  "Tc_exact": 2.269185314213022,
+  "independent_chains_per_cell": 3,
+  "n_burn_cluster_updates": 500,
+  "n_measure_cluster_updates": 4000,
+  "pipeline_row_stride": 20,
+  "pipeline_rows_per_trajectory": 200,
+  "control_axes": [
+    "MC_Update",
+    "Energy_per_spin",
+    "Magnetization",
+    "Nearest_neighbor_correlation",
+    "Noise_axis",
+    "Abs_magnetization_shuffled"
+  ],
+  "common_fluxes": [
+    "Abs_magnetization",
+    "M_squared",
+    "M_fourth",
+    "Cluster_fraction",
+    "Noise_flux"
+  ],
+  "full_fluxes": [
+    "Energy_per_spin",
+    "Magnetization",
+    "Abs_magnetization",
+    "M_squared",
+    "M_fourth",
+    "Nearest_neighbor_correlation",
+    "Cluster_fraction",
+    "Noise_axis",
+    "Noise_flux",
+    "Abs_magnetization_shuffled"
+  ],
+  "pipeline_window_rows": 40,
+  "pipeline_landscape_scan_points": 24,
+  "pipeline_runs": 20,
+  "successful_runs": 20,
+  "interpretation_notes": [
+    "Wolff cluster updates are algorithmic update counts, not physical time.",
+    "Alternative nonmonotone flux controls define sorted observational cuts, not causal axes.",
+    "Noise and shuffled controls are negative controls for axis/flux-induced structure.",
+    "Derived fluxes are intentionally redundant in the full set to measure composition sensitivity.",
+    "Three chains and finite runs make uncertainty estimates exploratory."
+  ]
+}

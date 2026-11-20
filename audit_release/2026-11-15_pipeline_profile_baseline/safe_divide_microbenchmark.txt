@@ -1,0 +1,10 @@
+scalar_semantic_cases
+3.0 2.0 1.5 1.5 same= True
+-3.0 2.0 -1.5 -1.5 same= True
+1e+308 1e-308 inf inf same= True
+nan 2.0 nan nan same= True
+inf 2.0 inf inf same= True
+2.0 inf nan nan same= True
+2.0 0.0 nan nan same= True
+old repeat_seconds= [0.7244831999996677, 0.8124395000049844, 1.2647807999746874, 1.6004927000030875, 1.1517804000759497] median_seconds= 1.1517804000759497
+new repeat_seconds= [0.16249100002460182, 0.15497379994485527, 0.15445679996628314, 0.14583040005527437, 0.14747450000140816] median_seconds= 0.15445679996628314

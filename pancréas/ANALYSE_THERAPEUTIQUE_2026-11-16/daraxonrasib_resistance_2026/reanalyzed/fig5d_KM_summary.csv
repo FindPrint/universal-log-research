@@ -1,0 +1,5 @@
+treatment,n,progression_events,censored,KM_median_days,RMST_to_common_max_followup_days,common_max_followup_days
+RMC-6236 25 mg/kg,27,19,8,32.0,32.31808278867103,42.0
+RMC-9805 100 mg/kg,27,25,2,28.0,29.0,42.0
+RMC-9805 100 mg/kg + RMC-6236 25 mg/kg,27,5,22,,41.44444444444444,42.0
+Vehicle,27,27,0,7.0,7.222222222222223,42.0

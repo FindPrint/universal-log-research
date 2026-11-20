@@ -1,0 +1,52 @@
+{
+  "finished_utc": "2026-11-20T21:42:24.325877+00:00",
+  "target": "Gemcitabine",
+  "n_controls_requested": 62,
+  "n_completed": 0,
+  "n_error": 1,
+  "n_remaining": 61,
+  "pilot_only_below_N50": true,
+  "matrix_disposition": "not_launched_because_pipeline_requires_N_at_least_50",
+  "statuses": [
+    {
+      "target": "Gemcitabine",
+      "control": "APR-246",
+      "domain": "pdac",
+      "status": "error",
+      "exit_code": 1,
+      "launch_error": null,
+      "started_utc": "2026-11-20T21:40:29.327554+00:00",
+      "finished_utc": "2026-11-20T21:40:41.480364+00:00",
+      "elapsed_seconds": 12.153,
+      "console_log": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-20\\candidate_NatureComm2025_PAAD\\NatureComm2025_Gemcitabine_all_controls_PDACPilot\\by_control\\APR-246\\console.log",
+      "console_log_sha256": "d2638f4b228ef65ac2732f20ffa9f644d738852aa51521455f0cee65405cc9d1",
+      "output_dir": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-20\\candidate_NatureComm2025_PAAD\\NatureComm2025_Gemcitabine_all_controls_PDACPilot\\by_control\\APR-246\\pipeline_output",
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "<PROJECT_ROOT>\\UNIVERSAL_LOG_v5.9.4.py",
+        "--input",
+        "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-20\\candidate_NatureComm2025_PAAD\\NatureComm2025_46PDO_63Drug_AUC.csv",
+        "--target",
+        "Gemcitabine",
+        "--control",
+        "APR-246",
+        "--control-mode",
+        "single",
+        "--target-mode",
+        "fixed",
+        "--domain",
+        "pdac",
+        "--mode",
+        "fast",
+        "--l7b-light",
+        "--no-plots",
+        "--seed",
+        "42",
+        "--max-workers",
+        "1",
+        "--output",
+        "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-20\\candidate_NatureComm2025_PAAD\\NatureComm2025_Gemcitabine_all_controls_PDACPilot\\by_control\\APR-246\\pipeline_output"
+      ]
+    }
+  ]
+}

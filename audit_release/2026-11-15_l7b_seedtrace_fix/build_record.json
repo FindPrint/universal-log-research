@@ -1,0 +1,17 @@
+{
+  "artifact": "UNIVERSAL_LOG_v5_9_2_AUDITFIX_SEEDTRACE.py",
+  "built_utc": "2026-11-15T12:17:25.751521+00:00",
+  "source": "UNIVERSAL_LOG_v5_9_1_AUDITFIX.py",
+  "source_sha256": "a2173839b8ebfcf3dfcf0ee809c5d0a7b2cb1fd34bcaa1199175fa6b23aa2ef8",
+  "output_sha256": "65476190eaad77c1bd6c4f5731289a4ab0e41f9b1c00a3697a2b77e1a8f64e5c",
+  "diff_file": "v5_9_1_to_v5_9_2.diff",
+  "diff_sha256": "8168aa550ddf7262d53bcd42868d63efe5ffdc58c2bbbcd8ac6ac6152bcffad7",
+  "python": "3.11.9",
+  "patch_intent": "Carry the caller-known seed into each L7b rerun summary so the seed check exports its actual seed.",
+  "changes": [
+    "Version label changed to v5.9.2-L7aL7b-DKind-AuditFix-SeedTrace.",
+    "_l7b_extract_summary accepts optional seed and exports it when provided.",
+    "L7b rerun helper passes the seed value used for that rerun."
+  ],
+  "expected_scope": "Traceability metadata only; no estimator, threshold, score, or verdict formula changed."
+}

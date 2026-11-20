@@ -1,0 +1,34 @@
+
+[CIBLE-FIXE-GLOBALE] politique=fixed mode=single cible_demandee='CellState_basal' -> cible_globale='CellState_basal' methode=user_requested_target controles=['EMTScore'] | Cette cible unique sera reutilisee pour TOUS les controles. Le run ou controle == cible sera signale explicitement comme diagonal, avec cible_demandee ET cible_utilisee.
+
+================================================================================
+UNIVERSAL_LOG v5.9.4-L7aL7b-DKind-AuditFix-SeedTrace-CohenDOnly-NoPlots — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\pancréas\ANALYSE_THERAPEUTIQUE_2026-11-19\pipeline_inputs_balanced_15\GSE271300_PC69_balanced15_multiflux.csv | Domain: pdac | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=EMTScore cible_demandee='CellState_basal' -> cible_utilisee='CellState_basal' | Cible fixee conservee pour ce run.
+Target Observable: CellState_basal | Control Parameter: EMTScore
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.349
+  règle: uniform
+  n_candidates: 45, resolution: 2.273%
+  w_size: 19, min_grp: 6
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE] controle=EMTScore direction=non_monotone monotone=False spearman_r=-0.005 | Le controle n'est PAS monotone dans l'ordre fourni. La progression n'est donc pas injective : un meme seuil en % peut correspondre a plusieurs valeurs brutes. Les valeurs brutes a cote des % sont exploratoires (voir min / max / spread). Ne pas lire T0 comme une valeur unique du controle.
+[T0-VALEUR-BRUTE] controle=EMTScore T0=88.08% -> valeur brute controle=0.103581 (median_near=0.1035812642459717, min_near=0.0969731865772685, max_near=0.1090796695670816, spread=0.012106482989813094, ambiguous=True)
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE-RAPPEL] controle=EMTScore : T0 en % ne correspond pas a une valeur unique du controle. Voir cascade.thresholds_in_control_units pour min / max / spread.
+Rendu des figures desactive par --no-plots.
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=up regime=up disagreement=False | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: INDETERMINE (mode=off) | L7b desactive (--no-l7b). Ne pas interpreter L7a seul.
+✓ 5-Threshold T_0: 88.08%
+✓ T_0 en valeur brute du controle 'EMTScore': 0.1035812642459717 (median_near=0.1035812642459717, min_near=0.0969731865772685, max_near=0.1090796695670816, spread=0.012106482989813094, ambiguous=True)
+✓ Cible: demandee=CellState_basal | utilisee=CellState_basal | politique=fixed | repli_diagonal=False
+✓ [AVERTISSEMENT] Controle 'EMTScore' NON MONOTONE (direction=non_monotone) : T0 en % n'est pas une valeur unique du controle, voir spread.
+✓ Tool Footprint: ADC Hardware Quantization Detected (3 discrete levels)
+✓ Holographic Tension: criticality|control=EMTScore (Delta=1.46, D_vec=[1.543717, 2.629495, 3.0, 2.520958])
+✓ Results exported to: <PROJECT_ROOT>\pancréas\ANALYSE_THERAPEUTIQUE_2026-11-19\pipeline_runs_parallel15\PC69_target_basal\EMTScore

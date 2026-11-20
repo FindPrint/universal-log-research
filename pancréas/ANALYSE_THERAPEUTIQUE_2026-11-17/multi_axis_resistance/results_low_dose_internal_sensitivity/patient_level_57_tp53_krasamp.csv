@@ -1,0 +1,58 @@
+patient_id,dose_stratum,planned_dose_mg,baseline_tp53,acquired_kras_amp,acquired_ras_short_text,acquired_ras_cna_text
+Patient 1,160-300 mg,300,Mut,1,Not detected,KRAS AMP; MYC AMP
+Patient 2,160-300 mg,160,Mut,1,Not detected,KRAS AMP
+Patient 3,160-300 mg,200,Mut,0,MAP2K1 G128D,RICTOR AMP
+Patient 4,160-300 mg,200,Mut,1,Not detected,KRAS AMP
+Patient 5,160-300 mg,200,Mut,1,Not detected,KRAS AMP
+Patient 6,160-300 mg,300,WT,0,NF1 SPLICE,Not detected
+Patient 7,160-300 mg,300,Mut,0,BRAF G466A,Not detected
+Patient 8,160-300 mg,300,Mut,0,ARAF S214C,Not detected
+Patient 9,160-300 mg,160,Mut,1,MET-CREB3L2,KRAS AMP
+Patient 10,160-300 mg,160,Mut,0,NF1 H1842fs,Not detected
+Patient 11,160-300 mg,160,Mut,1,ARAF S214F; ARAF S214T; ARAF S214Y; RAF1 S259F; ARAF N217K; RAF1 P261R; ARAF S214C; BRAF G469R; BRAF T599dup,KRAS AMP; RAF1 AMP
+Patient 12,160-300 mg,160,WT,1,Not detected,KRAS AMP
+Patient 13,160-300 mg,220,Mut,1,PIK3CA E545K; RIT1 F82L; PIK3CA E542K; PIK3R1 F456_Q457del; KEAP1 L175fs,KRAS AMP
+Patient 14,160-300 mg,200,Mut,1,AKT1 W80R,KRAS AMP
+Patient 15,160-300 mg,200,WT,0,FGFR1-KAT6A,Not detected
+Patient 16,160-300 mg,200,WT,0,MET Y1230C,Not detected
+Patient 17,160-300 mg,200,Mut,0,BRAF-AGK,Not detected
+Patient 18,160-300 mg,200,Mut,0,BRAF-LRGUK; BRAF-IGF1R,Not detected
+Patient 19,160-300 mg,200,Mut,1,Not detected,KRAS AMP
+Patient 20,160-300 mg,300,Mut,1,Not detected,KRAS AMP
+Patient 21,160-300 mg,300,Mut,1,PTPN11 Y63C; KEAP1 Y85*,KRAS AMP
+Patient 22,160-300 mg,300,Mut,1,Not detected,KRAS AMP; ERBB2 AMP
+Patient 23,160-300 mg,300,WT,0,Not detected,AKT2 AMP; RICTOR AMP
+Patient 24,160-300 mg,300,Mut,1,MAP2K1 I103N,KRAS AMP
+Patient 25,160-300 mg,300,Mut,1,Not detected,KRAS AMP
+Patient 26,160-300 mg,300,Mut,1,Not detected,KRAS AMP
+Patient 27,160-300 mg,300,Mut,0,Not detected,Not detected
+Patient 28,160-300 mg,200,Mut,0,Not detected,Not detected
+Patient 29,160-300 mg,200,WT,0,Not detected,Not detected
+Patient 30,160-300 mg,300,WT,0,Not detected,Not detected
+Patient 31,160-300 mg,300,WT,0,Not detected,Not detected
+Patient 32,160-300 mg,200,Mut,0,Not detected,Not detected
+Patient 33,160-300 mg,300,Mut,0,Not detected,Not detected
+Patient 34,160-300 mg,300,Mut,0,Not detected,Not detected
+Patient 35,160-300 mg,300,Mut,0,Not detected,Not detected
+Patient 36,160-300 mg,200,WT,0,Not detected,Not detected
+Patient 37,160-300 mg,200,Mut,0,Not detected,Not detected
+Patient 38,160-300 mg,200,WT,0,Not detected,Not detected
+Patient 39,160-300 mg,300,Mut,0,Not detected,Not detected
+Patient 40,160-300 mg,300,WT,0,Not detected,Not detected
+Patient 41,160-300 mg,200,WT,0,Not detected,Not detected
+Patient 42,160-300 mg,300,Mut,0,Not detected,Not detected
+Patient 43,160-300 mg,300,Mut,0,Not detected,Not detected
+Patient 44,160-300 mg,200,Mut,0,Not detected,Not detected
+Patient 45,<=120 mg,120,WT,0,Not detected,Not detected
+Patient 46,<=120 mg,120,WT,0,Not detected,Not detected
+Patient 47,<=120 mg,40,Mut,0,PIK3CA E545K; PIK3CA E542K,Not detected
+Patient 48,<=120 mg,120,Mut,0,PTPN11 A461G; BRAF D594G; RIT1 F82C; PTPN11 A461T; BRAF N581S; BRAF D594N; RIT1 M90V; PDGFRA D846Y; BRAF G469A,Not detected
+Patient 49,<=120 mg,20,Mut,0,Not detected,Not detected
+Patient 50,<=120 mg,120,Mut,1,KEAP1 R272H; BRAF G466R,KRAS AMP
+Patient 51,<=120 mg,120,Mut,0,Not detected,Not detected
+Patient 52,<=120 mg,120,Mut,0,Not detected,Not detected
+Patient 53,<=120 mg,120,WT,0,NF1 R2517*,Not detected
+Patient 54,<=120 mg,80,Mut,0,Not detected,Not detected
+Patient 55,<=120 mg,80,Mut,0,Not detected,Not detected
+Patient 56,<=120 mg,120,Mut,0,Not detected,Not detected
+Patient 57,<=120 mg,120,WT,0,Not detected,Not detected

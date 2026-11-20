@@ -1,0 +1,125 @@
+{
+  "edition": "V4 complete master whitepaper",
+  "snapshot_date": "2026-11-19",
+  "root": "<PROJECT_ROOT>",
+  "input_tree_files_including_exclusions": 43602,
+  "input_tree_bytes_including_exclusions": 20917295511,
+  "payload_files": 4556,
+  "payload_bytes_before_zip": 9472150212,
+  "archive": {
+    "path": "<PROJECT_ROOT>\\output\\master_whitepaper_v4\\UNIVERSAL_LOG_FULL_PROJECT_SNAPSHOT_2026-11-19.zip",
+    "bytes": 7776115330,
+    "sha256": "e3f76de0baa7ae9e717b93c0535d618ecdebc40071546f2a2e5fd82cd8e99bc7",
+    "entries": 4559
+  },
+  "pdf": {
+    "path": "<PROJECT_ROOT>\\output\\master_whitepaper_v4\\UNIVERSAL_LOG_LIVRE_BLANC_COMPLET_V4_2026-11-19.pdf",
+    "bytes": 8277716035,
+    "sha256": "16f2237abeb7ac6dc735299198aaa8c621ec468b2835649a6c084554cdf4842c",
+    "pages": 3165,
+    "attachments": 1530,
+    "embedded_zip_sha256": "e3f76de0baa7ae9e717b93c0535d618ecdebc40071546f2a2e5fd82cd8e99bc7",
+    "embedded_zip_bytes": 7776115330,
+    "payload_offset": 501415119
+  },
+  "excluded_directories": [
+    ".git",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    "__pycache__",
+    "output/master_whitepaper_v4",
+    "tmp"
+  ],
+  "appendices": [
+    {
+      "title": "Ising classique - audit complet v6",
+      "start_page": 2011,
+      "end_page": 2041,
+      "pages": 31,
+      "path": "<PROJECT_ROOT>\\AUDIT_COMPLET_PIPELINE_V6_ISING_2026-11-15.pdf"
+    },
+    {
+      "title": "PDAC - livre blanc v6 (version historique)",
+      "start_page": 2042,
+      "end_page": 2062,
+      "pages": 21,
+      "path": "<PROJECT_ROOT>\\pancréas\\livre-blanc-pdac-v6.pdf"
+    },
+    {
+      "title": "PDAC - livre blanc v6.1",
+      "start_page": 2063,
+      "end_page": 2087,
+      "pages": 25,
+      "path": "<PROJECT_ROOT>\\pancréas\\livre-blanc-pdac-v6.1-2026-11-15.pdf"
+    },
+    {
+      "title": "PDAC - livre blanc v1.0 (version historique)",
+      "start_page": 2088,
+      "end_page": 2093,
+      "pages": 6,
+      "path": "<PROJECT_ROOT>\\pancréas\\Livre_Blanc_UNIVERSAL_LOG_PDAC_v1.0.pdf"
+    },
+    {
+      "title": "PDAC - rapport final v1.0 (version historique)",
+      "start_page": 2094,
+      "end_page": 2096,
+      "pages": 3,
+      "path": "<PROJECT_ROOT>\\pancréas\\Rapport_Final_UNIVERSAL_LOG_PDAC_v1.0.pdf"
+    },
+    {
+      "title": "PDAC - audit PRISM complet du 16 novembre",
+      "start_page": 2097,
+      "end_page": 3028,
+      "pages": 932,
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-16\\AUDIT_PRISM_PDACS_v1_COMPLET.pdf"
+    },
+    {
+      "title": "PDAC - reanalyse de la resistance au daraxonrasib",
+      "start_page": 3029,
+      "end_page": 3062,
+      "pages": 34,
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-16\\daraxonrasib_resistance_2026\\reanalyzed\\AUDIT_ADDENDUM_RESISTANCE_DARAXONRASIB_PDACS_v1.pdf"
+    },
+    {
+      "title": "PDAC - audit multiflux du 17 novembre, version initiale",
+      "start_page": 3063,
+      "end_page": 3080,
+      "pages": 18,
+      "path": "<PROJECT_ROOT>\\output\\pdf\\ADDENDUM_AUDIT_PDAC_MULTIFLUX_2026-11-17.pdf"
+    },
+    {
+      "title": "PDAC - audit externe G12C, version 2",
+      "start_page": 3081,
+      "end_page": 3104,
+      "pages": 24,
+      "path": "<PROJECT_ROOT>\\output\\pdf\\ADDENDUM_AUDIT_PDAC_MULTIFLUX_2026-11-17_v2_EXTERNAL_G12C.pdf"
+    },
+    {
+      "title": "PDAC - analyse G12D et PARP, version 3",
+      "start_page": 3105,
+      "end_page": 3131,
+      "pages": 27,
+      "path": "<PROJECT_ROOT>\\output\\pdf\\ADDENDUM_AUDIT_PDAC_MULTIFLUX_2026-11-17_v3_G12D_PARPi.pdf"
+    },
+    {
+      "title": "PDAC - controle du mapping multiflux, version 4",
+      "start_page": 3132,
+      "end_page": 3158,
+      "pages": 27,
+      "path": "<PROJECT_ROOT>\\output\\pdf\\ADDENDUM_AUDIT_PDAC_MULTIFLUX_2026-11-17_v4_MAPPING_QA.pdf"
+    },
+    {
+      "title": "PDAC - reanalyse therapeutique des donnees animales, 17 novembre",
+      "start_page": 3159,
+      "end_page": 3165,
+      "pages": 7,
+      "path": "<PROJECT_ROOT>\\output\\pdf\\ADDENDUM_AUDIT_THERAPEUTIQUE_PDAC_2026-11-17.pdf"
+    }
+  ],
+  "build_seconds": 332.96,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "pypdf": "7.1.0",
+  "reportlab": "5.1.0"
+}

@@ -1,0 +1,728 @@
+{
+  "version": "v6.0.0-L7aL7b-CohenD",
+  "status": "ok",
+  "reason": null,
+  "enters_threshold_score": false,
+  "q_numeric_scores_modified": false,
+  "n_samples": 76.0,
+  "control_col": "control_index",
+  "observer_axis": "control_index",
+  "aggregation_geometric": "median_of_per_estimator_medians_DIMENSION_FOR_TLOG_only",
+  "aggregation_relative": "cross_estimator_z_of_29_raw_medians_plus_cohen_d",
+  "D_vector": {
+    "d_sat": 1.191225,
+    "d_crit": 2.557904,
+    "d_div": 2.987323,
+    "d_null": 2.205795
+  },
+  "D_vector_roles": {
+    "d_sat": "ancre micro / sol stable (saturation)",
+    "d_crit": "ancre de transition (criticite)",
+    "d_div": "ancre d'ouverture / degres de liberte (divergence)",
+    "d_null": "cadre de mesure spectral (null) ; pas un d T_log interchangeable"
+  },
+  "spectral_width_delta": 1.796099,
+  "Delta_tension": 1.796099,
+  "tension_gap_diagnostics": {
+    "tension_gap_E": 1.796099,
+    "tension_gap_E_median_29": 1.796099,
+    "tension_gap_E_note": "Median 29 : D_div mediane de 6 estimateurs divergence moins D_sat mediane de 8 saturation. Peut diluer Levina. Voir trio ci-dessous.",
+    "triangulation": {
+      "trio": [
+        "Higuchi",
+        "InformationD1",
+        "LevinaBickel"
+      ],
+      "preset": "default",
+      "is_default": false,
+      "trio_values": {
+        "Higuchi": 1.924426,
+        "InformationD1": 0.694929,
+        "LevinaBickel": 4.941807
+      },
+      "trio_sat_estimator": "Higuchi",
+      "trio_crit_estimator": "InformationD1",
+      "trio_div_estimator": "LevinaBickel",
+      "trio_sat_value": 1.924426,
+      "trio_crit_value": 0.694929,
+      "trio_div_value": 4.941807,
+      "trio_gap_E": 3.017381,
+      "trio_gap_T_log": 13.067474,
+      "trio_gap_mode": "div-sat (trio equilibre)",
+      "trio_gap_formula": "trio_div - trio_sat si trio equilibre, sinon max-min des 3",
+      "trio_vs_median_gap_disagreement_gap_gt_3": true,
+      "trio_vs_median_note": "Si trio et mediane divergent sur gap>3, ne pas moyenner. Le trio dit ce que 3 estimateurs choisis voient, la mediane dit ce que 29 voient en mediane. Les deux sont vrais, a des echelles differentes.",
+      "how_to_choose": "CLI --triangulation \"Higuchi,InformationD1,LevinaBickel\" ou --triangulation robust, ou parametre triangulation_estimators=[...] en appel direct. Presets : default, robust, noise_robust, fast, saturation_focus, divergence_focus, ou custom 3 noms parmi les 29.",
+      "presets": {
+        "default": [
+          "Higuchi",
+          "InformationD1",
+          "LevinaBickel"
+        ],
+        "robust": [
+          "DFA",
+          "CorrelationD2",
+          "PCAIntrinsic"
+        ],
+        "noise_robust": [
+          "DFA",
+          "InformationD1",
+          "PCAIntrinsic"
+        ],
+        "fast": [
+          "Higuchi",
+          "InformationD1",
+          "KolmogorovLZ"
+        ],
+        "saturation_focus": [
+          "Higuchi",
+          "DFA",
+          "Katz"
+        ],
+        "divergence_focus": [
+          "LevinaBickel",
+          "PCAIntrinsic",
+          "MFA"
+        ]
+      }
+    },
+    "tension_gap_E_same_as_Delta": true,
+    "tension_gap_T_log": 7.778426,
+    "tension_gap_formula": "(d_div-d_sat)*ln(n) = T_div - T_sat",
+    "tension_gap_primary_metric": "Ecart plus stable que signe seul sur finance V1-V3, tsunami, PM2.5 direction",
+    "voie1_higuchi": 1.924426,
+    "voie1_blind_risk": false,
+    "voie1_note": "Voie1 = 1 seul estimateur (Higuchi). Aveugle 4 fois sur 4 dans les tests figes finance/PM2.5/tsunami/soleil-social.",
+    "sign_vs_gap_disagreement": false,
+    "sign_note": "Si sat<4 et div>4, il n'y a pas un signe, il y a un spectre. Lire l'ecart, pas le signe seul.",
+    "estimator_limits": {
+      "Higuchi_Katz_Petrosian_Sevcik": "bornes 1-2, ne peuvent jamais donner divergence",
+      "LevinaBickel": "sensible au bruit et au plongement delay m=10, sur bruit blanc donne divergence meme au calme",
+      "InformationD1": "sur distribution concentree (1 pic viral), D1 tres bas, pas comparable a Higuchi"
+    },
+    "series_provenance": {
+      "control_col": "control_index",
+      "n_samples": 76.0,
+      "n_definition": "n = nombre de lignes du CSV, pas taille physique du systeme. Changer n change T_log magnitude, pas signe si d fixe.",
+      "series_note": "Changer de serie (Price vs LogReturn, hauteur vs rendements) peut inverser le signe de T_log avec Levina. La serie choisie doit etre figee avant le test.",
+      "log_base": "naturel, np.log",
+      "formula": "(d-4)*log(n)"
+    },
+    "thresholds_provenance": {
+      "note": "Seuils = conventions de lecture, pas theoremes, pas preuves. 1.0 arbitraire a echoue de 0.05 sur PM2.5 et 0.04 sur social. 2.0 justifie par finance V1-V3.",
+      "regime_divergence": "d_div>=5.5 ou delta>3",
+      "regime_criticality": "d_crit dans [3.5,4.5] ou delta dans [1.2,3]",
+      "regime_saturation": "d_sat et d_div finis, aucune clause precedente",
+      "falsification_vs_null_threshold": 0.5
+    },
+    "proof_status": "heuristique, triangulation seulement, pas une preuve. Preuve totale impossible theoriquement. Ce diagnostic rend l'echec attribuable (CSV / pipeline / serie / seuil / coeur), il ne prouve pas le coeur.",
+    "warnings": [
+      "Higuchi/Katz/Petrosian bornes 1-2 : ne peuvent jamais donner divergence. Ne pas tester la divergence avec eux seuls."
+    ]
+  },
+  "dominant_regime": "criticality",
+  "dominant_regime_relative": "criticality|control=control_index",
+  "regime_is_physical_call": true,
+  "regime_evidence": [
+    "delta_in_[1.2,3.0]"
+  ],
+  "regime_rule": "Etiquette de COUPE sous le controle choisi. divergence si d_div>=5.5 ou delta>3 ; sinon criticite si d_crit dans [3.5,4.5] ou delta dans [1.2,3] ; sinon saturation seulement si d_sat et d_div finis ; sinon indeterminate. Seuils = regles de lecture, pas theoremes. Couche geometrique seulement ; T_log n'est pas l'hologramme entier.",
+  "interpretation": "Transition (criticite) sous controle 'control_index' : d_crit dans [3.5, 4.5] ou Delta dans [1.2, 3] sur la couche geometrique. Etiquette de coupe, pas convergence forcee des 29.",
+  "null_role": "measurement_frame_not_interchangeable_d",
+  "null_role_note": "Null (SpectralDimension + signatures) = residu du cadre de mesure humain (spectre, conventions, instrumentation). Contrepoids pour falsifier. Les 3 ancres sat/crit/div cartographient la tension micro\u2194macro.",
+  "falsification_vs_null": {
+    "status": "ok",
+    "compared": "d_crit geometrique vs SpectralDimension (cadre null)",
+    "null_role": "measurement_frame_spectral_counterweight",
+    "is_significant_nonlinearity": false,
+    "delta_vs_null": 0.352109,
+    "threshold": 0.5,
+    "reason": null,
+    "note": "Null = cadre de mesure / residu d'instrumentation, pas un d interchangeable pour T_log."
+  },
+  "geometric_layer": {
+    "axes": {
+      "saturation": {
+        "dimension_median": 1.191225,
+        "n_dimension_estimators_used": 7,
+        "estimators_used": [
+          "Higuchi",
+          "Katz",
+          "Petrosian",
+          "Sevcik",
+          "BoxCounting",
+          "Hurst2mH",
+          "DFA"
+        ],
+        "estimators_without_finite_values": [],
+        "class_members_excluded_from_geometric": [
+          "PermutationEntropy"
+        ]
+      },
+      "criticality": {
+        "dimension_median": 2.557904,
+        "n_dimension_estimators_used": 6,
+        "estimators_used": [
+          "CorrelationD2",
+          "GrassbergerProcaccia",
+          "InformationD1",
+          "VisibilityGraph",
+          "DANCo",
+          "Fisher"
+        ],
+        "estimators_without_finite_values": [
+          "TwoNN"
+        ],
+        "class_members_excluded_from_geometric": []
+      },
+      "divergence": {
+        "dimension_median": 2.987323,
+        "n_dimension_estimators_used": 6,
+        "estimators_used": [
+          "LevinaBickel",
+          "PCAIntrinsic",
+          "LocalPCA",
+          "GraphDimension",
+          "PersistentHomology",
+          "MFA"
+        ],
+        "estimators_without_finite_values": [],
+        "class_members_excluded_from_geometric": [
+          "KolmogorovLZ"
+        ]
+      },
+      "null_reference": {
+        "dimension_median": 2.205795,
+        "n_dimension_estimators_used": 1,
+        "estimators_used": [
+          "SpectralDimension"
+        ],
+        "estimators_without_finite_values": [],
+        "class_members_excluded_from_geometric": [
+          "SpectralBeta",
+          "Hurst",
+          "SampleEn",
+          "Lyapunov",
+          "MultifractalDeltaAlpha",
+          "SingularityFmax"
+        ]
+      }
+    },
+    "T_log_by_estimator": {
+      "Higuchi": {
+        "d": 1.924426,
+        "T_log": -8.988757,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "DFA": {
+        "d": 1.191225,
+        "T_log": -12.164058,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Katz": {
+        "d": 1.115416,
+        "T_log": -12.492362,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Petrosian": {
+        "d": 1.06484,
+        "T_log": -12.711393,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Sevcik": {
+        "d": 1.547485,
+        "T_log": -10.621191,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "BoxCounting": {
+        "d": 0.609491,
+        "T_log": -14.683391,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "CorrelationD2": {
+        "d": 2.55416,
+        "T_log": -6.261548,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "GrassbergerProcaccia": {
+        "d": 2.561648,
+        "T_log": -6.229118,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "InformationD1": {
+        "d": 0.694929,
+        "T_log": -14.313381,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "VisibilityGraph": {
+        "d": 1.984625,
+        "T_log": -8.728052,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "DANCo": {
+        "d": 2.757455,
+        "T_log": -5.381133,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Fisher": {
+        "d": 3.191292,
+        "T_log": -3.502297,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "LevinaBickel": {
+        "d": 4.941807,
+        "T_log": 4.078717,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "PCAIntrinsic": {
+        "d": 4.791045,
+        "T_log": 3.425805,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "LocalPCA": {
+        "d": 2.974647,
+        "T_log": -4.44053,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "GraphDimension": {
+        "d": 1.014643,
+        "T_log": -12.928783,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "PersistentHomology": {
+        "d": 0.86623,
+        "T_log": -13.571523,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "MFA": {
+        "d": 3.0,
+        "T_log": -4.330733,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "SpectralDimension": {
+        "d": 2.205795,
+        "T_log": -7.770223,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Hurst2mH": {
+        "d": 1.522785,
+        "T_log": -10.728156,
+        "n": 76.0,
+        "formula": "(d-4)*log(n)"
+      }
+    },
+    "T_log_class_median": {
+      "saturation": -12.164058,
+      "criticality": -6.245333,
+      "divergence": -4.385632,
+      "null_reference": -7.770223
+    },
+    "T_log_formula": "(d-4)*log(n) ; n=n_samples ; jamais un z-score",
+    "T_log_scope": "indicateur de coupe sur dimensions geometriques, pas l'hologramme entier"
+  },
+  "relative_layer": {
+    "method": "cross_estimator_z_of_medians",
+    "note": "Les 29 restent dans ESTIMATOR_CLASSES. Le z croise compare les ancres sans les brancher sur d=4. KolmogorovLZ et PermutationEntropy votent ici.",
+    "z_by_estimator": {
+      "Higuchi": -0.121462,
+      "DFA": -0.515344,
+      "Katz": -0.556069,
+      "Hurst": -0.898916,
+      "SampleEn": -1.01615,
+      "Petrosian": -0.583238,
+      "Sevcik": -0.323958,
+      "BoxCounting": -0.827856,
+      "PermutationEntropy": -0.658599,
+      "CorrelationD2": 0.216836,
+      "GrassbergerProcaccia": 0.220859,
+      "InformationD1": -0.781958,
+      "VisibilityGraph": -0.089123,
+      "DANCo": 0.326048,
+      "Fisher": 0.559109,
+      "LevinaBickel": 1.4995,
+      "PCAIntrinsic": 1.418509,
+      "LocalPCA": 0.442725,
+      "GraphDimension": -0.610205,
+      "PersistentHomology": -0.689934,
+      "MFA": 0.456345,
+      "KolmogorovLZ": 3.679594,
+      "SpectralBeta": -0.839181,
+      "SpectralDimension": 0.029692,
+      "Hurst2mH": -0.337227
+    },
+    "class_z_median": {
+      "saturation": -0.535706,
+      "criticality": 0.218848,
+      "divergence": 0.456345,
+      "null_reference": -0.869048
+    },
+    "class_raw_median_all_members": {
+      "saturation": {
+        "Higuchi": 1.924426,
+        "DFA": 1.191225,
+        "Katz": 1.115416,
+        "Petrosian": 1.06484,
+        "Sevcik": 1.547485,
+        "BoxCounting": 0.609491,
+        "PermutationEntropy": 0.924559,
+        "Hurst2mH": 1.522785
+      },
+      "criticality": {
+        "CorrelationD2": 2.55416,
+        "GrassbergerProcaccia": 2.561648,
+        "InformationD1": 0.694929,
+        "VisibilityGraph": 1.984625,
+        "TwoNN": null,
+        "DANCo": 2.757455,
+        "Fisher": 3.191292
+      },
+      "divergence": {
+        "LevinaBickel": 4.941807,
+        "PCAIntrinsic": 4.791045,
+        "LocalPCA": 2.974647,
+        "GraphDimension": 1.014643,
+        "PersistentHomology": 0.86623,
+        "MFA": 3.0,
+        "KolmogorovLZ": 9.0
+      },
+      "null_reference": {
+        "Hurst": 0.477215,
+        "SampleEn": 0.258985,
+        "SpectralBeta": 0.58841,
+        "SpectralDimension": 2.205795,
+        "Lyapunov": null,
+        "MultifractalDeltaAlpha": null,
+        "SingularityFmax": null
+      }
+    },
+    "cohen_between_classes": {
+      "saturation_vs_divergence": {
+        "cohen_d": -1.279991,
+        "n_a": 8,
+        "n_b": 7,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "saturation_vs_criticality": {
+        "cohen_d": -1.542622,
+        "n_a": 8,
+        "n_b": 6,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "criticality_vs_divergence": {
+        "cohen_d": -0.72715,
+        "n_a": 6,
+        "n_b": 7,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "criticality_vs_null_reference": {
+        "cohen_d": 1.59472,
+        "n_a": 6,
+        "n_b": 4,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "saturation_vs_null_reference": {
+        "cohen_d": 0.510524,
+        "n_a": 8,
+        "n_b": 4,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "divergence_vs_null_reference": {
+        "cohen_d": 1.403464,
+        "n_a": 7,
+        "n_b": 4,
+        "note": "sur z croise des medianes ; pas une dimension"
+      }
+    }
+  },
+  "per_estimator": {
+    "Higuchi": {
+      "raw_median": 1.924426,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.121462
+    },
+    "DFA": {
+      "raw_median": 1.191225,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.515344
+    },
+    "Katz": {
+      "raw_median": 1.115416,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.556069
+    },
+    "Hurst": {
+      "raw_median": 0.477215,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "exposant R/S ; la dimension de graphe 2-H est Hurst2mH / DFA",
+      "cross_z": -0.898916
+    },
+    "SampleEn": {
+      "raw_median": 0.258985,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "entropie echantillonnale, signature null",
+      "cross_z": -1.01615
+    },
+    "Petrosian": {
+      "raw_median": 1.06484,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.583238
+    },
+    "Sevcik": {
+      "raw_median": 1.547485,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.323958
+    },
+    "BoxCounting": {
+      "raw_median": 0.609491,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.827856
+    },
+    "PermutationEntropy": {
+      "raw_median": 0.924559,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "saturation",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "entropie normalisee (0,1], ancre de saturation dans la taxonomie, pas un d pour T_log",
+      "cross_z": -0.658599
+    },
+    "CorrelationD2": {
+      "raw_median": 2.55416,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.216836
+    },
+    "GrassbergerProcaccia": {
+      "raw_median": 2.561648,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.220859
+    },
+    "InformationD1": {
+      "raw_median": 0.694929,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.781958
+    },
+    "VisibilityGraph": {
+      "raw_median": 1.984625,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.089123
+    },
+    "TwoNN": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 3,
+      "estimator_class": "criticality",
+      "enters_geometric_D": false,
+      "non_dimension_reason": null,
+      "cross_z": null
+    },
+    "DANCo": {
+      "raw_median": 2.757455,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.326048
+    },
+    "Fisher": {
+      "raw_median": 3.191292,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.559109
+    },
+    "LevinaBickel": {
+      "raw_median": 4.941807,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 1.4995
+    },
+    "PCAIntrinsic": {
+      "raw_median": 4.791045,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 1.418509
+    },
+    "LocalPCA": {
+      "raw_median": 2.974647,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.442725
+    },
+    "GraphDimension": {
+      "raw_median": 1.014643,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.610205
+    },
+    "PersistentHomology": {
+      "raw_median": 0.86623,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.689934
+    },
+    "MFA": {
+      "raw_median": 3.0,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.456345
+    },
+    "KolmogorovLZ": {
+      "raw_median": 9.0,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "divergence",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "nombre de productions LZ76, non borne ; ancre de divergence relative, pas une dimension de Hausdorff",
+      "cross_z": 3.679594
+    },
+    "SpectralBeta": {
+      "raw_median": 0.58841,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "pente spectrale, signature null, pas un d",
+      "cross_z": -0.839181
+    },
+    "SpectralDimension": {
+      "raw_median": 2.205795,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.029692
+    },
+    "Hurst2mH": {
+      "raw_median": 1.522785,
+      "n_fluxes_used": 3,
+      "n_columns": 3,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.337227
+    },
+    "Lyapunov": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 3,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "exposant de Lyapunov, signature de stabilite, pas un d",
+      "cross_z": null
+    },
+    "MultifractalDeltaAlpha": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 3,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "largeur de spectre multifractal, signature null",
+      "cross_z": null
+    },
+    "SingularityFmax": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 3,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "maximum de f(alpha), signature null",
+      "cross_z": null
+    }
+  },
+  "q_glossary": {
+    "Q1_Calme_vs_Chaos": "Taille d'effet entre progression basse et haute, une colonne flux x estimateur. Ce n'est pas un test de chaos.",
+    "Q2_Tension_Seuil": "Meme taille d'effet dans une marge avant le seuil contre une marge apres.",
+    "Q3_Agressivite": "Meme comparaison que Q1 restreinte aux flux agressifs ; peut recopier Q1 si couverture faible.",
+    "Q4_Persistence": "Separation intra-fenetre du flux brut, recopiee sur les colonnes d'estimateurs. Ce n'est pas Hurst.",
+    "Q5_Actif_Receptif": "Separation actifs / receptifs sur moyennes brutes. 0 si etiquettes absentes.",
+    "Q6_Actif_Receptif_Echelle": "Q5 apres division par l'ecart-type sans centrage. Ne remplace pas Q5."
+  },
+  "q3_identical_to_q1": false
+}

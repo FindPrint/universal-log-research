@@ -1,0 +1,164 @@
+{
+  "model": "Binder scaling U4=F((T-Tc)L^(1/nu))",
+  "fit_window_T": [
+    2.22,
+    2.32
+  ],
+  "correction": {
+    "form": "L^-omega * (c0 + c1*x)",
+    "omega_fixed": 2.0
+  },
+  "scaling_function": "cubic polynomial in x",
+  "exact_reference": {
+    "Tc": 2.269185314213022,
+    "nu": 1.0
+  },
+  "uncorrected": {
+    "parameters": {
+      "Tc": 2.268226665428566,
+      "nu": 1.069057485280956,
+      "U_star": 0.6128733038868006,
+      "a1": -0.04126120990013149,
+      "a2": -0.013953804797977193,
+      "a3": -0.0019456244128883305
+    },
+    "bootstrap_95": {
+      "Tc": {
+        "n_valid": 500,
+        "se": 0.000525901166602329,
+        "ci95_low": 2.267203057176242,
+        "ci95_high": 2.269191380258061
+      },
+      "nu": {
+        "n_valid": 500,
+        "se": 0.016855362521221676,
+        "ci95_low": 1.0344019511942688,
+        "ci95_high": 1.1039028860097582
+      },
+      "U_star": {
+        "n_valid": 500,
+        "se": 0.0004027060777254426,
+        "ci95_low": 0.6121291833963436,
+        "ci95_high": 0.6137101913665747
+      },
+      "a1": {
+        "n_valid": 500,
+        "se": 0.002213061440102201,
+        "ci95_low": -0.045684118935855444,
+        "ci95_high": -0.036860188240815744
+      },
+      "a2": {
+        "n_valid": 500,
+        "se": 0.0016230872138520854,
+        "ci95_low": -0.01757923818844228,
+        "ci95_high": -0.011138410044843837
+      },
+      "a3": {
+        "n_valid": 500,
+        "se": 0.0004022759765501092,
+        "ci95_low": -0.002911400096780532,
+        "ci95_high": -0.001312133775963967
+      }
+    },
+    "bootstrap_successes": 500,
+    "n_bootstrap": 500,
+    "fit_statistics": {
+      "n_observations": 77,
+      "n_parameters": 6,
+      "degrees_of_freedom": 71,
+      "chi2": 58.05956632934068,
+      "reduced_chi2": 0.8177403708357842,
+      "AIC": 70.05956632934068,
+      "BIC": 84.1223988604628
+    },
+    "optimizer_success": true
+  },
+  "corrected": {
+    "parameters": {
+      "Tc": 2.269368634373666,
+      "nu": 1.0212569763406696,
+      "U_star": 0.6111627791042307,
+      "a1": -0.03568545758294693,
+      "a2": -0.010103030498923365,
+      "a3": -0.0011552602308593047,
+      "c0_Lminus2": 0.12065232546497939,
+      "c1_Lminus2_x": -0.273793770935929
+    },
+    "bootstrap_95": {
+      "Tc": {
+        "n_valid": 500,
+        "se": 0.000737176263927922,
+        "ci95_low": 2.2679222774736583,
+        "ci95_high": 2.2709553358622205
+      },
+      "nu": {
+        "n_valid": 500,
+        "se": 0.02762323314087009,
+        "ci95_low": 0.9662144839887661,
+        "ci95_high": 1.077668011570075
+      },
+      "U_star": {
+        "n_valid": 500,
+        "se": 0.0008475975561318524,
+        "ci95_low": 0.6094676161217947,
+        "ci95_high": 0.6128454855336427
+      },
+      "a1": {
+        "n_valid": 500,
+        "se": 0.0036189775597977205,
+        "ci95_low": -0.04309320910898153,
+        "ci95_high": -0.028942965034355703
+      },
+      "a2": {
+        "n_valid": 500,
+        "se": 0.0020891549939305544,
+        "ci95_low": -0.014699865676755219,
+        "ci95_high": -0.0065151665957790105
+      },
+      "a3": {
+        "n_valid": 500,
+        "se": 0.0003902204937386418,
+        "ci95_low": -0.0020430100355192256,
+        "ci95_high": -0.0005708841690209264
+      },
+      "c0_Lminus2": {
+        "n_valid": 500,
+        "se": 0.060887207184705236,
+        "ci95_low": 0.0018121785524692524,
+        "ci95_high": 0.24431254515760378
+      },
+      "c1_Lminus2_x": {
+        "n_valid": 500,
+        "se": 0.17513815659063905,
+        "ci95_low": -0.5834672683421042,
+        "ci95_high": 0.09815310411960317
+      }
+    },
+    "bootstrap_successes": 500,
+    "n_bootstrap": 500,
+    "fit_statistics": {
+      "n_observations": 77,
+      "n_parameters": 8,
+      "degrees_of_freedom": 69,
+      "chi2": 50.81354505226446,
+      "reduced_chi2": 0.736428189163253,
+      "AIC": 66.81354505226446,
+      "BIC": 85.56398842709393
+    },
+    "optimizer_success": true
+  },
+  "model_comparison": {
+    "delta_AIC_corrected_minus_uncorrected": -3.246021277076224,
+    "delta_BIC_corrected_minus_uncorrected": 1.4415895666311371,
+    "interpretation": "Negative favors the corrected model; positive favors the uncorrected model."
+  },
+  "bootstrap": {
+    "replicates": 500,
+    "method": "resample the Wolff measurement blocks independently at each (L,T); refit both models"
+  },
+  "limitations": [
+    "The correction exponent omega is fixed at 2; uncertainty in omega is not included.",
+    "The cubic scaling function and chosen temperature window are modeling choices.",
+    "Bootstrap intervals describe Monte Carlo sampling uncertainty, not all finite-size/model-form uncertainty."
+  ]
+}

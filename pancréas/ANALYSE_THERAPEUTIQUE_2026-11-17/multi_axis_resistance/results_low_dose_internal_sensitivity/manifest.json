@@ -1,0 +1,43 @@
+{
+  "analysis_id": "pdac_tp53_krasamp_internal_dose_sensitivity_v1",
+  "created_utc": "2026-11-17T10:49:33.790761+00:00",
+  "question_status": "targeted exploratory sensitivity; selected after main scan",
+  "unit_of_analysis": "one patient; 44 high-dose and 13 lower-dose patients from the same phase 1/2 study",
+  "selection_limitation": "both dose strata are drawn from progression-selected acquired-resistance cohorts; no independent validation cohort",
+  "comparison": "baseline TP53 mutation status vs KRAS amplification acquired by end of treatment",
+  "test": "two-sided Fisher exact test; nominal p-values; no claim of multiplicity-adjusted confirmation",
+  "seed": null,
+  "inputs": {
+    "clinical_high_dose_44.csv": {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-16\\daraxonrasib_resistance_2026\\reanalyzed\\clinical_high_dose_44.csv",
+      "sha256": "069324e46734542d60c7d8180cce5e3b5d1f8cb9ab991aab4cdf075072f361e1",
+      "bytes": 6533
+    },
+    "clinical_lower_dose_13.csv": {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-16\\daraxonrasib_resistance_2026\\reanalyzed\\clinical_lower_dose_13.csv",
+      "sha256": "530039c0d7cb73c7848c348347170e98a3ecaf038dde9462664bd01745df363e",
+      "bytes": 2650
+    },
+    "41591_2026_4537_MOESM3_ESM.xlsx": {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-16\\daraxonrasib_resistance_2026\\41591_2026_4537_MOESM3_ESM.xlsx",
+      "sha256": "2320467a5e628fca2ff35e89cc6c4dd52a5761b8349cbb89b127e78db72b5369",
+      "bytes": 28699
+    }
+  },
+  "outputs": {
+    "patient_level_57_tp53_krasamp.csv": {
+      "sha256": "ef6c1fa105e31f7cb10bcbf5012dc10b66187b13590fe2db6e01a5c157c60911",
+      "bytes": 3675
+    },
+    "tp53_krasamp_by_dose_stratum.csv": {
+      "sha256": "64f31229416aa9e0a5103a3e94b1e5b5e07f8a14fe26326bb368c47f5adc5ec3",
+      "bytes": 539
+    },
+    "ADDENDUM_SENSIBILITE_INTERNE_DOSE.md": {
+      "sha256": "c4fa538e4af2ec226fc143d056b2d83cee3d07958a6e995a7ee01b75149114fb",
+      "bytes": 2911
+    }
+  },
+  "script_sha256": "b0b007ee1843971a91290ca5b186da7c559d0dbf32f49b87267311f974d2d38a",
+  "interpretation": "descriptive within-trial sensitivity only; not causal, predictive, therapeutic, or evidence of cure"
+}

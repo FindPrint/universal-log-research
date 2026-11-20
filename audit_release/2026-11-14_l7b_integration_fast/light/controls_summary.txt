@@ -1,0 +1,11 @@
+================================================================================
+UNIVERSAL_LOG v5.9.1-L7aL7b-DKind-AuditFix — CONTROLES SUMMARY (multi)
+================================================================================
+
+File: <PROJECT_ROOT>\ising_classique_test\finite_size\multiflux_mcmc_pipeline_test\pipeline_inputs\L16_T2.269185_chain0.csv | Mode: fast | Domain: generic
+Control selection: fallback_used=False missing=[] reason=None
+Politique cible: fixed | Cible demandee globale: Abs_magnetization | Cible globale resolue: Abs_magnetization | Resolution: {'policy': 'fixed', 'requested': 'Abs_magnetization', 'resolved': 'Abs_magnetization', 'method': 'user_requested_target', 'fallback_used': False, 'reason': "cible demandee par l'utilisateur, reutilisee pour tous les controles"}
+Cible FIXE (defaut v5.4) : une seule cible pour tous les controles. Cas diagonal signale explicitement avec cible_demandee ET cible_utilisee.
+
+- MC_Update : ok | target_demandee=Abs_magnetization | target_utilisee=Abs_magnetization | politique=fixed | repli_diagonal=False | T0=95.80335987451296% -> valeur brute controle=3801.0 (min_near=3761.0, max_near=3841.0, spread=80.0, ambiguous=False) | monotone_controle=True | avertissement_non_monotone=False | consensus=flat | harmonic=None
+- Noise_axis : ok | target_demandee=Abs_magnetization | target_utilisee=Abs_magnetization | politique=fixed | repli_diagonal=False | T0=54.5190261546593% -> valeur brute controle=0.1076741826723768 (min_near=0.0725793040033891, max_near=0.1489547053610984, spread=0.07637540135770929, ambiguous=True) | monotone_controle=False | avertissement_non_monotone=True | consensus=down | harmonic=None

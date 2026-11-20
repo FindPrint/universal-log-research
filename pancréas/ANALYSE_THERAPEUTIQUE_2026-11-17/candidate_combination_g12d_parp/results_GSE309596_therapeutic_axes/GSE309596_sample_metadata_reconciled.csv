@@ -1,0 +1,13 @@
+batch,biosample,cell_line,cell_type,genotype,gsm,sra,tissue,title,treatment,treatment_norm,replicate_label,mrtx1133,olaparib
+6/16/2025,SAMN52067547,KPC1199,pancreatic cancer cells,KRAS G12D,GSM9270219,SRX30723849,pancreatic cancer,"KPC1199, vehicle_1",Vehicle,vehicle,1,0,0
+6/16/2025,SAMN52067546,KPC1199,pancreatic cancer cells,KRAS G12D,GSM9270220,SRX30723848,pancreatic cancer,"KPC1199, vehicle_2",Vehicle,vehicle,2,0,0
+6/16/2025,SAMN52067545,KPC1199,pancreatic cancer cells,KRAS G12D,GSM9270221,SRX30723847,pancreatic cancer,"KPC1199, vehicle_3",Vehicle,vehicle,3,0,0
+6/16/2025,SAMN52067544,KPC1199,pancreatic cancer cells,KRAS G12D,GSM9270222,SRX30723846,pancreatic cancer,"KPC1199, Combination_1",Combination,combination,1,1,1
+6/16/2025,SAMN52067543,KPC1199,pancreatic cancer cells,KRAS G12D,GSM9270223,SRX30723845,pancreatic cancer,"KPC1199, Combination_2",Combination,combination,2,1,1
+6/16/2025,SAMN52067542,KPC1199,pancreatic cancer cells,KRAS G12D,GSM9270224,SRX30723844,pancreatic cancer,"KPC1199, Combination_3",Combination,combination,3,1,1
+6/16/2025,SAMN52067541,KPC1199,pancreatic cancer cells,KRAS G12D,GSM9270225,SRX30723855,pancreatic cancer,"KPC1199, ola_1",Olaparib,olaparib,1,0,1
+6/16/2025,SAMN52067540,KPC1199,pancreatic cancer cells,KRAS G12D,GSM9270226,SRX30723854,pancreatic cancer,"KPC1199, ola_2",Olaparib,olaparib,2,0,1
+6/16/2025,SAMN52067539,KPC1199,pancreatic cancer cells,KRAS G12D,GSM9270227,SRX30723853,pancreatic cancer,"KPC1199, ola_3",Olaparib,olaparib,3,0,1
+6/16/2025,SAMN52067538,KPC1199,pancreatic cancer cells,KRAS G12D,GSM9270228,SRX30723852,pancreatic cancer,"KPC1199, 1133_1",MRTX1133,mrtx1133,1,1,0
+6/16/2025,SAMN52067537,KPC1199,pancreatic cancer cells,KRAS G12D,GSM9270229,SRX30723851,pancreatic cancer,"KPC1199, 1133_2",MRTX1133,mrtx1133,2,1,0
+6/16/2025,SAMN52067536,KPC1199,pancreatic cancer cells,KRAS G12D,GSM9270230,SRX30723850,pancreatic cancer,"KPC1199, 1133_3",MRTX1133,mrtx1133,3,1,0

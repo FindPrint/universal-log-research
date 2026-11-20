@@ -1,0 +1,49 @@
+{
+  "protocol": "predeclared expanded v5.9 Ising MCMC multi-axis/multi-flux study",
+  "source_v59": "<PROJECT_ROOT>\\universal_x5f_log_x5f_L7a_x5f_L7b_x5f_v5.9.0f_0_n0z8.py",
+  "source_v59_sha256": "4f80f6a7d0809e802cbc9ec30c0bed552c1c8a95eb58687fd78e4ffd8e808260",
+  "derived_runtime": "<PROJECT_ROOT>\\ising_classique_test\\finite_size\\multiflux_mcmc_v59_study\\expanded_runs\\runtime\\UNIVERSAL_LOG_v5_9_exp_landscape24.py",
+  "derived_runtime_sha256": "a9ed57bb35bac39b9a0be3fd2fc2db027e1257690fe2ba64acd169d044eb2e97",
+  "source_v58_taxonomy_sha256": "4a21809ed263bb743bc8022e88f532a38310b4340c24b4e0def9e517776c65c0",
+  "helper_sha256": "454d4648b4e1d2ccc332fc05d5530f52630d354ebd3b8a1d188e3689023bbbe2",
+  "raw_simulation": "2D zero-field Ising Wolff cluster updates; one saved row per cluster update",
+  "sizes": [
+    16,
+    32,
+    48
+  ],
+  "temperatures": [
+    2.24,
+    2.2600000000000002,
+    2.2800000000000002,
+    2.3000000000000003,
+    2.3200000000000003,
+    2.3400000000000003,
+    2.3600000000000003,
+    2.3800000000000003,
+    2.4000000000000004,
+    2.4200000000000004,
+    2.4400000000000004,
+    2.269185314213022
+  ],
+  "Tc_exact": 2.269185314213022,
+  "n_chains_per_cell": 5,
+  "burn_updates": 1000,
+  "measure_updates": 8000,
+  "pipeline_stride": 20,
+  "pipeline_rows_per_trajectory": 400,
+  "window_size_rows": 40,
+  "landscape_scan_points": 24,
+  "pipeline_seed": 20261108,
+  "core_call_count_expected": 85,
+  "matched_v58_v59_call_count_expected": 20,
+  "threshold_policy": "v5.9 L7b thresholds are implementation heuristics, not scientifically calibrated here",
+  "external_d_kind_policy": "Any d_kind label uses the v5.8 registry externally because v5.9 has no native typed registry.",
+  "predeclared_hypotheses": [
+    "H1: MCMC thermodynamic estimates are compared with archived finite-size estimates and their uncertainty; no binary pass threshold.",
+    "H2: same data/fluxes under alternate controls may change pipeline outputs; values and chain repeats are reported without causal interpretation.",
+    "H3: flux composition/redundancy effects are compared across five L16,Tc chains.",
+    "H4: regime labels over the temperature grid are descriptive and exploratory, not a validated criticality detector.",
+    "H5: v5.9 is compared with archived v5.8 on the same 20 sampled CSVs/configurations."
+  ]
+}

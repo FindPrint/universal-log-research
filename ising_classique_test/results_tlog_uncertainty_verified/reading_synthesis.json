@@ -1,0 +1,2118 @@
+{
+  "version": "v5.3-ControleRelatifNullCadre",
+  "status": "ok",
+  "reason": null,
+  "enters_threshold_score": false,
+  "q_numeric_scores_modified": false,
+  "n_samples": 105.0,
+  "control_col": "Temperature",
+  "observer_axis": "Temperature",
+  "aggregation_geometric": "median_of_per_estimator_medians_DIMENSION_FOR_TLOG_only",
+  "aggregation_relative": "cross_estimator_z_of_29_raw_medians_plus_cliff_delta",
+  "D_vector": {
+    "d_sat": 1.251936,
+    "d_crit": 2.713662,
+    "d_div": 2.606923,
+    "d_null": 2.412139
+  },
+  "D_vector_roles": {
+    "d_sat": "ancre micro / sol stable (saturation)",
+    "d_crit": "ancre de transition (criticite)",
+    "d_div": "ancre d'ouverture / degres de liberte (divergence)",
+    "d_null": "cadre de mesure spectral (null) ; pas un d T_log interchangeable"
+  },
+  "spectral_width_delta": 1.354987,
+  "Delta_tension": 1.354987,
+  "dominant_regime": "criticality",
+  "dominant_regime_relative": "criticality|control=Temperature",
+  "regime_is_physical_call": false,
+  "regime_is_heuristic": true,
+  "regime_classification_method": "dimension_threshold_heuristic",
+  "regime_evidence": [
+    "delta_in_[1.2,3.0]"
+  ],
+  "regime_rule": "Etiquette de COUPE sous le controle choisi. divergence si d_div>=5.5 ou delta>3 ; sinon criticite si d_crit dans [3.5,4.5] ou delta dans [1.2,3] ; sinon saturation seulement si d_sat et d_div finis ; sinon indeterminate. Classification heuristique non validee physiquement; les seuils sont des regles de lecture, pas des theoremes. Couche geometrique seulement ; T_log n'est pas l'hologramme entier.",
+  "interpretation": "Signal heuristique de criticite sous controle 'Temperature' : d_crit dans [3.5, 4.5] ou Delta dans [1.2, 3] sur la couche geometrique. Etiquette de coupe, pas convergence forcee des 29.",
+  "null_role": "measurement_frame_not_interchangeable_d",
+  "null_role_note": "Null (SpectralDimension + signatures) = residu du cadre de mesure humain (spectre, conventions, instrumentation). Contrepoids pour falsifier. Les 3 ancres sat/crit/div cartographient la tension micro↔macro.",
+  "falsification_vs_null": {
+    "status": "ok",
+    "compared": "d_crit geometrique vs SpectralDimension (cadre null)",
+    "null_role": "measurement_frame_spectral_counterweight",
+    "is_significant_nonlinearity": false,
+    "delta_vs_null": 0.301523,
+    "threshold": 0.5,
+    "reason": null,
+    "note": "Null = cadre de mesure / residu d'instrumentation, pas un d interchangeable pour T_log."
+  },
+  "geometric_layer": {
+    "axes": {
+      "saturation": {
+        "dimension_median": 1.251936,
+        "n_dimension_estimators_used": 7,
+        "estimators_used": [
+          "Higuchi",
+          "Katz",
+          "Petrosian",
+          "Sevcik",
+          "BoxCounting",
+          "Hurst2mH",
+          "DFA"
+        ],
+        "estimators_without_finite_values": [],
+        "class_members_excluded_from_geometric": [
+          "PermutationEntropy"
+        ]
+      },
+      "criticality": {
+        "dimension_median": 2.713662,
+        "n_dimension_estimators_used": 6,
+        "estimators_used": [
+          "CorrelationD2",
+          "GrassbergerProcaccia",
+          "InformationD1",
+          "VisibilityGraph",
+          "DANCo",
+          "Fisher"
+        ],
+        "estimators_without_finite_values": [
+          "TwoNN"
+        ],
+        "class_members_excluded_from_geometric": []
+      },
+      "divergence": {
+        "dimension_median": 2.606923,
+        "n_dimension_estimators_used": 6,
+        "estimators_used": [
+          "LevinaBickel",
+          "PCAIntrinsic",
+          "LocalPCA",
+          "GraphDimension",
+          "PersistentHomology",
+          "MFA"
+        ],
+        "estimators_without_finite_values": [],
+        "class_members_excluded_from_geometric": [
+          "KolmogorovLZ"
+        ]
+      },
+      "null_reference": {
+        "dimension_median": 2.412139,
+        "n_dimension_estimators_used": 1,
+        "estimators_used": [
+          "SpectralDimension"
+        ],
+        "estimators_without_finite_values": [],
+        "class_members_excluded_from_geometric": [
+          "SpectralBeta",
+          "Hurst",
+          "SampleEn",
+          "Lyapunov",
+          "MultifractalDeltaAlpha",
+          "SingularityFmax"
+        ]
+      }
+    },
+    "T_log_by_estimator": {
+      "Higuchi": {
+        "d": 1.85565,
+        "T_log": -9.979722,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "DFA": {
+        "d": 1.251936,
+        "T_log": -12.78938,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Katz": {
+        "d": 1.085854,
+        "T_log": -13.562321,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Petrosian": {
+        "d": 1.050654,
+        "T_log": -13.726139,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Sevcik": {
+        "d": 1.592519,
+        "T_log": -11.204323,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "BoxCounting": {
+        "d": 1.044001,
+        "T_log": -13.757104,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "CorrelationD2": {
+        "d": 2.698538,
+        "T_log": -6.056954,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "GrassbergerProcaccia": {
+        "d": 2.728786,
+        "T_log": -5.916178,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "InformationD1": {
+        "d": 0.521142,
+        "T_log": -16.190468,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "VisibilityGraph": {
+        "d": 2.05098,
+        "T_log": -9.070663,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "DANCo": {
+        "d": 2.753817,
+        "T_log": -5.799685,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Fisher": {
+        "d": 3.582312,
+        "T_log": -1.943904,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "LevinaBickel": {
+        "d": 3.584207,
+        "T_log": -1.935082,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "PCAIntrinsic": {
+        "d": 6.007379,
+        "T_log": 9.342263,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "LocalPCA": {
+        "d": 2.213846,
+        "T_log": -8.312688,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "GraphDimension": {
+        "d": 1.041266,
+        "T_log": -13.76983,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "PersistentHomology": {
+        "d": 2.065729,
+        "T_log": -9.002022,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "MFA": {
+        "d": 3.0,
+        "T_log": -4.65396,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "SpectralDimension": {
+        "d": 2.412139,
+        "T_log": -7.389843,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      },
+      "Hurst2mH": {
+        "d": 1.400378,
+        "T_log": -12.098539,
+        "n": 105.0,
+        "formula": "(d-4)*log(n)"
+      }
+    },
+    "T_log_class_median": {
+      "saturation": -12.78938,
+      "criticality": -5.986566,
+      "divergence": -6.483324,
+      "null_reference": -7.389843
+    },
+    "T_log_formula": "(d-4)*log(n) ; n=n_samples ; jamais un z-score",
+    "T_log_scope": "indicateur de coupe sur dimensions geometriques, pas l'hologramme entier"
+  },
+  "relative_layer": {
+    "method": "cross_estimator_z_of_medians",
+    "note": "Les 29 restent dans ESTIMATOR_CLASSES. Le z croise compare les ancres sans les brancher sur d=4. KolmogorovLZ et PermutationEntropy votent ici.",
+    "z_by_estimator": {
+      "Higuchi": -0.161087,
+      "DFA": -0.399463,
+      "Katz": -0.46504,
+      "Hurst": -0.657029,
+      "SampleEn": -0.731208,
+      "Petrosian": -0.478939,
+      "Sevcik": -0.264984,
+      "BoxCounting": -0.481566,
+      "PermutationEntropy": -0.511779,
+      "CorrelationD2": 0.171727,
+      "GrassbergerProcaccia": 0.183671,
+      "InformationD1": -0.688017,
+      "VisibilityGraph": -0.083961,
+      "DANCo": 0.193554,
+      "Fisher": 0.520685,
+      "LevinaBickel": 0.521433,
+      "PCAIntrinsic": 1.478222,
+      "LocalPCA": -0.019653,
+      "GraphDimension": -0.482646,
+      "PersistentHomology": -0.078137,
+      "MFA": 0.290759,
+      "KolmogorovLZ": 4.436679,
+      "SpectralBeta": -0.824405,
+      "SpectralDimension": 0.058643,
+      "Hurst2mH": -0.340851,
+      "MultifractalDeltaAlpha": -0.687668,
+      "SingularityFmax": -0.49894
+    },
+    "class_z_median": {
+      "saturation": -0.432252,
+      "criticality": 0.177699,
+      "divergence": 0.290759,
+      "null_reference": -0.672349
+    },
+    "class_raw_median_all_members": {
+      "saturation": {
+        "Higuchi": 1.85565,
+        "DFA": 1.251936,
+        "Katz": 1.085854,
+        "Petrosian": 1.050654,
+        "Sevcik": 1.592519,
+        "BoxCounting": 1.044001,
+        "PermutationEntropy": 0.967484,
+        "Hurst2mH": 1.400378
+      },
+      "criticality": {
+        "CorrelationD2": 2.698538,
+        "GrassbergerProcaccia": 2.728786,
+        "InformationD1": 0.521142,
+        "VisibilityGraph": 2.05098,
+        "TwoNN": null,
+        "DANCo": 2.753817,
+        "Fisher": 3.582312
+      },
+      "divergence": {
+        "LevinaBickel": 3.584207,
+        "PCAIntrinsic": 6.007379,
+        "LocalPCA": 2.213846,
+        "GraphDimension": 1.041266,
+        "PersistentHomology": 2.065729,
+        "MFA": 3.0,
+        "KolmogorovLZ": 13.5
+      },
+      "null_reference": {
+        "Hurst": 0.599622,
+        "SampleEn": 0.411754,
+        "SpectralBeta": 0.175722,
+        "SpectralDimension": 2.412139,
+        "Lyapunov": null,
+        "MultifractalDeltaAlpha": 0.522024,
+        "SingularityFmax": 1.0
+      }
+    },
+    "cliff_between_classes": {
+      "saturation_vs_divergence": {
+        "cliff_delta": -0.75,
+        "n_a": 8,
+        "n_b": 7,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "saturation_vs_criticality": {
+        "cliff_delta": -0.666667,
+        "n_a": 8,
+        "n_b": 6,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "criticality_vs_divergence": {
+        "cliff_delta": -0.333333,
+        "n_a": 6,
+        "n_b": 7,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "criticality_vs_null_reference": {
+        "cliff_delta": 0.722222,
+        "n_a": 6,
+        "n_b": 6,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "saturation_vs_null_reference": {
+        "cliff_delta": 0.625,
+        "n_a": 8,
+        "n_b": 6,
+        "note": "sur z croise des medianes ; pas une dimension"
+      },
+      "divergence_vs_null_reference": {
+        "cliff_delta": 0.857143,
+        "n_a": 7,
+        "n_b": 6,
+        "note": "sur z croise des medianes ; pas une dimension"
+      }
+    }
+  },
+  "per_estimator": {
+    "Higuchi": {
+      "raw_median": 1.85565,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.161087
+    },
+    "DFA": {
+      "raw_median": 1.251936,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.399463
+    },
+    "Katz": {
+      "raw_median": 1.085854,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.46504
+    },
+    "Hurst": {
+      "raw_median": 0.599622,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "exposant R/S ; la dimension de graphe 2-H est Hurst2mH / DFA",
+      "cross_z": -0.657029
+    },
+    "SampleEn": {
+      "raw_median": 0.411754,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "entropie echantillonnale, signature null",
+      "cross_z": -0.731208
+    },
+    "Petrosian": {
+      "raw_median": 1.050654,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.478939
+    },
+    "Sevcik": {
+      "raw_median": 1.592519,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.264984
+    },
+    "BoxCounting": {
+      "raw_median": 1.044001,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.481566
+    },
+    "PermutationEntropy": {
+      "raw_median": 0.967484,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "entropie normalisee (0,1], ancre de saturation dans la taxonomie, pas un d pour T_log",
+      "cross_z": -0.511779
+    },
+    "CorrelationD2": {
+      "raw_median": 2.698538,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.171727
+    },
+    "GrassbergerProcaccia": {
+      "raw_median": 2.728786,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.183671
+    },
+    "InformationD1": {
+      "raw_median": 0.521142,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.688017
+    },
+    "VisibilityGraph": {
+      "raw_median": 2.05098,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.083961
+    },
+    "TwoNN": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": false,
+      "non_dimension_reason": null,
+      "cross_z": null
+    },
+    "DANCo": {
+      "raw_median": 2.753817,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.193554
+    },
+    "Fisher": {
+      "raw_median": 3.582312,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "criticality",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.520685
+    },
+    "LevinaBickel": {
+      "raw_median": 3.584207,
+      "n_fluxes_used": 1,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.521433
+    },
+    "PCAIntrinsic": {
+      "raw_median": 6.007379,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 1.478222
+    },
+    "LocalPCA": {
+      "raw_median": 2.213846,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.019653
+    },
+    "GraphDimension": {
+      "raw_median": 1.041266,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.482646
+    },
+    "PersistentHomology": {
+      "raw_median": 2.065729,
+      "n_fluxes_used": 1,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.078137
+    },
+    "MFA": {
+      "raw_median": 3.0,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.290759
+    },
+    "KolmogorovLZ": {
+      "raw_median": 13.5,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "divergence",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "nombre de productions LZ76, non borne ; ancre de divergence relative, pas une dimension de Hausdorff",
+      "cross_z": 4.436679
+    },
+    "SpectralBeta": {
+      "raw_median": 0.175722,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "pente spectrale, signature null, pas un d",
+      "cross_z": -0.824405
+    },
+    "SpectralDimension": {
+      "raw_median": 2.412139,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": 0.058643
+    },
+    "Hurst2mH": {
+      "raw_median": 1.400378,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "saturation",
+      "enters_geometric_D": true,
+      "non_dimension_reason": null,
+      "cross_z": -0.340851
+    },
+    "Lyapunov": {
+      "raw_median": null,
+      "n_fluxes_used": 0,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "exposant de Lyapunov, signature de stabilite, pas un d",
+      "cross_z": null
+    },
+    "MultifractalDeltaAlpha": {
+      "raw_median": 0.522024,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "largeur de spectre multifractal, signature null",
+      "cross_z": -0.687668
+    },
+    "SingularityFmax": {
+      "raw_median": 1.0,
+      "n_fluxes_used": 2,
+      "n_columns": 2,
+      "estimator_class": "null_reference",
+      "enters_geometric_D": false,
+      "non_dimension_reason": "maximum de f(alpha), signature null",
+      "cross_z": -0.49894
+    }
+  },
+  "q_glossary": {
+    "Q1_Calme_vs_Chaos": "Taille d'effet entre progression basse et haute, une colonne flux x estimateur. Ce n'est pas un test de chaos.",
+    "Q2_Tension_Seuil": "Meme taille d'effet dans une marge avant le seuil contre une marge apres.",
+    "Q3_Agressivite": "Meme comparaison que Q1 restreinte aux flux agressifs ; peut recopier Q1 si couverture faible.",
+    "Q4_Persistence": "Separation intra-fenetre du flux brut, recopiee sur les colonnes d'estimateurs. Ce n'est pas Hurst.",
+    "Q5_Actif_Receptif": "Separation actifs / receptifs sur moyennes brutes. 0 si etiquettes absentes.",
+    "Q6_Actif_Receptif_Echelle": "Q5 apres division par l'ecart-type sans centrage. Ne remplace pas Q5."
+  },
+  "q3_identical_to_q1": true,
+  "primary_n_scale": {
+    "kind": "observations",
+    "value": 105
+  },
+  "T_log_profile_schema_version": "1.0",
+  "T_log_profiles": [
+    {
+      "profile_id": "observations:105",
+      "n_scale": {
+        "kind": "observations",
+        "value": 105
+      },
+      "formula": "T_log=(d-4)*ln(n)",
+      "estimator_readings": {
+        "Higuchi": {
+          "class": "saturation",
+          "d": 1.85565,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -9.97972,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.02408117749103424,
+            "d_ci95": [
+              1.7899828089687517,
+              1.8814323666742951
+            ],
+            "T_log_se": 0.112073,
+            "T_log_ci95": [
+              -10.285332,
+              -9.85973
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "DFA": {
+          "class": "saturation",
+          "d": 1.251936,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -12.789381,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.030441448464830406,
+            "d_ci95": [
+              1.179179035820962,
+              1.297684662423358
+            ],
+            "T_log_se": 0.141673,
+            "T_log_ci95": [
+              -13.127989,
+              -12.576468
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "Katz": {
+          "class": "saturation",
+          "d": 1.085854,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -13.56232,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.0013890122025062288,
+            "d_ci95": [
+              1.0825553579715967,
+              1.087815329477825
+            ],
+            "T_log_se": 0.006464,
+            "T_log_ci95": [
+              -13.577672,
+              -13.553192
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "Petrosian": {
+          "class": "saturation",
+          "d": 1.050654,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -13.726139,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.0014661237778593782,
+            "d_ci95": [
+              1.046451706263714,
+              1.0516787659264941
+            ],
+            "T_log_se": 0.006823,
+            "T_log_ci95": [
+              -13.745697,
+              -13.72137
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "Sevcik": {
+          "class": "saturation",
+          "d": 1.592519,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -11.204321,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.013295687958147338,
+            "d_ci95": [
+              1.5827039512744658,
+              1.636233835271809
+            ],
+            "T_log_se": 0.061878,
+            "T_log_ci95": [
+              -11.25,
+              -11.000874
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "BoxCounting": {
+          "class": "saturation",
+          "d": 1.044001,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -13.757102,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.017341455471279774,
+            "d_ci95": [
+              1.0217155992982185,
+              1.0902242960303288
+            ],
+            "T_log_se": 0.080706,
+            "T_log_ci95": [
+              -13.860818,
+              -13.541981
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "CorrelationD2": {
+          "class": "criticality",
+          "d": 2.698538,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -6.056953,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.11607728136223337,
+            "d_ci95": [
+              2.6222687465865553,
+              3.06990846434196
+            ],
+            "T_log_se": 0.540219,
+            "T_log_ci95": [
+              -6.411907,
+              -4.328609
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "GrassbergerProcaccia": {
+          "class": "criticality",
+          "d": 2.728786,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -5.91618,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.1194042798463104,
+            "d_ci95": [
+              2.612691510866677,
+              3.0806623098714967
+            ],
+            "T_log_se": 0.555703,
+            "T_log_ci95": [
+              -6.456479,
+              -4.278561
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "InformationD1": {
+          "class": "criticality",
+          "d": 0.521142,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -16.190467,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.04984120466738828,
+            "d_ci95": [
+              0.3918642809694523,
+              0.5824133368667318
+            ],
+            "T_log_se": 0.231959,
+            "T_log_ci95": [
+              -16.792121,
+              -15.905313
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "VisibilityGraph": {
+          "class": "criticality",
+          "d": 2.05098,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -9.070662,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.028104482712253832,
+            "d_ci95": [
+              2.0122138359869535,
+              2.120930447897529
+            ],
+            "T_log_se": 0.130797,
+            "T_log_ci95": [
+              -9.251078,
+              -8.745115
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "DANCo": {
+          "class": "criticality",
+          "d": 2.753817,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -5.799686,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.15371955811618682,
+            "d_ci95": [
+              2.585504420220331,
+              2.9221301016137313
+            ],
+            "T_log_se": 0.715405,
+            "T_log_ci95": [
+              -6.583006,
+              -5.016364
+            ],
+            "n_valid": 188,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "Fisher": {
+          "class": "criticality",
+          "d": 3.582312,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -1.943903,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.0526362440757319,
+            "d_ci95": [
+              3.548587860286067,
+              3.7552526860619526
+            ],
+            "T_log_se": 0.244967,
+            "T_log_ci95": [
+              -2.100854,
+              -1.139044
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "LevinaBickel": {
+          "class": "divergence",
+          "d": 3.584207,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -1.935084,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 1.54931584951386,
+            "d_ci95": [
+              2.4489445655135094,
+              7.775551149274118
+            ],
+            "T_log_se": 7.210455,
+            "T_log_ci95": [
+              -7.21855,
+              17.571265
+            ],
+            "n_valid": 298,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "PCAIntrinsic": {
+          "class": "divergence",
+          "d": 6.007379,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": 9.342262,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.11744548498516584,
+            "d_ci95": [
+              5.791403987723905,
+              6.220687075141742
+            ],
+            "T_log_se": 0.546587,
+            "T_log_ci95": [
+              8.337123,
+              10.33499
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "LocalPCA": {
+          "class": "divergence",
+          "d": 2.213846,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -8.31269,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.03899426072579683,
+            "d_ci95": [
+              2.1517222525970476,
+              2.2860119239057024
+            ],
+            "T_log_se": 0.181478,
+            "T_log_ci95": [
+              -8.601811,
+              -7.976833
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "GraphDimension": {
+          "class": "divergence",
+          "d": 1.041266,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -13.769831,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.024665562404617293,
+            "d_ci95": [
+              0.9979176256888198,
+              1.0858131586982556
+            ],
+            "T_log_se": 0.114793,
+            "T_log_ci95": [
+              -13.971572,
+              -13.56251
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "PersistentHomology": {
+          "class": "divergence",
+          "d": 2.065729,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -9.002021,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.28203214598083987,
+            "d_ci95": [
+              1.3643584435146547,
+              2.3121073243078154
+            ],
+            "T_log_se": 1.312566,
+            "T_log_ci95": [
+              -12.266171,
+              -7.855386
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "MFA": {
+          "class": "divergence",
+          "d": 3.0,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -4.65396,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.0,
+            "d_ci95": [
+              3.0,
+              3.0
+            ],
+            "T_log_se": 0.0,
+            "T_log_ci95": [
+              -4.65396,
+              -4.65396
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "SpectralDimension": {
+          "class": "null_reference",
+          "d": 2.412139,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -7.389842,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.02019486891621081,
+            "d_ci95": [
+              2.371538017819533,
+              2.4437724050218086
+            ],
+            "T_log_se": 0.093986,
+            "T_log_ci95": [
+              -7.578797,
+              -7.242622
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "Hurst2mH": {
+          "class": "saturation",
+          "d": 1.400378,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -12.098538,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.011256219586580034,
+            "d_ci95": [
+              1.385755862572076,
+              1.426723920131637
+            ],
+            "T_log_se": 0.052386,
+            "T_log_ci95": [
+              -12.166589,
+              -11.975925
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        }
+      },
+      "anchor_readings": {
+        "saturation": {
+          "d": 1.251936,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -12.789381,
+          "estimators_used": [
+            "Higuchi",
+            "Katz",
+            "Petrosian",
+            "Sevcik",
+            "BoxCounting",
+            "Hurst2mH",
+            "DFA"
+          ],
+          "n_estimators_used": 7,
+          "between_estimator_spread": {
+            "n_estimators": 7,
+            "q25": 1.068254,
+            "q75": 1.496449,
+            "iqr": 0.428195,
+            "min": 1.044001,
+            "max": 1.85565,
+            "interpretation": "dispersion entre estimateurs; distincte de l'incertitude bootstrap de l'ancre"
+          },
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.030441448464830406,
+            "d_ci95": [
+              1.179179035820962,
+              1.297684662423358
+            ],
+            "T_log_se": 0.141673,
+            "T_log_ci95": [
+              -13.127989,
+              -12.576468
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "criticality": {
+          "d": 2.713662,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -5.986566,
+          "estimators_used": [
+            "CorrelationD2",
+            "GrassbergerProcaccia",
+            "InformationD1",
+            "VisibilityGraph",
+            "DANCo",
+            "Fisher"
+          ],
+          "n_estimators_used": 6,
+          "between_estimator_spread": {
+            "n_estimators": 6,
+            "q25": 2.21287,
+            "q75": 2.747559,
+            "iqr": 0.53469,
+            "min": 0.521142,
+            "max": 3.582312,
+            "interpretation": "dispersion entre estimateurs; distincte de l'incertitude bootstrap de l'ancre"
+          },
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.10801417358437664,
+            "d_ci95": [
+              2.6012604666935237,
+              3.029552652275997
+            ],
+            "T_log_se": 0.502694,
+            "T_log_ci95": [
+              -6.509678,
+              -4.516423
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "divergence": {
+          "d": 2.606923,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -6.483325,
+          "estimators_used": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "LocalPCA",
+            "GraphDimension",
+            "PersistentHomology",
+            "MFA"
+          ],
+          "n_estimators_used": 6,
+          "between_estimator_spread": {
+            "n_estimators": 6,
+            "q25": 2.102758,
+            "q75": 3.438155,
+            "iqr": 1.335397,
+            "min": 1.041266,
+            "max": 6.007379,
+            "interpretation": "dispersion entre estimateurs; distincte de l'incertitude bootstrap de l'ancre"
+          },
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.09185223338632564,
+            "d_ci95": [
+              2.3143557476389325,
+              2.6560536621539077
+            ],
+            "T_log_se": 0.427477,
+            "T_log_ci95": [
+              -7.844922,
+              -6.254673
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "null_reference": {
+          "d": 2.412139,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -7.389842,
+          "estimators_used": [
+            "SpectralDimension"
+          ],
+          "n_estimators_used": 1,
+          "between_estimator_spread": {
+            "n_estimators": 1,
+            "q25": 2.412139,
+            "q75": 2.412139,
+            "iqr": 0.0,
+            "min": 2.412139,
+            "max": 2.412139,
+            "interpretation": "dispersion entre estimateurs; distincte de l'incertitude bootstrap de l'ancre"
+          },
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.02019486891621081,
+            "d_ci95": [
+              2.371538017819533,
+              2.4437724050218086
+            ],
+            "T_log_se": 0.093986,
+            "T_log_ci95": [
+              -7.578797,
+              -7.242622
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        }
+      },
+      "global_tension": {
+        "status": "not_defined",
+        "reason": "La règle de triangulation finale n'est pas encore formalisée."
+      }
+    },
+    {
+      "profile_id": "system_size:256",
+      "n_scale": {
+        "kind": "system_size",
+        "value": 256
+      },
+      "formula": "T_log=(d-4)*ln(n)",
+      "estimator_readings": {
+        "Higuchi": {
+          "class": "saturation",
+          "d": 1.85565,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -11.890801,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.02408117749103424,
+            "d_ci95": [
+              1.7899828089687517,
+              1.8814323666742951
+            ],
+            "T_log_se": 0.133534,
+            "T_log_ci95": [
+              -12.254937,
+              -11.747833
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "DFA": {
+          "class": "saturation",
+          "d": 1.251936,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -15.238503,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.030441448464830406,
+            "d_ci95": [
+              1.179179035820962,
+              1.297684662423358
+            ],
+            "T_log_se": 0.168803,
+            "T_log_ci95": [
+              -15.641953,
+              -14.984818
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "Katz": {
+          "class": "saturation",
+          "d": 1.085854,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -16.159457,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.0013890122025062288,
+            "d_ci95": [
+              1.0825553579715967,
+              1.087815329477825
+            ],
+            "T_log_se": 0.007702,
+            "T_log_ci95": [
+              -16.177748,
+              -16.148581
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "Petrosian": {
+          "class": "saturation",
+          "d": 1.050654,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -16.354647,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.0014661237778593782,
+            "d_ci95": [
+              1.046451706263714,
+              1.0516787659264941
+            ],
+            "T_log_se": 0.00813,
+            "T_log_ci95": [
+              -16.377949,
+              -16.348964
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "Sevcik": {
+          "class": "saturation",
+          "d": 1.592519,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -13.349909,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.013295687958147338,
+            "d_ci95": [
+              1.5827039512744658,
+              1.636233835271809
+            ],
+            "T_log_se": 0.073727,
+            "T_log_ci95": [
+              -13.404336,
+              -13.107503
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "BoxCounting": {
+          "class": "saturation",
+          "d": 1.044001,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -16.391539,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.017341455471279774,
+            "d_ci95": [
+              1.0217155992982185,
+              1.0902242960303288
+            ],
+            "T_log_se": 0.096161,
+            "T_log_ci95": [
+              -16.515115,
+              -16.135223
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "CorrelationD2": {
+          "class": "criticality",
+          "d": 2.698538,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -7.216838,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.11607728136223337,
+            "d_ci95": [
+              2.6222687465865553,
+              3.06990846434196
+            ],
+            "T_log_se": 0.643669,
+            "T_log_ci95": [
+              -7.639764,
+              -5.157523
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "GrassbergerProcaccia": {
+          "class": "criticality",
+          "d": 2.728786,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -7.049107,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.1194042798463104,
+            "d_ci95": [
+              2.612691510866677,
+              3.0806623098714967
+            ],
+            "T_log_se": 0.662118,
+            "T_log_ci95": [
+              -7.692872,
+              -5.097891
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "InformationD1": {
+          "class": "criticality",
+          "d": 0.521142,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -19.290885,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.04984120466738828,
+            "d_ci95": [
+              0.3918642809694523,
+              0.5824133368667318
+            ],
+            "T_log_se": 0.276378,
+            "T_log_ci95": [
+              -20.007753,
+              -18.951124
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "VisibilityGraph": {
+          "class": "criticality",
+          "d": 2.05098,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -10.807662,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.028104482712253832,
+            "d_ci95": [
+              2.0122138359869535,
+              2.120930447897529
+            ],
+            "T_log_se": 0.155844,
+            "T_log_ci95": [
+              -11.022627,
+              -10.419774
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "DANCo": {
+          "class": "criticality",
+          "d": 2.753817,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -6.910306,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.15371955811618682,
+            "d_ci95": [
+              2.585504420220331,
+              2.9221301016137313
+            ],
+            "T_log_se": 0.852402,
+            "T_log_ci95": [
+              -7.843629,
+              -5.97698
+            ],
+            "n_valid": 188,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "Fisher": {
+          "class": "criticality",
+          "d": 3.582312,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -2.316154,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.0526362440757319,
+            "d_ci95": [
+              3.548587860286067,
+              3.7552526860619526
+            ],
+            "T_log_se": 0.291877,
+            "T_log_ci95": [
+              -2.50316,
+              -1.357167
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "LevinaBickel": {
+          "class": "divergence",
+          "d": 3.584207,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -2.305646,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 1.54931584951386,
+            "d_ci95": [
+              2.4489445655135094,
+              7.775551149274118
+            ],
+            "T_log_se": 8.591231,
+            "T_log_ci95": [
+              -8.600878,
+              20.936101
+            ],
+            "n_valid": 298,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "PCAIntrinsic": {
+          "class": "divergence",
+          "d": 6.007379,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": 11.131273,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.11744548498516584,
+            "d_ci95": [
+              5.791403987723905,
+              6.220687075141742
+            ],
+            "T_log_se": 0.651256,
+            "T_log_ci95": [
+              9.933653,
+              12.314104
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "LocalPCA": {
+          "class": "divergence",
+          "d": 2.213846,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -9.904541,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.03899426072579683,
+            "d_ci95": [
+              2.1517222525970476,
+              2.2860119239057024
+            ],
+            "T_log_se": 0.21623,
+            "T_log_ci95": [
+              -10.249028,
+              -9.504368
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "GraphDimension": {
+          "class": "divergence",
+          "d": 1.041266,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -16.406705,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.024665562404617293,
+            "d_ci95": [
+              0.9979176256888198,
+              1.0858131586982556
+            ],
+            "T_log_se": 0.136775,
+            "T_log_ci95": [
+              -16.647079,
+              -16.159683
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "PersistentHomology": {
+          "class": "divergence",
+          "d": 2.065729,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -10.725876,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.28203214598083987,
+            "d_ci95": [
+              1.3643584435146547,
+              2.3121073243078154
+            ],
+            "T_log_se": 1.563918,
+            "T_log_ci95": [
+              -14.6151,
+              -9.359664
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "MFA": {
+          "class": "divergence",
+          "d": 3.0,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -5.545177,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.0,
+            "d_ci95": [
+              3.0,
+              3.0
+            ],
+            "T_log_se": 0.0,
+            "T_log_ci95": [
+              -5.545177,
+              -5.545177
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "SpectralDimension": {
+          "class": "null_reference",
+          "d": 2.412139,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -8.804971,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.02019486891621081,
+            "d_ci95": [
+              2.371538017819533,
+              2.4437724050218086
+            ],
+            "T_log_se": 0.111984,
+            "T_log_ci95": [
+              -9.030111,
+              -8.629558
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "Hurst2mH": {
+          "class": "saturation",
+          "d": 1.400378,
+          "d_definition": "median_of_available_estimator_summaries_for_selected_fluxes",
+          "T_log": -14.415365,
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.011256219586580034,
+            "d_ci95": [
+              1.385755862572076,
+              1.426723920131637
+            ],
+            "T_log_se": 0.062418,
+            "T_log_ci95": [
+              -14.496448,
+              -14.269272
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        }
+      },
+      "anchor_readings": {
+        "saturation": {
+          "d": 1.251936,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -15.238503,
+          "estimators_used": [
+            "Higuchi",
+            "Katz",
+            "Petrosian",
+            "Sevcik",
+            "BoxCounting",
+            "Hurst2mH",
+            "DFA"
+          ],
+          "n_estimators_used": 7,
+          "between_estimator_spread": {
+            "n_estimators": 7,
+            "q25": 1.068254,
+            "q75": 1.496449,
+            "iqr": 0.428195,
+            "min": 1.044001,
+            "max": 1.85565,
+            "interpretation": "dispersion entre estimateurs; distincte de l'incertitude bootstrap de l'ancre"
+          },
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.030441448464830406,
+            "d_ci95": [
+              1.179179035820962,
+              1.297684662423358
+            ],
+            "T_log_se": 0.168803,
+            "T_log_ci95": [
+              -15.641953,
+              -14.984818
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "criticality": {
+          "d": 2.713662,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -7.132972,
+          "estimators_used": [
+            "CorrelationD2",
+            "GrassbergerProcaccia",
+            "InformationD1",
+            "VisibilityGraph",
+            "DANCo",
+            "Fisher"
+          ],
+          "n_estimators_used": 6,
+          "between_estimator_spread": {
+            "n_estimators": 6,
+            "q25": 2.21287,
+            "q75": 2.747559,
+            "iqr": 0.53469,
+            "min": 0.521142,
+            "max": 3.582312,
+            "interpretation": "dispersion entre estimateurs; distincte de l'incertitude bootstrap de l'ancre"
+          },
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.10801417358437664,
+            "d_ci95": [
+              2.6012604666935237,
+              3.029552652275997
+            ],
+            "T_log_se": 0.598958,
+            "T_log_ci95": [
+              -7.756259,
+              -5.381303
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "divergence": {
+          "d": 2.606923,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -7.724859,
+          "estimators_used": [
+            "LevinaBickel",
+            "PCAIntrinsic",
+            "LocalPCA",
+            "GraphDimension",
+            "PersistentHomology",
+            "MFA"
+          ],
+          "n_estimators_used": 6,
+          "between_estimator_spread": {
+            "n_estimators": 6,
+            "q25": 2.102758,
+            "q75": 3.438155,
+            "iqr": 1.335397,
+            "min": 1.041266,
+            "max": 6.007379,
+            "interpretation": "dispersion entre estimateurs; distincte de l'incertitude bootstrap de l'ancre"
+          },
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.09185223338632564,
+            "d_ci95": [
+              2.3143557476389325,
+              2.6560536621539077
+            ],
+            "T_log_se": 0.509337,
+            "T_log_ci95": [
+              -9.347196,
+              -7.452421
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        },
+        "null_reference": {
+          "d": 2.412139,
+          "d_definition": "median_of_finite_per_estimator_medians_in_class",
+          "T_log": -8.804971,
+          "estimators_used": [
+            "SpectralDimension"
+          ],
+          "n_estimators_used": 1,
+          "between_estimator_spread": {
+            "n_estimators": 1,
+            "q25": 2.412139,
+            "q75": 2.412139,
+            "iqr": 0.0,
+            "min": 2.412139,
+            "max": 2.412139,
+            "interpretation": "dispersion entre estimateurs; distincte de l'incertitude bootstrap de l'ancre"
+          },
+          "uncertainty": {
+            "status": "estimated",
+            "method": "moving_block_bootstrap_over_progress_positions",
+            "d_se": 0.02019486891621081,
+            "d_ci95": [
+              2.371538017819533,
+              2.4437724050218086
+            ],
+            "T_log_se": 0.111984,
+            "T_log_ci95": [
+              -9.030111,
+              -8.629558
+            ],
+            "n_valid": 300,
+            "block_length_positions": 24,
+            "n_scale_uncertainty": "n est traité comme une valeur fixe fournie par l'utilisateur ou le défaut row_count",
+            "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+          }
+        }
+      },
+      "global_tension": {
+        "status": "not_defined",
+        "reason": "La règle de triangulation finale n'est pas encore formalisée."
+      }
+    }
+  ],
+  "T_log_d_uncertainty": {
+    "status": "estimated",
+    "method": "moving_block_bootstrap_over_progress_positions",
+    "n_bootstrap": 300,
+    "n_landscape_positions": 120,
+    "n_input_rows": 105,
+    "input_window_size": 21,
+    "block_length_positions": 24,
+    "estimators": {
+      "Higuchi": {
+        "n_valid": 300,
+        "se": 0.02408117749103424,
+        "ci95_low": 1.7899828089687517,
+        "ci95_high": 1.8814323666742951
+      },
+      "Katz": {
+        "n_valid": 300,
+        "se": 0.0013890122025062288,
+        "ci95_low": 1.0825553579715967,
+        "ci95_high": 1.087815329477825
+      },
+      "Petrosian": {
+        "n_valid": 300,
+        "se": 0.0014661237778593782,
+        "ci95_low": 1.046451706263714,
+        "ci95_high": 1.0516787659264941
+      },
+      "Sevcik": {
+        "n_valid": 300,
+        "se": 0.013295687958147338,
+        "ci95_low": 1.5827039512744658,
+        "ci95_high": 1.636233835271809
+      },
+      "BoxCounting": {
+        "n_valid": 300,
+        "se": 0.017341455471279774,
+        "ci95_low": 1.0217155992982185,
+        "ci95_high": 1.0902242960303288
+      },
+      "Hurst2mH": {
+        "n_valid": 300,
+        "se": 0.011256219586580034,
+        "ci95_low": 1.385755862572076,
+        "ci95_high": 1.426723920131637
+      },
+      "DFA": {
+        "n_valid": 300,
+        "se": 0.030441448464830406,
+        "ci95_low": 1.179179035820962,
+        "ci95_high": 1.297684662423358
+      },
+      "CorrelationD2": {
+        "n_valid": 300,
+        "se": 0.11607728136223337,
+        "ci95_low": 2.6222687465865553,
+        "ci95_high": 3.06990846434196
+      },
+      "GrassbergerProcaccia": {
+        "n_valid": 300,
+        "se": 0.1194042798463104,
+        "ci95_low": 2.612691510866677,
+        "ci95_high": 3.0806623098714967
+      },
+      "InformationD1": {
+        "n_valid": 300,
+        "se": 0.04984120466738828,
+        "ci95_low": 0.3918642809694523,
+        "ci95_high": 0.5824133368667318
+      },
+      "VisibilityGraph": {
+        "n_valid": 300,
+        "se": 0.028104482712253832,
+        "ci95_low": 2.0122138359869535,
+        "ci95_high": 2.120930447897529
+      },
+      "TwoNN": {
+        "n_valid": 0,
+        "se": null,
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "DANCo": {
+        "n_valid": 188,
+        "se": 0.15371955811618682,
+        "ci95_low": 2.585504420220331,
+        "ci95_high": 2.9221301016137313
+      },
+      "Fisher": {
+        "n_valid": 300,
+        "se": 0.0526362440757319,
+        "ci95_low": 3.548587860286067,
+        "ci95_high": 3.7552526860619526
+      },
+      "LevinaBickel": {
+        "n_valid": 298,
+        "se": 1.54931584951386,
+        "ci95_low": 2.4489445655135094,
+        "ci95_high": 7.775551149274118
+      },
+      "PCAIntrinsic": {
+        "n_valid": 300,
+        "se": 0.11744548498516584,
+        "ci95_low": 5.791403987723905,
+        "ci95_high": 6.220687075141742
+      },
+      "LocalPCA": {
+        "n_valid": 300,
+        "se": 0.03899426072579683,
+        "ci95_low": 2.1517222525970476,
+        "ci95_high": 2.2860119239057024
+      },
+      "GraphDimension": {
+        "n_valid": 300,
+        "se": 0.024665562404617293,
+        "ci95_low": 0.9979176256888198,
+        "ci95_high": 1.0858131586982556
+      },
+      "PersistentHomology": {
+        "n_valid": 300,
+        "se": 0.28203214598083987,
+        "ci95_low": 1.3643584435146547,
+        "ci95_high": 2.3121073243078154
+      },
+      "MFA": {
+        "n_valid": 300,
+        "se": 0.0,
+        "ci95_low": 3.0,
+        "ci95_high": 3.0
+      },
+      "SpectralDimension": {
+        "n_valid": 300,
+        "se": 0.02019486891621081,
+        "ci95_low": 2.371538017819533,
+        "ci95_high": 2.4437724050218086
+      }
+    },
+    "anchors": {
+      "saturation": {
+        "n_valid": 300,
+        "se": 0.030441448464830406,
+        "ci95_low": 1.179179035820962,
+        "ci95_high": 1.297684662423358
+      },
+      "criticality": {
+        "n_valid": 300,
+        "se": 0.10801417358437664,
+        "ci95_low": 2.6012604666935237,
+        "ci95_high": 3.029552652275997
+      },
+      "divergence": {
+        "n_valid": 300,
+        "se": 0.09185223338632564,
+        "ci95_low": 2.3143557476389325,
+        "ci95_high": 2.6560536621539077
+      },
+      "null_reference": {
+        "n_valid": 300,
+        "se": 0.02019486891621081,
+        "ci95_low": 2.371538017819533,
+        "ci95_high": 2.4437724050218086
+      }
+    },
+    "interpretation": "Intervalle d'échantillonnage par blocs sur le paysage ordonné; pas une incertitude universelle ni une propagation de toutes les sources d'erreur."
+  }
+}

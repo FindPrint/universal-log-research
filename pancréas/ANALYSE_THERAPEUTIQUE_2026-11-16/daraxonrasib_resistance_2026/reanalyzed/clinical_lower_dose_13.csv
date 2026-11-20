@@ -1,0 +1,24 @@
+﻿Supplementary  Table 2. Acquired genomic alterations detected in paired baseline and EOT ctDNA profiled from 13 patients treated with 120 mg or lower doses of daily daraxonrasib.,,,,,,,,,,,
+Patient ID,Planned Dose (mg) ,"Enrollment
+(RAS Mutation)",Best Overall Response (confirmed),"Acquired short variants in RAS signaling pathway
+(not present at baseline)",Acquired copy number alterations in RAS signaling pathway (not present at baseline),Pretreatment TP53 Status,Other Acquired Alterations (not present at baseline),Genomic Max VAF percentage detected in end of treatment ctDNA (%),RAS VAF detected in pre-treatment ctDNA (%),RAS VAF detected in On-treatment ctDNA (%),RAS VAF detected in End of Treatment ctDNA (%)
+Patient 45,120mg QD,KRAS G12D,PR,Not detected ,Not detected ,WT,KMT2D A4594fs,1.64,0.48,0.05,Not detected
+Patient 46,120mg QD,KRAS G12D,SD,Not detected ,Not detected ,WT,TERT SPLICE,1.32,Not detected,Not detected,Not detected
+Patient 47,40mg QD,KRAS G12V,SD,PIK3CA E545K; PIK3CA E542K,Not detected ,Mut,PBRM1 K484fs; ATM C2753_T2754del,4.4000000000000004,2.87,0.19,4.4000000000000004
+Patient 48,120mg QD,KRAS G12V,PR,PTPN11 A461G; BRAF D594G; RIT1 F82C; PTPN11 A461T; BRAF N581S; BRAF D594N; RIT1 M90V; PDGFRA D846Y; BRAF G469A,Not detected ,Mut,APC Q1228*; SMARCA4 E536*,11.02,,0.13,12.89
+Patient 49,20mg QD,KRAS G12D,SD,Not detected ,Not detected ,Mut,TP53 C238Y,2.2400000000000002,Not detected,Not detected,Not detected
+Patient 50,120mg QD,KRAS G12D,SD,KEAP1 R272H; BRAF G466R, KRAS AMP,Mut,Not detected ,22.39,1.44,Not detected,35.479999999999997
+Patient 51,120mg QD,KRAS G12D,SD,Not detected ,Not detected ,Mut,FOXA1 H247L; FBXW7 R689W,2.95,1.0900000000000001,0.15,2.58
+Patient 52,120mg QD,KRAS G12V,SD,Not detected ,Not detected ,Mut,Not detected ,0.94,0.91,0.17,0.26
+Patient 53,120mg QD,KRAS G12R,SD,NF1 R2517*,Not detected ,WT,RB1 R661Q; KDM6A D1062fs,6.11,Not detected,Not detected,Not detected
+Patient 54,80mg QD,KRAS G12V,SD,Not detected ,Not detected ,Mut,GATA2 S24*; TP53 M237I,7.39,2.84,1.01,3
+Patient 55,80mg QD,KRAS G12D,SD,Not detected ,Not detected ,Mut,Not detected ,5.22,Not detected,Not detected,Not detected
+Patient 56,120mg QD,KRAS G12D,SD,Not detected ,Not detected ,Mut,TP53 K291fs,7.46,0.18,Not detected,7.46
+Patient 57,120mg QD,KRAS G12V,PR,Not detected ,Not detected ,WT,TP53 Y163C; TP53 E271K; CDKN1C D274fs; CDKN2A S7fs,1.57,Not detected,Not detected,0.27
+,,,,,,,,,,,
+fs= Frameshift,,,,,,,,,,,
+del=Deletion via copy number alteration,,,,,,,,,,,
+amp=Gene Amplification,,,,,,,,,,,
+*= premature stop codon resulting from a nonsense mutation,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,

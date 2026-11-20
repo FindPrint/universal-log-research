@@ -1,0 +1,31 @@
+{
+  "question": "Is a pretreatment TP53 variant listed more often among patients with a newly listed KRAS G12C copy-number gain/amplification at end of adagrasib/sotorasib therapy?",
+  "unit": "patient",
+  "patients": 22,
+  "tp53_by_event_table": {
+    "no_pretherapy_variant_listed": {
+      "no_kras_cn_event_listed": 3,
+      "yes": 1
+    },
+    "yes": {
+      "no_kras_cn_event_listed": 15,
+      "yes": 3
+    }
+  },
+  "gain_or_amplification_patient_ids": [
+    "Patient 6",
+    "Patient 9",
+    "Patient 13",
+    "Patient 22"
+  ],
+  "amplification_only_patient_ids": [
+    "Patient 6",
+    "Patient 13",
+    "Patient 22"
+  ],
+  "test": "Fisher exact (patient-level 2x2)",
+  "p_nominal": 1.0,
+  "odds_ratio_or_effect": 0.6,
+  "q_bh_global_in_exploratory_grid": 1.0,
+  "interpretation": "cross-MOA exploratory comparison; rows absent from the supplement are not confirmed negative assays; does not establish TP53 causality or a treatment recommendation"
+}

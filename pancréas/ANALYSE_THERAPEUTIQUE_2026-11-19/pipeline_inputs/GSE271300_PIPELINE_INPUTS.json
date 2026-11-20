@@ -1,0 +1,188 @@
+{
+  "source": "NCBI GEO GSE271300",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271300",
+  "intended_pipeline": "UNIVERSAL_LOG_v5.9.4.py",
+  "numeric treatment encoding": "vehicle=0, MRTX1133=1",
+  "usage": "All numeric columns are made available as candidate controls/fluxes. Cell/animal IDs remain text metadata and are not numeric controls.",
+  "records": [
+    {
+      "model": "PC69",
+      "input_csv": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_inputs\\GSE271300_PC69_singlet_cells_multiflux.csv",
+      "rows_cells": 5083,
+      "animal_replicates": 6,
+      "numeric_controls_and_fluxes": [
+        "Treatment_code",
+        "CellState_basal",
+        "CellState_classical",
+        "scBasalScore",
+        "scClassicalScore",
+        "EMTScore",
+        "S_score",
+        "G2M_score",
+        "KRAS",
+        "EGFR",
+        "ERBB2",
+        "ERBB3",
+        "STAT3",
+        "GATA6",
+        "KRT19",
+        "CEACAM5",
+        "TP63"
+      ],
+      "mouse_assignment_diagnostics": {
+        "model": "PC69",
+        "analyzed_file": "GSE271300_PDX_PC69_analyzed.h5ad",
+        "qc_file": "GSE271300_PDX_PC69_QC.h5ad",
+        "analyzed_sha256": "fd05a35d32358c564f4fdc53e8a115722fd53edd8bd7fd669e29b1c520339ab4",
+        "qc_sha256": "cc7b1602ae82cfd5e036b5bcd77234f8d49ef6c1f48845c93842b64d5310c1ad",
+        "assigned_cells": 5083,
+        "unassigned_or_doublet_cells": 14,
+        "animals": {
+          "MRTX1_B0251": {
+            "treatment": "mrtx",
+            "cells": 1429,
+            "basal_cells": 294
+          },
+          "MRTX2_B0252": {
+            "treatment": "mrtx",
+            "cells": 752,
+            "basal_cells": 124
+          },
+          "MRTX3_B0253": {
+            "treatment": "mrtx",
+            "cells": 1000,
+            "basal_cells": 149
+          },
+          "Vehicle1_B0254": {
+            "treatment": "veh",
+            "cells": 586,
+            "basal_cells": 420
+          },
+          "Vehicle2_B0255": {
+            "treatment": "veh",
+            "cells": 745,
+            "basal_cells": 529
+          },
+          "Vehicle3_B0256": {
+            "treatment": "veh",
+            "cells": 571,
+            "basal_cells": 463
+          }
+        }
+      }
+    },
+    {
+      "model": "PC106",
+      "input_csv": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_inputs\\GSE271300_PC106_singlet_cells_multiflux.csv",
+      "rows_cells": 7145,
+      "animal_replicates": 7,
+      "numeric_controls_and_fluxes": [
+        "Treatment_code",
+        "CellState_basal",
+        "CellState_classical",
+        "scBasalScore",
+        "scClassicalScore",
+        "S_score",
+        "G2M_score",
+        "G1Score",
+        "G2MScore",
+        "KRAS",
+        "EGFR",
+        "ERBB2",
+        "ERBB3",
+        "STAT3",
+        "GATA6",
+        "KRT19",
+        "CEACAM5",
+        "TP63"
+      ],
+      "mouse_assignment_diagnostics": {
+        "model": "PC106",
+        "analyzed_file": "GSE271300_PDX_PC106_analyzed.h5ad",
+        "qc_file": "GSE271300_PDX_PC106_QC.h5ad",
+        "analyzed_sha256": "1ba2117d115068c5b43f642682e89e9b2787ef9511446147561d296d5ebb811c",
+        "qc_sha256": "d0eb2c3cea23ce94291b71c8044642016ead05e2fef0ff84b1ca8d989f307295",
+        "analyzed_cells": 7298,
+        "qc_cells": 7544,
+        "exact_barcode_matches": 7298,
+        "vehicle_tag_columns": [
+          "PC106-ANS184-VEH-B0252",
+          "PC106-ANS185-VEH-B0253",
+          "PC106-ANS187-VEH-B0254"
+        ],
+        "vehicle_tag_argmax_counts": {
+          "PC106-ANS184-VEH-B0252": 1716,
+          "PC106-ANS185-VEH-B0253": 1528,
+          "PC106-ANS187-VEH-B0254": 2147
+        },
+        "vehicle_cells_with_top_tag_at_least_2x_second": 4681,
+        "vehicle_cells_total": 5391,
+        "vehicle_tag_ratio_median": 13.280884265279584,
+        "assigned_cells": 7145,
+        "unassigned_or_doublet_cells": 153,
+        "animals": {
+          "PC106-ANS184-VEH-B0252": {
+            "treatment": "veh",
+            "cells": 1716,
+            "basal_cells": 98
+          },
+          "PC106-ANS185-VEH-B0253": {
+            "treatment": "veh",
+            "cells": 1528,
+            "basal_cells": 54
+          },
+          "PC106-ANS187-VEH-B0254": {
+            "treatment": "veh",
+            "cells": 2147,
+            "basal_cells": 88
+          },
+          "PC106-ANS188-MRTX1-B0255": {
+            "treatment": "mrtx",
+            "cells": 184,
+            "basal_cells": 1
+          },
+          "PC106-ANS189-MRTX2-B0256": {
+            "treatment": "mrtx",
+            "cells": 749,
+            "basal_cells": 14
+          },
+          "PC106-ANS190-MRTX3-B0257": {
+            "treatment": "mrtx",
+            "cells": 88,
+            "basal_cells": 1
+          },
+          "PC106-ANS191-MRTX4-B0258": {
+            "treatment": "mrtx",
+            "cells": 733,
+            "basal_cells": 7
+          }
+        }
+      }
+    },
+    {
+      "model": "GA60",
+      "input_csv": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_inputs\\GSE271300_GA60_singlet_cells_multiflux.csv",
+      "rows_cells": 14508,
+      "animal_replicates": null,
+      "numeric_controls_and_fluxes": [
+        "Treatment_code",
+        "CellState_basal",
+        "CellState_classical",
+        "scBasalScore",
+        "scClassicalScore",
+        "S_score",
+        "G2M_score",
+        "KRAS",
+        "EGFR",
+        "ERBB2",
+        "ERBB3",
+        "STAT3",
+        "GATA6",
+        "KRT19",
+        "CEACAM5",
+        "TP63"
+      ],
+      "warning": "Pooled treatment comparison; no animal IDs available in inspected analyzed H5AD."
+    }
+  ]
+}

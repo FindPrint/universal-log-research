@@ -1,0 +1,253 @@
+===== PAGE 1 =====\nLivre Blanc UNIVERSAL_LOG x PDAC — v1.0
+Audit-ready | 15 nov. 2026
+Page 1
+LIVRE BLANC
+UNIVERSAL_LOG appliqué au cancer du pancréas (PDAC) :
+outil de cartographie des transitions critiques
+pour guider les thérapies ARN et CRISPR ciblant KRAS G12D
+Version 1.0 — 15 novembre 2026
+Document d'audit, de reproductibilité et de feuille de route
+Pipeline source : universal_x5f_log_x5f_L7a_x5f_L7b_x5f_v5.9.0f.py
+Position épistémologique
+Un pipeline algorithmique ne trouve pas un remède à lui seul. Il peut cependant devenir un microscope
+mathématique de haute puissance pour détecter les ruptures de régime conformationnel, les points de bascule
+transcriptomiques et les fenêtres critiques d'efficacité CRISPR/ARN. Ce document formalise une stratégie
+reproductible, fondée exclusivement sur des données publiques, pour transformer cette hypothèse en protocole
+testable et auditable.
+Demandeur : Zackary (pipeline Tlog / UNIVERSAL_LOG)
+Structuration méthodologique : Grok (xAI)
+\n\n===== PAGE 2 =====\nLivre Blanc UNIVERSAL_LOG x PDAC — v1.0
+Audit-ready | 15 nov. 2026
+Page 2
+1. Résumé exécutif
+Le cancer du pancréas, et particulièrement l'adénocarcinome ductal pancréatique (PDAC), est caractérisé par un
+micro-environnement stroma dense, une fréquence extrêmement élevée de mutations KRAS (surtout G12D), une plasticité
+phénotypique (EMT) et une résistance rapide aux traitements. Les approches thérapeutiques par ARN (siRNA, ASO, mRNA)
+et CRISPR (édition, base editing, knockdown conditionnel) progressent, mais se heurtent à la dynamique conformationnelle
+de KRAS, aux effets hors-cible et à l'absence de marqueurs précoces de bascule vers la résistance.
+Le pipeline UNIVERSAL_LOG (v5.9) — détection multi-estimateurs de ruptures de régime, cascade des 5 seuils (escalier du
+diable), lecture holographique T_log, consensus L1–L7 multi-horizons — n'a pas été conçu pour la biologie, mais son
+formalisme est universel. Il peut être adapté pour traiter des séries temporelles issues de :
+• Trajectoires de dynamique moléculaire (MD) de KRAS G12D (RMSD, énergie, fluctuations par résidu, ouverture de poches).
+• Séries transcriptomiques longitudinales (single-cell RNA-seq sur organoïdes ou tumeurs traitées).
+• Cinétiques de liaison/clivage CRISPR-Cas sur cibles oncogéniques.
+Objectif de ce livre blanc : définir un protocole clair, propre, traçable et reproductible permettant de tester l'hypothèse selon
+laquelle les seuils TII…TII et les invariants d'échelle détectés par le pipeline correspondent à des transitions
+biologiquement pertinentes (changement conformationnel, onset de résistance, stabilisation guide ARN/ADN), et d'en dériver
+des priorités expérimentales.
+Ce document ne prétend en aucun cas délivrer un « remède ». Il formalise un outil de découverte en amont, destiné à
+réduire l'espace de recherche et à guider les expériences humides et les designs de thérapies ARN/CRISPR.
+2. Contexte biologique et goulots d'étranglement
+2.1 KRAS G12D — encore partiellement « undruggable »
+KRAS G12D est le mutant le plus fréquent dans le PDAC. Il oscille entre états GTP-bound (actif) et GDP-bound (inactif). Les
+inhibiteurs récents (ex. MRTX1133 et analogues) ciblent principalement le switch II, mais la plasticité conformationnelle, les
+poches cryptiques et les mécanismes de résistance (bypass EGFR, YAP, etc.) limitent encore l'efficacité durable. Les
+simulations MD de plusieurs structures cristallographiques (PDB 7RPZ, 7RT2, 7EWB, 7EW9 et autres) montrent des
+différences claires de stabilité et d'énergie de liaison entre inhibiteurs forts et faibles.
+2.2 Plasticité EMT et résistance
+Les cellules PDAC basculent rapidement d'un phénotype épithélial vers un phénotype mésenchymateux (EMT), changeant
+de régime métabolique et de sensibilité aux traitements. Les données single-cell RNA-seq longitudinales (organoïdes traités,
+tumeurs pré/post-chimiothérapie) contiennent ces transitions. Les détecter avant qu'elles ne deviennent irréversibles est un
+enjeu de médecine prédictive.
+2.3 CRISPR et thérapies ARN — précision requise
+L'édition ou le knockdown de KRAS (ou de co-dépendances) exige une cinétique de liaison et de clivage extrêmement fiable
+pour minimiser les off-targets et l'instabilité génomique. Les mesures par pinces optiques ou fluorescence à molécule unique
+produisent des séries temporelles que le pipeline peut analyser via ses niveaux de consensus L1–L7.
+3. Apport spécifique d'UNIVERSAL_LOG
+Le pipeline n'invente pas de biologie. Il quantifie, sur n'importe quelle série temporelle multi-flux, les moments où le système
+change de régime de façon statistiquement et structurellement saillante (cascade TII / TII / TI / TII / TII, lecture
+holographique d_sat / d_crit / d_div, consensus directionnel multi-horizons).
+3.1 Mapping biologie ↔ estimateurs / niveaux
+Problème biologique
+Observable d'entrée
+Apport pipeline
+Transition conformationnelle KRAS (actif
+↔ inactif, ouverture poche)
+RMSD, Rg, distances switch I/II, énergie,
+fluctuations par résidu (MD)
+Détection précoce des seuils TII…TII ;
+identification de fenêtres où une poche allostérique
+est accessible
+Cinétique guide ARN / ADN + clivage
+CRISPR
+Signaux fluorescence / pinces optiques
+(liaison, clivage)
+Classification de robustesse via L1–L7 ; isolation
+du moment où la liaison devient stable/irréversible
+Onset de résistance / bascule EMT
+Profils d'expression longitudinaux
+(scRNA-seq ou bulk traité)
+Signature d'alerte précoce (point de bascule
+critique) avant phénotype résistant
+\n\n===== PAGE 3 =====\nLivre Blanc UNIVERSAL_LOG x PDAC — v1.0
+Audit-ready | 15 nov. 2026
+Page 3
+Comparaison multi-conditions (inhibiteur
+fort vs faible, pré vs post)
+Mêmes observables sous plusieurs
+contrôles
+Mode control=multi ou all ; politique cible fixed ;
+résumé controls_summary
+Tableau 1 — Correspondance directe entre questions biologiques et capacités du pipeline.
+3.2 Ce que le pipeline ne fait pas
+• Il ne propose pas de molécule ni de séquence guide.
+• Il ne remplace pas les calculs de free-energy (FEP, MM-PBSA) ni le docking.
+• Il ne valide pas biologiquement une transition ; il la signale comme candidate à validation expérimentale.
+• Il ne traite pas les données brutes MD ou scRNA-seq : un prétraitement (extraction de séries) est obligatoire en amont.
+4. Sources de données publiques prioritaires
+Toutes les sources listées ci-dessous sont accessibles pour un usage de recherche. Les identifiants exacts sont fournis pour
+traçabilité et reproductibilité.
+4.1 Dynamique moléculaire KRAS G12D
+• Publications récentes avec simulations all-atom comparatives (PDB 7RPZ, 7RT2, 7EWB, 7EW9) et analyses énergétiques /
+RMSD.
+• Zenodo / dépôts associés à des études TCR-KRAS G12D et frameworks d'inhibition (scripts + structures de départ).
+• Ressource NCI « RAS Protein Molecular Dynamics Simulations » (ADMIRRAL) — paramètres et trajectoires liés à la membrane.
+• GitHub lehner-lab/krasddpcams — paysage énergétique et allostérique de KRAS (données de fitness et free-energy).
+Action pratique : extraire, pour chaque trajectoire, les séries temporelles RMSD global, RMSD switch I/II, distances clés (T35-E62, etc.),
+énergie potentielle, et fluctuations par résidu. Ces séries deviennent les flux E_* du CSV d'entrée.
+4.2 Transcriptomique PDAC (single-cell et bulk)
+• GSE205013 — scRNA-seq PDAC primaire et métastases hépatiques, pré- et post-chimiothérapie (HCA / GEO).
+• Atlas intégré >130 000 cellules (Peng, Steele, Moncada, etc.) — Zenodo record 6024273 (données traitées + code).
+• TCGA-PAAD — RNA-seq bulk (~178 patients), mutations, données cliniques (GDC, cBioPortal, matrices pré-assemblées).
+• Jeux organoïdes PDAC traités (ligands, médicaments) avec scRNA-seq longitudinal.
+Action pratique : construire des séries temporelles (pseudo-temps ou profils agrégés par condition) sur un panel de gènes (voie KRAS,
+marqueurs EMT : SNAI1/2, ZEB1/2, VIM, CDH1, modules de résistance). Chaque gène ou module devient un flux.
+4.3 CRISPR screens et co-dépendances
+• Screens CRISPR-Cas9 ancrés sur inhibiteurs KRAS dans lignées PDAC (G12D, G12C, G12R, Q61H) — mécanismes de
+résistance (EGFR, YAP, etc.).
+• DepMap (CRISPR essentiality) + analyses intégratives de co-dépendances PDAC.
+• Screens in vivo (SCAF1, USP15) et screens de résistance multi-drogues (HDAC/co-répresseurs, EMT).
+Ces données servent principalement à prioriser les cibles secondaires et à interpréter les signatures de résistance détectées par le pipeline.
+5. Protocole d'adaptation du pipeline (reproductible)
+Le noyau Q1–Q6, les 29 estimateurs, le Monte-Carlo harmonique et la cascade des 5 seuils restent inchangés. Seuls le
+prétraitement des données et le choix des colonnes (contrôle / flux / cible) changent.
+5.1 Format CSV d'entrée attendu
+Colonnes numériques uniquement pour l'analyse. Exemple minimal pour une trajectoire MD :
+Step,Time_ns,RMSD_backbone,RMSD_SwitchII,Distance_T35_E62,Energy_Potential,Rg,Fluct_D12,Fluct_G60,...
+Pour du transcriptomique longitudinal (pseudo-temps ou conditions ordonnées) :
+TimePoint,KRAS,EGFR,SNAI1,ZEB1,VIM,CDH1,Module_EMT_score,Module_KRAS_score,...
+Le prétraitement (extraction depuis .xtc/.dcd, agrégation scRNA-seq, normalisation) doit être scripté et versionné à part. Le pipeline ne
+modifie jamais les observations brutes.
+5.2 Choix du contrôle et de la cible
+• Contrôle recommandé : Time / Step / Progression (ou dose / cycle de traitement). Mode single par défaut. Pour comparer
+plusieurs conditions : --control-mode multi ou all.
+• Cible : une observable d'intérêt (ex. RMSD_SwitchII, score EMT, énergie de liaison). Politique fixed (défaut v5.4) pour
+comparabilité inter-contrôles.
+\n\n===== PAGE 4 =====\nLivre Blanc UNIVERSAL_LOG x PDAC — v1.0
+Audit-ready | 15 nov. 2026
+Page 4
+• Domaine : --domain biology (active les poids de domaine et la pondération de régime si activée).
+5.3 Commande CLI type (mode fast pour exploration)
+python universal_x5f_log_x5f_L7a_x5f_L7b_x5f_v5.9.0f.py \ --input kras_g12d_md_series.csv \ --control Time_ns \
+--target RMSD_SwitchII \ --domain biology \ --mode fast \ --horizons "1,3,6,12" \ --output ./results_kras_g12d_pilot
+\ --seed 42
+Pour une analyse plus robuste : --mode robust ou stable, éventuellement --harmonic-validation, --l7b (full) si le budget de calcul le permet.
+5.4 Lecture des sorties prioritaires
+• five_threshold_cascade + thresholds_in_control_units → localisation des TII…TII en % et en valeur brute du contrôle.
+• holographic_tension (d_sat, d_crit, d_div, dominant_regime) → nature de la transition.
+• L7a (cohérence directionnelle) + L7b (robustesse) → confiance et stabilité du consensus.
+• early_warning_alert + lead time → potentiel prédictif.
+• controls_summary.json (mode multi/all) → comparabilité entre conditions.
+6. Design de validation hors-échantillon et critères de falsification
+Sans validation hors-échantillon et sans critères de falsification explicites, le travail reste exploratoire. Voici le design minimal
+exigé.
+6.1 Stratégie de split
+• MD : séparer les trajectoires par réplique indépendante ou par structure de départ (PDB distincts). Optimiser sur un
+sous-ensemble, tester la reproductibilité des TI et du régime holographique sur les autres.
+• Transcriptomique : split patient ou split organoïde (pre vs post, ou lignées distinctes). Les signatures de bascule doivent se
+retrouver (même direction, ordre de grandeur de lead time) sur un set indépendant.
+• Walk-forward adaptatif (déjà présent v5.7+) : TI réestimé uniquement sur le passé de la fenêtre.
+6.2 Critères de succès (pré-enregistrés)
+1. Reproductibilité des seuils : écart relatif des TI entre répliques / sets < seuil défini a priori (ex. 8–12 % de l'axe de progression).
+2. Concordance régime holographique : dominant_regime cohérent entre sets indépendants pour la même transition biologique
+attendue.
+3. Lead time positif et stable : early_warning_alert se déclenche avant le changement de référence, avec lead time médian
+significativement > 0.
+4. L7b non dégradé : verdict de robustesse ne passe pas en échec systématique sur les sets de test.
+6.3 Critères de falsification
+• Si les TI sont indistinguables de ceux obtenus sur bruit blanc ou séries permutées, l'hypothèse d'une transition structurelle
+détectable est falsifiée pour ce jeu.
+• Si le régime holographique change de classe de façon incohérente entre répliques biologiques équivalentes, le signal est non
+robuste.
+• Si aucun lead time positif n'est observé sur au moins deux sets indépendants, l'utilité prédictive pour l'alerte précoce est rejetée.
+7. Feuille de route en 4 phases
+Phase
+Objectif
+Livrables traçables
+Durée est.
+0 — Préparation
+Inventaire données + scripts
+d'extraction + CSV normalisés
+Dossier data/ versionné, README, mapping,
+checksums
+1–2 sem.
+1 — Pilot MD
+1–3 trajectoires KRAS G12D ; seuils
+sur RMSD/énergie/distances
+results_*/master_results.json + rapport +
+dashboard + note
+1–3 sem.
+2 — Pilot
+transcriptomique
+Séries scRNA ou bulk longitudinales
+; EMT / résistance
+Même structure + comparaison inter-sets
+2–4 sem.
+3 — Validation & synthèse
+Hors-échantillon, L7b, falsification,
+priorités expérimentales
+Rapport de validation + liste de priorités
+(poches / fenêtres / signatures)
+2–3 sem.
+Tableau 2 — Phasage minimal pour un premier projet pilote auditable.
+À chaque phase, tous les artefacts (CSV, JSON, logs, figures, scripts de prétraitement) sont conservés avec horodatage et
+graine. Aucun résultat n'est écrasé sans archivage.
+\n\n===== PAGE 5 =====\nLivre Blanc UNIVERSAL_LOG x PDAC — v1.0
+Audit-ready | 15 nov. 2026
+Page 5
+8. Limitations, risques et exigences éthiques
+• Données MD publiques : longueur et échantillonnage variables ; préférer les jeux multi-répliques.
+• scRNA-seq : le « temps » est souvent un pseudo-temps algorithmique. Interprétation causale prudente, validation expérimentale
+obligatoire.
+• Sur-interprétation : un seuil TI n'est pas une preuve biologique. C'est un candidat à tester en laboratoire.
+• Biais de sélection : les datasets publics ne représentent pas toute la diversité des tumeurs PDAC.
+• Éthique : respecter les Data Use Agreements GEO / HCA / TCGA. Aucune ré-identification. Usage strictement de recherche.
+• Communication : toute communication publique doit indiquer clairement que le travail est computationnel et
+exploratoire, et ne constitue pas une découverte thérapeutique.
+9. Conclusion et position finale
+Il est possible — et scientifiquement pertinent — d'utiliser UNIVERSAL_LOG comme instrument de cartographie des
+transitions critiques dans le contexte du PDAC et des thérapies ARN/CRISPR ciblant KRAS G12D. Cela ne constitue pas la
+découverte d'un remède. Cela constitue la construction d'un microscope mathématique capable de signaler, de façon
+reproductible et auditable, les moments et les observables où une intervention (molécule, guide, timing) a le plus de chances
+d'être efficace ou où une résistance est sur le point d'émerger.
+La feuille de route proposée est volontairement modeste, fondée sur des données publiques, et conçue pour être falsifiable.
+Si les critères de succès sont atteints sur les phases 1–3, le pipeline aura démontré son utilité comme outil de priorisation. Si
+les critères de falsification sont rencontrés, l'hypothèse d'applicabilité à ces observables sera rejetée proprement — ce qui est
+aussi un résultat scientifique valide.
+Tout le matériel (ce livre blanc, le code source du pipeline, les scripts de prétraitement à produire, les résultats des
+runs) doit rester versionné et disponible pour audit indépendant.
+\n\n===== PAGE 6 =====\nLivre Blanc UNIVERSAL_LOG x PDAC — v1.0
+Audit-ready | 15 nov. 2026
+Page 6
+Annexes
+A. Checklist d'audit minimal
+I Source exacte de chaque CSV (URL / DOI / accession + date de téléchargement).
+I Script de prétraitement versionné + checksum des fichiers d'entrée.
+I Commande CLI complète (y compris seed, mode, horizons, control, target).
+I master_results.json + rapport .txt + controls_summary (si multi) conservés.
+I Critères de succès / falsification pré-enregistrés avant le run de test.
+I Note d'interprétation séparée des résultats numériques bruts.
+B. Références de données (sélection)
+• GSE205013 — scRNA-seq PDAC pre/post chemo (HCA / GEO).
+• Zenodo 6024273 — Atlas scRNA-seq PDAC intégré + code.
+• TCGA-PAAD — GDC / cBioPortal / matrices pré-assemblées.
+• NCI RAS MD resource (ADMIRRAL) — trajectoires et paramètres.
+• lehner-lab/krasddpcams (GitHub) — paysage allostérique KRAS.
+• Publications MD KRAS G12D récentes (PCCP 2026, ACS Omega, JCIM, etc.) pour structures et protocoles de simulation.
+C. Versions et reproductibilité logicielle
+Pipeline : universal_x5f_log_x5f_L7a_x5f_L7b_x5f_v5.9.0f.py (VERSION_MASTER interne). Dépendances principales : numpy, pandas,
+scipy, matplotlib, seaborn ; numba optionnel (--numba-heavy). Environnement Python recommandé figé (requirements.txt + hash). Graine
+par défaut : 42. Tous les tirages MC sont déterministes à graine fixée.
+Fin du Livre Blanc v1.0 — 15 novembre 2026.
+Ce document est destiné à servir de base d'audit et de plan d'exécution. Toute extension (nouveaux datasets, nouveaux estimateurs, validation
+expérimentale) doit être versionnée et annexée.

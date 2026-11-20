@@ -1,0 +1,149 @@
+Patient ID,Tumor type,Treatment,Best response,Technology used,Gene/variant,Alteration type,Pre-treatment VAF (%),End of Therapy VAF (%)
+Patient 1,PDAC,Adagrasib,PD,Resolution ctDx FIRST ,KRAS G12C,Mutation,4.72,1.39
+Patient 1,PDAC,Adagrasib,PD,Resolution ctDx FIRST ,TP53 Y163C,Mutation,2.51,0.71
+Patient 1,PDAC,Adagrasib,PD,Resolution ctDx FIRST ,BAP1 T69M,Mutation,49.07,52.13
+Patient 1,PDAC,Adagrasib,PD,Resolution ctDx FIRST ,AR R753*,Mutation,3.26,0.66
+Patient 1,PDAC,Adagrasib,PD,Resolution ctDx FIRST ,ROS1 Q237K,Mutation,51.12,50.31
+Patient 1,PDAC,Adagrasib,PD,Resolution ctDx FIRST ,ARID1A E28K,Mutation,0.45,-
+Patient 1,PDAC,Adagrasib,PD,Resolution ctDx FIRST ,MYC,Copy Number,Amp,Amp
+Patient 9,PDAC,Sotorasib,PD,Guardant360,BRAF,Copy Number,-,Gain
+Patient 9,PDAC,Sotorasib,PD,Guardant360,CDK4,Copy Number,-,Gain
+Patient 9,PDAC,Sotorasib,PD,Guardant360,ERBB2,Copy Number,-,Amp
+Patient 9,PDAC,Sotorasib,PD,Guardant360,KRAS,Copy Number,-,Gain
+Patient 9,PDAC,Sotorasib,PD,Guardant360,PIK3CA I13_P18delinsH,Mutation,3.13,19.9
+Patient 9,PDAC,Sotorasib,PD,Guardant360,TP53 C182fs,Mutation,-,0.06
+Patient 9,PDAC,Sotorasib,PD,Guardant360,ATM c.8151+2T>A,Mutation,4.6,32.21
+Patient 9,PDAC,Sotorasib,PD,Guardant360,BRCA2 G1529E,Mutation,4.74,23.25
+Patient 9,PDAC,Sotorasib,PD,Guardant360,CDKN2A H83Y,Mutation,2.62,22.31
+Patient 9,PDAC,Sotorasib,PD,Guardant360,EGFR A840T,Mutation,-,0.23
+Patient 9,PDAC,Sotorasib,PD,Guardant360,KRAS G12C,Mutation,8.88,40.28
+Patient 9,PDAC,Sotorasib,PD,Guardant360,RET V778F,Mutation,-,0.1
+Patient 10,PDAC,Sotorasib,PD,Guardant360,CDKN2A A19fs,Mutation,1,4.58
+Patient 10,PDAC,Sotorasib,PD,Guardant360,KRAS G12C,Mutation,0.72,5.4
+Patient 10,PDAC,Sotorasib,PD,Guardant360,SMAD4 R445*,Mutation,0.53,6.04
+Patient 10,PDAC,Sotorasib,PD,Guardant360,TP53 S215G,Mutation,0.32,7.46
+Patient 11,PDAC,Sotorasib,PD,Guardant360,CDK6,Copy Number,Gain,-
+Patient 11,PDAC,Sotorasib,PD,Guardant360,KRAS G12C,Mutation,48.5,10.68
+Patient 11,PDAC,Sotorasib,PD,Guardant360,KRAS G12R,Mutation,0.24,0.82
+Patient 11,PDAC,Sotorasib,PD,Guardant360,TP53 R273C,Mutation,44.81,10.26
+Patient 11,PDAC,Sotorasib,PD,Guardant360,TP53 V274D,Mutation,0.22,0.32
+Patient 5,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,DNMT3A R736H,Mutation,2.29,2.61
+Patient 5,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,TP53 R273H,Mutation,0.52,0.67
+Patient 5,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,ESR1 R241Q,Mutation,1.01,1.55
+Patient 5,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,TP53 R248Q,Mutation,-,0.33
+Patient 5,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,KRAS G12C,Mutation,0.27,-
+Patient 5,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,PDGFRB S874N,Mutation,0.23,-
+Patient 6,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,ABL1 L342fs,Mutation,4.02,10
+Patient 6,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,KRAS G12C,Mutation,6.95,61.91
+Patient 6,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,TP53 P151T,Mutation,8.71,14.13
+Patient 6,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,ATM N143D,Mutation,0.2,0.2
+Patient 6,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,CDK12,Copy Number,Amp,Amp
+Patient 6,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,ERBB2,Copy Number,Amp,Amp
+Patient 6,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,KRAS,Copy Number,-,Amp
+Patient 7,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,CDKN2A Y129fs,Mutation,0.22,4.83
+Patient 7,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,KRAS G12C,Mutation,0.13,3.09
+Patient 7,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,BRCA2 V2728I,Mutation,50.69,52.23
+Patient 7,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,PMS2 H189Q,Mutation,0.29,2.65
+Patient 7,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,TP53 Y236C,Mutation,0.16,2.04
+Patient 7,PDAC,Adagrasib,PR,Resolution ctDx FIRST ,ERBB3 E881K,Mutation,49.73,50.79
+Patient 8,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,GRAS G12C,Mutation,2.5,-
+Patient 8,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,TP53 E258K,Mutation,1.5,1.7
+Patient 8,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,PIK3CA Y644H,Mutation,-,5.9
+Patient 8,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,CHEK2 R562G,Mutation,-,3.1
+Patient 8,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,PTEN L52R,Mutation,-,1
+Patient 8,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,KRAS G12C ddPCR,Mutation,-,2.2
+Patient 19,PDAC,Sotorasib,PR,Guardant360,CDKN2A Y44fs,Mutation,0.14,0.39
+Patient 19,PDAC,Sotorasib,PR,Guardant360,SMAD4 G489fs,Mutation,-,0.26
+Patient 19,PDAC,Sotorasib,PR,Guardant360,KRAS G12C,Mutation,0.47,1.82
+Patient 19,PDAC,Sotorasib,PR,Guardant360,TP53 L265P,Mutation,-,0.97
+Patient 20,PDAC,Sotorasib,PR,Guardant360,CDKN2A E2fs,Mutation,-,1.48
+Patient 20,PDAC,Sotorasib,PR,Guardant360,BRCA2 T567I,Mutation,0.26,0.19
+Patient 20,PDAC,Sotorasib,PR,Guardant360,KRAS G12C,Mutation,-,1.77
+Patient 20,PDAC,Sotorasib,PR,Guardant360,TP53 I195T,Mutation,-,0.24
+Patient 20,PDAC,Sotorasib,PR,Guardant360,TP53 R280K,Mutation,-,1.07
+Patient 21,PDAC,Sotorasib,PR,Guardant360,TP53 C124fs,Mutation,0.19,1.67
+Patient 21,PDAC,Sotorasib,PR,Guardant360,EGFR A722E,Mutation,0.22,0.16
+Patient 21,PDAC,Sotorasib,PR,Guardant360,KRAS A146P,Mutation,-,0.19
+Patient 21,PDAC,Sotorasib,PR,Guardant360,KRAS G12C,Mutation,0.31,18.08
+Patient 21,PDAC,Sotorasib,PR,Guardant360,NFE2L2 D29H,Mutation,-,0.67
+Patient 21,PDAC,Sotorasib,PR,Guardant360,SMAD4 Y131C,Mutation,0.16,1.13
+Patient 21,PDAC,Sotorasib,PR,Guardant360,TP53 Y220C,Mutation,0.24,0.18
+Patient 22,PDAC,Sotorasib,PR,Guardant360,KRAS,Copy Number,-,Amp
+Patient 22,PDAC,Sotorasib,PR,Guardant360,MET,Copy Number,-,Gain
+Patient 22,PDAC,Sotorasib,PR,Guardant360,ARID1A A257fs,Mutation,10.48,13.32
+Patient 22,PDAC,Sotorasib,PR,Guardant360,PIK3CA E110del,Mutation,-,0.55
+Patient 22,PDAC,Sotorasib,PR,Guardant360,ARID1A P1326Q,Mutation,0.68,-
+Patient 22,PDAC,Sotorasib,PR,Guardant360,EGFR V980F,Mutation,0.21,0.51
+Patient 22,PDAC,Sotorasib,PR,Guardant360,KRAS G12C,Mutation,16.53,68.1
+Patient 22,PDAC,Sotorasib,PR,Guardant360,PIK3CA E542K,Mutation,-,0.8
+Patient 22,PDAC,Sotorasib,PR,Guardant360,TP53 *394Rext*,Mutation,0.1,-
+Patient 22,PDAC,Sotorasib,PR,Guardant360,TP53 H193R,Mutation,9.64,13.1
+Patient 22,PDAC,Sotorasib,PR,Guardant360,TP53 V143M,Mutation,0.11,-
+Patient 2,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,KRAS G12C,Mutation,0.59,16.79
+Patient 2,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,NTRK3 R793Q,Mutation,8.02,10.09
+Patient 2,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,TP53 I251L,Mutation,0.21,0.14
+Patient 2,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,DNMT3A C557*,Mutation,1.31,1.66
+Patient 2,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,MSH2 I828S,Mutation,51.01,52.17
+Patient 2,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,ATM V2937A,Mutation,0.81,1.22
+Patient 2,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,PIK3CA R524K,Mutation,12.73,13.73
+Patient 2,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,ATR R2109H,Mutation,0.42,0.65
+Patient 2,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,ARID1A E2250fs,Mutation,0.62,14.65
+Patient 2,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,NTRK3 R201H,Mutation,49.86,51
+Patient 2,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,TP53 M133K,Mutation,0.4,11.38
+Patient 2,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,DNMT3A L347R,Mutation,0.21,0.09
+Patient 2,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,EGFR,Copy Number,-,Amp
+Patient 3,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,KRAS G12C,Mutation,0.86,1.41
+Patient 3,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,TP53 H168R,Mutation,0.94,0.7
+Patient 3,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,NF1 L2738*,Mutation,0.19,0.32
+Patient 3,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,FANCL T251A,Mutation,0.38,0.49
+Patient 3,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,ARID1A S2068A,Mutation,0.11,0.09
+Patient 3,PDAC,Adagrasib,SD,Resolution ctDx FIRST ,ROS1 N2333S,Mutation,0.15,-
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,KRAS G12C,Mutation,4.5,28.9
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,TP53 K132N,Mutation,0.9,44.7
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,TP53 c.375+1G>A,Mutation,4.8,-
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,ROS1 S1739C,Mutation,0.9,-
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,TSC1 G599R,Mutation,0.4,-
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,GNAQ M59L,Mutation,-,2.6
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,APC I404M,Mutation,-,3.7
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,TP53 c.97-48G>A,Mutation,-,2.7
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,KRAS G12C ddPCR,Mutation,-,33
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,CDK6,Copy Number,-,Amp
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,ERBB2,Copy Number,-,Amp
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,MET,Copy Number,-,Amp
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,MYC,Copy Number,-,Amp
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,WNT2,Copy Number,-,Amp
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,ABCB1,Copy Number,-,Amp
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,FZD1,Copy Number,-,Amp
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,DEPTOR,Copy Number,-,Amp
+Patient 4,PDAC,Adagrasib,SD,SureSelect Cancer All-In-One ,CDK12,Copy Number,-,Amp
+Patient 12,PDAC,Sotorasib,SD,Guardant360,FGFR2 S818C,Mutation,0.24,0.21
+Patient 12,PDAC,Sotorasib,SD,Guardant360,KRAS G12C,Mutation,18.47,18.39
+Patient 12,PDAC,Sotorasib,SD,Guardant360,MET G589*,Mutation,-,0.11
+Patient 12,PDAC,Sotorasib,SD,Guardant360,TP53 V216M,Mutation,20.6,12.68
+Patient 13,PDAC,Sotorasib,SD,Guardant360,CCNE1,Copy Number,Gain,Gain
+Patient 13,PDAC,Sotorasib,SD,Guardant360,EGFR,Copy Number,-,Gain
+Patient 13,PDAC,Sotorasib,SD,Guardant360,KRAS,Copy Number,-,Amp
+Patient 13,PDAC,Sotorasib,SD,Guardant360,PIK3CA,Copy Number,-,Gain
+Patient 13,PDAC,Sotorasib,SD,Guardant360,BRAF D594N,Mutation,-,0.04
+Patient 13,PDAC,Sotorasib,SD,Guardant360,GNAS R201C,Mutation,0.3,-
+Patient 13,PDAC,Sotorasib,SD,Guardant360,KRAS G12C,Mutation,39.21,92.41
+Patient 13,PDAC,Sotorasib,SD,Guardant360,PIK3CA E542Q,Mutation,0.11,0.15
+Patient 13,PDAC,Sotorasib,SD,Guardant360,PIK3CA E545K,Mutation,-,0.36
+Patient 13,PDAC,Sotorasib,SD,Guardant360,TP53 V274A,Mutation,42.95,80.28
+Patient 14,PDAC,Sotorasib,SD,Guardant360,KRAS G12C,Mutation,0.29,-
+Patient 14,PDAC,Sotorasib,SD,Guardant360,TP53 I251S,Mutation,0.4,-
+Patient 15,PDAC,Sotorasib,SD,Guardant360,KIT D677fs,Mutation,0.26,-
+Patient 15,PDAC,Sotorasib,SD,Guardant360,APC H2770Y,Mutation,0.19,-
+Patient 15,PDAC,Sotorasib,SD,Guardant360,CDKN2A P114L,Mutation,48.39,49.77
+Patient 15,PDAC,Sotorasib,SD,Guardant360,KRAS G12C,Mutation,0.06,0.69
+Patient 15,PDAC,Sotorasib,SD,Guardant360,TP53 Y220C,Mutation,0.11,0.49
+Patient 16,PDAC,Sotorasib,SD,Guardant360,KRAS G12C,Mutation,2.35,3.8
+Patient 16,PDAC,Sotorasib,SD,Guardant360,TP53 L194R,Mutation,0.71,1.3
+Patient 17,PDAC,Sotorasib,SD,Guardant360,APC D329del,Mutation,0.1,0.07
+Patient 17,PDAC,Sotorasib,SD,Guardant360,EZH2 P636fs,Mutation,-,0.05
+Patient 17,PDAC,Sotorasib,SD,Guardant360,ATM T2743M,Mutation,0.13,-
+Patient 17,PDAC,Sotorasib,SD,Guardant360,BRCA2 R2973H,Mutation,0.13,-
+Patient 17,PDAC,Sotorasib,SD,Guardant360,KRAS G12C,Mutation,0.1,0.11
+Patient 18,PDAC,Sotorasib,SD,Guardant360,STK11 E293fs,Mutation,0.78,-
+Patient 18,PDAC,Sotorasib,SD,Guardant360,KRAS G12C,Mutation,0.93,0.66
+Patient 18,PDAC,Sotorasib,SD,Guardant360,TP53 K321*,Mutation,0.89,0.62

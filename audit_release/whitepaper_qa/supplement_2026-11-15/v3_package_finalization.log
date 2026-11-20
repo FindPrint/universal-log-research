@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "source_archive": "UNIVERSAL_LOG_OPEN_SOURCE_AUDIT_V2.zip",
+  "source_entries": 1404,
+  "new_payload_files": 139,
+  "manifest_files": 2,
+  "expected_entries": 1545,
+  "archive": "UNIVERSAL_LOG_OPEN_SOURCE_AUDIT_V3.zip",
+  "entries": 1545,
+  "bytes": 1327650344,
+  "sha256": "b8414d58eb3308f262cb2d01491a1875611d2b403dbf224f5f8061a9a374b5cc",
+  "catalog": "PROJECT_FILE_CATALOG_V3.csv",
+  "sha256sums": "SHA256SUMS_V3.txt",
+  "sidecar": "UNIVERSAL_LOG_OPEN_SOURCE_AUDIT_V3.zip.sha256",
+  "crc": "pass",
+  "hash_validation": "pass",
+  "venv_included": false
+}

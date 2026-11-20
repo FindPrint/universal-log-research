@@ -1,0 +1,100 @@
+{
+  "analysis_id": "pdac_g12d_parp_published_candidate_expression_recheck_v1",
+  "created_utc": "2026-11-17T21:49:13+00:00",
+  "source_series": "GSE279749",
+  "source_page": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279749",
+  "source_article_doi": "10.1038/s41467-026-69695-4",
+  "author_correction_doi": "10.1038/s41467-026-72371-2",
+  "inputs": {
+    "GSE279749_family.soft.gz": {
+      "bytes": 3305,
+      "sha256": "4e2d9dadbac8edceecbdc91020246a66cf2b12e2e9ff7e2ca1eb81af98ff7717",
+      "md5": "05fdd4736e9cde04ad2a0d91b67c7e98"
+    },
+    "GSE279749_gene_fpkm_cell_lines.txt.gz": {
+      "bytes": 966939,
+      "sha256": "f1b23c642ebf10b6127898fe0c700af12a74bb7656cd4d88c181f8ba2edde275",
+      "md5": "d16f0d7a5ccea94fb4359ebc75743c2b"
+    },
+    "GSE279749_gene_fpkm_PDX.txt.gz": {
+      "bytes": 2854599,
+      "sha256": "13dc198e2b6d0400f5e869daa79ce223aeb94f9f574981213ae371d276187f9d",
+      "md5": "188de1b0699e29480d9bd4bf6a3d138e"
+    }
+  },
+  "unit_of_analysis": "GEO expression-matrix columns; biological independence is unverified; exact tests condition on exchangeability",
+  "mapping_assumptions": {
+    "cell_prefix_crosswalk": "A=AsPC-1, P=PANC-1, C=CFPAC-1, S9=SW1990, inferred from abbreviations; no explicit matrix crosswalk",
+    "treatment_suffix": "NT=vehicle; M=the applicable inhibitor, interpreted against GEO sample metadata",
+    "pdx_column_crosswalk": "p1-p3 vehicle and p4-p6 MRTX1133+Olaparib inferred by positional order of GEO sample records",
+    "confirmatory_status": "All effects and permutations are conditional until sample-to-column mapping and replicate independence are confirmed"
+  },
+  "replicate_design_discrepancy": "GEO provides three columns per condition; article Methods say cells were cultured in duplicate. Replicate independence/count requires clarification.",
+  "primary_flows": [
+    "BRCA1",
+    "RAD51",
+    "RPA2"
+  ],
+  "groups": {
+    "G12D_cell_lines": "three provisional cell-line mappings, vehicle vs MRTX1133, 3 GEO columns per group per line, 24 h; biological replicate independence unverified",
+    "G12V_line": "provisional CFPAC-1 mapping; vehicle vs BI-2865, 3 GEO columns per group; separate exploratory stratum",
+    "PDX": "3 vehicle vs 3 MRTX1133+olaparib endpoint columns under provisional positional mapping; no single-agent arms in this expression matrix"
+  },
+  "statistics": {
+    "effect": "Cohen d, equal-variance pooled SD, on log2(FPKM+1)",
+    "G12D_cell_lines": "exact permutations of 3/6 labels within each provisional cell-line mapping, 8000 combinations; conditional on independence",
+    "two_group_small_strata": "exact 3/6 label permutations, 20 combinations; minimum two-sided p may be 0.10",
+    "multiple_testing": "BH across estimable tests from 9 predeclared control x gene comparisons; unavailable markers remain unestimated",
+    "coverage": {
+      "cell_lines": [
+        "RPA2"
+      ],
+      "pdx": [
+        "BRCA1",
+        "RAD51",
+        "RPA2"
+      ],
+      "unavailable_cell_line_markers": [
+        "BRCA1",
+        "RAD51"
+      ]
+    }
+  },
+  "scope": "does not run the universal 29-estimator core/TLog; expression reproduction only; no clinical/cure claim",
+  "script_sha256": "0b812d12918c51b0de7d5c8deae12d15b85112d1df746c6f9f3f0b0d6591c126",
+  "software": {
+    "python": "3.11.9",
+    "pandas": "3.0.6",
+    "numpy": "1.26.4"
+  },
+  "outputs": {
+    "cell_line_HR_expression_log2FPKM.csv": {
+      "bytes": 1289,
+      "sha256": "0c18b6151168c3a1d75ee6e737432826ea24daa4cd10b237277b04ddd2ad3c39"
+    },
+    "controls_by_flows_HR_candidate.csv": {
+      "bytes": 1881,
+      "sha256": "c1ac81c1d01111039b3ff9653826a3440f4799ef1a585f4f9102d74d26048696"
+    },
+    "GSE279749_mapping_assumptions.csv": {
+      "bytes": 671,
+      "sha256": "b51f399b7dfacaa13a13e9792ca10311d0c8b4d20bdbc6fdb2a62101ab67dcc6"
+    },
+    "GSE279749_sample_metadata.csv": {
+      "bytes": 2854,
+      "sha256": "869c85213bf22d4a71a1d1aeb2155aac020ea2f5e560938732c3e55104d9ed04"
+    },
+    "HR_gene_effects_GSE279749.png": {
+      "bytes": 150745,
+      "sha256": "26324b80471759f06d89faf65c736df60cfc78ed3b8f380c2c266fd061affaba"
+    },
+    "PDX_HR_expression_log2FPKM.csv": {
+      "bytes": 397,
+      "sha256": "01db7cd47fc592a31181a2daf3604a489a5bd924514c89506007052f41a96b6b"
+    },
+    "REPORT_GSE279749_HR_candidate.md": {
+      "bytes": 4775,
+      "sha256": "25a6bda684dd1d24e7cd39d5e7c209cb4f620ee7e2893537429edbd75a983570"
+    }
+  }
+}

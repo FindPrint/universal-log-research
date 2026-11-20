@@ -1,0 +1,2173 @@
+{
+  "status": "completed",
+  "method": "sample_order_window_trends_with_synthetic_noise_calibration",
+  "consensus_rule": "strict_majority_of_available_indicators_with_minimum_two_indicators",
+  "minimum_indicators_for_declaration": 2,
+  "indicators": [
+    "ar1_increase",
+    "variance_increase",
+    "absolute_skewness_increase"
+  ],
+  "n_fluxes": 14,
+  "n_fluxes_computed": 14,
+  "n_fluxes_csd_majority": 0,
+  "flux_results": [
+    {
+      "flux_name": "Energy_per_spin",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.018532777443910253,
+          "ar1": 0.2162987202258573,
+          "skewness": -0.1493223645176417,
+          "abs_skewness": 0.1493223645176417
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 0.0182354266826923,
+          "ar1": 0.20810705487735695,
+          "skewness": -0.020187360715089645,
+          "abs_skewness": 0.020187360715089645
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 0.03346604567307692,
+          "ar1": -0.010521841256772947,
+          "skewness": -0.330305110767259,
+          "abs_skewness": 0.330305110767259
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 0.015061598557692303,
+          "ar1": -0.21299638989169672,
+          "skewness": 0.4926043709322623,
+          "abs_skewness": 0.4926043709322623
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.024295691287878785,
+          "ar1": -0.2760346363492913,
+          "skewness": -0.031086414815577994,
+          "abs_skewness": 0.031086414815577994
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.9999999999999999,
+          "p_value": 1.4042654220543608e-24,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": 0.09999999999999999,
+          "p_value": 0.8728885715695384,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.19999999999999998,
+          "p_value": 0.7470600781046621,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 0,
+      "required_majority": 2,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_low_synthetic_power",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    },
+    {
+      "flux_name": "Magnetization",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.641727545322516,
+          "ar1": -0.4357382434148965,
+          "skewness": -0.1731845653087155,
+          "abs_skewness": 0.1731845653087155
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 0.6193659855769231,
+          "ar1": 0.36761995182038315,
+          "skewness": 0.5286875920730734,
+          "abs_skewness": 0.5286875920730734
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 0.5886903420472757,
+          "ar1": 0.03096712951222053,
+          "skewness": 0.4434097158675797,
+          "abs_skewness": 0.4434097158675797
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 0.641033466045673,
+          "ar1": 0.18400856342362354,
+          "skewness": -0.10634159649455527,
+          "abs_skewness": 0.10634159649455527
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.4587194269353693,
+          "ar1": 0.0424064512507653,
+          "skewness": 1.301019004667121,
+          "abs_skewness": 1.301019004667121
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": 0.3,
+          "p_value": 0.623837664781073,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": -0.7,
+          "p_value": 0.1881204043741873,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.3,
+          "p_value": 0.623837664781073,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 0,
+      "required_majority": 2,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_low_synthetic_power",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    },
+    {
+      "flux_name": "Abs_magnetization",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.01071792993790064,
+          "ar1": 0.23405268168835278,
+          "skewness": -0.5529450384113104,
+          "abs_skewness": 0.5529450384113104
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 0.00835712139423077,
+          "ar1": 0.30575120955999635,
+          "skewness": -0.5662254761037954,
+          "abs_skewness": 0.5662254761037954
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 0.026259202223557692,
+          "ar1": -0.18282276850247392,
+          "skewness": -1.2972098953496833,
+          "abs_skewness": 1.2972098953496833
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 0.018010066105769232,
+          "ar1": -0.3616013035487319,
+          "skewness": -1.2155649291751534,
+          "abs_skewness": 1.2155649291751534
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.01176822546756629,
+          "ar1": -0.34437516172314314,
+          "skewness": -0.24061873990630733,
+          "abs_skewness": 0.24061873990630733
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.7999999999999999,
+          "p_value": 0.10408803866182788,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": 0.49999999999999994,
+          "p_value": 0.3910022189557703,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": -0.09999999999999999,
+          "p_value": 0.8728885715695384,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 0,
+      "required_majority": 2,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_low_synthetic_power",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    },
+    {
+      "flux_name": "M_squared",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.023934060803208593,
+          "ar1": 0.22018741039315257,
+          "skewness": -0.2549926209397454,
+          "abs_skewness": 0.2549926209397454
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 0.019117203469459828,
+          "ar1": 0.2931971263785639,
+          "skewness": -0.30198624166784205,
+          "abs_skewness": 0.30198624166784205
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 0.04518964399511998,
+          "ar1": -0.1497683195038543,
+          "skewness": -0.8594951230853625,
+          "abs_skewness": 0.8594951230853625
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 0.03447815861839515,
+          "ar1": -0.4035976444371337,
+          "skewness": -0.9627499865591262,
+          "abs_skewness": 0.9627499865591262
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.02479347820873513,
+          "ar1": -0.32846632485715854,
+          "skewness": -0.025736955115803827,
+          "abs_skewness": 0.025736955115803827
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.7999999999999999,
+          "p_value": 0.10408803866182788,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": 0.49999999999999994,
+          "p_value": 0.3910022189557703,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.0,
+          "p_value": 1.0,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 0,
+      "required_majority": 2,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_low_synthetic_power",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    },
+    {
+      "flux_name": "M_fourth",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.03346560731191079,
+          "ar1": 0.18393103780514303,
+          "skewness": 0.32674382750321534,
+          "abs_skewness": 0.32674382750321534
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 0.027345018803939285,
+          "ar1": 0.2705993979465763,
+          "skewness": 0.21836724297741314,
+          "abs_skewness": 0.21836724297741314
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 0.04619845688758085,
+          "ar1": -0.08542718456700572,
+          "skewness": -0.10125769786197637,
+          "abs_skewness": 0.10125769786197637
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 0.0376109768685915,
+          "ar1": -0.47975716052860135,
+          "skewness": -0.5080945482383689,
+          "abs_skewness": 0.5080945482383689
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.030448989555292114,
+          "ar1": -0.28319921082404736,
+          "skewness": 0.41953891345219374,
+          "abs_skewness": 0.41953891345219374
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.7999999999999999,
+          "p_value": 0.10408803866182788,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": 0.09999999999999999,
+          "p_value": 0.8728885715695384,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.49999999999999994,
+          "p_value": 0.3910022189557703,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 0,
+      "required_majority": 2,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_low_synthetic_power",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    },
+    {
+      "flux_name": "Nearest_neighbor_correlation",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.004633194360977563,
+          "ar1": 0.2162987202258573,
+          "skewness": 0.1493223645176417,
+          "abs_skewness": 0.1493223645176417
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 0.004558856670673075,
+          "ar1": 0.20810705487735695,
+          "skewness": 0.020187360715089645,
+          "abs_skewness": 0.020187360715089645
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 0.00836651141826923,
+          "ar1": -0.010521841256772947,
+          "skewness": 0.330305110767259,
+          "abs_skewness": 0.330305110767259
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 0.0037653996394230757,
+          "ar1": -0.21299638989169672,
+          "skewness": -0.4926043709322623,
+          "abs_skewness": 0.4926043709322623
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.006073922821969696,
+          "ar1": -0.2760346363492913,
+          "skewness": 0.031086414815577994,
+          "abs_skewness": 0.031086414815577994
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.9999999999999999,
+          "p_value": 1.4042654220543608e-24,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": 0.09999999999999999,
+          "p_value": 0.8728885715695384,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.19999999999999998,
+          "p_value": 0.7470600781046621,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 0,
+      "required_majority": 2,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_low_synthetic_power",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    },
+    {
+      "flux_name": "Cluster_fraction",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.12110020564152645,
+          "ar1": -0.28221191543191987,
+          "skewness": -1.1959142936284182,
+          "abs_skewness": 1.1959142936284182
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 0.13661076472355768,
+          "ar1": -0.4928483281138406,
+          "skewness": -0.9198396237360157,
+          "abs_skewness": 0.9198396237360157
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 0.14722325251652643,
+          "ar1": -0.38228900085339057,
+          "skewness": -0.8845900990669274,
+          "abs_skewness": 0.8845900990669274
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 0.05511318108974359,
+          "ar1": 0.22284875740720314,
+          "skewness": -2.4589207185353583,
+          "abs_skewness": 2.4589207185353583
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.15262488162878787,
+          "ar1": 0.1758093637583698,
+          "skewness": -0.2548408764894183,
+          "abs_skewness": 0.2548408764894183
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": 0.6,
+          "p_value": 0.28475697986529386,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": 0.39999999999999997,
+          "p_value": 0.5046315754686912,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": -0.39999999999999997,
+          "p_value": 0.5046315754686912,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 0,
+      "required_majority": 2,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_low_synthetic_power",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    },
+    {
+      "flux_name": "Noise_axis",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.6646015431368913,
+          "ar1": 0.14755015799005156,
+          "skewness": -0.5290101130336712,
+          "abs_skewness": 0.5290101130336712
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 0.9315288586430803,
+          "ar1": -0.2978609884387087,
+          "skewness": -1.0550425302753317,
+          "abs_skewness": 1.0550425302753317
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 1.1159762708910308,
+          "ar1": -0.30266774015445264,
+          "skewness": 0.48074753258948194,
+          "abs_skewness": 0.48074753258948194
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 0.8708850384547375,
+          "ar1": -0.3850022524261068,
+          "skewness": 0.5067294488660732,
+          "abs_skewness": 0.5067294488660732
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.5361862772774496,
+          "ar1": -0.8095121978645596,
+          "skewness": -0.4554782263403696,
+          "abs_skewness": 0.4554782263403696
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.9999999999999999,
+          "p_value": 1.4042654220543608e-24,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": -0.3,
+          "p_value": 0.623837664781073,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": -0.7999999999999999,
+          "p_value": 0.10408803866182788,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 0,
+      "required_majority": 2,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_low_synthetic_power",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    },
+    {
+      "flux_name": "Noise_flux",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.49241373622850343,
+          "ar1": -0.20137734013613842,
+          "skewness": 0.1138407963789425,
+          "abs_skewness": 0.1138407963789425
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 1.6081826723461579,
+          "ar1": 0.005463238505947321,
+          "skewness": 0.05036097441811733,
+          "abs_skewness": 0.05036097441811733
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 2.2522391525560934,
+          "ar1": -0.031457503878254175,
+          "skewness": -1.3020514528995708,
+          "abs_skewness": 1.3020514528995708
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 1.818793789009691,
+          "ar1": 0.14952904387241991,
+          "skewness": -0.6039223101067939,
+          "abs_skewness": 0.6039223101067939
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.5548798072880499,
+          "ar1": -0.11681801702327677,
+          "skewness": 0.49130162541884115,
+          "abs_skewness": 0.49130162541884115
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": 0.3,
+          "p_value": 0.623837664781073,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": 0.3,
+          "p_value": 0.623837664781073,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": 0.49999999999999994,
+          "p_value": 0.3910022189557703,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 0,
+      "required_majority": 2,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_low_synthetic_power",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    },
+    {
+      "flux_name": "Abs_magnetization_shuffled",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.025427402594150644,
+          "ar1": -0.10226090028287277,
+          "skewness": -1.591369395106151,
+          "abs_skewness": 1.591369395106151
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 0.03869159405048077,
+          "ar1": 0.02153921543271124,
+          "skewness": -2.7567259141781673,
+          "abs_skewness": 2.7567259141781673
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 0.015585874899839744,
+          "ar1": -0.24727791120299578,
+          "skewness": -1.6172064953989227,
+          "abs_skewness": 1.6172064953989227
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 0.06120182917668269,
+          "ar1": 0.2033453787041367,
+          "skewness": -1.9665010761112038,
+          "abs_skewness": 1.9665010761112038
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.03489916252367424,
+          "ar1": -0.3597988217617656,
+          "skewness": -1.2482702700799586,
+          "abs_skewness": 1.2482702700799586
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": -0.3,
+          "p_value": 0.623837664781073,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": 0.3,
+          "p_value": 0.623837664781073,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": -0.3,
+          "p_value": 0.623837664781073,
+          "n_windows": 5,
+          "status": "computed",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 3,
+      "positive_indicator_count": 0,
+      "required_majority": 2,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_low_synthetic_power",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    },
+    {
+      "flux_name": "Temperature",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": null,
+          "p_value": null,
+          "n_windows": 0,
+          "status": "insufficient_windows",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": null,
+          "p_value": null,
+          "n_windows": 5,
+          "status": "constant_indicator",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": null,
+          "p_value": null,
+          "n_windows": 0,
+          "status": "insufficient_windows",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 0,
+      "positive_indicator_count": 0,
+      "required_majority": 1,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_insufficient_indicators",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    },
+    {
+      "flux_name": "L",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": null,
+          "p_value": null,
+          "n_windows": 0,
+          "status": "insufficient_windows",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": null,
+          "p_value": null,
+          "n_windows": 5,
+          "status": "constant_indicator",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": null,
+          "p_value": null,
+          "n_windows": 0,
+          "status": "insufficient_windows",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 0,
+      "positive_indicator_count": 0,
+      "required_majority": 1,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_insufficient_indicators",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    },
+    {
+      "flux_name": "Chain",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": null,
+          "p_value": null,
+          "n_windows": 0,
+          "status": "insufficient_windows",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": null,
+          "p_value": null,
+          "n_windows": 5,
+          "status": "constant_indicator",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": null,
+          "p_value": null,
+          "n_windows": 0,
+          "status": "insufficient_windows",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 0,
+      "positive_indicator_count": 0,
+      "required_majority": 1,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_insufficient_indicators",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    },
+    {
+      "flux_name": "Seed",
+      "status": "computed",
+      "n_valid": 64,
+      "n_samples": 64,
+      "axis_basis": "sample_order_not_physical_time",
+      "window_statistics": [
+        {
+          "window_index": 0,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 1,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 2,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 3,
+          "n": 13,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        },
+        {
+          "window_index": 4,
+          "n": 12,
+          "variance": 0.0,
+          "ar1": NaN,
+          "skewness": NaN,
+          "abs_skewness": NaN
+        }
+      ],
+      "indicators": {
+        "ar1_increase": {
+          "rho": null,
+          "p_value": null,
+          "n_windows": 0,
+          "status": "insufficient_windows",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "variance_increase": {
+          "rho": null,
+          "p_value": null,
+          "n_windows": 5,
+          "status": "constant_indicator",
+          "null_threshold_q95_pooled": 0.8999999999999998,
+          "signal_detected": false
+        },
+        "absolute_skewness_increase": {
+          "rho": null,
+          "p_value": null,
+          "n_windows": 0,
+          "status": "insufficient_windows",
+          "null_threshold_q95_pooled": 0.7999999999999999,
+          "signal_detected": false
+        }
+      },
+      "available_indicator_count": 0,
+      "positive_indicator_count": 0,
+      "required_majority": 1,
+      "minimum_indicators_for_declaration": 2,
+      "positive_indicators": [],
+      "csd_detected": false,
+      "classification": "indeterminate_insufficient_indicators",
+      "synthetic_positive_control_power": 0.14,
+      "power_limited": true,
+      "calibration": {
+        "status": "synthetic_calibration_completed",
+        "method": "majority_vote_with_pooled_empirical_null_q95_thresholds",
+        "thresholds": {
+          "ar1_increase": 0.8999999999999998,
+          "variance_increase": 0.8999999999999998,
+          "absolute_skewness_increase": 0.7999999999999999
+        },
+        "null_family_q95": {
+          "ar1_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.8999999999999998,
+            "sinusoidal_heteroskedastic": 0.8049999999999996,
+            "linear_variance_ramp": 0.7
+          },
+          "variance_increase": {
+            "white_gaussian": 0.7999999999999999,
+            "stationary_ar1": 0.7,
+            "heavy_tailed_iid": 0.7049999999999996,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.9049999999999995
+          },
+          "absolute_skewness_increase": {
+            "white_gaussian": 0.8999999999999998,
+            "stationary_ar1": 0.8999999999999998,
+            "heavy_tailed_iid": 0.7,
+            "sinusoidal_heteroskedastic": 0.7999999999999999,
+            "linear_variance_ramp": 0.8049999999999996
+          }
+        },
+        "null_families": [
+          "white_gaussian",
+          "stationary_ar1",
+          "heavy_tailed_iid",
+          "sinusoidal_heteroskedastic",
+          "linear_variance_ramp"
+        ],
+        "false_positive_rate_by_null_family": {
+          "white_gaussian": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "stationary_ar1": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "heavy_tailed_iid": {
+            "false_positive_rate": 0.0,
+            "n": 100
+          },
+          "sinusoidal_heteroskedastic": {
+            "false_positive_rate": 0.01,
+            "n": 100
+          },
+          "linear_variance_ramp": {
+            "false_positive_rate": 0.06,
+            "n": 100
+          }
+        },
+        "pooled_false_positive_rate": 0.018,
+        "positive_control": "synthetic_csd_positive",
+        "positive_control_detection_rate": 0.14,
+        "replicates_per_family": 100,
+        "n_samples": 64,
+        "n_windows": 5,
+        "seed": 20261101,
+        "interpretation_limit": "Calibration limit\u00e9e aux familles synth\u00e9tiques test\u00e9es; ne constitue pas une validation universelle sur donn\u00e9es r\u00e9elles."
+      },
+      "interpretation": "Puissance de d\u00e9tection synth\u00e9tique faible pour cette longueur; r\u00e9sultat ind\u00e9termin\u00e9, pas une preuve d\u2019absence de CSD."
+    }
+  ],
+  "time_interpretation": "L\u2019ordre des \u00e9chantillons est utilis\u00e9 comme coordonn\u00e9e d\u2019analyse; aucune unit\u00e9 ni causalit\u00e9 temporelle physique n\u2019est suppos\u00e9e."
+}

@@ -1,0 +1,216 @@
+
+[CIBLE-FIXE-GLOBALE] politique=fixed mode=single cible_demandee='Abs_magnetization' -> cible_globale='Abs_magnetization' methode=user_requested_target controles=['MC_Update'] | Cette cible unique sera reutilisee pour TOUS les controles. Le run ou controle == cible sera signale explicitement comme diagonal, avec cible_demandee ET cible_utilisee.
+
+================================================================================
+UNIVERSAL_LOG v5.9.1-L7aL7b-DKind-AuditFix — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\data\L16_T2.269185_chain0_first80.csv | Domain: generic | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=MC_Update cible_demandee='Abs_magnetization' -> cible_utilisee='Abs_magnetization' | Cible fixee conservee pour ce run.
+Target Observable: Abs_magnetization | Control Parameter: MC_Update
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.546
+  règle: uniform
+  n_candidates: 65, resolution: 1.562%
+  w_size: 16, min_grp: 9
+<PROJECT_ROOT>\audit_release\UNIVERSAL_LOG_v5_9_1_AUDITFIX.py:4949: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  skew = float(stats.skew(vals, bias=False)) if len(vals) >= 8 and np.std(vals) > 0 else np.nan
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+[T0-VALEUR-BRUTE] controle=MC_Update T0=89.29% -> valeur brute controle=1401 (median_near=1401.0, min_near=1361.0, max_near=1441.0, spread=80.0, ambiguous=False)
+
+[L7b-FULL] Audit complet : graine + fenetre 80% + melange + log. Cela prend ~3-4x un run.
+
+================================================================================
+UNIVERSAL_LOG v5.9.1-L7aL7b-DKind-AuditFix — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\data\L16_T2.269185_chain0_first80.csv | Domain: generic | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=MC_Update cible_demandee='Abs_magnetization' -> cible_utilisee='Abs_magnetization' | Cible fixee conservee pour ce run.
+Target Observable: Abs_magnetization | Control Parameter: MC_Update
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.529
+  règle: uniform
+  n_candidates: 34, resolution: 3.030%
+  w_size: 22, min_grp: 5
+<PROJECT_ROOT>\audit_release\UNIVERSAL_LOG_v5_9_1_AUDITFIX.py:4949: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  skew = float(stats.skew(vals, bias=False)) if len(vals) >= 8 and np.std(vals) > 0 else np.nan
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+[T0-VALEUR-BRUTE] controle=MC_Update T0=88.57% -> valeur brute controle=1401 (median_near=1401.0, min_near=1361.0, max_near=1441.0, spread=80.0, ambiguous=False)
+✓ Paysage des 29 estimateurs sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\seed_123\landscape_complexity.png
+Paysage ameliore v4.4.3 sauvegarde: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\seed_123\landscape_complexity_improved.png
+Clustermap separation v4.4.3: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\seed_123\separation_clustermap.png
+Tension holographique sauvegardee: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\seed_123\holographic_tension.png
+✓ Courbe de scan sauvegardée: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\seed_123\threshold_scan.png
+✓ Graphique diagnostic bruit sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\seed_123\noise_diagnostic.png
+<PROJECT_ROOT>\audit_release\UNIVERSAL_LOG_v5_9_1_AUDITFIX.py:5163: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap.set_bad(color='#d9d9d9')
+✓ Graphique des flux sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\seed_123\raw_fluxes.png
+✓ Heatmaps de séparation par classe sauvegardées: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\seed_123\separation_heatmap.png
+✓ Graphique post-seuil sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\seed_123\post_threshold.png
+✓ Graphique de corrélation CSD vs f' sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\seed_123\csd_correlation.png
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=down regime=up disagreement=True | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: INDETERMINE (mode=off) | L7b desactive (--no-l7b). Ne pas interpreter L7a seul.
+✓ 5-Threshold T_0: 88.57%
+✓ T_0 en valeur brute du controle 'MC_Update': 1401.0 (median_near=1401.0, min_near=1361.0, max_near=1441.0, spread=80.0, ambiguous=False)
+✓ Cible: demandee=Abs_magnetization | utilisee=Abs_magnetization | politique=fixed | repli_diagonal=False
+✓ Tool Footprint: IEEE 754 Mantissa Truncation Detected (Katz FD = 4.16)
+✓ Holographic Tension: criticality|control=MC_Update (Delta=1.52, D_vec=[1.526626, 2.35905, 3.041667, 2.510474])
+✓ Results exported to: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\seed_123
+
+================================================================================
+UNIVERSAL_LOG v5.9.1-L7aL7b-DKind-AuditFix — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\l7b_fenetre80.csv | Domain: generic | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=MC_Update cible_demandee='Abs_magnetization' -> cible_utilisee='Abs_magnetization' | Cible fixee conservee pour ce run.
+Target Observable: Abs_magnetization | Control Parameter: MC_Update
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.531
+  règle: uniform
+  n_candidates: 50, resolution: 2.041%
+  w_size: 15, min_grp: 9
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+[T0-VALEUR-BRUTE] controle=MC_Update T0=9.41% -> valeur brute controle=121 (median_near=121.0, min_near=81.0, max_near=161.0, spread=80.0, ambiguous=False)
+✓ Paysage des 29 estimateurs sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\fenetre80\landscape_complexity.png
+Paysage ameliore v4.4.3 sauvegarde: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\fenetre80\landscape_complexity_improved.png
+Clustermap separation v4.4.3: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\fenetre80\separation_clustermap.png
+Tension holographique sauvegardee: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\fenetre80\holographic_tension.png
+✓ Courbe de scan sauvegardée: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\fenetre80\threshold_scan.png
+✓ Graphique diagnostic bruit sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\fenetre80\noise_diagnostic.png
+<PROJECT_ROOT>\audit_release\UNIVERSAL_LOG_v5_9_1_AUDITFIX.py:5163: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap.set_bad(color='#d9d9d9')
+✓ Graphique des flux sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\fenetre80\raw_fluxes.png
+✓ Heatmaps de séparation par classe sauvegardées: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\fenetre80\separation_heatmap.png
+✓ Graphique post-seuil sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\fenetre80\post_threshold.png
+✓ Graphique de corrélation CSD vs f' sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\fenetre80\csd_correlation.png
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=down regime=up disagreement=True | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: INDETERMINE (mode=off) | L7b desactive (--no-l7b). Ne pas interpreter L7a seul.
+✓ 5-Threshold T_0: 9.41%
+✓ T_0 en valeur brute du controle 'MC_Update': 121.0 (median_near=121.0, min_near=81.0, max_near=161.0, spread=80.0, ambiguous=False)
+✓ Cible: demandee=Abs_magnetization | utilisee=Abs_magnetization | politique=fixed | repli_diagonal=False
+✓ Tool Footprint: IEEE 754 Mantissa Truncation Detected (Katz FD = 4.03)
+✓ Holographic Tension: criticality|control=MC_Update (Delta=1.42, D_vec=[1.449814, 2.273627, 2.867168, 2.566641])
+✓ Results exported to: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\fenetre80
+
+================================================================================
+UNIVERSAL_LOG v5.9.1-L7aL7b-DKind-AuditFix — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\l7b_melange.csv | Domain: generic | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=MC_Update cible_demandee='Abs_magnetization' -> cible_utilisee='Abs_magnetization' | Cible fixee conservee pour ce run.
+Target Observable: Abs_magnetization | Control Parameter: MC_Update
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.547
+  règle: uniform
+  n_candidates: 65, resolution: 1.562%
+  w_size: 16, min_grp: 9
+<PROJECT_ROOT>\audit_release\UNIVERSAL_LOG_v5_9_1_AUDITFIX.py:4949: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  skew = float(stats.skew(vals, bias=False)) if len(vals) >= 8 and np.std(vals) > 0 else np.nan
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+[T0-VALEUR-BRUTE] controle=MC_Update T0=16.37% -> valeur brute controle=261 (median_near=261.0, min_near=221.0, max_near=301.0, spread=80.0, ambiguous=False)
+✓ Paysage des 29 estimateurs sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\melange\landscape_complexity.png
+Paysage ameliore v4.4.3 sauvegarde: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\melange\landscape_complexity_improved.png
+Clustermap separation v4.4.3: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\melange\separation_clustermap.png
+Tension holographique sauvegardee: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\melange\holographic_tension.png
+✓ Courbe de scan sauvegardée: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\melange\threshold_scan.png
+✓ Graphique diagnostic bruit sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\melange\noise_diagnostic.png
+<PROJECT_ROOT>\audit_release\UNIVERSAL_LOG_v5_9_1_AUDITFIX.py:5163: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap.set_bad(color='#d9d9d9')
+✓ Graphique des flux sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\melange\raw_fluxes.png
+✓ Heatmaps de séparation par classe sauvegardées: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\melange\separation_heatmap.png
+✓ Graphique post-seuil sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\melange\post_threshold.png
+✓ Graphique de corrélation CSD vs f' sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\melange\csd_correlation.png
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=up regime=up disagreement=False | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: INDETERMINE (mode=off) | L7b desactive (--no-l7b). Ne pas interpreter L7a seul.
+✓ 5-Threshold T_0: 16.37%
+✓ T_0 en valeur brute du controle 'MC_Update': 261.0 (median_near=261.0, min_near=221.0, max_near=301.0, spread=80.0, ambiguous=False)
+✓ Cible: demandee=Abs_magnetization | utilisee=Abs_magnetization | politique=fixed | repli_diagonal=False
+✓ Tool Footprint: IEEE 754 Mantissa Truncation Detected (Katz FD = 4.53)
+✓ Holographic Tension: criticality|control=MC_Update (Delta=1.36, D_vec=[1.460764, 2.365282, 2.818927, 2.489435])
+✓ Results exported to: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\melange
+
+================================================================================
+UNIVERSAL_LOG v5.9.1-L7aL7b-DKind-AuditFix — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\l7b_log.csv | Domain: generic | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=MC_Update cible_demandee='Abs_magnetization' -> cible_utilisee='Abs_magnetization' | Cible fixee conservee pour ce run.
+Target Observable: Abs_magnetization | Control Parameter: MC_Update
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.546
+  règle: uniform
+  n_candidates: 65, resolution: 1.562%
+  w_size: 16, min_grp: 9
+<PROJECT_ROOT>\audit_release\UNIVERSAL_LOG_v5_9_1_AUDITFIX.py:4949: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  skew = float(stats.skew(vals, bias=False)) if len(vals) >= 8 and np.std(vals) > 0 else np.nan
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+[T0-VALEUR-BRUTE] controle=MC_Update T0=89.29% -> valeur brute controle=1401 (median_near=1401.0, min_near=1361.0, max_near=1441.0, spread=80.0, ambiguous=False)
+✓ Paysage des 29 estimateurs sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\log\landscape_complexity.png
+Paysage ameliore v4.4.3 sauvegarde: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\log\landscape_complexity_improved.png
+Clustermap separation v4.4.3: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\log\separation_clustermap.png
+Tension holographique sauvegardee: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\log\holographic_tension.png
+✓ Courbe de scan sauvegardée: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\log\threshold_scan.png
+✓ Graphique diagnostic bruit sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\log\noise_diagnostic.png
+<PROJECT_ROOT>\audit_release\UNIVERSAL_LOG_v5_9_1_AUDITFIX.py:5163: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap.set_bad(color='#d9d9d9')
+✓ Graphique des flux sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\log\raw_fluxes.png
+✓ Heatmaps de séparation par classe sauvegardées: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\log\separation_heatmap.png
+✓ Graphique post-seuil sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\log\post_threshold.png
+✓ Graphique de corrélation CSD vs f' sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\log\csd_correlation.png
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=up regime=up disagreement=False | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: INDETERMINE (mode=off) | L7b desactive (--no-l7b). Ne pas interpreter L7a seul.
+✓ 5-Threshold T_0: 89.29%
+✓ T_0 en valeur brute du controle 'MC_Update': 1401.0 (median_near=1401.0, min_near=1361.0, max_near=1441.0, spread=80.0, ambiguous=False)
+✓ Cible: demandee=Abs_magnetization | utilisee=Abs_magnetization | politique=fixed | repli_diagonal=False
+✓ Tool Footprint: IEEE 754 Mantissa Truncation Detected (Katz FD = 3.27)
+✓ Holographic Tension: criticality|control=MC_Update (Delta=1.35, D_vec=[1.469535, 2.365282, 2.818927, 2.489435])
+✓ Results exported to: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\_l7b_tmp\log
+[L7b-FULL] Verdict : FRAGILE | graine=PASS fenetre=FAIL melange=FAIL echelle=INVARIANT
+✓ Paysage des 29 estimateurs sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\landscape_complexity.png
+Paysage ameliore v4.4.3 sauvegarde: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\landscape_complexity_improved.png
+Clustermap separation v4.4.3: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\separation_clustermap.png
+Tension holographique sauvegardee: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\holographic_tension.png
+✓ Courbe de scan sauvegardée: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\threshold_scan.png
+✓ Graphique diagnostic bruit sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\noise_diagnostic.png
+<PROJECT_ROOT>\audit_release\UNIVERSAL_LOG_v5_9_1_AUDITFIX.py:5163: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+  cmap.set_bad(color='#d9d9d9')
+✓ Graphique des flux sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\raw_fluxes.png
+✓ Heatmaps de séparation par classe sauvegardées: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\separation_heatmap.png
+✓ Graphique post-seuil sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\post_threshold.png
+✓ Graphique de corrélation CSD vs f' sauvegardé: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output\csd_correlation.png
+
+✓ Pipeline Master completed successfully!
+✓ L7a-COHERENCE: UP (50.00%) | cible=up regime=up disagreement=False | L7a = vote interne, ne prouve rien.
+✓ L7b-ROBUSTESSE: FRAGILE (mode=full) | Au moins un stress decisif echoue; ne pas utiliser L7a seul pour decider.
+    L7b check graine: PASS | T0 stable a 5 points et direction identique entre graines.
+    L7b check fenetre: FAIL | La fenetre 80% change T0 au-dela de 10 points ou change la direction.
+    L7b check melange: FAIL | Magnitude de Delta et direction persistent sans ordre temporel; le signal peut venir de la distribution.
+    L7b check echelle: INFORMATIF | Le changement d'echelle ne modifie pas T0/direction dans ce cas.
+✓ 5-Threshold T_0: 89.29%
+✓ T_0 en valeur brute du controle 'MC_Update': 1401.0 (median_near=1401.0, min_near=1361.0, max_near=1441.0, spread=80.0, ambiguous=False)
+✓ Cible: demandee=Abs_magnetization | utilisee=Abs_magnetization | politique=fixed | repli_diagonal=False
+✓ Tool Footprint: IEEE 754 Mantissa Truncation Detected (Katz FD = 4.16)
+✓ Holographic Tension: criticality|control=MC_Update (Delta=1.34, D_vec=[1.479419, 2.365282, 2.818927, 2.489435])
+✓ Results exported to: <PROJECT_ROOT>\audit_release\2026-11-14_l7b_full_reduced\pipeline_output

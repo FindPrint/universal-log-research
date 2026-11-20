@@ -1,0 +1,3 @@
+configuration,L,n_lignes,T0_rang_pct,T0_temperature,T0_local_low_5_lignes,T0_local_high_5_lignes,axe_monotone,conversion_ambigue,L7a,L7b,LevinaBickel,voie2_trio_mode,T_chi_peak_L64,T_chi_peak_ci95_low,T_chi_peak_ci95_high,Tc_exact_infinite
+Flux physiques complets,64,76,50.06367684308213,2.27,2.25,2.29,True,False,up,FRAGILE,4.703149,div-sat (trio equilibre),2.3,2.3,2.31,2.269185314213022
+Deux colonnes (T + énergie),64,76,50.06367684308213,2.27,2.25,2.29,True,False,up,FRAGILE,,max-min (trio non equilibre),2.3,2.3,2.31,2.269185314213022

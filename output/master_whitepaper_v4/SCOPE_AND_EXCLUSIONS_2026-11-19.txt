@@ -1,0 +1,13 @@
+UNIVERSAL_LOG project snapshot - scope statement
+Snapshot date: 2026-11-19
+
+The full project directory scan found 43,602 files and 20,917,295,511 bytes (19.481 GiB), including machine-specific and generated files.
+The reproducible snapshot contains 4,556 project files totaling 9,472,150,212 bytes (8.822 GiB) before ZIP compression.
+
+Included: source code, theory notes, the 29-estimator/TLog materials, run configurations, raw and processed data present in the project, figures, result tables, audit reports, historical release artifacts, licenses, and reproducibility scripts.
+
+Excluded: .git (repository internals and object database), .venv (machine-specific Python environment), tmp (temporary or render outputs), Python bytecode, and cache directories. These are not needed to interpret or rerun the analyses. The working Git tree had untracked project additions at snapshot time; therefore Git history is not represented by the ZIP. The full working files listed in the catalog are represented.
+
+The archive includes a file catalog and SHA-256 manifest. Existing third-party datasets and publications retain their original terms; the project's MIT and CC BY 4.0 notices do not override source licenses or access conditions.
+
+The ZIP itself and this final PDF are not included inside the snapshot to avoid recursion. The ZIP is embedded as an attachment in the PDF. External SHA-256 sidecars are delivered beside the PDF and ZIP.

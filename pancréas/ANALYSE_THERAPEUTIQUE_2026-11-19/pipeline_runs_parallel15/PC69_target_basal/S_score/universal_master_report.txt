@@ -1,0 +1,115 @@
+================================================================================
+UNIVERSAL_LOG v5.9.4-L7aL7b-DKind-AuditFix-SeedTrace-CohenDOnly-NoPlots — MASTER SYNTHESIS REPORT
+================================================================================
+
+File: <PROJECT_ROOT>\pancréas\ANALYSE_THERAPEUTIQUE_2026-11-19\pipeline_inputs_balanced_15\GSE271300_PC69_balanced15_multiflux.csv | Domain: pdac
+Target: CellState_basal | Control: S_score
+Cible demandee (target_requested): CellState_basal | Cible utilisee (target_used): CellState_basal | Politique cible: fixed | Repli diagonal: False | Raison repli: None
+Control selection: mode=single fallback_used=False missing=[] reason=None
+[AVERTISSEMENT-CONTROLE-NON-MONOTONE] controle=S_score direction=non_monotone monotone=False spearman_r=-0.05310120591019467 | Controle NON MONOTONE dans l'ordre fourni : la progression / le rang n'est pas injectif. Un meme seuil en % peut correspondre a plusieurs valeurs brutes distinctes du controle. Les conversions T en valeur brute sont exploratoires (voir spread). Interpreter T0 en % comme repere de progression, pas comme valeur unique du controle.
+Seuils en valeur brute du controle (a cote du %, ne remplacent pas le %) :
+  T_-2_F2_pre_onset: 0.0% -> valeur brute=-0.1353863839439106 (interp=-0.1353863839439106, median_near=-0.1232711188227152, min_near=-0.1353863839439106, max_near=-0.1123854938170892, spread=0.023000890126821383, ambiguous=True)
+  T_-1_F1_pre_inflection: 27.38623470967% -> valeur brute=-0.0706477014117553 (interp=-0.0706477014117553, median_near=-0.0706477014117553, min_near=-0.0722057740955411, max_near=-0.0692838185982738, spread=0.0029219554972673006, ambiguous=True)
+  T_0_Monte_Carlo_Central: 44.73649153043307% -> valeur brute=-0.0554054036619076 (interp=-0.0554054036619076, median_near=-0.0554054036619076, min_near=-0.056775116479409, max_near=-0.0519243184733611, spread=0.004850798006047902, ambiguous=True)
+  T_+1_F1_post_deceleration: 90.24683283840042% -> valeur brute=0.0220006900766444 (interp=0.0220006900766444, median_near=0.0220006900766444, min_near=0.019155639538662, max_near=0.0404826628504325, spread=0.0213270233117705, ambiguous=True)
+  T_+2_F2_post_attractor: 90.24683283840042% -> valeur brute=0.0220006900766444 (interp=0.0220006900766444, median_near=0.0220006900766444, min_near=0.019155639538662, max_near=0.0404826628504325, spread=0.0213270233117705, ambiguous=True)
+Harmonic validation enabled: False status=None
+Worker budget v5.7: chosen=1 safe_cap=1 explicit=False warning=None
+Numba heavy: {'checked': True, 'enabled': False, 'reason': 'disabled', 'max_abs_diff': None}
+Regime-weighted L7 applied=False regime=None
+Adaptive walk-forward: status=disabled window=None n_folds=None t0_std=None dir_acc=None
+
+Direction Consensus: UP (Confidence: 50.00%)
+L7a-COHERENCE : vote interne UP (50.00%) | cible=up regime=down disagreement=True | L7a ne prouve rien, ne teste pas la stabilite.
+L7b-ROBUSTESSE : audit INDETERMINE (mode=off) | L7b desactive (--no-l7b). Ne pas interpreter L7a seul.
+Expected Horizon Value: 0.8244
+L1 multi-horizons : testes=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] consensus=up prob=0.83 stabilite=0.83 sensibilite=stable flips=1
+  horizon  1 : direction=down rel_change=-107121.8678 conf=0.53
+  horizon  2 : direction=down rel_change=-123852.8906 conf=0.53
+  horizon  3 : direction=up rel_change=+127659.0508 conf=0.53
+  horizon  4 : direction=up rel_change=+519948.0006 conf=0.53
+  horizon  5 : direction=up rel_change=+682966.5823 conf=0.53
+  horizon  6 : direction=up rel_change=+535322.5127 conf=0.53
+  horizon  7 : direction=up rel_change=+369350.1396 conf=0.53
+  horizon  8 : direction=up rel_change=+810673.6736 conf=0.53
+  horizon  9 : direction=up rel_change=+723617.6090 conf=0.53
+  horizon 10 : direction=up rel_change=+779102.1657 conf=0.53
+  horizon 11 : direction=up rel_change=+726545.2784 conf=0.53
+  horizon 12 : direction=up rel_change=+824355.1751 conf=0.53
+  L1 note : L1 sur 12 horizon(s) : consensus=up (prob=0.83), stabilite=0.83, sensibilite=stable, flips=1. Si stabilite < 0.60, la direction depend de l horizon : ne pas rapporter un seul horizon comme vérité.
+  L7 ponderation L1 par stabilite : stabilite=0.8333333333333334 sensibilite=stable
+L3 multi-horizons : testes=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] consensus_state=post cross_med=0.9 stabilite=1.00 flips=0
+  horizon  1 : state=post cross=0.9 proj_p=100.0 conf=0.64
+  horizon  2 : state=post cross=0.9 proj_p=100.0 conf=0.64
+  horizon  3 : state=post cross=0.9 proj_p=100.0 conf=0.64
+  horizon  4 : state=post cross=0.9 proj_p=100.0 conf=0.64
+  horizon  5 : state=post cross=0.9 proj_p=100.0 conf=0.64
+  horizon  6 : state=post cross=0.9 proj_p=100.0 conf=0.64
+  horizon  7 : state=post cross=0.9 proj_p=100.0 conf=0.64
+  horizon  8 : state=post cross=0.9 proj_p=100.0 conf=0.64
+  horizon  9 : state=post cross=0.9 proj_p=100.0 conf=0.64
+  horizon 10 : state=post cross=0.9 proj_p=100.0 conf=0.64
+  horizon 11 : state=post cross=0.9 proj_p=100.0 conf=0.64
+  horizon 12 : state=post cross=0.9 proj_p=100.0 conf=0.64
+L5 multi-horizons : testes=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] top=Sevcik stabilite=1.00 n_alerts_med=0.0 flips=0
+L6 multi-horizons : testes=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] any_reaches_T0=True any_reaches_next=True
+L7 semantic_split : target=up regime=post struct=down disagreement=True
+  note: La cible (L1) et le régime (L3/L6) ne disent pas la même chose : reporter les deux, ne pas forcer un seul sens.
+  stab L1=0.8333333333333334 L3=1.0 L5=1.0
+
+Canonical 5-Threshold Devil's Staircase Cascade:
+  T_-2_F2_pre_onset           :   0.00%  -> valeur brute controle=-0.1353863839439106 (min_near=-0.1353863839439106, max_near=-0.1123854938170892, spread=0.023000890126821383, ambiguous=True)
+  T_-1_F1_pre_inflection      :  27.39%  -> valeur brute controle=-0.0706477014117553 (min_near=-0.0722057740955411, max_near=-0.0692838185982738, spread=0.0029219554972673006, ambiguous=True)
+  T_0_Monte_Carlo_Central     :  44.74%  -> valeur brute controle=-0.0554054036619076 (min_near=-0.056775116479409, max_near=-0.0519243184733611, spread=0.004850798006047902, ambiguous=True)
+  T_+1_F1_post_deceleration   :  90.25%  -> valeur brute controle=0.0220006900766444 (min_near=0.019155639538662, max_near=0.0404826628504325, spread=0.0213270233117705, ambiguous=True)
+  T_+2_F2_post_attractor      :  90.25%  -> valeur brute controle=0.0220006900766444 (min_near=0.019155639538662, max_near=0.0404826628504325, spread=0.0213270233117705, ambiguous=True)
+
+Early Warning Alert: NORMAL (Lead Time: 0.0%)
+Tool Footprint Audit: ['ADC Hardware Quantization Detected (3 discrete levels)', 'Computer OS Thread Jitter / Stall Detected (56.2% zero-hold rate)', 'IEEE 754 Mantissa Truncation Detected (Katz FD = 5.38)']
+Lecture holographique v5.2 (Q1-Q6 et score de seuil inchanges):
+  [Couche geometrique — T_log]
+  d_sat  : 1.501
+  d_crit : 2.574
+  d_div  : 3.000
+  d_null (SpectralDimension) : 2.525
+  Delta (d_div - d_sat) : 1.499
+  Ecart E (prioritaire sur signe seul) : 1.499 | T_gap : 6.746
+  Trio triangulation (choisissable) : ['Higuchi', 'InformationD1', 'LevinaBickel'] preset=default defaut=True | Trio gap E : 2.739 | T_gap trio : 12.326 mode=div-sat (trio equilibre)
+  Trio valeurs : sat Higuchi=2.007 crit InformationD1=0.580 div LevinaBickel=4.746
+  Trio vs mediane desaccord gap>3 ? False | Choisir : --triangulation "Higuchi,InformationD1,LevinaBickel" ou robust / noise_robust / fast
+  Voie1 Higuchi : 2.007 | Voie1 aveugle ? False | Desaccord signe sat/div ? False
+  Seuils = conventions, pas preuves : Seuils = conventions de lecture, pas theoremes, pas preuves. 1.0 arbitraire a echoue de 0.05 sur PM2.5 et 0.04 sur social. 2.0 justifie par finance V1-V3.
+  Preuve : heuristique, triangulation seulement, pas une preuve. Preuve totale impossible theoriquement. Ce diagnostic rend l'echec attribuable (CSV / pipeline / serie / seuil / coeur), il ne prouve pas le coeur.
+  Regime : CRITICALITY
+  Regime relatif : criticality|control=S_score
+  Null role : measurement_frame_not_interchangeable_d
+  Appel physique : True
+  Evidence : ['delta_in_[1.2,3.0]']
+  T_log class median : {'saturation': -11.245401, 'criticality': -6.416424, 'divergence': -4.49981, 'null_reference': -6.639463}
+  T_log par d_kind: medians exploratoires, chaque type garde ses estimateurs
+    correlation_attractor_dimension: d=2.574 T_log=-6.416 estimateurs=['CorrelationD2', 'GrassbergerProcaccia'] IQR=0.000
+    covariance_participation_dimension: d=6.201 T_log=9.904 estimateurs=['PCAIntrinsic'] IQR=n/a
+    graph_cluster_scaling_proxy: d=0.950 T_log=-13.724 estimateurs=['GraphDimension'] IQR=n/a
+    graph_dimension_proxy: d=1.123 T_log=-12.945 estimateurs=['Higuchi', 'Katz', 'Petrosian', 'Sevcik', 'BoxCounting'] IQR=0.601
+    information_attractor_dimension: d=0.580 T_log=-15.387 estimateurs=['InformationD1'] IQR=n/a
+    inverse_covariance_participation_dimension: d=3.614 T_log=-1.737 estimateurs=['Fisher'] IQR=n/a
+    local_pca_dimension_proxy: d=2.304 T_log=-7.631 estimateurs=['LocalPCA'] IQR=n/a
+    mixture_local_pca_proxy: d=3.000 T_log=-4.500 estimateurs=['MFA'] IQR=n/a
+    neighbor_intrinsic_dimension: d=4.746 T_log=3.358 estimateurs=['LevinaBickel'] IQR=n/a
+    process_model_graph_dimension_proxy: d=1.534 T_log=-11.098 estimateurs=['DFA', 'Hurst2mH'] IQR=0.033
+    spectral_dimension_proxy: d=2.525 T_log=-6.639 estimateurs=['SpectralDimension'] IQR=n/a
+    visibility_graph_dimension_proxy: d=1.980 T_log=-9.091 estimateurs=['VisibilityGraph'] IQR=n/a
+  La reference 4 reste a calibrer selon d_kind.
+  Falsification : ECART SOUS 0.5 (geometrique vs SpectralDimension)
+  [Couche relative — z croise des 29, hors T_log]
+  class_z_median : {'saturation': -0.379805, 'criticality': 0.153352, 'divergence': 0.702193, 'null_reference': -0.754667}
+  cohen_d_between_classes : {'saturation_vs_divergence': {'cohen_d': -1.402993, 'n_a': 8, 'n_b': 6, 'note': 'sur z croise des medianes ; pas une dimension'}, 'saturation_vs_criticality': {'cohen_d': -1.245949, 'n_a': 8, 'n_b': 5, 'note': 'sur z croise des medianes ; pas une dimension'}, 'criticality_vs_divergence': {'cohen_d': -0.866468, 'n_a': 5, 'n_b': 6, 'note': 'sur z croise des medianes ; pas une dimension'}, 'criticality_vs_null_reference': {'cohen_d': 1.48606, 'n_a': 5, 'n_b': 6, 'note': 'sur z croise des medianes ; pas une dimension'}, 'saturation_vs_null_reference': {'cohen_d': 0.867747, 'n_a': 8, 'n_b': 6, 'note': 'sur z croise des medianes ; pas une dimension'}, 'divergence_vs_null_reference': {'cohen_d': 1.46627, 'n_a': 6, 'n_b': 6, 'note': 'sur z croise des medianes ; pas une dimension'}}
+  Q3 recopie Q1 : True
+Ce que mesurent les questions (scores numeriques inchanges):
+  Q1_Calme_vs_Chaos: Taille d'effet entre progression basse et haute, une colonne flux x estimateur. Ce n'est pas un test de chaos.
+  Q2_Tension_Seuil: Meme taille d'effet dans une marge avant le seuil contre une marge apres.
+  Q3_Agressivite: Meme comparaison que Q1 restreinte aux flux agressifs ; peut recopier Q1 si couverture faible.
+  Q4_Persistence: Separation intra-fenetre du flux brut, recopiee sur les colonnes d'estimateurs. Ce n'est pas Hurst.
+  Q5_Actif_Receptif: Separation actifs / receptifs sur moyennes brutes. 0 si etiquettes absentes.
+  Q6_Actif_Receptif_Echelle: Q5 apres division par l'ecart-type sans centrage. Ne remplace pas Q5.
+================================================================================

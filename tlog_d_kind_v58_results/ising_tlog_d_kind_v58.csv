@@ -1,0 +1,115 @@
+case_id,control_col,n_samples_for_tlog,d_kind,label_fr,d_median,T_log,estimators_used,between_estimator_iqr,status
+classical_temperature_sweep,Temperature,105,correlation_attractor_dimension,Dimension de corrélation d'attracteur (D2),2.639726,-6.330661,"CorrelationD2, GrassbergerProcaccia",0.030249,exploratory_requires_domain_calibration
+classical_temperature_sweep,Temperature,105,covariance_participation_dimension,Dimension effective par participation de covariance,5.839726,8.562011,PCAIntrinsic,,exploratory_requires_domain_calibration
+classical_temperature_sweep,Temperature,105,graph_cluster_scaling_proxy,Proxy d'échelle par grappes de graphe,1.022759,-13.855961,GraphDimension,,exploratory_requires_domain_calibration
+classical_temperature_sweep,Temperature,105,graph_dimension_proxy,Proxy de dimension du graphe,1.08366,-13.572531,"Higuchi, Katz, Petrosian, Sevcik, BoxCounting",0.511601,exploratory_requires_domain_calibration
+classical_temperature_sweep,Temperature,105,information_attractor_dimension,Dimension d'information d'attracteur (D1),0.660333,-15.542679,InformationD1,,exploratory_requires_domain_calibration
+classical_temperature_sweep,Temperature,105,inverse_covariance_participation_dimension,Dimension effective par participation de covariance inverse,3.517872,-2.243804,Fisher,,exploratory_requires_domain_calibration
+classical_temperature_sweep,Temperature,105,local_pca_dimension_proxy,Dimension locale par PCA,2.22957,-8.239512,LocalPCA,,exploratory_requires_domain_calibration
+classical_temperature_sweep,Temperature,105,mixture_local_pca_proxy,Maximum de dimensions PCA locales par groupes,3.0,-4.65396,MFA,,exploratory_requires_domain_calibration
+classical_temperature_sweep,Temperature,105,neighbor_intrinsic_dimension,Dimension intrinsèque par voisinage,3.80877,-0.889977,"DANCo, LevinaBickel",0.88664,exploratory_requires_domain_calibration
+classical_temperature_sweep,Temperature,105,persistent_h0_scaling_proxy,Proxy d'échelle par fusion H0,1.388919,-12.151867,PersistentHomology,,exploratory_requires_domain_calibration
+classical_temperature_sweep,Temperature,105,process_model_graph_dimension_proxy,Dimension de graphe issue d'un modèle de processus,1.346774,-12.348009,"DFA, Hurst2mH",0.071102,exploratory_requires_domain_calibration
+classical_temperature_sweep,Temperature,105,spectral_dimension_proxy,Dimension spectrale transformée,2.390604,-7.490063,SpectralDimension,,exploratory_requires_domain_calibration
+classical_temperature_sweep,Temperature,105,visibility_graph_dimension_proxy,Proxy de dimension par graphe de visibilité,2.070468,-8.979967,VisibilityGraph,,exploratory_requires_domain_calibration
+classical_field_sweep,Field,105,correlation_attractor_dimension,Dimension de corrélation d'attracteur (D2),2.720776,-5.953458,"CorrelationD2, GrassbergerProcaccia",0.013992,exploratory_requires_domain_calibration
+classical_field_sweep,Field,105,covariance_participation_dimension,Dimension effective par participation de covariance,6.294378,10.677946,PCAIntrinsic,,exploratory_requires_domain_calibration
+classical_field_sweep,Field,105,graph_cluster_scaling_proxy,Proxy d'échelle par grappes de graphe,1.039029,-13.780243,GraphDimension,,exploratory_requires_domain_calibration
+classical_field_sweep,Field,105,graph_dimension_proxy,Proxy de dimension du graphe,1.090815,-13.539233,"Higuchi, Katz, Petrosian, Sevcik, BoxCounting",0.509306,exploratory_requires_domain_calibration
+classical_field_sweep,Field,105,information_attractor_dimension,Dimension d'information d'attracteur (D1),0.539058,-16.107085,InformationD1,,exploratory_requires_domain_calibration
+classical_field_sweep,Field,105,inverse_covariance_participation_dimension,Dimension effective par participation de covariance inverse,3.466785,-2.481563,Fisher,,exploratory_requires_domain_calibration
+classical_field_sweep,Field,105,local_pca_dimension_proxy,Dimension locale par PCA,2.129032,-8.70741,LocalPCA,,exploratory_requires_domain_calibration
+classical_field_sweep,Field,105,mixture_local_pca_proxy,Maximum de dimensions PCA locales par groupes,3.0,-4.65396,MFA,,exploratory_requires_domain_calibration
+classical_field_sweep,Field,105,neighbor_intrinsic_dimension,Dimension intrinsèque par voisinage,4.877805,4.085272,"DANCo, LevinaBickel",1.81001,exploratory_requires_domain_calibration
+classical_field_sweep,Field,105,persistent_h0_scaling_proxy,Proxy d'échelle par fusion H0,1.054628,-13.707645,PersistentHomology,,exploratory_requires_domain_calibration
+classical_field_sweep,Field,105,process_model_graph_dimension_proxy,Dimension de graphe issue d'un modèle de processus,1.29555,-12.586402,"DFA, Hurst2mH",0.053512,exploratory_requires_domain_calibration
+classical_field_sweep,Field,105,spectral_dimension_proxy,Dimension spectrale transformée,2.533476,-6.825146,SpectralDimension,,exploratory_requires_domain_calibration
+classical_field_sweep,Field,105,visibility_graph_dimension_proxy,Proxy de dimension par graphe de visibilité,2.083375,-8.919897,VisibilityGraph,,exploratory_requires_domain_calibration
+classical_tlog_profile_sweep,Temperature,105,correlation_attractor_dimension,Dimension de corrélation d'attracteur (D2),2.713662,-5.986566,"CorrelationD2, GrassbergerProcaccia",0.015124,exploratory_requires_domain_calibration
+classical_tlog_profile_sweep,Temperature,105,covariance_participation_dimension,Dimension effective par participation de covariance,6.007379,9.342263,PCAIntrinsic,,exploratory_requires_domain_calibration
+classical_tlog_profile_sweep,Temperature,105,graph_cluster_scaling_proxy,Proxy d'échelle par grappes de graphe,1.041266,-13.76983,GraphDimension,,exploratory_requires_domain_calibration
+classical_tlog_profile_sweep,Temperature,105,graph_dimension_proxy,Proxy de dimension du graphe,1.085854,-13.562321,"Higuchi, Katz, Petrosian, Sevcik, BoxCounting",0.541865,exploratory_requires_domain_calibration
+classical_tlog_profile_sweep,Temperature,105,information_attractor_dimension,Dimension d'information d'attracteur (D1),0.521142,-16.190468,InformationD1,,exploratory_requires_domain_calibration
+classical_tlog_profile_sweep,Temperature,105,inverse_covariance_participation_dimension,Dimension effective par participation de covariance inverse,3.582312,-1.943904,Fisher,,exploratory_requires_domain_calibration
+classical_tlog_profile_sweep,Temperature,105,local_pca_dimension_proxy,Dimension locale par PCA,2.213846,-8.312688,LocalPCA,,exploratory_requires_domain_calibration
+classical_tlog_profile_sweep,Temperature,105,mixture_local_pca_proxy,Maximum de dimensions PCA locales par groupes,3.0,-4.65396,MFA,,exploratory_requires_domain_calibration
+classical_tlog_profile_sweep,Temperature,105,neighbor_intrinsic_dimension,Dimension intrinsèque par voisinage,3.169012,-3.867384,"DANCo, LevinaBickel",0.415195,exploratory_requires_domain_calibration
+classical_tlog_profile_sweep,Temperature,105,persistent_h0_scaling_proxy,Proxy d'échelle par fusion H0,2.065729,-9.002022,PersistentHomology,,exploratory_requires_domain_calibration
+classical_tlog_profile_sweep,Temperature,105,process_model_graph_dimension_proxy,Dimension de graphe issue d'un modèle de processus,1.326157,-12.443959,"DFA, Hurst2mH",0.074221,exploratory_requires_domain_calibration
+classical_tlog_profile_sweep,Temperature,105,spectral_dimension_proxy,Dimension spectrale transformée,2.412139,-7.389843,SpectralDimension,,exploratory_requires_domain_calibration
+classical_tlog_profile_sweep,Temperature,105,visibility_graph_dimension_proxy,Proxy de dimension par graphe de visibilité,2.05098,-9.070663,VisibilityGraph,,exploratory_requires_domain_calibration
+classical_controlled_chain_0,Temperature,76,correlation_attractor_dimension,Dimension de corrélation d'attracteur (D2),1.951922,-8.869679,"CorrelationD2, GrassbergerProcaccia",0.013682,exploratory_requires_domain_calibration
+classical_controlled_chain_0,Temperature,76,covariance_participation_dimension,Dimension effective par participation de covariance,4.52015,2.252631,PCAIntrinsic,,exploratory_requires_domain_calibration
+classical_controlled_chain_0,Temperature,76,graph_cluster_scaling_proxy,Proxy d'échelle par grappes de graphe,0.985425,-13.055322,GraphDimension,,exploratory_requires_domain_calibration
+classical_controlled_chain_0,Temperature,76,graph_dimension_proxy,Proxy de dimension du graphe,1.097791,-12.568695,"Higuchi, Katz, Petrosian, Sevcik, BoxCounting",0.452175,exploratory_requires_domain_calibration
+classical_controlled_chain_0,Temperature,76,information_attractor_dimension,Dimension d'information d'attracteur (D1),0.80077,-13.855013,InformationD1,,exploratory_requires_domain_calibration
+classical_controlled_chain_0,Temperature,76,inverse_covariance_participation_dimension,Dimension effective par participation de covariance inverse,3.315195,-2.965708,Fisher,,exploratory_requires_domain_calibration
+classical_controlled_chain_0,Temperature,76,local_pca_dimension_proxy,Dimension locale par PCA,2.570468,-6.190923,LocalPCA,,exploratory_requires_domain_calibration
+classical_controlled_chain_0,Temperature,76,mixture_local_pca_proxy,Maximum de dimensions PCA locales par groupes,2.5,-6.4961,MFA,,exploratory_requires_domain_calibration
+classical_controlled_chain_0,Temperature,76,neighbor_intrinsic_dimension,Dimension intrinsèque par voisinage,3.567069,-1.874908,"DANCo, LevinaBickel",0.862721,exploratory_requires_domain_calibration
+classical_controlled_chain_0,Temperature,76,persistent_h0_scaling_proxy,Proxy d'échelle par fusion H0,1.148274,-12.350064,PersistentHomology,,exploratory_requires_domain_calibration
+classical_controlled_chain_0,Temperature,76,process_model_graph_dimension_proxy,Dimension de graphe issue d'un modèle de processus,1.249368,-11.912253,"DFA, Hurst2mH",0.22816,exploratory_requires_domain_calibration
+classical_controlled_chain_0,Temperature,76,spectral_dimension_proxy,Dimension spectrale transformée,2.219851,-7.70935,SpectralDimension,,exploratory_requires_domain_calibration
+classical_controlled_chain_0,Temperature,76,visibility_graph_dimension_proxy,Proxy de dimension par graphe de visibilité,1.993593,-8.689213,VisibilityGraph,,exploratory_requires_domain_calibration
+classical_controlled_chain_1,Temperature,76,correlation_attractor_dimension,Dimension de corrélation d'attracteur (D2),1.882718,-9.169384,"CorrelationD2, GrassbergerProcaccia",0.031349,exploratory_requires_domain_calibration
+classical_controlled_chain_1,Temperature,76,covariance_participation_dimension,Dimension effective par participation de covariance,4.774183,3.352781,PCAIntrinsic,,exploratory_requires_domain_calibration
+classical_controlled_chain_1,Temperature,76,graph_cluster_scaling_proxy,Proxy d'échelle par grappes de graphe,1.008394,-12.955847,GraphDimension,,exploratory_requires_domain_calibration
+classical_controlled_chain_1,Temperature,76,graph_dimension_proxy,Proxy de dimension du graphe,1.09414,-12.584504,"Higuchi, Katz, Petrosian, Sevcik, BoxCounting",0.439244,exploratory_requires_domain_calibration
+classical_controlled_chain_1,Temperature,76,information_attractor_dimension,Dimension d'information d'attracteur (D1),0.785548,-13.920932,InformationD1,,exploratory_requires_domain_calibration
+classical_controlled_chain_1,Temperature,76,inverse_covariance_participation_dimension,Dimension effective par participation de covariance inverse,3.412449,-2.544526,Fisher,,exploratory_requires_domain_calibration
+classical_controlled_chain_1,Temperature,76,local_pca_dimension_proxy,Dimension locale par PCA,2.569281,-6.196062,LocalPCA,,exploratory_requires_domain_calibration
+classical_controlled_chain_1,Temperature,76,mixture_local_pca_proxy,Maximum de dimensions PCA locales par groupes,2.5,-6.4961,MFA,,exploratory_requires_domain_calibration
+classical_controlled_chain_1,Temperature,76,neighbor_intrinsic_dimension,Dimension intrinsèque par voisinage,3.476026,-2.26919,"DANCo, LevinaBickel",0.665507,exploratory_requires_domain_calibration
+classical_controlled_chain_1,Temperature,76,persistent_h0_scaling_proxy,Proxy d'échelle par fusion H0,0.777488,-13.955839,PersistentHomology,,exploratory_requires_domain_calibration
+classical_controlled_chain_1,Temperature,76,process_model_graph_dimension_proxy,Dimension de graphe issue d'un modèle de processus,1.178782,-12.217944,"DFA, Hurst2mH",0.288916,exploratory_requires_domain_calibration
+classical_controlled_chain_1,Temperature,76,spectral_dimension_proxy,Dimension spectrale transformée,2.219973,-7.708824,SpectralDimension,,exploratory_requires_domain_calibration
+classical_controlled_chain_1,Temperature,76,visibility_graph_dimension_proxy,Proxy de dimension par graphe de visibilité,1.975323,-8.768338,VisibilityGraph,,exploratory_requires_domain_calibration
+classical_controlled_chain_2,Temperature,76,correlation_attractor_dimension,Dimension de corrélation d'attracteur (D2),1.920449,-9.005982,"CorrelationD2, GrassbergerProcaccia",0.001117,exploratory_requires_domain_calibration
+classical_controlled_chain_2,Temperature,76,covariance_participation_dimension,Dimension effective par participation de covariance,4.473935,2.052488,PCAIntrinsic,,exploratory_requires_domain_calibration
+classical_controlled_chain_2,Temperature,76,graph_cluster_scaling_proxy,Proxy d'échelle par grappes de graphe,0.976514,-13.093912,GraphDimension,,exploratory_requires_domain_calibration
+classical_controlled_chain_2,Temperature,76,graph_dimension_proxy,Proxy de dimension du graphe,1.109257,-12.519036,"Higuchi, Katz, Petrosian, Sevcik, BoxCounting",0.465888,exploratory_requires_domain_calibration
+classical_controlled_chain_2,Temperature,76,information_attractor_dimension,Dimension d'information d'attracteur (D1),0.816875,-13.785265,InformationD1,,exploratory_requires_domain_calibration
+classical_controlled_chain_2,Temperature,76,inverse_covariance_participation_dimension,Dimension effective par participation de covariance inverse,3.226482,-3.349901,Fisher,,exploratory_requires_domain_calibration
+classical_controlled_chain_2,Temperature,76,local_pca_dimension_proxy,Dimension locale par PCA,2.529205,-6.369619,LocalPCA,,exploratory_requires_domain_calibration
+classical_controlled_chain_2,Temperature,76,mixture_local_pca_proxy,Maximum de dimensions PCA locales par groupes,2.5,-6.4961,MFA,,exploratory_requires_domain_calibration
+classical_controlled_chain_2,Temperature,76,neighbor_intrinsic_dimension,Dimension intrinsèque par voisinage,3.412009,-2.546432,"DANCo, LevinaBickel",0.834921,exploratory_requires_domain_calibration
+classical_controlled_chain_2,Temperature,76,persistent_h0_scaling_proxy,Proxy d'échelle par fusion H0,1.129027,-12.433419,PersistentHomology,,exploratory_requires_domain_calibration
+classical_controlled_chain_2,Temperature,76,process_model_graph_dimension_proxy,Dimension de graphe issue d'un modèle de processus,1.257716,-11.876101,"DFA, Hurst2mH",0.238054,exploratory_requires_domain_calibration
+classical_controlled_chain_2,Temperature,76,spectral_dimension_proxy,Dimension spectrale transformée,2.254508,-7.559259,SpectralDimension,,exploratory_requires_domain_calibration
+classical_controlled_chain_2,Temperature,76,visibility_graph_dimension_proxy,Proxy de dimension par graphe de visibilité,1.984896,-8.726879,VisibilityGraph,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N8,g,81,correlation_attractor_dimension,Dimension de corrélation d'attracteur (D2),0.957406,-13.370525,"CorrelationD2, GrassbergerProcaccia",0.021039,exploratory_requires_domain_calibration
+quantum_transverse_ising_N8,g,81,covariance_participation_dimension,Dimension effective par participation de covariance,4.325886,1.432091,PCAIntrinsic,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N8,g,81,graph_cluster_scaling_proxy,Proxy d'échelle par grappes de graphe,0.77731,-14.161948,GraphDimension,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N8,g,81,graph_dimension_proxy,Proxy de dimension du graphe,1.027398,-13.062947,"Higuchi, Katz, Petrosian, Sevcik, BoxCounting",0.375347,exploratory_requires_domain_calibration
+quantum_transverse_ising_N8,g,81,information_attractor_dimension,Dimension d'information d'attracteur (D1),0.71532,-14.434361,InformationD1,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N8,g,81,inverse_covariance_participation_dimension,Dimension effective par participation de covariance inverse,3.439924,-2.461224,Fisher,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N8,g,81,local_pca_dimension_proxy,Dimension locale par PCA,1.619718,-10.460027,LocalPCA,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N8,g,81,mixture_local_pca_proxy,Maximum de dimensions PCA locales par groupes,1.0,-13.183347,MFA,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N8,g,81,persistent_h0_scaling_proxy,Proxy d'échelle par fusion H0,2.059589,-8.527036,PersistentHomology,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N8,g,81,process_model_graph_dimension_proxy,Dimension de graphe issue d'un modèle de processus,1.070615,-12.873034,"DFA, Hurst2mH",0.218504,exploratory_requires_domain_calibration
+quantum_transverse_ising_N8,g,81,spectral_dimension_proxy,Dimension spectrale transformée,1.757298,-9.855441,SpectralDimension,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N8,g,81,visibility_graph_dimension_proxy,Proxy de dimension par graphe de visibilité,1.819545,-9.581898,VisibilityGraph,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N10,g,81,correlation_attractor_dimension,Dimension de corrélation d'attracteur (D2),0.955299,-13.379784,"CorrelationD2, GrassbergerProcaccia",0.006085,exploratory_requires_domain_calibration
+quantum_transverse_ising_N10,g,81,covariance_participation_dimension,Dimension effective par participation de covariance,4.324183,1.424605,PCAIntrinsic,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N10,g,81,graph_cluster_scaling_proxy,Proxy d'échelle par grappes de graphe,0.773434,-14.178982,GraphDimension,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N10,g,81,graph_dimension_proxy,Proxy de dimension du graphe,1.027406,-13.062915,"Higuchi, Katz, Petrosian, Sevcik, BoxCounting",0.37513,exploratory_requires_domain_calibration
+quantum_transverse_ising_N10,g,81,information_attractor_dimension,Dimension d'information d'attracteur (D1),0.710954,-14.453544,InformationD1,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N10,g,81,inverse_covariance_participation_dimension,Dimension effective par participation de covariance inverse,3.438855,-2.465922,Fisher,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N10,g,81,local_pca_dimension_proxy,Dimension locale par PCA,1.581818,-10.626577,LocalPCA,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N10,g,81,mixture_local_pca_proxy,Maximum de dimensions PCA locales par groupes,1.0,-13.183347,MFA,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N10,g,81,persistent_h0_scaling_proxy,Proxy d'échelle par fusion H0,2.18225,-7.988009,PersistentHomology,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N10,g,81,process_model_graph_dimension_proxy,Dimension de graphe issue d'un modèle de processus,1.070418,-12.8739,"DFA, Hurst2mH",0.218572,exploratory_requires_domain_calibration
+quantum_transverse_ising_N10,g,81,spectral_dimension_proxy,Dimension spectrale transformée,1.758036,-9.852198,SpectralDimension,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N10,g,81,visibility_graph_dimension_proxy,Proxy de dimension par graphe de visibilité,1.819545,-9.581898,VisibilityGraph,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N12,g,81,correlation_attractor_dimension,Dimension de corrélation d'attracteur (D2),0.961214,-13.353791,"CorrelationD2, GrassbergerProcaccia",0.003242,exploratory_requires_domain_calibration
+quantum_transverse_ising_N12,g,81,covariance_participation_dimension,Dimension effective par participation de covariance,4.324763,1.427153,PCAIntrinsic,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N12,g,81,graph_cluster_scaling_proxy,Proxy d'échelle par grappes de graphe,0.773434,-14.178982,GraphDimension,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N12,g,81,graph_dimension_proxy,Proxy de dimension du graphe,1.027406,-13.062913,"Higuchi, Katz, Petrosian, Sevcik, BoxCounting",0.374383,exploratory_requires_domain_calibration
+quantum_transverse_ising_N12,g,81,information_attractor_dimension,Dimension d'information d'attracteur (D1),0.701631,-14.494514,InformationD1,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N12,g,81,inverse_covariance_participation_dimension,Dimension effective par participation de covariance inverse,3.438715,-2.466538,Fisher,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N12,g,81,local_pca_dimension_proxy,Dimension locale par PCA,1.563636,-10.706476,LocalPCA,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N12,g,81,mixture_local_pca_proxy,Maximum de dimensions PCA locales par groupes,1.0,-13.183347,MFA,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N12,g,81,persistent_h0_scaling_proxy,Proxy d'échelle par fusion H0,2.243776,-7.717639,PersistentHomology,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N12,g,81,process_model_graph_dimension_proxy,Dimension de graphe issue d'un modèle de processus,1.070432,-12.87384,"DFA, Hurst2mH",0.218581,exploratory_requires_domain_calibration
+quantum_transverse_ising_N12,g,81,spectral_dimension_proxy,Dimension spectrale transformée,1.75864,-9.849541,SpectralDimension,,exploratory_requires_domain_calibration
+quantum_transverse_ising_N12,g,81,visibility_graph_dimension_proxy,Proxy de dimension par graphe de visibilité,1.819545,-9.581898,VisibilityGraph,,exploratory_requires_domain_calibration

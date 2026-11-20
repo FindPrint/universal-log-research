@@ -1,0 +1,12 @@
+TCGA-PAAD Firehose 2016-01-28 n= 178 genes= 20502
+MUC16 rho= 0.2783 p= 0.0001691 BH_q= 0.0006486 partial_rho= 0.2849
+CEACAM5 rho= 0.3434 p= 2.7e-06 BH_q= 1.695e-05 partial_rho= 0.3387
+GEO GSE71729 (Moffitt et al. 2015) n= 145 genes= 19749
+MUC16 rho= 0.0365 p= 0.6626 BH_q= 0.7519 partial_rho= -0.0109
+CEACAM5 rho= 0.2736 p= 0.0008672 BH_q= 0.003795 partial_rho= 0.277
+GEO GSE62452 (Hussain et al.) n= 69 genes= 23308
+MUC16 rho= 0.3237 p= 0.006662 BH_q= 0.02463 partial_rho= 0.2758
+CEACAM5 rho= 0.4411 p= 0.0001487 BH_q= 0.001426 partial_rho= 0.3783
+Wrote <PROJECT_ROOT>\pancréas\REVUE_INDEPENDANTE_2026-11-15\target_associations.csv
+Wrote <PROJECT_ROOT>\pancréas\REVUE_INDEPENDANTE_2026-11-15\all_gene_spearman_vs_KRAS.csv
+Wrote <PROJECT_ROOT>\pancréas\REVUE_INDEPENDANTE_2026-11-15\analysis_manifest.json

@@ -1,0 +1,1395 @@
+{
+  "csd_fluxes": [
+    "Gemcitabine",
+    "Paclitaxel",
+    "SN-38",
+    "5-FU",
+    "Oxaliplatin",
+    "Selumetinib",
+    "Afatinib",
+    "Bortezomib",
+    "Lapatinib",
+    "Sunitinib",
+    "Olaparib",
+    "Nutlin-3",
+    "MK-2206",
+    "KU-55933",
+    "Everolimus",
+    "Celecoxib",
+    "Ruxolitinib",
+    "SB5225334",
+    "SGI-1776",
+    "TPCA-1",
+    "LY2874455",
+    "SF1670",
+    "K-ras(G12C) Inhibitor 9",
+    "WIKI4",
+    "Disulfuram"
+  ],
+  "csd_count": 25,
+  "csd_correlations": {
+    "Gemcitabine": {
+      "csd_estimators": [
+        "Katz",
+        "SampleEn",
+        "CorrelationD2",
+        "GrassbergerProcaccia",
+        "InformationD1",
+        "GraphDimension",
+        "MFA",
+        "KolmogorovLZ",
+        "SpectralBeta",
+        "SpectralDimension"
+      ],
+      "signal_fprime_correlation": -0.7155704760783818,
+      "signal_fprime_p_value": 1.9037367179646607e-10,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Katz": {
+          "estimator_fprime_corr": -0.12801451099536387,
+          "p_value": 0.16530492858582244,
+          "significant": "False"
+        },
+        "SampleEn": {
+          "estimator_fprime_corr": -0.27711949420218,
+          "p_value": 0.0071627094527424535,
+          "significant": "False"
+        },
+        "CorrelationD2": {
+          "estimator_fprime_corr": -0.19746015392595168,
+          "p_value": 0.05780056447589015,
+          "significant": "False"
+        },
+        "GrassbergerProcaccia": {
+          "estimator_fprime_corr": -0.20724623294070582,
+          "p_value": 0.046231123002809106,
+          "significant": "False"
+        },
+        "InformationD1": {
+          "estimator_fprime_corr": -0.2434396978752982,
+          "p_value": 0.0187035257246759,
+          "significant": "False"
+        },
+        "GraphDimension": {
+          "estimator_fprime_corr": -0.5633795057952927,
+          "p_value": 4.1263175557442155e-09,
+          "significant": "True"
+        },
+        "MFA": {
+          "estimator_fprime_corr": -0.6017530568184994,
+          "p_value": 1.7781387557427877e-10,
+          "significant": "True"
+        },
+        "KolmogorovLZ": {
+          "estimator_fprime_corr": -0.4513308841131385,
+          "p_value": 9.034806477152272e-06,
+          "significant": "True"
+        },
+        "SpectralBeta": {
+          "estimator_fprime_corr": -0.5128633568409379,
+          "p_value": 2.7686881401808114e-07,
+          "significant": "True"
+        },
+        "SpectralDimension": {
+          "estimator_fprime_corr": -0.5128633568409379,
+          "p_value": 2.7686881401808114e-07,
+          "significant": "True"
+        }
+      }
+    },
+    "Paclitaxel": {
+      "csd_estimators": [
+        "Hurst",
+        "Petrosian",
+        "InformationD1",
+        "VisibilityGraph",
+        "Fisher",
+        "GraphDimension",
+        "PersistentHomology",
+        "MFA",
+        "KolmogorovLZ",
+        "Hurst2mH"
+      ],
+      "signal_fprime_correlation": -0.7314675254100834,
+      "signal_fprime_p_value": 4.709086764344912e-11,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Hurst": {
+          "estimator_fprime_corr": -0.5312482401391623,
+          "p_value": 4.2877975151805136e-08,
+          "significant": "True"
+        },
+        "Petrosian": {
+          "estimator_fprime_corr": -0.1910220070368325,
+          "p_value": 0.03743278863938775,
+          "significant": "False"
+        },
+        "InformationD1": {
+          "estimator_fprime_corr": -0.3830753327360837,
+          "p_value": 0.00015069427057166912,
+          "significant": "True"
+        },
+        "VisibilityGraph": {
+          "estimator_fprime_corr": -0.46871175804704385,
+          "p_value": 3.611860117853987e-06,
+          "significant": "True"
+        },
+        "Fisher": {
+          "estimator_fprime_corr": -0.21328856447415584,
+          "p_value": 0.040097168024516704,
+          "significant": "False"
+        },
+        "GraphDimension": {
+          "estimator_fprime_corr": -0.4893170814651577,
+          "p_value": 6.451718076299444e-07,
+          "significant": "True"
+        },
+        "PersistentHomology": {
+          "estimator_fprime_corr": -0.4473112938323606,
+          "p_value": 0.002332255488926015,
+          "significant": "True"
+        },
+        "MFA": {
+          "estimator_fprime_corr": -0.690596174998875,
+          "p_value": 1.8696183161861214e-14,
+          "significant": "True"
+        },
+        "KolmogorovLZ": {
+          "estimator_fprime_corr": -0.5825519747175318,
+          "p_value": 2.1126907727775405e-09,
+          "significant": "True"
+        },
+        "Hurst2mH": {
+          "estimator_fprime_corr": -0.531248240139162,
+          "p_value": 4.287797515180597e-08,
+          "significant": "True"
+        }
+      }
+    },
+    "SN-38": {
+      "csd_estimators": [
+        "Higuchi",
+        "Katz",
+        "Petrosian",
+        "GraphDimension"
+      ],
+      "signal_fprime_correlation": -0.7572096080137188,
+      "signal_fprime_p_value": 3.92763419348779e-12,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Higuchi": {
+          "estimator_fprime_corr": -0.2605014091307199,
+          "p_value": 0.004218878743968001,
+          "significant": "False"
+        },
+        "Katz": {
+          "estimator_fprime_corr": -0.15086697519796535,
+          "p_value": 0.10146731257473941,
+          "significant": "False"
+        },
+        "Petrosian": {
+          "estimator_fprime_corr": -0.1879258154609792,
+          "p_value": 0.04069122752077464,
+          "significant": "False"
+        },
+        "GraphDimension": {
+          "estimator_fprime_corr": -0.48729720652831254,
+          "p_value": 7.286463315966692e-07,
+          "significant": "True"
+        }
+      }
+    },
+    "5-FU": {
+      "csd_estimators": [
+        "DFA",
+        "Petrosian",
+        "PermutationEntropy",
+        "CorrelationD2",
+        "GrassbergerProcaccia",
+        "VisibilityGraph",
+        "PersistentHomology"
+      ],
+      "signal_fprime_correlation": -0.698273741700758,
+      "signal_fprime_p_value": 7.849390603189724e-10,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "DFA": {
+          "estimator_fprime_corr": -0.2095309629052025,
+          "p_value": 0.022193735263125926,
+          "significant": "False"
+        },
+        "Petrosian": {
+          "estimator_fprime_corr": -0.13811079691739042,
+          "p_value": 0.1341602045164872,
+          "significant": "False"
+        },
+        "PermutationEntropy": {
+          "estimator_fprime_corr": -0.14869460538823256,
+          "p_value": 0.10654244735394326,
+          "significant": "False"
+        },
+        "CorrelationD2": {
+          "estimator_fprime_corr": -0.16995635390014704,
+          "p_value": 0.10337541311694504,
+          "significant": "False"
+        },
+        "GrassbergerProcaccia": {
+          "estimator_fprime_corr": -0.16335228119391185,
+          "p_value": 0.11769186179326258,
+          "significant": "False"
+        },
+        "VisibilityGraph": {
+          "estimator_fprime_corr": -0.39662208732820964,
+          "p_value": 0.00011913193225021631,
+          "significant": "True"
+        },
+        "PersistentHomology": {
+          "estimator_fprime_corr": -0.4319075545661576,
+          "p_value": 0.003416278098282562,
+          "significant": "True"
+        }
+      }
+    },
+    "Oxaliplatin": {
+      "csd_estimators": [
+        "Higuchi",
+        "SampleEn",
+        "PermutationEntropy",
+        "GrassbergerProcaccia",
+        "LocalPCA",
+        "MFA"
+      ],
+      "signal_fprime_correlation": -0.7950801615951111,
+      "signal_fprime_p_value": 5.483206925412164e-14,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Higuchi": {
+          "estimator_fprime_corr": -0.2408679850148798,
+          "p_value": 0.008320129289444372,
+          "significant": "False"
+        },
+        "SampleEn": {
+          "estimator_fprime_corr": -0.12581969115234554,
+          "p_value": 0.22946692975257363,
+          "significant": "False"
+        },
+        "PermutationEntropy": {
+          "estimator_fprime_corr": -0.19106938162134796,
+          "p_value": 0.0373846865125603,
+          "significant": "False"
+        },
+        "GrassbergerProcaccia": {
+          "estimator_fprime_corr": -0.27177292655600876,
+          "p_value": 0.008407942807598582,
+          "significant": "False"
+        },
+        "LocalPCA": {
+          "estimator_fprime_corr": -0.5679813624834683,
+          "p_value": 2.8903453940495454e-09,
+          "significant": "True"
+        },
+        "MFA": {
+          "estimator_fprime_corr": -0.4572051452581199,
+          "p_value": 4.083638812627733e-06,
+          "significant": "True"
+        }
+      }
+    },
+    "Selumetinib": {
+      "csd_estimators": [
+        "DFA",
+        "SampleEn",
+        "Sevcik",
+        "Fisher",
+        "PCAIntrinsic"
+      ],
+      "signal_fprime_correlation": -0.6935020053598948,
+      "signal_fprime_p_value": 1.1402741797430947e-09,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "DFA": {
+          "estimator_fprime_corr": -0.333743912776514,
+          "p_value": 0.00020789648097987204,
+          "significant": "True"
+        },
+        "SampleEn": {
+          "estimator_fprime_corr": -0.24710513126574574,
+          "p_value": 0.016943870871570062,
+          "significant": "False"
+        },
+        "Sevcik": {
+          "estimator_fprime_corr": -0.22586623423366978,
+          "p_value": 0.0135147842284405,
+          "significant": "False"
+        },
+        "Fisher": {
+          "estimator_fprime_corr": -0.24687615211765937,
+          "p_value": 0.017049453577197567,
+          "significant": "False"
+        },
+        "PCAIntrinsic": {
+          "estimator_fprime_corr": -0.21820696600274347,
+          "p_value": 0.035619615347244664,
+          "significant": "False"
+        }
+      }
+    },
+    "Afatinib": {
+      "csd_estimators": [
+        "Hurst",
+        "SpectralBeta",
+        "SpectralDimension",
+        "Hurst2mH"
+      ],
+      "signal_fprime_correlation": -0.6539114231796567,
+      "signal_fprime_p_value": 1.9572643833912014e-08,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Hurst": {
+          "estimator_fprime_corr": -0.4490945588953408,
+          "p_value": 6.323041594668524e-06,
+          "significant": "True"
+        },
+        "SpectralBeta": {
+          "estimator_fprime_corr": -0.585136735957087,
+          "p_value": 1.7239340489236605e-09,
+          "significant": "True"
+        },
+        "SpectralDimension": {
+          "estimator_fprime_corr": -0.5851367359570869,
+          "p_value": 1.72393404892369e-09,
+          "significant": "True"
+        },
+        "Hurst2mH": {
+          "estimator_fprime_corr": -0.44909455889534067,
+          "p_value": 6.323041594668524e-06,
+          "significant": "True"
+        }
+      }
+    },
+    "Bortezomib": {
+      "csd_estimators": [
+        "Higuchi",
+        "Katz",
+        "Hurst",
+        "SampleEn",
+        "BoxCounting",
+        "PermutationEntropy",
+        "CorrelationD2",
+        "GrassbergerProcaccia",
+        "InformationD1",
+        "Fisher",
+        "PCAIntrinsic",
+        "MFA",
+        "SpectralBeta",
+        "SpectralDimension",
+        "Hurst2mH"
+      ],
+      "signal_fprime_correlation": -0.6609296285936883,
+      "signal_fprime_p_value": 1.2194879273283195e-08,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Higuchi": {
+          "estimator_fprime_corr": -0.08951189390986976,
+          "p_value": 0.3329955825138352,
+          "significant": "False"
+        },
+        "Katz": {
+          "estimator_fprime_corr": -0.08042940237777597,
+          "p_value": 0.3845573184852682,
+          "significant": "False"
+        },
+        "Hurst": {
+          "estimator_fprime_corr": -0.798713945796485,
+          "p_value": 8.720098714766618e-22,
+          "significant": "True"
+        },
+        "SampleEn": {
+          "estimator_fprime_corr": -0.22288517507332678,
+          "p_value": 0.03175762709407798,
+          "significant": "False"
+        },
+        "BoxCounting": {
+          "estimator_fprime_corr": -0.5466074085388616,
+          "p_value": 1.4440293363152717e-08,
+          "significant": "True"
+        },
+        "PermutationEntropy": {
+          "estimator_fprime_corr": -0.13016235048511046,
+          "p_value": 0.1582664018005722,
+          "significant": "False"
+        },
+        "CorrelationD2": {
+          "estimator_fprime_corr": -0.23314556812249654,
+          "p_value": 0.024508932116059805,
+          "significant": "False"
+        },
+        "GrassbergerProcaccia": {
+          "estimator_fprime_corr": -0.2950568632557349,
+          "p_value": 0.004089749205010195,
+          "significant": "False"
+        },
+        "InformationD1": {
+          "estimator_fprime_corr": -0.16467126007389216,
+          "p_value": 0.11471663659933268,
+          "significant": "False"
+        },
+        "Fisher": {
+          "estimator_fprime_corr": -0.10130372117869184,
+          "p_value": 0.3339374071260798,
+          "significant": "False"
+        },
+        "PCAIntrinsic": {
+          "estimator_fprime_corr": -0.1651137605209803,
+          "p_value": 0.11373163224169988,
+          "significant": "False"
+        },
+        "MFA": {
+          "estimator_fprime_corr": -0.6313822306285483,
+          "p_value": 1.160524723045855e-11,
+          "significant": "True"
+        },
+        "SpectralBeta": {
+          "estimator_fprime_corr": -0.5811058208253771,
+          "p_value": 2.3654416383061334e-09,
+          "significant": "True"
+        },
+        "SpectralDimension": {
+          "estimator_fprime_corr": -0.581105820825377,
+          "p_value": 2.3654416383061334e-09,
+          "significant": "True"
+        },
+        "Hurst2mH": {
+          "estimator_fprime_corr": -0.7987139457964849,
+          "p_value": 8.720098714766618e-22,
+          "significant": "True"
+        }
+      }
+    },
+    "Lapatinib": {
+      "csd_estimators": [
+        "Higuchi",
+        "DFA",
+        "SampleEn",
+        "Sevcik",
+        "GrassbergerProcaccia",
+        "VisibilityGraph"
+      ],
+      "signal_fprime_correlation": -0.7081594090717097,
+      "signal_fprime_p_value": 3.5370139226368104e-10,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Higuchi": {
+          "estimator_fprime_corr": -0.22183183769319856,
+          "p_value": 0.015323283840114435,
+          "significant": "False"
+        },
+        "DFA": {
+          "estimator_fprime_corr": -0.09730901540854954,
+          "p_value": 0.29242702940989235,
+          "significant": "False"
+        },
+        "SampleEn": {
+          "estimator_fprime_corr": -0.13419229395773039,
+          "p_value": 0.19969877660576074,
+          "significant": "False"
+        },
+        "Sevcik": {
+          "estimator_fprime_corr": -0.1815478129681849,
+          "p_value": 0.04815460713733886,
+          "significant": "False"
+        },
+        "GrassbergerProcaccia": {
+          "estimator_fprime_corr": -0.19813194903542064,
+          "p_value": 0.05693715293902593,
+          "significant": "False"
+        },
+        "VisibilityGraph": {
+          "estimator_fprime_corr": -0.5549474703139836,
+          "p_value": 1.666651573178276e-08,
+          "significant": "True"
+        }
+      }
+    },
+    "Sunitinib": {
+      "csd_estimators": [
+        "SampleEn",
+        "PermutationEntropy",
+        "CorrelationD2",
+        "InformationD1",
+        "VisibilityGraph",
+        "LocalPCA",
+        "GraphDimension",
+        "PersistentHomology"
+      ],
+      "signal_fprime_correlation": -0.6734830403578372,
+      "signal_fprime_p_value": 5.06784818062321e-09,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "SampleEn": {
+          "estimator_fprime_corr": -0.010680758945499375,
+          "p_value": 0.9190651898563136,
+          "significant": "False"
+        },
+        "PermutationEntropy": {
+          "estimator_fprime_corr": -0.010339667581975107,
+          "p_value": 0.9111367085375589,
+          "significant": "False"
+        },
+        "CorrelationD2": {
+          "estimator_fprime_corr": -0.36381027606666094,
+          "p_value": 0.00033750388893829115,
+          "significant": "True"
+        },
+        "InformationD1": {
+          "estimator_fprime_corr": -0.17151513335861118,
+          "p_value": 0.10020354570766452,
+          "significant": "False"
+        },
+        "VisibilityGraph": {
+          "estimator_fprime_corr": -0.48136872114703166,
+          "p_value": 1.7936441977530464e-06,
+          "significant": "True"
+        },
+        "LocalPCA": {
+          "estimator_fprime_corr": -0.6533689721344413,
+          "p_value": 1.2583420184839934e-12,
+          "significant": "True"
+        },
+        "GraphDimension": {
+          "estimator_fprime_corr": -0.5427199051915301,
+          "p_value": 1.9118405339564338e-08,
+          "significant": "True"
+        },
+        "PersistentHomology": {
+          "estimator_fprime_corr": -0.4808517039769829,
+          "p_value": 0.0010988686539077682,
+          "significant": "True"
+        }
+      }
+    },
+    "Olaparib": {
+      "csd_estimators": [
+        "Hurst",
+        "PermutationEntropy",
+        "InformationD1",
+        "Fisher",
+        "PersistentHomology",
+        "Hurst2mH"
+      ],
+      "signal_fprime_correlation": -0.7843581535919271,
+      "signal_fprime_p_value": 2.003185179342692e-13,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Hurst": {
+          "estimator_fprime_corr": -0.4561151654071425,
+          "p_value": 4.333595648922155e-06,
+          "significant": "True"
+        },
+        "PermutationEntropy": {
+          "estimator_fprime_corr": -0.10012550881067236,
+          "p_value": 0.2786146599134822,
+          "significant": "False"
+        },
+        "InformationD1": {
+          "estimator_fprime_corr": -0.1727772955025535,
+          "p_value": 0.09769157970630726,
+          "significant": "False"
+        },
+        "Fisher": {
+          "estimator_fprime_corr": -0.18986015984999208,
+          "p_value": 0.06833373686449427,
+          "significant": "False"
+        },
+        "PersistentHomology": {
+          "estimator_fprime_corr": -0.5071599318292879,
+          "p_value": 0.0004423278137402193,
+          "significant": "True"
+        },
+        "Hurst2mH": {
+          "estimator_fprime_corr": -0.4561151654071426,
+          "p_value": 4.333595648922098e-06,
+          "significant": "True"
+        }
+      }
+    },
+    "Nutlin-3": {
+      "csd_estimators": [
+        "DFA",
+        "Petrosian",
+        "Sevcik",
+        "CorrelationD2",
+        "GrassbergerProcaccia",
+        "InformationD1",
+        "VisibilityGraph",
+        "LocalPCA",
+        "GraphDimension",
+        "PersistentHomology"
+      ],
+      "signal_fprime_correlation": -0.734726090108125,
+      "signal_fprime_p_value": 3.4936337463056123e-11,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "DFA": {
+          "estimator_fprime_corr": -0.23531202933800588,
+          "p_value": 0.009991110315846478,
+          "significant": "False"
+        },
+        "Petrosian": {
+          "estimator_fprime_corr": -0.05212249521225704,
+          "p_value": 0.573454940108545,
+          "significant": "False"
+        },
+        "Sevcik": {
+          "estimator_fprime_corr": -0.16665502890553,
+          "p_value": 0.07006462606482794,
+          "significant": "False"
+        },
+        "CorrelationD2": {
+          "estimator_fprime_corr": -0.11995623233432047,
+          "p_value": 0.25208012611528996,
+          "significant": "False"
+        },
+        "GrassbergerProcaccia": {
+          "estimator_fprime_corr": -0.12995407440868462,
+          "p_value": 0.21440092449031464,
+          "significant": "False"
+        },
+        "InformationD1": {
+          "estimator_fprime_corr": -0.2701331113083355,
+          "p_value": 0.00882622868864034,
+          "significant": "False"
+        },
+        "VisibilityGraph": {
+          "estimator_fprime_corr": -0.4832513089962642,
+          "p_value": 1.612404690392615e-06,
+          "significant": "True"
+        },
+        "LocalPCA": {
+          "estimator_fprime_corr": -0.7211492935474072,
+          "p_value": 3.5739574462473697e-16,
+          "significant": "True"
+        },
+        "GraphDimension": {
+          "estimator_fprime_corr": -0.5781764022037509,
+          "p_value": 1.287776547929344e-09,
+          "significant": "True"
+        },
+        "PersistentHomology": {
+          "estimator_fprime_corr": -0.5969025243522366,
+          "p_value": 9.633084508709162e-05,
+          "significant": "True"
+        }
+      }
+    },
+    "MK-2206": {
+      "csd_estimators": [
+        "SampleEn",
+        "Petrosian",
+        "BoxCounting",
+        "PermutationEntropy",
+        "InformationD1",
+        "VisibilityGraph",
+        "PersistentHomology"
+      ],
+      "signal_fprime_correlation": -0.6847237213075832,
+      "signal_fprime_p_value": 2.2251913483928285e-09,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "SampleEn": {
+          "estimator_fprime_corr": -0.1594872263677147,
+          "p_value": 0.1267536065658914,
+          "significant": "False"
+        },
+        "Petrosian": {
+          "estimator_fprime_corr": -0.08604959764155007,
+          "p_value": 0.35210734702559177,
+          "significant": "False"
+        },
+        "BoxCounting": {
+          "estimator_fprime_corr": -0.7074937120697468,
+          "p_value": 2.230754009745608e-15,
+          "significant": "True"
+        },
+        "PermutationEntropy": {
+          "estimator_fprime_corr": -0.18934219251308748,
+          "p_value": 0.039172316212182784,
+          "significant": "False"
+        },
+        "InformationD1": {
+          "estimator_fprime_corr": -0.1926350472003355,
+          "p_value": 0.06432112848182166,
+          "significant": "False"
+        },
+        "VisibilityGraph": {
+          "estimator_fprime_corr": -0.4106312622993772,
+          "p_value": 6.417463152160642e-05,
+          "significant": "True"
+        },
+        "PersistentHomology": {
+          "estimator_fprime_corr": -0.4911209657328778,
+          "p_value": 0.003184208862164603,
+          "significant": "True"
+        }
+      }
+    },
+    "KU-55933": {
+      "csd_estimators": [
+        "DFA",
+        "Katz",
+        "Hurst",
+        "SampleEn",
+        "Petrosian",
+        "InformationD1",
+        "VisibilityGraph",
+        "Fisher",
+        "PCAIntrinsic",
+        "SpectralBeta",
+        "SpectralDimension",
+        "Hurst2mH"
+      ],
+      "signal_fprime_correlation": -0.7115535098262761,
+      "signal_fprime_p_value": 2.66972660557421e-10,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "DFA": {
+          "estimator_fprime_corr": -0.2222398352168904,
+          "p_value": 0.01513129874396194,
+          "significant": "False"
+        },
+        "Katz": {
+          "estimator_fprime_corr": -0.09164378948196691,
+          "p_value": 0.3215629328307623,
+          "significant": "False"
+        },
+        "Hurst": {
+          "estimator_fprime_corr": -0.4021265597424463,
+          "p_value": 6.454203705365747e-05,
+          "significant": "True"
+        },
+        "SampleEn": {
+          "estimator_fprime_corr": -0.19161166278449895,
+          "p_value": 0.06577812549007944,
+          "significant": "False"
+        },
+        "Petrosian": {
+          "estimator_fprime_corr": -0.05198381714793874,
+          "p_value": 0.5744767231899625,
+          "significant": "False"
+        },
+        "InformationD1": {
+          "estimator_fprime_corr": -0.09716400054786767,
+          "p_value": 0.35416669628149966,
+          "significant": "False"
+        },
+        "VisibilityGraph": {
+          "estimator_fprime_corr": -0.5008800234923899,
+          "p_value": 5.762738573836361e-07,
+          "significant": "True"
+        },
+        "Fisher": {
+          "estimator_fprime_corr": -0.25844383967713846,
+          "p_value": 0.012374392949205998,
+          "significant": "False"
+        },
+        "PCAIntrinsic": {
+          "estimator_fprime_corr": -0.24882090781319705,
+          "p_value": 0.016170526779318215,
+          "significant": "False"
+        },
+        "SpectralBeta": {
+          "estimator_fprime_corr": -0.3125222340320938,
+          "p_value": 0.002866366052703839,
+          "significant": "True"
+        },
+        "SpectralDimension": {
+          "estimator_fprime_corr": -0.312522234032094,
+          "p_value": 0.0028663660527038022,
+          "significant": "True"
+        },
+        "Hurst2mH": {
+          "estimator_fprime_corr": -0.4021265597424463,
+          "p_value": 6.454203705365747e-05,
+          "significant": "True"
+        }
+      }
+    },
+    "Everolimus": {
+      "csd_estimators": [
+        "Higuchi",
+        "DFA",
+        "Sevcik",
+        "PermutationEntropy",
+        "CorrelationD2",
+        "GrassbergerProcaccia",
+        "VisibilityGraph",
+        "Fisher",
+        "PCAIntrinsic",
+        "PersistentHomology"
+      ],
+      "signal_fprime_correlation": -0.7369214610185463,
+      "signal_fprime_p_value": 2.8500470965452455e-11,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Higuchi": {
+          "estimator_fprime_corr": -0.27555259867252935,
+          "p_value": 0.0024202091075278785,
+          "significant": "False"
+        },
+        "DFA": {
+          "estimator_fprime_corr": -0.19910886410623513,
+          "p_value": 0.029940225272774762,
+          "significant": "False"
+        },
+        "Sevcik": {
+          "estimator_fprime_corr": -0.17597246467297745,
+          "p_value": 0.05557707759888378,
+          "significant": "False"
+        },
+        "PermutationEntropy": {
+          "estimator_fprime_corr": -0.1411711982208122,
+          "p_value": 0.12566536736746925,
+          "significant": "False"
+        },
+        "CorrelationD2": {
+          "estimator_fprime_corr": -0.2622711257609218,
+          "p_value": 0.011095782945132719,
+          "significant": "False"
+        },
+        "GrassbergerProcaccia": {
+          "estimator_fprime_corr": -0.23965262327583364,
+          "p_value": 0.02068447946504677,
+          "significant": "False"
+        },
+        "VisibilityGraph": {
+          "estimator_fprime_corr": -0.5207825500261118,
+          "p_value": 1.6791968781413073e-07,
+          "significant": "True"
+        },
+        "Fisher": {
+          "estimator_fprime_corr": -0.20895824606205943,
+          "p_value": 0.04441903603753036,
+          "significant": "False"
+        },
+        "PCAIntrinsic": {
+          "estimator_fprime_corr": -0.12198493710222943,
+          "p_value": 0.24408946375827748,
+          "significant": "False"
+        },
+        "PersistentHomology": {
+          "estimator_fprime_corr": -0.38593984123438096,
+          "p_value": 0.009669181221516235,
+          "significant": "True"
+        }
+      }
+    },
+    "Celecoxib": {
+      "csd_estimators": [
+        "CorrelationD2",
+        "GrassbergerProcaccia",
+        "VisibilityGraph",
+        "Fisher",
+        "KolmogorovLZ"
+      ],
+      "signal_fprime_correlation": -0.707826142332909,
+      "signal_fprime_p_value": 3.635294125397481e-10,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "CorrelationD2": {
+          "estimator_fprime_corr": -0.21701028173155484,
+          "p_value": 0.036668479083604065,
+          "significant": "False"
+        },
+        "GrassbergerProcaccia": {
+          "estimator_fprime_corr": -0.20519536557949744,
+          "p_value": 0.04848202191282992,
+          "significant": "False"
+        },
+        "VisibilityGraph": {
+          "estimator_fprime_corr": -0.38484493713590323,
+          "p_value": 0.0001962530121904277,
+          "significant": "True"
+        },
+        "Fisher": {
+          "estimator_fprime_corr": -0.10503100498640587,
+          "p_value": 0.3163638898827079,
+          "significant": "False"
+        },
+        "KolmogorovLZ": {
+          "estimator_fprime_corr": -0.4081678395239814,
+          "p_value": 7.169263784967273e-05,
+          "significant": "True"
+        }
+      }
+    },
+    "Ruxolitinib": {
+      "csd_estimators": [
+        "Katz",
+        "SampleEn",
+        "Petrosian",
+        "VisibilityGraph",
+        "PCAIntrinsic",
+        "LocalPCA",
+        "SpectralBeta",
+        "SpectralDimension"
+      ],
+      "signal_fprime_correlation": -0.7394966754226087,
+      "signal_fprime_p_value": 2.2387552706836986e-11,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Katz": {
+          "estimator_fprime_corr": -0.08285608700682022,
+          "p_value": 0.3703305324812585,
+          "significant": "False"
+        },
+        "SampleEn": {
+          "estimator_fprime_corr": -0.1326085943226612,
+          "p_value": 0.20510538306066994,
+          "significant": "False"
+        },
+        "Petrosian": {
+          "estimator_fprime_corr": -0.13790575950890216,
+          "p_value": 0.13474462835561568,
+          "significant": "False"
+        },
+        "VisibilityGraph": {
+          "estimator_fprime_corr": -0.48089489821394815,
+          "p_value": 1.8421993958071938e-06,
+          "significant": "True"
+        },
+        "PCAIntrinsic": {
+          "estimator_fprime_corr": -0.23220841794754424,
+          "p_value": 0.025106527199234608,
+          "significant": "False"
+        },
+        "LocalPCA": {
+          "estimator_fprime_corr": -0.6211450986365451,
+          "p_value": 3.078224666508382e-11,
+          "significant": "True"
+        },
+        "SpectralBeta": {
+          "estimator_fprime_corr": -0.5009330045457832,
+          "p_value": 5.744443544515829e-07,
+          "significant": "True"
+        },
+        "SpectralDimension": {
+          "estimator_fprime_corr": -0.5009330045457832,
+          "p_value": 5.744443544515829e-07,
+          "significant": "True"
+        }
+      }
+    },
+    "SB5225334": {
+      "csd_estimators": [
+        "DFA",
+        "Sevcik",
+        "InformationD1",
+        "Fisher",
+        "PCAIntrinsic"
+      ],
+      "signal_fprime_correlation": -0.7766673154976772,
+      "signal_fprime_p_value": 4.853541852849214e-13,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "DFA": {
+          "estimator_fprime_corr": -0.22672612074521944,
+          "p_value": 0.013154341590972991,
+          "significant": "False"
+        },
+        "Sevcik": {
+          "estimator_fprime_corr": -0.19585849871202962,
+          "p_value": 0.032782847245511934,
+          "significant": "False"
+        },
+        "InformationD1": {
+          "estimator_fprime_corr": -0.24238521682669262,
+          "p_value": 0.01923799217737774,
+          "significant": "False"
+        },
+        "Fisher": {
+          "estimator_fprime_corr": -0.21157144409246811,
+          "p_value": 0.04176700341576894,
+          "significant": "False"
+        },
+        "PCAIntrinsic": {
+          "estimator_fprime_corr": -0.037664982051657685,
+          "p_value": 0.7200121099000915,
+          "significant": "False"
+        }
+      }
+    },
+    "SGI-1776": {
+      "csd_estimators": [
+        "Higuchi",
+        "DFA",
+        "SampleEn",
+        "Sevcik",
+        "Fisher",
+        "GraphDimension",
+        "KolmogorovLZ"
+      ],
+      "signal_fprime_correlation": -0.709305715861382,
+      "signal_fprime_p_value": 3.217876736621414e-10,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Higuchi": {
+          "estimator_fprime_corr": -0.21237891871785658,
+          "p_value": 0.020403432875045143,
+          "significant": "False"
+        },
+        "DFA": {
+          "estimator_fprime_corr": -0.24249925139697195,
+          "p_value": 0.007878868690350574,
+          "significant": "False"
+        },
+        "SampleEn": {
+          "estimator_fprime_corr": -0.18427180720511221,
+          "p_value": 0.07702845931275819,
+          "significant": "False"
+        },
+        "Sevcik": {
+          "estimator_fprime_corr": -0.10580492299621183,
+          "p_value": 0.2521137292235801,
+          "significant": "False"
+        },
+        "Fisher": {
+          "estimator_fprime_corr": -0.1593747819861636,
+          "p_value": 0.12702501214164022,
+          "significant": "False"
+        },
+        "GraphDimension": {
+          "estimator_fprime_corr": -0.7048762198933526,
+          "p_value": 3.131266263226903e-15,
+          "significant": "True"
+        },
+        "KolmogorovLZ": {
+          "estimator_fprime_corr": -0.4466826720233153,
+          "p_value": 1.144902519722459e-05,
+          "significant": "True"
+        }
+      }
+    },
+    "TPCA-1": {
+      "csd_estimators": [
+        "Higuchi",
+        "Katz",
+        "BoxCounting",
+        "PermutationEntropy",
+        "GraphDimension",
+        "PersistentHomology",
+        "KolmogorovLZ"
+      ],
+      "signal_fprime_correlation": -0.6199781646644438,
+      "signal_fprime_p_value": 1.6374706095472072e-07,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Higuchi": {
+          "estimator_fprime_corr": -0.33147183911810074,
+          "p_value": 0.00023101625888199477,
+          "significant": "True"
+        },
+        "Katz": {
+          "estimator_fprime_corr": -0.07519055183092069,
+          "p_value": 0.4163753788225964,
+          "significant": "False"
+        },
+        "BoxCounting": {
+          "estimator_fprime_corr": -0.5977234866285028,
+          "p_value": 2.5228154903273486e-10,
+          "significant": "True"
+        },
+        "PermutationEntropy": {
+          "estimator_fprime_corr": -0.1117836058535754,
+          "p_value": 0.22614794791286474,
+          "significant": "False"
+        },
+        "GraphDimension": {
+          "estimator_fprime_corr": -0.5472196191586689,
+          "p_value": 1.381151515879383e-08,
+          "significant": "True"
+        },
+        "PersistentHomology": {
+          "estimator_fprime_corr": -0.3570043440475571,
+          "p_value": 0.017364038568646496,
+          "significant": "True"
+        },
+        "KolmogorovLZ": {
+          "estimator_fprime_corr": -0.5671122414033575,
+          "p_value": 6.865739977954237e-09,
+          "significant": "True"
+        }
+      }
+    },
+    "LY2874455": {
+      "csd_estimators": [
+        "Higuchi",
+        "Katz",
+        "PermutationEntropy",
+        "CorrelationD2",
+        "GrassbergerProcaccia",
+        "VisibilityGraph",
+        "Fisher",
+        "GraphDimension",
+        "PersistentHomology",
+        "KolmogorovLZ",
+        "SpectralBeta",
+        "SpectralDimension"
+      ],
+      "signal_fprime_correlation": -0.5372766861217106,
+      "signal_fprime_p_value": 1.1465565972863346e-05,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Higuchi": {
+          "estimator_fprime_corr": -0.3168607332340592,
+          "p_value": 0.0004464621753635477,
+          "significant": "True"
+        },
+        "Katz": {
+          "estimator_fprime_corr": -0.13495048282852762,
+          "p_value": 0.14338536942690275,
+          "significant": "False"
+        },
+        "PermutationEntropy": {
+          "estimator_fprime_corr": -0.036526245585926806,
+          "p_value": 0.6933004040862266,
+          "significant": "False"
+        },
+        "CorrelationD2": {
+          "estimator_fprime_corr": -0.2421354710139667,
+          "p_value": 0.01936648200660285,
+          "significant": "False"
+        },
+        "GrassbergerProcaccia": {
+          "estimator_fprime_corr": -0.27230902448786587,
+          "p_value": 0.008275028309874043,
+          "significant": "False"
+        },
+        "VisibilityGraph": {
+          "estimator_fprime_corr": -0.49853266778786415,
+          "p_value": 6.63101562455797e-07,
+          "significant": "True"
+        },
+        "Fisher": {
+          "estimator_fprime_corr": -0.24528210325675015,
+          "p_value": 0.017800325992598027,
+          "significant": "False"
+        },
+        "GraphDimension": {
+          "estimator_fprime_corr": -0.49541040061027236,
+          "p_value": 6.894101456020382e-07,
+          "significant": "True"
+        },
+        "PersistentHomology": {
+          "estimator_fprime_corr": -0.3572842349489073,
+          "p_value": 0.01727011825457231,
+          "significant": "True"
+        },
+        "KolmogorovLZ": {
+          "estimator_fprime_corr": -0.5356145470619076,
+          "p_value": 6.35592992356667e-08,
+          "significant": "True"
+        },
+        "SpectralBeta": {
+          "estimator_fprime_corr": -0.4444119287766277,
+          "p_value": 1.2837147315213404e-05,
+          "significant": "True"
+        },
+        "SpectralDimension": {
+          "estimator_fprime_corr": -0.4444119287766279,
+          "p_value": 1.2837147315213294e-05,
+          "significant": "True"
+        }
+      }
+    },
+    "SF1670": {
+      "csd_estimators": [
+        "Higuchi",
+        "DFA",
+        "Hurst",
+        "SampleEn",
+        "Sevcik",
+        "PermutationEntropy",
+        "CorrelationD2",
+        "GrassbergerProcaccia",
+        "PersistentHomology",
+        "Hurst2mH"
+      ],
+      "signal_fprime_correlation": -0.7067272240107143,
+      "signal_fprime_p_value": 3.978059623923779e-10,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Higuchi": {
+          "estimator_fprime_corr": -0.2522603347409646,
+          "p_value": 0.00564537834606286,
+          "significant": "False"
+        },
+        "DFA": {
+          "estimator_fprime_corr": -0.11616781096916869,
+          "p_value": 0.20834494660074007,
+          "significant": "False"
+        },
+        "Hurst": {
+          "estimator_fprime_corr": -0.4178658909805177,
+          "p_value": 3.078231322073079e-05,
+          "significant": "True"
+        },
+        "SampleEn": {
+          "estimator_fprime_corr": -0.12262829683928499,
+          "p_value": 0.21046123090411786,
+          "significant": "False"
+        },
+        "Sevcik": {
+          "estimator_fprime_corr": -0.16180439055793408,
+          "p_value": 0.07873890881297592,
+          "significant": "False"
+        },
+        "PermutationEntropy": {
+          "estimator_fprime_corr": -0.09592551491331605,
+          "p_value": 0.29937534220355916,
+          "significant": "False"
+        },
+        "CorrelationD2": {
+          "estimator_fprime_corr": -0.17403653964368118,
+          "p_value": 0.09523500291049791,
+          "significant": "False"
+        },
+        "GrassbergerProcaccia": {
+          "estimator_fprime_corr": -0.15969053969924546,
+          "p_value": 0.12626399899848714,
+          "significant": "False"
+        },
+        "PersistentHomology": {
+          "estimator_fprime_corr": -0.5108946262800342,
+          "p_value": 0.0005457290649821982,
+          "significant": "True"
+        },
+        "Hurst2mH": {
+          "estimator_fprime_corr": -0.4178658909805179,
+          "p_value": 3.0782313220730403e-05,
+          "significant": "True"
+        }
+      }
+    },
+    "K-ras(G12C) Inhibitor 9": {
+      "csd_estimators": [
+        "DFA",
+        "SampleEn",
+        "Sevcik",
+        "PermutationEntropy",
+        "GraphDimension",
+        "PersistentHomology"
+      ],
+      "signal_fprime_correlation": -0.7274527702848415,
+      "signal_fprime_p_value": 6.762901846349554e-11,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "DFA": {
+          "estimator_fprime_corr": -0.03987658552408253,
+          "p_value": 0.6667723735892999,
+          "significant": "False"
+        },
+        "SampleEn": {
+          "estimator_fprime_corr": -0.23420448013071585,
+          "p_value": 0.02384831895559367,
+          "significant": "False"
+        },
+        "Sevcik": {
+          "estimator_fprime_corr": -0.08770099579324137,
+          "p_value": 0.3429077227089729,
+          "significant": "False"
+        },
+        "PermutationEntropy": {
+          "estimator_fprime_corr": -0.18893216684095923,
+          "p_value": 0.03960705621599062,
+          "significant": "False"
+        },
+        "GraphDimension": {
+          "estimator_fprime_corr": -0.5837855204203846,
+          "p_value": 2.375070507069282e-09,
+          "significant": "True"
+        },
+        "PersistentHomology": {
+          "estimator_fprime_corr": -0.5619241485327966,
+          "p_value": 7.213199257693903e-05,
+          "significant": "True"
+        }
+      }
+    },
+    "WIKI4": {
+      "csd_estimators": [
+        "DFA",
+        "GrassbergerProcaccia",
+        "Fisher"
+      ],
+      "signal_fprime_correlation": -0.6853046842243176,
+      "signal_fprime_p_value": 2.130404080191273e-09,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "DFA": {
+          "estimator_fprime_corr": -0.2157806659655579,
+          "p_value": 0.018429211976834364,
+          "significant": "False"
+        },
+        "GrassbergerProcaccia": {
+          "estimator_fprime_corr": -0.2737088620842251,
+          "p_value": 0.007936644890170326,
+          "significant": "False"
+        },
+        "Fisher": {
+          "estimator_fprime_corr": -0.1449387031216325,
+          "p_value": 0.1656963134788507,
+          "significant": "False"
+        }
+      }
+    },
+    "Disulfuram": {
+      "csd_estimators": [
+        "Higuchi",
+        "PermutationEntropy",
+        "CorrelationD2",
+        "GrassbergerProcaccia",
+        "LocalPCA",
+        "MFA"
+      ],
+      "signal_fprime_correlation": -0.7003568968543222,
+      "signal_fprime_p_value": 6.653449818900105e-10,
+      "signal_fprime_significant": "True",
+      "metric_fprime_correlations": {
+        "Higuchi": {
+          "estimator_fprime_corr": -0.13614743954345107,
+          "p_value": 0.13983644226863404,
+          "significant": "False"
+        },
+        "PermutationEntropy": {
+          "estimator_fprime_corr": -0.14638930543218798,
+          "p_value": 0.11214312789323563,
+          "significant": "False"
+        },
+        "CorrelationD2": {
+          "estimator_fprime_corr": -0.24952991916174275,
+          "p_value": 0.01585997780108966,
+          "significant": "False"
+        },
+        "GrassbergerProcaccia": {
+          "estimator_fprime_corr": -0.24548910298352072,
+          "p_value": 0.017701237083517875,
+          "significant": "False"
+        },
+        "LocalPCA": {
+          "estimator_fprime_corr": -0.5302571073974212,
+          "p_value": 4.591275027819236e-08,
+          "significant": "True"
+        },
+        "MFA": {
+          "estimator_fprime_corr": -0.6421968946057288,
+          "p_value": 3.979161018914298e-12,
+          "significant": "True"
+        }
+      }
+    }
+  },
+  "statistics": {
+    "avg_signal_fprime_correlation": -0.7060104892195291,
+    "total_csd_tested": 25
+  }
+}

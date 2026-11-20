@@ -1,0 +1,24 @@
+{
+  "artifact": "UNIVERSAL_LOG_v5_9_2_AUDITFIX_SEEDTRACE.py",
+  "built_utc": "2026-11-15T12:13:04.540847+00:00",
+  "source": "UNIVERSAL_LOG_v5_9_1_AUDITFIX.py",
+  "source_sha256": "a2173839b8ebfcf3dfcf0ee809c5d0a7b2cb1fd34bcaa1199175fa6b23aa2ef8",
+  "output_sha256": "65476190eaad77c1bd6c4f5731289a4ab0e41f9b1c00a3697a2b77e1a8f64e5c",
+  "python": "3.11.9",
+  "patch_intent": "Carry the caller-known seed into each L7b rerun summary so the seed check exports its actual seed.",
+  "changes": [
+    "Version label changed to v5.9.2-L7aL7b-DKind-AuditFix-SeedTrace.",
+    "_l7b_extract_summary accepts optional seed and exports it when provided.",
+    "L7b rerun helper passes the seed value used for that rerun."
+  ],
+  "expected_scope": "Traceability metadata only; no estimator, threshold, score, or verdict formula changed."
+}
+test_known_seed_is_preserved (__main__.SeedTraceabilityTests.test_known_seed_is_preserved) ... ok
+test_omitted_seed_remains_optional (__main__.SeedTraceabilityTests.test_omitted_seed_remains_optional) ... ok
+test_seed_check_exports_the_alternate_seed (__main__.SeedTraceabilityTests.test_seed_check_exports_the_alternate_seed) ... ok
+test_zero_seed_is_not_dropped (__main__.SeedTraceabilityTests.test_zero_seed_is_not_dropped) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.004s
+
+OK

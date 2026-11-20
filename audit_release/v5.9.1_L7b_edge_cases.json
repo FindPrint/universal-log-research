@@ -1,0 +1,915 @@
+[
+  {
+    "case": "missing_reference_T0",
+    "expected_check": "INDETERMINE",
+    "observed_check": "INDETERMINE",
+    "overall_verdict": "INDETERMINE",
+    "passed": true,
+    "inputs": {
+      "reference": {
+        "T0_pct": null,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "seed_alt": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "window_80": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "shuffled": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "log_run": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      }
+    },
+    "output": {
+      "version": "L7b-ROBUSTESSE",
+      "mode": "full",
+      "status": "ok",
+      "verdict": "INDETERMINE",
+      "lecture": "Un stress decisif manque de mesures comparables; ne pas trancher.",
+      "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE. Ne jamais moyenner les deux.",
+      "reference": {
+        "T0_pct": null,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "checks": {
+        "graine": {
+          "statut": "INDETERMINE",
+          "detail": "Reference ou re-run graine incomplet; comparaison impossible."
+        },
+        "fenetre": {
+          "statut": "INDETERMINE",
+          "detail": "Reference ou re-run fenetre 80% incomplet; comparaison impossible."
+        },
+        "melange": {
+          "statut": "INDETERMINE",
+          "T0_ref": null,
+          "Delta_ref": 2.0,
+          "detail": "Reference ou re-run melange sans T0/direction/Delta valide; effet de l'ordre non identifiable."
+        },
+        "echelle": {
+          "statut": "INDETERMINE",
+          "sensibilite": "INCONNUE",
+          "detail": "Reference ou re-run logarithmique incomplet; sensibilite d'echelle non mesurable."
+        }
+      }
+    }
+  },
+  {
+    "case": "missing_seed_T0",
+    "expected_check": "INDETERMINE",
+    "observed_check": "INDETERMINE",
+    "overall_verdict": "FRAGILE",
+    "passed": true,
+    "inputs": {
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "seed_alt": {
+        "T0_pct": null,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "window_80": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "shuffled": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "log_run": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      }
+    },
+    "output": {
+      "version": "L7b-ROBUSTESSE",
+      "mode": "full",
+      "status": "ok",
+      "verdict": "FRAGILE",
+      "lecture": "Au moins un stress decisif echoue; ne pas utiliser L7a seul pour decider.",
+      "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE. Ne jamais moyenner les deux.",
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "checks": {
+        "graine": {
+          "statut": "INDETERMINE",
+          "detail": "Reference ou re-run graine incomplet; comparaison impossible."
+        },
+        "fenetre": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."
+        },
+        "melange": {
+          "statut": "FAIL",
+          "T0_ref": 50.0,
+          "T0_melange": 50.0,
+          "Delta_ref": 2.0,
+          "Delta_melange": 2.0,
+          "Delta_ref_magnitude": 2.0,
+          "Delta_melange_magnitude": 2.0,
+          "rapport_magnitudes": 1.0,
+          "direction_ref": "up",
+          "direction_melange": "up",
+          "detail": "Magnitude de Delta et direction persistent sans ordre temporel; le signal peut venir de la distribution."
+        },
+        "echelle": {
+          "statut": "INFORMATIF",
+          "sensibilite": "INVARIANT",
+          "T0_ref": 50.0,
+          "T0_log": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_log": "up",
+          "detail": "Le changement d'echelle ne modifie pas T0/direction dans ce cas."
+        }
+      }
+    }
+  },
+  {
+    "case": "missing_window_T0",
+    "expected_check": "INDETERMINE",
+    "observed_check": "INDETERMINE",
+    "overall_verdict": "FRAGILE",
+    "passed": true,
+    "inputs": {
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "seed_alt": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "window_80": {
+        "T0_pct": null,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "shuffled": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "log_run": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      }
+    },
+    "output": {
+      "version": "L7b-ROBUSTESSE",
+      "mode": "full",
+      "status": "ok",
+      "verdict": "FRAGILE",
+      "lecture": "Au moins un stress decisif echoue; ne pas utiliser L7a seul pour decider.",
+      "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE. Ne jamais moyenner les deux.",
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "checks": {
+        "graine": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_graine_alt": 50.0,
+          "ecart_T0": 0.0,
+          "graine_alternative": null,
+          "direction_ref": "up",
+          "direction_graine_alt": "up",
+          "detail": "T0 stable a 5 points et direction identique entre graines."
+        },
+        "fenetre": {
+          "statut": "INDETERMINE",
+          "detail": "Reference ou re-run fenetre 80% incomplet; comparaison impossible."
+        },
+        "melange": {
+          "statut": "FAIL",
+          "T0_ref": 50.0,
+          "T0_melange": 50.0,
+          "Delta_ref": 2.0,
+          "Delta_melange": 2.0,
+          "Delta_ref_magnitude": 2.0,
+          "Delta_melange_magnitude": 2.0,
+          "rapport_magnitudes": 1.0,
+          "direction_ref": "up",
+          "direction_melange": "up",
+          "detail": "Magnitude de Delta et direction persistent sans ordre temporel; le signal peut venir de la distribution."
+        },
+        "echelle": {
+          "statut": "INFORMATIF",
+          "sensibilite": "INVARIANT",
+          "T0_ref": 50.0,
+          "T0_log": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_log": "up",
+          "detail": "Le changement d'echelle ne modifie pas T0/direction dans ce cas."
+        }
+      }
+    }
+  },
+  {
+    "case": "missing_reference_Delta",
+    "expected_check": "INDETERMINE",
+    "observed_check": "INDETERMINE",
+    "overall_verdict": "INDETERMINE",
+    "passed": true,
+    "inputs": {
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": null,
+        "L7_status": "ok"
+      },
+      "seed_alt": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "window_80": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "shuffled": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 1.0,
+        "L7_status": "ok"
+      },
+      "log_run": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      }
+    },
+    "output": {
+      "version": "L7b-ROBUSTESSE",
+      "mode": "full",
+      "status": "ok",
+      "verdict": "INDETERMINE",
+      "lecture": "Un stress decisif manque de mesures comparables; ne pas trancher.",
+      "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE. Ne jamais moyenner les deux.",
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": null,
+        "L7_status": "ok"
+      },
+      "checks": {
+        "graine": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_graine_alt": 50.0,
+          "ecart_T0": 0.0,
+          "graine_alternative": null,
+          "direction_ref": "up",
+          "direction_graine_alt": "up",
+          "detail": "T0 stable a 5 points et direction identique entre graines."
+        },
+        "fenetre": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."
+        },
+        "melange": {
+          "statut": "INDETERMINE",
+          "T0_ref": 50.0,
+          "Delta_ref": null,
+          "detail": "Reference ou re-run melange sans T0/direction/Delta valide; effet de l'ordre non identifiable."
+        },
+        "echelle": {
+          "statut": "INFORMATIF",
+          "sensibilite": "INVARIANT",
+          "T0_ref": 50.0,
+          "T0_log": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_log": "up",
+          "detail": "Le changement d'echelle ne modifie pas T0/direction dans ce cas."
+        }
+      }
+    }
+  },
+  {
+    "case": "negative_Delta_magnitude_halved",
+    "expected_check": "PASS",
+    "observed_check": "PASS",
+    "overall_verdict": "ROBUSTE",
+    "passed": true,
+    "inputs": {
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": -2.0,
+        "L7_status": "ok"
+      },
+      "seed_alt": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": -2.0,
+        "L7_status": "ok"
+      },
+      "window_80": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": -2.0,
+        "L7_status": "ok"
+      },
+      "shuffled": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": -1.0,
+        "L7_status": "ok"
+      },
+      "log_run": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      }
+    },
+    "output": {
+      "version": "L7b-ROBUSTESSE",
+      "mode": "full",
+      "status": "ok",
+      "verdict": "ROBUSTE",
+      "lecture": "Les stress graine, fenetre et melange passent les regles implementees; cela ne prouve pas la validite de L7a.",
+      "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE. Ne jamais moyenner les deux.",
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": -2.0,
+        "L7_status": "ok"
+      },
+      "checks": {
+        "graine": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_graine_alt": 50.0,
+          "ecart_T0": 0.0,
+          "graine_alternative": null,
+          "direction_ref": "up",
+          "direction_graine_alt": "up",
+          "detail": "T0 stable a 5 points et direction identique entre graines."
+        },
+        "fenetre": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."
+        },
+        "melange": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_melange": 50.0,
+          "Delta_ref": -2.0,
+          "Delta_melange": -1.0,
+          "Delta_ref_magnitude": 2.0,
+          "Delta_melange_magnitude": 1.0,
+          "rapport_magnitudes": 0.5,
+          "direction_ref": "up",
+          "direction_melange": "up",
+          "detail": "La magnitude de Delta diminue entre 20% et 50% apres melange; attenuation selon le seuil implemente."
+        },
+        "echelle": {
+          "statut": "INFORMATIF",
+          "sensibilite": "INVARIANT",
+          "T0_ref": 50.0,
+          "T0_log": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_log": "up",
+          "detail": "Le changement d'echelle ne modifie pas T0/direction dans ce cas."
+        }
+      }
+    }
+  },
+  {
+    "case": "missing_shuffled_Delta",
+    "expected_check": "INDETERMINE",
+    "observed_check": "INDETERMINE",
+    "overall_verdict": "INDETERMINE",
+    "passed": true,
+    "inputs": {
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "seed_alt": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "window_80": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "shuffled": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": null,
+        "L7_status": "ok"
+      },
+      "log_run": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      }
+    },
+    "output": {
+      "version": "L7b-ROBUSTESSE",
+      "mode": "full",
+      "status": "ok",
+      "verdict": "INDETERMINE",
+      "lecture": "Un stress decisif manque de mesures comparables; ne pas trancher.",
+      "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE. Ne jamais moyenner les deux.",
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "checks": {
+        "graine": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_graine_alt": 50.0,
+          "ecart_T0": 0.0,
+          "graine_alternative": null,
+          "direction_ref": "up",
+          "direction_graine_alt": "up",
+          "detail": "T0 stable a 5 points et direction identique entre graines."
+        },
+        "fenetre": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."
+        },
+        "melange": {
+          "statut": "INDETERMINE",
+          "T0_ref": 50.0,
+          "Delta_ref": 2.0,
+          "detail": "Reference ou re-run melange sans T0/direction/Delta valide; effet de l'ordre non identifiable."
+        },
+        "echelle": {
+          "statut": "INFORMATIF",
+          "sensibilite": "INVARIANT",
+          "T0_ref": 50.0,
+          "T0_log": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_log": "up",
+          "detail": "Le changement d'echelle ne modifie pas T0/direction dans ce cas."
+        }
+      }
+    }
+  },
+  {
+    "case": "shuffled_Delta_sign_reversed",
+    "expected_check": "INDETERMINE",
+    "observed_check": "INDETERMINE",
+    "overall_verdict": "INDETERMINE",
+    "passed": true,
+    "inputs": {
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "seed_alt": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "window_80": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "shuffled": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": -2.0,
+        "L7_status": "ok"
+      },
+      "log_run": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      }
+    },
+    "output": {
+      "version": "L7b-ROBUSTESSE",
+      "mode": "full",
+      "status": "ok",
+      "verdict": "INDETERMINE",
+      "lecture": "Un stress decisif manque de mesures comparables; ne pas trancher.",
+      "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE. Ne jamais moyenner les deux.",
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "checks": {
+        "graine": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_graine_alt": 50.0,
+          "ecart_T0": 0.0,
+          "graine_alternative": null,
+          "direction_ref": "up",
+          "direction_graine_alt": "up",
+          "detail": "T0 stable a 5 points et direction identique entre graines."
+        },
+        "fenetre": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."
+        },
+        "melange": {
+          "statut": "INDETERMINE",
+          "T0_ref": 50.0,
+          "T0_melange": 50.0,
+          "Delta_ref": 2.0,
+          "Delta_melange": -2.0,
+          "rapport_magnitudes": 1.0,
+          "detail": "Le signe de Delta change apres melange; la regle d'attenuation seule ne classe pas ce cas."
+        },
+        "echelle": {
+          "statut": "INFORMATIF",
+          "sensibilite": "INVARIANT",
+          "T0_ref": 50.0,
+          "T0_log": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_log": "up",
+          "detail": "Le changement d'echelle ne modifie pas T0/direction dans ce cas."
+        }
+      }
+    }
+  },
+  {
+    "case": "shuffled_signal_unchanged",
+    "expected_check": "FAIL",
+    "observed_check": "FAIL",
+    "overall_verdict": "FRAGILE",
+    "passed": true,
+    "inputs": {
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "seed_alt": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "window_80": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "shuffled": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "log_run": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      }
+    },
+    "output": {
+      "version": "L7b-ROBUSTESSE",
+      "mode": "full",
+      "status": "ok",
+      "verdict": "FRAGILE",
+      "lecture": "Au moins un stress decisif echoue; ne pas utiliser L7a seul pour decider.",
+      "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE. Ne jamais moyenner les deux.",
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "checks": {
+        "graine": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_graine_alt": 50.0,
+          "ecart_T0": 0.0,
+          "graine_alternative": null,
+          "direction_ref": "up",
+          "direction_graine_alt": "up",
+          "detail": "T0 stable a 5 points et direction identique entre graines."
+        },
+        "fenetre": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."
+        },
+        "melange": {
+          "statut": "FAIL",
+          "T0_ref": 50.0,
+          "T0_melange": 50.0,
+          "Delta_ref": 2.0,
+          "Delta_melange": 2.0,
+          "Delta_ref_magnitude": 2.0,
+          "Delta_melange_magnitude": 2.0,
+          "rapport_magnitudes": 1.0,
+          "direction_ref": "up",
+          "direction_melange": "up",
+          "detail": "Magnitude de Delta et direction persistent sans ordre temporel; le signal peut venir de la distribution."
+        },
+        "echelle": {
+          "statut": "INFORMATIF",
+          "sensibilite": "INVARIANT",
+          "T0_ref": 50.0,
+          "T0_log": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_log": "up",
+          "detail": "Le changement d'echelle ne modifie pas T0/direction dans ce cas."
+        }
+      }
+    }
+  },
+  {
+    "case": "positive_Delta_40pct_after_shuffle",
+    "expected_check": "PASS",
+    "observed_check": "PASS",
+    "overall_verdict": "ROBUSTE",
+    "passed": true,
+    "inputs": {
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "seed_alt": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "window_80": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "shuffled": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 0.8,
+        "L7_status": "ok"
+      },
+      "log_run": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      }
+    },
+    "output": {
+      "version": "L7b-ROBUSTESSE",
+      "mode": "full",
+      "status": "ok",
+      "verdict": "ROBUSTE",
+      "lecture": "Les stress graine, fenetre et melange passent les regles implementees; cela ne prouve pas la validite de L7a.",
+      "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE. Ne jamais moyenner les deux.",
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "checks": {
+        "graine": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_graine_alt": 50.0,
+          "ecart_T0": 0.0,
+          "graine_alternative": null,
+          "direction_ref": "up",
+          "direction_graine_alt": "up",
+          "detail": "T0 stable a 5 points et direction identique entre graines."
+        },
+        "fenetre": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."
+        },
+        "melange": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_melange": 50.0,
+          "Delta_ref": 2.0,
+          "Delta_melange": 0.8,
+          "Delta_ref_magnitude": 2.0,
+          "Delta_melange_magnitude": 0.8,
+          "rapport_magnitudes": 0.4,
+          "direction_ref": "up",
+          "direction_melange": "up",
+          "detail": "La magnitude de Delta diminue d'au moins 50% apres melange; signal sensible a l'ordre selon le seuil implemente."
+        },
+        "echelle": {
+          "statut": "INFORMATIF",
+          "sensibilite": "INVARIANT",
+          "T0_ref": 50.0,
+          "T0_log": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_log": "up",
+          "detail": "Le changement d'echelle ne modifie pas T0/direction dans ce cas."
+        }
+      }
+    }
+  },
+  {
+    "case": "missing_log_T0_is_informative_only",
+    "expected_check": "INDETERMINE",
+    "observed_check": "INDETERMINE",
+    "overall_verdict": "ROBUSTE",
+    "passed": true,
+    "inputs": {
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "seed_alt": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "window_80": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "shuffled": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 0.2,
+        "L7_status": "ok"
+      },
+      "log_run": {
+        "T0_pct": null,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      }
+    },
+    "output": {
+      "version": "L7b-ROBUSTESSE",
+      "mode": "full",
+      "status": "ok",
+      "verdict": "ROBUSTE",
+      "lecture": "Les stress graine, fenetre et melange passent les regles implementees; cela ne prouve pas la validite de L7a.",
+      "ne_pas_confondre": "L7a-COHERENCE = vote interne UP/DOWN/FLAT. L7b-ROBUSTESSE = audit ROBUSTE/FRAGILE/INDETERMINE. Ne jamais moyenner les deux.",
+      "reference": {
+        "T0_pct": 50.0,
+        "consensus_direction": "up",
+        "Delta": 2.0,
+        "L7_status": "ok"
+      },
+      "checks": {
+        "graine": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_graine_alt": 50.0,
+          "ecart_T0": 0.0,
+          "graine_alternative": null,
+          "direction_ref": "up",
+          "direction_graine_alt": "up",
+          "detail": "T0 stable a 5 points et direction identique entre graines."
+        },
+        "fenetre": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_fenetre_80": 50.0,
+          "ecart_T0": 0.0,
+          "direction_ref": "up",
+          "direction_fenetre_80": "up",
+          "detail": "T0 stable a 10 points et direction identique a 80% de la fenetre."
+        },
+        "melange": {
+          "statut": "PASS",
+          "T0_ref": 50.0,
+          "T0_melange": 50.0,
+          "Delta_ref": 2.0,
+          "Delta_melange": 0.2,
+          "Delta_ref_magnitude": 2.0,
+          "Delta_melange_magnitude": 0.2,
+          "rapport_magnitudes": 0.1,
+          "direction_ref": "up",
+          "direction_melange": "up",
+          "detail": "La magnitude de Delta diminue d'au moins 50% apres melange; signal sensible a l'ordre selon le seuil implemente."
+        },
+        "echelle": {
+          "statut": "INDETERMINE",
+          "sensibilite": "INCONNUE",
+          "detail": "Reference ou re-run logarithmique incomplet; sensibilite d'echelle non mesurable."
+        }
+      }
+    }
+  }
+]

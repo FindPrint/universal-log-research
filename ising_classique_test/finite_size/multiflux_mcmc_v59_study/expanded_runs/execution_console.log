@@ -1,0 +1,160 @@
+Creating 180 independent trajectories...
+  L=16, T=2.240000000: 5 chains × 8000 cluster updates
+  L=16, T=2.260000000: 5 chains × 8000 cluster updates
+  L=16, T=2.280000000: 5 chains × 8000 cluster updates
+  L=16, T=2.300000000: 5 chains × 8000 cluster updates
+  L=16, T=2.320000000: 5 chains × 8000 cluster updates
+  L=16, T=2.340000000: 5 chains × 8000 cluster updates
+  L=16, T=2.360000000: 5 chains × 8000 cluster updates
+  L=16, T=2.380000000: 5 chains × 8000 cluster updates
+  L=16, T=2.400000000: 5 chains × 8000 cluster updates
+  L=16, T=2.420000000: 5 chains × 8000 cluster updates
+  L=16, T=2.440000000: 5 chains × 8000 cluster updates
+  L=16, T=2.269185314: 5 chains × 8000 cluster updates
+  L=32, T=2.240000000: 5 chains × 8000 cluster updates
+  L=32, T=2.260000000: 5 chains × 8000 cluster updates
+  L=32, T=2.280000000: 5 chains × 8000 cluster updates
+  L=32, T=2.300000000: 5 chains × 8000 cluster updates
+  L=32, T=2.320000000: 5 chains × 8000 cluster updates
+  L=32, T=2.340000000: 5 chains × 8000 cluster updates
+  L=32, T=2.360000000: 5 chains × 8000 cluster updates
+  L=32, T=2.380000000: 5 chains × 8000 cluster updates
+  L=32, T=2.400000000: 5 chains × 8000 cluster updates
+  L=32, T=2.420000000: 5 chains × 8000 cluster updates
+  L=32, T=2.440000000: 5 chains × 8000 cluster updates
+  L=32, T=2.269185314: 5 chains × 8000 cluster updates
+  L=48, T=2.240000000: 5 chains × 8000 cluster updates
+  L=48, T=2.260000000: 5 chains × 8000 cluster updates
+  L=48, T=2.280000000: 5 chains × 8000 cluster updates
+  L=48, T=2.300000000: 5 chains × 8000 cluster updates
+  L=48, T=2.320000000: 5 chains × 8000 cluster updates
+  L=48, T=2.340000000: 5 chains × 8000 cluster updates
+  L=48, T=2.360000000: 5 chains × 8000 cluster updates
+  L=48, T=2.380000000: 5 chains × 8000 cluster updates
+  L=48, T=2.400000000: 5 chains × 8000 cluster updates
+  L=48, T=2.420000000: 5 chains × 8000 cluster updates
+  L=48, T=2.440000000: 5 chains × 8000 cluster updates
+  L=48, T=2.269185314: 5 chains × 8000 cluster updates
+Running the v5.9 derived copy on 85 predeclared configurations...
+  [1/85] v59_L16_T2p240000000_C0_MC_Update_common: ok (28.9s)
+  [2/85] v59_L16_T2p260000000_C0_MC_Update_common: ok (17.5s)
+  [3/85] v59_L16_T2p280000000_C0_MC_Update_common: ok (17.5s)
+  [4/85] v59_L16_T2p300000000_C0_MC_Update_common: ok (18.1s)
+  [5/85] v59_L16_T2p320000000_C0_MC_Update_common: ok (18.5s)
+  [6/85] v59_L16_T2p340000000_C0_MC_Update_common: ok (17.9s)
+  [7/85] v59_L16_T2p360000000_C0_MC_Update_common: ok (18.3s)
+  [8/85] v59_L16_T2p380000000_C0_MC_Update_common: ok (17.4s)
+  [9/85] v59_L16_T2p400000000_C0_MC_Update_common: ok (17.8s)
+  [10/85] v59_L16_T2p420000000_C0_MC_Update_common: ok (18.2s)
+  [11/85] v59_L16_T2p440000000_C0_MC_Update_common: ok (17.9s)
+  [12/85] v59_L16_T2p269185314_C0_MC_Update_common: ok (17.9s)
+  [13/85] v59_L32_T2p240000000_C0_MC_Update_common: ok (18.3s)
+  [14/85] v59_L32_T2p260000000_C0_MC_Update_common: ok (17.8s)
+  [15/85] v59_L32_T2p280000000_C0_MC_Update_common: ok (17.6s)
+  [16/85] v59_L32_T2p300000000_C0_MC_Update_common: ok (18.0s)
+  [17/85] v59_L32_T2p320000000_C0_MC_Update_common: ok (22.0s)
+  [18/85] v59_L32_T2p340000000_C0_MC_Update_common: ok (18.7s)
+  [19/85] v59_L32_T2p360000000_C0_MC_Update_common: ok (17.7s)
+  [20/85] v59_L32_T2p380000000_C0_MC_Update_common: ok (19.1s)
+  [21/85] v59_L32_T2p400000000_C0_MC_Update_common: ok (18.5s)
+  [22/85] v59_L32_T2p420000000_C0_MC_Update_common: ok (18.8s)
+  [23/85] v59_L32_T2p440000000_C0_MC_Update_common: ok (18.0s)
+  [24/85] v59_L32_T2p269185314_C0_MC_Update_common: ok (19.0s)
+  [25/85] v59_L48_T2p240000000_C0_MC_Update_common: ok (18.0s)
+  [26/85] v59_L48_T2p260000000_C0_MC_Update_common: ok (17.6s)
+  [27/85] v59_L48_T2p280000000_C0_MC_Update_common: ok (18.0s)
+  [28/85] v59_L48_T2p300000000_C0_MC_Update_common: ok (18.0s)
+  [29/85] v59_L48_T2p320000000_C0_MC_Update_common: ok (17.7s)
+  [30/85] v59_L48_T2p340000000_C0_MC_Update_common: ok (18.7s)
+  [31/85] v59_L48_T2p360000000_C0_MC_Update_common: ok (18.7s)
+  [32/85] v59_L48_T2p380000000_C0_MC_Update_common: ok (18.1s)
+  [33/85] v59_L48_T2p400000000_C0_MC_Update_common: ok (18.3s)
+  [34/85] v59_L48_T2p420000000_C0_MC_Update_common: ok (18.5s)
+  [35/85] v59_L48_T2p440000000_C0_MC_Update_common: ok (19.2s)
+  [36/85] v59_L48_T2p269185314_C0_MC_Update_common: ok (17.4s)
+  [37/85] v59_L16_T2p269185314_C1_MC_Update_common: ok (18.4s)
+  [38/85] v59_L16_T2p269185314_C2_MC_Update_common: ok (17.7s)
+  [39/85] v59_L16_T2p269185314_C3_MC_Update_common: ok (18.9s)
+  [40/85] v59_L16_T2p269185314_C4_MC_Update_common: ok (19.1s)
+  [41/85] v59_L32_T2p269185314_C1_MC_Update_common: ok (17.7s)
+  [42/85] v59_L32_T2p269185314_C2_MC_Update_common: ok (18.3s)
+  [43/85] v59_L32_T2p269185314_C3_MC_Update_common: ok (18.2s)
+  [44/85] v59_L32_T2p269185314_C4_MC_Update_common: ok (18.2s)
+  [45/85] v59_L48_T2p269185314_C1_MC_Update_common: ok (18.0s)
+  [46/85] v59_L48_T2p269185314_C2_MC_Update_common: ok (18.5s)
+  [47/85] v59_L48_T2p269185314_C3_MC_Update_common: ok (17.9s)
+  [48/85] v59_L48_T2p269185314_C4_MC_Update_common: ok (17.5s)
+  [49/85] v59_L16_T2p269185314_C0_Energy_per_spin_common: ok (17.8s)
+  [50/85] v59_L16_T2p269185314_C0_Magnetization_common: ok (18.0s)
+  [51/85] v59_L16_T2p269185314_C0_Nearest_neighbor_correlation_common: ok (17.9s)
+  [52/85] v59_L16_T2p269185314_C0_Noise_axis_common: ok (18.6s)
+  [53/85] v59_L16_T2p269185314_C0_Abs_magnetization_shuffled_common: ok (18.3s)
+  [54/85] v59_L32_T2p269185314_C0_Energy_per_spin_common: ok (17.7s)
+  [55/85] v59_L32_T2p269185314_C0_Magnetization_common: ok (18.1s)
+  [56/85] v59_L32_T2p269185314_C0_Nearest_neighbor_correlation_common: ok (18.9s)
+  [57/85] v59_L32_T2p269185314_C0_Noise_axis_common: ok (18.4s)
+  [58/85] v59_L32_T2p269185314_C0_Abs_magnetization_shuffled_common: ok (17.6s)
+  [59/85] v59_L48_T2p269185314_C0_Energy_per_spin_common: ok (18.0s)
+  [60/85] v59_L48_T2p269185314_C0_Magnetization_common: ok (17.7s)
+  [61/85] v59_L48_T2p269185314_C0_Nearest_neighbor_correlation_common: ok (18.4s)
+  [62/85] v59_L48_T2p269185314_C0_Noise_axis_common: ok (18.2s)
+  [63/85] v59_L48_T2p269185314_C0_Abs_magnetization_shuffled_common: ok (18.0s)
+  [64/85] v59_L32_T2p269185314_C0_MC_Update_all_fluxes: ok (35.3s)
+  [65/85] v59_L48_T2p269185314_C0_MC_Update_all_fluxes: ok (35.2s)
+  [66/85] v59_L16_T2p269185314_C0_MC_Update_target_absM_only: ok (4.2s)
+  [67/85] v59_L16_T2p269185314_C0_MC_Update_order_parameter_family: ok (11.3s)
+  [68/85] v59_L16_T2p269185314_C0_MC_Update_physical_without_noise: ok (14.8s)
+  [69/85] v59_L16_T2p269185314_C0_MC_Update_all_fluxes: ok (34.8s)
+  [70/85] v59_L16_T2p269185314_C1_MC_Update_target_absM_only: ok (4.0s)
+  [71/85] v59_L16_T2p269185314_C1_MC_Update_order_parameter_family: ok (10.9s)
+  [72/85] v59_L16_T2p269185314_C1_MC_Update_physical_without_noise: ok (14.2s)
+  [73/85] v59_L16_T2p269185314_C1_MC_Update_all_fluxes: ok (35.6s)
+  [74/85] v59_L16_T2p269185314_C2_MC_Update_target_absM_only: ok (4.2s)
+  [75/85] v59_L16_T2p269185314_C2_MC_Update_order_parameter_family: ok (11.2s)
+  [76/85] v59_L16_T2p269185314_C2_MC_Update_physical_without_noise: ok (15.0s)
+  [77/85] v59_L16_T2p269185314_C2_MC_Update_all_fluxes: ok (34.3s)
+  [78/85] v59_L16_T2p269185314_C3_MC_Update_target_absM_only: ok (4.1s)
+  [79/85] v59_L16_T2p269185314_C3_MC_Update_order_parameter_family: ok (11.4s)
+  [80/85] v59_L16_T2p269185314_C3_MC_Update_physical_without_noise: ok (14.8s)
+  [81/85] v59_L16_T2p269185314_C3_MC_Update_all_fluxes: ok (39.2s)
+  [82/85] v59_L16_T2p269185314_C4_MC_Update_target_absM_only: ok (5.7s)
+  [83/85] v59_L16_T2p269185314_C4_MC_Update_order_parameter_family: ok (15.8s)
+  [84/85] v59_L16_T2p269185314_C4_MC_Update_physical_without_noise: ok (20.2s)
+  [85/85] v59_L16_T2p269185314_C4_MC_Update_all_fluxes: ok (48.6s)
+Replaying the 20 archived inputs for paired v5.8/v5.9 comparison...
+  [1/20] L16_T2.000000_C0_MC_Update_common: ok
+  [2/20] L16_T2.269185_C0_MC_Update_common: ok
+  [3/20] L16_T2.500000_C0_MC_Update_common: ok
+  [4/20] L32_T2.000000_C0_MC_Update_common: ok
+  [5/20] L32_T2.269185_C0_MC_Update_common: ok
+  [6/20] L32_T2.500000_C0_MC_Update_common: ok
+  [7/20] L16_T2.269185_C0_MC_Update_all_fluxes: ok
+  [8/20] L32_T2.269185_C0_MC_Update_all_fluxes: ok
+  [9/20] L16_T2.269185_C0_Energy_per_spin_common: ok
+  [10/20] L16_T2.269185_C0_Magnetization_common: ok
+  [11/20] L16_T2.269185_C0_Nearest_neighbor_correlation_common: ok
+  [12/20] L16_T2.269185_C0_Noise_axis_common: ok
+  [13/20] L16_T2.269185_C0_Abs_magnetization_shuffled_common: ok
+  [14/20] L32_T2.269185_C0_Energy_per_spin_common: ok
+  [15/20] L32_T2.269185_C0_Noise_axis_common: ok
+  [16/20] L16_T2.269185_C0_MC_Update_target_absM_only: ok
+  [17/20] L16_T2.269185_C0_MC_Update_order_parameter_family: ok
+  [18/20] L16_T2.269185_C0_MC_Update_physical_without_noise: ok
+  [19/20] L16_T2.269185_C1_MC_Update_common: ok
+  [20/20] L32_T2.269185_C1_MC_Update_common: ok
+{
+  "core_runs_planned": 85,
+  "core_runs_completed": 85,
+  "core_runs_ok": 85,
+  "matched_runs_planned": 20,
+  "matched_runs_completed": 20,
+  "matched_runs_ok": 20,
+  "matched_estimator_rows": 580,
+  "matched_rows_with_both_versions": 580,
+  "matched_rows_within_1e-6": 580,
+  "matched_max_abs_difference": 0.0,
+  "generated_trajectory_count": 180,
+  "generated_measurement_rows": 1440000,
+  "source_v59_sha256": "4f80f6a7d0809e802cbc9ec30c0bed552c1c8a95eb58687fd78e4ffd8e808260",
+  "derived_runtime_sha256": "a9ed57bb35bac39b9a0be3fd2fc2db027e1257690fe2ba64acd169d044eb2e97"
+}

@@ -1,0 +1,22 @@
+{
+  "source_v5_9": "<PROJECT_ROOT>\\universal_x5f_log_x5f_L7a_x5f_L7b_x5f_v5.9.0f_0_n0z8.py",
+  "source_v5_9_sha256": "4f80f6a7d0809e802cbc9ec30c0bed552c1c8a95eb58687fd78e4ffd8e808260",
+  "taxonomy_source_v5_8": "<PROJECT_ROOT>\\UNIVERSAL_LOG_v5.8.py",
+  "taxonomy_source_v5_8_sha256": "4a21809ed263bb743bc8022e88f532a38310b4340c24b4e0def9e517776c65c0",
+  "derived_v5_9_1": "<PROJECT_ROOT>\\audit_release\\UNIVERSAL_LOG_v5_9_1_AUDITFIX.py",
+  "derived_v5_9_1_sha256": "a2173839b8ebfcf3dfcf0ee809c5d0a7b2cb1fd34bcaa1199175fa6b23aa2ef8",
+  "changes": [
+    "Restore v5.8 d_kind registry, validation helpers, per-estimator metadata, and T_log_by_d_kind while retaining legacy class medians.",
+    "Restore estimator_measurement_types CSV/JSON export and typed estimator_four_tests columns.",
+    "Correct missing-data handling in L7b full checks: missing reference/T0/direction/Delta becomes INDETERMINE.",
+    "Compare signed Delta attenuation using magnitudes; sign reversals are INDETERMINE rather than silently classified.",
+    "Make the alternate seed explicitly 123 (or 42 when the base seed is 123) and label its output folder truthfully.",
+    "Fix argparse --help crash caused by an unescaped percent sign in the L7b FULL help text.",
+    "Correct stale VERSION comment and identify derived module as v5.9.1."
+  ],
+  "unchanged": [
+    "Original user-provided v5.9 source file remains unmodified.",
+    "29 estimator calculations and L7a implementation are not edited by this patcher.",
+    "L7b implementation thresholds 5, 10, 20, 0.50, 0.80 and the 0.5 scale diagnostic remain uncalibrated implementation choices."
+  ]
+}

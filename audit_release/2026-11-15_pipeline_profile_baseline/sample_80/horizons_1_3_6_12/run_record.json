@@ -1,0 +1,21 @@
+{
+  "label": "v5.9.2_fast_four_horizons",
+  "profiled": false,
+  "started_utc": "2026-11-15T14:58:59.5529045Z",
+  "elapsed_seconds": 430.380133,
+  "exit_code": 0,
+  "source_sha256": "c02d7e1a4081fcdcb2ccaa9acb17f3818e9950d297cb262ec5da63ca2695dedd",
+  "input_sha256": "b76a2ef1ddc50855baa8959714744e0764304bbe9408c6842c5596530ad9c216",
+  "rows": 80,
+  "target": "Abs_magnetization",
+  "control": "MC_Update",
+  "control_mode": "single",
+  "mode": "fast",
+  "horizons": "1,3,6,12",
+  "max_workers": 1,
+  "l7b": "off",
+  "seed": 20261108,
+  "pythonhashseed": "0",
+  "output_directory": "<PROJECT_ROOT>\\audit_release\\2026-11-15_pipeline_profile_baseline\\sample_80\\horizons_1_3_6_12\\pipeline_output",
+  "console_log": "<PROJECT_ROOT>\\audit_release\\2026-11-15_pipeline_profile_baseline\\sample_80\\horizons_1_3_6_12\\console.log"
+}

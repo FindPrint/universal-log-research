@@ -1,0 +1,3 @@
+comparison,n_combo,n_single,median_combo_pct,median_single_pct,delta_median_combo_minus_single,bootstrap_ci95_low,bootstrap_ci95_high,mann_whitney_exact_p,interpretation,BH_q_within_two_arm_comparisons
+Combination  vs Amivantamab 10 mg/kg ip biw,9,9,-62.6374,1192.791,-1255.4284,-1939.2719,-702.5856,4.113533525298231e-05,lower percent change means greater regression; exploratory; same published animals,8.227067050596462e-05
+Combination  vs RMC-6236 25 mg/kg qd,9,9,-62.6374,39.78315,-102.42054999999999,-151.02807,-12.472500000000004,0.007774578362813657,lower percent change means greater regression; exploratory; same published animals,0.007774578362813657

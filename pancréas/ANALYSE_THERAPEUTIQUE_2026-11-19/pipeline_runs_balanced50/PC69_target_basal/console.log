@@ -1,0 +1,17 @@
+
+[CIBLE-FIXE-GLOBALE] politique=fixed mode=all cible_demandee='CellState_basal' -> cible_globale='CellState_basal' methode=user_requested_target controles=['Treatment_code', 'CellState_basal', 'CellState_classical', 'scBasalScore', 'scClassicalScore', 'EMTScore', 'S_score', 'G2M_score', 'KRAS', 'EGFR', 'ERBB2', 'ERBB3', 'STAT3', 'GATA6', 'KRT19', 'CEACAM5', 'TP63'] | Cette cible unique sera reutilisee pour TOUS les controles. Le run ou controle == cible sera signale explicitement comme diagonal, avec cible_demandee ET cible_utilisee.
+
+================================================================================
+UNIVERSAL_LOG v5.9.4-L7aL7b-DKind-AuditFix-SeedTrace-CohenDOnly-NoPlots — RUNNING MASTER PIPELINE
+File: pancréas\ANALYSE_THERAPEUTIQUE_2026-11-19\pipeline_inputs_balanced_50\GSE271300_PC69_balanced50_multiflux.csv | Domain: pdac | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=Treatment_code cible_demandee='CellState_basal' -> cible_utilisee='CellState_basal' | Cible fixee conservee pour ce run.
+Target Observable: CellState_basal | Control Parameter: Treatment_code
+Execution Route: MODE 'FAST'
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.356
+  règle: uniform
+  n_candidates: 155, resolution: 0.649%
+  w_size: 46, min_grp: 6

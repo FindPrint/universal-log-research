@@ -1,0 +1,58 @@
+{
+  "status": "built",
+  "built_utc": "2026-11-15T12:32:33.296747+00:00",
+  "python": "3.11.9",
+  "builder": "build_cohend_only_variants.py",
+  "selection_note": "A user-requested Cohen-d-only branch. Original files are unchanged; derived older versions inherit their source versions' other behavior and have not received full integration revalidation.",
+  "metric_semantics": {
+    "cohen_d": "Signed standardized mean difference; mathematically unbounded. The implementation uses its existing equal-weight pooled-variance convention.",
+    "cliff_delta": "Signed pairwise dominance difference in [-1, 1]. Retained as an unused compatibility helper; it is not calculated by the shipped variants.",
+    "equivalence": "Different estimands. Raw values, threshold choices, and outcomes are not guaranteed equal."
+  },
+  "variants": [
+    {
+      "name": "v5.3",
+      "source": "UNIVERSAL_LOG_v5_3.py",
+      "source_sha256": "f06c3dfc58e0ab35f67c01034bf8fbe6c11126c78f624902b4b52f12d930cfd9",
+      "target": "UNIVERSAL_LOG_v5.3_COHEND_ONLY.py",
+      "target_sha256": "72768d945ee2517e37c62eff1f1c0c62b3b296678cb22ab655947088c75c2fe2",
+      "diff": "audit_release\\2026-11-15_l7b_seedtrace_fix\\v5_3_cohend_only.diff",
+      "diff_sha256": "2902f2fe172e75d45b45a3d46787d3ada16648a0f5bedb91b8ab08d43d0fc796",
+      "mode_presets_cohen_d_only": true,
+      "active_cliff_delta_calls": 0
+    },
+    {
+      "name": "v5.8",
+      "source": "UNIVERSAL_LOG_v5.8.py",
+      "source_sha256": "4a21809ed263bb743bc8022e88f532a38310b4340c24b4e0def9e517776c65c0",
+      "target": "UNIVERSAL_LOG_v5.8_COHEND_ONLY.py",
+      "target_sha256": "e91e2fa435f4cd0ac8d23e1e970837728aff4f88fbbb8a8676a3df6121bbb9db",
+      "diff": "audit_release\\2026-11-15_l7b_seedtrace_fix\\v5_8_cohend_only.diff",
+      "diff_sha256": "a3c31593de5dd721a13186b46ad34d83c8293dcbb4fc9e64056168b3417fc651",
+      "mode_presets_cohen_d_only": true,
+      "active_cliff_delta_calls": 0
+    },
+    {
+      "name": "v5.9.0",
+      "source": "universal_x5f_log_x5f_L7a_x5f_L7b_x5f_v5.9.0f_0_n0z8.py",
+      "source_sha256": "4f80f6a7d0809e802cbc9ec30c0bed552c1c8a95eb58687fd78e4ffd8e808260",
+      "target": "UNIVERSAL_LOG_v5.9.0_COHEND_ONLY.py",
+      "target_sha256": "9f37b5be0b62f7bb2d01dec39e4fe00ad06dd7ad7f4970b69a4984bad3e21060",
+      "diff": "audit_release\\2026-11-15_l7b_seedtrace_fix\\v5_9_0_cohend_only.diff",
+      "diff_sha256": "4468b74e59b3a832133d88cf102438e99ee938fd96f2fc9afcf11b5a527219f5",
+      "mode_presets_cohen_d_only": true,
+      "active_cliff_delta_calls": 0
+    },
+    {
+      "name": "v5.9.2-current-audit-candidate",
+      "source": "audit_release\\2026-11-15_l7b_seedtrace_fix\\UNIVERSAL_LOG_v5_9_2_AUDITFIX_SEEDTRACE.py",
+      "source_sha256": "65476190eaad77c1bd6c4f5731289a4ab0e41f9b1c00a3697a2b77e1a8f64e5c",
+      "target": "UNIVERSAL_LOG_v5.9.2.py",
+      "target_sha256": "684e4156831f4c4382dd2920d97a91134f94a515984a114d0be0c4054c087ffa",
+      "diff": "audit_release\\2026-11-15_l7b_seedtrace_fix\\v5_9_2-current-audit-candidate_cohend_only.diff",
+      "diff_sha256": "07ead73d3364955a558dfb6591f90aca04484b9b2b7b4848ba64bc269f572f62",
+      "mode_presets_cohen_d_only": true,
+      "active_cliff_delta_calls": 0
+    }
+  ]
+}

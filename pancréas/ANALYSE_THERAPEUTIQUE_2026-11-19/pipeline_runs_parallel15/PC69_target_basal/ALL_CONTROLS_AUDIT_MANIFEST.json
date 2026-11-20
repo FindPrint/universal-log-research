@@ -1,0 +1,2514 @@
+{
+  "created_utc": "2026-11-20T02:09:47.845206+00:00",
+  "pipeline": {
+    "path": "<PROJECT_ROOT>\\UNIVERSAL_LOG_v5.9.4.py",
+    "sha256": "72fd242c4cb26e5663fa40f1b4998de60c63e2aebbae2773d0d34d904152001b"
+  },
+  "input": {
+    "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_inputs_balanced_15\\GSE271300_PC69_balanced15_multiflux.csv",
+    "sha256": "0174d20b36a0f6e6711f6f6775b158a38ab50ea768257203286a00be95c2b7df",
+    "bytes": 24015
+  },
+  "run_progress": {
+    "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\RUN_PROGRESS.json",
+    "sha256": "4e615e7b4a99398e780c8fdb9d92c9976353678c6fa33d05b9a8ba324140038a"
+  },
+  "run_summary": {
+    "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\RUN_SUMMARY.json",
+    "sha256": "eb38f78a1a0381b1f3776274e15a2737749326318918b67c37dd1d2ba1ace5aa"
+  },
+  "control_count": 17,
+  "file_count": 408,
+  "files": [
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\console.log",
+      "bytes": 3193,
+      "sha256": "67eb726f689ddce1e31a00c7324ef6fe6fd2332c1e391e2cdc5c73baafa15ab6"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\csd_consensus.csv",
+      "bytes": 3114,
+      "sha256": "151e3d584782eee5eba88f261642ed5dbab02aa947632ced49d1dc3ed609f35a"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\csd_consensus.json",
+      "bytes": 86753,
+      "sha256": "3e24953954759cfb9b0a50114b89ae34d2013548509ef20479a6a0252af9b863"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\csd_correlation.json",
+      "bytes": 40244,
+      "sha256": "566982a6afc0e86bebf1b3ad5cd730711461d3a0f165b0495bff9ff21e64bdf2"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\csd_fractal_estimators.csv",
+      "bytes": 70039,
+      "sha256": "7226d6cf337151fa8753b8e5149afb20bb0c564fc8d0974631dc0e60f8518223"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\csd_fractal_estimators.json",
+      "bytes": 1279131,
+      "sha256": "4512c7c975f033675ac0fecc4c9453f274146b72fad5672efa640bd0f85aa703"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\df_feat.csv",
+      "bytes": 943602,
+      "sha256": "4a5acde4b6604dcd9afa7fd5f31b497e89834452e6c18fc5997036b68863d3bf"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\estimator_four_tests.csv",
+      "bytes": 606692,
+      "sha256": "55a656f4900aa2f9b6f9ad2a543ad572f896e85358f8ad4a510983fc5034c5bf"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\estimator_four_tests.json",
+      "bytes": 4229669,
+      "sha256": "023bf195c44722abacb084059824d372017c134874609a0c5fb850cb787361cf"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\estimator_redundancy.csv",
+      "bytes": 13189,
+      "sha256": "0bbd95ac33c750e1133f9449c1ae0c113d0246384e9feb99500c4e3919037614"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\estimator_redundancy.json",
+      "bytes": 179454,
+      "sha256": "2e598517d5cacccaa091a548a9a529d47598faf8f0c4026b02fcde529065be2c"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\logs.json",
+      "bytes": 87,
+      "sha256": "f5cf035566fe9b43168677ea0b1d426ae460c89c53cf98c8885eaf754d41298c"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\master_results.json",
+      "bytes": 12545618,
+      "sha256": "1c781b51f418484a940553c34d2a4e696245fdf04a04d325d5f16497a22d3c15"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\noise_diagnostic.json",
+      "bytes": 6081475,
+      "sha256": "a51142c6852f7ae1738679381ddb7747f42993a7a2dd45bf7f52cd788b3f7d20"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\predictive_mc_complexity.json",
+      "bytes": 66132,
+      "sha256": "d2eea768c5cf46a015175e7b84d9b58b0aafc8366308ae910da053e3f41e3288"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\reading_synthesis.json",
+      "bytes": 70934,
+      "sha256": "a9fe0c8b0f50cdf649698ee3baaeda7750f9d799f8fc1197ffebd1255fbefe01"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\run_status.json",
+      "bytes": 2288,
+      "sha256": "19d50eeddf11725626cf5c0dcf941658234a271174ae86643d1ebd150df44ffc"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\scan_curve.json",
+      "bytes": 3436,
+      "sha256": "214805d48fc893fc1f848228b4c621c2b6710f58f572fb22669bf1516dab3cc1"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\scores.json",
+      "bytes": 191146,
+      "sha256": "9b01cb33cafa7a7be3d23a1887dcca0d0795bc6d02df23980bb40e4496fb18c9"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\transition_analysis.json",
+      "bytes": 414712,
+      "sha256": "363d7e9dcf83968d741de951bf9f3190abec0cf426fd0cb483813bdcf0650daa"
+    },
+    {
+      "control": "Treatment_code",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\Treatment_code\\universal_master_report.txt",
+      "bytes": 11004,
+      "sha256": "1d34bc3172d1e5b7bf6338f9ce49146331b32452c2c16f63697f9f302e55188c"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\console.log",
+      "bytes": 3531,
+      "sha256": "2bf80e88d99c2228c741e8446ff3d4d3cb8bfb18ac57c08434735554bbf34bc4"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\csd_consensus.csv",
+      "bytes": 3097,
+      "sha256": "bb79464fa53324079bc75f690f9cf4d8a99598fc58d338fc4db8107b20fd62bd"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\csd_consensus.json",
+      "bytes": 86740,
+      "sha256": "232ce90835b4d96e218a94e5483cad2e4243b3f39f4f42029e151359b8338fa3"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\csd_correlation.json",
+      "bytes": 36422,
+      "sha256": "27ad35336635980709aa2f02de4dd6fdba9e6f09403b209d9028d3c2e331bcdd"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\csd_fractal_estimators.csv",
+      "bytes": 69217,
+      "sha256": "0b2654e3974e3b7255f8aabe3c96956f9a676426eb0310b4a1ead605b71c7799"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\csd_fractal_estimators.json",
+      "bytes": 1268544,
+      "sha256": "014ba287dfb39a4cc4d0de66119e8ddf01df5fdaacd8ad91d772d25ce1e7a94a"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\df_feat.csv",
+      "bytes": 915711,
+      "sha256": "3510034660d7097101fd737848cd0cb5be07cb5dcf0eb167d2c8f0adea4006a6"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\estimator_four_tests.csv",
+      "bytes": 605513,
+      "sha256": "d56e7fcc1cb73cc517f9ccdae56c5b464c5b6391a6d70d9fca84289c08eafe03"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\estimator_four_tests.json",
+      "bytes": 4232574,
+      "sha256": "aa263b8dbeed350d6eba5e01ed85adb3de4e4923efe779496bb4f49f950c82e8"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\estimator_redundancy.csv",
+      "bytes": 13205,
+      "sha256": "84f31574394d83a8a564919c65201829343d9ab3eac33b63cce28ebaf2310c1c"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\estimator_redundancy.json",
+      "bytes": 180011,
+      "sha256": "3d85d5faa30313e17eb232dee8c9b17cebef155bf017a5cb31c8ed717d0c4264"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\logs.json",
+      "bytes": 261,
+      "sha256": "736543f099a9f9174416c61691d3991f8f061b2cf4ecacffb00a7d80f7a3fafa"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\master_results.json",
+      "bytes": 12492600,
+      "sha256": "416125e1253bb13be8c4b8577773e27f799b2f8e4be945d21857e9787ec33985"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\noise_diagnostic.json",
+      "bytes": 6073292,
+      "sha256": "17e1f88b6808ab0635a011122aeb0e767e1c5a06ca125b8339ad272799df6ddc"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\predictive_mc_complexity.json",
+      "bytes": 66426,
+      "sha256": "1b62e24cb5c2d6f23331e89f0e070c19df98ded84136142e7d41d2d4101741a3"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\reading_synthesis.json",
+      "bytes": 70799,
+      "sha256": "112501e2191a3311fba82cca77ef83d20d4a35bce9472f4ba60da8a2aa034d42"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\run_status.json",
+      "bytes": 2292,
+      "sha256": "f7bff332c2fd35603cc1f1f481f06869c093543b51327ddfe264dc2ef8a90a51"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\scan_curve.json",
+      "bytes": 3435,
+      "sha256": "9b76c0ccd25787d5a7c18b1922ca6a45f6e20cadcc1212fa4270cfd66f2f56ff"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\scores.json",
+      "bytes": 190390,
+      "sha256": "5329b14dcae8487d26e39cc560a6feb9a31b8f202e331bfa37092f3d9ea1a0cf"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\transition_analysis.json",
+      "bytes": 414717,
+      "sha256": "8d30cffcb9aeb7b951502dbbce165985c4fcaa7fdd57f182668576ce8fffe1c7"
+    },
+    {
+      "control": "CellState_basal",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_basal\\universal_master_report.txt",
+      "bytes": 10949,
+      "sha256": "cc3432050ee26c20fb08006dbbbb2421b8057d13d42664f6d40351e305da7943"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\console.log",
+      "bytes": 3245,
+      "sha256": "4aebc767eb65993dd12215703fe10823f6e68dd5c7b63848cbcd0cb4de5abf05"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\csd_consensus.csv",
+      "bytes": 3095,
+      "sha256": "416ebec19801de3e20ba79bb0e8b67f611467d0bac52a1607672056e3a7b7fb7"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\csd_consensus.json",
+      "bytes": 86736,
+      "sha256": "d3cf635066846a63f7575cd1b9609bafd86d60a5b754c7787a1812c799c76de3"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\csd_correlation.json",
+      "bytes": 36688,
+      "sha256": "0be6e8f454064091e862560413211283c81ecbaa8596061ff6ab941f9ace8f5b"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\csd_fractal_estimators.csv",
+      "bytes": 68947,
+      "sha256": "33a5ec0d5fe4a9b77ef88a1e53435dc5c172822ef55d4ef34c9384f75d166304"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\csd_fractal_estimators.json",
+      "bytes": 1267397,
+      "sha256": "51b6b77169b7037b5cd8b374f83dc83509202cb2ca20db3943e263eca2051881"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\df_feat.csv",
+      "bytes": 919671,
+      "sha256": "dc250348bb8bc6a248243b07abb309c8f082e9bb8f2eefe8715bccc3838fba4e"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\estimator_four_tests.csv",
+      "bytes": 604662,
+      "sha256": "f4163c4bcb6a8efd9e4161db3c99dc095df9d4cb037c4bc4db52aa19e25ce071"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\estimator_four_tests.json",
+      "bytes": 4239721,
+      "sha256": "bf2d6377010b3a22e9c5c9e1da58c8852147a448fa6dff17f32317a48de9b613"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\estimator_redundancy.csv",
+      "bytes": 13239,
+      "sha256": "2fc6df53e6ad98af526123abd4fdf9dca44dd7472768a28e3b048d3765e179a8"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\estimator_redundancy.json",
+      "bytes": 178287,
+      "sha256": "dd28db6b5c504526e6d1e64d0fa8d3407a48e03d00bd163530d46f1676320bd6"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\logs.json",
+      "bytes": 87,
+      "sha256": "f5cf035566fe9b43168677ea0b1d426ae460c89c53cf98c8885eaf754d41298c"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\master_results.json",
+      "bytes": 12373796,
+      "sha256": "66c6982f682b262431b499a092c5441e1d14571c4b0cb6970d547cd259a24be0"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\noise_diagnostic.json",
+      "bytes": 6079494,
+      "sha256": "4a1dc4e6725844f293e0c27e66cae7f6cdb15dcf48c033755bbd093b534eb0d0"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\predictive_mc_complexity.json",
+      "bytes": 66250,
+      "sha256": "67d643018e84cf6ad8b455b3fe7596aafd4f6788290e955728e354f2df298cf9"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\reading_synthesis.json",
+      "bytes": 70823,
+      "sha256": "02737912c16d303f20c457d43de6b3899089495fd599e292eef065dfccccdc9c"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\run_status.json",
+      "bytes": 2313,
+      "sha256": "4a934d75c8da28e766ba5abca8c70d64aa932fe51ac3578fcc441b1283d527c9"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\scan_curve.json",
+      "bytes": 3430,
+      "sha256": "b92bf6fdd635fa201a8a3514968827bc586be5cb7771bb8d809397897ca7dd96"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\scores.json",
+      "bytes": 189409,
+      "sha256": "e960beb7a5ff0f8bae12e289b3478427215bf19cf621c015ca63698c3b477153"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\transition_analysis.json",
+      "bytes": 414349,
+      "sha256": "9361c12a9d1845d9291c49168ae273efa625dd697e8394a954644329371420b7"
+    },
+    {
+      "control": "CellState_classical",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CellState_classical\\universal_master_report.txt",
+      "bytes": 10955,
+      "sha256": "cba492b796b1aa3c0e5698f43ebe59860898bac487f23b8db387107f01ee9ed9"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\console.log",
+      "bytes": 3314,
+      "sha256": "eeee3e951c635d681c599a5ccf082b5e7888fadf3f67b1edb6c8989af96c8bf4"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\csd_consensus.csv",
+      "bytes": 3132,
+      "sha256": "ac6b88800ea903e747c6e0dd6cde7b3f1896e009e994808f88de48524b0a1b13"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\csd_consensus.json",
+      "bytes": 86767,
+      "sha256": "8aac3d606f6550ed3707d7d4c4da9fd1854b702932efcde9c4dd5a8823d40a55"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\csd_correlation.json",
+      "bytes": 38196,
+      "sha256": "50dcd598646920ee57007fb6c6adb21f3a331e625119760ad65cd5281b2fa044"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\csd_fractal_estimators.csv",
+      "bytes": 69555,
+      "sha256": "33148e60fbf1b90b16b676543b7c3af6a844166302b42a8f7c6b659b89d7793c"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\csd_fractal_estimators.json",
+      "bytes": 1262434,
+      "sha256": "44469783fd45b73a1a2da01364d6067f214ba3c21eb6621eb48f817436fdf804"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\df_feat.csv",
+      "bytes": 936935,
+      "sha256": "dea1aafb94848e613f61f9d415acf839e28ee2eafed295e3a8c7480349656845"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\estimator_four_tests.csv",
+      "bytes": 591249,
+      "sha256": "7d05f0bf7f10c612de1c2d28457e6c10060e94f20b24ccea6833a2026ffd34e3"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\estimator_four_tests.json",
+      "bytes": 4166711,
+      "sha256": "b6d14b315b7b4b5467533af213dd4d502354fa790d5029ded6056d436dae155d"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\estimator_redundancy.csv",
+      "bytes": 13279,
+      "sha256": "482dc29f0bf37f85befa8cc221fcc50108cdf797e92fb816c9cca73409764aeb"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\estimator_redundancy.json",
+      "bytes": 178068,
+      "sha256": "10d69faadb608bc2bcde9635363a83b457e060cfa330b822c4126490d0c5d4a6"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\logs.json",
+      "bytes": 87,
+      "sha256": "f5cf035566fe9b43168677ea0b1d426ae460c89c53cf98c8885eaf754d41298c"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\master_results.json",
+      "bytes": 12280381,
+      "sha256": "8ea792362a43e6429e125a20472b1ef809d4f910ca67cb30bd5d2f2aa2714e56"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\noise_diagnostic.json",
+      "bytes": 5998176,
+      "sha256": "ec1e47db9df6213b02605e5854cdd7d7c4a57333b163fea7285ae42bb6ea628d"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\predictive_mc_complexity.json",
+      "bytes": 66140,
+      "sha256": "ccb7865dad7bbbfcd383e2e334666e0f3aaf50edf7addedaabf836df28eb0072"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\reading_synthesis.json",
+      "bytes": 70783,
+      "sha256": "bc25ad645ecc7f9cbb9a0e5fd7ff97e79de60601f52cfd92f454bb0b3b3ee3c3"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\run_status.json",
+      "bytes": 2278,
+      "sha256": "95385dc0c7e5b0a6b4d128db2f81912d6c7a4949d3300502b3d86b9bec14d783"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\scan_curve.json",
+      "bytes": 3431,
+      "sha256": "043a011146f41922c7aa2854b5ba2625bdd5c18d4c748f0ba92e76d8b077f70c"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\scores.json",
+      "bytes": 190668,
+      "sha256": "7d71888dd5988772505c1efc7341589e3302a2f050e5a2db1c2a616a5c809d98"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\transition_analysis.json",
+      "bytes": 409152,
+      "sha256": "077e38543f78ee926ca5b3b74745fd8c2ab72b5ee8a6104ace09c9d3f5fdab5c"
+    },
+    {
+      "control": "scBasalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scBasalScore\\universal_master_report.txt",
+      "bytes": 11569,
+      "sha256": "2733d3f8776082af568975b1def50d5cb515d69d829d5b8e8dac47306badb880"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\console.log",
+      "bytes": 3474,
+      "sha256": "1b6c601f13b3c84b6df14b6a210bde642e28edb4632e9e7883c06cef385a5ef4"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\csd_consensus.csv",
+      "bytes": 3126,
+      "sha256": "e151fc50d12ef30814260076b4f9397dfe5111a99c795f900b9efa79dd2ca563"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\csd_consensus.json",
+      "bytes": 86766,
+      "sha256": "4a6b917e42a3d56131a7aa63652c642c83334379ddc3bd2eed0f91973620bbd5"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\csd_correlation.json",
+      "bytes": 37517,
+      "sha256": "d8609df415c59a88a55939078d7f4d51de405741ce4bca7c21ecc868d9cdcf8a"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\csd_fractal_estimators.csv",
+      "bytes": 69593,
+      "sha256": "3566029a468bd3e77b9610410f67e971c060e5ed2a1d8a1a730dc71c9cb6e47b"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\csd_fractal_estimators.json",
+      "bytes": 1262735,
+      "sha256": "97d435f6ecd6b504150101b1a4c4aaa5ef233b8d5487bfec5fa2062973c8e4d1"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\df_feat.csv",
+      "bytes": 928547,
+      "sha256": "7ce63df242664667bd0545e916b207ade2d7695df0590c1e4666ea9179a57c38"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\estimator_four_tests.csv",
+      "bytes": 593105,
+      "sha256": "ef4659f721e74cd73db7b551af99e1908987af51f75c4874c0263d4d79319c7c"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\estimator_four_tests.json",
+      "bytes": 4181124,
+      "sha256": "1aab2889db88a8a20c59b7e784093c4ab5e041612fe8847cf1925daaa14d6206"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\estimator_redundancy.csv",
+      "bytes": 13187,
+      "sha256": "eedee6b7f5df1fd14d4af92d2d408b4b267dff7c4d381a48d992f2d3f84f453b"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\estimator_redundancy.json",
+      "bytes": 176217,
+      "sha256": "b28513d58107e00f6b799d7e37b06f4fd19c79f34f8c06ed5dadd3cfea53108a"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\logs.json",
+      "bytes": 261,
+      "sha256": "736543f099a9f9174416c61691d3991f8f061b2cf4ecacffb00a7d80f7a3fafa"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\master_results.json",
+      "bytes": 12226303,
+      "sha256": "a66ca6cb5efcda73bfd4df9a6cc1f96eda9db127d6fcc8ff54cfe2ccf13772f8"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\noise_diagnostic.json",
+      "bytes": 6013440,
+      "sha256": "e01ff17ccff407447e085eea6e29d598742f9d39bdbda173d7ff490f22060c97"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\predictive_mc_complexity.json",
+      "bytes": 66053,
+      "sha256": "c1cb9a29c823daa1bfb4033b8bbfed3ea6824cd60b9029e014c8dd0d97bdc863"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\reading_synthesis.json",
+      "bytes": 70932,
+      "sha256": "a8cb6efde7798748417defd16688501be75b4cedde5a88aa08eca3ad55b5ce1c"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\run_status.json",
+      "bytes": 2299,
+      "sha256": "f1fc864c5f8bab51f6a4c06c926d2da1d83f7691ba650908a4cd6570af77d8c4"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\scan_curve.json",
+      "bytes": 3437,
+      "sha256": "73a98227344d42d1092c73b104f92549d17ccc607b1c0afc45e53bf65a338c90"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\scores.json",
+      "bytes": 189707,
+      "sha256": "e36af9915599ba98919f108b5241d03340cde33676d13e267c5534dd8a4f3d6b"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\transition_analysis.json",
+      "bytes": 408353,
+      "sha256": "e47213488aa94d6fbd5ad8136822fcc133813f2fe1c62ed3f6f393441ab544a1"
+    },
+    {
+      "control": "scClassicalScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\scClassicalScore\\universal_master_report.txt",
+      "bytes": 11793,
+      "sha256": "42b8bc7659297efd2503c8c62453adee79b582f597d7f2e1536b36ccdc086b6d"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\console.log",
+      "bytes": 3393,
+      "sha256": "e88aa78da909906e8f4d42614fa582a4f656d54e51d3529a512358f4d136f1a8"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\csd_consensus.csv",
+      "bytes": 3136,
+      "sha256": "031225ec552260d7c2f58459c31c9670d16b8109d207a01473e4205171b0dc41"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\csd_consensus.json",
+      "bytes": 86777,
+      "sha256": "f2ef6089c6426c4b7b0c8eb0736ca3dd1d162596e510ab2648d6ffdcf585609a"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\csd_correlation.json",
+      "bytes": 33008,
+      "sha256": "f626c3653492e9f7c2e4c936f361eba274ffdcd4e8cb8bec7f1914cf7837b508"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\csd_fractal_estimators.csv",
+      "bytes": 69950,
+      "sha256": "619b9424dcf6ac02b1de76f3a222decb72f448b560758174c982788bd614f7fa"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\csd_fractal_estimators.json",
+      "bytes": 1260757,
+      "sha256": "f1c618ce4bc0650aeb675a7acf98daa2c8f5f57f9ef1a10cc30878c4799e13d9"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\df_feat.csv",
+      "bytes": 934802,
+      "sha256": "52d112cae223e91cad50ec80a9b9a2127fe3e34ec6b1fdc3b61ac5de7389eb3c"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\estimator_four_tests.csv",
+      "bytes": 590675,
+      "sha256": "db2bce4a7a1019a4a2cef001b5fcbe570558e9335d169a94b65f28c9e6dc33f7"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\estimator_four_tests.json",
+      "bytes": 4168413,
+      "sha256": "f1d64df293bbbb5a454a426fc2b026e688be735999c3fc570129aa718296c70a"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\estimator_redundancy.csv",
+      "bytes": 13205,
+      "sha256": "31ecb40f5fcaec938c69d11ecd45e7cc6eb49a50e5a849ce23fc5127ddce822f"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\estimator_redundancy.json",
+      "bytes": 179392,
+      "sha256": "d55317f3ad86c4f5ee9f747f96c895e1d3749c9f171e18e719100428942f253a"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\logs.json",
+      "bytes": 261,
+      "sha256": "736543f099a9f9174416c61691d3991f8f061b2cf4ecacffb00a7d80f7a3fafa"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\master_results.json",
+      "bytes": 12213293,
+      "sha256": "28398878f6a9176739e246f0b333c4e46122dae4e87b8c1fb681ae5be90f2352"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\noise_diagnostic.json",
+      "bytes": 5998247,
+      "sha256": "eace8704a300ba6f1b253e9b46f09754fc4edafd73c672010ef6cd55c6523c84"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\predictive_mc_complexity.json",
+      "bytes": 66246,
+      "sha256": "2a79ac370926bd6ff36d0db8baf9daba6476cee288b42ab584c82c1812cab66e"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\reading_synthesis.json",
+      "bytes": 70762,
+      "sha256": "80d816c16d2141fef4165c80423e4c07ae548adf9fb6125979c0ec6e1932a801"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\run_status.json",
+      "bytes": 2259,
+      "sha256": "ecd7a26356df2c5f062506fd3213672524be55b6f294ca3a1589ca9aa0d1a9ab"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\scan_curve.json",
+      "bytes": 3435,
+      "sha256": "eefea9b00365de37bd4a968e685aa08a2a4a45d8556353bfb3258477e5c4de6d"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\scores.json",
+      "bytes": 191718,
+      "sha256": "8a58885c3346f38e654c0d4549ab0243f54a2ffaeddeddcbebdd5ba36c898961"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\transition_analysis.json",
+      "bytes": 409945,
+      "sha256": "66ca31feb49593979e510d5313233ef6eb988ff97427af889c4fe7d361153778"
+    },
+    {
+      "control": "EMTScore",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EMTScore\\universal_master_report.txt",
+      "bytes": 11963,
+      "sha256": "72a224e9963798db5e77b50c3537292434173130809d5907d4eb9c3e266f93fb"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\console.log",
+      "bytes": 3276,
+      "sha256": "eae886b551e8f5de8b8be8bb767886dba71547b3d0f0f7180a658ae36e96781d"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\csd_consensus.csv",
+      "bytes": 3137,
+      "sha256": "11945d1d20c7567704f4d9b7d95a7ececf7bd7bbbe9b571c1261c996ea49f38b"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\csd_consensus.json",
+      "bytes": 86789,
+      "sha256": "59a9c3eac66aaa1c5b48e5c761aff0b270f24325fc4ebe5037013a059a7625e2"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\csd_correlation.json",
+      "bytes": 37940,
+      "sha256": "c9ebd321aff25a5c0c2ee7908e01ec1a51e0f10ee3c10d0e8965180e64f69d8a"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\csd_fractal_estimators.csv",
+      "bytes": 69762,
+      "sha256": "e5fc3c631ae07d8604e2cef898c31f3a8b11d46e4ae66edad34d91eabb291be2"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\csd_fractal_estimators.json",
+      "bytes": 1270020,
+      "sha256": "3d1a817a9923dbf572c6d47057cb751ea72ed06bf9c1c520f384925a832b4bac"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\df_feat.csv",
+      "bytes": 935842,
+      "sha256": "472475500fac90b4d85c9f37741092424f8c0ba369a73726af87b805d80db671"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\estimator_four_tests.csv",
+      "bytes": 607100,
+      "sha256": "90c5d77a118e1c1b012930c4a083b3f7a059f53822380462d4b3295f273f3a51"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\estimator_four_tests.json",
+      "bytes": 4219833,
+      "sha256": "9b70623c57411e06b219f7cbc46c1d1e8a49c986a7241ce255df8b7591694b70"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\estimator_redundancy.csv",
+      "bytes": 13215,
+      "sha256": "302a167c4656fcc25888d1a0a58d21d21775febdd9a413dd5f7f463e4fb03e6d"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\estimator_redundancy.json",
+      "bytes": 179402,
+      "sha256": "9a837cea2833d55c63d483c449bb19efe464fe74cd6ebd27250bc9255b35c674"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\logs.json",
+      "bytes": 87,
+      "sha256": "f5cf035566fe9b43168677ea0b1d426ae460c89c53cf98c8885eaf754d41298c"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\master_results.json",
+      "bytes": 12329158,
+      "sha256": "1d7c4c95738eed396cc997d5cb06411ae733c66cfdb59d617116fd6222466fe6"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\noise_diagnostic.json",
+      "bytes": 6061533,
+      "sha256": "2ba20283ad7e93069ee8d7f0f97892ed97ad1a53909fdfe52409c6bbf5b93eb1"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\predictive_mc_complexity.json",
+      "bytes": 66059,
+      "sha256": "c9178b19ebc896a49ce94787f621f3277fa0c398ad23ef75713168966854fcff"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\reading_synthesis.json",
+      "bytes": 70759,
+      "sha256": "b2ac0337b6505300bacd0c1b806be8b384dd8a1550b2cbb86675ecdbe916a435"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\run_status.json",
+      "bytes": 2254,
+      "sha256": "99036a0c36c09a0159c0711bc659c962ff52f989548c775c580020786a983d9a"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\scan_curve.json",
+      "bytes": 3429,
+      "sha256": "b427c6a4ff2f852850daaf75bf34cdfc9b29329b0eddce56e49371127fcd22bc"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\scores.json",
+      "bytes": 192150,
+      "sha256": "540f9fedbf5b4330a9080507a2d6c9de9153b90192e32e404ebb8d178d0f9b1f"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\transition_analysis.json",
+      "bytes": 413146,
+      "sha256": "dc9661edcb1f5fff2822cce581b892db96e8311501c50ea99e3feb1e9d6406c2"
+    },
+    {
+      "control": "S_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\S_score\\universal_master_report.txt",
+      "bytes": 11623,
+      "sha256": "9016be8214ac67d9e4bbe09c83bd2577f04f51af5db3093fa330ca745e58c51d"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\console.log",
+      "bytes": 3295,
+      "sha256": "2c734002960b75eeeee6214cab5724f022584da64cb1180ec368689784339e50"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\csd_consensus.csv",
+      "bytes": 3120,
+      "sha256": "11a5a48f51c69884a12350e096eb12e37368c1931c0ca81e27baa5fc21106302"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\csd_consensus.json",
+      "bytes": 86769,
+      "sha256": "af048b0d78ba177ea51cffeddbbcf5b1be89e4e642eddbc8f12a6b1d37e4c52c"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\csd_correlation.json",
+      "bytes": 34877,
+      "sha256": "232eff030b449dd3576c159a64f7f052d1a92152f2bbd74f2273361ab66e2610"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\csd_fractal_estimators.csv",
+      "bytes": 69899,
+      "sha256": "27aa2cd41fc7731393292f2c22cb8b8f3e8aabf3b1d46dec5a972e25f0fc0fe2"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\csd_fractal_estimators.json",
+      "bytes": 1259384,
+      "sha256": "7c48e7d946f9663911eff56e38ea827286e1a8944bf4004ee22b1b89cd9252af"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\df_feat.csv",
+      "bytes": 935439,
+      "sha256": "9148947830372faa9b44b3836764e7d0e42577be5b339d8f1bd65c6eea16902e"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\estimator_four_tests.csv",
+      "bytes": 599485,
+      "sha256": "d2976a6d2b43bc13ffa7cb7081ef28756e9920963b354cb7d57a4e7a2dba81bc"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\estimator_four_tests.json",
+      "bytes": 4182183,
+      "sha256": "11db11339a5bb5e17d3a9d7bd2afbf457351b284c23fda753e4eed8ddfcee797"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\estimator_redundancy.csv",
+      "bytes": 13227,
+      "sha256": "54fb23beb48f1df2d6634dc46c6a5ebfff04ae3886f5af6542fb072f9808607e"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\estimator_redundancy.json",
+      "bytes": 178965,
+      "sha256": "9a96828a04d7ba76699aac4c6d742ae52c5be091d32d18a24be1e9006b830299"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\logs.json",
+      "bytes": 87,
+      "sha256": "f5cf035566fe9b43168677ea0b1d426ae460c89c53cf98c8885eaf754d41298c"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\master_results.json",
+      "bytes": 12228024,
+      "sha256": "76dd10b8499dc51ac0296034dc1e79db8bba25d2e6e03196b11923a88f31a357"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\noise_diagnostic.json",
+      "bytes": 6011013,
+      "sha256": "33ded811d9e07755eccbf6d85c326dd2923178cf254e15e827edc22a36c46383"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\predictive_mc_complexity.json",
+      "bytes": 66222,
+      "sha256": "0b101d160a6abc753f219cb94abb0f319b6b2a52d00bd0d13154e27aab22e8ec"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\reading_synthesis.json",
+      "bytes": 70767,
+      "sha256": "1b185f3cdd8aeb850507d230780fa713d2f156ae94ca8fdd500539a45c6e1b1d"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\run_status.json",
+      "bytes": 2264,
+      "sha256": "b34c71c1831a13482b4c6de08d6d9c922b5f4ceeddc1dba8dcf021578fa5e7b0"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\scan_curve.json",
+      "bytes": 3436,
+      "sha256": "f10b5683fbda9eb5a051d733874166a45c303c3b6b6494053e2096c93479982d"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\scores.json",
+      "bytes": 191581,
+      "sha256": "a71bba80886d51f627679875ce48ed9eeca52853ca12696f6f1a55d3ee5de67e"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\transition_analysis.json",
+      "bytes": 410231,
+      "sha256": "4f589baaedbcbb54cfd05e9007929cdafbc3bbffb45a8da802899287cc8629e6"
+    },
+    {
+      "control": "G2M_score",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\G2M_score\\universal_master_report.txt",
+      "bytes": 11633,
+      "sha256": "0aed5f112ecd2147c4e78d20f38293ffb7e75b6ad9783e63b5b04eaef7428a64"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\console.log",
+      "bytes": 3234,
+      "sha256": "fd9da74cb3dd3c2eb4596803f00f1f5674bc40537644493dbaa22111065c092a"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\csd_consensus.csv",
+      "bytes": 3122,
+      "sha256": "217d52bdbbc0b07d22e8c0eeee8a44a554a6ce19201e4a91558b6ff2a569d3d7"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\csd_consensus.json",
+      "bytes": 86754,
+      "sha256": "0c144573ab233c212ef7a9572cc60f2da8f25578e51e56ddf0053d6f93b284c7"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\csd_correlation.json",
+      "bytes": 33560,
+      "sha256": "846b0149feb194f4f5e5f3c09ab27892556fc5181e54ea07522a9ff28dd4791d"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\csd_fractal_estimators.csv",
+      "bytes": 69781,
+      "sha256": "e599a458c4715bc3c2e8b653025d82a50a1637bc4555b1a91db8e7b23008fbe3"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\csd_fractal_estimators.json",
+      "bytes": 1266575,
+      "sha256": "7f8e7e717258412a11a1854afaa5f98b0b51b72faed0a1a8a0f2405792028eab"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\df_feat.csv",
+      "bytes": 939764,
+      "sha256": "3569015a3663b16ca4103bcbf01b2fc33af86589fa24f950d95e34c0bc69a63a"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\estimator_four_tests.csv",
+      "bytes": 600263,
+      "sha256": "b4f7dace6035c08dfafd89633e3848362d5cf272fa888872b383d3332109be03"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\estimator_four_tests.json",
+      "bytes": 4204600,
+      "sha256": "3b5e92ed7c0122f7659e2ed6c73d3b8087d9c195508873fae3a01ff55ad18619"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\estimator_redundancy.csv",
+      "bytes": 13215,
+      "sha256": "b37d1020aa9f11eda37ea6f9568c6966059b941c28b681905bee25715170a88f"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\estimator_redundancy.json",
+      "bytes": 180173,
+      "sha256": "e5f5c180a35ecfda83b84916151987de54bc5a4415ad8315c4a3322b11be8855"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\logs.json",
+      "bytes": 87,
+      "sha256": "f5cf035566fe9b43168677ea0b1d426ae460c89c53cf98c8885eaf754d41298c"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\master_results.json",
+      "bytes": 12435407,
+      "sha256": "40c8c565cbf6f05e5edf6b441d41451516e981c919a68b8d989d56a9a9b21b05"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\noise_diagnostic.json",
+      "bytes": 6042216,
+      "sha256": "27ea401efcb58d344cb87a063d5b851a68236b1a97648dd4d031676995967a59"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\predictive_mc_complexity.json",
+      "bytes": 66052,
+      "sha256": "2a1706aa8ab66f15ba8cfbfabb3031299174e6c4714ad40369be90123680dc78"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\reading_synthesis.json",
+      "bytes": 70738,
+      "sha256": "c0eec0e82090f0414a1483edeee41af4b307eed5cf0efd683054c4eab2fa219c"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\run_status.json",
+      "bytes": 2239,
+      "sha256": "1e195cbfcee20fd23c28fd63e1c8f76bbc9181d469be21853aabca134bac6be4"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\scan_curve.json",
+      "bytes": 3446,
+      "sha256": "6fdf85edecf07d49b815c2bd37f329219f1cba1268fb0367a289bb632fd31344"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\scores.json",
+      "bytes": 192607,
+      "sha256": "796e5ae1c327c1e0405327ba61219740965463dec377bb8a7883cc5ba21105af"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\transition_analysis.json",
+      "bytes": 411485,
+      "sha256": "752e3420bff025fbb3309d0c3014d549525f45a15ac800ec46050ad66999079c"
+    },
+    {
+      "control": "KRAS",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRAS\\universal_master_report.txt",
+      "bytes": 11421,
+      "sha256": "9c8a62e94027239013952ea0726c1b805037bd9bf196b19e96435fb3b61f9617"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\console.log",
+      "bytes": 3349,
+      "sha256": "afecb9cb06110d10bf415fb49302f0866bfe85ec21e77b1e63aa64b4ded689d9"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\csd_consensus.csv",
+      "bytes": 3139,
+      "sha256": "27a3739d609970232a5cfce8f738a552e54e5b63d92f3be11d06842576a9d062"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\csd_consensus.json",
+      "bytes": 86785,
+      "sha256": "5ca929ba92752e2d911f16c4dcae60b319b5e11e7285d298f31c4b92a987542e"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\csd_correlation.json",
+      "bytes": 38044,
+      "sha256": "a89797e29af67c3dd0952852f0693c8b025eba21e6ed34cf00a657246acf0615"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\csd_fractal_estimators.csv",
+      "bytes": 69424,
+      "sha256": "43bb1fb4150b59956f2fbb78d2f2644ef026bcec307f610625853ffb014cca31"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\csd_fractal_estimators.json",
+      "bytes": 1263837,
+      "sha256": "b08820937f3062a53ca1411a0f1406e1c2610d15a32ad83c68d004626295bb7c"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\df_feat.csv",
+      "bytes": 940582,
+      "sha256": "745eb96c027ab87080c947f7565a8d0ae186493a91b9e9a5b10ded9c43530898"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\estimator_four_tests.csv",
+      "bytes": 591457,
+      "sha256": "770d5689689a77743fb9a8f028fc455a3d848a0f2eb1c9cd0524e4a8b3da2c2e"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\estimator_four_tests.json",
+      "bytes": 4173312,
+      "sha256": "fba3146e6c2cc38f62577a68809431cc773e38bb33efc3af7cdba2cd5c655b02"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\estimator_redundancy.csv",
+      "bytes": 13177,
+      "sha256": "0b5f9d595dc0b57c634b2ec39bfddb8f875f1fadfa1d8a0da7414a24d1f4cc96"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\estimator_redundancy.json",
+      "bytes": 179684,
+      "sha256": "399d42556d15675f764d1894da473e4152e0145a6d04cf897301a290eabee026"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\logs.json",
+      "bytes": 261,
+      "sha256": "736543f099a9f9174416c61691d3991f8f061b2cf4ecacffb00a7d80f7a3fafa"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\master_results.json",
+      "bytes": 12217688,
+      "sha256": "1f177410f3a678bf9f1931a0ab065af495f2405c02ed9a7d2ae12b7b7b3682f4"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\noise_diagnostic.json",
+      "bytes": 6006553,
+      "sha256": "9eb33791132522585fb73b9556fd2539664a242f4216b92897e68fea67944a88"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\predictive_mc_complexity.json",
+      "bytes": 66134,
+      "sha256": "9d5356e5fe8a3754499b71353e7f66f4621745ad3490936c9bda246714ef1b1f"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\reading_synthesis.json",
+      "bytes": 70881,
+      "sha256": "699a90828594a736f896788543aefde02ac8b58f9dc5c842620b1b27fc07adcc"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\run_status.json",
+      "bytes": 2239,
+      "sha256": "41c46af6c787d5f63ce0decb94db107af190a6628738c1842f84136b9412f8d6"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\scan_curve.json",
+      "bytes": 3440,
+      "sha256": "a920407a4e5273f13cc2e0c9ffc320e1d29a8daa2e79b50583484227bc31de55"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\scores.json",
+      "bytes": 192532,
+      "sha256": "21686501ca7379ee630abe8df7759a0ab566ed822c19c0abbb640bf4107d41f5"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\transition_analysis.json",
+      "bytes": 409384,
+      "sha256": "ede892db6092b63dc3fa5f926a3c47533b93896d71fdb95a1c317262bc48463b"
+    },
+    {
+      "control": "EGFR",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\EGFR\\universal_master_report.txt",
+      "bytes": 11706,
+      "sha256": "7c2b13df9fc503690ba49ca00776f1d3384450cb39ece0f4bec10b574f45644b"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\console.log",
+      "bytes": 3355,
+      "sha256": "d6ccaedda6b3b079d485d2a3cce4528b050403f9565283562d7dc645ca81fb8b"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\csd_consensus.csv",
+      "bytes": 3124,
+      "sha256": "332918247b511ede2f251b182e3ee981c39e53d2e560e045aab3e9f73c14b7ff"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\csd_consensus.json",
+      "bytes": 86731,
+      "sha256": "6a16debf6327a3b75cb9cc6fd883aebc857113407ce93a7a189a1d5765a8d523"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\csd_correlation.json",
+      "bytes": 35890,
+      "sha256": "6dab9c43b83272a895795756bce407af65a2d690f1536ac99f7ce19e298102fc"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\csd_fractal_estimators.csv",
+      "bytes": 69752,
+      "sha256": "c63c91e41e5981bf1fe5505b6ebc80c2fe4d7902b7d80954d8d729a505856664"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\csd_fractal_estimators.json",
+      "bytes": 1268367,
+      "sha256": "3190d3d58bc5d5e8f3a4a2170a14800882dbc849e37f1a79994b1e7cfe84bdaf"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\df_feat.csv",
+      "bytes": 939264,
+      "sha256": "1d06aaad66c7c682814eedf7827afe92aa214095e61c4cff2cec19bd5ca92e13"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\estimator_four_tests.csv",
+      "bytes": 596015,
+      "sha256": "ba1cd0846572330904b9bd5805e0889279ae7aab61643b387a29346007803ef3"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\estimator_four_tests.json",
+      "bytes": 4184204,
+      "sha256": "d2daf56004edf65866793829d865933647a79042b9ef04fc90d9a2eba71cc3a9"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\estimator_redundancy.csv",
+      "bytes": 13215,
+      "sha256": "a437385f39e0778ae9366655aaaff876838e88d665e941aad3cf34f03860c17a"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\estimator_redundancy.json",
+      "bytes": 179603,
+      "sha256": "9607812cc8759d02a957320d7c653c0b05e6db91704dabd8784cad3451cc5ab9"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\logs.json",
+      "bytes": 261,
+      "sha256": "736543f099a9f9174416c61691d3991f8f061b2cf4ecacffb00a7d80f7a3fafa"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\master_results.json",
+      "bytes": 12242438,
+      "sha256": "b92dc3a34d1c69aa4b2ca737d4fd6048b6ff6890893f532498944fc5668e8139"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\noise_diagnostic.json",
+      "bytes": 6022485,
+      "sha256": "56390ed75c6496415910b77aab648e83c006b09b2e972df2f383d182dfc034af"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\predictive_mc_complexity.json",
+      "bytes": 66019,
+      "sha256": "522a8899cd57e5245dbead166d43083cf3354ba665006a3b7488798087ab464e"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\reading_synthesis.json",
+      "bytes": 70740,
+      "sha256": "595b8721073202091d2a19dedc3d5931c6cd5a918eb10c9ae38d15bfdc8f3674"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\run_status.json",
+      "bytes": 2244,
+      "sha256": "e76ded44e5b57bdafedf7f940921267aeaa9438d57ba7cb92153f7fba41e5a68"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\scan_curve.json",
+      "bytes": 3439,
+      "sha256": "b61c10365e4690c38117667b01237c3f7e9dcafa420217284002f81d9b378b23"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\scores.json",
+      "bytes": 192457,
+      "sha256": "393d373fe21d36b879b19efb972312dbb27393cb2250833c39f3a4724fb47f4c"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\transition_analysis.json",
+      "bytes": 409068,
+      "sha256": "6933812de937723d65bd58c8092f1fccad46dd6c0313185f60325df158758dec"
+    },
+    {
+      "control": "ERBB2",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB2\\universal_master_report.txt",
+      "bytes": 11755,
+      "sha256": "3d52cdff14a69b330fab9f6025ef498d228ae72b691db578d60d6561f6afa000"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\console.log",
+      "bytes": 3215,
+      "sha256": "ca8f18a687673fca639ce4e7e17a81cb0c4cc4a4a671cfe81a51863ccaad8ddb"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\csd_consensus.csv",
+      "bytes": 3124,
+      "sha256": "16cc04661f5f26d4af006c709d7422a8f0d835bdc1e4e89c51388dbdce87d004"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\csd_consensus.json",
+      "bytes": 86771,
+      "sha256": "fbea36f71194bb3a5b04c579c9ef6f1d99584bdd1e7e830c2928b3e45cbbb0b9"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\csd_correlation.json",
+      "bytes": 38856,
+      "sha256": "fdc33c1781b26f0d09acf9775af7f69f7f6f9355ff070050e17ea7642131f57e"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\csd_fractal_estimators.csv",
+      "bytes": 69378,
+      "sha256": "368f7ba85ec2c9980d814c570c80cb8a32141223811bf46b2a3676b4de3fc752"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\csd_fractal_estimators.json",
+      "bytes": 1267065,
+      "sha256": "e8413d87bb086ea77f56d5899af2211559e1f31d012ae26e76d64d136cfc53e1"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\df_feat.csv",
+      "bytes": 940390,
+      "sha256": "eb5875e381f5c798deb3d33c532d0e393c431c342a11d5e0d2f455caf45f4b74"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\estimator_four_tests.csv",
+      "bytes": 605102,
+      "sha256": "2fef83febdf2ea79b6021a6c2ebaa434e8e5592d8db18d29bb5e9b6408a45d7a"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\estimator_four_tests.json",
+      "bytes": 4201835,
+      "sha256": "119307f9e9030d2d21cd4e23eb3bc473b232745cd49ec47fe0f1f3cdf2b36fbd"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\estimator_redundancy.csv",
+      "bytes": 13217,
+      "sha256": "5bc60f6f3dd1bef6d10abdcd57e5ac115cf0d99cfd81bd5f58b75968eba8d12f"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\estimator_redundancy.json",
+      "bytes": 180368,
+      "sha256": "a133638f3b2cfb0ce5abf65380146ece85d5b026d18e80f1fdcaf4e9d4067cff"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\logs.json",
+      "bytes": 87,
+      "sha256": "f5cf035566fe9b43168677ea0b1d426ae460c89c53cf98c8885eaf754d41298c"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\master_results.json",
+      "bytes": 12411557,
+      "sha256": "acf5004b084e89538de87e07256a58232bfd8f11aea8a4aa6432f33933b4c92c"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\noise_diagnostic.json",
+      "bytes": 6039674,
+      "sha256": "742040b557ee47f5891c13366fc74be1aaf0566c3510b95e9af79ff3c48380e7"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\predictive_mc_complexity.json",
+      "bytes": 66057,
+      "sha256": "4d42ee1ade35c83e75205884668d7cfd23e6f012e12906fa7dc42db0d2862565"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\reading_synthesis.json",
+      "bytes": 70749,
+      "sha256": "1d5cf50e1cdd41aa6d298969b6a6521869ef3caab9d3939828b5a481d2a92fb6"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\run_status.json",
+      "bytes": 2244,
+      "sha256": "c0e310272f8256a0df4872908293cbf38159ee5d0467755259fda4835d506c16"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\scan_curve.json",
+      "bytes": 3447,
+      "sha256": "0b9db0c9293ff388d7f0aadc0b28f817db11aaf9fc13a4f210a0e51c6e5e5073"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\scores.json",
+      "bytes": 192602,
+      "sha256": "dfe20f735cc37617600da938887d60fc40fb1e15793e0b80f9b4c4ac697b4ac2"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\transition_analysis.json",
+      "bytes": 413241,
+      "sha256": "a7df78f7808caa27b852979f29cf8cab079e87d5c99fd7f580a9927c7806b686"
+    },
+    {
+      "control": "ERBB3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ERBB3\\universal_master_report.txt",
+      "bytes": 11249,
+      "sha256": "02af9522a003502c93423cb03e61317cfc69fb0a35a71feb310ee1faee6b5b51"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\console.log",
+      "bytes": 3245,
+      "sha256": "db387f24743efbd5a239c5335fb02fb074e24315507143111861afbcdc3c1a9a"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\csd_consensus.csv",
+      "bytes": 3110,
+      "sha256": "2416ff7951d2e577ea5963f1de82ce2811266d689d1f91f2acdad8eed38f08f6"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\csd_consensus.json",
+      "bytes": 86711,
+      "sha256": "1d2b12b0f1756c462c2d5dedb260693d106693dc6c0c857270d091049e8fb681"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\csd_correlation.json",
+      "bytes": 36183,
+      "sha256": "7a6d16ff96870129eb009519841910715daa74b6c4cd0fbe5e1de7cd60927595"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\csd_fractal_estimators.csv",
+      "bytes": 69472,
+      "sha256": "8be3e95a0480746b08e6259ae577c9c41f7315c65fe2e76ef2befd066493ef30"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\csd_fractal_estimators.json",
+      "bytes": 1267420,
+      "sha256": "d5f74f61bff82bf77d836ec51c2e175f57ad6758eb7ddb3fc42f157033b00509"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\df_feat.csv",
+      "bytes": 936905,
+      "sha256": "de7080c847e1390dd25a2d8dcecad8b9b4eab52736c3d5d6e6b2ad2979a9497a"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\estimator_four_tests.csv",
+      "bytes": 603995,
+      "sha256": "6f759a0a74b4aa2dda8f97e9c8a1df0ecff719eb04392a5653e5a0f4aa4370f7"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\estimator_four_tests.json",
+      "bytes": 4209219,
+      "sha256": "798db4a22a4b2106220ecd96b2ae4976be643b99bf6c5ff9da469bded54d9f0a"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\estimator_redundancy.csv",
+      "bytes": 13191,
+      "sha256": "1356556a24897c98aa7b8ec0fa9e178d5e9a8c3122026bab75a3cb3c01cb474f"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\estimator_redundancy.json",
+      "bytes": 180285,
+      "sha256": "c139cf254fe6e2b1e87163a0cc31ddfa914cb3a574b5a647693f1a21df0d23fa"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\logs.json",
+      "bytes": 87,
+      "sha256": "f5cf035566fe9b43168677ea0b1d426ae460c89c53cf98c8885eaf754d41298c"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\master_results.json",
+      "bytes": 12362332,
+      "sha256": "721de42a802f4c0b19b6956ce41f4bf45400632db5c88e442533fdec77acee51"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\noise_diagnostic.json",
+      "bytes": 6047542,
+      "sha256": "90e7170d5531c17e4fa93376ed1191afa635b6ec90f55d29aa248a29ae57aa7e"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\predictive_mc_complexity.json",
+      "bytes": 66085,
+      "sha256": "e6b31d4126dc0918e7a40aa11ded6746994136f25deeb12ef12e0dae49c357b8"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\reading_synthesis.json",
+      "bytes": 70747,
+      "sha256": "d75bd7e8faaff2c17441d944732c92cd9ba4b1d1b1c832ee58e2d1e65d24c292"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\run_status.json",
+      "bytes": 2244,
+      "sha256": "3dc0233d2553efab48ad4083d190e0734aad82b087473060f3505dff173fd5c5"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\scan_curve.json",
+      "bytes": 3442,
+      "sha256": "0a194291464a8fe53a6bddf9afa5d75c0266fdd94bb4d604e40f6d9124eb9397"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\scores.json",
+      "bytes": 192619,
+      "sha256": "3503662f2a0bee215f732e8300bd08cbd74b05c648cbec1cfc132b3238ad4e48"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\transition_analysis.json",
+      "bytes": 412305,
+      "sha256": "67e944a36bc0eaff57fa0fbe9ba13559ff0d4208cd1299908123bb04959581f4"
+    },
+    {
+      "control": "STAT3",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\STAT3\\universal_master_report.txt",
+      "bytes": 11774,
+      "sha256": "b64ff145b176f5101de7f4f890fdff9f160f115f6841751b59a851bce752eb7c"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\console.log",
+      "bytes": 3221,
+      "sha256": "894c9322be1e0383f4eca2dbb007312934d66a7eaaa7db335496cbf7f068d61e"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\csd_consensus.csv",
+      "bytes": 3124,
+      "sha256": "4fa79dbf5a905090d84a60a8d0cd2a79a4fb78f11acacc38ada5d9b580a20975"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\csd_consensus.json",
+      "bytes": 86770,
+      "sha256": "879d5fafd0cf306b91d9883031bac1553e0df9f4bf474a76cb410cd3bc36c74f"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\csd_correlation.json",
+      "bytes": 36556,
+      "sha256": "66e7ec63d9e2b059dae87eb778699da82620a3e5dc8578de0be583d81e24d110"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\csd_fractal_estimators.csv",
+      "bytes": 70210,
+      "sha256": "d6816fb7922d84163baaa2cee4490bcb793937be710ef92d556b2ba26bea11f7"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\csd_fractal_estimators.json",
+      "bytes": 1328327,
+      "sha256": "8c055d589a2cb1be46649bdd5a1449a77b66ccc7a3885bbefdffca2afdad7648"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\df_feat.csv",
+      "bytes": 1000737,
+      "sha256": "c4a14554dc835821677c6567edeb3fd970f6586ded3d97ad320d86b975340b89"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\estimator_four_tests.csv",
+      "bytes": 614850,
+      "sha256": "68c80ad4b79a311c6ad2faeed6d70b40a171c437a556a76601abc14adc05ca59"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\estimator_four_tests.json",
+      "bytes": 4337967,
+      "sha256": "f094c72bc66d129d38bdd8d2bd54715776aa64f66215122ed12d20bff62661ad"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\estimator_redundancy.csv",
+      "bytes": 14303,
+      "sha256": "0a838df0a4af2d190354a67c20cc3d96e0cbbe2c7846ab49b6993130a5a0bbbd"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\estimator_redundancy.json",
+      "bytes": 203592,
+      "sha256": "b7ae75606c221b06a026226c23e6b444378770d46a160ca5b9ee90bcb3a3c727"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\logs.json",
+      "bytes": 261,
+      "sha256": "736543f099a9f9174416c61691d3991f8f061b2cf4ecacffb00a7d80f7a3fafa"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\master_results.json",
+      "bytes": 12524192,
+      "sha256": "8e20d08bf79e667a8af04fdf2c84e234b016346e617e820b9e0cffb39fc6cb4c"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\noise_diagnostic.json",
+      "bytes": 6250849,
+      "sha256": "71153da42ae704d5f9a7a2b9ca7234c3074f7d4a00e1004b18f2b735d6a022d7"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\predictive_mc_complexity.json",
+      "bytes": 66132,
+      "sha256": "962f08aabd8cf324c0d321287ba5c5f408eee87b46a09144a0f2a56981271f31"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\reading_synthesis.json",
+      "bytes": 72544,
+      "sha256": "ebc57a945b6afc96efdb00eca1f74cd61f969e626b942e557d35c24c5afcedb5"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\run_status.json",
+      "bytes": 2244,
+      "sha256": "5d58d6ff0390c3f84fe240b5cf7730e1a7cd4d09f0f5803407639bf58ad525d9"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\scan_curve.json",
+      "bytes": 3552,
+      "sha256": "0ecad59d35df24ff57d50c9a78c11aacf7159a27cc5a1f69a151f1c1a826955b"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\scores.json",
+      "bytes": 194717,
+      "sha256": "423afc90aec01de3178448b8c8eeb0e89666d29227c0b5a1bda1b29c44bfb1d3"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\transition_analysis.json",
+      "bytes": 429283,
+      "sha256": "aaf99ee72ca83e98603a71ef5dcee6b7fa7a4fd22ce037899057106770bfad83"
+    },
+    {
+      "control": "GATA6",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\GATA6\\universal_master_report.txt",
+      "bytes": 11197,
+      "sha256": "b55c69c9445f927de6300299a492e1bf9f50ed572c320d287a01cff6bfe4be5b"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\console.log",
+      "bytes": 3241,
+      "sha256": "ba5ccce6861c70a1dc26f994812fcce288b9872fc47bd1199a42ba9928c26216"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\csd_consensus.csv",
+      "bytes": 3121,
+      "sha256": "a358351a599dd01df435b2883b3e170aa7ca80d4247d4248834d7e2d8dda4f5c"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\csd_consensus.json",
+      "bytes": 86767,
+      "sha256": "195bf1000054735f510c002ad9383f0f67fa93cc4cae8277db774091298e0c17"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\csd_correlation.json",
+      "bytes": 44177,
+      "sha256": "b8fd716a8d68d586ef13ea7186cbd1309141212dbca3b52c3c07d984f6e8d532"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\csd_fractal_estimators.csv",
+      "bytes": 70428,
+      "sha256": "17c656d0508b0c240a89b174e1f5139f8b23347d0324c510049625b54828e8ae"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\csd_fractal_estimators.json",
+      "bytes": 1272821,
+      "sha256": "6b524826654984033f60a9b40f08d7760ed2314f518863bfa339a1f724afe1d3"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\df_feat.csv",
+      "bytes": 939327,
+      "sha256": "fac4a4574e0d65416d56c54771bf15cde978c78ace379da958f51afc82685c71"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\estimator_four_tests.csv",
+      "bytes": 589734,
+      "sha256": "a1d8378c63d4d5eecd92c87d7392879410f780340720600672b91e61aa2ef0a0"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\estimator_four_tests.json",
+      "bytes": 4167962,
+      "sha256": "0f4fb950ed016dccf8d40d7b12433dd358985535c2824cc3a3c7c5d112f02d47"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\estimator_redundancy.csv",
+      "bytes": 13217,
+      "sha256": "83d98b0f70a880fef9ccab4515d1774409e2f54de68a7b25faba00d6d403e023"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\estimator_redundancy.json",
+      "bytes": 180329,
+      "sha256": "e541d21034368920e0fb1a38b0a08984e8d1f9d5348ba91d36736b529acef372"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\logs.json",
+      "bytes": 87,
+      "sha256": "f5cf035566fe9b43168677ea0b1d426ae460c89c53cf98c8885eaf754d41298c"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\master_results.json",
+      "bytes": 12297826,
+      "sha256": "6a45fc036a8ddee7eed51d228223b69a6aa5891e6ba2fa81ecd56ab920e95487"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\noise_diagnostic.json",
+      "bytes": 6010524,
+      "sha256": "499d8f66bed956636a1992b6484179f54735bbe121b32afe442abbfcd6fe2cb9"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\predictive_mc_complexity.json",
+      "bytes": 66051,
+      "sha256": "aefcf957b299f19a2b4a6f8149e831bd38bed1b1b9795b97afab0ec5cf8c197d"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\reading_synthesis.json",
+      "bytes": 70722,
+      "sha256": "812cd7185f3a83f5fa210f4df85bed115e9abb9374737f41fd3f3afb7b53aca2"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\run_status.json",
+      "bytes": 2244,
+      "sha256": "97b345b821f8b69e21811c9b6452c58293edec43e46247d564f76dc3d430fbef"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\scan_curve.json",
+      "bytes": 3444,
+      "sha256": "2fdf2b522c208543a5d32de0eacfbed79eca7a177f397403cbd29c8841cbf03c"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\scores.json",
+      "bytes": 192514,
+      "sha256": "b7b567ddd616feadda47b0e33cc309a055893e68b707db4cc2d1325e7a250779"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\transition_analysis.json",
+      "bytes": 407771,
+      "sha256": "ec6695fdf2852d12e640e7d2a8095583b7ff8e3dbad61b2eeba2ca0459fc316d"
+    },
+    {
+      "control": "KRT19",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\KRT19\\universal_master_report.txt",
+      "bytes": 11524,
+      "sha256": "99545ed0421f1ab423146eee7d2bfb759be3817656f3698bb6949d18622b7679"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\console.log",
+      "bytes": 3237,
+      "sha256": "1e3437923260558e2c3c311510abf95ca96d7098aa8f8d1ed58755dee9ae3718"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\csd_consensus.csv",
+      "bytes": 3137,
+      "sha256": "0bd7e5ffe6be51937acdead28cfb0c1c291f3e34ad448f18e90622ddf9ab421e"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\csd_consensus.json",
+      "bytes": 86786,
+      "sha256": "1f867ca1ca5778f64111a01892c11eabc17921fe6ade1a6dbac8164b269d1489"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\csd_correlation.json",
+      "bytes": 35307,
+      "sha256": "76cea54ae6bbd9516d6536d76a0af0f14a19f586111ea02acbaab0a6443bfe33"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\csd_fractal_estimators.csv",
+      "bytes": 70279,
+      "sha256": "6f4c39109377da890571d8753e8e33444feafc787e92211a2fbfea21e32d6e2c"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\csd_fractal_estimators.json",
+      "bytes": 1271073,
+      "sha256": "927b8c1a62c24617b0c7b99a6f190e065ef92428ff0d32e2f9601f9cd5a5f88f"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\df_feat.csv",
+      "bytes": 939915,
+      "sha256": "942774fc2fa58529338aa4ebad57f3a4e0f8923e574ae6c49f56e580858d0e1f"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\estimator_four_tests.csv",
+      "bytes": 596196,
+      "sha256": "10f463dacbcedbe15765f3a015e421d131ecdc59b2f5904f293fa1786c3cbece"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\estimator_four_tests.json",
+      "bytes": 4193452,
+      "sha256": "5792eafbb290325c1b2aeb3b6509f7892bd12ae5b3e397cd95ea21d469496922"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\estimator_redundancy.csv",
+      "bytes": 13203,
+      "sha256": "45a2a7269d392b47db62eb7e259fc773a661adeebdb773bd76d754f8a0161013"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\estimator_redundancy.json",
+      "bytes": 180207,
+      "sha256": "a27f4b588a1d38ca7f70bf471c14addf99780602951799386bede0b20b29d281"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\logs.json",
+      "bytes": 261,
+      "sha256": "736543f099a9f9174416c61691d3991f8f061b2cf4ecacffb00a7d80f7a3fafa"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\master_results.json",
+      "bytes": 12251038,
+      "sha256": "acceb01d9047c8897bb1562a514629736ed04f056b460e5191de221580b20e02"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\noise_diagnostic.json",
+      "bytes": 6035432,
+      "sha256": "27670d70d0efc4db7e99281c9bd5c0255d44bbb03f8be6d73eec3c3a7ad919d8"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\predictive_mc_complexity.json",
+      "bytes": 66043,
+      "sha256": "f54432293418f1278e66138164a79462a95d2834e6a49210d24bc7ee36e233ef"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\reading_synthesis.json",
+      "bytes": 70886,
+      "sha256": "8a348f4f315bcd7922d653c154d805e42d002c63c72b365fc6b59d44dd6b587a"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\run_status.json",
+      "bytes": 2253,
+      "sha256": "bcc40f9fb61a720a1d0880afd5d53f81e9ba30943f5b7919b6dddd092d5874a7"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\scan_curve.json",
+      "bytes": 3441,
+      "sha256": "4a12ed2b43daffb20fa38551abe653710393423cfb1c3ce99a5b2d3b33e53142"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\scores.json",
+      "bytes": 192376,
+      "sha256": "2f47ff386daabdc936edbe0f1d615a656993137a2ccd8e557241a6041cf63024"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\transition_analysis.json",
+      "bytes": 410310,
+      "sha256": "f62c207537c405f4c9e498775f9be5102f6294dbe251e80ae48151db95c0aa2c"
+    },
+    {
+      "control": "CEACAM5",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\CEACAM5\\universal_master_report.txt",
+      "bytes": 11125,
+      "sha256": "c72794f0df5664afa9fb7d57918ccf507a83da7a136f590d9af3656d47237611"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\console.log",
+      "bytes": 3091,
+      "sha256": "42abfd6b8e3e454ddc0341a75d87bd551ba3197220f9f8ee346b163a76923955"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\csd_consensus.csv",
+      "bytes": 3144,
+      "sha256": "0545a79b69d73737040eebc67259b404e06849bd5eb367025d1d3626bfa9554f"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\csd_consensus.json",
+      "bytes": 86912,
+      "sha256": "510c9121aedf3598d8c4ba3fcdb22d9c25597f99284f6abdd11cc7fb63afc4c3"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\csd_correlation.json",
+      "bytes": 37361,
+      "sha256": "f6987a3e91045ecf43cd01f6c5e1d63e5725e4377f670a3d6e391532cc2d35f4"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\csd_fractal_estimators.csv",
+      "bytes": 70221,
+      "sha256": "c59ee302b15529506d3003960a737e14519e6fc61b499c79e68c22abe4a35b62"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\csd_fractal_estimators.json",
+      "bytes": 1279285,
+      "sha256": "268584645804903d2f3e67cc18b64ff795bb15fac326ab20f6515457035ffa82"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\df_feat.csv",
+      "bytes": 951314,
+      "sha256": "4311066a2513037c9717b1168291f418af81650c96291a01aaebc6fa4ef83685"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\estimator_four_tests.csv",
+      "bytes": 599921,
+      "sha256": "90790225d95d6c17c3fd656f1e1704179211732cf0a6641ded0516c61c2137bc"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\estimator_four_tests.json",
+      "bytes": 4209733,
+      "sha256": "d01c0f4774286a37c66f5e11f4853d5ce24803d9b3cc54def076f96972527790"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\estimator_measurement_types.csv",
+      "bytes": 9751,
+      "sha256": "a11f0ebe45913ca720f3614cea83e53779e5bcb8b0176c46f4e26daf754b88a4"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\estimator_measurement_types.json",
+      "bytes": 23504,
+      "sha256": "f82b0b2d7f007927ff82ca3a7b33a689be032a4737c9bbd828841752b7e9bec6"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\estimator_redundancy.csv",
+      "bytes": 13235,
+      "sha256": "92c31394da35f2ab217fcbbb1d9021728dfcac50455e88d123de1877a8557243"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\estimator_redundancy.json",
+      "bytes": 182235,
+      "sha256": "07ff939135324e8e67df1a50c03441c93be64ef7b54cf161b36e3af0e49584eb"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\fluxes_raw.csv",
+      "bytes": 23495,
+      "sha256": "b98274b592ea36d8281f4c6f7c96fdc016863979fa8cac7ab480f0c2ae19ad2e"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\logs.json",
+      "bytes": 87,
+      "sha256": "f5cf035566fe9b43168677ea0b1d426ae460c89c53cf98c8885eaf754d41298c"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\master_results.json",
+      "bytes": 12288343,
+      "sha256": "32709bc85065cd148daffbd3ba091626b020b9429481c77245431c6dcfba5051"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\noise_diagnostic.json",
+      "bytes": 6061230,
+      "sha256": "a2e89d547883d62bc52d744ed7a4808c55062a529e91ec3a9b10e355dbe4b91a"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\predictive_mc_complexity.json",
+      "bytes": 65976,
+      "sha256": "8d9ea15ff4f9dec6aad48bbca92a7128bcb76eac0775991eff4c320adffa92b8"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\reading_synthesis.json",
+      "bytes": 70748,
+      "sha256": "7cf99f48b7a39f755cd0fc63b13b092f88cf9ed9decc7898f87f297f4f4170c6"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\run_status.json",
+      "bytes": 2239,
+      "sha256": "5ad15f4573063a08959d63a1eac1a7af9396ad81686cd83cb2cf24b54eb827c1"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\scan_curve.json",
+      "bytes": 3440,
+      "sha256": "e4faaffdd8b91ce6e53d90962fa58ec640e9f418c1749e64dd54bd1e5d05026e"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\scores.json",
+      "bytes": 193140,
+      "sha256": "a612590cbf7f96d41dd14233f9b2ba315979eefa5b5fad22949815eb7180bef1"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\transition_analysis.json",
+      "bytes": 411005,
+      "sha256": "e1332e532f3295144ba01389c1e0de434f4cc83cde8eca98e3e9998bc1504519"
+    },
+    {
+      "control": "TP63",
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\TP63\\universal_master_report.txt",
+      "bytes": 11292,
+      "sha256": "6bf58a183bbadfcef6ce62d94e547f691c6f8393efd5065469043409128f1738"
+    }
+  ],
+  "additional_evidence": [
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_inputs_balanced_15\\BALANCED15_PIPELINE_INPUT_MANIFEST.json",
+      "bytes": 5506,
+      "sha256": "f6c5c78d009a4760e050826ec584e988d90147cbafd8109ec52d681aadee3db3"
+    },
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\prepare_pipeline_inputs_GSE271300.py",
+      "bytes": 6766,
+      "sha256": "cb1f28017413286f32915d947610aab9f6f24bce6b752c6daa99247a218459a8"
+    },
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\make_balanced_pipeline_inputs.py",
+      "bytes": 4549,
+      "sha256": "a0380e74e4593719e3d66b6bf406d98212295c55dd6b722afaaeb52eb99cb174"
+    },
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\run_pipeline_all_controls_parallel.py",
+      "bytes": 5791,
+      "sha256": "b912d1ef9b3a16b99d4f0f36f93831696a0af277243bb9c43fabe5f8076b77aa"
+    },
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\summarize_pipeline_all_controls.py",
+      "bytes": 23480,
+      "sha256": "bc1d82d40dbc613ee8ec54ee5917980dae0d5aea254cb90f0e22606af1ca1cd0"
+    },
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ALL_CONTROLS_SUMMARY.csv",
+      "bytes": 15727,
+      "sha256": "5939556a203246375abf476a7c0f9256d5fbca1fb7148e0aa29fad88bf68356b"
+    },
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ALL_CONTROLS_SUMMARY.json",
+      "bytes": 74041,
+      "sha256": "0b7ba403d1087f4c1dcc56fe17a9e0ca6854c82bd3b1782219e74fa7c439f520"
+    },
+    {
+      "path": "<PROJECT_ROOT>\\pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-19\\pipeline_runs_parallel15\\PC69_target_basal\\ALL_CONTROLS_SUMMARY.md",
+      "bytes": 5895,
+      "sha256": "20c7a964d941a23adbe6bb98f418ddfd6c1ca93e2b6e8addfdc36d9d434fed47"
+    }
+  ]
+}

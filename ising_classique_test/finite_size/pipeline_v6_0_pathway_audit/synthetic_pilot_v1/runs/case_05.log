@@ -1,0 +1,11 @@
+
+[CIBLE-FIXE-GLOBALE] politique=fixed mode=single cible_demandee='target' -> cible_globale='target' methode=user_requested_target controles=['control_index'] | Cette cible unique sera reutilisee pour TOUS les controles. Le run ou controle == cible sera signale explicitement comme diagonal, avec cible_demandee ET cible_utilisee.
+
+================================================================================
+UNIVERSAL_LOG v6.0.0-L7aL7b-CohenD — RUNNING MASTER PIPELINE
+File: <PROJECT_ROOT>\ising_classique_test\finite_size\pipeline_v6_0_pathway_audit\synthetic_pilot_v1\input\case_05.csv | Domain: generic | Mode: fast
+================================================================================
+
+[CIBLE-FIXE] politique=fixed controle=control_index cible_demandee='target' -> cible_utilisee='target' | Cible fixee conservee pour ce run.
+Target Observable: target | Control Parameter: control_index
+Execution Route: MODE 'FAST'

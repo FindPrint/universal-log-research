@@ -1,0 +1,32 @@
+{
+  "license": "CC-BY-4.0",
+  "created_local": "2026-11-14",
+  "finalizer_command": ".venv\\Scripts\\python.exe audit_release\\finalize_v2_package.py",
+  "whitepaper_v2": {
+    "path": "AUDIT_UNIVERSAL_LOG_WHITEPAPER_V2.pdf",
+    "pages": 2004,
+    "attachments": 1392,
+    "supplement_pages": 7,
+    "supplement_attachments": 359,
+    "bytes": 410845101,
+    "sha256": "61b0a8672dd033288a35f4e659acd14a13371be92b7a698f0dcec6028b7eee99",
+    "visual_rendered_pages": "1998-2004",
+    "visual_review": "pass"
+  },
+  "archive_v2": {
+    "path": "UNIVERSAL_LOG_OPEN_SOURCE_AUDIT_V2.zip",
+    "entries": 1404,
+    "new_payload_files": 368,
+    "bytes": 806192756,
+    "sha256": "aead5e5133e6fae9690b1706295dfdece99c192e7c0654cd023eba606c0cba90",
+    "crc": "pass",
+    "entry_hashes": "pass",
+    "duplicate_entries": 0,
+    "venv_included": false,
+    "external_hash_sidecar": "UNIVERSAL_LOG_OPEN_SOURCE_AUDIT_V2.zip.sha256"
+  },
+  "v1_preservation": {
+    "whitepaper_sha256": "d80ea68b12dff4e7168f4d2030cb8e915783ee538d14a3a10b1b4c2d48428b0e",
+    "archive_sha256": "7ea6bdcd3d353c46373e28a593a586414fa0c05dc458e9bc4bc42ef4b36b06c1"
+  }
+}
