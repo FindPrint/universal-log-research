@@ -32,6 +32,10 @@ Use the exact script version, input, configuration, and dependencies recorded in
 
 The full project folder contains large generated archives and source datasets. A GitHub source repository should contain the reproducible code, documentation, compact outputs, manifests, and checksums. Large generated snapshots belong in release assets or a separately archived distribution, and source data should be linked to its original repository unless its license explicitly permits redistribution.
 
+## Related repository map
+
+This repository is a curated snapshot of the local project folder, not the single source of truth for every later branch. Its version boundaries, links to the active PDAC work, and reproducibility gaps are documented in the [cross-repository map](REPOSITORY_MAP_2026-11-20.md). Results in the linked repositories have not automatically been reproduced by this snapshot.
+
 ## Licensing and third-party data
 
 - Project code: MIT; see [`LICENSE`](LICENSE).
