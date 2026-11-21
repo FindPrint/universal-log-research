@@ -1,0 +1,35 @@
+{
+  "purpose": "Synthetic integration regression: selected nonmonotone control must not also be a flux.",
+  "source": "UNIVERSAL_LOG_v6.0.1_control_flux_exclusion.py",
+  "source_sha256": "ce0557cb4c44c15a142291e5522b446f7212136686c3035c97f12a3d0e959086",
+  "pipeline_version": "v6.0.1-control-flux-exclusion-L7aL7b-CohenD",
+  "input": "synthetic_nonmonotone_control.csv",
+  "input_sha256": "2e032dbffeb5f9fe2b018cbe31d49002fdba29b5e71fbb60ae739a6c52032eca",
+  "n": 120,
+  "control": "Control",
+  "control_monotone_increasing": false,
+  "control_monotone_decreasing": false,
+  "control_descending_steps": 54,
+  "control_ascending_steps": 65,
+  "mapping": {
+    "control_col": "Control",
+    "flux_mapping": {
+      "Control_as_flux": "Control",
+      "FluxA": "FluxA"
+    }
+  },
+  "flux_keys": [
+    "FluxA"
+  ],
+  "control_as_flux_present": false,
+  "success": true,
+  "metadata_exclusions": [
+    {
+      "flux": "Control_as_flux",
+      "column": "Control",
+      "mapping_kind": "single_source"
+    }
+  ],
+  "elapsed_seconds": 32.382,
+  "captured_warning": true
+}

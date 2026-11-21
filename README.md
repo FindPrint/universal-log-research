@@ -16,9 +16,13 @@ UNIVERSAL_LOG is a research project that explores how multiple numerical streams
 
 ## Complete project whitepaper
 
-The single active complete whitepaper is edition V5, built at `output/master_whitepaper_v5/UNIVERSAL_LOG_LIVRE_BLANC_COMPLET_V5_2026-11-21.pdf` (3,207 pages; 45.5 MB). The PDF has no embedded ZIP or file attachments. The 9.35 GB project snapshot, catalog, and SHA-256 manifests are separate companion files in the local project output and are not checked into this source repository. Prior standalone whitepapers are archived under `archive_sources/whitepapers_legacy/`; the prior V4 master package is preserved separately under `archive_sources/master_v4/` and intentionally excluded from the current snapshot because it already contains a complete 7.78 GB project ZIP. See [the V5 reproduction note](COMPLETE_WHITEPAPER_V5_README.md).
+The single active complete whitepaper is [edition V6](output/master_whitepaper_v6/UNIVERSAL_LOG_LIVRE_BLANC_COMPLET_V6_2026-11-21.pdf) (3,211 pages; about 45.6 MB). It adds the D-drive archive review and an explicit control-axis/flux-role audit. The PDF has no embedded ZIP or file attachments. The complete V6 project snapshot is a separate 9.45 GB companion ZIP in the local output and D-drive backup; its overlay manifest and SHA-256 sidecar record the update. The large ZIP is not checked into this GitHub source repository. V5 is archived under `archive_sources/master_whitepaper_v5/`; older editions remain under `archive_sources/whitepapers_legacy/`, and the V4 package remains under `archive_sources/master_v4/`. See [the V6 reproduction and archive note](COMPLETE_WHITEPAPER_V6_README.md).
 
 ## Current evidence snapshot — 21 November 2026
+
+### Control axes and flux roles
+
+An archive audit tested all nine numeric columns in an archived classical Ising CSV and all 15 numeric columns in an archived PDAC CSV in turn as control axes, using a shared fixed-fast configuration within each dataset. Non-monotone controls were retained. The selected control was excluded from the flux list on each run. This is an axis-sensitivity analysis: the resulting thresholds differ by axis and are not automatically predictions. A synthetic regression also found that v6.0.0's automatic mapping excluded the selected control, while an explicit alias could reintroduce it as a flux. The separate candidate v6.0.1 excludes it from explicit and composite mappings and records the exclusion. See the [archive audit and run traces](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-21/ARCHIVE_AUDIT_2026-11-21/README_FR.md), [full report](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-21/ARCHIVE_AUDIT_2026-11-21/D_ARCHIVE_AUDIT_REPORT_FR.md), and [candidate source](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-20/REPLICATION_P2_010_GEO_2026-11-20/pipeline_source/UNIVERSAL_LOG_v6.0.1_control_flux_exclusion.py).
 
 ### Classical Ising
 

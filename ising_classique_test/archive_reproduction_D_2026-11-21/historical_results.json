@@ -1,0 +1,106 @@
+{
+  "protocol": {
+    "source_sha256": "e7346941d17e11d26722ca5219c26d5e76a374de15579ccd2c07fd38af342d40",
+    "input_sha256": "c58b591920f44e53872900800beba2de92f4edace7a43a8ec88968618f6fcd4a",
+    "rows": 200,
+    "controls": [
+      "Progress",
+      "Temperature",
+      "Magnetization",
+      "Energy",
+      "Abs_Magnetization",
+      "Magnetization_Squared",
+      "Energy_Squared",
+      "Magnetization_Diff",
+      "Energy_Diff"
+    ],
+    "mode": "fast",
+    "statistic": "cohen_d",
+    "window": 80,
+    "optimization": "disabled to honor documented fixed-parameter fast mode; same settings for each control",
+    "mapping": "each numeric column as control; other numeric columns as fluxes"
+  },
+  "results": [
+    {
+      "control": "Progress",
+      "success": true,
+      "threshold": 25.3,
+      "control_label": "Progress",
+      "seconds": 14.778,
+      "error": null,
+      "stdout_tail": ""
+    },
+    {
+      "control": "Temperature",
+      "success": true,
+      "threshold": 25.3,
+      "control_label": "Temperature",
+      "seconds": 9.702,
+      "error": null,
+      "stdout_tail": ""
+    },
+    {
+      "control": "Magnetization",
+      "success": true,
+      "threshold": 76.3,
+      "control_label": "Magnetization",
+      "seconds": 18.79,
+      "error": null,
+      "stdout_tail": ""
+    },
+    {
+      "control": "Energy",
+      "success": true,
+      "threshold": 24.3,
+      "control_label": "Energy",
+      "seconds": 11.552,
+      "error": null,
+      "stdout_tail": ""
+    },
+    {
+      "control": "Abs_Magnetization",
+      "success": true,
+      "threshold": 53.800000000000004,
+      "control_label": "Abs_Magnetization",
+      "seconds": 15.569,
+      "error": null,
+      "stdout_tail": ""
+    },
+    {
+      "control": "Magnetization_Squared",
+      "success": true,
+      "threshold": 53.800000000000004,
+      "control_label": "Magnetization_Squared",
+      "seconds": 22.018,
+      "error": null,
+      "stdout_tail": ""
+    },
+    {
+      "control": "Energy_Squared",
+      "success": true,
+      "threshold": 53.800000000000004,
+      "control_label": "Energy_Squared",
+      "seconds": 14.304,
+      "error": null,
+      "stdout_tail": ""
+    },
+    {
+      "control": "Magnetization_Diff",
+      "success": true,
+      "threshold": 23.8,
+      "control_label": "Magnetization_Diff",
+      "seconds": 11.242,
+      "error": null,
+      "stdout_tail": ""
+    },
+    {
+      "control": "Energy_Diff",
+      "success": true,
+      "threshold": 67.8,
+      "control_label": "Energy_Diff",
+      "seconds": 11.66,
+      "error": null,
+      "stdout_tail": ""
+    }
+  ]
+}

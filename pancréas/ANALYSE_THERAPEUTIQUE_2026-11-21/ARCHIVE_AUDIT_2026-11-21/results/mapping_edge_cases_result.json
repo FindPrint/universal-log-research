@@ -1,0 +1,37 @@
+{
+  "empty_automatic_map": {
+    "filtered": {},
+    "exclusions": []
+  },
+  "explicit_control_alias": {
+    "filtered": {},
+    "exclusions": [
+      {
+        "flux": "Alias",
+        "column": "Control",
+        "mapping_kind": "single_source"
+      }
+    ]
+  },
+  "composite_includes_control": {
+    "filtered": {
+      "Composite": [
+        "FluxA",
+        "FluxB"
+      ]
+    },
+    "exclusions": [
+      {
+        "flux": "Composite",
+        "column": "Control",
+        "mapping_kind": "composite_source"
+      }
+    ]
+  },
+  "non_control_source": {
+    "filtered": {
+      "FluxA_alias": "FluxA"
+    },
+    "exclusions": []
+  }
+}

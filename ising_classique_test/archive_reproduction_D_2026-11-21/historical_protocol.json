@@ -1,0 +1,21 @@
+{
+  "source_sha256": "e7346941d17e11d26722ca5219c26d5e76a374de15579ccd2c07fd38af342d40",
+  "input_sha256": "c58b591920f44e53872900800beba2de92f4edace7a43a8ec88968618f6fcd4a",
+  "rows": 200,
+  "controls": [
+    "Progress",
+    "Temperature",
+    "Magnetization",
+    "Energy",
+    "Abs_Magnetization",
+    "Magnetization_Squared",
+    "Energy_Squared",
+    "Magnetization_Diff",
+    "Energy_Diff"
+  ],
+  "mode": "fast",
+  "statistic": "cohen_d",
+  "window": 80,
+  "optimization": "disabled to honor documented fixed-parameter fast mode; same settings for each control",
+  "mapping": "each numeric column as control; other numeric columns as fluxes"
+}
