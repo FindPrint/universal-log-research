@@ -1,0 +1,8 @@
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.549
+  règle: uniform
+  n_candidates: 45, resolution: 2.273%
+  w_size: 12, min_grp: 6
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+WARNING:root:Échec [noise_step4_spectral] ValueError: Spectre nul/insuffisant : pente logarithmique non définie

@@ -1,0 +1,8 @@
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.450
+  règle: phi
+  n_candidates: 13, resolution: 8.333%
+  w_size: 28, min_grp: 9
+<LOCAL_WINDOWS_PATH> RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  skew = float(stats.skew(vals, bias=False)) if len(vals) >= 8 and np.std(vals) > 0 else np.nan

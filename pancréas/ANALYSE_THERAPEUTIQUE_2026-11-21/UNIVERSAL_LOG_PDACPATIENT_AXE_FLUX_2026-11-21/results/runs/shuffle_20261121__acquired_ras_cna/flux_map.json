@@ -1,0 +1,50 @@
+{
+  "control_axis": "acquired_ras_cna",
+  "fluxes": {
+    "dose_mg": [
+      "dose_mg"
+    ],
+    "ras_vaf_pre": [
+      "ras_vaf_pre"
+    ],
+    "ras_vaf_on": [
+      "ras_vaf_on"
+    ],
+    "ras_vaf_eot": [
+      "ras_vaf_eot"
+    ],
+    "genomic_max_vaf_eot": [
+      "genomic_max_vaf_eot"
+    ],
+    "acquired_ras_short": [
+      "acquired_ras_short"
+    ],
+    "acquired_kras_amp": [
+      "acquired_kras_amp"
+    ],
+    "acquired_myc_amp": [
+      "acquired_myc_amp"
+    ],
+    "acquired_other": [
+      "acquired_other"
+    ],
+    "acquired_any_listed": [
+      "acquired_any_listed"
+    ],
+    "n_ras_pathway_classes_acquired": [
+      "n_ras_pathway_classes_acquired"
+    ],
+    "multiple_ras_pathway_classes": [
+      "multiple_ras_pathway_classes"
+    ],
+    "delta_pre_to_on_vaf_pp": [
+      "delta_pre_to_on_vaf_pp"
+    ],
+    "delta_on_to_eot_vaf_pp": [
+      "delta_on_to_eot_vaf_pp"
+    ],
+    "delta_pre_to_eot_vaf_pp": [
+      "delta_pre_to_eot_vaf_pp"
+    ]
+  }
+}

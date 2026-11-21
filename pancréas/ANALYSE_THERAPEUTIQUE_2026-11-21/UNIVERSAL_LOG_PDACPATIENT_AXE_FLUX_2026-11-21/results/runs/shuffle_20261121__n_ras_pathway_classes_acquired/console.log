@@ -1,0 +1,95 @@
+Optimisation Monte Carlo HARMONIQUE GUIDÉ v1 (12 itérations, P_harmonique=0.45)...
+  Sequentiel: workers=1 (parallelisme si workers>1 et iterations>=20)
+✓ Optimisation terminée - Meilleur score: 0.434
+  règle: phi
+  n_candidates: 13, resolution: 8.333%
+  w_size: 28, min_grp: 9
+<LOCAL_WINDOWS_PATH> RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  skew = float(stats.skew(vals, bias=False)) if len(vals) >= 8 and np.std(vals) > 0 else np.nan
+--- Logging error ---
+Traceback (most recent call last):
+  File "<LOCAL_WINDOWS_PATH>", line 4277, in compute_single_flux_noise_diagnostic
+    raise ValueError("Spectre nul/insuffisant : pente logarithmique non définie")
+ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<LOCAL_WINDOWS_PATH>", line 1113, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "<LOCAL_WINDOWS_PATH>", line 261, in <module>
+    raise SystemExit(main())
+  File "<LOCAL_WINDOWS_PATH>", line 247, in main
+    item = run_one(module, ordered, order_name, control)
+  File "<LOCAL_WINDOWS_PATH>", line 127, in run_one
+    output, features, fluxes, fluxes_ui = module.run_pipeline(
+  File "<LOCAL_WINDOWS_PATH>", line 7553, in run_pipeline
+    noise_diag_res = compute_noise_diagnostic(df, progress, fluxes, opt_thresh_val, active_keys, reactive_keys, df_feat=df_feat)
+  File "<LOCAL_WINDOWS_PATH>", line 5257, in compute_noise_diagnostic
+    diag = compute_single_flux_noise_diagnostic(
+  File "<LOCAL_WINDOWS_PATH>", line 4289, in compute_single_flux_noise_diagnostic
+    _log_failure('noise_step4_spectral', _exc)
+  File "<LOCAL_WINDOWS_PATH>", line 3121, in _log_failure
+    logging.warning('Échec [%s] %s: %s', stage, type(exc).__name__, exc)
+Message: 'Échec [%s] %s: %s'
+Arguments: ('noise_step4_spectral', 'ValueError', ValueError('Spectre nul/insuffisant : pente logarithmique non définie'))
+--- Logging error ---
+Traceback (most recent call last):
+  File "<LOCAL_WINDOWS_PATH>", line 4277, in compute_single_flux_noise_diagnostic
+    raise ValueError("Spectre nul/insuffisant : pente logarithmique non définie")
+ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<LOCAL_WINDOWS_PATH>", line 1113, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "<LOCAL_WINDOWS_PATH>", line 261, in <module>
+    raise SystemExit(main())
+  File "<LOCAL_WINDOWS_PATH>", line 247, in main
+    item = run_one(module, ordered, order_name, control)
+  File "<LOCAL_WINDOWS_PATH>", line 127, in run_one
+    output, features, fluxes, fluxes_ui = module.run_pipeline(
+  File "<LOCAL_WINDOWS_PATH>", line 7553, in run_pipeline
+    noise_diag_res = compute_noise_diagnostic(df, progress, fluxes, opt_thresh_val, active_keys, reactive_keys, df_feat=df_feat)
+  File "<LOCAL_WINDOWS_PATH>", line 5257, in compute_noise_diagnostic
+    diag = compute_single_flux_noise_diagnostic(
+  File "<LOCAL_WINDOWS_PATH>", line 4289, in compute_single_flux_noise_diagnostic
+    _log_failure('noise_step4_spectral', _exc)
+  File "<LOCAL_WINDOWS_PATH>", line 3121, in _log_failure
+    logging.warning('Échec [%s] %s: %s', stage, type(exc).__name__, exc)
+Message: 'Échec [%s] %s: %s'
+Arguments: ('noise_step4_spectral', 'ValueError', ValueError('Spectre nul/insuffisant : pente logarithmique non définie'))
+--- Logging error ---
+Traceback (most recent call last):
+  File "<LOCAL_WINDOWS_PATH>", line 4277, in compute_single_flux_noise_diagnostic
+    raise ValueError("Spectre nul/insuffisant : pente logarithmique non définie")
+ValueError: Spectre nul/insuffisant : pente logarithmique non définie
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<LOCAL_WINDOWS_PATH>", line 1113, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "<LOCAL_WINDOWS_PATH>", line 261, in <module>
+    raise SystemExit(main())
+  File "<LOCAL_WINDOWS_PATH>", line 247, in main
+    item = run_one(module, ordered, order_name, control)
+  File "<LOCAL_WINDOWS_PATH>", line 127, in run_one
+    output, features, fluxes, fluxes_ui = module.run_pipeline(
+  File "<LOCAL_WINDOWS_PATH>", line 7553, in run_pipeline
+    noise_diag_res = compute_noise_diagnostic(df, progress, fluxes, opt_thresh_val, active_keys, reactive_keys, df_feat=df_feat)
+  File "<LOCAL_WINDOWS_PATH>", line 5257, in compute_noise_diagnostic
+    diag = compute_single_flux_noise_diagnostic(
+  File "<LOCAL_WINDOWS_PATH>", line 4289, in compute_single_flux_noise_diagnostic
+    _log_failure('noise_step4_spectral', _exc)
+  File "<LOCAL_WINDOWS_PATH>", line 3121, in _log_failure
+    logging.warning('Échec [%s] %s: %s', stage, type(exc).__name__, exc)
+Message: 'Échec [%s] %s: %s'
+Arguments: ('noise_step4_spectral', 'ValueError', ValueError('Spectre nul/insuffisant : pente logarithmique non définie'))

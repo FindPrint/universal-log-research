@@ -1,0 +1,17 @@
+flux,control_order_pairs,mean_finite_estimator_types,median_finite_estimator_types,max_finite_estimator_types,mean_finite_cell_fraction,min_source_n_valid,max_source_n_valid
+acquired_any_listed,27,19.85185185,20,21,0.5097488293,57,57
+acquired_kras_amp,27,20.55555556,21,22,0.5468390805,57,57
+acquired_myc_amp,27,18.07407407,19,20,0.3380906769,57,57
+acquired_other,27,20.44444444,21,21,0.5821413367,57,57
+acquired_ras_cna,27,20.59259259,21,22,0.5516815666,57,57
+acquired_ras_short,27,20.62962963,21,22,0.5818433376,57,57
+delta_on_to_eot_vaf_pp,30,0,0,0,0,25,25
+delta_pre_to_eot_vaf_pp,30,0.4333333333,0,13,0.0007088122605,41,41
+delta_pre_to_on_vaf_pp,30,0,0,0,0,25,25
+dose_mg,27,25.96296296,27,28,0.7317901235,57,57
+genomic_max_vaf_eot,27,25.92592593,27,28,0.7357705407,57,57
+multiple_ras_pathway_classes,27,20.59259259,21,22,0.4873563218,57,57
+n_ras_pathway_classes_acquired,27,22.96296296,24,25,0.6035547041,57,57
+ras_vaf_eot,30,6.133333333,0,23,0.02694444444,49,49
+ras_vaf_on,30,0,0,0,0,26,26
+ras_vaf_pre,30,1.033333333,0,18,0.001570881226,44,44
