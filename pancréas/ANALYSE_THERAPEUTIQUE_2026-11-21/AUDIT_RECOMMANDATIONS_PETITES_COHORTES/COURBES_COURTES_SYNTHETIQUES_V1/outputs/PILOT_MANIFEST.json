@@ -1,0 +1,93 @@
+{
+  "protocol": "short_dose_response_synthetic_pilot_v1.1",
+  "status": "descriptive_monte_carlo_pilot_not_confirmatory",
+  "seed": 20261121,
+  "replicates_per_length_scenario": 50,
+  "lengths": [
+    7,
+    8,
+    9,
+    10
+  ],
+  "concentrations_M": [
+    1e-09,
+    0.0001
+  ],
+  "scenarios": {
+    "sigmoid_strong": {
+      "top": 100.0,
+      "bottom": 20.0,
+      "hill": 1.5,
+      "noise_sd": 3.0,
+      "has_ic50": true
+    },
+    "sigmoid_weak": {
+      "top": 100.0,
+      "bottom": 70.0,
+      "hill": 0.8,
+      "noise_sd": 10.0,
+      "has_ic50": true
+    },
+    "flat_no_effect": {
+      "top": 100.0,
+      "bottom": 100.0,
+      "hill": 1.0,
+      "noise_sd": 5.0,
+      "has_ic50": false
+    },
+    "noise_no_trend": {
+      "top": 50.0,
+      "bottom": 50.0,
+      "hill": 1.0,
+      "noise_sd": 20.0,
+      "has_ic50": false
+    }
+  },
+  "pipeline": "C:\\Users\\citys\\Desktop\\10-31-2026\\pancréas\\universal_v6.0.0_cohen - Copie.py.txt",
+  "pipeline_version": "v6.0.0",
+  "pipeline_sha256": "bb8bbdba4eb1f8c55b49748274ae8fbfef8a43f6c1b890964f18ba77960c0773",
+  "pipeline_api": "apply_complexity only; unchanged source; local min_len=N; estimator_profile=all",
+  "full_pipeline_run": false,
+  "t0_tlog_computed": false,
+  "bootstrap": false,
+  "interpretation": "Describes one-call estimator finiteness/values per condition and conventional 4PL fit behavior on synthetic vectors only. Monte Carlo repetitions are not experimental replicates. Does not validate estimator stability, a small-series production mode, or T0=IC50.",
+  "outputs": {
+    "SYNTHETIC_DOSE_CURVES.csv": {
+      "bytes": 771809,
+      "sha256": "9ae3f84d61372a23fe2459be4979b3944bc1effd2ce2c164c64cc774c7efb723"
+    },
+    "HILL4_FIT_PER_CURVE.csv": {
+      "bytes": 142448,
+      "sha256": "d6c378a642496546e1bc5eb8888d7890fa2cf29f6e95cb0329696fe8362b51ce"
+    },
+    "ESTIMATOR_PROBES.csv": {
+      "bytes": 32658,
+      "sha256": "3115ba0e5c91260f3a913b2abf36219313bee2e4a516e80af6248ffad43b8a96"
+    },
+    "HILL4_FIT_SUMMARY.csv": {
+      "bytes": 1010,
+      "sha256": "6bf6d330ac3bda9d5e20558a96fddba95e1222eae5019c22151f21aa393bdff4"
+    },
+    "PILOT_FIGURE.png": {
+      "bytes": 112144,
+      "sha256": "83180a7883edc4ba704fb635c710a1ff29a26930ca3c4b9cf42ac4d657d5bbb5"
+    },
+    "RESULTATS_FR.md": {
+      "bytes": 4913,
+      "sha256": "09f3a7d12bdd5b45927ef5efeee0f889edc0ac648d68071d03fdb1c4122d63eb"
+    },
+    "summarize_short_curve_pilot.py": {
+      "bytes": 9246,
+      "sha256": "1d41de3266f851ecf564abac76b6c290a907e6fe1381e613aacd19ffe60c701a"
+    }
+  },
+  "runtime_seconds": 301.282,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "1.26.4",
+  "scipy": "1.17.1",
+  "protocol_sha256": "4d365225158f1bc1b120ee5ff5ae4e0befb4bbbbbf0942b51b2fe1ca391f383e",
+  "runner_sha256": "600279ea73fedef6d535aa9b29b3651f252c3e5c63c7f233d9dde6962b873ce7",
+  "estimator_probe_policy": "one first RNG draw per length x scenario (16 curves); no estimator stability inference",
+  "summarizer_sha256": "1d41de3266f851ecf564abac76b6c290a907e6fe1381e613aacd19ffe60c701a"
+}

@@ -86,3 +86,25 @@ La commande --help du fichier fourni v5.9.0 a levé ValueError: unsupported form
 **Évaluation des recommandations :** l’existence d’un enjeu petites séries est établie, mais la règle « 1 000 bootstraps et persistance à 95 % » n’est pas calibrée ici. Elle ne peut pas transformer 7–8 doses en 50 observations indépendantes. Les essais MRTX1133 + olaparib sont précliniquement documentés, mais aucun élément consulté n’établit le triplet ajouté à l’ADC MUC1-C ou à AS-77. Le chiffre de 87 % n’a pas été trouvé dans l’article primaire MRTX1133–olaparib. AS-77 demande vérification d’identité; il est aussi référencé comme PAP-1/Kv1.3, distinct de KCNN4/KCa3.1. PRISM et GDSC fournissent des courbes de 7–9 doses et constituent des benchmarks possibles, mais IC50 n’est pas égal par définition à T0.
 
 **Décision :** ne pas modifier les limites ni annoncer un mode court validé. Créer une calibration séparée pour les courbes ordonnées courtes et les comparaisons de cohortes; faire des simulations à seuil connu et comparer à l’ajustement dose-réponse/AUC/IC50 conventionnel; conserver les réplicats groupés et permettre l’abstention. Rapport, scripts, empreintes source et résultat de compatibilité sont dans pancréas/ANALYSE_THERAPEUTIQUE_2026-11-21/AUDIT_RECOMMANDATIONS_PETITES_COHORTES/.
+
+## H9 — 2026-11-21 : pilote synthétique de courbes courtes, 4PL et disponibilité des 29 estimateurs
+
+**Question :** sur des courbes de dose synthétiques de 7–10 points dont l'IC50 est connue, le fit conventionnel et les estimateurs v6.0.0 se comportent-ils de façon à autoriser un mode court?
+
+**Protocole :** protocole v1.1 gelé dans `pancréas/ANALYSE_THERAPEUTIQUE_2026-11-21/AUDIT_RECOMMANDATIONS_PETITES_COHORTES/COURBES_COURTES_SYNTHETIQUES_V1/PROTOCOLE_FR.md`. Le `.venv` a produit 800 courbes Monte-Carlo (4 longueurs, 4 scénarios, 50 tirages). Le fit Hill 4 paramètres a été calculé sur chaque courbe. `apply_complexity` de v6.0.0 inchangé a été appelé sur un seul premier tirage par condition, avec `min_len=N`, en profil `all`; ce diagnostic direct ne lève pas le seuil du pipeline complet. La durée rapportée est 301,3 s.
+
+**Observations :** l'erreur médiane absolue de log10(IC50) sur la sigmoïde forte favorable est de 0,028–0,042 décade (P90 0,074–0,099); sur la sigmoïde faible/bruitée, médiane 0,572–0,626 et P90 1,968–4,500. Les 4PL convergent tous, y compris sur les nuls sans IC50 vraie; l'IC50 ajustée est néanmoins dans la plage testée dans 35–40/50 nuls plats et 34–43/50 courbes de bruit sans tendance. La convergence seule n'est donc pas un critère suffisant d'identifiabilité. Les sondages des 29 méthodes donnent 4/29 estimations finies dans tous les cas, sauf 5/29 sur deux courbes fortes à N=9/10.
+
+**Limites :** les générateurs, bruit, plage de doses et IC50 au milieu de la gamme sont choisis. Les estimateurs n'ont qu'un seul sondage par combinaison, ne voient pas l'axe de dose, et leur stabilité n'est pas estimée. Aucun T0, TLog, Q, F1/F2, Voie 1/2 ou L7a/L7b n'a été calculé. Le nombre de tirages synthétiques ne correspond pas à des réplicats biologiques. Un premier plan de 800 appels aux estimateurs a été arrêté avant écriture; aucun résultat de cette tentative n'est utilisé et l'arrêt est journalisé.
+
+**Décision :** les observations justifient de concevoir une calibration dose-réponse dédiée avec identifiabilité et abstention; elles ne valident pas un mode `N=7..10`, ne donnent pas de taux biologique de faux positifs et ne démontrent pas `T0=IC50`. Ne pas modifier la limite du run complet dans cette étape.
+
+## H10 — 2026-11-21 : édition maître V5 et séparation du snapshot
+
+**Question :** peut-on maintenir un seul livre blanc complet actif et fournir en même temps une archive reproductible du projet sans incorporer cette archive au PDF?
+
+**Résultat de build :** le générateur `build_complete_whitepaper_v5.py`, exécuté avec le `.venv`, a construit le livre blanc V5 de 3 207 pages (environ 45,5 MB) et un snapshot ZIP externe de 6 260 fichiers (environ 8,7 GiB compressés; 13,6 GB avant compression). Les empreintes exactes sont enregistrées dans le manifeste et les sidecars de sortie.
+
+**Contrôles :** le PDF a été relu par pypdf (3 207 pages, aucun EmbeddedFiles, aucun catalogue `/AF`, aucune annotation de pièce jointe) et par `pdfinfo`; l'archive a passé le contrôle CRC intégré au générateur. Les pages 1–4 et les deux dernières pages ont été rendues et inspectées visuellement. Le PDF ne contient aucun ZIP. L'archive exclut le V4 complet de 7,78 Go pour éviter l'imbrication d'un snapshot précédent; les livres blancs autonomes précédents sont conservés dans `archive_sources/whitepapers_legacy/`.
+
+**Décision et limites :** V5 devient le seul livre blanc maître actif. Le ZIP est un fichier compagnon autonome et le PDF reste un document de 45,5 MB. Le snapshot ne comprend pas l'environnement `.venv`, l'historique Git, ni les sorties construites dans `output/master_whitepaper_v5/`; son manifeste liste les exclusions. Ce contrôle concerne le packaging et la lisibilité du livre blanc, pas une validation scientifique supplémentaire du pipeline ni des résultats PDAC.
