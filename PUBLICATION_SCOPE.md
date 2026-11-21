@@ -1,6 +1,6 @@
 # Scope of the public source repository
 
-This repository is a clean-history publication copy of the project files present on 2026-11-20. It preserves the project code, theory notes, audit records, analysis outputs and reproducibility material selected by the project-root `.gitignore`. `PUBLICATION_MANIFEST_2026-11-20.csv` records each copied file's size and SHA-256 digest (the manifest and this scope note are generated packaging metadata and are not listed in the manifest).
+This repository began as a clean-history publication copy of the project files present on 2026-11-20. Later dated updates are additive. `PUBLICATION_MANIFEST_2026-11-20.csv` records the baseline snapshot; `PUBLICATION_MANIFEST_2026-11-21.csv` records files added or changed in the MRTX1133/MUC1-C data-fit audit. Each manifest records file sizes and SHA-256 digests and excludes itself and this scope note.
 
 ## Excluded from this source repository
 

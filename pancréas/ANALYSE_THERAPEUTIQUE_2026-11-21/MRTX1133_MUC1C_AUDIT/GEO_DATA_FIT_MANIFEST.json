@@ -1,0 +1,299 @@
+{
+  "audit": "MRTX1133 resistance and MUC1-C GEO data-fit inventory",
+  "created_utc": "2026-11-21T12:35:38.369483+00:00",
+  "script": "audit_geo_inputs.py",
+  "script_sha256": "98e09ab2ff51dd601d146688fcc98f119dfaeae663bc63b39a0cdbe3de3ff4a8",
+  "python_version": "3.11.9",
+  "series": {
+    "GSE269985": {
+      "title": "Mechanisms of resistance to oncogenic KRAS inhibition in pancreatic cancer [dataset 2]",
+      "summary": "KRAS inhibitors demonstrate clinical efficacy in pancreatic ductal adenocarcinoma (PDAC); however, resistance is common. Among patients with KRASG12C-mutant PDAC treated with adagrasib or sotorasib, mutations in PIK3CA and KRAS, and amplifications of KRASG12C, MYC, MET, EGFR, and CDK6 emerged at acquired resistance. In PDAC cell lines and organoid models treated with the KRASG12D inhibitor MRTX1133, epithelial-to-mesenchymal transition and PI3K-AKT-mTOR signaling associate with resistance to therapy. MRTX1133 treatment of the KrasLSL-G12D/+;Trp53LSL-R172H/+;p48-Cre (KPC) mouse model yielded deep tumor regressions, but drug resistance ultimately emerged, accompanied by amplifications of Kras, Yap1, Myc, and Cdk6/Abcb1a/b, and co-evolution of drug-resistant transcriptional programs. Moreover, in KPC and PDX models, mesenchymal and basal-like cell states displayed increased response to KRAS inhibition compared to the classical state. Combination treatment with KRASG12D inhibition and chemotherapy significantly improved tumor control in PDAC mouse models. Collectively, these data elucidate co-evolving resistance mechanisms to KRAS inhibition and support multiple combination therapy strategies.",
+      "sample_count": 30,
+      "sample_types": {
+        "SRA": 30
+      },
+      "sample_treatments": {
+        "None": 30
+      },
+      "sample_states": {
+        "parental model/state": 15,
+        "MRTX1133-resistant model/state": 15
+      },
+      "sample_days": {
+        "unspecified": 30
+      },
+      "supplementary_files": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE269nnn/GSE269985/suppl/GSE269985_RAW.tar"
+      ]
+    },
+    "GSE269313": {
+      "title": "Mechanisms of resistance to oncogenic KRAS inhibition in pancreatic cancer [dataset 1]",
+      "summary": "KRAS inhibitors demonstrate clinical efficacy in pancreatic ductal adenocarcinoma (PDAC); however, resistance is common. Among patients with KRASG12C-mutant PDAC treated with adagrasib or sotorasib, mutations in PIK3CA and KRAS, and amplifications of KRASG12C, MYC, MET, EGFR, and CDK6 emerged at acquired resistance. In PDAC cell lines and organoid models treated with the KRASG12D inhibitor MRTX1133, epithelial-to-mesenchymal transition and PI3K-AKT-mTOR signaling associate with resistance to therapy. MRTX1133 treatment of the KrasLSL-G12D/+;Trp53LSL-R172H/+;p48-Cre (KPC) mouse model yielded deep tumor regressions, but drug resistance ultimately emerged, accompanied by amplifications of Kras, Yap1, Myc, and Cdk6/Abcb1a/b, and co-evolution of drug-resistant transcriptional programs. Moreover, in KPC and PDX models, mesenchymal and basal-like cell states displayed increased response to KRAS inhibition compared to the classical state. Combination treatment with KRASG12D inhibition and chemotherapy significantly improved tumor control in PDAC mouse models. Collectively, these data elucidate co-evolving resistance mechanisms to KRAS inhibition and support multiple combination therapy strategies.",
+      "sample_count": 17,
+      "sample_types": {
+        "SRA": 17
+      },
+      "sample_treatments": {
+        "MRTX1133": 9,
+        "Vehicle": 8
+      },
+      "sample_states": {
+        "MRTX1133-resistant model/state": 6,
+        "Vehicle": 5,
+        "early MRTX1133 exposure": 3,
+        "early vehicle": 3
+      },
+      "sample_days": {
+        "107": 1,
+        "224": 1,
+        "3": 7,
+        "121": 2,
+        "20": 1,
+        "213": 1,
+        "15": 1,
+        "7": 1,
+        "42": 1,
+        "14": 1
+      },
+      "supplementary_files": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE269nnn/GSE269313/suppl/GSE269313_RAW.tar"
+      ]
+    },
+    "GSE293756": {
+      "title": "PANCREATIC DUCTAL ADENOCARCINOMAS RESISTANT TO KRAS INHIBITION ARE DRUGGABLE WITH AN ANTI-MUC1-C ADC",
+      "summary": "Treatment of pancreatic ductal carcinomas (PDACs) has been advanced by the development of KRAS mutant inhibitors. Despite this progress, PDACs invariably develop resistance to these agents by mechanisms that largely remain unclear. The MUC1 gene, which encodes an oncogenic MUC1-C protein, is upregulated in PDAC KRAS G12D tumors. We report that treatment of PDAC cells with the selective KRAS G12D MRTX1133 inhibitor is associated with induction of MUC1-C expression. We show that KRAS G12D inhibition activates a MUC1-C/NF-B p65 auto-inductive pathway. Our results further demonstrate that MUC1-C drives resistance to MRTX1133 by activating the inflammatory IFN type I and II pathways. Of clinical relevance, targeting MUC1-C genetically and pharmacologically reverses MRTX1133 resistance and is synergistic in combination with MRTX1133 treatment. In leveraging MRTX1133-induced upregulation of MUC1-C expression, an anti-MUC1-C (M1C) antibody-drug conjugate (ADC) is highly effective against MRTX1133-resistant PDAC KRAS G12D cell lines, patient-derived organoids and PDX tumor xenograft models. These findings demonstrate that MUC1-C confers resistance of PDAC KRAS G12D mutant cells to MRTX1133 and identify MUC1-C as a target for M1C ADC treatment of PDAC patients who are refractory to MRTX1133 treatment.",
+      "sample_count": 6,
+      "sample_types": {
+        "SRA": 6
+      },
+      "sample_treatments": {
+        "DMSO": 3,
+        "DOX": 3
+      },
+      "sample_states": {
+        "DMSO": 3,
+        "DOX": 3
+      },
+      "sample_days": {
+        "unspecified": 6
+      },
+      "supplementary_files": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE293nnn/GSE293756/suppl/GSE293756_STAR_Gene_Counts.csv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE293nnn/GSE293756/suppl/GSE293756_STAR_Gene_TPM.csv.gz"
+      ]
+    }
+  },
+  "GSE269985_raw_tar_members": [
+    {
+      "name": "GSM8332065_Panc0203P_1_counts.csv.gz",
+      "bytes": 445230
+    },
+    {
+      "name": "GSM8332066_Panc0203P_2_counts.csv.gz",
+      "bytes": 446480
+    },
+    {
+      "name": "GSM8332067_Panc0203P_3_counts.csv.gz",
+      "bytes": 442500
+    },
+    {
+      "name": "GSM8332068_Panc0203R_1_counts.csv.gz",
+      "bytes": 446778
+    },
+    {
+      "name": "GSM8332069_Panc0203R_2_counts.csv.gz",
+      "bytes": 445034
+    },
+    {
+      "name": "GSM8332070_Panc0203R_3_counts.csv.gz",
+      "bytes": 444504
+    },
+    {
+      "name": "GSM8332071_PANC1P_1_counts.csv.gz",
+      "bytes": 442406
+    },
+    {
+      "name": "GSM8332072_PANC1P_2_counts.csv.gz",
+      "bytes": 443121
+    },
+    {
+      "name": "GSM8332073_PANC1P_3_counts.csv.gz",
+      "bytes": 442372
+    },
+    {
+      "name": "GSM8332074_PANC1R_1_counts.csv.gz",
+      "bytes": 444465
+    },
+    {
+      "name": "GSM8332075_PANC1R_2_counts.csv.gz",
+      "bytes": 444366
+    },
+    {
+      "name": "GSM8332076_PANC1R_3_counts.csv.gz",
+      "bytes": 443764
+    },
+    {
+      "name": "GSM8332077_6694C2P_1_counts.csv.gz",
+      "bytes": 443394
+    },
+    {
+      "name": "GSM8332078_6694C2P_2_counts.csv.gz",
+      "bytes": 443086
+    },
+    {
+      "name": "GSM8332079_6694C2P_3_counts.csv.gz",
+      "bytes": 444700
+    },
+    {
+      "name": "GSM8332080_6694C2R_1_counts.csv.gz",
+      "bytes": 447824
+    },
+    {
+      "name": "GSM8332081_6694C2R_2_counts.csv.gz",
+      "bytes": 447271
+    },
+    {
+      "name": "GSM8332082_6694C2R_3_counts.csv.gz",
+      "bytes": 447080
+    },
+    {
+      "name": "GSM8332083_6499C4P_1_counts.csv.gz",
+      "bytes": 447404
+    },
+    {
+      "name": "GSM8332084_6499C4P_2_counts.csv.gz",
+      "bytes": 444964
+    },
+    {
+      "name": "GSM8332085_6499C4P_3_counts.csv.gz",
+      "bytes": 445307
+    },
+    {
+      "name": "GSM8332086_6499C4R_1_counts.csv.gz",
+      "bytes": 444479
+    },
+    {
+      "name": "GSM8332087_6499C4R_2_counts.csv.gz",
+      "bytes": 442526
+    },
+    {
+      "name": "GSM8332088_6499C4R_3_counts.csv.gz",
+      "bytes": 444278
+    },
+    {
+      "name": "GSM8332089_6419C5P_1_counts.csv.gz",
+      "bytes": 445672
+    },
+    {
+      "name": "GSM8332090_6419C5P_2_counts.csv.gz",
+      "bytes": 445422
+    },
+    {
+      "name": "GSM8332091_6419C5P_3_counts.csv.gz",
+      "bytes": 446203
+    },
+    {
+      "name": "GSM8332092_6419C5R_1_counts.csv.gz",
+      "bytes": 445723
+    },
+    {
+      "name": "GSM8332093_6419C5R_2_counts.csv.gz",
+      "bytes": 445123
+    },
+    {
+      "name": "GSM8332094_6419C5R_3_counts.csv.gz",
+      "bytes": 448867
+    }
+  ],
+  "GSE269985_first_per_sample_count_file_shape": {
+    "member": "GSM8332065_Panc0203P_1_counts.csv.gz",
+    "rows_excluding_header": 58175,
+    "columns_in_header": 3,
+    "header": [
+      "gene",
+      "ensembl_id",
+      "Panc0203P_1"
+    ]
+  },
+  "GSE293756_expression_files": {
+    "gene_counts": {
+      "rows_excluding_header": 28008,
+      "columns_in_header": 7,
+      "header": [
+        "Gene_ID",
+        "AsPC_1_MR_DOX_pos_3",
+        "AsPC_1_MR_DOX_neg_1",
+        "AsPC_1_MR_DOX_neg_3",
+        "AsPC_1_MR_DOX_pos_2",
+        "AsPC_1_MR_DOX_neg_2",
+        "AsPC_1_MR_DOX_pos_1"
+      ]
+    },
+    "gene_tpm": {
+      "rows_excluding_header": 25545,
+      "columns_in_header": 7,
+      "header": [
+        "",
+        "AsPC_1_MR_DOX_pos_3",
+        "AsPC_1_MR_DOX_neg_1",
+        "AsPC_1_MR_DOX_neg_3",
+        "AsPC_1_MR_DOX_pos_2",
+        "AsPC_1_MR_DOX_neg_2",
+        "AsPC_1_MR_DOX_pos_1"
+      ]
+    }
+  },
+  "downloads": [
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE269nnn/GSE269985/soft/GSE269985_family.soft.gz",
+      "local_file": "source/GSE269985_family.soft.gz",
+      "bytes": 4776,
+      "sha256": "5359507809c6945ef4f00fa721f057a03c3a68eaa0186163fb6dfe818e153e21"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE269nnn/GSE269313/soft/GSE269313_family.soft.gz",
+      "local_file": "source/GSE269313_family.soft.gz",
+      "bytes": 5575,
+      "sha256": "826e2fc977617775f4f6ab70fb0341f1e2a9933cd6c54cd5432fabd0501d8be3"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE293nnn/GSE293756/soft/GSE293756_family.soft.gz",
+      "local_file": "source/GSE293756_family.soft.gz",
+      "bytes": 2892,
+      "sha256": "0ddf9dfedd9ac57b555dc547e04690939463d06696f3f1adb841dc451d850778"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE269nnn/GSE269985/suppl/GSE269985_RAW.tar",
+      "local_file": "source/GSE269985_RAW.tar",
+      "bytes": 13383680,
+      "sha256": "a76e977376902149b5c0443c49d4b94db31c4673028a7a748bb3da418599fd7d"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE293nnn/GSE293756/suppl/GSE293756_STAR_Gene_Counts.csv.gz",
+      "local_file": "source/GSE293756_STAR_Gene_Counts.csv.gz",
+      "bytes": 332902,
+      "sha256": "a777e7054525decac1524a4688791b8b1d245459693505d14a6dfbd99720797b"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE293nnn/GSE293756/suppl/GSE293756_STAR_Gene_TPM.csv.gz",
+      "local_file": "source/GSE293756_STAR_Gene_TPM.csv.gz",
+      "bytes": 1040401,
+      "sha256": "53d4df6ff662ff155218ac60f85b9fa5569841be0de65590791b5ff31c7ea395"
+    }
+  ],
+  "sample_inventory_csv": "GEO_SAMPLE_INVENTORY.csv",
+  "sample_inventory_csv_sha256": "f98701836155dc1d1616680de7b1b68ee5766f8796a8dc0c1ba1674441a0fc6f",
+  "pipeline_gate_from_existing_project_audit": {
+    "pipeline_path": "pancréas/universal_v6.0.0_cohen - Copie.py.txt",
+    "pipeline_sha256": "bb8bbdba4eb1f8c55b49748274ae8fbfef8a43f6c1b890964f18ba77960c0773",
+    "version": "v6.0.0 Cohen-D",
+    "minimum_valid_points_fast": 50,
+    "interpretation": "Eligibility gate only; it does not establish whether the statistical method is valid at other sample sizes."
+  },
+  "analysis_decision": {
+    "full_pipeline_run": false,
+    "reason": "The candidate RNA-seq records have 6, 17, and 30 biological samples, below the current minimum of 50. The candidate designs are replicated groups or cross-sectional animals, not a single ordered treatment-response trajectory. No pseudoreplication, synthetic padding, or arbitrary sample ordering is applied.",
+    "therapeutic_endpoint_in_public_GSE293756_matrix": false,
+    "GSE293756_design_interpretation": "One acquired-resistant AsPC-1/MR line with doxycycline-inducible MUC1 shRNA; three DOX+ and three DOX- RNA-seq samples. This is a knockdown expression contrast, not an anti-MUC1-C ADC response matrix or MRTX1133-versus-combination drug-response trajectory."
+  }
+}

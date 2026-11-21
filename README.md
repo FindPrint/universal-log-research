@@ -14,7 +14,7 @@ UNIVERSAL_LOG is a research project that explores how multiple numerical streams
 - PDAC analyses of published patient-derived organoid, mouse-model, single-cell, and clinical datasets, with source manifests and run logs.
 - Beginner-oriented theory and reading guides, full audit reports, checksums, and license notes.
 
-## Current evidence snapshot — 20 November 2026
+## Current evidence snapshot — 21 November 2026
 
 ### Classical Ising
 
@@ -24,6 +24,7 @@ Some larger-network runs, including one blinded L64 run, returned a threshold ne
 
 - **Tiriac 2018 organoid matrix:** 60 complete PDO models and 26 drug-response columns were analyzed with Gemcitabine fixed as the target and each of the other 25 columns tested individually as a control. All 25 runs completed; each reported T0 as ambiguous and the configured control as non-monotone. The rows are cross-sectional PDO models, not a longitudinal patient trajectory; T0 is not a calendar-time threshold or treatment recommendation. See the [compact run summary](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-20/TIRIAC2018_ALL_CONTROL_RUN_SUMMARY.md); the full per-control traces are in the separate audit bundle.
 - **Nature Communications 2025 matrix:** 46 PDO models and 63 drug AUC columns were prepared without imputation or scaling. The configured pipeline refused the input at its current minimum of 50 valid points, before computing estimators. This is an input-eligibility result, not evidence for or against a drug. Details are in the [external-data screen](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-20/EXTERNAL_REPLICATION_SCREEN_REPORT_2026-11-20.md) and its [source manifest](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-20/SCREENING_SOURCE_MANIFEST_2026-11-20.json).
+- **MRTX1133 resistance and MUC1-C data-fit audit (21 November 2026):** GEO inventories found 30 RNA-seq libraries in GSE269985, 17 tumor specimens in GSE269313, and 6 RNA-seq libraries in GSE293756. These records do not provide a sufficiently sampled, naturally ordered ADC response trajectory for the current v6.0.0 configuration. No pipeline estimates were generated; this is a data-fit decision, not a negative biological result. See the [audit report](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-21/MRTX1133_MUC1C_AUDIT/RAPPORT_AUDIT_DONNEES_FR.md), [sample inventory](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-21/MRTX1133_MUC1C_AUDIT/GEO_SAMPLE_INVENTORY.csv), and [source manifest](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-21/MRTX1133_MUC1C_AUDIT/GEO_DATA_FIT_MANIFEST.json).
 - **Published KRAS G12D plus PARP-inhibitor study:** the project reanalyzed published mouse tumor-volume data and the accompanying cell data. These results support a preclinical signal in the models studied; they do not establish patient benefit, a cure, or a new multi-drug regimen. See the [reanalysis report](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-17/candidate_combination_g12d_parp/results_in_vivo_source_data/RAPPORT_REANALYSE_THERAPEUTIQUE_2026-11-17.md).
 
 ## Reproducing analyses

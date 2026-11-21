@@ -40,3 +40,14 @@ La commande --help du fichier fourni v5.9.0 a levé ValueError: unsupported form
 - Le pilote quantique fini signale un mouvement des marqueurs physiques vers g=1 avec N, mais TLog dcrit autour de 0,96 ne localise pas gc dans ce jeu de données.
 - Une campagne indépendante, des contrôles négatifs mieux équilibrés, davantage de tailles et une calibration pré-enregistrée sont nécessaires avant toute affirmation de généralité.
 - Le propriétaire a confirmé MIT pour le code et CC BY 4.0 pour les documents/résultats. Le texte canonique CC BY 4.0 a été archivé depuis la page officielle Creative Commons le 14 novembre 2026; les fichiers de licence sont inclus à la racine.
+## Addendum — 2026-11-21 : faisabilité des données PDAC MRTX1133/MUC1-C
+
+**Question examinée :** les matrices GEO publiques repérées permettent-elles de tester, avec le pipeline v6.0.0 complet, la réponse à MRTX1133 associé à une intervention sur MUC1-C?
+
+- **Hypothèse de littérature :** une étude préclinique rapporte une activité d’un ADC anti-MUC1-C dans certains modèles PDAC résistants à l’inhibiteur KRAS G12D, avec une réponse à la combinaison qui dépend du modèle. Cela constitue une hypothèse à tester, pas un résultat de UNIVERSAL_LOG ni une preuve clinique. L’article indique que les autres données brutes sont accessibles sur demande raisonnable; aucune demande externe n’a été envoyée.
+- **GSE269985 :** 30 bibliothèques RNA-seq; cinq modèles avec trois bibliothèques parentales et trois de résistance acquise par modèle. Comptages individuels dans 30 fichiers; l’ordre des modèles ne définit pas le temps.
+- **GSE269313 :** 17 spécimens snRNA-seq, 9 sous MRTX1133 et 8 véhicule, prélèvements à des jours différents. Ce sont des observations transversales; les cellules ne sont pas des réplicats animaux. Les identifiants KPC_3421L/KPC_3421S sont gardés distincts comme spécimens et leur indépendance n’est pas présumée.
+- **GSE293756 :** 6 bibliothèques d’un seul modèle AsPC-1/MR à shRNA MUC1 inductible, trois DOX+ et trois DOX−/DMSO. La matrice mesure l’expression; elle ne contient pas de tableau de réponse à l’ADC.
+- **Code contrôlé :** `pancréas/universal_v6.0.0_cohen - Copie.py.txt`, SHA-256 `bb8bbdba4eb1f8c55b49748274ae8fbfef8a43f6c1b890964f18ba77960c0773`. La configuration rapide courante exige 50 points valides.
+- **Décision d’analyse :** aucun lancement biologique du pipeline, T0 ou TLog. Les trois séries sont sous le seuil courant et ne sont pas une série ordonnée unique de réponse thérapeutique. Aucun balayage de contrôles n’a donc été compté comme test réussi ou résultat nul. Cette décision de compatibilité des données n’est pas une conclusion sur l’efficacité d’un traitement.
+- Le script, l’inventaire, le manifeste source et le rapport sont publiés dans `pancréas/ANALYSE_THERAPEUTIQUE_2026-11-21/MRTX1133_MUC1C_AUDIT/`. Les fichiers GEO bruts restent exclus du dépôt; seules les URL et empreintes sont conservées.
