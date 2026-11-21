@@ -40,6 +40,7 @@ La commande --help du fichier fourni v5.9.0 a levé ValueError: unsupported form
 - Le pilote quantique fini signale un mouvement des marqueurs physiques vers g=1 avec N, mais TLog dcrit autour de 0,96 ne localise pas gc dans ce jeu de données.
 - Une campagne indépendante, des contrôles négatifs mieux équilibrés, davantage de tailles et une calibration pré-enregistrée sont nécessaires avant toute affirmation de généralité.
 - Le propriétaire a confirmé MIT pour le code et CC BY 4.0 pour les documents/résultats. Le texte canonique CC BY 4.0 a été archivé depuis la page officielle Creative Commons le 14 novembre 2026; les fichiers de licence sont inclus à la racine.
+
 ## Addendum — 2026-11-21 : faisabilité des données PDAC MRTX1133/MUC1-C
 
 **Question examinée :** les matrices GEO publiques repérées permettent-elles de tester, avec le pipeline v6.0.0 complet, la réponse à MRTX1133 associé à une intervention sur MUC1-C?
@@ -51,3 +52,15 @@ La commande --help du fichier fourni v5.9.0 a levé ValueError: unsupported form
 - **Code contrôlé :** `pancréas/universal_v6.0.0_cohen - Copie.py.txt`, SHA-256 `bb8bbdba4eb1f8c55b49748274ae8fbfef8a43f6c1b890964f18ba77960c0773`. La configuration rapide courante exige 50 points valides.
 - **Décision d’analyse :** aucun lancement biologique du pipeline, T0 ou TLog. Les trois séries sont sous le seuil courant et ne sont pas une série ordonnée unique de réponse thérapeutique. Aucun balayage de contrôles n’a donc été compté comme test réussi ou résultat nul. Cette décision de compatibilité des données n’est pas une conclusion sur l’efficacité d’un traitement.
 - Le script, l’inventaire, le manifeste source et le rapport sont publiés dans `pancréas/ANALYSE_THERAPEUTIQUE_2026-11-21/MRTX1133_MUC1C_AUDIT/`. Les fichiers GEO bruts restent exclus du dépôt; seules les URL et empreintes sont conservées.
+
+## H6 — 2026-11-21 : adéquation des RNA-seq publics MUC1-C/MRTX1133
+
+**Hypothèse exploratoire :** les réponses ARN de MUC1 et de marqueurs NFκB/interféron/EMT aux perturbations de MUC1, à MRTX1133 et à la résistance acquise sont-elles cohérentes entre modèles, et les flux permettent-ils un run du pipeline v6.0.0?
+
+**Choix de protocole :** analyse descriptive Python de quatre séries publiques, 15 gènes et trois moyennes de panel déclarés dans le rapport, sans fusion inter-étude. Pour les comptages, transformation log2(CPM+1); pour la matrice GEO décrite RPKM, log2(RPKM+1). Contrastes et test de porte d’entrée consignés par échantillon. Il s’agit d’une réanalyse exploratoire, pas de la reproduction du workflow publié TCC/ComBat-seq/edgeR : R/Rscript n’était pas disponible.
+
+**Observation :** 78 bibliothèques, 13 contrastes et 234 lignes de caractéristiques. MUC1 ARN diminue dans trois contrastes shRNA et dans les cinq comparaisons résistance/parental, mais varie selon les lignées après MRTX1133. Ces observations ne mesurent ni la protéine MUC1-C ni la réponse à un ADC. Sur 234 flux candidats, 218 complets ont été transmis à la fonction `apply_complexity` réelle et tous ont rendu 0/29 estimateur fini avec n=6, inférieur au minimum configuré de 50; 16 flux incomplets ont été omis.
+
+**Conclusion permise :** les données analysées donnent une description exploratoire de l’expression des marqueurs et révèlent une incompatibilité de longueur pour la porte d’entrée v6.0.0. Elles ne constituent pas un run biologique complet target/contrôle, ne calculent aucun T0/TLog et ne valident ni n’invalident l’ensemble de la théorie/pipeline. Elles ne démontrent pas l’efficacité thérapeutique de l’ADC.
+
+**Limites et suite :** n=3 par bras, matrice et protocole hétérogènes, 9/234 contrastes de caractéristique présentent une variance exactement nulle dans au moins un bras, tests exploratoires, absence de bras ADC et de réponse mesurée. Suite pertinente : obtenir une matrice d’efficacité directement mesurée sur plusieurs modèles et interventions; pré-spécifier axe, flux et contrôle; appliquer le pipeline complet sans convertir les réplicats en axe temporel ni contourner le minimum. Rapport, code, résultats et empreintes sont dans `pancréas/ANALYSE_THERAPEUTIQUE_2026-11-21/MRTX1133_MUC1C_AUDIT/`; voir le [rapport de réanalyse](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-21/MRTX1133_MUC1C_AUDIT/RAPPORT_REANALYSE_RNASEQ_MUC1C_FR.md).

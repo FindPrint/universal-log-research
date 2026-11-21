@@ -1,0 +1,190 @@
+{
+  "created_utc": "2026-11-21T13:26:35.863494+00:00",
+  "analysis": "Public RNA-seq marker-panel independent reanalysis; descriptive/exploratory; not an ADC response assay",
+  "script": "reanalyze_public_rnaseq.py",
+  "script_sha256": "b453c6b7bcba7a7e5d953dcc3bf8e2efd9d60f0527932407e4bcbe2a78271922",
+  "pipeline": {
+    "path": "pancréas/universal_v6.0.0_cohen - Copie.py.txt",
+    "sha256": "bb8bbdba4eb1f8c55b49748274ae8fbfef8a43f6c1b890964f18ba77960c0773",
+    "version": "v6.0.0 Cohen-D",
+    "fast_min_len": 50,
+    "runtime_entrypoint": "apply_complexity",
+    "full_pipeline_runs": 0,
+    "gate_probe_summary": {
+      "contrasts": 13,
+      "candidate_control_streams": 218,
+      "gate_probed": 218,
+      "all_29_nan": 218
+    }
+  },
+  "official_author_analysis": {
+    "repository": "https://github.com/TomokiMotegi/PDAC_MUC1",
+    "commit": "a5eabf881688a4405fed9556f13b5c7042e3fcb0",
+    "script": "R/multiple_comparison_test.R",
+    "script_sha256": "96cd42d0173edf302f005dcdc21cce1b2f4df6ffc50f3483aaa6edae0f81f8a7",
+    "methods_from_script": [
+      "row-sum filter >10",
+      "ComBat-seq batch adjustment",
+      "TCC TMM iterative normalization (3 iterations)",
+      "edgeR-based multiple-group differential expression, FDR 0.05"
+    ],
+    "exact_R_script_executed": false,
+    "reason": "R/Rscript is not installed or discoverable in this execution environment; the author script is documented but not claimed as reproduced."
+  },
+  "independent_python_analysis": {
+    "python": "3.11.9",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "count_transform": "log2(CPM+1)",
+    "linear_expression_transform": "log2(RPKM+1); GEO family/sample records describe the GSE279749 tables as RPKM although supplementary filenames include fpkm",
+    "features": [
+      "MUC1",
+      "RELA",
+      "NFKB1",
+      "NFKBIA",
+      "TNFAIP3",
+      "ISG15",
+      "IFIT1",
+      "STAT1",
+      "IRF7",
+      "IFI44L",
+      "CDH1",
+      "EPCAM",
+      "VIM",
+      "ZEB1",
+      "CDH2",
+      "NFkB_panel_mean",
+      "IFN_panel_mean",
+      "EMT_panel_mean"
+    ],
+    "test": "Welch t-test on transformed expression for the predeclared 15-gene marker panel plus 3 panel means; BH adjusted within contrast only",
+    "inference_status": "exploratory; n=3 per arm in modeled contrasts; zero/near-zero replicate variance can make small-n p-values optimistic; not genome-wide DE and not clinical evidence"
+  },
+  "datasets": [
+    {
+      "series": "GSE181961",
+      "libraries": 12,
+      "models": "AsPC-1 | HPAF-II",
+      "sample_groups": "{\"AsPC-1_DMSO\": 3, \"AsPC-1_DOX\": 3, \"HPAF-II_DMSO\": 3, \"HPAF-II_DOX\": 3}",
+      "independent_ordered_response_axis": false,
+      "direct_MUC1C_ADC_response_endpoint": false,
+      "v6_fast_min_valid_points": 50,
+      "pipeline_full_run": false,
+      "decision": "Group-level expression data with sample replicates; no ordered response series. Preserve as exploratory marker evidence only."
+    },
+    {
+      "series": "GSE293756",
+      "libraries": 6,
+      "models": "AsPC-1/MR",
+      "sample_groups": "{\"AsPC-1/MR_DMSO\": 3, \"AsPC-1/MR_DOX\": 3}",
+      "independent_ordered_response_axis": false,
+      "direct_MUC1C_ADC_response_endpoint": false,
+      "v6_fast_min_valid_points": 50,
+      "pipeline_full_run": false,
+      "decision": "Group-level expression data with sample replicates; no ordered response series. Preserve as exploratory marker evidence only."
+    },
+    {
+      "series": "GSE269985",
+      "libraries": 30,
+      "models": "6419C5 | 6499C4 | 6694C2 | PANC-1 | Panc 02.03",
+      "sample_groups": "{\"6419C5_parental\": 3, \"6419C5_resistant\": 3, \"6499C4_parental\": 3, \"6499C4_resistant\": 3, \"6694C2_parental\": 3, \"6694C2_resistant\": 3, \"PANC-1_parental\": 3, \"PANC-1_resistant\": 3, \"Panc 02.03_parental\": 3, \"Panc 02.03_resistant\": 3}",
+      "independent_ordered_response_axis": false,
+      "direct_MUC1C_ADC_response_endpoint": false,
+      "v6_fast_min_valid_points": 50,
+      "pipeline_full_run": false,
+      "decision": "Group-level expression data with sample replicates; no ordered response series. Preserve as exploratory marker evidence only."
+    },
+    {
+      "series": "GSE279749_cell_lines",
+      "libraries": 24,
+      "models": "ASPC-1 | CFPAC-1 | PANC-1 | SW1990",
+      "sample_groups": "{\"ASPC-1_MRTX1133\": 3, \"ASPC-1_vehicle\": 3, \"CFPAC-1_BI-2865\": 3, \"CFPAC-1_vehicle\": 3, \"PANC-1_MRTX1133\": 3, \"PANC-1_vehicle\": 3, \"SW1990_MRTX1133\": 3, \"SW1990_vehicle\": 3}",
+      "independent_ordered_response_axis": false,
+      "direct_MUC1C_ADC_response_endpoint": false,
+      "v6_fast_min_valid_points": 50,
+      "pipeline_full_run": false,
+      "decision": "Group-level expression data with sample replicates; no ordered response series. Preserve as exploratory marker evidence only."
+    },
+    {
+      "series": "GSE279749_PDX",
+      "libraries": 6,
+      "models": "PDX",
+      "sample_groups": "{\"PDX_MRTX1133+Olaparib\": 3, \"PDX_vehicle\": 3}",
+      "independent_ordered_response_axis": false,
+      "direct_MUC1C_ADC_response_endpoint": false,
+      "v6_fast_min_valid_points": 50,
+      "pipeline_full_run": false,
+      "decision": "Group-level expression data with sample replicates; no ordered response series. Preserve as exploratory marker evidence only."
+    }
+  ],
+  "source_files": [
+    {
+      "file": "GSE181961_family.soft.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181961/soft/GSE181961_family.soft.gz",
+      "bytes": 2362,
+      "sha256": "d7117485509f961ddc67135e2203efd6f3772135306877e57f8053457cd8ec68"
+    },
+    {
+      "file": "GSE181961_Cuff_Gene_Counts.csv.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181961/suppl/GSE181961_Cuff_Gene_Counts.csv.gz",
+      "bytes": 796911,
+      "sha256": "1b9b5e72d02cbae74d950671d1cc018e8b38d3c1ffc0474f2c6f0062c20b6c64"
+    },
+    {
+      "file": "GSE279749_family.soft.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE279nnn/GSE279749/soft/GSE279749_family.soft.gz",
+      "bytes": 3305,
+      "sha256": "4e2d9dadbac8edceecbdc91020246a66cf2b12e2e9ff7e2ca1eb81af98ff7717"
+    },
+    {
+      "file": "GSE279749_gene_fpkm_PDX.txt.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE279nnn/GSE279749/suppl/GSE279749_gene_fpkm_PDX.txt.gz",
+      "bytes": 2854599,
+      "sha256": "13dc198e2b6d0400f5e869daa79ce223aeb94f9f574981213ae371d276187f9d"
+    },
+    {
+      "file": "GSE279749_gene_fpkm_cell_lines.txt.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE279nnn/GSE279749/suppl/GSE279749_gene_fpkm_cell_lines.txt.gz",
+      "bytes": 966939,
+      "sha256": "f1b23c642ebf10b6127898fe0c700af12a74bb7656cd4d88c181f8ba2edde275"
+    },
+    {
+      "file": "GSE269985_RAW.tar",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE269nnn/GSE269985/suppl/GSE269985_RAW.tar",
+      "bytes": 13383680,
+      "sha256": "a76e977376902149b5c0443c49d4b94db31c4673028a7a748bb3da418599fd7d"
+    },
+    {
+      "file": "GSE293756_STAR_Gene_Counts.csv.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE293nnn/GSE293756/suppl/GSE293756_STAR_Gene_Counts.csv.gz",
+      "bytes": 332902,
+      "sha256": "a777e7054525decac1524a4688791b8b1d245459693505d14a6dfbd99720797b"
+    }
+  ],
+  "outputs": {
+    "RNASEQ_MARKER_FLUXES_PER_SAMPLE.csv": {
+      "bytes": 36456,
+      "sha256": "5fa96ddd632c12c94ce2cef7b7632d06f482d00b02b36660c48d32f56a5c37d3"
+    },
+    "RNASEQ_MARKER_CONTRASTS.csv": {
+      "bytes": 86414,
+      "sha256": "bed1cbb61bc704be2e861f4404302dc934e837c1512c6e620560969aa14c00aa"
+    },
+    "PIPELINE_CONTROL_GATE_AUDIT.csv": {
+      "bytes": 87571,
+      "sha256": "ecdd6030b5a10cea67139cf72f6efe4ac349696ff9b1d73f971add9639daffde"
+    },
+    "RNASEQ_DATASET_FIT_DECISIONS.csv": {
+      "bytes": 1723,
+      "sha256": "0e6dfd0b7f908be441ef5bf5e48542abf3c86acd062e29bac99b42d97e98a553"
+    },
+    "RNASEQ_SAMPLE_INVENTORY_EXTENDED.csv": {
+      "bytes": 13149,
+      "sha256": "32166c8b77786b88bf5dabd2c5d7370ef8fe35942e74b5803fb93e1bbc435920"
+    },
+    "RNASEQ_MARKER_EFFECTS.png": {
+      "bytes": 198287,
+      "sha256": "7f6549ba4718f9d80bdaa4fce172595abf00a4e9fcdb0675a7f55e643428ce72"
+    }
+  }
+}

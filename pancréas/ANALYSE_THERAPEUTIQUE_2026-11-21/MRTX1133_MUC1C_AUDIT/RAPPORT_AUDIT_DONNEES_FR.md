@@ -58,3 +58,7 @@ Cette décision distingue deux questions :
 ```
 
 Le script ne transforme pas les matrices et ne lance pas le pipeline. Il télécharge les métadonnées GEO et les fichiers de comptages nécessaires à l’inventaire, recalcule les SHA-256, les nombres de lignes/colonnes et les caractéristiques d’échantillons.
+
+### Addendum — réanalyse descriptive des marqueurs RNA-seq
+
+Une analyse Python indépendante du script statistique R de l’article a ensuite examiné 78 bibliothèques dans GSE181961, GSE293756, GSE269985 et GSE279749, pour 13 contrastes descriptifs. Elle observe une hétérogénéité de MUC1 ARN selon le modèle sous MRTX1133; elle ne mesure ni MUC1-C protéique ni réponse à l’ADC. Le seuil minimal de 50 observations bloque toujours les flux à six échantillons : il n’y a donc toujours aucun run complet du pipeline ni estimation de T0/TLog. Voir le [rapport détaillé de réanalyse RNA-seq](RAPPORT_REANALYSE_RNASEQ_MUC1C_FR.md) et son [manifeste de reproductibilité](RNASEQ_REANALYSIS_MANIFEST.json). Le workflow R publié n’a pas été exécuté, car R/Rscript n’était pas disponible dans l’environnement.

@@ -1,0 +1,79 @@
+series,geo_accession,matrix_sample,model,treatment,group,replicate,expression_unit,axis_design
+GSE181961,GSM5514884,HPAF-II-cont-1,HPAF-II,DMSO,HPAF-II_DMSO,1,log2(CPM+1) from Cuff expected counts,two-group cell-line contrast; no ordered trajectory
+GSE181961,GSM5514885,HPAF-II-cont-2,HPAF-II,DMSO,HPAF-II_DMSO,2,log2(CPM+1) from Cuff expected counts,two-group cell-line contrast; no ordered trajectory
+GSE181961,GSM5514886,HPAF-II-cont-3,HPAF-II,DMSO,HPAF-II_DMSO,3,log2(CPM+1) from Cuff expected counts,two-group cell-line contrast; no ordered trajectory
+GSE181961,,HPAF-Dox-1,HPAF-II,DOX,HPAF-II_DOX,1,log2(CPM+1) from Cuff expected counts,two-group cell-line contrast; no ordered trajectory
+GSE181961,,HPAF-Dox-2,HPAF-II,DOX,HPAF-II_DOX,2,log2(CPM+1) from Cuff expected counts,two-group cell-line contrast; no ordered trajectory
+GSE181961,,HPAF-Dox-3,HPAF-II,DOX,HPAF-II_DOX,3,log2(CPM+1) from Cuff expected counts,two-group cell-line contrast; no ordered trajectory
+GSE181961,GSM5514878,AsPC-1-Cont_1,AsPC-1,DMSO,AsPC-1_DMSO,1,log2(CPM+1) from Cuff expected counts,two-group cell-line contrast; no ordered trajectory
+GSE181961,GSM5514879,AsPC-1-Cont_2,AsPC-1,DMSO,AsPC-1_DMSO,2,log2(CPM+1) from Cuff expected counts,two-group cell-line contrast; no ordered trajectory
+GSE181961,GSM5514880,AsPC-1-Cont_3,AsPC-1,DMSO,AsPC-1_DMSO,3,log2(CPM+1) from Cuff expected counts,two-group cell-line contrast; no ordered trajectory
+GSE181961,GSM5514881,AsPC-1-Dox-1,AsPC-1,DOX,AsPC-1_DOX,1,log2(CPM+1) from Cuff expected counts,two-group cell-line contrast; no ordered trajectory
+GSE181961,GSM5514882,AsPC-1-Dox-2,AsPC-1,DOX,AsPC-1_DOX,2,log2(CPM+1) from Cuff expected counts,two-group cell-line contrast; no ordered trajectory
+GSE181961,GSM5514883,AsPC-1-Dox-3,AsPC-1,DOX,AsPC-1_DOX,3,log2(CPM+1) from Cuff expected counts,two-group cell-line contrast; no ordered trajectory
+GSE293756,GSM8889627,AsPC_1_MR_DOX_pos_3,AsPC-1/MR,DOX,AsPC-1/MR_DOX,3,log2(CPM+1) from STAR counts,two-group knockdown contrast; no ordered trajectory
+GSE293756,GSM8889622,AsPC_1_MR_DOX_neg_1,AsPC-1/MR,DMSO,AsPC-1/MR_DMSO,1,log2(CPM+1) from STAR counts,two-group knockdown contrast; no ordered trajectory
+GSE293756,GSM8889624,AsPC_1_MR_DOX_neg_3,AsPC-1/MR,DMSO,AsPC-1/MR_DMSO,3,log2(CPM+1) from STAR counts,two-group knockdown contrast; no ordered trajectory
+GSE293756,GSM8889626,AsPC_1_MR_DOX_pos_2,AsPC-1/MR,DOX,AsPC-1/MR_DOX,2,log2(CPM+1) from STAR counts,two-group knockdown contrast; no ordered trajectory
+GSE293756,GSM8889623,AsPC_1_MR_DOX_neg_2,AsPC-1/MR,DMSO,AsPC-1/MR_DMSO,2,log2(CPM+1) from STAR counts,two-group knockdown contrast; no ordered trajectory
+GSE293756,GSM8889625,AsPC_1_MR_DOX_pos_1,AsPC-1/MR,DOX,AsPC-1/MR_DOX,1,log2(CPM+1) from STAR counts,two-group knockdown contrast; no ordered trajectory
+GSE269985,GSM8332065,GSM8332065,Panc 02.03,parental,Panc 02.03_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332066,GSM8332066,Panc 02.03,parental,Panc 02.03_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332067,GSM8332067,Panc 02.03,parental,Panc 02.03_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332068,GSM8332068,Panc 02.03,resistant,Panc 02.03_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332069,GSM8332069,Panc 02.03,resistant,Panc 02.03_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332070,GSM8332070,Panc 02.03,resistant,Panc 02.03_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332071,GSM8332071,PANC-1,parental,PANC-1_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332072,GSM8332072,PANC-1,parental,PANC-1_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332073,GSM8332073,PANC-1,parental,PANC-1_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332074,GSM8332074,PANC-1,resistant,PANC-1_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332075,GSM8332075,PANC-1,resistant,PANC-1_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332076,GSM8332076,PANC-1,resistant,PANC-1_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332077,GSM8332077,6694C2,parental,6694C2_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332078,GSM8332078,6694C2,parental,6694C2_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332079,GSM8332079,6694C2,parental,6694C2_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332080,GSM8332080,6694C2,resistant,6694C2_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332081,GSM8332081,6694C2,resistant,6694C2_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332082,GSM8332082,6694C2,resistant,6694C2_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332083,GSM8332083,6499C4,parental,6499C4_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332084,GSM8332084,6499C4,parental,6499C4_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332085,GSM8332085,6499C4,parental,6499C4_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332086,GSM8332086,6499C4,resistant,6499C4_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332087,GSM8332087,6499C4,resistant,6499C4_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332088,GSM8332088,6499C4,resistant,6499C4_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332089,GSM8332089,6419C5,parental,6419C5_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332090,GSM8332090,6419C5,parental,6419C5_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332091,GSM8332091,6419C5,parental,6419C5_parental,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332092,GSM8332092,6419C5,resistant,6419C5_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332093,GSM8332093,6419C5,resistant,6419C5_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE269985,GSM8332094,GSM8332094,6419C5,resistant,6419C5_resistant,,log2(CPM+1) from per-sample raw counts,parental/resistant groups stratified by model; no ordered trajectory
+GSE279749,GSM8579591,A_NT_1,ASPC-1,vehicle,ASPC-1_vehicle,1,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579592,A_NT_2,ASPC-1,vehicle,ASPC-1_vehicle,2,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579593,A_NT_3,ASPC-1,vehicle,ASPC-1_vehicle,3,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579594,A_M_1,ASPC-1,MRTX1133,ASPC-1_MRTX1133,1,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579595,A_M_2,ASPC-1,MRTX1133,ASPC-1_MRTX1133,2,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579596,A_M_3,ASPC-1,MRTX1133,ASPC-1_MRTX1133,3,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579597,P_NT_1,PANC-1,vehicle,PANC-1_vehicle,1,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579598,P_NT_2,PANC-1,vehicle,PANC-1_vehicle,2,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579599,P_NT_3,PANC-1,vehicle,PANC-1_vehicle,3,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579600,P_M_1,PANC-1,MRTX1133,PANC-1_MRTX1133,1,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579601,P_M_2,PANC-1,MRTX1133,PANC-1_MRTX1133,2,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579602,P_M_3,PANC-1,MRTX1133,PANC-1_MRTX1133,3,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579609,C_NT_1,CFPAC-1,vehicle,CFPAC-1_vehicle,1,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579610,C_NT_2,CFPAC-1,vehicle,CFPAC-1_vehicle,2,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579611,C_NT_3,CFPAC-1,vehicle,CFPAC-1_vehicle,3,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579612,C_M_1,CFPAC-1,BI-2865,CFPAC-1_BI-2865,1,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579613,C_M_2,CFPAC-1,BI-2865,CFPAC-1_BI-2865,2,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579614,C_M_3,CFPAC-1,BI-2865,CFPAC-1_BI-2865,3,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579603,S9_NT_1,SW1990,vehicle,SW1990_vehicle,1,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579604,S9_NT_2,SW1990,vehicle,SW1990_vehicle,2,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579605,S9_NT_3,SW1990,vehicle,SW1990_vehicle,3,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579606,S9_M_1,SW1990,MRTX1133,SW1990_MRTX1133,1,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579607,S9_M_2,SW1990,MRTX1133,SW1990_MRTX1133,2,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579608,S9_M_3,SW1990,MRTX1133,SW1990_MRTX1133,3,log2(RPKM+1; GEO file name says FPKM),three-replicate drug/vehicle group contrast; no ordered trajectory
+GSE279749,GSM8579615,p1,PDX,vehicle,PDX_vehicle,1,log2(RPKM+1; GEO file name says FPKM),three-replicate vehicle/combination group contrast; no ordered trajectory
+GSE279749,GSM8579616,p2,PDX,vehicle,PDX_vehicle,2,log2(RPKM+1; GEO file name says FPKM),three-replicate vehicle/combination group contrast; no ordered trajectory
+GSE279749,GSM8579617,p3,PDX,vehicle,PDX_vehicle,3,log2(RPKM+1; GEO file name says FPKM),three-replicate vehicle/combination group contrast; no ordered trajectory
+GSE279749,GSM8579618,p4,PDX,MRTX1133+Olaparib,PDX_MRTX1133+Olaparib,1,log2(RPKM+1; GEO file name says FPKM),three-replicate vehicle/combination group contrast; no ordered trajectory
+GSE279749,GSM8579619,p5,PDX,MRTX1133+Olaparib,PDX_MRTX1133+Olaparib,2,log2(RPKM+1; GEO file name says FPKM),three-replicate vehicle/combination group contrast; no ordered trajectory
+GSE279749,GSM8579620,p6,PDX,MRTX1133+Olaparib,PDX_MRTX1133+Olaparib,3,log2(RPKM+1; GEO file name says FPKM),three-replicate vehicle/combination group contrast; no ordered trajectory
