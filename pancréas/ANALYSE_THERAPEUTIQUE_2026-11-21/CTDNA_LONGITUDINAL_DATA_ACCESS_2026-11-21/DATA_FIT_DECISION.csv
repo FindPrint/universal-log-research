@@ -1,0 +1,2 @@
+candidate,source,patients_in_study,ctDNA_positive_baseline,complete_serial_with_response,observed_response_groups,raw_patient_sample_matrix,access_status,pipeline_status,decision
+Schlick_2022_ctDNA_kinetics,https://doi.org/10.3389/fonc.2022.902177,70,45,32,"PD=12; non-PD=20",not found in article supplements; authors state raw data available on request,author_request_required,draft_prepared_not_sent,no_full_run,obtain data and dictionary; preserve patient blocks; keep N>=50 gate and distinguish samples from independent patients

@@ -4,6 +4,8 @@ This repository began as a clean-history publication copy of the project files p
 
 `PUBLICATION_MANIFEST_2026-11-21_AXIS_FLUX.csv` records the additive 57-patient PDAC axis × flux audit. All numeric controls were rotated through the same core analysis; the selected control was excluded from its own flux set, non-monotone controls were retained, and row-order sensitivity was recorded. The public copy includes compact outputs and detailed run traces. Console-log copies neutralize local absolute paths; the raw local logs are retained unchanged in the working project.
 
+`PUBLICATION_MANIFEST_2026-11-21_LONGITUDINAL.csv` records the source-access audit and pre-analysis protocol for a published longitudinal ctDNA study. The repository includes the documentation and an explicitly unsent data-request draft; no patient-level raw data were obtained and no pipeline run was made on that study.
+
 ## Excluded from this source repository
 
 The local Python virtual environment, caches and temporary files; large PDF/ZIP archive copies; HDF5 AnnData matrices; and source-data directories or files identified by `.gitignore` are not included. Third-party data should be obtained from the cited source repository and used under that source's terms. These exclusions keep machine-specific environments, duplicate archive bundles and data with unverified redistribution rights out of GitHub. Absolute Windows paths in the publication copy are redacted to neutral markers; the unmodified run records remain in the original local project folder.
