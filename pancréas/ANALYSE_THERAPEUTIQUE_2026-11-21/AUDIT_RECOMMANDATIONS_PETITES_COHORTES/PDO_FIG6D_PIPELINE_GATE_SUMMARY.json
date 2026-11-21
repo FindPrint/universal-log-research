@@ -1,0 +1,33 @@
+{
+  "question": "Can the published Figure 6d dose-response columns pass the unchanged v6.0.0 fast-mode 29-estimator input gate?",
+  "scope": "Compatibility gate only; no full target/control run and no T0/TLog/IC50 equivalence claim.",
+  "pipeline_path": "C:\\Users\\citys\\Desktop\\10-31-2026\\pancréas\\universal_v6.0.0_cohen - Copie.py.txt",
+  "pipeline_sha256": "bb8bbdba4eb1f8c55b49748274ae8fbfef8a43f6c1b890964f18ba77960c0773",
+  "pipeline_version": "v6.0.0",
+  "analysis_mode": "fast",
+  "statistical_test": "cohen_d",
+  "minimum_series_length": 50,
+  "concentration_points_in_source_curve": [
+    7,
+    8
+  ],
+  "source_concentrations_nm": [
+    200.0,
+    50.0,
+    12.5,
+    3.125,
+    0.78125,
+    0.1953125,
+    0.0488281,
+    0.012207
+  ],
+  "source_workbook_sha256": "917a1011426c5ee749343ccabf8126e35923a65c4719ec929f84aa29a511f7b1",
+  "source_sheet": "Figure 6, rows 95-103; 8 dose levels for Figure 6d",
+  "separate_measurement_columns_tested": 150,
+  "accepted_by_length_gate": 0,
+  "rejected_by_length_gate": 150,
+  "with_any_finite_estimator": 0,
+  "all_estimators_finite_total": 0,
+  "result_csv": "PDO_FIG6D_PIPELINE_GATE.csv",
+  "interpretation": "The current fast gate requires 50 points, whereas each published curve has at most 8 dose levels. Therefore this source is useful to design a separately calibrated dose-response mode, but it cannot support a v6.0.0 full pipeline run as-is. Columns remain separate and are not concatenated as pseudo-replicates."
+}

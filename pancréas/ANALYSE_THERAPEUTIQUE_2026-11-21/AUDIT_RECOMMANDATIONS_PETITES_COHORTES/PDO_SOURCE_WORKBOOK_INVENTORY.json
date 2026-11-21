@@ -1,0 +1,113 @@
+{
+  "article": "Yin et al., Nature Communications 16, 2214 (2025)",
+  "doi": "10.1038/s41467-025-57520-3",
+  "source_files": {
+    "supplementary_data_10": {
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-57520-3/MediaObjects/41467_2025_57520_MOESM13_ESM.xlsx",
+      "path": "source\\41467_2025_57520_MOESM13_ESM.xlsx",
+      "bytes": 35732,
+      "sha256": "0e009cd56d2f6c25b0b355590becc4abfee3e1080633173bc33606d1bf325340",
+      "sheets": [
+        {
+          "name": "All Drugs AUC",
+          "max_row": 64,
+          "max_column": 48
+        },
+        {
+          "name": "CFTR Drugs AUC",
+          "max_row": 16,
+          "max_column": 17
+        }
+      ]
+    },
+    "source_data": {
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-57520-3/MediaObjects/41467_2025_57520_MOESM17_ESM.xlsx",
+      "path": "source\\41467_2025_57520_MOESM17_ESM.xlsx",
+      "bytes": 5454570,
+      "sha256": "917a1011426c5ee749343ccabf8126e35923a65c4719ec929f84aa29a511f7b1",
+      "sheets": [
+        {
+          "name": "Figure 1",
+          "max_row": 208,
+          "max_column": 124
+        },
+        {
+          "name": "Figure 2",
+          "max_row": 417,
+          "max_column": 7
+        },
+        {
+          "name": "Figure 3",
+          "max_row": 188,
+          "max_column": 29
+        },
+        {
+          "name": "Figure 4",
+          "max_row": 396,
+          "max_column": 43
+        },
+        {
+          "name": "Figure 5",
+          "max_row": 186,
+          "max_column": 56
+        },
+        {
+          "name": "Figure 6",
+          "max_row": 121,
+          "max_column": 151
+        },
+        {
+          "name": "Figure S3",
+          "max_row": 83,
+          "max_column": 4
+        },
+        {
+          "name": "Figure S6",
+          "max_row": 65,
+          "max_column": 5
+        },
+        {
+          "name": "Figure S7",
+          "max_row": 128,
+          "max_column": 56
+        },
+        {
+          "name": "Figure S9",
+          "max_row": 72,
+          "max_column": 16
+        },
+        {
+          "name": "Figure S10",
+          "max_row": 12,
+          "max_column": 56
+        },
+        {
+          "name": "Figure S12",
+          "max_row": 751,
+          "max_column": 11
+        },
+        {
+          "name": "Figure S13",
+          "max_row": 129,
+          "max_column": 13
+        },
+        {
+          "name": "Figure S14",
+          "max_row": 20,
+          "max_column": 58
+        },
+        {
+          "name": "Figure S16",
+          "max_row": 7,
+          "max_column": 11
+        },
+        {
+          "name": "Figure S17",
+          "max_row": 266,
+          "max_column": 5
+        }
+      ]
+    }
+  },
+  "note": "Inventory only; no biological effect or pipeline result is calculated. The paper states 46 PDOs, 63 compounds, >7000 organoid-drug measurements, duplicate wells, two independent experiments, and seven concentrations."
+}
