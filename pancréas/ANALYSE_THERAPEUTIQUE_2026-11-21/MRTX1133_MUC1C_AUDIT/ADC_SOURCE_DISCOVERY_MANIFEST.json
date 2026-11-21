@@ -1,0 +1,243 @@
+{
+  "created_utc": "2026-11-21T13:55:20.725314+00:00",
+  "audit_scope": "Public source-availability audit only; no experimental response values downloaded or analyzed.",
+  "primary_study": {
+    "title": "Targeting KRAS Inhibitor-Resistant Pancreatic Cancer with an MUC1-C Antibody-Drug Conjugate",
+    "doi": "10.1158/1078-0432.CCR-25-2333",
+    "article_url": "https://aacrjournals.org/clincancerres/article/31/24/5246/770511/Targeting-KRAS-Inhibitor-Resistant-Pancreatic",
+    "figshare_search_url": "https://api.figshare.com/v2/articles?resource_doi=10.1158%2F1078-0432.CCR-25-2333",
+    "figshare_record_count": 10,
+    "supplement_file_count": 10,
+    "supplement_file_extensions": [
+      ".docx"
+    ],
+    "figshare_inventory_csv": "ADC_FIGSHARE_SUPPLEMENT_INVENTORY.csv",
+    "data_availability_statement": "The article states that additional raw data are available from the corresponding author upon reasonable request.",
+    "response_assay_details_reported_in_article": {
+      "cell_line_viability": "alamarBlue endpoint after 6 days; figure captions report three determinations",
+      "organoid_viability": "CellTiter-Glo 3D endpoint after 6 days; Figure S8 reports five determinations",
+      "combination_endpoint": "M1C ADC plus MRTX1133; Bliss combination indices are reported",
+      "xenograft_endpoint": "longitudinal tumor volume; figures report group summaries, with cohorts of 6-7 mice per arm in cited models",
+      "tumor_measurement_schedule": "Methods report tumor dimensions every 3-4 days"
+    }
+  },
+  "related_sources": [
+    {
+      "title": "Development of novel MUC1-C targeting antibody-drug conjugate for pancreatic cancer treatment",
+      "doi": "10.1200/JCO.2024.42.16_suppl.e15025",
+      "url": "https://ascopubs.org/doi/10.1200/JCO.2024.42.16_suppl.e15025",
+      "note": "Conference abstract reports 3D1-MMAE/7B8-MMAE and an HPAF-II xenograft; no per-animal response matrix was found in the abstract record."
+    },
+    {
+      "title": "Therapeutic effect of a MUC1-specific monoclonal antibody-drug conjugates against pancreatic cancer model",
+      "doi": "10.1186/s12935-022-02839-w",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9793597/",
+      "note": "HzMUC1-MMAE targets a different MUC1 epitope from the 3D1 anti-MUC1-C agent; the paper says study data are available from the corresponding author upon reasonable request."
+    },
+    {
+      "title": "GSE181961 and GSE293756",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE181961; https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293756",
+      "note": "RNA-expression series; they do not contain ADC response measurements."
+    }
+  ],
+  "pipeline_fit": {
+    "pipeline_path": "pancréas/universal_v6.0.0_cohen - Copie.py.txt",
+    "pipeline_sha256": "bb8bbdba4eb1f8c55b49748274ae8fbfef8a43f6c1b890964f18ba77960c0773",
+    "minimum_stream_length": 50,
+    "full_pipeline_run": false,
+    "reason": "Public supplements provide documents/figures, not per-well or per-animal numeric response tables. The original article directs readers to request additional raw data. No ordered stream with 50 documented values can be assembled without those measurements; repeated tumor measurements cannot be pooled across animals as independent rows."
+  },
+  "retrieval": {
+    "method": "HTTP GET to public Figshare v2 metadata API",
+    "downloaded_supplement_files": false,
+    "downloaded_raw_experimental_data": false,
+    "api_response_sha256": [
+      {
+        "url": "https://api.figshare.com/v2/articles?resource_doi=10.1158%2F1078-0432.CCR-25-2333",
+        "response_sha256": "23221d66a04faf7fe733227b438b6cc377f49c44326bf65bf4c9f307ddd78cb2"
+      },
+      {
+        "url": "https://api.figshare.com/v2/articles/30883462",
+        "response_sha256": "95a499b458474c350b1e1fd26fdc2b594e6016e0e16e7c2c4fceda275b627423"
+      },
+      {
+        "url": "https://api.figshare.com/v2/articles/30883456",
+        "response_sha256": "341d4af7f7a8fde8d9f2a3db9b274af338c91359f5c36f0ec612af11fc1548e7"
+      },
+      {
+        "url": "https://api.figshare.com/v2/articles/30883453",
+        "response_sha256": "e3f3f1eefe86c086a2340f005b5e55c036846e4245834de90092dac2a064d5d6"
+      },
+      {
+        "url": "https://api.figshare.com/v2/articles/30883450",
+        "response_sha256": "249c3977990311ffb69b138ae9e50648af7b14a8fbc4fb9337c42ff0b5e8df5a"
+      },
+      {
+        "url": "https://api.figshare.com/v2/articles/30883447",
+        "response_sha256": "8c5f0521ae4b9b70546f6046ea4b22c589f11febce999c1b60303dae7b05b34b"
+      },
+      {
+        "url": "https://api.figshare.com/v2/articles/30883444",
+        "response_sha256": "15c494a2feefdfcca608f6e31c5f9243553735aec2bc29132d11be9e890ebf26"
+      },
+      {
+        "url": "https://api.figshare.com/v2/articles/30883441",
+        "response_sha256": "f5d873024e4430ffc09b6a5192ab628a36d622737b131a30dc806f26c8776709"
+      },
+      {
+        "url": "https://api.figshare.com/v2/articles/30883438",
+        "response_sha256": "664601baefae3b09fb2f267d3a44805a00adcb4205e50b70a99ba0867d8cd683"
+      },
+      {
+        "url": "https://api.figshare.com/v2/articles/30883435",
+        "response_sha256": "4f4ee08b94d6fd120090bfaafadaf7239876b903a903bc827d5d63eaa0fb57f7"
+      },
+      {
+        "url": "https://api.figshare.com/v2/articles/30883432",
+        "response_sha256": "393af304a252296e836c3874d43825ac8a1ffd9c491e9113d169787b539b645a"
+      }
+    ]
+  },
+  "figshare_records": [
+    {
+      "figshare_id": 30883462,
+      "title": "Figure S1 from Targeting KRAS Inhibitor–Resistant Pancreatic Cancer with an MUC1-C Antibody–Drug Conjugate",
+      "doi": "10.1158/1078-0432.30883462",
+      "published_date": "2025-12-15T08:40:17Z",
+      "public_record_url": "https://aacr.figshare.com/articles/journal_contribution/Figure_S1_from_Targeting_KRAS_Inhibitor_Resistant_Pancreatic_Cancer_with_an_MUC1-C_Antibody_Drug_Conjugate/30883462",
+      "license_name": "CC BY",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "file_name": "ccr-25-2333_figure_s1_suppfs1.docx",
+      "file_bytes": 3967215,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "provider_md5": "b6d64241d09b5c27ae20eef2e9241141",
+      "download_url": "https://ndownloader.figshare.com/files/60367696"
+    },
+    {
+      "figshare_id": 30883456,
+      "title": "Figure S2 from Targeting KRAS Inhibitor–Resistant Pancreatic Cancer with an MUC1-C Antibody–Drug Conjugate",
+      "doi": "10.1158/1078-0432.30883456",
+      "published_date": "2025-12-15T08:40:16Z",
+      "public_record_url": "https://aacr.figshare.com/articles/journal_contribution/Figure_S2_from_Targeting_KRAS_Inhibitor_Resistant_Pancreatic_Cancer_with_an_MUC1-C_Antibody_Drug_Conjugate/30883456",
+      "license_name": "CC BY",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "file_name": "ccr-25-2333_figure_s2_suppfs2.docx",
+      "file_bytes": 5074519,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "provider_md5": "3239cacf98e4280a2d0f5867f96195a7",
+      "download_url": "https://ndownloader.figshare.com/files/60367693"
+    },
+    {
+      "figshare_id": 30883453,
+      "title": "Figure S3 from Targeting KRAS Inhibitor–Resistant Pancreatic Cancer with an MUC1-C Antibody–Drug Conjugate",
+      "doi": "10.1158/1078-0432.30883453",
+      "published_date": "2025-12-15T08:40:15Z",
+      "public_record_url": "https://aacr.figshare.com/articles/journal_contribution/Figure_S3_from_Targeting_KRAS_Inhibitor_Resistant_Pancreatic_Cancer_with_an_MUC1-C_Antibody_Drug_Conjugate/30883453",
+      "license_name": "CC BY",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "file_name": "ccr-25-2333_figure_s3_suppfs3.docx",
+      "file_bytes": 1491304,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "provider_md5": "3dbc3446568c58be103462cccaca4e7f",
+      "download_url": "https://ndownloader.figshare.com/files/60367687"
+    },
+    {
+      "figshare_id": 30883450,
+      "title": "Figure S4 from Targeting KRAS Inhibitor–Resistant Pancreatic Cancer with an MUC1-C Antibody–Drug Conjugate",
+      "doi": "10.1158/1078-0432.30883450",
+      "published_date": "2025-12-15T08:40:13Z",
+      "public_record_url": "https://aacr.figshare.com/articles/journal_contribution/Figure_S4_from_Targeting_KRAS_Inhibitor_Resistant_Pancreatic_Cancer_with_an_MUC1-C_Antibody_Drug_Conjugate/30883450",
+      "license_name": "CC BY",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "file_name": "ccr-25-2333_figure_s4_suppfs4.docx",
+      "file_bytes": 2872954,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "provider_md5": "3ff181ef120f2658e8f5e94e7a218b8a",
+      "download_url": "https://ndownloader.figshare.com/files/60367684"
+    },
+    {
+      "figshare_id": 30883447,
+      "title": "Figure S5 from Targeting KRAS Inhibitor–Resistant Pancreatic Cancer with an MUC1-C Antibody–Drug Conjugate",
+      "doi": "10.1158/1078-0432.30883447",
+      "published_date": "2025-12-15T08:40:12Z",
+      "public_record_url": "https://aacr.figshare.com/articles/journal_contribution/Figure_S5_from_Targeting_KRAS_Inhibitor_Resistant_Pancreatic_Cancer_with_an_MUC1-C_Antibody_Drug_Conjugate/30883447",
+      "license_name": "CC BY",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "file_name": "ccr-25-2333_figure_s5_suppfs5.docx",
+      "file_bytes": 7417468,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "provider_md5": "9c98aeab05f4316de5c044f56b3394e6",
+      "download_url": "https://ndownloader.figshare.com/files/60367681"
+    },
+    {
+      "figshare_id": 30883444,
+      "title": "Figure S6 from Targeting KRAS Inhibitor–Resistant Pancreatic Cancer with an MUC1-C Antibody–Drug Conjugate",
+      "doi": "10.1158/1078-0432.30883444",
+      "published_date": "2025-12-15T08:40:10Z",
+      "public_record_url": "https://aacr.figshare.com/articles/journal_contribution/Figure_S6_from_Targeting_KRAS_Inhibitor_Resistant_Pancreatic_Cancer_with_an_MUC1-C_Antibody_Drug_Conjugate/30883444",
+      "license_name": "CC BY",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "file_name": "ccr-25-2333_figure_s6_suppfs6.docx",
+      "file_bytes": 6822139,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "provider_md5": "3ce3aaad8c7657a4d2da243b9022e636",
+      "download_url": "https://ndownloader.figshare.com/files/60367678"
+    },
+    {
+      "figshare_id": 30883441,
+      "title": "Figure S7 from Targeting KRAS Inhibitor–Resistant Pancreatic Cancer with an MUC1-C Antibody–Drug Conjugate",
+      "doi": "10.1158/1078-0432.30883441",
+      "published_date": "2025-12-15T08:40:09Z",
+      "public_record_url": "https://aacr.figshare.com/articles/journal_contribution/Figure_S7_from_Targeting_KRAS_Inhibitor_Resistant_Pancreatic_Cancer_with_an_MUC1-C_Antibody_Drug_Conjugate/30883441",
+      "license_name": "CC BY",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "file_name": "ccr-25-2333_figure_s7_suppfs7.docx",
+      "file_bytes": 1818698,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "provider_md5": "40c528da5b959bae48db2102bf5b3bd7",
+      "download_url": "https://ndownloader.figshare.com/files/60367675"
+    },
+    {
+      "figshare_id": 30883438,
+      "title": "Figure S8 from Targeting KRAS Inhibitor–Resistant Pancreatic Cancer with an MUC1-C Antibody–Drug Conjugate",
+      "doi": "10.1158/1078-0432.30883438",
+      "published_date": "2025-12-15T08:40:08Z",
+      "public_record_url": "https://aacr.figshare.com/articles/journal_contribution/Figure_S8_from_Targeting_KRAS_Inhibitor_Resistant_Pancreatic_Cancer_with_an_MUC1-C_Antibody_Drug_Conjugate/30883438",
+      "license_name": "CC BY",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "file_name": "ccr-25-2333_figure_s8_suppfs8.docx",
+      "file_bytes": 2680982,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "provider_md5": "e9d28c3c5b1a6ffb25294fc3fe03bab7",
+      "download_url": "https://ndownloader.figshare.com/files/60367672"
+    },
+    {
+      "figshare_id": 30883435,
+      "title": "Supplemental Table S1 from Targeting KRAS Inhibitor–Resistant Pancreatic Cancer with an MUC1-C Antibody–Drug Conjugate",
+      "doi": "10.1158/1078-0432.30883435",
+      "published_date": "2025-12-15T08:40:06Z",
+      "public_record_url": "https://aacr.figshare.com/articles/journal_contribution/Supplemental_Table_S1_from_Targeting_KRAS_Inhibitor_Resistant_Pancreatic_Cancer_with_an_MUC1-C_Antibody_Drug_Conjugate/30883435",
+      "license_name": "CC BY",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "file_name": "ccr-25-2333_supplemental_table_s1_suppts1.docx",
+      "file_bytes": 16507,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "provider_md5": "9724308fc8dbc00b2b1db3bb3fd632e3",
+      "download_url": "https://ndownloader.figshare.com/files/60367669"
+    },
+    {
+      "figshare_id": 30883432,
+      "title": "Supplementary Data1 from Targeting KRAS Inhibitor–Resistant Pancreatic Cancer with an MUC1-C Antibody–Drug Conjugate",
+      "doi": "10.1158/1078-0432.30883432",
+      "published_date": "2025-12-15T08:40:05Z",
+      "public_record_url": "https://aacr.figshare.com/articles/journal_contribution/Supplementary_Data1_from_Targeting_KRAS_Inhibitor_Resistant_Pancreatic_Cancer_with_an_MUC1-C_Antibody_Drug_Conjugate/30883432",
+      "license_name": "CC BY",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "file_name": "ccr-25-2333_supplementary_data1_suppds1.docx",
+      "file_bytes": 60223,
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "provider_md5": "7f3f17516b72627000fe762a036d2a64",
+      "download_url": "https://ndownloader.figshare.com/files/60367666"
+    }
+  ]
+}

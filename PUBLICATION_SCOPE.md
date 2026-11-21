@@ -1,6 +1,6 @@
 # Scope of the public source repository
 
-This repository began as a clean-history publication copy of the project files present on 2026-11-20. Later dated updates are additive. `PUBLICATION_MANIFEST_2026-11-20.csv` records the baseline snapshot; `PUBLICATION_MANIFEST_2026-11-21.csv` records files added or changed in the MRTX1133/MUC1-C data-fit audit; `PUBLICATION_MANIFEST_2026-11-21_RNASEQ.csv` records this marker-panel RNA-seq reanalysis addendum and its derived outputs. Each manifest records file sizes and SHA-256 digests and excludes itself and this scope note.
+This repository began as a clean-history publication copy of the project files present on 2026-11-20. Later dated updates are additive. `PUBLICATION_MANIFEST_2026-11-20.csv` records the baseline snapshot; `PUBLICATION_MANIFEST_2026-11-21.csv` records files added or changed in the MRTX1133/MUC1-C data-fit audit; `PUBLICATION_MANIFEST_2026-11-21_RNASEQ.csv` records the marker-panel RNA-seq reanalysis; `PUBLICATION_MANIFEST_2026-11-21_ADC.csv` records the direct ADC response-data availability audit. Each manifest records file sizes and SHA-256 digests and excludes itself and this scope note.
 
 ## Excluded from this source repository
 
