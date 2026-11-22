@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "scope": "One generated 32-row patient trajectory; no clinical data.",
+  "pipeline_version": "v6.0.1-control-flux-exclusion-L7aL7b-CohenD",
+  "pipeline_sha256": "ce0557cb4c44c15a142291e5522b446f7212136686c3035c97f12a3d0e959086",
+  "input_sha256": "c61c2037562df87992fac35a627022c454e2bf3ef1abc3335a59dd71e45f7798",
+  "rows_in_this_patient_series": 32,
+  "rows_if_three_patients_were_pooled": 96,
+  "mode": "fast",
+  "expected_minimum": 50,
+  "observed_core_exception": {
+    "type": "ValueError",
+    "message": "Série trop courte : 32 points valides. Au moins 50 sont requis avec la configuration actuelle."
+  },
+  "interpretation": "The actual v6.0.1 full entry point rejected this individual short series. The grouped-panel wrapper separately abstains before calling it for all 15 short patient/control pairs."
+}
