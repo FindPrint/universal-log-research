@@ -9,12 +9,14 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 
 HERE = Path(__file__).resolve().parent
 CSV = HERE / "source" / "AirQualityUCI.csv"
 OUT = HERE / "source_quality_audit_v1.json"
 REPORT = HERE / "RESULTS_SOURCE_QUALITY_AUDIT_V1_FR.md"
+PLOT = HERE / "AIR_QUALITY_MISSINGNESS_BY_MONTH_V1.png"
 SENTINEL = -200
 
 
@@ -83,6 +85,24 @@ def main() -> None:
         str(period): int(count)
         for period, count in timestamp.loc[complete_mask].dt.to_period("M").value_counts().sort_index().items()
     }
+    month_series = timestamp.dt.to_period("M")
+    month_labels = [str(x) for x in sorted(month_series.unique())]
+    missing_matrix = np.zeros((len(numeric_columns), len(month_labels)), dtype=float)
+    for row_index, col in enumerate(numeric_columns):
+        missing_mask = numeric[col].isna() | numeric[col].eq(SENTINEL)
+        rates = missing_mask.groupby(month_series).mean()
+        for col_index, month in enumerate(month_labels):
+            missing_matrix[row_index, col_index] = float(rates.get(pd.Period(month, freq="M"), np.nan))
+    fig, ax = plt.subplots(figsize=(max(13, len(month_labels) * 0.75), 7.2), constrained_layout=True)
+    image = ax.imshow(missing_matrix, vmin=0, vmax=1, aspect="auto", cmap="magma")
+    ax.set_xticks(np.arange(len(month_labels)), month_labels, rotation=45, ha="right")
+    ax.set_yticks(np.arange(len(numeric_columns)), numeric_columns)
+    ax.set_title("Part manquante par flux et mois — le code source -200 est masqué")
+    ax.set_xlabel("Mois de l'horodatage source")
+    ax.set_ylabel("Flux source")
+    fig.colorbar(image, ax=ax, label="Part des lignes manquantes (0 à 1)")
+    fig.savefig(PLOT, dpi=170)
+    plt.close(fig)
     report = {
         "status": "complete",
         "created_utc": datetime.now(timezone.utc).isoformat(),
@@ -112,13 +132,13 @@ def main() -> None:
         "complete_case_last_timestamp": timestamp.loc[complete_mask].max().isoformat() if complete_rows else None,
         "complete_case_rows_per_calendar_month": complete_case_month_counts,
         "empty_time_bins_out_of_100_by_flow_after_sentinel_mask": per_column_empty_bins,
+        "missingness_plot": PLOT.name,
         "preprocessing_decision": "No imputation, interpolation, filtering, or row reordering performed by this audit. A full multi-flow pipeline plan is deferred until per-flow missingness and common-support adequacy are reviewed.",
         "interpretive_boundary": "The audit establishes file structure only. Sentinel frequency or channel limits do not prove a sensor fault, causal threshold, or pipeline result.",
         "license_note": "UCI page states research-only/noncommercial use and also displays CC BY 4.0; raw file is retained locally pending clarification.",
     }
     OUT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    month_counts = timestamp.dt.to_period("M").value_counts().sort_index()
     md_lines = [
         "# Audit structure source — UCI Air Quality V1",
         "",
@@ -133,6 +153,8 @@ def main() -> None:
         f"- Période du fichier : {timestamp.min()} à {timestamp.max()}; la page UCI indique « March 2004 to February 2005 ».",
         f"- Lignes entièrement exploitables sur tous les flux numériques après masquage de `-200` : {complete_rows}.",
         f"- Intervalle couvert par les lignes complètes communes : {timestamp.loc[complete_mask].min()} à {timestamp.loc[complete_mask].max()}.",
+        f"- `NMHC(GT)` contient {per_column['NMHC(GT)']['n_sentinel_minus_200']} sentinelles `-200`; ses valeurs valides par mois sont {per_column['NMHC(GT)']['valid_rows_per_calendar_month']}. Aucune valeur valide n'apparaît après mai 2004 dans le fichier.",
+        "- Les horodatages restent consécutifs sur toute la période. L'absence tardive de `NMHC(GT)` est une absence dans ce flux, pas une heure disparue de l'ensemble du CSV.",
         "",
         "## Flux numériques et valeurs sentinelles",
         "",
@@ -147,6 +169,8 @@ def main() -> None:
     md_lines += [
         "",
         "## Capacité de couverture par temps",
+        "",
+        f"Carte de chaleur : `{PLOT.name}`. Une case plus claire représente une plus grande part de `-200` ou de valeurs manquantes; ce visuel décrit la disponibilité enregistrée, pas une cause.",
         "",
         "Nombre de 100 bins calendaires vides par flux après exclusion descriptive de `-200` (aucune valeur n'est remplacée) :",
         "",

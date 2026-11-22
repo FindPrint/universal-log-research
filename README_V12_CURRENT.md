@@ -9,6 +9,7 @@
 3. **Mesure et instrumentation :** ordre, lots, transformations, capteurs, bruit et données manquantes sont examinés comme explications concurrentes du signal.
 
 Un seuil du pipeline peut refléter le système de mesure. Il faut comparer flux d’instrument, contrôle et cible avant d’attribuer un résultat au phénomène étudié. Les mots « hypothèse », « observation », « résultat robuste », « interprétation » et « conclusion de domaine » ont des statuts distincts.
+Le protocole commun qui sépare phénomène, mesure/collecte et préparation/calcul est décrit dans `PROTOCOLE_TRIAGE_SEUILS_ET_ORIGINE_V1_FR.md`; il distingue aussi l’analyse descriptive de la prédiction.
 
 ## Travaux récents
 

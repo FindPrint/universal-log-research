@@ -11,6 +11,8 @@ Fichier brut : 9,357 enregistrements datés et `13` flux numériques, SHA-256 `1
 - Période du fichier : 2004-03-10 18:00:00 à 2005-04-04 14:00:00; la page UCI indique « March 2004 to February 2005 ».
 - Lignes entièrement exploitables sur tous les flux numériques après masquage de `-200` : 827.
 - Intervalle couvert par les lignes complètes communes : 2004-03-10 18:00:00 à 2004-05-01 00:00:00.
+- `NMHC(GT)` contient 8443 sentinelles `-200`; ses valeurs valides par mois sont {'2004-03': 407, '2004-04': 506, '2004-05': 1}. Aucune valeur valide n'apparaît après mai 2004 dans le fichier.
+- Les horodatages restent consécutifs sur toute la période. L'absence tardive de `NMHC(GT)` est une absence dans ce flux, pas une heure disparue de l'ensemble du CSV.
 
 ## Flux numériques et valeurs sentinelles
 
@@ -31,6 +33,8 @@ Fichier brut : 9,357 enregistrements datés et `13` flux numériques, SHA-256 `1
 | `AH` | 366 | 8991 | 6683 | 0.1847 | 2.231 |
 
 ## Capacité de couverture par temps
+
+Carte de chaleur : `AIR_QUALITY_MISSINGNESS_BY_MONTH_V1.png`. Une case plus claire représente une plus grande part de `-200` ou de valeurs manquantes; ce visuel décrit la disponibilité enregistrée, pas une cause.
 
 Nombre de 100 bins calendaires vides par flux après exclusion descriptive de `-200` (aucune valeur n'est remplacée) :
 

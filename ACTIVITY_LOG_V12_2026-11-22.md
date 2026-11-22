@@ -6,6 +6,7 @@ Journal de traçabilité de la séance. Les observations, hypothèses et décisi
 
 | Étape | Action / constat | Trace principale | Statut |
 |---|---|---|---|
+| Règle d’attribution des seuils | Formalisation d’un protocole commun séparant phénomène visé, chaîne de mesure/collecte et préparation/calcul; il distingue les tâches descriptives des tâches prédictives et prévoit un statut « origine indéterminée » si les éléments ne départagent pas les explications. La règle est une proposition méthodologique, pas une validation de la théorie. | `PROTOCOLE_TRIAGE_SEUILS_ET_ORIGINE_V1_FR.md`; lien ajouté aux README V12 et Air Quality | Rédigé; à éprouver par des cas comparatifs |
 | Audit des archives | Inventaire en lecture seule des snapshots V4–V11 sur C: et copies D:. V4 présente 13 membres absents et 1 différence par rapport à V11; la variante initiale V6 présente 4 différences. Aucune suppression ni purge. | `archive_sources/SNAPSHOT_OVERLAP_AUDIT_2026-11-22.json`; `archive_sources/audit_snapshot_overlap.py` | Terminé |
 | Profilage du pipeline | Comparaison de répétitions complètes et d’un prototype sans rendu graphique. Le prototype a rendu les mêmes sorties analytiques dans le cas apparié étudié; 84,27 s contre 157,25 s pour la répétition complète récente. Les temps antérieurs varient fortement. | `pancréas/ANALYSE_THERAPEUTIQUE_2026-11-22/TRANSITION_SENSITIVITY_V2/RUNTIME_PROFILE_V1/RUNTIME_PROFILE_REPORT_V1_FR.md` et manifestes natifs | Terminé, portée limitée à un cas apparié |
 | AI4I — classifieurs (niveau 1) | Jeu Kaggle original-auteur comparé octet pour octet au CSV UCI. 10 000 observations, 339 pannes. Logistique équilibrée et forêt évaluées sur trois blocs chronologiques futurs; les chiffres et le déclin de prévalence sont dans le rapport. | `pancréas/ANALYSE_THERAPEUTIQUE_2026-11-22/DATA_PUBLIC_BENCHMARK_V1/RESULTS_AI4I_PREDICTION_V1_FR.md` et `prediction_benchmark_v1/` | Terminé; données synthétiques |
@@ -38,3 +39,7 @@ Journal de traçabilité de la séance. Les observations, hypothèses et décisi
 2. Générer rapports, figures et manifestes publics expurgés des chemins locaux.
 3. Produire le PDF V12 par ajout incrémental au PDF V11, vérifier l’identité du préfixe, le rendu des pages et l’absence de pièce jointe ZIP.
 4. Construire et tester le delta V12, sauvegarder PDF/delta sur D:, puis publier une sélection reproductible des artefacts sur GitHub.
+
+## Complément après inspection visuelle
+
+La carte des données manquantes Air Quality a été rendue et inspectée : le canal `NMHC(GT)` est presque entièrement manquant après mai 2004 tandis que plusieurs autres colonnes se poursuivent. C’est un constat du fichier et de la sentinelle `-200`; la cause instrumentale, son éventuelle relation au seuil du pipeline et son effet scientifique restent indéterminés. Le PNG est ajouté au manifeste public V12 intermédiaire; la source Air Quality brute demeure exclue en attente de clarification des conditions de redistribution.

@@ -1,9 +1,9 @@
 {
   "status": "complete",
-  "created_utc": "2026-11-22T23:06:19.204459+00:00",
+  "created_utc": "2026-11-22T23:29:42.237617+00:00",
   "source_csv": "source/AirQualityUCI.csv",
   "source_csv_sha256": "13277ae5d8581e80b7be09d47c7d3d06fe9b8e957078f2cf6e859f955e62f996",
-  "audit_script_sha256": "57dc9887995032227f1b5d464a50551706eeb7dddd26ddda7c843081b485eaf6",
+  "audit_script_sha256": "30a1c2317d7ecfd7bd39200a051234ebdf7f4ec0fb077e12c7f6bdb149c86b3d",
   "raw_parsed_table_rows_including_blank_trailing_rows": 9471,
   "fully_blank_rows_excluded_from_observation_count": 114,
   "nonempty_dated_source_records": 9357,
@@ -443,6 +443,7 @@
     "RH": 0,
     "AH": 0
   },
+  "missingness_plot": "AIR_QUALITY_MISSINGNESS_BY_MONTH_V1.png",
   "preprocessing_decision": "No imputation, interpolation, filtering, or row reordering performed by this audit. A full multi-flow pipeline plan is deferred until per-flow missingness and common-support adequacy are reviewed.",
   "interpretive_boundary": "The audit establishes file structure only. Sentinel frequency or channel limits do not prove a sensor fault, causal threshold, or pipeline result.",
   "license_note": "UCI page states research-only/noncommercial use and also displays CC BY 4.0; raw file is retained locally pending clarification."
