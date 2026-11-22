@@ -1,0 +1,73 @@
+{
+  "title": "UCI Air Quality reference reading calibration V1",
+  "status": "coverage_plan_frozen_before_model_scores",
+  "source_sha256": "13277ae5d8581e80b7be09d47c7d3d06fe9b8e957078f2cf6e859f955e62f996",
+  "script_sha256": "eebfacbb0b332a415cea49b80b8a49c785852a95d177d96344f659f6d2f27578",
+  "protocol_sha256": "0594be6c9515a6ad1ab7f850a1ae54a37ea052e820fea5db726d6ae856b01581",
+  "target": "CO(GT)",
+  "target_interpretation": "co-located reference-analyzer reading; not latent ground truth",
+  "features": [
+    "PT08.S1(CO)",
+    "PT08.S2(NMHC)",
+    "PT08.S3(NOx)",
+    "PT08.S4(NO2)",
+    "PT08.S5(O3)",
+    "T",
+    "RH",
+    "AH"
+  ],
+  "sentinel_policy": "-200 -> NaN; complete case per target and fixed feature set; no imputation",
+  "split_policy": "expanding chronological train periods and fixed, later calendar test windows; no random shuffle",
+  "fold_support": [
+    {
+      "name": "fold_1",
+      "train_end": "2004-08-31",
+      "test_start": "2004-09-01",
+      "test_end": "2004-10-31",
+      "train_complete_rows": 3145,
+      "test_complete_rows": 947,
+      "train_source_rows": 4182,
+      "test_source_rows": 1464
+    },
+    {
+      "name": "fold_2",
+      "train_end": "2004-10-31",
+      "test_start": "2004-11-01",
+      "test_end": "2004-12-31",
+      "train_complete_rows": 4092,
+      "test_complete_rows": 1240,
+      "train_source_rows": 5646,
+      "test_source_rows": 1464
+    },
+    {
+      "name": "fold_3",
+      "train_end": "2004-12-31",
+      "test_start": "2005-01-01",
+      "test_end": "2005-04-04",
+      "train_complete_rows": 5332,
+      "test_complete_rows": 2012,
+      "train_source_rows": 7110,
+      "test_source_rows": 2247
+    }
+  ],
+  "models": [
+    {
+      "name": "train_median",
+      "specification": "DummyRegressor(strategy=median)"
+    },
+    {
+      "name": "ridge",
+      "specification": "StandardScaler(train-only) + Ridge(alpha=1.0)"
+    },
+    {
+      "name": "hist_gradient_boosting",
+      "specification": "HistGradientBoostingRegressor(max_iter=100, learning_rate=0.1, max_leaf_nodes=15, early_stopping=False, random_state=20261124)"
+    }
+  ],
+  "metrics": [
+    "MAE",
+    "RMSE",
+    "R2"
+  ],
+  "interpretive_limit": "Predicts reference readings on this dataset; time degradation alone does not identify instrument drift or a cause."
+}

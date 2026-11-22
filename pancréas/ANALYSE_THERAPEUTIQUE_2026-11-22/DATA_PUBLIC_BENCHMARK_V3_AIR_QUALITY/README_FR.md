@@ -25,3 +25,5 @@ L'import contient 114 lignes terminales entièrement vides, puis 9 357 enregistr
 Ces constats décrivent l'archive et ses données. Ils ne démontrent pas une défaillance de l'instrument, une cause physique, un seuil du pipeline ou une prédiction de pollution.
 
 Le cadre commun d’interprétation est dans `PROTOCOLE_TRIAGE_SEUILS_ET_ORIGINE_V1_FR.md` à la racine : il traite séparément phénomène visé, chaîne de mesure/collecte et préparation/calcul. Pour cet essai, la présence d’un analyseur de référence permet une comparaison de mesure, mais ne suffit pas à attribuer automatiquement un seuil à une cause physique ou au capteur.
+
+Un second volet, distinct de la rotation descriptive UNIVERSAL_LOG, est préenregistré dans `PROTOCOLE_CALIBRATION_REFERENCE_AIR_QUALITY_V1_FR.md`. Il estime les lectures de référence CO(GT) à partir de cinq canaux capteurs et des trois variables météo, sur trois fenêtres chronologiques fixes. C’est une tâche d’estimation de la lecture de référence, pas de la concentration vraie sans incertitude. Le script offre `--prepare-only`; les comparateurs n’ont pas encore été exécutés.

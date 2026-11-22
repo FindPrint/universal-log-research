@@ -16,7 +16,7 @@ AIR = Path("pancréas/ANALYSE_THERAPEUTIQUE_2026-11-22/DATA_PUBLIC_BENCHMARK_V3_
 
 ROOT_FILES = [
     ".gitattributes", "README.md", "README_V12_CURRENT.md", "PUBLICATION_SCOPE_V12.md", "RELEASE_V12_CHANGELOG_FR.md",
-    "ACTIVITY_LOG_V12_2026-11-22.md", "PROTOCOLE_TRIAGE_SEUILS_ET_ORIGINE_V1_FR.md", "THREE_LEVELS_AND_DELTA_ARCHIVE_PLAN_V1_FR.md",
+    "ACTIVITY_LOG_V12_2026-11-22.md", "PROTOCOLE_TRIAGE_SEUILS_ET_ORIGINE_V1_FR.md", "PROTOCOLE_CALIBRATION_REFERENCE_AIR_QUALITY_V1_FR.md", "THREE_LEVELS_AND_DELTA_ARCHIVE_PLAN_V1_FR.md",
     "DELTA_ARCHIVE_GUIDE_V1_FR.md", "build_project_delta.py", "reconstruct_project_from_delta.py",
     "test_delta_archive_smoke.py", "summarize_pipeline_layers.py", "build_publication_manifest_v12.py",
     "build_publication_manifest_v12_interim.py", "sync_manifest_from_git_index.py",
@@ -56,8 +56,10 @@ AIR_FILES = [
     ".gitignore", "README_FR.md", "fetch_air_quality_dataset.py", "audit_air_quality_source_v1.py",
     "source_manifest.json", "source_quality_audit_v1.json", "RESULTS_SOURCE_QUALITY_AUDIT_V1_FR.md",
     "PROTOCOLE_AIR_QUALITY_INSTRUMENTATION_V1_FR.md", "AMENDEMENT_PIPELINE_AIR_QUALITY_V1A_FR.md",
+    "run_air_quality_reference_calibration_v1.py",
     "AIR_QUALITY_MISSINGNESS_BY_MONTH_V1.png",
     "run_air_quality_pipeline_control_rotation.py",
+    "reference_calibration_v1/benchmark_plan_v1.json",
     "pipeline_control_rotation_v1/campaign_plan.json",
     "pipeline_control_rotation_v1/campaign_plan_superseded_v1.json",
     "pipeline_control_rotation_v1/campaign_plan_superseded_v2.json",
