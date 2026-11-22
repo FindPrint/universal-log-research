@@ -1,0 +1,59 @@
+{
+  "audit_date": "2026-11-21",
+  "data_obtained": false,
+  "pipeline_biological_run": false,
+  "pipeline_source": {
+    "version": "v6.0.1-control-flux-exclusion-L7aL7b-CohenD",
+    "path": "pancréas/ANALYSE_THERAPEUTIQUE_2026-11-20/REPLICATION_P2_010_GEO_2026-11-20/pipeline_source/UNIVERSAL_LOG_v6.0.1_control_flux_exclusion.py",
+    "sha256": "ce0557cb4c44c15a142291e5522b446f7212136686c3035c97f12a3d0e959086",
+    "static_grouped_input_audit": "static_audit_passed"
+  },
+  "sources": [
+    {
+      "study": "Monitoring of circulating tumour DNA in advanced pancreatic ductal adenocarcinoma predicts clinical outcome and reveals disease progression earlier than radiological imaging",
+      "doi": "10.1002/1878-0261.13472",
+      "url": "https://febs.onlinelibrary.wiley.com/doi/full/10.1002/1878-0261.13472",
+      "reported_patients": 81,
+      "reported_plasma_samples": 425,
+      "reported_longitudinal_ctdna_observations_in_joint_model": 298,
+      "sampling": "before treatment and then every four weeks",
+      "patient_sample_matrix_identified_in_reviewed_article_assets": false,
+      "request_draft": "BROUILLON_DEMANDE_DONNEES_EDLAND_2023_EN.md",
+      "request_sent": false
+    },
+    {
+      "study": "Prediction of response to systemic treatment by kinetics of circulating tumor DNA in metastatic pancreatic cancer",
+      "authors": "Kirchweger et al.",
+      "doi": "10.3389/fonc.2022.902177",
+      "url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.902177/full",
+      "reported_patients": 70,
+      "baseline_ctdna_positive": 45,
+      "complete_serial_response_records": 32,
+      "progressive_disease": 12,
+      "non_progressive_disease": 20,
+      "sampling": "Every two weeks until restaging",
+      "data_availability_statement": "Raw data supporting conclusions will be made available by authors without undue reservation.",
+      "matrix_obtained": false,
+      "request_draft": "BROUILLON_DEMANDE_DONNEES_KIRCHWEGER_2022_EN.md",
+      "request_sent": false
+    },
+    {
+      "study": "Evaluation of circulating cell-free KRAS mutational status as a molecular monitoring tool in patients with pancreatic cancer",
+      "authors": "Schlick et al.",
+      "doi": "10.1016/j.pan.2021.09.004",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34511398/",
+      "note": "Distinct 2021 publication. No counts from Kirchweger et al. are assigned to this article."
+    },
+    {
+      "study": "Longitudinal profiling of circulating tumour DNA for tracking tumour dynamics in pancreatic cancer",
+      "doi": "10.1186/s12885-022-09387-6",
+      "ega_dataset": "EGAD00001008593",
+      "url": "https://ega-archive.org/datasets/EGAD00001008593",
+      "reported_pdac_patients": 7,
+      "timepoints_per_patient_as_reported": "1-5",
+      "access": "controlled by EGA DAC",
+      "ready_made_numeric_patient_sample_matrix_identified": false
+    }
+  ],
+  "interpretive_limit": "These are literature and code-compatibility findings, not UNIVERSAL_LOG clinical results or treatment evidence."
+}

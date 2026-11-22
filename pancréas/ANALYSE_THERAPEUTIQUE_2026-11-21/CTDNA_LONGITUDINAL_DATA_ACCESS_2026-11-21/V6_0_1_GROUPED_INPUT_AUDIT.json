@@ -1,0 +1,34 @@
+{
+  "pipeline": "pancréas\\ANALYSE_THERAPEUTIQUE_2026-11-20\\REPLICATION_P2_010_GEO_2026-11-20\\pipeline_source\\UNIVERSAL_LOG_v6.0.1_control_flux_exclusion.py",
+  "pipeline_sha256": "ce0557cb4c44c15a142291e5522b446f7212136686c3035c97f12a3d0e959086",
+  "entry_point": "run_pipeline",
+  "entry_point_parameters": [
+    "data_source",
+    "custom_file_path",
+    "mapping",
+    "mode",
+    "opt_cfg"
+  ],
+  "line_references": {
+    "run_pipeline_line": 6688,
+    "csv_read": 6763,
+    "control_dropna": 6793,
+    "control_vector": 6794,
+    "minimum_gate": 6795,
+    "mc_axis_call": 6861,
+    "version": 9256
+  },
+  "fast_mode_line": 246,
+  "groupby_calls": [],
+  "patient_group_references_inside_entry_point": [],
+  "checks": {
+    "entry_point_has_no_patient_group_parameter": true,
+    "entry_point_has_no_groupby_call": true,
+    "entry_point_does_not_reference_patient_group_ids": true,
+    "control_vector_is_built_from_all_retained_rows": true,
+    "progress_axis_receives_control_and_fluxes_without_group_metadata": true,
+    "fast_mode_has_50_minimum": true
+  },
+  "static_audit_passed": true,
+  "scope": "Source-level compatibility check only; no biological data were analyzed."
+}
