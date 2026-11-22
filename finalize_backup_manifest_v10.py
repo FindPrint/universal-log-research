@@ -58,6 +58,8 @@ if not PREVIOUS_V9.is_file() or not json.loads(PREVIOUS_V9.read_text(encoding="u
 
 BACKUP.mkdir(parents=True, exist_ok=True)
 BACKUP_PACKAGE.mkdir(parents=True, exist_ok=True)
+BACKUP_UPDATES = BACKUP / "project_updates_v10"
+BACKUP_UPDATES.mkdir(parents=True, exist_ok=True)
 for name in PACKAGE_FILES:
     source = SOURCE_PACKAGE / name
     if not source.is_file():
@@ -68,7 +70,7 @@ for name in ROOT_FILES:
     source = ROOT / name
     if not source.is_file():
         raise FileNotFoundError(source)
-    shutil.copy2(source, BACKUP / "project_updates_v10" / name)
+    shutil.copy2(source, BACKUP_UPDATES / name)
 
 shutil.copytree(
     SOURCE_TEST, BACKUP_TEST, dirs_exist_ok=True,
@@ -93,7 +95,7 @@ test_names_ok = set(source_test_files) == set(backup_test_files)
 test_checks = [compare(source_test_files[name], backup_test_files[name]) for name in sorted(source_test_files)]
 
 root_checks = [
-    compare(ROOT / name, BACKUP / "project_updates_v10" / name)
+    compare(ROOT / name, BACKUP_UPDATES / name)
     for name in ROOT_FILES
 ]
 
