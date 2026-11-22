@@ -1,0 +1,479 @@
+{
+  "title": "Synthetic transition sensitivity V2",
+  "created_utc": "2026-11-22T15:03:12.574116+00:00",
+  "status": "frozen_before_pipeline_runs",
+  "scope": "Synthetic software/analysis behavior only; no clinical or biological data.",
+  "pipeline_source_sha256": "ce0557cb4c44c15a142291e5522b446f7212136686c3035c97f12a3d0e959086",
+  "protocol_sha256": "694442710711cafc4df4c61b974ac174a6e3391f097f9291d1ef4cdeb74639b1",
+  "harness_sha256": "cef978539ec549aa32a8de4194135a03984d3dad3b86a1d949451b25a3809afd",
+  "planned_datasets": [
+    {
+      "case_key": "N064_null_seed20261123",
+      "n_points": 64,
+      "condition": "null",
+      "signal_amplitude_noise_sd": 0.0,
+      "input_seed": 20261123,
+      "true_transition_pct": null,
+      "true_transition_index": null,
+      "controls": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ],
+      "input_sha256": "1507cbf15602789e1ac1f5ff6fe78b370cb7871a2942a482f37d5dacda7f3d01",
+      "numeric_control_columns": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ]
+    },
+    {
+      "case_key": "N064_null_seed20261124",
+      "n_points": 64,
+      "condition": "null",
+      "signal_amplitude_noise_sd": 0.0,
+      "input_seed": 20261124,
+      "true_transition_pct": null,
+      "true_transition_index": null,
+      "controls": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ],
+      "input_sha256": "980d34f91f7c9611a9bcc7d7688cd891c8780f5d646965da83f3f435ef2b6b12",
+      "numeric_control_columns": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ]
+    },
+    {
+      "case_key": "N064_weak_seed20261123",
+      "n_points": 64,
+      "condition": "weak",
+      "signal_amplitude_noise_sd": 0.5,
+      "input_seed": 20261123,
+      "true_transition_pct": 58.0,
+      "true_transition_index": 36.54,
+      "controls": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ],
+      "input_sha256": "f6e476ea69c0e32507c930bf11854d3a325f0079113ecc937da97f4656d2cfc0",
+      "numeric_control_columns": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ]
+    },
+    {
+      "case_key": "N064_strong_seed20261123",
+      "n_points": 64,
+      "condition": "strong",
+      "signal_amplitude_noise_sd": 1.5,
+      "input_seed": 20261123,
+      "true_transition_pct": 58.0,
+      "true_transition_index": 36.54,
+      "controls": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ],
+      "input_sha256": "29da5b37ef143b00ee96ebe3d99380c4e85955558a31e2f910ba9033ed1e70ef",
+      "numeric_control_columns": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ]
+    },
+    {
+      "case_key": "N064_strong_seed20261124",
+      "n_points": 64,
+      "condition": "strong",
+      "signal_amplitude_noise_sd": 1.5,
+      "input_seed": 20261124,
+      "true_transition_pct": 58.0,
+      "true_transition_index": 36.54,
+      "controls": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ],
+      "input_sha256": "abe187cbd56a732ca4e181fe1d4ac45c69333ff5e327f6e8fea7a31c5ec34810",
+      "numeric_control_columns": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ]
+    },
+    {
+      "case_key": "N100_null_seed20261125",
+      "n_points": 100,
+      "condition": "null",
+      "signal_amplitude_noise_sd": 0.0,
+      "input_seed": 20261125,
+      "true_transition_pct": null,
+      "true_transition_index": null,
+      "controls": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ],
+      "input_sha256": "6b28775a402ebb8e32b36b0ba05457f2ed84afcc0a1202f3eef09c7cc041f360",
+      "numeric_control_columns": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ]
+    },
+    {
+      "case_key": "N100_strong_seed20261125",
+      "n_points": 100,
+      "condition": "strong",
+      "signal_amplitude_noise_sd": 1.5,
+      "input_seed": 20261125,
+      "true_transition_pct": 58.0,
+      "true_transition_index": 57.419999999999995,
+      "controls": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ],
+      "input_sha256": "3b6771d0e29f62f439740538043e3c91aae9ead678b9db0cce9243376c42ffab",
+      "numeric_control_columns": [
+        "time_index",
+        "signal_primary",
+        "marker_correlated",
+        "marker_oscillatory",
+        "noise_independent"
+      ]
+    }
+  ],
+  "planned_run_count": 35,
+  "controls": [
+    "time_index",
+    "signal_primary",
+    "marker_correlated",
+    "marker_oscillatory",
+    "noise_independent"
+  ],
+  "configuration": {
+    "mode": "fast",
+    "n_scenarios": 8,
+    "target": "signal_primary",
+    "control_mode": "single",
+    "max_workers": 1,
+    "harmonic_validation": false,
+    "l7b_mode": "light",
+    "minimum_points_observed": 50
+  },
+  "planned_runs": [
+    {
+      "run_key": "N064_null_seed20261123__time_index",
+      "case_key": "N064_null_seed20261123",
+      "control": "time_index",
+      "n_points": 64,
+      "condition": "null",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_null_seed20261123__signal_primary",
+      "case_key": "N064_null_seed20261123",
+      "control": "signal_primary",
+      "n_points": 64,
+      "condition": "null",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_null_seed20261123__marker_correlated",
+      "case_key": "N064_null_seed20261123",
+      "control": "marker_correlated",
+      "n_points": 64,
+      "condition": "null",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_null_seed20261123__marker_oscillatory",
+      "case_key": "N064_null_seed20261123",
+      "control": "marker_oscillatory",
+      "n_points": 64,
+      "condition": "null",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_null_seed20261123__noise_independent",
+      "case_key": "N064_null_seed20261123",
+      "control": "noise_independent",
+      "n_points": 64,
+      "condition": "null",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_null_seed20261124__time_index",
+      "case_key": "N064_null_seed20261124",
+      "control": "time_index",
+      "n_points": 64,
+      "condition": "null",
+      "input_seed": 20261124
+    },
+    {
+      "run_key": "N064_null_seed20261124__signal_primary",
+      "case_key": "N064_null_seed20261124",
+      "control": "signal_primary",
+      "n_points": 64,
+      "condition": "null",
+      "input_seed": 20261124
+    },
+    {
+      "run_key": "N064_null_seed20261124__marker_correlated",
+      "case_key": "N064_null_seed20261124",
+      "control": "marker_correlated",
+      "n_points": 64,
+      "condition": "null",
+      "input_seed": 20261124
+    },
+    {
+      "run_key": "N064_null_seed20261124__marker_oscillatory",
+      "case_key": "N064_null_seed20261124",
+      "control": "marker_oscillatory",
+      "n_points": 64,
+      "condition": "null",
+      "input_seed": 20261124
+    },
+    {
+      "run_key": "N064_null_seed20261124__noise_independent",
+      "case_key": "N064_null_seed20261124",
+      "control": "noise_independent",
+      "n_points": 64,
+      "condition": "null",
+      "input_seed": 20261124
+    },
+    {
+      "run_key": "N064_weak_seed20261123__time_index",
+      "case_key": "N064_weak_seed20261123",
+      "control": "time_index",
+      "n_points": 64,
+      "condition": "weak",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_weak_seed20261123__signal_primary",
+      "case_key": "N064_weak_seed20261123",
+      "control": "signal_primary",
+      "n_points": 64,
+      "condition": "weak",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_weak_seed20261123__marker_correlated",
+      "case_key": "N064_weak_seed20261123",
+      "control": "marker_correlated",
+      "n_points": 64,
+      "condition": "weak",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_weak_seed20261123__marker_oscillatory",
+      "case_key": "N064_weak_seed20261123",
+      "control": "marker_oscillatory",
+      "n_points": 64,
+      "condition": "weak",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_weak_seed20261123__noise_independent",
+      "case_key": "N064_weak_seed20261123",
+      "control": "noise_independent",
+      "n_points": 64,
+      "condition": "weak",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_strong_seed20261123__time_index",
+      "case_key": "N064_strong_seed20261123",
+      "control": "time_index",
+      "n_points": 64,
+      "condition": "strong",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_strong_seed20261123__signal_primary",
+      "case_key": "N064_strong_seed20261123",
+      "control": "signal_primary",
+      "n_points": 64,
+      "condition": "strong",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_strong_seed20261123__marker_correlated",
+      "case_key": "N064_strong_seed20261123",
+      "control": "marker_correlated",
+      "n_points": 64,
+      "condition": "strong",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_strong_seed20261123__marker_oscillatory",
+      "case_key": "N064_strong_seed20261123",
+      "control": "marker_oscillatory",
+      "n_points": 64,
+      "condition": "strong",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_strong_seed20261123__noise_independent",
+      "case_key": "N064_strong_seed20261123",
+      "control": "noise_independent",
+      "n_points": 64,
+      "condition": "strong",
+      "input_seed": 20261123
+    },
+    {
+      "run_key": "N064_strong_seed20261124__time_index",
+      "case_key": "N064_strong_seed20261124",
+      "control": "time_index",
+      "n_points": 64,
+      "condition": "strong",
+      "input_seed": 20261124
+    },
+    {
+      "run_key": "N064_strong_seed20261124__signal_primary",
+      "case_key": "N064_strong_seed20261124",
+      "control": "signal_primary",
+      "n_points": 64,
+      "condition": "strong",
+      "input_seed": 20261124
+    },
+    {
+      "run_key": "N064_strong_seed20261124__marker_correlated",
+      "case_key": "N064_strong_seed20261124",
+      "control": "marker_correlated",
+      "n_points": 64,
+      "condition": "strong",
+      "input_seed": 20261124
+    },
+    {
+      "run_key": "N064_strong_seed20261124__marker_oscillatory",
+      "case_key": "N064_strong_seed20261124",
+      "control": "marker_oscillatory",
+      "n_points": 64,
+      "condition": "strong",
+      "input_seed": 20261124
+    },
+    {
+      "run_key": "N064_strong_seed20261124__noise_independent",
+      "case_key": "N064_strong_seed20261124",
+      "control": "noise_independent",
+      "n_points": 64,
+      "condition": "strong",
+      "input_seed": 20261124
+    },
+    {
+      "run_key": "N100_null_seed20261125__time_index",
+      "case_key": "N100_null_seed20261125",
+      "control": "time_index",
+      "n_points": 100,
+      "condition": "null",
+      "input_seed": 20261125
+    },
+    {
+      "run_key": "N100_null_seed20261125__signal_primary",
+      "case_key": "N100_null_seed20261125",
+      "control": "signal_primary",
+      "n_points": 100,
+      "condition": "null",
+      "input_seed": 20261125
+    },
+    {
+      "run_key": "N100_null_seed20261125__marker_correlated",
+      "case_key": "N100_null_seed20261125",
+      "control": "marker_correlated",
+      "n_points": 100,
+      "condition": "null",
+      "input_seed": 20261125
+    },
+    {
+      "run_key": "N100_null_seed20261125__marker_oscillatory",
+      "case_key": "N100_null_seed20261125",
+      "control": "marker_oscillatory",
+      "n_points": 100,
+      "condition": "null",
+      "input_seed": 20261125
+    },
+    {
+      "run_key": "N100_null_seed20261125__noise_independent",
+      "case_key": "N100_null_seed20261125",
+      "control": "noise_independent",
+      "n_points": 100,
+      "condition": "null",
+      "input_seed": 20261125
+    },
+    {
+      "run_key": "N100_strong_seed20261125__time_index",
+      "case_key": "N100_strong_seed20261125",
+      "control": "time_index",
+      "n_points": 100,
+      "condition": "strong",
+      "input_seed": 20261125
+    },
+    {
+      "run_key": "N100_strong_seed20261125__signal_primary",
+      "case_key": "N100_strong_seed20261125",
+      "control": "signal_primary",
+      "n_points": 100,
+      "condition": "strong",
+      "input_seed": 20261125
+    },
+    {
+      "run_key": "N100_strong_seed20261125__marker_correlated",
+      "case_key": "N100_strong_seed20261125",
+      "control": "marker_correlated",
+      "n_points": 100,
+      "condition": "strong",
+      "input_seed": 20261125
+    },
+    {
+      "run_key": "N100_strong_seed20261125__marker_oscillatory",
+      "case_key": "N100_strong_seed20261125",
+      "control": "marker_oscillatory",
+      "n_points": 100,
+      "condition": "strong",
+      "input_seed": 20261125
+    },
+    {
+      "run_key": "N100_strong_seed20261125__noise_independent",
+      "case_key": "N100_strong_seed20261125",
+      "control": "noise_independent",
+      "n_points": 100,
+      "condition": "strong",
+      "input_seed": 20261125
+    }
+  ]
+}

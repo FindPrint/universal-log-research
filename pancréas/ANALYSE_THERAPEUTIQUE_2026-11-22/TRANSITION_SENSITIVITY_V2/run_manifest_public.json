@@ -1,0 +1,23 @@
+{
+  "generated_utc": "2026-11-22T17:02:34.377238+00:00",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "1.26.4",
+  "pandas": "3.0.6",
+  "pipeline_source": "pancréas/ANALYSE_THERAPEUTIQUE_2026-11-20/REPLICATION_P2_010_GEO_2026-11-20/pipeline_source/UNIVERSAL_LOG_v6.0.1_control_flux_exclusion.py",
+  "pipeline_sha256": "ce0557cb4c44c15a142291e5522b446f7212136686c3035c97f12a3d0e959086",
+  "protocol_sha256": "694442710711cafc4df4c61b974ac174a6e3391f097f9291d1ef4cdeb74639b1",
+  "harness_sha256": "cef978539ec549aa32a8de4194135a03984d3dad3b86a1d949451b25a3809afd",
+  "plan_sha256": "f7f1d80fcd7a0cee0fb363b8f82f7644de483538a1a7fa02ab8c80b389a5cb17",
+  "inputs": {
+    "N064_null_seed20261123": "1507cbf15602789e1ac1f5ff6fe78b370cb7871a2942a482f37d5dacda7f3d01",
+    "N064_null_seed20261124": "980d34f91f7c9611a9bcc7d7688cd891c8780f5d646965da83f3f435ef2b6b12",
+    "N064_strong_seed20261123": "29da5b37ef143b00ee96ebe3d99380c4e85955558a31e2f910ba9033ed1e70ef",
+    "N064_strong_seed20261124": "abe187cbd56a732ca4e181fe1d4ac45c69333ff5e327f6e8fea7a31c5ec34810",
+    "N064_weak_seed20261123": "f6e476ea69c0e32507c930bf11854d3a325f0079113ecc937da97f4656d2cfc0",
+    "N100_null_seed20261125": "6b28775a402ebb8e32b36b0ba05457f2ed84afcc0a1202f3eef09c7cc041f360",
+    "N100_strong_seed20261125": "3b6771d0e29f62f439740538043e3c91aae9ead678b9db0cce9243376c42ffab"
+  },
+  "summary_path": "pancréas/ANALYSE_THERAPEUTIQUE_2026-11-22/TRANSITION_SENSITIVITY_V2/patient_control_summary.csv",
+  "local_absolute_paths_redacted": true
+}

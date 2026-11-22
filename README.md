@@ -8,9 +8,13 @@ UNIVERSAL_LOG explores how numerical streams can be analyzed along an explicitly
 
 ## Current complete whitepaper
 
-V10 is the single active complete whitepaper. It retains the V9 audit history and adds a reproducible synthetic grouped-panel integration test using the complete v6.0.1 entry point. The PDF has no embedded project ZIP or file attachments. Its SHA-256 is in the adjacent sidecar file.
+V11 is the single active complete whitepaper. It retains V10 and earlier audit history and appends a 35-call synthetic sensitivity campaign, all five control axes, the unmodified v6.0.1 core source, the environment lock, result tables, per-run derivatives and figures, logs, and the full text contents of the run-level JSON/CSV/TXT/HTML/JSONL artifacts. The PDF has no embedded project ZIP or file attachments. Its SHA-256 is in the adjacent sidecar file.
 
-The full-project snapshot ZIP is a separate companion artifact. It retains the detailed per-run outputs, logs, figures, code, inputs, and project materials. It is not embedded in the PDF and is not committed to GitHub because of its size. V9 and earlier whitepapers are archived under archive_sources/.
+The full-project snapshot ZIP is a separate companion artifact. It retains the exact detailed per-run outputs, logs, figures, code, inputs, and project materials. It is not embedded in the PDF and is not committed to GitHub because of its size. V10 and earlier whitepapers are archived under archive_sources/.
+
+The V2 synthetic campaign completed 35/35 calls with all eight technical integrity checks passed. The pipeline returned T0 in all 15 null runs; without an alarm rule this is not a false-alarm rate. On four non-null time-axis runs, errors from the injected 58% center ranged 3.99–38.15 percentage points (median 28.00), with sparse replication. Across the matrix T0 ranged 4.73–96.15%. These are configuration-dependent synthetic outputs, not general threshold validation.
+
+Four calls exceeded 300 s; the longest was 729.6 s. These are full-call timings, not per-estimator profiles. See the V2 runtime summary and audit report.
 
 The V10 PDF contains 3,523 pages (103,346,981 bytes; SHA-256 `9eb11d6d6de648aefb1c3e7cd819bb135dcac99e31c0c02e120ef0589afa4931`). Its appended audit contains 210 figures and 16 full run logs; original PNGs and detailed machine-readable outputs remain in the companion snapshot.
 

@@ -1,0 +1,119 @@
+{
+  "title": "Synthetic transition sensitivity V2",
+  "generated_utc": "2026-11-22T17:02:34.354345+00:00",
+  "status": "passed",
+  "scope": "Generated data only; output-behavior study, not clinical or biological validation.",
+  "pipeline_version": "v6.0.1-control-flux-exclusion-L7aL7b-CohenD",
+  "pipeline_sha256": "ce0557cb4c44c15a142291e5522b446f7212136686c3035c97f12a3d0e959086",
+  "protocol_sha256": "694442710711cafc4df4c61b974ac174a6e3391f097f9291d1ef4cdeb74639b1",
+  "harness_sha256": "cef978539ec549aa32a8de4194135a03984d3dad3b86a1d949451b25a3809afd",
+  "plan_sha256": "f7f1d80fcd7a0cee0fb363b8f82f7644de483538a1a7fa02ab8c80b389a5cb17",
+  "dataset_count": 7,
+  "planned_runs": 35,
+  "completed_runs": 35,
+  "errors": [],
+  "checks": {
+    "seven_deterministic_input_datasets": true,
+    "all_35_pipeline_runs_complete": true,
+    "every_input_rotated_over_all_five_numeric_controls": true,
+    "selected_control_excluded_from_analyzed_fluxes": true,
+    "all_runs_declare_29_estimators": true,
+    "diagonal_target_control_fallback_explicit": true,
+    "oscillatory_control_retained_for_every_dataset": true,
+    "each_pipeline_input_individually_meets_minimum": true
+  },
+  "n_runs_with_t0_available": 35,
+  "null_condition_t0_availability": [
+    {
+      "case_key": "N064_null_seed20261123",
+      "control": "time_index",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N064_null_seed20261123",
+      "control": "signal_primary",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N064_null_seed20261123",
+      "control": "marker_correlated",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N064_null_seed20261123",
+      "control": "marker_oscillatory",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N064_null_seed20261123",
+      "control": "noise_independent",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N064_null_seed20261124",
+      "control": "time_index",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N064_null_seed20261124",
+      "control": "signal_primary",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N064_null_seed20261124",
+      "control": "marker_correlated",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N064_null_seed20261124",
+      "control": "marker_oscillatory",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N064_null_seed20261124",
+      "control": "noise_independent",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N100_null_seed20261125",
+      "control": "time_index",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N100_null_seed20261125",
+      "control": "signal_primary",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N100_null_seed20261125",
+      "control": "marker_correlated",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N100_null_seed20261125",
+      "control": "marker_oscillatory",
+      "t0_available": true,
+      "threshold_status": "available"
+    },
+    {
+      "case_key": "N100_null_seed20261125",
+      "control": "noise_independent",
+      "t0_available": true,
+      "threshold_status": "available"
+    }
+  ],
+  "interpretation_boundary": "All results are descriptive outputs of the stated synthetic construction. T0 localization error is computed only on the time_index control for non-null conditions. No false-alarm rate is estimated because no decision/abstention rule was specified. No clinical, biological, causal, or universality claim is tested."
+}
