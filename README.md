@@ -8,9 +8,9 @@ UNIVERSAL_LOG explores how numerical streams can be analyzed along an explicitly
 
 ## Current complete whitepaper
 
-V11 is the single active complete whitepaper. It retains V10 and earlier audit history and appends a 35-call synthetic sensitivity campaign, all five control axes, the unmodified v6.0.1 core source, the environment lock, result tables, per-run derivatives and figures, logs, and the full text contents of the run-level JSON/CSV/TXT/HTML/JSONL artifacts. The PDF has no embedded project ZIP or file attachments. Its SHA-256 is in the adjacent sidecar file.
+V11 remains the single active complete whitepaper while the V12 audit is being assembled. The V12 PDF will append the current multi-domain studies and instrumentation audit after visual and hash checks. The PDF will not embed the project ZIP or file attachments.
 
-The full-project snapshot ZIP is a separate companion artifact. It retains the exact detailed per-run outputs, logs, figures, code, inputs, and project materials. It is not embedded in the PDF and is not committed to GitHub because of its size. V10 and earlier whitepapers are archived under archive_sources/.
+The full-project snapshot ZIP is a separate companion artifact. It retains the exact detailed per-run outputs, logs, figures, code, inputs, and project materials. It is not embedded in the PDF and is not committed to GitHub because of its size. Historical ZIPs remain preserved; the V12 delta process supplements rather than erases them.
 
 The V2 synthetic campaign completed 35/35 calls with all eight technical integrity checks passed. The pipeline returned T0 in all 15 null runs; without an alarm rule this is not a false-alarm rate. On four non-null time-axis runs, errors from the injected 58% center ranged 3.99–38.15 percentage points (median 28.00), with sparse replication. Across the matrix T0 ranged 4.73–96.15%. These are configuration-dependent synthetic outputs, not general threshold validation.
 
@@ -42,3 +42,11 @@ Use the Python environment and commands in the V10 test [README](pancréas/ANALY
 - Project code: MIT, see LICENSE.
 - Project-authored documentation and results: CC BY 4.0, see LICENSE-CC-BY-4.0.txt and LICENSES.md.
 - Third-party data and publications retain their own terms.
+
+## V12 work in progress
+
+The current study separates (1) domain prediction/calibration, (2) UNIVERSAL_LOG behavior over every numeric control, and (3) the measurement and data-collection chain. AI4I's full 12-control rotation is complete. Bike Sharing's 16-control rotation is in progress. UCI Air Quality is being prepared as a measurement-focused study because it pairs five sensor responses with co-located reference-analyzer values and documents sensor drift; its raw source remains local while its research-only wording and CC BY 4.0 statement are reconciled. A source audit found the `-200` missing-value sentinel and a sparse NMHC reference flow; the planned input preserves missing values and records a missingness diagnostic rather than imputing.
+
+- [Bike Sharing measurement-chain audit](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-22/DATA_PUBLIC_BENCHMARK_V2_BIKESHARING/RESULTS_MEASUREMENT_PROCESS_AUDIT_V1_FR.md)
+- [Air Quality source audit](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-22/DATA_PUBLIC_BENCHMARK_V3_AIR_QUALITY/RESULTS_SOURCE_QUALITY_AUDIT_V1_FR.md)
+- [Air Quality instrumentation protocol](pancréas/ANALYSE_THERAPEUTIQUE_2026-11-22/DATA_PUBLIC_BENCHMARK_V3_AIR_QUALITY/PROTOCOLE_AIR_QUALITY_INSTRUMENTATION_V1_FR.md)

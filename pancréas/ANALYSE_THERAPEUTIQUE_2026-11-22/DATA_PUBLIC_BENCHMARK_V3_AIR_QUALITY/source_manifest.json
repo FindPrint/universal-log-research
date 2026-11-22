@@ -1,0 +1,15 @@
+{
+  "status": "fetched",
+  "created_utc": "2026-11-22T23:02:44.910298+00:00",
+  "source_page": "https://archive.ics.uci.edu/dataset/360/air%2Bquality",
+  "doi": "10.24432/C59K5F",
+  "download_url": "https://archive.ics.uci.edu/static/public/360/air+quality.zip",
+  "archive_file": "air_quality_uci_source.zip",
+  "archive_bytes": 1543989,
+  "archive_sha256": "d4a64013fb385288a8a48d9d193ca7079b2e1bbddf6f8d458feb8c08ab2b8a2a",
+  "csv_file": "AirQualityUCI.csv",
+  "csv_bytes": 785065,
+  "csv_sha256": "13277ae5d8581e80b7be09d47c7d3d06fe9b8e957078f2cf6e859f955e62f996",
+  "fetch_script_sha256": "2d575b36ad448068a054f96fb1114dea2d98c69a07a70baebae69c6e771fbca9",
+  "distribution_policy": "Raw source retained locally only. UCI page states both research-only/noncommercial use and CC BY 4.0; do not redistribute raw data until this wording is clarified."
+}

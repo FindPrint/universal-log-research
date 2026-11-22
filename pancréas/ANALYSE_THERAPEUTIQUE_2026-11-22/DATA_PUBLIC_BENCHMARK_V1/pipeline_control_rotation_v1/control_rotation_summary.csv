@@ -1,0 +1,13 @@
+run_key,control,status,diagonal_control_requested,target_requested,target_used,target_fallback_used,target_fallback_reason,n_samples,control_monotone,control_direction,t0_status,t0_pct,t0_raw_control_value,t0_raw_control_ambiguous,analysis_flux_count,control_excluded_from_analysis_fluxes,estimator_count,pipeline_elapsed_seconds
+control_01_UDI,UDI,complete,False,Machine failure,Machine failure,False,,100,True,nondecreasing,available,49.65502665,4950.5,False,11,True,29,225.9376953
+control_02_Air_temperature_[K],Air temperature [K],complete,False,Machine failure,Machine failure,False,,100,False,non_monotone,available,97.10395775,303.64,True,11,True,29,181.5001704
+control_03_Process_temperature_[K],Process temperature [K],complete,False,Machine failure,Machine failure,False,,100,False,non_monotone,available,70.2761303,310.818,True,11,True,29,211.7850681
+control_04_Rotational_speed_[rpm],Rotational speed [rpm],complete,False,Machine failure,Machine failure,False,,100,False,non_monotone,available,87.30034047,1558.38,True,11,True,29,205.7879947
+control_05_Torque_[Nm],Torque [Nm],complete,False,Machine failure,Machine failure,False,,100,False,non_monotone,available,81.94848733,40.74,True,11,True,29,199.5839856
+control_06_Tool_wear_[min],Tool wear [min],complete,False,Machine failure,Machine failure,False,,100,False,non_monotone,available,22.5403561,99.53,True,11,True,29,194.402789
+control_07_Machine_failure,Machine failure,complete,True,Machine failure,UDI,True,"cible fixee egale au controle (diagonale) : repli sur premiere colonne != controle pour ce run uniquement, les autres controles gardent la cible fixee",100,False,non_monotone,available,55.63047162,0.02,True,11,True,29,179.4870191
+control_08_TWF,TWF,complete,False,Machine failure,Machine failure,False,,100,False,non_monotone,available,72.93729695,0.01,True,11,True,29,266.2373377
+control_09_HDF,HDF,complete,False,Machine failure,Machine failure,False,,100,False,non_monotone,available,93.30701462,0.06,True,11,True,29,204.5204621
+control_10_PWF,PWF,complete,False,Machine failure,Machine failure,False,,100,False,non_monotone,available,16.13533939,0,True,11,True,29,219.9305403
+control_11_OSF,OSF,complete,False,Machine failure,Machine failure,False,,100,False,non_monotone,available,57.50664846,0.01,True,11,True,29,236.6530028
+control_12_RNF,RNF,complete,False,Machine failure,Machine failure,False,,100,False,non_monotone,available,41.98593656,0,True,11,True,29,231.0818982

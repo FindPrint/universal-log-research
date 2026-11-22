@@ -1,0 +1,173 @@
+{
+  "status": "complete",
+  "created_utc": "2026-11-22T21:20:54.812606+00:00",
+  "source_csv": "source/hour.csv",
+  "source_csv_sha256": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
+  "rows": 17379,
+  "target": "cnt",
+  "features": [
+    "season",
+    "yr",
+    "mnth",
+    "hr",
+    "holiday",
+    "weekday",
+    "workingday",
+    "weathersit",
+    "temp",
+    "atemp",
+    "hum",
+    "windspeed"
+  ],
+  "excluded_columns": {
+    "instant": "record/time index",
+    "casual": "part of target identity: casual + registered = cnt",
+    "registered": "part of target identity: casual + registered = cnt",
+    "dteday": "parsed only for chronological integrity"
+  },
+  "task_limit": "Retrospective same-hour estimation with measured weather; not a forecast available before the hour.",
+  "folds": [
+    {
+      "name": "expanding_50_to_75",
+      "train_start_index": 0,
+      "train_end_index_exclusive": 8689,
+      "test_start_index": 8689,
+      "test_end_index_exclusive": 13034
+    },
+    {
+      "name": "expanding_75_to_100",
+      "train_start_index": 0,
+      "train_end_index_exclusive": 13034,
+      "test_start_index": 13034,
+      "test_end_index_exclusive": 17379
+    }
+  ],
+  "models": {
+    "dummy_mean": "training mean baseline",
+    "weekday_hour_mean": "training-only mean for each weekday x hour group; global training mean for a missing group",
+    "ridge_scaled": "Ridge(alpha=10), median imputation, standard scaling",
+    "random_forest": "300 trees, min_samples_leaf=2, max_features=0.9, seed=20261123",
+    "hist_gradient_boosting": "250 iterations, learning_rate=0.06, L2=1, seed=20261123"
+  },
+  "metrics": [
+    {
+      "fold": "expanding_50_to_75",
+      "model": "dummy_mean",
+      "train_rows": 8689,
+      "test_rows": 4345,
+      "test_first_instant": 8690,
+      "test_last_instant": 13034,
+      "mae": 154.90777742210994,
+      "rmse": 208.8119428369183,
+      "r2": -0.13774690319755867
+    },
+    {
+      "fold": "expanding_50_to_75",
+      "model": "weekday_hour_mean",
+      "train_rows": 8689,
+      "test_rows": 4345,
+      "test_first_instant": 8690,
+      "test_last_instant": 13034,
+      "mae": 92.13615228247644,
+      "rmse": 138.0126496698489,
+      "r2": 0.5029812400544762
+    },
+    {
+      "fold": "expanding_50_to_75",
+      "model": "ridge_scaled",
+      "train_rows": 8689,
+      "test_rows": 4345,
+      "test_first_instant": 8690,
+      "test_last_instant": 13034,
+      "mae": 120.07155535073603,
+      "rmse": 176.76053344478441,
+      "r2": 0.18472222970886454
+    },
+    {
+      "fold": "expanding_50_to_75",
+      "model": "random_forest",
+      "train_rows": 8689,
+      "test_rows": 4345,
+      "test_first_instant": 8690,
+      "test_last_instant": 13034,
+      "mae": 84.56442186644495,
+      "rmse": 121.54936739475244,
+      "r2": 0.6144857821837855
+    },
+    {
+      "fold": "expanding_50_to_75",
+      "model": "hist_gradient_boosting",
+      "train_rows": 8689,
+      "test_rows": 4345,
+      "test_first_instant": 8690,
+      "test_last_instant": 13034,
+      "mae": 79.69608320986507,
+      "rmse": 114.55743143396418,
+      "r2": 0.6575623337014976
+    },
+    {
+      "fold": "expanding_75_to_100",
+      "model": "dummy_mean",
+      "train_rows": 13034,
+      "test_rows": 4345,
+      "test_first_instant": 13035,
+      "test_last_instant": 17379,
+      "mae": 177.63510519446967,
+      "rmse": 236.50720803068307,
+      "r2": -0.1557007430584214
+    },
+    {
+      "fold": "expanding_75_to_100",
+      "model": "weekday_hour_mean",
+      "train_rows": 13034,
+      "test_rows": 4345,
+      "test_first_instant": 13035,
+      "test_last_instant": 17379,
+      "mae": 107.7182660495979,
+      "rmse": 151.5007838944007,
+      "r2": 0.525772876493817
+    },
+    {
+      "fold": "expanding_75_to_100",
+      "model": "ridge_scaled",
+      "train_rows": 13034,
+      "test_rows": 4345,
+      "test_first_instant": 13035,
+      "test_last_instant": 17379,
+      "mae": 143.11952445288017,
+      "rmse": 183.50879207584168,
+      "r2": 0.30422249585887084
+    },
+    {
+      "fold": "expanding_75_to_100",
+      "model": "random_forest",
+      "train_rows": 13034,
+      "test_rows": 4345,
+      "test_first_instant": 13035,
+      "test_last_instant": 17379,
+      "mae": 46.66880548508092,
+      "rmse": 71.42422417326853,
+      "r2": 0.8945982811323996
+    },
+    {
+      "fold": "expanding_75_to_100",
+      "model": "hist_gradient_boosting",
+      "train_rows": 13034,
+      "test_rows": 4345,
+      "test_first_instant": 13035,
+      "test_last_instant": 17379,
+      "mae": 44.539291519726135,
+      "rmse": 67.00759649570293,
+      "r2": 0.9072306078768306
+    }
+  ],
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "1.26.4",
+  "pandas": "3.0.6",
+  "scikit_learn": "1.9.1",
+  "interpretation_limit": "Public historical dataset; no external operational validation; no causal conclusion.",
+  "script_file": "run_bike_prediction_benchmark_v2.py",
+  "script_sha256": "6f45bd6a416e2d9cc6fa413df295dd044a3a4fad8384da98f98f62f5b743a1b5",
+  "feature_encoding_note": "V2 follow-up model used category codes as numeric values; see the post hoc V3 protocol for explicit one-hot encoding."
+}

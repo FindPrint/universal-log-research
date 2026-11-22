@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "created_utc": "2026-11-22T22:32:09.542451+00:00",
+  "source_csv": "source/hour.csv",
+  "source_csv_sha256": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
+  "source_rows": 17379,
+  "source_first_timestamp": "2011-01-01T00:00:00",
+  "source_last_timestamp": "2012-12-31T23:00:00",
+  "unique_observed_timestamps": 17379,
+  "expected_clock_hour_slots_in_inclusive_range": 17544,
+  "unrepresented_clock_hour_slots_between_first_and_last": 165,
+  "inter_record_gap_counts_in_hours": {
+    "1": 17303,
+    "2": 64,
+    "3": 6,
+    "7": 1,
+    "13": 1,
+    "14": 1,
+    "23": 1,
+    "37": 1
+  },
+  "maximum_inter_record_gap_hours": 37.0,
+  "instant_monotone_increasing": true,
+  "timestamps_monotone_increasing": true,
+  "casual_plus_registered_equals_cnt_for_every_row": true,
+  "source_readme_reports_hour_records": 17379,
+  "readme_provenance_note": "UCI Readme says the 2011-2012 hourly/daily data originate from Capital Bikeshare and weather/seasonal information was added; weather information is attributed there to freemeteo.",
+  "gap_interpretation": "The file has fewer timestamped records than clock-hour slots in the span. The included Readme does not explain these specific gaps; no zero-rental imputation or missingness mechanism is assumed.",
+  "instrumentation_limit": "The included source files do not identify the weather sensor models, calibration records, sampling instruments, or sensor-level uncertainty.",
+  "action_taken": "No rows imputed, removed, or reordered by this audit."
+}

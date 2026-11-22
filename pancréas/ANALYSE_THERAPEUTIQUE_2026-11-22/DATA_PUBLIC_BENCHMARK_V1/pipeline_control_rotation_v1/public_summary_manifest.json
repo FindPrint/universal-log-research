@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "source_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "plan_sha256": "5dedf5806b3b563dfa5dca6bd650918f747201369d1b1172f015c5ec9dd8fe80",
+  "state_sha256": "d7eb110dd3fbbda30dd9d893e73774acff5b8020acdc1e38de799b083a7fcffd",
+  "summary_sha256": "a93ffe6328ae64628b10394e0ab1f0eee44e4234cd8f3fd0c718b8b9e82b76a7",
+  "report_sha256": "a4fa1cf98b7ea20a1f14bcaae31f100e7e6f4ee574bf22e33bb40ee1ffd6b297",
+  "plot_sha256": "824291f027eff170baf698cb5202a389cc4b2fc4ecfe2cf7caf8b69a5f70eba8",
+  "available_t0_count": 12,
+  "planned_control_count": 12,
+  "completed_run_count": 12,
+  "error_count": 0,
+  "pending_count": 0,
+  "claim_limit": "Synthetic behavior/sensitivity only; no prediction or domain validation."
+}

@@ -1,0 +1,5 @@
+# Keep text reproducible with LF endings on Windows and Linux.
+* text=auto eol=lf
+# Preserve byte-exact third-party source datasets used with adjacent SHA-256 manifests.
+**/source/*.csv -text
+**/source/*.zip -text

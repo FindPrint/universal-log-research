@@ -1,0 +1,63 @@
+{
+  "status": "complete",
+  "created_utc": "2026-11-22T20:28:53.455422+00:00",
+  "dataset_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "rows": 10000,
+  "target": "Machine failure",
+  "positive_rows": 339,
+  "positive_prevalence": 0.0339,
+  "features": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "excluded_identifier": "UDI (used only to preserve order and define forward holdouts)",
+  "excluded_label_leakage_columns": [
+    "HDF",
+    "OSF",
+    "PWF",
+    "RNF",
+    "TWF"
+  ],
+  "split": "three expanding-window forward holdouts; each test block is the next 2,000 observations; no random shuffle",
+  "threshold": "0.5 for classification metrics; ROC-AUC and average precision use predicted probability",
+  "models": [
+    "most_frequent_baseline",
+    "logistic_regression_balanced",
+    "random_forest_balanced"
+  ],
+  "limitations": [
+    "This AI4I dataset is synthetic, not a real factory cohort.",
+    "These are prediction benchmark metrics; they do not validate T0, TLog, causal effects, or medical use.",
+    "The pipeline itself is not used as a classifier in this benchmark; its analysis runs are a separate experiment.",
+    "Forward splitting is based on UDI order; UDI is an identifier, not a validated physical clock."
+  ],
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "scikit_learn": "1.9.1",
+  "numpy": "1.26.4",
+  "pandas": "3.0.6",
+  "script_sha256": "1d35b418a0553edc2823772051639265d13d06ed984b8912b5d86a4238dc3902",
+  "model_parameters": {
+    "most_frequent_baseline": {
+      "strategy": "most_frequent"
+    },
+    "logistic_regression_balanced": {
+      "max_iter": 2000,
+      "class_weight": "balanced",
+      "random_state": 20261122
+    },
+    "random_forest_balanced": {
+      "n_estimators": 300,
+      "class_weight": "balanced",
+      "min_samples_leaf": 2,
+      "random_state": 20261122,
+      "n_jobs": 1
+    }
+  },
+  "summary_csv_sha256": "9e15e7ccd77d412ca793b078e4125f7862c5dfc93f90b616c98258861006fa84",
+  "predictions_csv_sha256": "73fdaa09f1c593110bd4ccf1c329d396a1d162585eda23b1bae0c06d045f0932"
+}

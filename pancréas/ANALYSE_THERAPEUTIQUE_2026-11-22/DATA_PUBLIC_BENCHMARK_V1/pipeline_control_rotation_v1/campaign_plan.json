@@ -1,0 +1,138 @@
+{
+  "title": "AI4I synthetic benchmark: all numeric controls V1",
+  "status": "plan_frozen_before_pipeline_calls",
+  "created_utc": "2026-11-22T20:36:04.574276+00:00",
+  "source_dataset_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "source_dataset_rows": 10000,
+  "source_dataset_type": "synthetic data intended to reflect predictive-maintenance data; not a real plant cohort",
+  "input_csv_sha256": "99ffb642e7cfaa8e1f71accd06adc0ee4b1c0588b4cf1f38a864c795aeccbd4c",
+  "input_csv": "inputs/ai4i_100_bins.csv",
+  "aggregation": {
+    "bins": 100,
+    "source_rows_per_bin": 100,
+    "method": "mean of each numeric column over consecutive UDI-ordered rows",
+    "category_columns_excluded": [
+      "Product ID",
+      "Type"
+    ]
+  },
+  "target": "Machine failure",
+  "numeric_controls_all": [
+    "UDI",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Machine failure",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "planned_runs": [
+    {
+      "run_key": "control_01_UDI",
+      "control": "UDI",
+      "index": 0,
+      "seed": 20261122,
+      "diagonal_control_equals_target": false
+    },
+    {
+      "run_key": "control_02_Air_temperature_[K]",
+      "control": "Air temperature [K]",
+      "index": 1,
+      "seed": 20261222,
+      "diagonal_control_equals_target": false
+    },
+    {
+      "run_key": "control_03_Process_temperature_[K]",
+      "control": "Process temperature [K]",
+      "index": 2,
+      "seed": 20261322,
+      "diagonal_control_equals_target": false
+    },
+    {
+      "run_key": "control_04_Rotational_speed_[rpm]",
+      "control": "Rotational speed [rpm]",
+      "index": 3,
+      "seed": 20261422,
+      "diagonal_control_equals_target": false
+    },
+    {
+      "run_key": "control_05_Torque_[Nm]",
+      "control": "Torque [Nm]",
+      "index": 4,
+      "seed": 20261522,
+      "diagonal_control_equals_target": false
+    },
+    {
+      "run_key": "control_06_Tool_wear_[min]",
+      "control": "Tool wear [min]",
+      "index": 5,
+      "seed": 20261622,
+      "diagonal_control_equals_target": false
+    },
+    {
+      "run_key": "control_07_Machine_failure",
+      "control": "Machine failure",
+      "index": 6,
+      "seed": 20261722,
+      "diagonal_control_equals_target": true
+    },
+    {
+      "run_key": "control_08_TWF",
+      "control": "TWF",
+      "index": 7,
+      "seed": 20261822,
+      "diagonal_control_equals_target": false
+    },
+    {
+      "run_key": "control_09_HDF",
+      "control": "HDF",
+      "index": 8,
+      "seed": 20261922,
+      "diagonal_control_equals_target": false
+    },
+    {
+      "run_key": "control_10_PWF",
+      "control": "PWF",
+      "index": 9,
+      "seed": 20262022,
+      "diagonal_control_equals_target": false
+    },
+    {
+      "run_key": "control_11_OSF",
+      "control": "OSF",
+      "index": 10,
+      "seed": 20262122,
+      "diagonal_control_equals_target": false
+    },
+    {
+      "run_key": "control_12_RNF",
+      "control": "RNF",
+      "index": 11,
+      "seed": 20262222,
+      "diagonal_control_equals_target": false
+    }
+  ],
+  "planned_run_count": 12,
+  "pipeline_source_sha256": "ce0557cb4c44c15a142291e5522b446f7212136686c3035c97f12a3d0e959086",
+  "protocol_sha256": "7dab4755d33426046b97f1c2a92a0ec9a490f7aa4dab46be71677e64e3680647",
+  "configuration": {
+    "control_mode": "single per call",
+    "target_policy": "fixed",
+    "domain": "generic",
+    "mode": "fast",
+    "n_scenarios": 8,
+    "max_workers": 1,
+    "harmonic_validation": false,
+    "l7b_mode": "light",
+    "plot_suppression": true,
+    "plot_suppression_method": "runtime monkeypatch of plotting functions only; not part of the pipeline public API"
+  },
+  "claim_limits": [
+    "Behavioral analysis only; no predictive, causal, operational, medical, or universal claim."
+  ]
+}

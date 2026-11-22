@@ -1,0 +1,59 @@
+{
+  "status": "downloaded_and_shape_checked",
+  "retrieved_utc": "2026-11-22T20:31:24.890704+00:00",
+  "selected_source": {
+    "name": "Kaggle mirror by original dataset author",
+    "url": "https://www.kaggle.com/api/v1/datasets/download/stephanmatzka/predictive-maintenance-dataset-ai4i-2020",
+    "attribution": "Stephan Matzka, Predictive Maintenance Dataset (AI4I 2020), Kaggle; original dataset citation below.",
+    "http_content_type": "application/zip",
+    "archive_sha256": "1e913d66e4c5e6123dfcca9f03785406f41e55713fa20f33bf45fd90e3b64da0"
+  },
+  "fallback_attempts": [],
+  "cross_source_identity_checks": [
+    {
+      "source": "UCI Machine Learning Repository",
+      "archive_sha256": "f601f14294bcf190f9d720676b7f0aea46a26cde9ab8ebc7b4f8174d9d26b252",
+      "csv_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+      "csv_byte_identical_to_selected": true,
+      "http_content_type": ""
+    }
+  ],
+  "dataset_citation": "AI4I 2020 Predictive Maintenance Dataset [Dataset]. (2020). UCI Machine Learning Repository. https://doi.org/10.24432/C5HS5C.",
+  "license": "CC BY 4.0, as stated by UCI; attribution required.",
+  "dataset_type": "synthetic data intended to reflect predictive-maintenance data; not a real plant cohort",
+  "rows": 10000,
+  "columns": [
+    "UDI",
+    "Product ID",
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Machine failure",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "numeric_columns": [
+    "UDI",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Machine failure",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "machine_failure_count": 339,
+  "csv_size_bytes": 522048,
+  "csv_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "raw_dataset_path": "source/ai4i2020.csv"
+}

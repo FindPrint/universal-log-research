@@ -1,0 +1,209 @@
+{
+  "title": "UCI Air Quality: measurement/analysis flow controls V1",
+  "status": "plan_frozen_before_pipeline_calls",
+  "created_utc": "2026-11-22T22:58:51.540926+00:00",
+  "source_sha256": "13277ae5d8581e80b7be09d47c7d3d06fe9b8e957078f2cf6e859f955e62f996",
+  "input_csv_sha256": "0b86ca2b0f591c1a57af318b1efe295e6cf77ee45ba60ae31c9bcfb8d5c1e30b",
+  "input_csv": "inputs/air_quality_100_time_bins.csv",
+  "input_rows": 100,
+  "source_nonempty_rows": 9357,
+  "target_requested": "CO(GT)",
+  "numeric_controls_all": [
+    "CO(GT)",
+    "PT08.S1(CO)",
+    "NMHC(GT)",
+    "C6H6(GT)",
+    "PT08.S2(NMHC)",
+    "NOx(GT)",
+    "PT08.S3(NOx)",
+    "NO2(GT)",
+    "PT08.S4(NO2)",
+    "PT08.S5(O3)",
+    "T",
+    "RH",
+    "AH",
+    "time_index_hours",
+    "missing_fraction_numeric"
+  ],
+  "per_control_valid_bins": {
+    "CO(GT)": 98,
+    "PT08.S1(CO)": 100,
+    "NMHC(GT)": 12,
+    "C6H6(GT)": 100,
+    "PT08.S2(NMHC)": 100,
+    "NOx(GT)": 97,
+    "PT08.S3(NOx)": 100,
+    "NO2(GT)": 97,
+    "PT08.S4(NO2)": 100,
+    "PT08.S5(O3)": 100,
+    "T": 100,
+    "RH": 100,
+    "AH": 100,
+    "time_index_hours": 100,
+    "missing_fraction_numeric": 100
+  },
+  "source_flow_missing_rates_after_binning": {
+    "CO(GT)": 0.02,
+    "PT08.S1(CO)": 0.0,
+    "NMHC(GT)": 0.88,
+    "C6H6(GT)": 0.0,
+    "PT08.S2(NMHC)": 0.0,
+    "NOx(GT)": 0.03,
+    "PT08.S3(NOx)": 0.0,
+    "NO2(GT)": 0.03,
+    "PT08.S4(NO2)": 0.0,
+    "PT08.S5(O3)": 0.0,
+    "T": 0.0,
+    "RH": 0.0,
+    "AH": 0.0
+  },
+  "derived_controls": {
+    "time_index_hours": "mean elapsed hour in each consecutive source block; ordering variable derived from Date/Time",
+    "missing_fraction_numeric": "fraction of source numeric cells coded -200 within each block; process-of-measurement diagnostic, not a source sensor channel"
+  },
+  "sentinel_policy": "Convert documented -200 missing sentinel to NaN before block means; no imputation. Empty flow bins remain blank/NaN.",
+  "aggregation": "100 consecutive, near-equal groups in original, timestamp-verified row order; per-column means ignore NaN; no rows are reordered.",
+  "planned_runs": [
+    {
+      "run_key": "control_01_CO(GT)",
+      "control": "CO(GT)",
+      "seed": 20261124,
+      "valid_bins_before_call": 98,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": true
+    },
+    {
+      "run_key": "control_02_PT08.S1(CO)",
+      "control": "PT08.S1(CO)",
+      "seed": 20261224,
+      "valid_bins_before_call": 100,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_03_NMHC(GT)",
+      "control": "NMHC(GT)",
+      "seed": 20261324,
+      "valid_bins_before_call": 12,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_04_C6H6(GT)",
+      "control": "C6H6(GT)",
+      "seed": 20261424,
+      "valid_bins_before_call": 100,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_05_PT08.S2(NMHC)",
+      "control": "PT08.S2(NMHC)",
+      "seed": 20261524,
+      "valid_bins_before_call": 100,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_06_NOx(GT)",
+      "control": "NOx(GT)",
+      "seed": 20261624,
+      "valid_bins_before_call": 97,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_07_PT08.S3(NOx)",
+      "control": "PT08.S3(NOx)",
+      "seed": 20261724,
+      "valid_bins_before_call": 100,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_08_NO2(GT)",
+      "control": "NO2(GT)",
+      "seed": 20261824,
+      "valid_bins_before_call": 97,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_09_PT08.S4(NO2)",
+      "control": "PT08.S4(NO2)",
+      "seed": 20261924,
+      "valid_bins_before_call": 100,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_10_PT08.S5(O3)",
+      "control": "PT08.S5(O3)",
+      "seed": 20262024,
+      "valid_bins_before_call": 100,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_11_T",
+      "control": "T",
+      "seed": 20262124,
+      "valid_bins_before_call": 100,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_12_RH",
+      "control": "RH",
+      "seed": 20262224,
+      "valid_bins_before_call": 100,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_13_AH",
+      "control": "AH",
+      "seed": 20262324,
+      "valid_bins_before_call": 100,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_14_time_index_hours",
+      "control": "time_index_hours",
+      "seed": 20262424,
+      "valid_bins_before_call": 100,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_15_missing_fraction_numeric",
+      "control": "missing_fraction_numeric",
+      "seed": 20262524,
+      "valid_bins_before_call": 100,
+      "expected_minimum_valid_control_points": 50,
+      "diagonal_control_requested": false
+    }
+  ],
+  "planned_run_count": 15,
+  "pipeline_source_sha256": "ce0557cb4c44c15a142291e5522b446f7212136686c3035c97f12a3d0e959086",
+  "protocol_sha256": "36bd4d418700bd3238cdbf84d3e55cef37293bc5b672dd27d8afe54efa5ca180",
+  "configuration": {
+    "target_policy": "fixed",
+    "mode": "fast",
+    "n_scenarios": 8,
+    "max_workers": 1,
+    "harmonic_validation": false,
+    "l7b_mode": "light",
+    "plots": false,
+    "plot_suppression_method": "runtime monkeypatch of rendering functions only",
+    "minimum_control_points_from_v6_mode": 50
+  },
+  "claim_limits": [
+    "Results describe software outputs; they are not causal or predictive conclusions about pollution.",
+    "Different controls may have different valid-bin counts; do not compare them as identical support.",
+    "The NMHC(GT) full-span control is expected to be rejected as too short if it has fewer than 50 valid bins; this is a support limitation, not a successful threshold estimate.",
+    "Control equal to requested target is reported separately if v6.0.1 substitutes the target.",
+    "Raw dataset is retained locally pending resolution of the UCI research-only/noncommercial wording versus its displayed CC BY 4.0 license."
+  ]
+}

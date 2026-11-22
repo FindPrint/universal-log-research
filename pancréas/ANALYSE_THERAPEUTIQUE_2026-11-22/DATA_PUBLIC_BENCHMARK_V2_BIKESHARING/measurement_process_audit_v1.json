@@ -1,0 +1,641 @@
+{
+  "status": "complete",
+  "created_utc": "2026-11-22T22:41:18.117070+00:00",
+  "source_csv": "source/hour.csv",
+  "source_csv_sha256": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
+  "source_readme_sha256": "b92c8628622948bf0828c43a1b315d1517c3d7fd63654730d0dea379b8e88175",
+  "source_rows": 17379,
+  "measurement_process_as_described_by_source": {
+    "rental_records": "The Readme describes a two-year historical Capital Bikeshare log aggregated hourly and daily.",
+    "weather_provenance": "The Readme attributes weather information to freemeteo.",
+    "normalization_scales_stated_in_readme": {
+      "temp": 41,
+      "atemp": 50,
+      "hum": 100,
+      "windspeed": 67
+    },
+    "weather_sensor_model_calibration_sampling_details_or_uncertainty_present": false,
+    "station_availability_or_fleet_capacity_series_present": false
+  },
+  "timestamp_coverage": {
+    "first": "2011-01-01T00:00:00",
+    "last": "2012-12-31T23:00:00",
+    "rows": 17379,
+    "expected_hour_slots_inclusive": 17544,
+    "unrepresented_hour_slots": 165,
+    "gaps": [
+      {
+        "previous_record": "2011-01-02T04:00:00",
+        "next_record": "2011-01-02T06:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-01-03T01:00:00",
+        "next_record": "2011-01-03T04:00:00",
+        "gap_hours": 3,
+        "unrepresented_hours_between": 2
+      },
+      {
+        "previous_record": "2011-01-04T02:00:00",
+        "next_record": "2011-01-04T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-01-05T02:00:00",
+        "next_record": "2011-01-05T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-01-06T02:00:00",
+        "next_record": "2011-01-06T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-01-07T02:00:00",
+        "next_record": "2011-01-07T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-01-11T02:00:00",
+        "next_record": "2011-01-11T05:00:00",
+        "gap_hours": 3,
+        "unrepresented_hours_between": 2
+      },
+      {
+        "previous_record": "2011-01-12T02:00:00",
+        "next_record": "2011-01-12T05:00:00",
+        "gap_hours": 3,
+        "unrepresented_hours_between": 2
+      },
+      {
+        "previous_record": "2011-01-14T03:00:00",
+        "next_record": "2011-01-14T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-01-17T23:00:00",
+        "next_record": "2011-01-18T12:00:00",
+        "gap_hours": 13,
+        "unrepresented_hours_between": 12
+      },
+      {
+        "previous_record": "2011-01-19T02:00:00",
+        "next_record": "2011-01-19T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-01-22T04:00:00",
+        "next_record": "2011-01-22T06:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-01-23T03:00:00",
+        "next_record": "2011-01-23T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-01-24T01:00:00",
+        "next_record": "2011-01-24T03:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-01-25T02:00:00",
+        "next_record": "2011-01-25T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-01-26T02:00:00",
+        "next_record": "2011-01-26T05:00:00",
+        "gap_hours": 3,
+        "unrepresented_hours_between": 2
+      },
+      {
+        "previous_record": "2011-01-26T17:00:00",
+        "next_record": "2011-01-27T16:00:00",
+        "gap_hours": 23,
+        "unrepresented_hours_between": 22
+      },
+      {
+        "previous_record": "2011-01-28T03:00:00",
+        "next_record": "2011-01-28T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-01-29T04:00:00",
+        "next_record": "2011-01-29T06:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-01-30T05:00:00",
+        "next_record": "2011-01-30T07:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-01T03:00:00",
+        "next_record": "2011-02-01T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-03T03:00:00",
+        "next_record": "2011-02-03T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-04T03:00:00",
+        "next_record": "2011-02-04T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-09T03:00:00",
+        "next_record": "2011-02-09T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-10T02:00:00",
+        "next_record": "2011-02-10T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-11T02:00:00",
+        "next_record": "2011-02-11T05:00:00",
+        "gap_hours": 3,
+        "unrepresented_hours_between": 2
+      },
+      {
+        "previous_record": "2011-02-13T04:00:00",
+        "next_record": "2011-02-13T06:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-15T02:00:00",
+        "next_record": "2011-02-15T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-16T01:00:00",
+        "next_record": "2011-02-16T03:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-20T04:00:00",
+        "next_record": "2011-02-20T06:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-21T23:00:00",
+        "next_record": "2011-02-22T06:00:00",
+        "gap_hours": 7,
+        "unrepresented_hours_between": 6
+      },
+      {
+        "previous_record": "2011-02-23T03:00:00",
+        "next_record": "2011-02-23T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-24T03:00:00",
+        "next_record": "2011-02-24T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-25T03:00:00",
+        "next_record": "2011-02-25T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-27T04:00:00",
+        "next_record": "2011-02-27T06:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-28T01:00:00",
+        "next_record": "2011-02-28T03:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-02-28T03:00:00",
+        "next_record": "2011-02-28T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-03-06T04:00:00",
+        "next_record": "2011-03-06T06:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-03-07T01:00:00",
+        "next_record": "2011-03-07T03:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-03-10T02:00:00",
+        "next_record": "2011-03-10T05:00:00",
+        "gap_hours": 3,
+        "unrepresented_hours_between": 2
+      },
+      {
+        "previous_record": "2011-03-11T03:00:00",
+        "next_record": "2011-03-11T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-03-13T01:00:00",
+        "next_record": "2011-03-13T03:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-03-14T03:00:00",
+        "next_record": "2011-03-14T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-03-15T02:00:00",
+        "next_record": "2011-03-15T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-03-16T01:00:00",
+        "next_record": "2011-03-16T03:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-03-18T03:00:00",
+        "next_record": "2011-03-18T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-03-21T03:00:00",
+        "next_record": "2011-03-21T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-03-23T03:00:00",
+        "next_record": "2011-03-23T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-03-27T04:00:00",
+        "next_record": "2011-03-27T06:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-03-28T03:00:00",
+        "next_record": "2011-03-28T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-04-11T02:00:00",
+        "next_record": "2011-04-11T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-08-27T17:00:00",
+        "next_record": "2011-08-28T07:00:00",
+        "gap_hours": 14,
+        "unrepresented_hours_between": 13
+      },
+      {
+        "previous_record": "2011-09-06T00:00:00",
+        "next_record": "2011-09-06T02:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-09-08T01:00:00",
+        "next_record": "2011-09-08T03:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-09-12T02:00:00",
+        "next_record": "2011-09-12T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-10-19T02:00:00",
+        "next_record": "2011-10-19T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-11-28T01:00:00",
+        "next_record": "2011-11-28T03:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-12-25T03:00:00",
+        "next_record": "2011-12-25T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-12-26T02:00:00",
+        "next_record": "2011-12-26T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2011-12-28T03:00:00",
+        "next_record": "2011-12-28T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-01-02T02:00:00",
+        "next_record": "2012-01-02T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-01-10T02:00:00",
+        "next_record": "2012-01-10T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-01-17T02:00:00",
+        "next_record": "2012-01-17T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-02-06T02:00:00",
+        "next_record": "2012-02-06T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-02-20T03:00:00",
+        "next_record": "2012-02-20T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-02-21T02:00:00",
+        "next_record": "2012-02-21T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-02-29T03:00:00",
+        "next_record": "2012-02-29T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-03-11T01:00:00",
+        "next_record": "2012-03-11T03:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-04-02T02:00:00",
+        "next_record": "2012-04-02T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-04-11T03:00:00",
+        "next_record": "2012-04-11T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-10-29T00:00:00",
+        "next_record": "2012-10-30T13:00:00",
+        "gap_hours": 37,
+        "unrepresented_hours_between": 36
+      },
+      {
+        "previous_record": "2012-11-08T02:00:00",
+        "next_record": "2012-11-08T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-11-29T02:00:00",
+        "next_record": "2012-11-29T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-12-24T03:00:00",
+        "next_record": "2012-12-24T05:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      },
+      {
+        "previous_record": "2012-12-25T02:00:00",
+        "next_record": "2012-12-25T04:00:00",
+        "gap_hours": 2,
+        "unrepresented_hours_between": 1
+      }
+    ]
+  },
+  "value_resolution_and_endpoint_descriptions": {
+    "temp": {
+      "n_nonmissing": 17379,
+      "n_unique": 50,
+      "minimum_observed": 0.02,
+      "maximum_observed": 1.0,
+      "rows_at_minimum": 17,
+      "rows_at_maximum": 1,
+      "smallest_positive_step_between_unique_values": 0.019999999999999907,
+      "n_unique_values_rounded_to_2_decimals": 50
+    },
+    "atemp": {
+      "n_nonmissing": 17379,
+      "n_unique": 65,
+      "minimum_observed": 0.0,
+      "maximum_observed": 1.0,
+      "rows_at_minimum": 2,
+      "rows_at_maximum": 1,
+      "smallest_positive_step_between_unique_values": 0.015099999999999947,
+      "n_unique_values_rounded_to_2_decimals": 65
+    },
+    "hum": {
+      "n_nonmissing": 17379,
+      "n_unique": 89,
+      "minimum_observed": 0.0,
+      "maximum_observed": 1.0,
+      "rows_at_minimum": 22,
+      "rows_at_maximum": 270,
+      "smallest_positive_step_between_unique_values": 0.009999999999999898,
+      "n_unique_values_rounded_to_2_decimals": 89
+    },
+    "windspeed": {
+      "n_nonmissing": 17379,
+      "n_unique": 30,
+      "minimum_observed": 0.0,
+      "maximum_observed": 0.8507,
+      "rows_at_minimum": 2180,
+      "rows_at_maximum": 2,
+      "smallest_positive_step_between_unique_values": 0.014899999999999913,
+      "n_unique_values_rounded_to_2_decimals": 30
+    },
+    "cnt": {
+      "n_nonmissing": 17379,
+      "n_unique": 869,
+      "minimum_observed": 1.0,
+      "maximum_observed": 977.0,
+      "rows_at_minimum": 158,
+      "rows_at_maximum": 1,
+      "smallest_positive_step_between_unique_values": 1.0,
+      "n_unique_values_rounded_to_2_decimals": 869
+    },
+    "casual": {
+      "n_nonmissing": 17379,
+      "n_unique": 322,
+      "minimum_observed": 0.0,
+      "maximum_observed": 367.0,
+      "rows_at_minimum": 1581,
+      "rows_at_maximum": 1,
+      "smallest_positive_step_between_unique_values": 1.0,
+      "n_unique_values_rounded_to_2_decimals": 322
+    },
+    "registered": {
+      "n_nonmissing": 17379,
+      "n_unique": 776,
+      "minimum_observed": 0.0,
+      "maximum_observed": 886.0,
+      "rows_at_minimum": 24,
+      "rows_at_maximum": 1,
+      "smallest_positive_step_between_unique_values": 1.0,
+      "n_unique_values_rounded_to_2_decimals": 776
+    }
+  },
+  "weather_category_record_counts": {
+    "1": 11413,
+    "2": 4544,
+    "3": 1419,
+    "4": 3
+  },
+  "largest_adjacent_record_cnt_changes": [
+    {
+      "timestamp": "2012-09-06T09:00:00",
+      "previous_timestamp": "2012-09-06T08:00:00",
+      "cnt_previous": 646,
+      "cnt_current": 123,
+      "cnt_difference": -523,
+      "gap_hours": 1
+    },
+    {
+      "timestamp": "2012-09-20T17:00:00",
+      "previous_timestamp": "2012-09-20T16:00:00",
+      "cnt_previous": 457,
+      "cnt_current": 976,
+      "cnt_difference": 519,
+      "gap_hours": 1
+    },
+    {
+      "timestamp": "2012-08-20T19:00:00",
+      "previous_timestamp": "2012-08-20T18:00:00",
+      "cnt_previous": 815,
+      "cnt_current": 299,
+      "cnt_difference": -516,
+      "gap_hours": 1
+    },
+    {
+      "timestamp": "2012-09-26T09:00:00",
+      "previous_timestamp": "2012-09-26T08:00:00",
+      "cnt_previous": 838,
+      "cnt_current": 334,
+      "cnt_difference": -504,
+      "gap_hours": 1
+    },
+    {
+      "timestamp": "2012-10-16T17:00:00",
+      "previous_timestamp": "2012-10-16T16:00:00",
+      "cnt_previous": 446,
+      "cnt_current": 943,
+      "cnt_difference": 497,
+      "gap_hours": 1
+    },
+    {
+      "timestamp": "2012-09-26T17:00:00",
+      "previous_timestamp": "2012-09-26T16:00:00",
+      "cnt_previous": 468,
+      "cnt_current": 953,
+      "cnt_difference": 485,
+      "gap_hours": 1
+    },
+    {
+      "timestamp": "2012-06-26T17:00:00",
+      "previous_timestamp": "2012-06-26T16:00:00",
+      "cnt_previous": 416,
+      "cnt_current": 900,
+      "cnt_difference": 484,
+      "gap_hours": 1
+    },
+    {
+      "timestamp": "2012-10-16T09:00:00",
+      "previous_timestamp": "2012-10-16T08:00:00",
+      "cnt_previous": 835,
+      "cnt_current": 355,
+      "cnt_difference": -480,
+      "gap_hours": 1
+    },
+    {
+      "timestamp": "2012-08-16T17:00:00",
+      "previous_timestamp": "2012-08-16T16:00:00",
+      "cnt_previous": 419,
+      "cnt_current": 897,
+      "cnt_difference": 478,
+      "gap_hours": 1
+    },
+    {
+      "timestamp": "2012-06-19T17:00:00",
+      "previous_timestamp": "2012-06-19T16:00:00",
+      "cnt_previous": 334,
+      "cnt_current": 811,
+      "cnt_difference": 477,
+      "gap_hours": 1
+    }
+  ],
+  "interpretive_boundary": "Endpoint concentrations, quantization, gaps, category changes, or large count changes are descriptive candidates for follow-up. They do not establish instrument clipping, a collection-system threshold, a causal event, or an explanation for any UNIVERSAL_LOG T0. The source lacks sensor calibration and system-availability logs.",
+  "data_handling": "No imputation, filtering, reordering, or alteration of source records was performed."
+}

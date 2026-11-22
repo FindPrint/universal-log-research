@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "finished_utc": "2026-11-22T21:20:16.468963+00:00",
+  "completed_count": 12,
+  "error_count": 0,
+  "planned_count": 12,
+  "control_count": 12,
+  "input_sha256": "99ffb642e7cfaa8e1f71accd06adc0ee4b1c0588b4cf1f38a864c795aeccbd4c",
+  "pipeline_sha256": "ce0557cb4c44c15a142291e5522b446f7212136686c3035c97f12a3d0e959086",
+  "plan_sha256": "5dedf5806b3b563dfa5dca6bd650918f747201369d1b1172f015c5ec9dd8fe80",
+  "summary_csv_sha256": "096f81646cba9a6e506f8255bb91fce9f3bd781a862df1517776e2bff5a36921",
+  "plot_functions_skipped": [
+    "plot_complexity_landscape",
+    "plot_complexity_landscape_improved",
+    "plot_csd_consensus_diagnostics",
+    "plot_csd_correlation_analysis",
+    "plot_csd_estimator_consensus",
+    "plot_estimator_redundancy",
+    "plot_holographic_tension",
+    "plot_noise_diagnostic",
+    "plot_post_threshold_analysis",
+    "plot_raw_fluxes",
+    "plot_separation_heatmap",
+    "plot_separation_heatmap_clustermap",
+    "plot_stability_analysis",
+    "plot_threshold_scan"
+  ],
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "pandas": "3.0.6"
+  },
+  "elapsed_seconds_per_control": {
+    "UDI": 225.9376952999737,
+    "Air temperature [K]": 181.50017039995873,
+    "Process temperature [K]": 211.78506810002727,
+    "Rotational speed [rpm]": 205.78799470001832,
+    "Torque [Nm]": 199.58398560003843,
+    "Tool wear [min]": 194.4027889999561,
+    "Machine failure": 179.48701910005184,
+    "TWF": 266.2373376999749,
+    "HDF": 204.52046209998662,
+    "PWF": 219.9305403000326,
+    "OSF": 236.65300280001247,
+    "RNF": 231.08189820003463
+  }
+}

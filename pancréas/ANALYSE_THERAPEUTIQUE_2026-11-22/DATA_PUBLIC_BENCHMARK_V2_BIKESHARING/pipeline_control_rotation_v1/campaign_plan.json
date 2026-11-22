@@ -1,0 +1,148 @@
+{
+  "title": "UCI Bike Sharing: all numeric controls V1",
+  "status": "plan_frozen_before_pipeline_calls",
+  "created_utc": "2026-11-22T21:10:06.527512+00:00",
+  "source_csv_sha256": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
+  "input_csv_sha256": "24bfcb0e48ed17d56c336a0726a482ae92b8fd393e352c7e4aa1a028f81240ab",
+  "input_csv": "inputs/bike_hour_100_bins.csv",
+  "target": "cnt",
+  "numeric_controls_all": [
+    "instant",
+    "season",
+    "yr",
+    "mnth",
+    "hr",
+    "holiday",
+    "weekday",
+    "workingday",
+    "weathersit",
+    "temp",
+    "atemp",
+    "hum",
+    "windspeed",
+    "casual",
+    "registered",
+    "cnt"
+  ],
+  "source_rows": 17379,
+  "bin_count": 100,
+  "aggregation": "mean of all numeric columns over 100 consecutive, near-equal blocks in original hour/instant order",
+  "linked_target_fluxes": {
+    "casual": "component of cnt",
+    "registered": "component of cnt"
+  },
+  "planned_runs": [
+    {
+      "run_key": "control_01_instant",
+      "control": "instant",
+      "seed": 20261123,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_02_season",
+      "control": "season",
+      "seed": 20261223,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_03_yr",
+      "control": "yr",
+      "seed": 20261323,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_04_mnth",
+      "control": "mnth",
+      "seed": 20261423,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_05_hr",
+      "control": "hr",
+      "seed": 20261523,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_06_holiday",
+      "control": "holiday",
+      "seed": 20261623,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_07_weekday",
+      "control": "weekday",
+      "seed": 20261723,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_08_workingday",
+      "control": "workingday",
+      "seed": 20261823,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_09_weathersit",
+      "control": "weathersit",
+      "seed": 20261923,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_10_temp",
+      "control": "temp",
+      "seed": 20262023,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_11_atemp",
+      "control": "atemp",
+      "seed": 20262123,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_12_hum",
+      "control": "hum",
+      "seed": 20262223,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_13_windspeed",
+      "control": "windspeed",
+      "seed": 20262323,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_14_casual",
+      "control": "casual",
+      "seed": 20262423,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_15_registered",
+      "control": "registered",
+      "seed": 20262523,
+      "diagonal_control_requested": false
+    },
+    {
+      "run_key": "control_16_cnt",
+      "control": "cnt",
+      "seed": 20262623,
+      "diagonal_control_requested": true
+    }
+  ],
+  "planned_run_count": 16,
+  "pipeline_source_sha256": "ce0557cb4c44c15a142291e5522b446f7212136686c3035c97f12a3d0e959086",
+  "protocol_sha256": "52de153dd8712a3c79c42ea7ccfff66c331259296a3caa02864292937bcb42fc",
+  "configuration": {
+    "target_policy": "fixed",
+    "mode": "fast",
+    "n_scenarios": 8,
+    "max_workers": 1,
+    "harmonic_validation": false,
+    "l7b_mode": "light",
+    "plots": true,
+    "plot_suppression_method": "runtime monkeypatch of render functions only"
+  },
+  "claim_limits": [
+    "Behavioral pipeline study, not a forecast benchmark, causality test, operational guarantee, or universality proof."
+  ]
+}
