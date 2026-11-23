@@ -1,0 +1,23 @@
+{
+  "n_total_tests": 18,
+  "n_sigmoides": 10,
+  "n_plates": 5,
+  "n_non_monotones": 3,
+  "sigmoides_metrics": {
+    "pearson_r_tlog_vs_true": 0.9847883638918598,
+    "pearson_r_4pl_vs_true": 0.9974860606648313,
+    "pearson_r_tlog_vs_4pl": 0.9759144171917092,
+    "mean_delta_log_ic50": 0.12198000000000002,
+    "max_delta_log_ic50": 0.6338
+  },
+  "flat_curves_summary": {
+    "all_detected_as_flat_or_resistant": true,
+    "t0_dose_all_nan": true,
+    "ic50_tlog_all_nan": true
+  },
+  "non_monotone_summary": {
+    "all_detected_as_non_monotone": true,
+    "regime_all_perturbation": true
+  },
+  "abstention_rule_validated": true
+}

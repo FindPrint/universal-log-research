@@ -1,0 +1,22 @@
+{
+  "title": "UCI Air Quality Pipeline v6.0.1 Control Rotation",
+  "timestamp_utc": "2026-11-23T21:36:13.416868+00:00",
+  "total_controls_planned": 15,
+  "total_elapsed_seconds": 615.719772499986,
+  "completed_count": 14,
+  "insufficient_count": 1,
+  "indeterminate_count": 0,
+  "error_count": 0,
+  "source_sha256": "13277ae5d8581e80b7be09d47c7d3d06fe9b8e957078f2cf6e859f955e62f996",
+  "input_binned_sha256": "a4db0fe2598705d4d25a474da026e5b237083d6d63de77b5863b82ae126e8869",
+  "pipeline_source_sha256": "ce0557cb4c44c15a142291e5522b446f7212136686c3035c97f12a3d0e959086",
+  "runner_script_sha256": "451844da276dc1c0534a7038e3c7337f6d625f445fa1524d981727f8d3145f40",
+  "summary_csv": "results\\airquality_pipeline_summary.csv",
+  "summary_json": "results\\airquality_pipeline_summary.json",
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "pandas": "3.0.6"
+  }
+}
