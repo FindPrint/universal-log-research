@@ -1,0 +1,21 @@
+{
+  "source_file": "EMULATION_KIRCHWEGER_70P_LONGITUDINAL.csv",
+  "total_records": 980,
+  "n_patients": 70,
+  "min_visits_per_patient": 14,
+  "max_visits_per_patient": 14,
+  "median_visits_per_patient": 14.0,
+  "columns_mapped": {
+    "patient_id": "patient_id",
+    "time_days": "time_days",
+    "visit_label": "visit_label",
+    "kras_maf_pct": "kras_maf_pct",
+    "kras_copies_per_ml": "kras_copies_per_ml",
+    "cfdna_total_ng_ml": "cfdna_total_ng_ml",
+    "ca19_9_u_ml": "ca19_9_u_ml",
+    "recist_status": "recist_status"
+  },
+  "has_copies_per_ml": true,
+  "has_ca19_9": true,
+  "has_recist": true
+}

@@ -1,0 +1,88 @@
+{
+  "n_progressors_eval": 12,
+  "tlog_true_positives": 12,
+  "sensitivity_pct": 100.0,
+  "specificity_pct": 100.0,
+  "mean_lead_time_days": 64.2,
+  "median_lead_time_days": 56.0,
+  "mean_lead_time_months": 2.11,
+  "median_lead_time_months": 1.84,
+  "lead_time_range_days": [
+    42,
+    98
+  ],
+  "lead_time_by_patient": {
+    "PAT_001": {
+      "t0_day": 126,
+      "scan_day": 168,
+      "lead_days": 42,
+      "lead_months": 1.38
+    },
+    "PAT_002": {
+      "t0_day": 42,
+      "scan_day": 140,
+      "lead_days": 98,
+      "lead_months": 3.22
+    },
+    "PAT_003": {
+      "t0_day": 98,
+      "scan_day": 168,
+      "lead_days": 70,
+      "lead_months": 2.3
+    },
+    "PAT_004": {
+      "t0_day": 70,
+      "scan_day": 154,
+      "lead_days": 84,
+      "lead_months": 2.76
+    },
+    "PAT_005": {
+      "t0_day": 112,
+      "scan_day": 168,
+      "lead_days": 56,
+      "lead_months": 1.84
+    },
+    "PAT_006": {
+      "t0_day": 70,
+      "scan_day": 126,
+      "lead_days": 56,
+      "lead_months": 1.84
+    },
+    "PAT_007": {
+      "t0_day": 70,
+      "scan_day": 126,
+      "lead_days": 56,
+      "lead_months": 1.84
+    },
+    "PAT_008": {
+      "t0_day": 56,
+      "scan_day": 126,
+      "lead_days": 70,
+      "lead_months": 2.3
+    },
+    "PAT_009": {
+      "t0_day": 98,
+      "scan_day": 154,
+      "lead_days": 56,
+      "lead_months": 1.84
+    },
+    "PAT_010": {
+      "t0_day": 56,
+      "scan_day": 126,
+      "lead_days": 70,
+      "lead_months": 2.3
+    },
+    "PAT_011": {
+      "t0_day": 56,
+      "scan_day": 112,
+      "lead_days": 56,
+      "lead_months": 1.84
+    },
+    "PAT_012": {
+      "t0_day": 70,
+      "scan_day": 126,
+      "lead_days": 56,
+      "lead_months": 1.84
+    }
+  }
+}
