@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""UNIVERSAL_LOG — Émulation & Benchmark Clinique Haute-Fidélité de Cohorte ctDNA (Kirchweger 2022).
+"""Émulation ctDNA synthétique pour tester le code d'analyse.
 
-Ce script génère une cohorte clinique synthétique de 70 patients reproduisant fidèlement
-les paramètres statistiques publiés dans Kirchweger et al. (Frontiers in Oncology 2022) :
+Ce script génère des trajectoires artificielles illustratives. Elles ne proviennent
+pas de patients ni de l'étude Kirchweger 2022 et ne reproduisent pas une cohorte
+clinique observée. Les métriques mesurent uniquement le comportement du code sur
+les hypothèses intégrées au générateur :
 - 32 patients évaluables avec cinétique complète et réponse RECIST 1.1 connue :
   * 12 Progressions radiologiques (PD) avec échappement clonal et cinétique ctDNA bimensuelle.
   * 20 Réponses / Stabilités (PR/SD) sans élévation de ctDNA.
@@ -23,15 +25,25 @@ import numpy as np
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent
-WORKSPACE = Path(r"C:\Users\citys\Desktop\10-31-2026")
-MODULE_PATH = WORKSPACE / "pancréas" / "ANALYSE_THERAPEUTIQUE_2026-11-23" / "MODE_COURTES_COURBES"
+MODULE_PATH = HERE
+if not (MODULE_PATH / "UNIVERSAL_LOG_dose_response_v1.py").is_file():
+    MODULE_PATH = (
+        HERE.parent
+        / "ANALYSE_THERAPEUTIQUE_2026-11-23"
+        / "MODE_COURTES_COURBES"
+    )
+if not (MODULE_PATH / "UNIVERSAL_LOG_dose_response_v1.py").is_file():
+    raise FileNotFoundError(
+        "UNIVERSAL_LOG_dose_response_v1.py introuvable à côté du script "
+        "ou dans ANALYSE_THERAPEUTIQUE_2026-11-23/MODE_COURTES_COURBES"
+    )
 sys.path.insert(0, str(MODULE_PATH))
 
 import UNIVERSAL_LOG_dose_response_v1 as udr
 
 
 def generate_kirchweger_cohort(n_evaluable=32, n_total=70, seed=20261123) -> pd.DataFrame:
-    """Génère la cohorte synthétique avec paramètres observés dans Kirchweger 2022."""
+    """Génère une cohorte de démonstration synthétique, sans données patient réelles."""
     rng = np.random.default_rng(seed)
     records = []
 
@@ -166,7 +178,7 @@ def analyze_patient_trajectory_tlog(patient_df: pd.DataFrame) -> Dict[str, Any]:
 
 def main():
     print("=" * 80)
-    print("ÉMULATION ET BENCHMARK CLINIQUE CTDNA — COHORTE 70 PATIENTS (KIRCHWEGER 2022)")
+    print("ÉMULATION SYNTHÉTIQUE CTDNA — SCÉNARIO DE TEST (NON CLINIQUE)")
     print("=" * 80)
 
     # 1. Génération de la cohorte
@@ -204,6 +216,7 @@ def main():
     max_lead_days = float(valid_leads.max())
 
     lead_distribution = {
+        "data_status": "synthetic_simulation_not_observed_clinical_data",
         "n_progressors_eval": len(progressors),
         "tlog_true_positives": int(tp),
         "sensitivity_pct": round(sensitivity * 100, 1),
@@ -228,13 +241,13 @@ def main():
         json.dump(lead_distribution, f, indent=2, ensure_ascii=False)
 
     print("\n" + "=" * 80)
-    print("PERFORMANCES DU PANEL CTDNA TLOG VS SCANNER RECIST 1.1")
+    print("MÉTRIQUES DU SCÉNARIO SYNTHÉTIQUE CTDNA VS SCANNER SIMULÉ")
     print("=" * 80)
-    print(f"Sensibilité clinique de détection  : {tp}/{len(progressors)} ({sensitivity*100:.1f}%)")
-    print(f"Spécificité (zéro fausse alerte)    : {tn}/{len(non_progressors)} ({specificity*100:.1f}%)")
-    print(f"Lead Time Médian avant scanner     : {median_lead_days:.1f} jours ({median_lead_days/30.4375:.2f} mois)")
-    print(f"Lead Time Moyen avant scanner      : {mean_lead_days:.1f} jours ({mean_lead_days/30.4375:.2f} mois)")
-    print(f"Fourchette d'anticipation          : [{min_lead_days:.0f} - {max_lead_days:.0f}] jours")
+    print(f"Sensibilité dans l'émulation        : {tp}/{len(progressors)} ({sensitivity*100:.1f}%)")
+    print(f"Spécificité dans l'émulation        : {tn}/{len(non_progressors)} ({specificity*100:.1f}%)")
+    print(f"Lead time médian simulé             : {median_lead_days:.1f} jours ({median_lead_days/30.4375:.2f} mois)")
+    print(f"Lead time moyen simulé              : {mean_lead_days:.1f} jours ({mean_lead_days/30.4375:.2f} mois)")
+    print(f"Fourchette simulée                  : [{min_lead_days:.0f} - {max_lead_days:.0f}] jours")
     print(f"\nFichiers sauvegardés :")
     print(f"  - Cohorte standardisée : {cohort_csv}")
     print(f"  - Résultats patients   : {results_csv}")

@@ -10,6 +10,7 @@ Ce script résout formellement le verrou identifié le 21 novembre 2026 :
 from __future__ import annotations
 
 import json
+import argparse
 import sys
 import time
 from pathlib import Path
@@ -19,23 +20,38 @@ import pandas as pd
 from openpyxl import load_workbook
 
 HERE = Path(__file__).resolve().parent
-WORKSPACE = Path(r"C:\Users\citys\Desktop\10-31-2026")
-SOURCE_BOOK = WORKSPACE / "pancréas" / "ANALYSE_THERAPEUTIQUE_2026-11-21" / "AUDIT_RECOMMANDATIONS_PETITES_COHORTES" / "source" / "41467_2025_57520_MOESM17_ESM.xlsx"
-MODULE_PATH = WORKSPACE / "pancréas" / "ANALYSE_THERAPEUTIQUE_2026-11-23" / "MODE_COURTES_COURBES"
+SOURCE_FILENAME = "41467_2025_57520_MOESM17_ESM.xlsx"
+SOURCE_BOOK = HERE / "source" / SOURCE_FILENAME
+MODULE_PATH = HERE.parent / "MODE_COURTES_COURBES"
+if not (MODULE_PATH / "UNIVERSAL_LOG_dose_response_v1.py").is_file():
+    MODULE_PATH = (
+        HERE.parents[1]
+        / "DOSSIER_PREUVES_ET_PROTOCOLE_PDAC"
+        / "PIPELINES_ET_CODE_SOURCE"
+    )
+if not (MODULE_PATH / "UNIVERSAL_LOG_dose_response_v1.py").is_file():
+    raise FileNotFoundError(
+        "UNIVERSAL_LOG_dose_response_v1.py introuvable dans MODE_COURTES_COURBES "
+        "ou dans DOSSIER_PREUVES_ET_PROTOCOLE_PDAC/PIPELINES_ET_CODE_SOURCE"
+    )
 sys.path.insert(0, str(MODULE_PATH))
 
 import UNIVERSAL_LOG_dose_response_v1 as udr
 
 
-def main():
+def main(source_book: Path = SOURCE_BOOK, output_dir: Path = HERE):
     print("=" * 80)
     print("BENCHMARK RÉEL YIN ET AL. (2025) — MODE COURTES COURBES TLOG v1.0.0")
     print("=" * 80)
 
-    if not SOURCE_BOOK.is_file():
-        raise FileNotFoundError(f"Fichier source non trouvé : {SOURCE_BOOK}")
+    if not source_book.is_file():
+        raise FileNotFoundError(
+            f"Fichier source non trouvé : {source_book}. Téléchargez le fichier "
+            f"supplémentaire de l'article et indiquez son chemin avec --source."
+        )
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    wb = load_workbook(SOURCE_BOOK, read_only=True, data_only=True)
+    wb = load_workbook(source_book, read_only=True, data_only=True)
     sheet = wb["Figure 6"]
 
     # Extraction des concentrations (Ligne 96 à 103, col 1)
@@ -49,7 +65,7 @@ def main():
     rows_data = list(sheet.iter_rows(min_row=96, max_row=103, values_only=True))
     wb.close()
 
-    print(f"✓ Source chargée : {SOURCE_BOOK.name}")
+    print(f"✓ Source chargée : {source_book.name}")
     print(f"✓ Concentrations de test ({len(concs)} doses) : {concs}")
 
     # Regroupement des 75 conditions (chacune occupant 2 colonnes réplicats)
@@ -136,8 +152,8 @@ def main():
 
     # Synthèse globale
     df = pd.DataFrame(results)
-    csv_path = HERE / "YIN_2025_PDO_TLOG_BENCHMARK_RESULTS.csv"
-    json_path = HERE / "YIN_2025_PDO_TLOG_BENCHMARK_RESULTS.json"
+    csv_path = output_dir / "YIN_2025_PDO_TLOG_BENCHMARK_RESULTS.csv"
+    json_path = output_dir / "YIN_2025_PDO_TLOG_BENCHMARK_RESULTS.json"
     df.to_csv(csv_path, index=False)
 
     with json_path.open("w", encoding="utf-8") as f:
@@ -167,4 +183,20 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(
+        description="Évaluation exploratoire TLog sur les courbes Yin 2025."
+    )
+    parser.add_argument(
+        "--source",
+        type=Path,
+        default=SOURCE_BOOK,
+        help="Chemin du fichier supplémentaire XLSX de l'étude (non inclus).",
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=HERE,
+        help="Dossier où écrire les résultats CSV et JSON.",
+    )
+    args = parser.parse_args()
+    main(source_book=args.source, output_dir=args.output_dir)

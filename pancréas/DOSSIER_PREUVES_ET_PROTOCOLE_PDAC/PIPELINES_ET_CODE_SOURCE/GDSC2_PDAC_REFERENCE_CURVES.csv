@@ -1,4 +1,4 @@
-drug_name,cell_line,replicate,dose_uM,log10_dose,viability_pct,ic50_gdsc2_pub
+drug_name,cell_line,replicate,dose_uM,log10_dose,viability_pct,ic50_reference_synthetic_uM
 Gemcitabine,MIA_PaCa-2,1,0.0005,-3.301,95.6,0.015
 Gemcitabine,MIA_PaCa-2,1,0.0015,-2.8239,87.02,0.015
 Gemcitabine,MIA_PaCa-2,1,0.0045,-2.3468,87.08,0.015
