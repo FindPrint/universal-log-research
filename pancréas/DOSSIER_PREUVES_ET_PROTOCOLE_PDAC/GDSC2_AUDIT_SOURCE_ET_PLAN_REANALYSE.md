@@ -60,6 +60,22 @@ Les identifiants des médicaments qui apparaissent dans ces 15 combinaisons GDSC
 
 La table ajustée fournit notamment `LN_IC50`, `AUC` et `RMSE`; `LN_IC50` est une valeur logarithmique et ne doit pas être interprétée directement comme une concentration en µM. Cette table sert de référence de comparaison dérivée, pas de remplacement des intensités brutes ni de validation indépendante.
 
+## Résultats de l'extraction des mesures brutes
+
+L'extracteur a été exécuté sur le fichier officiel complet. Le fichier reçu fait 2 112 924 313 octets et son SHA-256 est `e915be2948b174982a9b64bea5fab00f6ec8c15f7baa76bc7e2f7a7df295500e`. Le script a lu 15 069 449 lignes source et produit 1 708 puits normalisés, regroupés en 637 points dose-réponse. Les 101 scans examinés sont marqués valides par les contrôles de l'extracteur; aucun scan n'a été exclu et l'audit rapporte zéro position `FAIL` et zéro position de médicament sans `DRUG_ID`. Les valeurs normalisées observées restent dans `[0, 1]`, conformément à la troncature prescrite.
+
+| Lignée | Lignes source correspondantes | Scans | Puits normalisés | Points dose-réponse |
+|---|---:|---:|---:|---:|
+| `AsPC-1` | 29 333 | 30 | 504 | 196 |
+| `BxPC-3` | 34 029 | 34 | 560 | 210 |
+| `CAPAN-1` | 37 229 | 37 | 644 | 231 |
+| `PANC-1` | 0 | 0 | 0 | 0 |
+| `MIA PaCa-2` | 0 | 0 | 0 | 0 |
+
+Les 637 points couvrent les 15 combinaisons des trois lignées observées avec les cinq médicaments retenus : cisplatine `1005` (175 points), olaparib `1017` (63), 5-fluorouracile `1073` (154), paclitaxel `1080` (112) et gemcitabine `1190` (133). Les sorties détaillées (puits, points et audit par scan) ainsi que le manifeste ont été conservés hors du dépôt; le CSV brut de 2,1 Go n'a pas été ajouté à Git.
+
+Ces nombres décrivent le résultat de l'extraction et non 1 708 répétitions biologiques : les puits et scans ne constituent pas automatiquement des réplicats biologiques indépendants. L'extracteur ne calcule toujours ni TLog, ni IC50, ni ajustement GDSC à effets mixtes. L'absence de `PANC-1` et de `MIA PaCa-2` vaut pour les noms exacts recherchés dans ce fichier et ne permet pas de conclure sur d'éventuels alias.
+
 ## Ce que l'analyse peut et ne peut pas démontrer
 
 Une réanalyse des mesures GDSC2 brutes serait une évaluation empirique sur des expériences in vitro publiées. Comparer TLog aux estimations de la table ajustée GDSC2 serait toutefois une comparaison à une référence dérivée des mêmes expériences, et non une validation externe indépendante. Un résultat favorable ne démontrerait ni une supériorité générale de TLog, ni une réponse chez un patient, ni un bénéfice clinique.
@@ -69,9 +85,9 @@ Le benchmark existant de 25 profils et sa corrélation `r = 0,9911` restent synt
 ## Protocole minimal avant de calculer des résultats
 
 1. Figer les versions exactes des fichiers bruts, ajustés, du catalogue des composés et des métadonnées de lignées; conserver les URL, dates, tailles et empreintes SHA-256.
-2. Vérifier dans le brut si `PANC-1` et `MIA PaCa-2` ont des lectures exploitables malgré l'absence de courbe ajustée correspondante; ne pas les compter comme réplications GDSC2 sans observations confirmées.
+2. Vérifier dans le brut si `PANC-1` et `MIA PaCa-2` ont des lectures exploitables malgré l'absence de courbe ajustée correspondante; cette vérification est faite pour les noms exacts recherchés, sans exclure d'éventuels alias.
 3. Identifier les expériences par `CELL_LINE_NAME`, `COSMIC_ID`/`SANGER_MODEL_ID`, `DRUG_ID`, plaque/scan, durée et concentration; documenter les unités et les répétitions réellement indépendantes.
-4. Exécuter l'extracteur avec le CSV officiel complet; examiner les contrôles par scan, les exclusions de positions et les séries de doses avant toute interprétation.
+4. Exécuter l'extracteur avec le CSV officiel complet; l'extraction, les statuts de scans et les décomptes d'exclusion sont vérifiés. Examiner les séries de doses avant toute interprétation.
 5. Comparer les contrôles et les intensités normalisées aux résultats obtenus par le paquet R officiel `gdscIC50` sur un exemple reproductible avant de traiter la sortie Python comme équivalente.
 6. Figer avant l'évaluation les règles d'inclusion, les critères d'abstention TLog et 4PL, et les métriques. Ne pas régler l'algorithme sur les cinq lignées puis présenter ces mêmes lignées comme test indépendant.
 7. Présenter les courbes et résultats par expérience, médicament et lignée, avec incertitude et échecs d'ajustement. Distinguer accord avec la table GDSC2 ajustée et validation indépendante.
@@ -90,7 +106,7 @@ Le benchmark existant de 25 profils et sa corrélation `r = 0,9911` restent synt
 
 ## Statut
 
-L'existence, la version, la taille et l'en-tête du fichier brut ont été vérifiés auprès du serveur officiel. La couverture de la table ajustée a été vérifiée : 15 combinaisons pour trois lignées, et aucune courbe ajustée pour `PANC-1` et `MIA PaCa-2` sous ces noms. La normalisation publiée par Sanger est maintenant documentée et implémentée dans `PIPELINES_ET_CODE_SOURCE/extract_gdsc2_pdac_raw_curves.py`, avec des tests synthétiques du calcul et des exclusions. Aucune valeur issue du fichier brut réel n'est encore rapportée ici; avant de publier des résultats TLog, il faut exécuter l'extraction sur la version figée, inspecter les scans et comparer des plaques à `gdscIC50`.
+L'existence, la version, la taille, l'en-tête et l'empreinte du fichier brut ont été vérifiés. La couverture de la table ajustée et celle des mesures brutes extraites sont documentées ci-dessus. L'extracteur implémente la normalisation publiée par Sanger; ses tests synthétiques couvrent le calcul et les exclusions. Les résultats d'extraction réels sont des points de données in vitro, pas des résultats TLog. Avant tout benchmark, il reste à examiner les séries de doses et à comparer des plaques à `gdscIC50`.
 
 ### Exécuter l'extracteur
 

@@ -56,6 +56,8 @@ python .\extract_gdsc2_pdac_raw_curves.py `
 
 Le script lit le fichier en flux, applique les exclusions `FAIL`/médicament non attribué, calcule pour chaque scan la moyenne des contrôles `NC-1` et des blancs `B`, puis normalise chaque puits par `(INTENSITY - mean(B)) / (mean(NC-1) - mean(B))`, tronqué à `[0, 1]`. Il produit les puits normalisés, les moyennes par concentration et un audit par scan; les réponses sont des fractions de viabilité compatibles avec l'entrée `1.0 = viabilité témoin` de l'exemple TLog. Les puits d'une même plaque sont des répétitions techniques, pas des réplicats biologiques. Une moyenne par dose ne justifie donc pas un intervalle de confiance bootstrap biologique. Le script ne reproduit pas l'ajustement non linéaire à effets mixtes du paquet R officiel `gdscIC50` et ne constitue pas un benchmark TLog. Le CSV source reste à l'extérieur du dépôt.
 
+Une extraction du fichier officiel complet a produit 1 708 puits normalisés et 637 points pour `AsPC-1`, `BxPC-3` et `CAPAN-1`; aucune ligne n'a été trouvée sous les noms exacts `PANC-1` et `MIA PaCa-2`. La taille et l'empreinte de cette source, les effectifs par lignée et les limites d'interprétation sont consignés dans `../GDSC2_AUDIT_SOURCE_ET_PLAN_REANALYSE.md`. Les fichiers de sortie et le manifeste de cette exécution sont des résultats locaux, non inclus dans le dépôt.
+
 Tests du prétraitement :
 
 ```powershell
