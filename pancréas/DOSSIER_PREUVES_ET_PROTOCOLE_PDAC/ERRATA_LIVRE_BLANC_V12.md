@@ -25,3 +25,5 @@
 ## Supplément du 24 novembre 2026 — résultats GDSC2 toutes lignées
 
 Les PDF archives V12 n'intègrent pas l'analyse GDSC2 toutes lignées publiée le 24 novembre. Un supplément daté est fourni avec eux : [`SUPPLEMENT_GDSC2_TOUTES_LIGNEES_2026-11-24.pdf`](./SUPPLEMENT_GDSC2_TOUTES_LIGNEES_2026-11-24.pdf); sa source reproductible est [`SUPPLEMENT_GDSC2_TOUTES_LIGNEES_2026-11-24.md`](./SUPPLEMENT_GDSC2_TOUTES_LIGNEES_2026-11-24.md). Le supplément rapporte la couverture des 968 lignées, la convergence conditionnelle du modèle, le biais par rapport aux références GDSC2 et les limites d'extrapolation. Il ne constitue pas une validation de TLog ni une preuve clinique.
+
+Deux nouvelles éditions intégrées ont été générées localement, sans remplacer les PDF V12 : `UNIVERSAL_LOG_LIVRE_BLANC_COMPLET_INTEGRAL_V13_2026-11-24.pdf` (3 215 pages) et `DOSSIER_SCIENTIFIQUE_PREUVES_ET_PROTOCOLE_PDAC_TLOG_V2_2026-11-24.pdf` (8 pages). Le supplément constitue les deux dernières pages de chacune. Les copies intégrales ne sont pas stockées dans le dépôt; le script de fusion et le supplément sont publiés dans la branche de travail.

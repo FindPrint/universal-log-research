@@ -38,6 +38,7 @@ L'évaluation Yin 2025 est un script séparé (`pancréas/ANALYSE_THERAPEUTIQUE_
 | `extract_gdsc2_target_drugs_all_cell_lines.py` | **Prétraitement expérimental** | Extrait les cinq médicaments GDSC2 ciblés dans toutes les lignées du CSV brut, produit un audit de scan et un manifeste; ne calcule pas de métrique TLog. |
 | `compare_gdsc2_target_drugs_all_cell_lines_gdscic50.R` | **Ajustement exploratoire** | Tente l'ajustement `gdscIC50` sur les cinq médicaments et toutes les lignées, vérifie la convergence avant d'écrire le tableau comparatif et conserve un diagnostic même en cas d'échec. |
 | `build_gdsc2_whitepaper_supplement.py` | **Publication** | Génère le supplément PDF daté avec les résultats tous-lignées et leurs limites; ne modifie pas les PDF archivés V12. |
+| `append_gdsc2_supplement_to_whitepapers.py` | **Publication** | Crée de nouvelles copies des PDF sources avec le supplément ajouté à la fin; refuse d'écraser les fichiers existants. |
 | `tlog_oncotwin_simulator.py` | **Simulation** | Compare deux scénarios tumoraux déterminés par des paramètres codés dans le simulateur. Les différences de PFS simulées ne sont pas des estimations de bénéfice clinique. |
 ---
 
@@ -115,6 +116,18 @@ Les PDF V12, dates du 23 novembre 2026, restent des archives historiques. Le sup
 ```powershell
 python .\build_gdsc2_whitepaper_supplement.py
 ```
+
+Deux éditions intégrées ont aussi été produites localement : le livre blanc intégral V13 (3 215 pages) et le dossier scientifique PDAC V2 (8 pages), chacun avec les deux pages du supplément ajoutées à la fin. Les V12 originaux restent inchangés. Pour recréer ces éditions avec `pymupdf` installé :
+
+```powershell
+python .\append_gdsc2_supplement_to_whitepapers.py `
+  --integral-pdf "C:\chemin\UNIVERSAL_LOG_LIVRE_BLANC_COMPLET_INTEGRAL_V12.pdf" `
+  --pdac-dossier-pdf "C:\chemin\DOSSIER_SCIENTIFIQUE_PREUVES_ET_PROTOCOLE_PDAC_TLOG.pdf" `
+  --supplement-pdf "C:\chemin\SUPPLEMENT_GDSC2_TOUTES_LIGNEES_2026-11-24.pdf" `
+  --output-dir "C:\chemin\editions_mises_a_jour"
+```
+
+Les éditions intégrées de 42 MB et 1,6 MB sont des livrables locaux et ne sont pas ajoutées au dépôt; le supplément seul et son SHA-256 sont publiés ici.
 
 Tests du prétraitement :
 
