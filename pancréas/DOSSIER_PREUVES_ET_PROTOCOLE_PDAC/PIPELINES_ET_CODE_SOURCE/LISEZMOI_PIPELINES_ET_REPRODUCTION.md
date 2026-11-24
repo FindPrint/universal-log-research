@@ -62,6 +62,24 @@ Un contrôle indépendant de 21 puits tirés de trois scans correspond exactemen
 
 La comparaison descriptive avec les ajustements GDSC2 officiels est consignée dans l'audit parent. Dans les 91 courbes par scan extraites, seules 8 encadrent 50 % de mortalité dans les doses mesurées; ne pas rapporter d'IC50 calculée par extrapolation comme si elle était directement observée ou comme une validation de TLog.
 
+### Essai du modèle officiel `gdscIC50`
+
+Le script `compare_gdsc2_pdac_subset_gdscic50.R` tente le modèle mixte officiel sur les trois lignées et cinq médicaments extraits. Il requiert `gdscIC50` 0.99.4 et les deux CSV locaux (points extraits et table ajustée officielle) :
+
+```powershell
+Rscript -e "install.packages('remotes', repos='https://cloud.r-project.org')"
+Rscript -e "remotes::install_github('CancerRxGene/gdscIC50@34d842254a33bd04f318449969ff9976237c9295')"
+
+Rscript .\compare_gdsc2_pdac_subset_gdscic50.R `
+  "C:\chemin\gdsc2_pdac_extracted\gdsc2_pdac_curve_points.csv" `
+  "C:\chemin\GDSC2_fitted_dose_response_24Jul22.csv" `
+  "C:\chemin\gdsc2_pdac_model_comparison.csv"
+```
+
+Si `Rscript` n'est pas dans le `PATH`, remplacer `Rscript` par le chemin complet vers `Rscript.exe`.
+
+Le script n'écrit les comparaisons que si le modèle passe les contrôles de convergence; sinon il s'arrête sans produire de résultats à interpréter. Sur le sous-ensemble présent, les variantes testées ne convergent pas de façon acceptable. Cela ne reproduit pas l'ajustement GDSC2 global; voir les diagnostics et limites dans `../GDSC2_AUDIT_SOURCE_ET_PLAN_REANALYSE.md`. Les fonctions de préparation historiques du paquet appellent aussi des fonctions `dplyr` retirées; l'extraction et la vérification de normalisation sont donc rapportées séparément.
+
 Tests du prétraitement :
 
 ```powershell
