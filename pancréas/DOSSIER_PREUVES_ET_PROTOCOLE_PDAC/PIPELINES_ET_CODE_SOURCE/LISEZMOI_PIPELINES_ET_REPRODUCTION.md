@@ -58,6 +58,8 @@ Le script lit le fichier en flux, applique les exclusions `FAIL`/médicament non
 
 Une extraction du fichier officiel complet a produit 1 708 puits normalisés et 637 points pour `AsPC-1`, `BxPC-3` et `CAPAN-1`; aucune ligne n'a été trouvée sous les noms exacts `PANC-1` et `MIA PaCa-2`. La taille et l'empreinte de cette source, les effectifs par lignée et les limites d'interprétation sont consignés dans `../GDSC2_AUDIT_SOURCE_ET_PLAN_REANALYSE.md`. Les fichiers de sortie et le manifeste de cette exécution sont des résultats locaux, non inclus dans le dépôt.
 
+Un contrôle indépendant de 21 puits tirés de trois scans correspond exactement à la normalisation décrite dans le code source `gdscIC50`. Il ne s'agit pas d'une exécution du paquet R ni d'une reproduction de son ajustement à effets mixtes; ces étapes restent à valider avant toute revendication d'équivalence au pipeline officiel.
+
 Tests du prétraitement :
 
 ```powershell
