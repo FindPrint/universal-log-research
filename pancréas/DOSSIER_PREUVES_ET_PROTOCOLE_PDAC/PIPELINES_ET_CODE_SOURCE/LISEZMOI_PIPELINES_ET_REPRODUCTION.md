@@ -35,6 +35,8 @@ L'évaluation Yin 2025 est un script séparé (`pancréas/ANALYSE_THERAPEUTIQUE_
 | `emulate_and_benchmark_ctdna_cohort.py` | **Émulation** | Génère une cohorte ctDNA synthétique de 70 profils et calcule une détection/avance sur progression définie dans cette simulation. Les métriques ne sont pas des résultats observés chez des patients. |
 | `run_gdsc2_pdac_benchmark.py` | **Benchmark simulé** | Génère des courbes synthétiques inspirées de profils IC50 associés à GDSC2, puis compare les estimations TLog aux valeurs de référence fournies par le générateur. Ce ne sont pas 675 mesures brutes extraites de Sanger. |
 | `extract_gdsc2_pdac_raw_curves.py` | **Prétraitement expérimental** | Extrait des mesures des lignées et médicaments ciblés du CSV brut officiel, applique la normalisation `gdscIC50` par scan et journalise les exclusions. Ne calcule pas de métrique TLog ni l'ajustement à effets mixtes GDSC. |
+| `extract_gdsc2_target_drugs_all_cell_lines.py` | **Prétraitement expérimental** | Extrait les cinq médicaments GDSC2 ciblés dans toutes les lignées du CSV brut, produit un audit de scan et un manifeste; ne calcule pas de métrique TLog. |
+| `compare_gdsc2_target_drugs_all_cell_lines_gdscic50.R` | **Ajustement exploratoire** | Tente l'ajustement `gdscIC50` sur les cinq médicaments et toutes les lignées, vérifie la convergence avant d'écrire le tableau comparatif et conserve un diagnostic même en cas d'échec. |
 | `tlog_oncotwin_simulator.py` | **Simulation** | Compare deux scénarios tumoraux déterminés par des paramètres codés dans le simulateur. Les différences de PFS simulées ne sont pas des estimations de bénéfice clinique. |
 ---
 
@@ -79,6 +81,31 @@ Rscript .\compare_gdsc2_pdac_subset_gdscic50.R `
 Si `Rscript` n'est pas dans le `PATH`, remplacer `Rscript` par le chemin complet vers `Rscript.exe`.
 
 Le script n'écrit les comparaisons que si le modèle passe les contrôles de convergence; sinon il s'arrête sans produire de résultats à interpréter. Sur le sous-ensemble présent, les variantes testées ne convergent pas de façon acceptable. Cela ne reproduit pas l'ajustement GDSC2 global; voir les diagnostics et limites dans `../GDSC2_AUDIT_SOURCE_ET_PLAN_REANALYSE.md`. Les fonctions de préparation historiques du paquet appellent aussi des fonctions `dplyr` retirées; l'extraction et la vérification de normalisation sont donc rapportées séparément.
+
+### Extraction et ajustement sur toutes les lignées
+
+L'extracteur générique utilise les mêmes données brutes officielles, mais conserve les cinq médicaments ciblés pour toutes les lignées. Le CSV de 2,1 Go reste en local :
+
+```powershell
+python .\extract_gdsc2_target_drugs_all_cell_lines.py `
+  --raw-csv "C:\chemin\GDSC2_public_raw_data_24Jul22.csv" `
+  --output-dir "C:\chemin\gdsc2_all_lines_extracted"
+```
+
+Cette exécution a traité 7 327 scans valides, 179 515 puits et 125 230 points pour 968 lignées. Les mesures brutes ont recoupé 4 613 combinaisons lignée-médicament de la table officielle; six combinaisons brutes sans référence ajustée ont été exclues de la comparaison. Les fichiers d'extraction et leur manifeste ne sont pas inclus dans Git.
+
+Le modèle nécessite `gdscIC50` 0.99.4 et le fichier ajusté officiel. Le dernier argument facultatif choisit `isLargeData` (`true` par défaut, ou `false`) :
+
+```powershell
+Rscript .\compare_gdsc2_target_drugs_all_cell_lines_gdscic50.R `
+  "C:\chemin\gdsc2_all_lines_extracted\gdsc2_all_lines_normalized_wells.csv" `
+  "C:\chemin\GDSC2_fitted_dose_response_24Jul22.csv" `
+  "C:\chemin\gdsc2_all_lines_model_comparison.csv" `
+  "C:\chemin\gdsc2_all_lines_model_diagnostic.csv" `
+  false
+```
+
+Le script agrège les puits par lignée, médicament et dose (`FUN = mean`), comme le prétraitement `groupNlmeData` du paquet. L'option `isLargeData=TRUE` a produit une matrice de précision singulière; `isLargeData=FALSE` a convergé en 3 itérations avec une covariance définie positive. Le tableau descriptif contient 4 613 comparaisons; son diagnostic rapporte aussi les écarts aux références et la présence de courbes observées franchissant 50 %. La convergence ne valide pas l'adéquation des IC50 : les références proviennent des mêmes expériences, le biais moyen observé est notable et une majorité des combinaisons n'a aucun scan qui franchisse le seuil dans la plage mesurée. Ce résultat n'est ni une reproduction du modèle GDSC2 global ni une validation biologique ou clinique de TLog. Les CSV générés doivent rester des résultats locaux, hors du dépôt.
 
 Tests du prétraitement :
 

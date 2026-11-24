@@ -110,6 +110,31 @@ Le script `PIPELINES_ET_CODE_SOURCE/compare_gdsc2_pdac_subset_gdscic50.R` reprod
 
 Ces nombres décrivent le résultat de l'extraction et non 1 708 répétitions biologiques : les puits et scans ne constituent pas automatiquement des réplicats biologiques indépendants. L'extracteur ne calcule toujours ni TLog, ni IC50, ni ajustement GDSC à effets mixtes. L'absence de `PANC-1` et de `MIA PaCa-2` vaut pour les noms exacts recherchés dans ce fichier et ne permet pas de conclure sur d'éventuels alias.
 
+## Extraction élargie aux cinq médicaments et à toutes les lignées
+
+L'extracteur `PIPELINES_ET_CODE_SOURCE/extract_gdsc2_target_drugs_all_cell_lines.py` a parcouru les 15 069 449 lignes du CSV brut à chacun de ses deux passages. Il a retenu 7 327 scans, tous marqués `OK`, et normalisé 179 515 puits en 125 230 points dose-réponse couvrant 968 lignées. Aucun scan ni position `FAIL` ou médicament sans identifiant n'a été exclu. Les données restent des mesures in vitro; les puits et scans ne sont pas des répétitions biologiques indépendantes.
+
+| Médicament | `DRUG_ID` | Combinaisons lignée-médicament avec référence ajustée | `MAX_CONC` officiel (µM) |
+|---|---:|---:|---:|
+| Cisplatine | 1005 | 760 | 8 |
+| Olaparib | 1017 | 967 | 10 |
+| 5-Fluorouracile | 1073 | 968 | 32 |
+| Paclitaxel | 1080 | 958 | 0,1 |
+| Gemcitabine | 1190 | 960 | 10 |
+| **Total** | | **4 613** | |
+
+La couverture normalisée recoupe exactement les 4 613 combinaisons lignée-médicament de la table ajustée officielle pour ces cinq `DRUG_ID`. Six combinaisons présentes dans le brut n'ont pas de ligne ajustée officielle et sont exclues de l'ajustement comparatif; aucune ligne ajustée n'est dépourvue de courbe brute correspondante. Pour chacun des cinq médicaments, le maximum global des concentrations brutes correspond à `MAX_CONC` dans la table ajustée. Les sorties détaillées de l'extraction restent hors de Git.
+
+## Essai du modèle sur la couverture élargie
+
+Le script `PIPELINES_ET_CODE_SOURCE/compare_gdsc2_target_drugs_all_cell_lines_gdscic50.R` prépare les concentrations et la réponse selon le code de `gdscIC50` 0.99.4, puis agrège les puits par lignée, médicament et dose comme le fait `groupNlmeData` (`FUN = mean`). Après exclusion des six combinaisons sans référence, le modèle reçoit 179 375 puits, réduits à 56 332 moyennes dose-réponse pour 968 lignées et cinq groupes de médicaments. La préparation historique du paquet n'est pas exécutée directement : ses appels `select_()` échouent avec `dplyr 1.2.1`; la normalisation des puits avait été vérifiée séparément sur 21 mesures brutes.
+
+Le réglage `isLargeData=TRUE` n'a pas passé le contrôle numérique : la matrice de précision est singulière et aucun tableau comparatif n'est écrit. Le réglage officiel alternatif `isLargeData=FALSE` (covariance diagonale des effets aléatoires de lignée) a convergé en 3 itérations, avec covariance approximative définie positive et sans avertissement; le script a produit 4 613 lignes appariées. Cette convergence est un diagnostic d'ajustement, pas une preuve d'adéquation prédictive ni une reproduction du modèle GDSC2 complet, qui couvre beaucoup plus de médicaments.
+
+La comparaison avec `LN_IC50` officiel est descriptive et porte sur des références issues des mêmes expériences brutes, pas sur un jeu de validation indépendant. Sur les 4 613 paires, la corrélation de Pearson est de 0,953, mais la différence signée moyenne `modèle - référence` est de +1,201 en unités logarithmiques naturelles (facteur géométrique d'environ 3,32) et la différence absolue médiane est de 0,922. La corrélation ne doit donc pas masquer le biais systématique ni être présentée comme une validation de TLog.
+
+Le franchissement de 50 % a été contrôlé séparément dans chaque courbe scan-médicament. Sur 17 555 courbes de ce type, 4 580 franchissent le seuil. Pour 1 769 des 4 613 combinaisons, au moins un scan le franchit; pour les 2 844 autres, aucun scan ne l'observe dans la plage testée. La différence absolue médiane avec au moins un franchissement est de 0,223 log, contre 1,652 sans franchissement; ces dernières estimations dépendent d'une extrapolation du modèle. Le CSV de comparaison et le diagnostic détaillé sont des sorties locales, non ajoutées au dépôt.
+
 ## Ce que l'analyse peut et ne peut pas démontrer
 
 Une réanalyse des mesures GDSC2 brutes serait une évaluation empirique sur des expériences in vitro publiées. Comparer TLog aux estimations de la table ajustée GDSC2 serait toutefois une comparaison à une référence dérivée des mêmes expériences, et non une validation externe indépendante. Un résultat favorable ne démontrerait ni une supériorité générale de TLog, ni une réponse chez un patient, ni un bénéfice clinique.
@@ -122,7 +147,7 @@ Le benchmark existant de 25 profils et sa corrélation `r = 0,9911` restent synt
 2. Vérifier dans le brut si `PANC-1` et `MIA PaCa-2` ont des lectures exploitables malgré l'absence de courbe ajustée correspondante; cette vérification est faite pour les noms exacts recherchés, sans exclure d'éventuels alias.
 3. Identifier les expériences par `CELL_LINE_NAME`, `COSMIC_ID`/`SANGER_MODEL_ID`, `DRUG_ID`, plaque/scan, durée et concentration; documenter les unités et les répétitions réellement indépendantes.
 4. Exécuter l'extracteur avec le CSV officiel complet; l'extraction, les statuts de scans et les décomptes d'exclusion sont vérifiés. Examiner les séries de doses avant toute interprétation.
-5. Le contrôle ponctuel des intensités par rapport aux étapes du code source est fait sur trois scans; la couverture du seuil observé a été comptée. Le modèle officiel a été essayé sur le sous-ensemble, mais n'a pas passé les diagnostics de convergence. Une reproduction du modèle GDSC2 global reste à faire sur un environnement et un jeu de données permettant d'inclure toute la couverture de lignées et de médicaments.
+5. Le contrôle ponctuel des intensités par rapport aux étapes du code source est fait sur trois scans; la couverture du seuil observé a été comptée. Le modèle a été essayé sur le sous-ensemble PDAC (non convergent) et sur les cinq médicaments dans 968 lignées (`isLargeData=FALSE` convergent, `isLargeData=TRUE` singulier). Une reproduction du modèle GDSC2 global reste à faire sur toute sa couverture de médicaments et selon sa procédure complète.
 6. Figer avant l'évaluation les règles d'inclusion, les critères d'abstention TLog et 4PL, et les métriques. Ne pas régler l'algorithme sur les cinq lignées puis présenter ces mêmes lignées comme test indépendant.
 7. Présenter les courbes et résultats par expérience, médicament et lignée, avec incertitude et échecs d'ajustement. Distinguer accord avec la table GDSC2 ajustée et validation indépendante.
 8. Ne pas ajouter au dépôt le fichier brut de 2,1 Go. Distribuer le code, la provenance, les empreintes des fichiers obtenus et, si la licence le permet, uniquement des sorties dérivées minimales et traçables.
@@ -140,7 +165,7 @@ Le benchmark existant de 25 profils et sa corrélation `r = 0,9911` restent synt
 
 ## Statut
 
-L'existence, la version, la taille, l'en-tête et l'empreinte du fichier brut ont été vérifiés. La couverture de la table ajustée et celle des mesures brutes extraites sont documentées ci-dessus. L'extracteur implémente la normalisation publiée par Sanger; ses tests synthétiques couvrent le calcul et les exclusions, et un contrôle de 21 puits sur trois scans concorde avec le code source de préparation. Seules 8 des 91 courbes par scan encadrent 50 % de mortalité dans les doses mesurées. Le modèle `gdscIC50` a été exécuté sur le sous-ensemble mais n'a pas passé les critères de convergence; aucune estimation modèle n'est retenue. La reproduction du modèle global reste à faire. Les résultats d'extraction réels sont des points de données in vitro, pas des résultats TLog.
+L'existence, la version, la taille, l'en-tête et l'empreinte du fichier brut ont été vérifiés. La couverture des cinq médicaments ciblés dans 968 lignées et le recoupement des 4 613 combinaisons avec la table ajustée sont documentés ci-dessus. L'extracteur implémente la normalisation publiée par Sanger; un contrôle de 21 puits sur trois scans concorde avec le code source de préparation. Sur le sous-ensemble PDAC, le modèle ne converge pas; sur la couverture élargie, `isLargeData=FALSE` converge mais présente un biais descriptif notable par rapport aux références issues des mêmes expériences, tandis que `isLargeData=TRUE` échoue sur une matrice singulière. Aucune validation indépendante de TLog n'est établie et la reproduction du modèle GDSC2 complet reste à faire. Les mesures réelles sont des données in vitro, pas des résultats cliniques.
 
 ### Exécuter l'extracteur
 
