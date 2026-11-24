@@ -21,3 +21,7 @@
 - Séparer les données observées, les données publiques retraitées, les données synthétiques et les hypothèses dans les tableaux, figures et titres.
 - Ne pas utiliser les chiffres des simulations pour guider un traitement ou communiquer une performance clinique.
 - Pour toute validation clinique future, préenregistrer le critère, la population, l'unité d'analyse, les seuils, le plan statistique et le jeu de test indépendant avant de consulter les résultats.
+
+## Supplément du 24 novembre 2026 — résultats GDSC2 toutes lignées
+
+Les PDF archives V12 n'intègrent pas l'analyse GDSC2 toutes lignées publiée le 24 novembre. Un supplément daté est fourni avec eux : [`SUPPLEMENT_GDSC2_TOUTES_LIGNEES_2026-11-24.pdf`](./SUPPLEMENT_GDSC2_TOUTES_LIGNEES_2026-11-24.pdf); sa source reproductible est [`SUPPLEMENT_GDSC2_TOUTES_LIGNEES_2026-11-24.md`](./SUPPLEMENT_GDSC2_TOUTES_LIGNEES_2026-11-24.md). Le supplément rapporte la couverture des 968 lignées, la convergence conditionnelle du modèle, le biais par rapport aux références GDSC2 et les limites d'extrapolation. Il ne constitue pas une validation de TLog ni une preuve clinique.

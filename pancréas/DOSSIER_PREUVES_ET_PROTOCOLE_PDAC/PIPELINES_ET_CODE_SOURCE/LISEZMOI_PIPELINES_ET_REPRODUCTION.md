@@ -37,6 +37,7 @@ L'évaluation Yin 2025 est un script séparé (`pancréas/ANALYSE_THERAPEUTIQUE_
 | `extract_gdsc2_pdac_raw_curves.py` | **Prétraitement expérimental** | Extrait des mesures des lignées et médicaments ciblés du CSV brut officiel, applique la normalisation `gdscIC50` par scan et journalise les exclusions. Ne calcule pas de métrique TLog ni l'ajustement à effets mixtes GDSC. |
 | `extract_gdsc2_target_drugs_all_cell_lines.py` | **Prétraitement expérimental** | Extrait les cinq médicaments GDSC2 ciblés dans toutes les lignées du CSV brut, produit un audit de scan et un manifeste; ne calcule pas de métrique TLog. |
 | `compare_gdsc2_target_drugs_all_cell_lines_gdscic50.R` | **Ajustement exploratoire** | Tente l'ajustement `gdscIC50` sur les cinq médicaments et toutes les lignées, vérifie la convergence avant d'écrire le tableau comparatif et conserve un diagnostic même en cas d'échec. |
+| `build_gdsc2_whitepaper_supplement.py` | **Publication** | Génère le supplément PDF daté avec les résultats tous-lignées et leurs limites; ne modifie pas les PDF archivés V12. |
 | `tlog_oncotwin_simulator.py` | **Simulation** | Compare deux scénarios tumoraux déterminés par des paramètres codés dans le simulateur. Les différences de PFS simulées ne sont pas des estimations de bénéfice clinique. |
 ---
 
@@ -106,6 +107,14 @@ Rscript .\compare_gdsc2_target_drugs_all_cell_lines_gdscic50.R `
 ```
 
 Le script agrège les puits par lignée, médicament et dose (`FUN = mean`), comme le prétraitement `groupNlmeData` du paquet. L'option `isLargeData=TRUE` a produit une matrice de précision singulière; `isLargeData=FALSE` a convergé en 3 itérations avec une covariance définie positive. Le tableau descriptif contient 4 613 comparaisons; son diagnostic rapporte aussi les écarts aux références et la présence de courbes observées franchissant 50 %. La convergence ne valide pas l'adéquation des IC50 : les références proviennent des mêmes expériences, le biais moyen observé est notable et une majorité des combinaisons n'a aucun scan qui franchisse le seuil dans la plage mesurée. Ce résultat n'est ni une reproduction du modèle GDSC2 global ni une validation biologique ou clinique de TLog. Les CSV générés doivent rester des résultats locaux, hors du dépôt.
+
+### Supplément PDF du livre blanc
+
+Les PDF V12, dates du 23 novembre 2026, restent des archives historiques. Le supplément compagnon `../SUPPLEMENT_GDSC2_TOUTES_LIGNEES_2026-11-24.pdf` y ajoute les résultats et les limites sans modifier ces originaux. Son contenu source est `../SUPPLEMENT_GDSC2_TOUTES_LIGNEES_2026-11-24.md`; l'erratum `../ERRATA_LIVRE_BLANC_V12.md` consigne ce statut. Pour le reconstruire avec `reportlab` installé :
+
+```powershell
+python .\build_gdsc2_whitepaper_supplement.py
+```
 
 Tests du prétraitement :
 
