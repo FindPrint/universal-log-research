@@ -60,6 +60,8 @@ Une extraction du fichier officiel complet a produit 1 708 puits normalisés et 
 
 Un contrôle indépendant de 21 puits tirés de trois scans correspond exactement à la normalisation décrite dans le code source `gdscIC50`. Il ne s'agit pas d'une exécution du paquet R ni d'une reproduction de son ajustement à effets mixtes; ces étapes restent à valider avant toute revendication d'équivalence au pipeline officiel.
 
+La comparaison descriptive avec les ajustements GDSC2 officiels est consignée dans l'audit parent. Dans les 91 courbes par scan extraites, seules 8 encadrent 50 % de mortalité dans les doses mesurées; ne pas rapporter d'IC50 calculée par extrapolation comme si elle était directement observée ou comme une validation de TLog.
+
 Tests du prétraitement :
 
 ```powershell

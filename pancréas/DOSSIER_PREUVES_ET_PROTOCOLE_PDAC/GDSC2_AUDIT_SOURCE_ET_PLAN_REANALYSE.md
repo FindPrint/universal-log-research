@@ -76,6 +76,30 @@ Les 637 points couvrent les 15 combinaisons des trois lignées observées avec l
 
 Un contrôle ponctuel indépendant a ensuite repris les intensités brutes des scans `6570` (AsPC-1), `8831` (BxPC-3) et `9849` (CAPAN-1), appliqué les étapes de filtrage et la formule publiées dans `gdscIC50/R/nlme_fit_prep.R`, puis comparé les valeurs aux puits exportés. Les 21 puits monothérapie ciblés (7 par scan) correspondent exactement dans ce contrôle (`écart absolu maximal : 0`). Il s'agit d'une vérification indépendante de la préparation décrite par le code source, pas de l'exécution du paquet R lui-même.
 
+## Comparaison descriptive à la table ajustée officielle
+
+La table officielle `GDSC2_fitted_dose_response_24Jul22.csv` a été retéléchargée (39 834 719 octets; SHA-256 `9d6dc82b9a072bb00b6139dcd6c4c11de1e047f210382fb726e92ab8dd0eae2a`). Pour examiner si les courbes extraites permettent une IC50 observée sans extrapolation, les doses ont été placées sur l'échelle décrite par `gdscIC50` (`x = log2(CONC / maxc) + 9`) et la réponse inversée (`y = 1 - viabilité`). Une courbe par scan est considérée comme encadrant le seuil seulement si des mesures observées se trouvent des deux côtés de `y = 0,5`; ce contrôle n'ajuste pas un modèle.
+
+| Lignée | Médicament | Scans | Scans encadrant 50 % de mortalité | LN_IC50 officiel |
+|---|---|---:|---:|---:|
+| AsPC-1 | Cisplatine | 8 | 0 | 8,919883 |
+| AsPC-1 | Olaparib | 3 | 0 | 9,058758 |
+| AsPC-1 | 5-Fluorouracile | 7 | 0 | 8,834030 |
+| AsPC-1 | Paclitaxel | 4 | 0 | 0,186190 |
+| AsPC-1 | Gemcitabine | 6 | 0 | 3,818700 |
+| BxPC-3 | Cisplatine | 8 | 0 | 4,090629 |
+| BxPC-3 | Olaparib | 3 | 0 | 4,814604 |
+| BxPC-3 | 5-Fluorouracile | 7 | 0 | 4,955439 |
+| BxPC-3 | Paclitaxel | 6 | 2 | -2,698514 |
+| BxPC-3 | Gemcitabine | 6 | 2 | -0,676434 |
+| CAPAN-1 | Cisplatine | 9 | 0 | 2,931975 |
+| CAPAN-1 | Olaparib | 3 | 0 | 3,362376 |
+| CAPAN-1 | 5-Fluorouracile | 8 | 0 | 5,552256 |
+| CAPAN-1 | Paclitaxel | 6 | 2 | -2,846612 |
+| CAPAN-1 | Gemcitabine | 7 | 2 | -1,649532 |
+
+Au total, seules **8 des 91 courbes par scan** encadrent ce seuil dans les doses mesurées; 83 ne l'encadrent pas et ne permettent donc pas d'estimer leur IC50 à partir de la seule courbe observée sans extrapolation. Les `LN_IC50` affichés sont les références historiques du jeu GDSC2, pas des valeurs recalculées ici. Cet écart de couverture ne démontre ni une erreur de GDSC ni une performance de TLog : la table ajustée utilise le modèle mixte et ses règles de préparation, alors que le contrôle ci-dessus est un simple constat sur les mesures par scan. Il explique pourquoi ajuster systématiquement des IC50 aux courbes extraites puis les présenter comme validation serait trompeur.
+
 Ces nombres décrivent le résultat de l'extraction et non 1 708 répétitions biologiques : les puits et scans ne constituent pas automatiquement des réplicats biologiques indépendants. L'extracteur ne calcule toujours ni TLog, ni IC50, ni ajustement GDSC à effets mixtes. L'absence de `PANC-1` et de `MIA PaCa-2` vaut pour les noms exacts recherchés dans ce fichier et ne permet pas de conclure sur d'éventuels alias.
 
 ## Ce que l'analyse peut et ne peut pas démontrer
@@ -90,7 +114,7 @@ Le benchmark existant de 25 profils et sa corrélation `r = 0,9911` restent synt
 2. Vérifier dans le brut si `PANC-1` et `MIA PaCa-2` ont des lectures exploitables malgré l'absence de courbe ajustée correspondante; cette vérification est faite pour les noms exacts recherchés, sans exclure d'éventuels alias.
 3. Identifier les expériences par `CELL_LINE_NAME`, `COSMIC_ID`/`SANGER_MODEL_ID`, `DRUG_ID`, plaque/scan, durée et concentration; documenter les unités et les répétitions réellement indépendantes.
 4. Exécuter l'extracteur avec le CSV officiel complet; l'extraction, les statuts de scans et les décomptes d'exclusion sont vérifiés. Examiner les séries de doses avant toute interprétation.
-5. Le contrôle ponctuel des intensités par rapport aux étapes du code source est fait sur trois scans. Pour établir une équivalence avec l'implémentation officielle, exécuter le paquet R `gdscIC50` sur un exemple reproductible et comparer aussi les données préparées et les résultats du modèle; cette étape reste à faire.
+5. Le contrôle ponctuel des intensités par rapport aux étapes du code source est fait sur trois scans; la couverture du seuil observé a aussi été comptée par scan. Pour établir une équivalence avec l'implémentation officielle, exécuter le paquet R `gdscIC50` sur un exemple reproductible et comparer les données préparées et les résultats du modèle; cette étape reste à faire.
 6. Figer avant l'évaluation les règles d'inclusion, les critères d'abstention TLog et 4PL, et les métriques. Ne pas régler l'algorithme sur les cinq lignées puis présenter ces mêmes lignées comme test indépendant.
 7. Présenter les courbes et résultats par expérience, médicament et lignée, avec incertitude et échecs d'ajustement. Distinguer accord avec la table GDSC2 ajustée et validation indépendante.
 8. Ne pas ajouter au dépôt le fichier brut de 2,1 Go. Distribuer le code, la provenance, les empreintes des fichiers obtenus et, si la licence le permet, uniquement des sorties dérivées minimales et traçables.
@@ -108,7 +132,7 @@ Le benchmark existant de 25 profils et sa corrélation `r = 0,9911` restent synt
 
 ## Statut
 
-L'existence, la version, la taille, l'en-tête et l'empreinte du fichier brut ont été vérifiés. La couverture de la table ajustée et celle des mesures brutes extraites sont documentées ci-dessus. L'extracteur implémente la normalisation publiée par Sanger; ses tests synthétiques couvrent le calcul et les exclusions, et un contrôle de 21 puits sur trois scans concorde avec le code source de préparation. L'exécution du paquet R et la reproduction de son modèle à effets mixtes restent à faire. Les résultats d'extraction réels sont des points de données in vitro, pas des résultats TLog.
+L'existence, la version, la taille, l'en-tête et l'empreinte du fichier brut ont été vérifiés. La couverture de la table ajustée et celle des mesures brutes extraites sont documentées ci-dessus. L'extracteur implémente la normalisation publiée par Sanger; ses tests synthétiques couvrent le calcul et les exclusions, et un contrôle de 21 puits sur trois scans concorde avec le code source de préparation. Seules 8 des 91 courbes par scan encadrent 50 % de mortalité dans les doses mesurées. L'exécution du paquet R et la reproduction de son modèle à effets mixtes restent à faire. Les résultats d'extraction réels sont des points de données in vitro, pas des résultats TLog.
 
 ### Exécuter l'extracteur
 
