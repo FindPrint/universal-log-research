@@ -18,6 +18,20 @@ RESEARCH_PROJECT,BARCODE,SCAN_ID,DATE_CREATED,SCAN_DATE,CELL_ID,MASTER_CELL_ID,C
 
 Il s'agit de mesures d'intensité associées à des positions de plaques et à des métadonnées d'expérience. Ce fichier ne contient pas une table prête à l'emploi de viabilités normalisées ni des courbes dose-réponse indépendantes. Les transformations, unités de concentration, contrôles et critères de qualité doivent être établis à partir de la documentation officielle et des métadonnées de plaque avant de construire les courbes.
 
+## Normalisation prescrite par Sanger
+
+La notice officielle indique que chaque plaque reçoit une seule lignée, que `SCAN_ID` identifie le scan retenu après contrôle qualité interne, et que `CONC` est en micromolaire. Les tags sont importants : `NC-1` désigne le contrôle négatif avec DMSO, `B` le blanc sans cellules, `UN-USED` les puits exclus et `FAIL` les positions exclues. Un même puits peut apparaître plusieurs fois si plusieurs tags lui sont associés; on ne doit donc pas traiter chaque ligne CSV comme un puits indépendant sans examiner `POSITION` et `TAG`.
+
+La procédure publiée dans le paquet R officiel [`CancerRxGene/gdscIC50`](https://github.com/CancerRxGene/gdscIC50) retire les positions `FAIL` et les positions de médicaments de bibliothèque sans `DRUG_ID`, calcule par scan les moyennes des intensités `NC-1` et `B`, puis normalise les traitements par :
+
+```text
+viabilité normalisée = (INTENSITY - moyenne(B)) / (moyenne(NC-1) - moyenne(B))
+```
+
+Le paquet tronque ensuite les valeurs à `[0, 1]`. Il extrait les tags de traitements et de doses; dans sa préparation pour l'ajustement, l'axe de dose est `log2(CONC / concentration_maximale) + 9`, et la réponse du modèle est inversée (`1 - viabilité`). Cette normalisation ne remplace pas l'ajustement non linéaire à effets mixtes décrit par GDSC : le dépôt Sanger recommande `gdscIC50` pour reproduire cet ajustement. Le nouveau script d'extraction publié applique uniquement le nettoyage des positions, la normalisation par contrôles et l'agrégation des puits techniques; il ne prétend pas réimplémenter le modèle statistique GDSC.
+
+La notice avertit également que certains traitements/puits ne sont pas publiés en raison de collaborations privées. L'absence d'une combinaison dans les fichiers publics ne signifie donc pas nécessairement qu'aucune expérience n'a été effectuée.
+
 Le nom `GDSC2_public_raw_data.csv` sans date/version n'est pas le nom observé dans l'index officiel consulté. Le catalogue des composés comprend plusieurs identifiants pour certains médicaments et sites de criblage; il ne faut donc pas apparier seulement sur le nom du médicament :
 
 | Médicament | Identifiants trouvés dans `screened_compounds_rel_8.4.csv` |
@@ -57,10 +71,11 @@ Le benchmark existant de 25 profils et sa corrélation `r = 0,9911` restent synt
 1. Figer les versions exactes des fichiers bruts, ajustés, du catalogue des composés et des métadonnées de lignées; conserver les URL, dates, tailles et empreintes SHA-256.
 2. Vérifier dans le brut si `PANC-1` et `MIA PaCa-2` ont des lectures exploitables malgré l'absence de courbe ajustée correspondante; ne pas les compter comme réplications GDSC2 sans observations confirmées.
 3. Identifier les expériences par `CELL_LINE_NAME`, `COSMIC_ID`/`SANGER_MODEL_ID`, `DRUG_ID`, plaque/scan, durée et concentration; documenter les unités et les répétitions réellement indépendantes.
-4. Implémenter la transformation des intensités selon la documentation GDSC, avec contrôles par plaque, exclusions justifiées et journalisées, et vérifications des plages, doublons et concentrations.
-5. Figer avant l'évaluation les règles d'inclusion, les critères d'abstention TLog et 4PL, et les métriques. Ne pas régler l'algorithme sur les cinq lignées puis présenter ces mêmes lignées comme test indépendant.
-6. Présenter les courbes et résultats par expérience, médicament et lignée, avec incertitude et échecs d'ajustement. Distinguer accord avec la table GDSC2 ajustée et validation indépendante.
-7. Ne pas ajouter au dépôt le fichier brut de 2,1 Go. Distribuer le code, la provenance, les empreintes des fichiers obtenus et, si la licence le permet, uniquement des sorties dérivées minimales et traçables.
+4. Exécuter l'extracteur avec le CSV officiel complet; examiner les contrôles par scan, les exclusions de positions et les séries de doses avant toute interprétation.
+5. Comparer les contrôles et les intensités normalisées aux résultats obtenus par le paquet R officiel `gdscIC50` sur un exemple reproductible avant de traiter la sortie Python comme équivalente.
+6. Figer avant l'évaluation les règles d'inclusion, les critères d'abstention TLog et 4PL, et les métriques. Ne pas régler l'algorithme sur les cinq lignées puis présenter ces mêmes lignées comme test indépendant.
+7. Présenter les courbes et résultats par expérience, médicament et lignée, avec incertitude et échecs d'ajustement. Distinguer accord avec la table GDSC2 ajustée et validation indépendante.
+8. Ne pas ajouter au dépôt le fichier brut de 2,1 Go. Distribuer le code, la provenance, les empreintes des fichiers obtenus et, si la licence le permet, uniquement des sorties dérivées minimales et traçables.
 
 ## Sources officielles
 
@@ -70,7 +85,21 @@ Le benchmark existant de 25 profils et sa corrélation `r = 0,9911` restent synt
 - [Catalogue des composés, release 8.4](https://ftp.sanger.ac.uk/pub/project/cancerrxgene/releases/current_release/screened_compounds_rel_8.4.csv)
 - [Description officielle des données brutes](https://ftp.sanger.ac.uk/pub/project/cancerrxgene/releases/current_release/GDSC_Raw_Data_Description.pdf)
 - [Description officielle des données ajustées](https://ftp.sanger.ac.uk/pub/project/cancerrxgene/releases/current_release/GDSC_Fitted_Data_Description.pdf)
+- [Code source de normalisation et ajustement, CancerRxGene/gdscIC50](https://github.com/CancerRxGene/gdscIC50/blob/master/R/nlme_fit_prep.R)
+- [Notice du paquet gdscIC50](https://github.com/CancerRxGene/gdscIC50)
 
 ## Statut
 
-L'existence, la version, la taille et l'en-tête du fichier brut ont été vérifiés auprès du serveur officiel. La couverture de la table ajustée a été vérifiée : 15 combinaisons pour trois lignées, et aucune courbe ajustée pour `PANC-1` et `MIA PaCa-2` sous ces noms. Cette note ne rapporte pas encore de recalcul sur les intensités brutes, de courbes normalisées ou de comparaison TLog/4PL. Ces étapes restent bloquées jusqu'à validation documentée de la normalisation et de la sélection des expériences.
+L'existence, la version, la taille et l'en-tête du fichier brut ont été vérifiés auprès du serveur officiel. La couverture de la table ajustée a été vérifiée : 15 combinaisons pour trois lignées, et aucune courbe ajustée pour `PANC-1` et `MIA PaCa-2` sous ces noms. La normalisation publiée par Sanger est maintenant documentée et implémentée dans `PIPELINES_ET_CODE_SOURCE/extract_gdsc2_pdac_raw_curves.py`, avec des tests synthétiques du calcul et des exclusions. Aucune valeur issue du fichier brut réel n'est encore rapportée ici; avant de publier des résultats TLog, il faut exécuter l'extraction sur la version figée, inspecter les scans et comparer des plaques à `gdscIC50`.
+
+### Exécuter l'extracteur
+
+Télécharger la version officielle de 2,1 Go depuis l'URL ci-dessus, puis lancer depuis `PIPELINES_ET_CODE_SOURCE` :
+
+```powershell
+python .\extract_gdsc2_pdac_raw_curves.py `
+  --raw-csv "C:\chemin\GDSC2_public_raw_data_24Jul22.csv" `
+  --output-dir "C:\chemin\gdsc2_pdac_extracted"
+```
+
+Le script lit le grand CSV en flux, ne conserve que les lignes des cinq noms de lignées et des cinq identifiants de médicaments retenus, calcule et écrit le SHA-256 du fichier source, puis produit les puits normalisés, les moyennes par concentration et un audit par scan. Il ne télécharge pas le CSV, ne l'inclut pas au dépôt et ne calcule pas de métrique TLog. Les tests unitaires peuvent être lancés avec `python -m unittest -v test_extract_gdsc2_pdac_raw_curves` depuis ce répertoire.

@@ -34,6 +34,7 @@ L'évaluation Yin 2025 est un script séparé (`pancréas/ANALYSE_THERAPEUTIQUE_
 | `ctdna_ingress_validator.py` | **Ingestion** | Associe des noms de colonnes à un schéma et effectue une normalisation de base des séries ctDNA. Ce n'est pas une validation clinique complète ni un contrôle de provenance des mesures. |
 | `emulate_and_benchmark_ctdna_cohort.py` | **Émulation** | Génère une cohorte ctDNA synthétique de 70 profils et calcule une détection/avance sur progression définie dans cette simulation. Les métriques ne sont pas des résultats observés chez des patients. |
 | `run_gdsc2_pdac_benchmark.py` | **Benchmark simulé** | Génère des courbes synthétiques inspirées de profils IC50 associés à GDSC2, puis compare les estimations TLog aux valeurs de référence fournies par le générateur. Ce ne sont pas 675 mesures brutes extraites de Sanger. |
+| `extract_gdsc2_pdac_raw_curves.py` | **Prétraitement expérimental** | Extrait des mesures des lignées et médicaments ciblés du CSV brut officiel, applique la normalisation `gdscIC50` par scan et journalise les exclusions. Ne calcule pas de métrique TLog ni l'ajustement à effets mixtes GDSC. |
 | `tlog_oncotwin_simulator.py` | **Simulation** | Compare deux scénarios tumoraux déterminés par des paramètres codés dans le simulateur. Les différences de PFS simulées ne sont pas des estimations de bénéfice clinique. |
 ---
 
@@ -42,6 +43,24 @@ L'évaluation Yin 2025 est un script séparé (`pancréas/ANALYSE_THERAPEUTIQUE_
 1. `SYNTHETIC_TEST_RESULTS.csv` : courbes synthétiques de test; elles vérifient des comportements définis par le scénario, pas la performance sur des patients.
 2. `EMULATION_KIRCHWEGER_70P_LONGITUDINAL.csv` : émulation synthétique de 70 trajectoires sur 14 visites, avec des statuts et temps de progression générés. Ce fichier n'est pas une cohorte clinique de Kirchweger.
 3. `GDSC2_PDAC_REFERENCE_CURVES.csv` : 675 points générés synthétiquement à partir de profils IC50 de référence codés dans le générateur. Ne pas les citer comme mesures brutes Sanger/GDSC2.
+
+### Extraction des données brutes GDSC2
+
+Le CSV officiel `GDSC2_public_raw_data_24Jul22.csv` fait environ 2,1 Go et n'est pas inclus dans le dépôt. Après l'avoir obtenu depuis l'index Sanger, lancer depuis ce répertoire :
+
+```powershell
+python .\extract_gdsc2_pdac_raw_curves.py `
+  --raw-csv "C:\chemin\GDSC2_public_raw_data_24Jul22.csv" `
+  --output-dir "C:\chemin\gdsc2_pdac_extracted"
+```
+
+Le script lit le fichier en flux, applique les exclusions `FAIL`/médicament non attribué, calcule pour chaque scan la moyenne des contrôles `NC-1` et des blancs `B`, puis normalise chaque puits par `(INTENSITY - mean(B)) / (mean(NC-1) - mean(B))`, tronqué à `[0, 1]`. Il produit les puits normalisés, les moyennes par concentration et un audit par scan; les réponses sont des fractions de viabilité compatibles avec l'entrée `1.0 = viabilité témoin` de l'exemple TLog. Les puits d'une même plaque sont des répétitions techniques, pas des réplicats biologiques. Une moyenne par dose ne justifie donc pas un intervalle de confiance bootstrap biologique. Le script ne reproduit pas l'ajustement non linéaire à effets mixtes du paquet R officiel `gdscIC50` et ne constitue pas un benchmark TLog. Le CSV source reste à l'extérieur du dépôt.
+
+Tests du prétraitement :
+
+```powershell
+python -m unittest -v test_extract_gdsc2_pdac_raw_curves
+```
 
 ---
 
