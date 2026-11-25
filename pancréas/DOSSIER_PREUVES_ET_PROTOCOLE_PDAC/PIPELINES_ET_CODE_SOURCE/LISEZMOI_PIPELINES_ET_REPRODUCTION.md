@@ -129,9 +129,13 @@ python .\append_gdsc2_supplement_to_whitepapers.py `
 
 Les éditions intégrées de 42 MB et 1,6 MB sont des livrables locaux et ne sont pas ajoutées au dépôt; le supplément seul et son SHA-256 sont publiés ici.
 
+Le correctif Yin du 24 novembre est joint dans de nouvelles copies locales V15 (3 216 pages) et PDAC V4 (9 pages), construites à partir des éditions V13/V2 sans les remplacer. L'addendum documente le DOI, le PMID/PMCID et les éléments du texte qui confirment le criblage PDO de la Figure 6d. Le script de reproduction contrôle le SHA-256 et le schéma source avant analyse. Le PDF correctif autonome, son générateur et le script d'ajout sont dans ce répertoire; les copies complètes restent hors du dépôt.
+
 ### Prochaine évaluation TLog
 
 Le plan d'analyse préspécifié, son état non enregistré, les critères d'admissibilité et les limites des données GDSC2 actuelles sont décrits dans [`../PROTOCOLE_EVALUATION_TLOG_COURBES_V0.1.md`](../PROTOCOLE_EVALUATION_TLOG_COURBES_V0.1.md). Le GDSC2 existant sert au développement seulement : ses références proviennent des mêmes expériences et les puits ne sont pas des réplicats biologiques. Aucun résultat de validation indépendante n'est disponible à ce stade.
+
+Une correction post hoc du traitement d'unités des données de la Figure 6d Yin est décrite dans [`ADDENDUM_YIN_2025_CORRECTION_UNITES_2026-11-24.md`](../../ANALYSE_THERAPEUTIQUE_2026-11-23/YIN_2025_REAL_BENCHMARK/ADDENDUM_YIN_2025_CORRECTION_UNITES_2026-11-24.md). Le script corrige l'échelle de réponse (% vers fraction), retire l'imputation et le bootstrap non justifié, et écrit des fichiers de résultats distincts sans écraser les sorties historiques. Cette réanalyse demeure exploratoire, non indépendante et non confirmatoire.
 
 Tests du prétraitement :
 
