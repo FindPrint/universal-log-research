@@ -49,8 +49,8 @@ def build_pdf(output_path: Path) -> None:
             name="CorrectionBody",
             parent=styles["BodyText"],
             fontName="Helvetica",
-            fontSize=8.5,
-            leading=10.5,
+            fontSize=8.2,
+            leading=10,
             spaceAfter=1.5 * mm,
         )
     )
@@ -185,6 +185,13 @@ def build_pdf(output_path: Path) -> None:
                 "Aucune validation indépendante de TLog n'est établie. La source "
                 "et la reproduction sont décrites dans "
                 "ADDENDUM_YIN_2025_CORRECTION_UNITES_2026-11-24.md.",
+                styles["CorrectionBody"],
+            ),
+            Paragraph(
+                "Le protocole d'évaluation V1.0 est préspécifié mais non "
+                "enregistré; l'audit n'a identifié aucun jeu local admissible "
+                "comme test indépendant. Aucune demande externe de données "
+                "n'a été envoyée.",
                 styles["CorrectionBody"],
             ),
         ]

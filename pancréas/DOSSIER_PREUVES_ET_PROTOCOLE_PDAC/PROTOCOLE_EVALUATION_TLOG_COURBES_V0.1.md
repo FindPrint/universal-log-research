@@ -1,8 +1,10 @@
 # Protocole d'évaluation de TLog sur courbes dose-réponse
 
 **Version :** 0.1 — 24 novembre 2026
-**Statut :** plan d'analyse préspécifié, brouillon non enregistré; aucune évaluation indépendante n'a encore été exécutée.
+**Statut :** version historique, remplacée par [`V1.0`](./PROTOCOLE_EVALUATION_TLOG_COURBES_V1.0.md); ne pas utiliser pour une nouvelle analyse.
 **Portée :** évaluation analytique in vitro, pas une validation clinique.
+
+V0.1 est conservée pour l'historique des décisions. Les critères en vigueur et l'audit des jeux candidats figurent dans [`PROTOCOLE_EVALUATION_TLOG_COURBES_V1.0.md`](./PROTOCOLE_EVALUATION_TLOG_COURBES_V1.0.md) et [`AUDIT_JEUX_CANDIDATS_COURBES_INDEPENDANTES_2026-11-24.md`](./AUDIT_JEUX_CANDIDATS_COURBES_INDEPENDANTES_2026-11-24.md).
 
 ## 1. Question et estimand
 

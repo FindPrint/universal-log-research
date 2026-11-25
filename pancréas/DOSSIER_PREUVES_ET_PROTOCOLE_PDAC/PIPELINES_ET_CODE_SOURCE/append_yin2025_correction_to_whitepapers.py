@@ -73,14 +73,14 @@ def main() -> int:
         (
             args.integral_pdf,
             args.output_dir
-            / "UNIVERSAL_LOG_LIVRE_BLANC_COMPLET_INTEGRAL_V15_2026-11-24.pdf",
-            "UNIVERSAL_LOG livre blanc integral V15 - 24 novembre 2026",
+            / "UNIVERSAL_LOG_LIVRE_BLANC_COMPLET_INTEGRAL_V16_2026-11-24.pdf",
+            "UNIVERSAL_LOG livre blanc integral V16 - 24 novembre 2026",
         ),
         (
             args.pdac_dossier_pdf,
             args.output_dir
-            / "DOSSIER_SCIENTIFIQUE_PREUVES_ET_PROTOCOLE_PDAC_TLOG_V4_2026-11-24.pdf",
-            "Dossier scientifique preuves et protocole PDAC TLog V4 - 24 novembre 2026",
+            / "DOSSIER_SCIENTIFIQUE_PREUVES_ET_PROTOCOLE_PDAC_TLOG_V5_2026-11-24.pdf",
+            "Dossier scientifique preuves et protocole PDAC TLog V5 - 24 novembre 2026",
         ),
     )
     existing = [str(output) for _, output, _ in outputs if output.exists()]
