@@ -129,6 +129,10 @@ python .\append_gdsc2_supplement_to_whitepapers.py `
 
 Les éditions intégrées de 42 MB et 1,6 MB sont des livrables locaux et ne sont pas ajoutées au dépôt; le supplément seul et son SHA-256 sont publiés ici.
 
+### Prochaine évaluation TLog
+
+Le plan d'analyse préspécifié, son état non enregistré, les critères d'admissibilité et les limites des données GDSC2 actuelles sont décrits dans [`../PROTOCOLE_EVALUATION_TLOG_COURBES_V0.1.md`](../PROTOCOLE_EVALUATION_TLOG_COURBES_V0.1.md). Le GDSC2 existant sert au développement seulement : ses références proviennent des mêmes expériences et les puits ne sont pas des réplicats biologiques. Aucun résultat de validation indépendante n'est disponible à ce stade.
+
 Tests du prétraitement :
 
 ```powershell

@@ -152,6 +152,10 @@ Le benchmark existant de 25 profils et sa corrélation `r = 0,9911` restent synt
 7. Présenter les courbes et résultats par expérience, médicament et lignée, avec incertitude et échecs d'ajustement. Distinguer accord avec la table GDSC2 ajustée et validation indépendante.
 8. Ne pas ajouter au dépôt le fichier brut de 2,1 Go. Distribuer le code, la provenance, les empreintes des fichiers obtenus et, si la licence le permet, uniquement des sorties dérivées minimales et traçables.
 
+## Protocole de la prochaine évaluation TLog
+
+Le protocole d'analyse préspécifié V0.1 est dans [`PROTOCOLE_EVALUATION_TLOG_COURBES_V0.1.md`](./PROTOCOLE_EVALUATION_TLOG_COURBES_V0.1.md). Le jeu GDSC2 courant ne peut pas constituer le test indépendant : les références ajustées proviennent des mêmes expériences, les puits sont des répétitions techniques et le sous-ensemble PDAC observé couvre trois lignées. L'évaluation confirmatoire attend des expériences externes avec réplicats biologiques et une courbe de référence mesurée indépendamment. Le document est un plan non enregistré; il ne prétend pas que cette validation a été réalisée.
+
 ## Sources officielles
 
 - [Index des versions GDSC](https://ftp.sanger.ac.uk/pub/project/cancerrxgene/releases/)
